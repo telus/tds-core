@@ -35,20 +35,12 @@ const StyledNotificationContainer = styled(({ variant, ...rest }) => <Box {...re
 
 const StyledIconContainer = styled(({ ...rest }) => <Box {...rest} />)({ lineHeight: 0 })
 
-const StyledMessageContainer = styled.div(({ hasIcon, isDismissible }) => ({
-  width: hasIcon ? 'calc(100% - 2.5rem)' : '100%',
-  marginTop: '0.1rem',
-  paddingRight: isDismissible && '1rem',
-}))
-
-const StyledDismissContainer = styled.div({
-  position: 'relative',
-})
-
 const StyledDismissButtonWrapper = styled.div({
-  position: 'absolute',
-  top: '-0.5rem',
-  right: '-0.5rem',
+  marginLeft: 'auto',
+  height: '1.5rem',
+  position: 'relative',
+  marginTop: '-0.5rem',
+  marginRight: '-0.5rem',
 })
 
 const isImportant = variant => variant === 'success' || variant === 'error' || variant === 'warning'
@@ -112,24 +104,17 @@ class Notification extends React.Component {
             <FlexGrid.Col>
               <FlexGrid gutter={false}>
                 <FlexGrid.Row>
-                  <FlexGrid.Col xs={dismissible ? 11 : undefined}>
+                  <FlexGrid.Col>
                     <Box inline between={3}>
-                      {isImportant(variant) && (
-                        <StyledIconContainer vertical={1}>
-                          {renderIcon(variant, copy)}
-                        </StyledIconContainer>
-                      )}
-                      <StyledMessageContainer
-                        hasIcon={isImportant(variant)}
-                        isDismissible={dismissible}
-                      >
+                      <Box inline between={3} style={{ justifyContent: 'center' }}>
+                        {isImportant(variant) && (
+                          <StyledIconContainer vertical={1}>
+                            {renderIcon(variant, copy)}
+                          </StyledIconContainer>
+                        )}
                         <Paragraph>{children}</Paragraph>
-                      </StyledMessageContainer>
-                    </Box>
-                  </FlexGrid.Col>
-                  {dismissible && (
-                    <FlexGrid.Col>
-                      <StyledDismissContainer>
+                      </Box>
+                      {dismissible && (
                         <StyledDismissButtonWrapper>
                           <Close
                             a11yText={getCopy(copyDictionary, copy).close}
@@ -141,9 +126,9 @@ class Notification extends React.Component {
                             }}
                           />
                         </StyledDismissButtonWrapper>
-                      </StyledDismissContainer>
-                    </FlexGrid.Col>
-                  )}
+                      )}
+                    </Box>
+                  </FlexGrid.Col>
                 </FlexGrid.Row>
               </FlexGrid>
             </FlexGrid.Col>
