@@ -120,7 +120,7 @@ module.exports = {
     }
 
     if (name === 'SVGIcon') {
-      return `import { Accessible, Speed, Success, [..IconName] } from '@tds/core-decorative-icon'`
+      return `import { Accessible, Speed, Check, [..IconName] } from '@tds/core-decorative-icon'`
     }
 
     if (name === 'FeedbackIcon') {
