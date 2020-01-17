@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.6.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.5.1...@tds/core-decorative-icon@2.6.0) (2020-01-17)
+
+
+### Features
+
+* **core-decorative-icon:** deprecate success icon in favour of check ([0f12faa](https://github.com/telusdigital/tds/commit/0f12faa))
+
+
+
+
+
 ## [2.5.1](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.5.0...@tds/core-decorative-icon@2.5.1) (2019-11-20)
 
 
