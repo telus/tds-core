@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { colorWhite } from '@tds/core-colours'
 
 import { Consumer } from '../../shared/utils/context'
-import { warn } from '../../shared/utils/warn'
 
 const positionStyles = ({ paragraphSize }) => {
   let top = 0
@@ -19,7 +19,7 @@ const positionStyles = ({ paragraphSize }) => {
 
 const invertStyles = ({ invert }) => {
   return {
-    fill: invert && '#FFFFFF',
+    fill: invert && colorWhite,
   }
 }
 export const StyledDependentSVG = styled.svg(positionStyles, invertStyles, ({ paragraphSize }) => ({
@@ -27,11 +27,7 @@ export const StyledDependentSVG = styled.svg(positionStyles, invertStyles, ({ pa
   height: paragraphSize === 'small' ? 20 : 24,
 }))
 
-const Dependent = ({ invert, children, parentType, ...rest }) => {
-  if (parentType !== 'a' && parentType !== 'button') {
-    warn('Dependent', 'Icon must be contained in an <a> or <button>')
-  }
-
+const Dependent = ({ invert, children, ...rest }) => {
   return (
     <Consumer>
       {({ paragraphSize }) => {
@@ -45,10 +41,6 @@ Dependent.propTypes = {
   /**
    * @ignore
    */
-  parentType: PropTypes.oneOf(['a', 'button']),
-  /**
-   * @ignore
-   */
   invert: PropTypes.bool,
   /**
    * @ignore
@@ -57,7 +49,6 @@ Dependent.propTypes = {
 }
 
 Dependent.defaultProps = {
-  parentType: undefined,
   invert: false,
 }
 
