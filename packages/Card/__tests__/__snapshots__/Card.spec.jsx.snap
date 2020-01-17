@@ -851,14 +851,14 @@ exports[`<Card /> renders 1`] = `
 
 exports[`<Card /> spacing renders compact spacing 1`] = `
 .c1 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .c0 {
@@ -947,7 +947,6 @@ exports[`<Card /> spacing renders compact spacing 1`] = `
                       [Function],
                       [Function],
                       [Function],
-                      [Function],
                     ],
                   },
                   "displayName": "styled.div",
@@ -982,10 +981,6 @@ exports[`<Card /> spacing renders compact spacing 1`] = `
 
 exports[`<Card /> spacing renders default spacing 1`] = `
 .c1 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -999,10 +994,24 @@ exports[`<Card /> spacing renders default spacing 1`] = `
   background-color: #fff;
 }
 
+@media (max-width:767px) {
+  .c1 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
 @media (min-width:768px) {
   .c1 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -1097,7 +1106,6 @@ exports[`<Card /> spacing renders default spacing 1`] = `
                       [Function],
                       [Function],
                       [Function],
-                      [Function],
                     ],
                   },
                   "displayName": "styled.div",
@@ -1133,10 +1141,6 @@ exports[`<Card /> spacing renders default spacing 1`] = `
 
 exports[`<Card /> spacing renders intermediate spacing 1`] = `
 .c1 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -1148,6 +1152,15 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
   border-radius: 4px;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
+}
+
+@media (max-width:767px) {
+  .c1 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 @media (min-width:768px) {
@@ -1238,7 +1251,6 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
                       [Function],
                       [Function],
                       [Function],
-                      [Function],
                     ],
                   },
                   "displayName": "styled.div",
@@ -1273,14 +1285,12 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
 
 exports[`<Card /> spacing renders narrow spacing 1`] = `
 .c1 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .c0 {
@@ -1288,6 +1298,13 @@ exports[`<Card /> spacing renders narrow spacing 1`] = `
   border-radius: 4px;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
+}
+
+@media (max-width:767px) {
+  .c1 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
 @media (min-width:768px) {
@@ -1376,7 +1393,6 @@ exports[`<Card /> spacing renders narrow spacing 1`] = `
                     "isStatic": false,
                     "lastClassName": "c1",
                     "rules": Array [
-                      [Function],
                       [Function],
                       [Function],
                       [Function],
