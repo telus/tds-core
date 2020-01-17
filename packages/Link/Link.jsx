@@ -101,13 +101,9 @@ const Link = (
     if (Icon) {
       return (
         <React.Fragment>
-          {iconPosition === 'left' && (
-            <Icon invert={invert} parentType="a" style={{ marginRight: '0.5rem' }} />
-          )}
+          {iconPosition === 'left' && <Icon invert={invert} style={{ marginRight: '0.5rem' }} />}
           {children}
-          {iconPosition === 'right' && (
-            <Icon invert={invert} parentType="a" style={{ marginLeft: '0.25rem' }} />
-          )}
+          {iconPosition === 'right' && <Icon invert={invert} style={{ marginLeft: '0.25rem' }} />}
         </React.Fragment>
       )
     }
