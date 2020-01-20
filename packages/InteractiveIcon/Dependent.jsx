@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { colorWhite } from '@tds/core-colours'
 
-import { Consumer } from '../../shared/utils/context'
+import { DependentIconSizeContext } from '@tds/util-helpers'
 
 const positionStyles = ({ paragraphSize }) => {
   let top = 0
@@ -29,11 +29,11 @@ export const StyledDependentSVG = styled.svg(positionStyles, invertStyles, ({ pa
 
 const Dependent = ({ invert, children, ...rest }) => {
   return (
-    <Consumer>
+    <DependentIconSizeContext.Consumer>
       {({ paragraphSize }) => {
         return React.cloneElement(children, { paragraphSize, invert, ...rest })
       }}
-    </Consumer>
+    </DependentIconSizeContext.Consumer>
   )
 }
 
