@@ -128,9 +128,9 @@ The following icons are available for use in Links:
 
 #### Grouping icons
 
-- Recommend to include 16px space between independent links with icons
-- Recommend to include 32px bottom margin for a group of independent links (small/medium text)
-- Recommend to include 48px bottom margin for a group of independent links (large text)
+- Recommend to include Box 3 space between independent links with icons
+- Recommend to include Box 4 bottom margin for a group of independent links (small/medium text)
+- Recommend to include Box 5 bottom margin for a group of independent links (large text)
 
 ```jsx
 <Box between={4}>
