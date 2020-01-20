@@ -4,9 +4,7 @@ import styled from 'styled-components'
 
 import * as typography from '@tds/shared-typography'
 import { spacing } from '@tds/shared-styles'
-import { safeRest } from '@tds/util-helpers'
-
-import { Provider } from '../../shared/utils/context'
+import { safeRest, DependentIconSizeContext } from '@tds/util-helpers'
 
 const paragraphColor = ({ invert }) => (invert ? typography.invertedColor : typography.color)
 const paragraphInheritColor = ({ inheritColor }) =>
@@ -36,7 +34,7 @@ export const StyledParagraph = styled.p(
  */
 const Paragraph = ({ size, invert, children, ...rest }, context) => {
   return (
-    <Provider value={{ paragraphSize: size, invert }}>
+    <DependentIconSizeContext.Provider value={{ paragraphSize: size, invert }}>
       <StyledParagraph
         {...safeRest(rest)}
         size={size}
@@ -45,7 +43,7 @@ const Paragraph = ({ size, invert, children, ...rest }, context) => {
       >
         {children}
       </StyledParagraph>
-    </Provider>
+    </DependentIconSizeContext.Provider>
   )
 }
 
