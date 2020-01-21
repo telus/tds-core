@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.11](https://github.com/telusdigital/tds/compare/@tds/core-notification@3.0.10...@tds/core-notification@3.0.11) (2020-01-21)
+
+
+### Bug Fixes
+
+* **core-notification:** add spacing between text and dismiss button ([653f8bc](https://github.com/telusdigital/tds/commit/653f8bc))
+* **core-notification:** throw console warn on dismissable error/warning ([cd4d899](https://github.com/telusdigital/tds/commit/cd4d899))
+
+
+
+
+
 ## [3.0.10](https://github.com/telusdigital/tds/compare/@tds/core-notification@3.0.9...@tds/core-notification@3.0.10) (2020-01-07)
 
 **Note:** Version bump only for package @tds/core-notification
