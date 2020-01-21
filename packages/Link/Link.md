@@ -52,12 +52,23 @@
 
 ### <a name="linksWithIcons"></a>Links with icons
 
+The [Dependent](#dependent) InteractiveIcon group can be used within Link.
+
+#### Guidelines
+
 - May align icon to the left or right
 - Don’t use in headings
 - Recommend to align icon to the right when used as an inline text link
 - Recommend to align icon to the left when used as
   - Single independent link with icon
   - Group of independent links with icon
+
+#### Developer notes
+
+- Make use of Link's `icon` prop to insert Dependent icon JSX
+- The icon will default to its 24px size, or adapt to the font size of the wrapping Paragraph. Compatible with `@tds/core-paragraph@^2.1.0`
+  - On `large` or `medium` Paragraph sizes, the icon will be 24px
+  - On `small` Paragraph sizes, the icon will be 20px
 
 The following icons are available for use in Links:
 
