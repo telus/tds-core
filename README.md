@@ -6,10 +6,13 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
 
-> TELUS Design System core components
+> TELUS Design System (TDS) core components
 
 - [Documentation](https://tds.telus.com)
 - [Component catalogue](https://tds.telus.com/components/index.html)
+- [Roadmap](https://tds.telus.com/roadmap.html)
+- [Announcements and past releases](https://tds.telus.com/announcements.html)
+- [tds-community](https://github.com/telus/tds-community)
 
 The TELUS Design System (TDS) is a set of living guidelines that communicates our brand promise through our digital experiences.
 It's a holistic platform that integrates documentation, guidelines and design management that serves as single source for
