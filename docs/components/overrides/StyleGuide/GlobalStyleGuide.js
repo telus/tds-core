@@ -46,6 +46,13 @@ const GlobalStyleGuide = createGlobalStyle({
     }
   },
 
+  '.docs_box-coloring': {
+    'div':{
+      backgroundColor: colorPanache,
+      border: `1px solid ${colorGreyShark}`
+    }
+  },
+
   // Full width container with limited with parent: https://css-tricks.com/full-width-containers-limited-width-parents/
   // Only activate with there is no sidebar
   '.rsg--root-1:not(*[class*=\'rsg--hasSidebar\']) .docs_full-width-playground': {
