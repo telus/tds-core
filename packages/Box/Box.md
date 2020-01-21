@@ -74,15 +74,28 @@ Note the compositional nature of `Box`. Use multiple Boxes to achieve complex la
 
 ### Responsiveness
 
-The `Box` component is also capable of setting certain box sizes at specific viewport breakpoints. Designers should use best practices and recommended spacing if the current behaviour of `Box` levels does not solve a designs needs.
+The `Box` component is also capable of setting certain box sizes at specific viewport breakpoints. Designers should use best practices and recommended spacing if the current behaviour of `Box` levels does not solve a design's needs.
 
-For example:
+In the following example, resize your browser window to see different `Box` sizing at different viewport widths:
 
-```jsx
-<Box vertical={{ xs: 2, md: 3 }}>My content</Box>
+```jsx { "props": { "className": "docs_box-coloring" } }
+<Box
+  inset={{ xs: 2, md: 3, lg: 7 }}
+  between={{ xs: 2, md: 3, xl: 8 }}
+  inline={{ xs: false, lg: true }}
+>
+  <Button>1st Button</Button> <Button variant="secondary">2nd Button</Button>
+  <Button>3rd Button</Button> <Button variant="secondary">4th Button</Button>
+</Box>
 ```
 
-This will set vertical padding of size `2` (8px) for the `Box` from the `xs` breakpoint (starting at 0px width), and then vertical padding of `3` (16px) for the `Box` from the `md` breakpoint (starting at 768px). To learn more about responsive props see [`@tds/util-prop-types`](#proptypes). The following `Box` props support responsive props: `vertical`, `horizontal`, `inset`, `between`, and `inline`.
+This will do the following:
+
+- Padding on all sides will increase as the viewport size increases to take advantage of the extra space
+- Spacing between the buttons will increase as the viewport size increases to make things look less dense on larger screens
+- Below the `lg` viewport (≤992px), `inline` will be set to `false`, making the buttons stack. On `lg` and larger, the buttons will appear side to side
+
+To learn more about responsive props see [`@tds/util-prop-types`](#proptypes). The following `Box` props support responsive props: `vertical`, `horizontal`, `inset`, `between`, and `inline`.
 
 ### Using space-between
 
