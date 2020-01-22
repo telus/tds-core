@@ -13,14 +13,20 @@ import Panel from '../Panel/Panel'
 class Accordion extends React.Component {
   state = {
     openPanel: this.props.open,
+    prevOpenPanel: null,
   }
 
-  componentWillReceiveProps(nextProps) {
-    const nextPanel = nextProps.open
+  static getDerivedStateFromProps(props, state) {
+    const { prevOpenPanel } = state
+    const open = props.open
 
-    if (this.state.openPanel !== nextPanel) {
-      this.setState({ openPanel: nextPanel })
+    if (open !== prevOpenPanel) {
+      return {
+        openPanel: open,
+        prevOpenPanel: open,
+      }
     }
+    return null
   }
 
   togglePanel = panelId => {
