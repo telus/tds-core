@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telusdigital/tds/compare/@tds/core-link@2.1.3...@tds/core-link@2.2.0) (2020-01-22)
+
+
+### Features
+
+* **core-link:** add icon ([f4aca15](https://github.com/telusdigital/tds/commit/f4aca15))
+
+
+
+
+
 ## [2.1.3](https://github.com/telusdigital/tds/compare/@tds/core-link@2.1.2...@tds/core-link@2.1.3) (2020-01-07)
 
 

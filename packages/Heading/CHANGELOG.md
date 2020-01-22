@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/telusdigital/tds/compare/@tds/core-heading@3.0.0...@tds/core-heading@3.0.1) (2020-01-22)
+
+**Note:** Version bump only for package @tds/core-heading
+
+
+
+
+
 # [3.0.0](https://github.com/telusdigital/tds/compare/@tds/core-heading@2.2.8...@tds/core-heading@3.0.0) (2019-11-18)
 
 

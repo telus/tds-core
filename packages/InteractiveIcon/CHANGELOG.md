@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@1.3.2...@tds/core-interactive-icon@1.4.0) (2020-01-22)
+
+
+### Features
+
+* **core-interactive-icon:** add dependent icon ([e9c90e1](https://github.com/telus/tds-core/commit/e9c90e1))
+
+
+
+
+
 ## [1.3.2](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@1.3.1...@tds/core-interactive-icon@1.3.2) (2020-01-07)
 
 
