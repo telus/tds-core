@@ -85,19 +85,33 @@ class PanelWrapper extends React.Component {
     contentWrapperHeight: 0,
   }
 
-  componentWillReceiveProps(nextProps) {
-    const { panelOnToggle } = this.props
-
-    if (this.state.open !== nextProps.open) {
-      this.setState({
-        open: nextProps.open,
-        contentWrapperHeight: this.contentWrapper.offsetHeight,
-      })
-
-      if (panelOnToggle) {
-        panelOnToggle(nextProps.open)
+  static getDerivedStateFromProps(props, state) {
+    if (state.open !== props.open) {
+      if (props.panelOnToggle) {
+        props.panelOnToggle(props.open)
+      }
+      return {
+        open: props.open,
       }
     }
+    return null
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.open !== prevProps.open) {
+      this.setContentWrapperHeight()
+    }
+  }
+
+  setContentWrapperHeight = () => {
+    this.setState({
+      contentWrapperHeight: this.contentWrapper.offsetHeight,
+    })
+  }
+
+  handleClick = e => {
+    this.setContentWrapperHeight()
+    this.props.onClick(e)
   }
 
   mouseEnter = () => {
@@ -161,14 +175,13 @@ class PanelWrapper extends React.Component {
       panelTertiaryText,
       panelDisabled,
       tag,
-      onClick,
       children,
     } = this.props
 
     const headerButton = (
       <HeaderButtonClickable
         panelDisabled={panelDisabled}
-        onClick={onClick}
+        onClick={this.handleClick}
         onMouseEnter={this.mouseEnter}
         onMouseLeave={this.mouseLeave}
         disabled={panelDisabled}
@@ -223,7 +236,7 @@ PanelWrapper.propTypes = {
   panelHeader: PropTypes.string.isRequired,
   panelSubtext: PropTypes.string,
   panelTertiaryText: PropTypes.string,
-  panelOnToggle: PropTypes.func,
+  panelOnToggle: PropTypes.func, // eslint-disable-line react/no-unused-prop-types
   panelDisabled: PropTypes.bool,
   open: PropTypes.bool,
   tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']),

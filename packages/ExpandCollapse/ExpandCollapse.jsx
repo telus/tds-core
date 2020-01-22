@@ -15,14 +15,20 @@ import Panel from './Panel/Panel'
 class ExpandCollapse extends React.Component {
   state = {
     openPanels: new Set(this.props.open),
+    prevOpenPanels: new Set(),
   }
 
-  componentWillReceiveProps(nextProps) {
-    const nextPanels = new Set(nextProps.open)
+  static getDerivedStateFromProps(props, state) {
+    const { prevOpenPanels } = state
+    const open = new Set(props.open)
 
-    if (!isEqual(this.props.open, nextPanels)) {
-      this.setState({ openPanels: nextPanels })
+    if (!isEqual(open, prevOpenPanels)) {
+      return {
+        openPanels: open,
+        prevOpenPanels: open,
+      }
     }
+    return null
   }
 
   togglePanel = panelId => {
