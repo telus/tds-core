@@ -22,10 +22,14 @@ const invertStyles = ({ invert }) => {
     fill: invert && colorWhite,
   }
 }
-export const StyledDependentSVG = styled.svg(positionStyles, invertStyles, ({ paragraphSize }) => ({
-  width: paragraphSize === 'small' ? 20 : 24,
-  height: paragraphSize === 'small' ? 20 : 24,
-}))
+export const StyledDependentSVG = styled.svg.attrs({ 'aria-hidden': true, focusable: false })(
+  positionStyles,
+  invertStyles,
+  ({ paragraphSize }) => ({
+    width: paragraphSize === 'small' ? 20 : 24,
+    height: paragraphSize === 'small' ? 20 : 24,
+  })
+)
 
 const Dependent = ({ invert, children, ...rest }) => {
   return (
