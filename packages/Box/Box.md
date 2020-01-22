@@ -85,7 +85,7 @@ In the following example, resize your browser window to see different `Box` sizi
   inline={{ xs: false, lg: true }}
 >
   <Button>1st Button</Button> <Button variant="secondary">2nd Button</Button>
-  <Button>3rd Button</Button> <Button variant="secondary">4th Button</Button>
+  <Button>3rd Button</Button>
 </Box>
 ```
 
