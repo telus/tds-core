@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-box@2.0.2...@tds/core-box@2.1.0) (2020-01-23)
+
+
+### Features
+
+* **core-box:** add responsive props ([d216edf](https://github.com/telusdigital/tds/commit/d216edf))
+
+
+
+
+
 ## [2.0.2](https://github.com/telusdigital/tds/compare/@tds/core-box@2.0.1...@tds/core-box@2.0.2) (2019-08-22)
 
 **Note:** Version bump only for package @tds/core-box

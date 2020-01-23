@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.30](https://github.com/telus/tds-core/compare/@tds/core-expand-collapse@2.0.29...@tds/core-expand-collapse@2.0.30) (2020-01-23)
+
+**Note:** Version bump only for package @tds/core-expand-collapse
+
+
+
+
+
 ## [2.0.29](https://github.com/telus/tds-core/compare/@tds/core-expand-collapse@2.0.28...@tds/core-expand-collapse@2.0.29) (2020-01-22)
 
 **Note:** Version bump only for package @tds/core-expand-collapse
