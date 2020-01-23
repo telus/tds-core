@@ -144,9 +144,19 @@ Link.propTypes = {
    * Link text.
    */
   children: PropTypes.node.isRequired,
-  /* @ignore */
+  /**
+   * @ignore
+   */
   forwardedRef: PropTypes.object,
+  /**
+   * Provide an icon from the Dependent icon group in `@tds/core-interactive-icon`.
+   * @since 2.2.0
+   */
   icon: componentWithName('Dependent', true),
+  /**
+   * When `icon` is provided, use `iconPosition` to place the Icon to the left or right side of Link.
+   * @since 2.2.0
+   */
   iconPosition: PropTypes.oneOf(['left', 'right']),
 }
 Link.defaultProps = {
