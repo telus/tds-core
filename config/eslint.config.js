@@ -4,7 +4,7 @@ module.exports = {
   plugins: ['react-hooks'],
   rules: {
     'react/require-default-props': 'warn',
-    'import/no-extraneous-dependencies': false, // disabling it because all dev dependencies are pulled into the root
+    'import/no-extraneous-dependencies': 0, // disabling it because all dev dependencies are pulled into the root
     'prefer-destructuring': 0,
     'jsx-a11y/label-has-for': [
       'error',
@@ -14,9 +14,12 @@ module.exports = {
         },
       },
     ],
-    'react/destructuring-assignment': [true, 'always', { ignoreClassFields: false }],
     'react/jsx-one-expression-per-line': 0,
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
     'react-hooks/exhaustive-deps': 'warn',
+    'react/jsx-props-no-spreading': 0, // We need prop spreading
+    'react/destructuring-assignment': 0,
+    'react/no-multi-comp': 0,
+    'react/state-in-constructor': 0, // Would result in unecessary constructors
   },
 }
