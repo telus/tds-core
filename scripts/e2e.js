@@ -45,13 +45,14 @@ getPackageNames(packageNames => {
       environments,
     ],
     {
-      env: Object.assign({}, process.env, {
+      env: {
+        ...process.env,
         PACKAGES: onlyCorePackages,
         UPDATE_ALL_SCREENSHOTS: tdsOptions['update-screenshots'],
         URL: `http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/e2e/${
           tdsOptions.name
         }/#`,
-      }),
+      },
       stdio: 'inherit',
     }
   )
