@@ -421,7 +421,7 @@ module.exports = {
     },
   },
   updateDocs(docs, file) {
-    const updatedDocs = Object.assign({}, docs)
+    const updatedDocs = { ...docs }
 
     if (updatedDocs.doclets.version) {
       const versionFilePath = path.resolve(path.dirname(file), updatedDocs.doclets.version)

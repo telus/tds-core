@@ -9,12 +9,10 @@ import autoprefixer from 'autoprefixer'
 import cleaner from './rollup/rollup-plugin-cleaner'
 
 export default opts => {
-  const options = Object.assign(
-    {
-      css: false,
-    },
-    opts
-  )
+  const options = {
+    css: false,
+    ...opts,
+  }
 
   const tdsExternals = options.dependencies
     ? Object.keys(options.dependencies).filter(dependency => dependency.startsWith('@tds'))
