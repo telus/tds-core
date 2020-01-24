@@ -45,7 +45,7 @@ const onChange = event => {
 
 ### Uncontrolled ButtonGroup
 
-If it is not neccessary to control `ButtonGroup` state. You can create a `ButtonGroup` without a `value` prop, in this case the `ButtonGroup` will act as a collection HTML `input` with the type of `radio`. Its value can be accessed by referencing the element via a `ref`.
+If it is not necessary to control `ButtonGroup` state. You can create a `ButtonGroup` without a `value` prop, in this case the `ButtonGroup` will act as a collection HTML `input` with the type of `radio`. Its value can be accessed by referencing the element via a `ref`.
 
 #### Default values
 
