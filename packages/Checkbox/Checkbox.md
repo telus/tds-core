@@ -50,7 +50,7 @@ const handleCheck = event => {
 
 ### Uncontrolled Checkbox
 
-If it is not neccessary to control `Checkbox` state. You can create a `Checkbox` without a `checked` prop, in this case the `Checkbox` will act as an HTML `input` with the type of `checkbox`. Its value can be accessed by referencing the element via a `ref`.
+If it is not necessary to control `Checkbox` state. You can create a `Checkbox` without a `checked` prop, in this case the `Checkbox` will act as an HTML `input` with the type of `checkbox`. Its value can be accessed by referencing the element via a `ref`.
 
 #### Default values
 
