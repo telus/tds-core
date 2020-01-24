@@ -52,7 +52,7 @@ const setChoice = event => {
 
 ### Uncontrolled Radio
 
-If it is not neccessary to control `Radio` state. You can create a `Radio` without a `checked` prop, in this case the `Radio` will act as an HTML `input` with the type of `radio`. Its value can be accessed by referencing the element via a `ref`.
+If it is not necessary to control `Radio` state. You can create a `Radio` without a `checked` prop, in this case the `Radio` will act as an HTML `input` with the type of `radio`. Its value can be accessed by referencing the element via a `ref`.
 
 #### Default values
 
