@@ -37,7 +37,7 @@ const onChange = evt => {
 
 ### Uncontrolled Input
 
-If it is not neccessary to control `Input` state. You can create an `Input` without a `value` prop, in this case the `Input` will act as an HTML `input` with the type specified by the `type` prop. Its value can be accessed by referencing the element via a `ref`.
+If it is not necessary to control `Input` state. You can create an `Input` without a `value` prop, in this case the `Input` will act as an HTML `input` with the type specified by the `type` prop. Its value can be accessed by referencing the element via a `ref`.
 
 #### Default values
 
