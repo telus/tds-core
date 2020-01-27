@@ -27,21 +27,20 @@ const collectBreakpoints = props => breakpoint => {
   const o = {
     from: breakpoint,
     until: undefined,
-    props: Object.assign(
-      {},
-      getStaticProps(props).reduce((acc, staticProp) => {
+    props: {
+      ...getStaticProps(props).reduce((acc, staticProp) => {
         if (typeof props[staticProp] !== 'undefined') {
           acc[staticProp] = props[staticProp]
         }
         return acc
       }, {}),
-      getResponsiveProps(props).reduce((acc, responsiveProp) => {
+      ...getResponsiveProps(props).reduce((acc, responsiveProp) => {
         if (typeof props[responsiveProp][breakpoint] !== 'undefined') {
           acc[responsiveProp] = props[responsiveProp][breakpoint]
         }
         return acc
-      }, {})
-    ),
+      }, {}),
+    },
   }
   return o
 }
@@ -49,7 +48,7 @@ const collectBreakpoints = props => breakpoint => {
 const inheritAndPopulateUntil = (bp, index, src) => {
   const breakpoint = bp
   if (index !== 0) {
-    breakpoint.props = Object.assign({}, src[index - 1].props, bp.props)
+    breakpoint.props = { ...src[index - 1].props, ...bp.props }
   }
   if (index < src.length - 1) {
     breakpoint.until = src[index + 1].from
