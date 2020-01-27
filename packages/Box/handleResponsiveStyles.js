@@ -15,8 +15,8 @@ const handleBoundaryCrossing = (acc, curr) => {
       prop => typeof curr.props[prop] === 'number' && curr.props[prop] > 3
     )
     if (props.length !== 0) {
-      const mobileBreakpoint = Object.assign({}, curr, { props: curr.props })
-      const desktopBreakpoint = Object.assign({}, curr, { props: curr.props })
+      const mobileBreakpoint = { ...curr, props: curr.props }
+      const desktopBreakpoint = { ...curr, props: curr.props }
 
       mobileBreakpoint.until = 'md'
       desktopBreakpoint.from = 'md'
