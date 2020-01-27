@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-feedback-icon",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@tds/core-colours": "^2.2.1",
-    "@tds/util-helpers": "^1.4.0",
+    "@tds/util-helpers": "^1.4.1",
     "prop-types": "^15.5.10"
   }
 }

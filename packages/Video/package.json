@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-video",
-  "version": "1.2.35",
+  "version": "1.2.36",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -26,18 +26,18 @@
     "styled-components": "^4.1.3"
   },
   "dependencies": {
-    "@tds/core-box": "^2.1.0",
+    "@tds/core-box": "^2.1.1",
     "@tds/core-colours": "^2.2.1",
-    "@tds/core-decorative-icon": "^2.6.2",
-    "@tds/core-flex-grid": "^3.0.5",
-    "@tds/core-paragraph": "^2.0.10",
-    "@tds/core-responsive": "^1.3.2",
-    "@tds/core-spinner": "^3.1.7",
-    "@tds/util-helpers": "^1.4.0",
+    "@tds/core-decorative-icon": "^2.6.3",
+    "@tds/core-flex-grid": "^3.0.6",
+    "@tds/core-paragraph": "^2.0.11",
+    "@tds/core-responsive": "^1.3.3",
+    "@tds/core-spinner": "^3.1.8",
+    "@tds/util-helpers": "^1.4.1",
     "fscreen": "^1.0.2",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/shared-video-splash": "^1.1.27"
+    "@tds/shared-video-splash": "^1.1.28"
   }
 }
