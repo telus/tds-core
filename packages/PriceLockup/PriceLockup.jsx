@@ -65,14 +65,14 @@ const StyledPriceValue = styled.span(wordBreak, spacing.noSpacing, ({ size }) =>
   }
 })
 
-const StyledDollarSign = styled.span(({ size }) => {
+const StyledPriceSign = styled.span(({ size }) => {
   if (size === 'small') {
     return { medium, lineHeight: 1.5 }
   }
   return large
 })
 
-const StyledLargeDollarSign = styled.span({
+const StyledLargePriceSign = styled.span({
   color: colorText,
   ...helveticaNeueLight45,
   fontSize: '1.75rem',
@@ -98,30 +98,30 @@ const StyledPriceWrapper = styled(Box)({
  * @version ./package.json
  */
 
-const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText }) => {
-  const renderDollarSign = () => {
+const PriceLockup = ({ size, price, priceSign, topText, signDirection, rateText, bottomText }) => {
+  const renderPriceSign = () => {
     if (size === 'large') {
       return (
-        <StyledLargeDollarSign data-testid="dollarSign" as="span" level="h1">
-          &#36;
+        <StyledLargePriceSign data-testid="priceSign" as="span" level="h1">
+          {priceSign}
         </StyledLargeDollarSign>
       )
     }
     return (
-      <StyledDollarSign data-testid="dollarSign" size={size}>
-        &#36;
-      </StyledDollarSign>
+      <StyledPriceSign data-testid="priceSign" size={size}>
+        {priceSign}
+      </StyledPriceSign>
     )
   }
 
   const renderPriceValueSign = () => {
     return (
       <Box between={size === 'large' ? 2 : 1} inline>
-        {signDirection === 'left' ? renderDollarSign() : undefined}
+        {signDirection === 'left' ? renderPriceSign() : undefined}
         <StyledPriceValue data-testid="priceValue" size={size}>
           {price}
         </StyledPriceValue>
-        {signDirection === 'right' ? renderDollarSign() : undefined}
+        {signDirection === 'right' ? renderPriceSign() : undefined}
       </Box>
     )
   }
@@ -192,10 +192,15 @@ PriceLockup.propTypes = {
    * Price value of component
    */
   price: PropTypes.string.isRequired,
+  /**
+   * Price Sign of component
+   */
+  priceSign: PropTypes.string,
 }
 
 PriceLockup.defaultProps = {
   signDirection: 'left',
+  priceSign: '$',
   topText: undefined,
   bottomText: undefined,
   rateText: undefined,
