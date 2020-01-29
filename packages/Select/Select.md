@@ -97,7 +97,7 @@ const onChange = evt => {
 const verifySelection = value => {
   if (value === '') {
     return undefined
-  } else if (value === 'React') {
+  } else if (value === 'react') {
     return 'success'
   }
   return 'error'
