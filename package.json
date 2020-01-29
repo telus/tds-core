@@ -129,7 +129,7 @@
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-helmet": "^5.2.0",
-    "react-styleguidist": "^9.1.16",
+    "react-styleguidist": "^10.6.1",
     "react-test-renderer": "^16.0.0",
     "remark-cli": "^7.0.0",
     "request": "^2.87.0",
