@@ -4,6 +4,7 @@ import { mount, shallow } from 'enzyme'
 import { warn } from '../../../shared/utils/warn'
 
 import Link from '../Link'
+import Edit from '../../InteractiveIcon/svgs/Dependent/Edit'
 
 jest.mock('../../../shared/utils/warn')
 
@@ -67,6 +68,21 @@ describe('Link', () => {
 
     expect(link).toHaveProp('id', 'the-link')
     expect(link).toHaveProp('role', 'button')
+  })
+
+  it('displays a Dependent Icon', () => {
+    const link = doMount({ id: 'the-link', role: 'button', icon: Edit }).link
+    expect(link.find('[data-testid="dependentSvg"]')).toExist()
+  })
+
+  it('displays a Dependent Icon and sets alignment', () => {
+    const linkLeft = doMount({ id: 'the-link', role: 'button', icon: Edit, iconPosition: 'right' })
+      .link
+    const linkRight = doMount({ id: 'the-link', role: 'button', icon: Edit, iconPosition: 'right' })
+      .link
+
+    expect(linkLeft).toMatchSnapshot()
+    expect(linkRight).toMatchSnapshot()
   })
 
   it('does not allow custom CSS', () => {
