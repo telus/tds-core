@@ -2,6 +2,9 @@ import React from 'react'
 import { shallow, mount } from 'enzyme'
 
 import InteractiveIcon, { StyledInteractiveIconButton } from '../InteractiveButton'
+import Edit from '../svgs/Dependent/Edit'
+import Link from '../../Link'
+import Paragraph from '../../Paragraph'
 
 describe('InteractiveIcon', () => {
   const doShallow = (props = {}) =>
@@ -21,6 +24,16 @@ describe('InteractiveIcon', () => {
     expect(interactiveIcon).toMatchSnapshot()
   })
 
+  it('renders Dependent icon with Link', () => {
+    const dependentIcon = mount(
+      <Link href="#" icon={Edit} iconPosition="left">
+        Edit
+      </Link>
+    )
+
+    expect(dependentIcon).toMatchSnapshot()
+  })
+
   it('does other things', () => {
     const interactiveIcon = doShallow()
 
@@ -34,6 +47,55 @@ describe('InteractiveIcon', () => {
 
     expect(interactiveIcon).toHaveProp('id', 'the-id')
     expect(interactiveIcon).toHaveProp('data-some-attr', 'some value')
+  })
+
+  it('inherits invert prop from Link', () => {
+    const invertedLink = mount(
+      <Link href="#" icon={Edit} iconPosition="left" invert>
+        Edit
+      </Link>
+    )
+
+    expect(invertedLink.find(Edit)).toHaveProp('invert', true)
+  })
+
+  it('inherits size prop from Paragraph', () => {
+    const largeParagraph = mount(
+      <Paragraph size="large">
+        <Link href="#" icon={Edit} iconPosition="left" invert>
+          Edit
+        </Link>
+      </Paragraph>
+    )
+
+    const mediumParagraph = mount(
+      <Paragraph size="medium">
+        <Link href="#" icon={Edit} iconPosition="left" invert>
+          Edit
+        </Link>
+      </Paragraph>
+    )
+
+    const smallParagraph = mount(
+      <Paragraph size="small">
+        <Link href="#" icon={Edit} iconPosition="left" invert>
+          Edit
+        </Link>
+      </Paragraph>
+    )
+
+    expect(largeParagraph.find('[data-testid="dependentSvg"]').find('StyledComponent')).toHaveProp(
+      'paragraphSize',
+      'large'
+    )
+    expect(mediumParagraph.find('[data-testid="dependentSvg"]').find('StyledComponent')).toHaveProp(
+      'paragraphSize',
+      'medium'
+    )
+    expect(smallParagraph.find('[data-testid="dependentSvg"]').find('StyledComponent')).toHaveProp(
+      'paragraphSize',
+      'small'
+    )
   })
 
   it('does not allow custom CSS', () => {

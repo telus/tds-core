@@ -265,3 +265,256 @@ exports[`InteractiveIcon renders 1`] = `
   </ThemeProvider>
 </Button>
 `;
+
+exports[`InteractiveIcon renders Dependent icon with Link 1`] = `
+.c1 {
+  position: relative;
+  top: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.c0 {
+  display: inline-block;
+}
+
+.c0:focus {
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.c0:link,
+.c0:visited {
+  color: #2a2c2e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c0:hover svg {
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c0:active svg {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c0:active {
+  background-color: #d8d8d8;
+  border-radius: 0.25rem;
+  padding: 0.125rem;
+  margin: -0.125rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:focus {
+  border: 0.125rem solid #71757b;
+  padding: 0.125rem;
+  margin: -0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.c0 > svg {
+  vertical-align: bottom;
+}
+
+<WithForwardedRef(Link)
+  href="#"
+  icon={[Function]}
+  iconPosition="left"
+>
+  <Link
+    forwardedRef={null}
+    href="#"
+    icon={[Function]}
+    iconPosition="left"
+    reactRouterLinkComponent={null}
+    to={null}
+  >
+    <Link__StyledLink
+      as="a"
+      context={
+        Object {
+          "inheritColor": undefined,
+        }
+      }
+      hasIcon={true}
+      href="#"
+      to={null}
+    >
+      <StyledComponent
+        as="a"
+        context={
+          Object {
+            "inheritColor": undefined,
+          }
+        }
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Link__StyledLink-sc-1bokult-0",
+              "isStatic": false,
+              "lastClassName": "c0",
+              "rules": Array [
+                ":focus {",
+                "outline: auto 5px -webkit-focus-ring-color;",
+                "}",
+                "&:link,&:visited {",
+                "color: #2a2c2e;",
+                "text-decoration: underline;",
+                "}",
+                "&:hover {",
+                "text-decoration: none;",
+                "}",
+                "& svg {",
+                "}",
+                "& svg {",
+                "transition: transform 150ms ease-in-out;",
+                "}",
+                "&:hover svg {",
+                "transform: scale(1.1, 1.1);",
+                "}",
+                "&:active svg {",
+                "transform: scale(1, 1);",
+                "}",
+                [Function],
+                [Function],
+                [Function],
+              ],
+            },
+            "displayName": "Link__StyledLink",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Link__StyledLink-sc-1bokult-0",
+            "target": "a",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        hasIcon={true}
+        href="#"
+        to={null}
+      >
+        <a
+          className="c0"
+          href="#"
+          to={null}
+        >
+          <Dependent
+            style={
+              Object {
+                "marginRight": "0.5rem",
+              }
+            }
+          >
+            <Dependent
+              invert={false}
+              style={
+                Object {
+                  "marginRight": "0.5rem",
+                }
+              }
+            >
+              <styled.svg
+                data-testid="dependentSvg"
+                height="24"
+                invert={false}
+                style={
+                  Object {
+                    "marginRight": "0.5rem",
+                  }
+                }
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <StyledComponent
+                  data-testid="dependentSvg"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [
+                        Object {
+                          "aria-hidden": true,
+                          "focusable": false,
+                        },
+                      ],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htpNat",
+                        "isStatic": false,
+                        "lastClassName": "c1",
+                        "rules": Array [
+                          [Function],
+                          [Function],
+                          [Function],
+                        ],
+                      },
+                      "displayName": "styled.svg",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htpNat",
+                      "target": "svg",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  height="24"
+                  invert={false}
+                  style={
+                    Object {
+                      "marginRight": "0.5rem",
+                    }
+                  }
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <svg
+                    aria-hidden={true}
+                    className="c1"
+                    data-testid="dependentSvg"
+                    focusable={false}
+                    height="24"
+                    style={
+                      Object {
+                        "marginRight": "0.5rem",
+                      }
+                    }
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <path
+                      d="M19.717 2c.612 0 1.198.235 1.61.646a2.275 2.275 0 01.135 3.086l-.138.148L7.11 20.093a2.215 2.215 0 01-.227.205l-.03.015-4.114 1.648a.544.544 0 01-.581-.119.536.536 0 01-.146-.495l.027-.087 1.644-4.118a.519.519 0 01.07-.124l.05-.056L18.107 2.646A2.281 2.281 0 0119.718 2zm-15.1 15.715l-1.11 2.776 2.772-1.11-1.663-1.666zM16.114 6.167L5.358 16.931l1.68 1.682 1.335-1.37c1.2-1.216 3.012-3.027 5.672-5.67l3.753-3.721-1.683-1.685zm4.454-2.753a1.222 1.222 0 00-1.595-.096l-.103.091-1.993 1.995 1.686 1.689 2.002-1.982c.23-.224.355-.524.355-.844a1.19 1.19 0 00-.352-.853z"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </StyledComponent>
+              </styled.svg>
+            </Dependent>
+          </Dependent>
+          Edit
+        </a>
+      </StyledComponent>
+    </Link__StyledLink>
+  </Link>
+</WithForwardedRef(Link)>
+`;
