@@ -1,9 +1,9 @@
 ### Usage criteria
 
-- If there is only one annotation needed on a page, try including it within the copy on the page and avoid using `FootnoteLink`
-- For [PriceLockup](#/Typography?id=pricelockup) all the numbers should appear together below the `bottomText`
-- Must be wrapped by a `Text`, `Heading`, or `DisplayHeading` component
-  - When using `FootnoteLink` in a `PriceLockup`, `PriceLockup` will automatically wrap all `bottomText` in a `Text` component
+- `FootnoteLink` inherits parent element’s text size and colour
+- Avoid using `FootnoteLink` if there is only one annotation on a page, include it as part of the content
+- Must wrap `FootnoteLink` in a `Text`, `Heading`, or `DisplayHeading` component
+- May be used in `PriceLockup`, see [FootnoteLink within PriceLockup](#footnoteLinkWithPriceLockup)
 
 ```jsx
 <Card>
@@ -14,52 +14,33 @@
   <Paragraph>
     <Text>
       Includes unlimited nationwide calling and 5 voice features.
-      <FootnoteLink number={3} onClick={(number, ref) => {}} copy="en" />
+      <FootnoteLink number={[3, 4]} onClick={(number, ref) => {}} copy="en" />
     </Text>
   </Paragraph>
 </Card>
 ```
 
-#### Within a PriceLockup
+### FootnoteLink and other TDS components
+
+`FootnoteLink` works well with the following TDS components:
+
+- [PriceLockup](#pricelockup)
+- [DisplayHeading](#displayheading)
+- [Heading](#heading)
+- [Text](#text)
 
 ```jsx
-<FlexGrid gutter={false}>
+<FlexGrid>
   <FlexGrid.Row>
-    <FlexGrid.Col xs={5} md={3}>
+    <FlexGrid.Col xs={3}>
       <PriceLockup
         size="medium"
         topText="Starting at"
         price="25"
         rateText="/month"
-        bottomText={
-          <span>
-            $68 /month after 3 months
-            <br />
-            <FootnoteLink number={[1, 2, 3]} onClick={(number, ref) => {}} copy="en" />
-          </span>
-        }
+        bottomText="$68 /month after 3 months"
         signDirection="left"
-      />
-    </FlexGrid.Col>
-
-    <FlexGrid.Col xs={5} md={3} xsOffset={2}>
-      <PriceLockup
-        size="medium"
-        topText="Starting at"
-        price="25"
-        rateText="/month"
-        bottomText={
-          <span>
-            $68 /month after 3 months
-            <br />
-            <FootnoteLink
-              number={[1, 2, 3, 7, 8, 10, 19]}
-              onClick={(number, ref) => {}}
-              copy="en"
-            />
-          </span>
-        }
-        signDirection="left"
+        footnoteLinks={<FootnoteLink number={[1, 2, 3]} onClick={(number, ref) => {}} copy="en" />}
       />
     </FlexGrid.Col>
   </FlexGrid.Row>
