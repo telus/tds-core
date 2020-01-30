@@ -4,9 +4,10 @@ import React from 'react'
 import { Cartesian } from '@compositor/kit'
 
 import PriceLockup from '../../../packages/PriceLockup'
+import FootnoteLink from '../../../packages/TermsAndConditions/FootnoteLink/FootnoteLink'
 
 const CartesianPriceLockup = props => (
-  <div style={{ width: '25%' }}>
+  <div style={{ width: '10%' }}>
     <PriceLockup {...props} />
   </div>
 )
@@ -21,6 +22,7 @@ const PriceLockupContainer = () => (
       bottomText={[undefined, 'on a 2-year plan']}
       rateText={[undefined, 'per month']}
       price="29"
+      footnoteLinks={[undefined, <FootnoteLink number={[1, 2, 3]} copy="en" onClick={() => {}} />]}
     />
   </div>
 )
