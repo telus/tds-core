@@ -84,6 +84,7 @@ div.c2 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
+  width: 100%;
 }
 
 div.c1 {
