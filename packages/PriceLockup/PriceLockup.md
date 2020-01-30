@@ -14,6 +14,18 @@
 
 ```jsx
 <PriceLockup
+  size="small"
+  topText="Starting at"
+  price="25"
+  signDirection="left"
+  rateText="/month"
+  bottomText="On a 2-year Easy Share Premium Plus Plan"
+  footnoteLinks={<FootnoteLink number={[7, 8]} onClick={(number, ref) => {}} copy="en" />}
+/>
+```
+
+```jsx
+<PriceLockup
   size="medium"
   topText="Starting at"
   price="25"
@@ -27,4 +39,56 @@
 
 ```jsx
 <PriceLockup size="medium" topText="À partir de :" price="25" signDirection="right" />
+```
+
+### <a name="footnoteLinkWithPriceLockup">PriceLockup with FootnoteLink</a>
+
+Usage criteria:
+
+- Display `FootnoteLink` at the end of `rateText` or `bottomText`
+- Group multiple `FootnoteLinks` together so that they:
+  - Display in the same line as the `rateText` or `bottomText` when there’s available space,
+  - Or display below `rateText` or `bottomText`, whichever is the last element
+- Must not display `FootnoteLinks` in both the the `rateText` and `bottomText`
+- The coded component can receive `FootnoteLinks` and position them automatically for you
+
+```jsx
+<PriceLockup
+  size="medium"
+  topText="Starting at"
+  price="25"
+  rateText="/month"
+  signDirection="left"
+  footnoteLinks={<FootnoteLink number={[1, 2, 3]} onClick={(number, ref) => {}} copy="en" />}
+/>
+```
+
+```jsx
+<PriceLockup
+  size="medium"
+  topText="Starting at"
+  price="25"
+  rateText="/month"
+  bottomText="$68 /month after 3 months"
+  signDirection="left"
+  footnoteLinks={<FootnoteLink number={[1, 2, 3]} onClick={(number, ref) => {}} copy="en" />}
+/>
+```
+
+```jsx
+<FlexGrid>
+  <FlexGrid.Row>
+    <FlexGrid.Col xs={3}>
+      <PriceLockup
+        size="medium"
+        topText="Starting at"
+        price="25"
+        rateText="/month"
+        bottomText="$68 /month after 3 months"
+        signDirection="left"
+        footnoteLinks={<FootnoteLink number={[1, 2, 3]} onClick={(number, ref) => {}} copy="en" />}
+      />
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
 ```

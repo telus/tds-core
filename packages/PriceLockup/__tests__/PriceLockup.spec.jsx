@@ -1,6 +1,9 @@
 import React from 'react'
 import { shallow, mount, render } from 'enzyme'
 import HairlineDivider from '@tds/core-hairline-divider'
+
+import FootnoteLink from '../../TermsAndConditions/FootnoteLink/FootnoteLink'
+
 import PriceLockup from '../PriceLockup'
 
 const defaultProps = {
@@ -80,6 +83,26 @@ describe('PriceLockup', () => {
     const priceLockup = doShallow({ size: 'medium', bottomText: 'text' })
     it('when rateText, bottomText, and size prop is medium available', () => {
       expect(priceLockup.find(HairlineDivider)).toExist()
+    })
+  })
+
+  describe('FootnoteLinks', () => {
+    it('renders next to rateText with rateText is provided', () => {
+      const priceLockup = doMount({
+        size: 'medium',
+        rateText: '/month',
+        footnoteLinks: <FootnoteLink copy="en" number={3} onClick={() => {}} />,
+      })
+      expect(priceLockup).toMatchSnapshot()
+    })
+
+    it('renders next to bottomText when bottomText is provided, regardless of rateText', () => {
+      const priceLockup = doMount({
+        size: 'medium',
+        rateText: '/month',
+        footnoteLinks: <FootnoteLink copy="en" number={3} onClick={() => {}} />,
+      })
+      expect(priceLockup).toMatchSnapshot()
     })
   })
 })
