@@ -21,6 +21,7 @@ const StyledGrid = styled(({ reverseLevel, limitWidth, ...rest }) => <Grid {...r
     display: 'flex',
     flexWrap: 'wrap',
     margin: '0 auto',
+    width: '100%',
     'div&': { padding: 0 },
     ...media.until('sm').css({
       flexDirection: reverseLevel[0] ? 'column-reverse' : 'column',
