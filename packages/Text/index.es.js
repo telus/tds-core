@@ -1,3 +1,4 @@
-import Text from './dist/index.es'
+import Text, { StyledText } from './dist/index.es'
 
+export { StyledText }
 export default Text
