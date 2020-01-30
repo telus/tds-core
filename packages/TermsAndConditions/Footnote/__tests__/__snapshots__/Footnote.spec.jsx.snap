@@ -74,6 +74,7 @@ div.c6 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
+  width: 100%;
 }
 
 div.c5 {
@@ -539,6 +540,7 @@ div.c6 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
+  width: 100%;
 }
 
 div.c5 {
