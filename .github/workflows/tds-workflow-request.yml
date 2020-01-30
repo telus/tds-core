@@ -1,0 +1,18 @@
+name: TDS Workflow Request
+on: [repository_dispatch]
+
+jobs:
+  lint:
+    name: Lint Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@v1
+      - name: Setup Node 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Bootstrap
+        run: npm ci && npx lerna bootstrap --hoist && npm run build -- --all
+      - name: Run Lint Tests
+        run: npm run lint
