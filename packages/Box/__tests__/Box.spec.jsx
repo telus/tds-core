@@ -68,6 +68,24 @@ describe('Box', () => {
     expect(box).toMatchSnapshot()
   })
 
+  it('can forwards refs', () => {
+    const ref = React.createRef()
+    const box = mount(
+      <>
+        <Box ref={ref}>Box</Box>
+      </>
+    )
+
+    const target = box
+      .find('Box')
+      .at(0)
+      .find('StyledComponent')
+      .childAt(0)
+      .instance()
+
+    expect(target).toEqual(ref.current)
+  })
+
   describe('insets', () => {
     it('can be equal on all sides', () => {
       const box = doMount({ inset: 3 })
