@@ -3826,6 +3826,8 @@ exports[`Radio must have a label 1`] = `
           </Radio__FakeRadio>
           <Styled(Box)
             between={2}
+            inline={false}
+            tag="div"
           >
             <StyledComponent
               between={2}
@@ -3841,17 +3843,65 @@ exports[`Radio must have a label 1`] = `
                       "width: 100%;",
                     ],
                   },
+                  "defaultProps": Object {
+                    "below": undefined,
+                    "between": undefined,
+                    "className": undefined,
+                    "horizontal": undefined,
+                    "inline": false,
+                    "inset": undefined,
+                    "tag": "div",
+                    "vertical": undefined,
+                  },
                   "displayName": "Styled(Box)",
                   "foldedComponentIds": Array [],
+                  "propTypes": Object {
+                    "below": [Function],
+                    "between": [Function],
+                    "children": [Function],
+                    "className": [Function],
+                    "horizontal": [Function],
+                    "inline": [Function],
+                    "inset": [Function],
+                    "tag": [Function],
+                    "vertical": [Function],
+                  },
                   "render": [Function],
                   "styledComponentId": "sc-htpNat",
-                  "target": [Function],
+                  "target": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "defaultProps": Object {
+                      "below": undefined,
+                      "between": undefined,
+                      "className": undefined,
+                      "horizontal": undefined,
+                      "inline": false,
+                      "inset": undefined,
+                      "tag": "div",
+                      "vertical": undefined,
+                    },
+                    "displayName": "Box",
+                    "propTypes": Object {
+                      "below": [Function],
+                      "between": [Function],
+                      "children": [Function],
+                      "className": [Function],
+                      "horizontal": [Function],
+                      "inline": [Function],
+                      "inset": [Function],
+                      "tag": [Function],
+                      "vertical": [Function],
+                    },
+                    "render": [Function],
+                  },
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
                 }
               }
               forwardedRef={null}
+              inline={false}
+              tag="div"
             >
               <Box
                 between={2}

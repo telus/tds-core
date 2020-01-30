@@ -1387,6 +1387,7 @@ div.c14 {
                                               <Styled(Box)
                                                 between={3}
                                                 inline={true}
+                                                tag="div"
                                                 vertical={3}
                                               >
                                                 <StyledComponent
@@ -1403,11 +1404,57 @@ div.c14 {
                                                           "align-items: center;",
                                                         ],
                                                       },
+                                                      "defaultProps": Object {
+                                                        "below": undefined,
+                                                        "between": undefined,
+                                                        "className": undefined,
+                                                        "horizontal": undefined,
+                                                        "inline": false,
+                                                        "inset": undefined,
+                                                        "tag": "div",
+                                                        "vertical": undefined,
+                                                      },
                                                       "displayName": "Styled(Box)",
                                                       "foldedComponentIds": Array [],
+                                                      "propTypes": Object {
+                                                        "below": [Function],
+                                                        "between": [Function],
+                                                        "children": [Function],
+                                                        "className": [Function],
+                                                        "horizontal": [Function],
+                                                        "inline": [Function],
+                                                        "inset": [Function],
+                                                        "tag": [Function],
+                                                        "vertical": [Function],
+                                                      },
                                                       "render": [Function],
                                                       "styledComponentId": "sc-bZQynM",
-                                                      "target": [Function],
+                                                      "target": Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "defaultProps": Object {
+                                                          "below": undefined,
+                                                          "between": undefined,
+                                                          "className": undefined,
+                                                          "horizontal": undefined,
+                                                          "inline": false,
+                                                          "inset": undefined,
+                                                          "tag": "div",
+                                                          "vertical": undefined,
+                                                        },
+                                                        "displayName": "Box",
+                                                        "propTypes": Object {
+                                                          "below": [Function],
+                                                          "between": [Function],
+                                                          "children": [Function],
+                                                          "className": [Function],
+                                                          "horizontal": [Function],
+                                                          "inline": [Function],
+                                                          "inset": [Function],
+                                                          "tag": [Function],
+                                                          "vertical": [Function],
+                                                        },
+                                                        "render": [Function],
+                                                      },
                                                       "toString": [Function],
                                                       "warnTooManyClasses": [Function],
                                                       "withComponent": [Function],
@@ -1415,6 +1462,7 @@ div.c14 {
                                                   }
                                                   forwardedRef={null}
                                                   inline={true}
+                                                  tag="div"
                                                   vertical={3}
                                                 >
                                                   <Box
@@ -2382,11 +2430,57 @@ div.c14 {
                                                                           [Function],
                                                                         ],
                                                                       },
+                                                                      "defaultProps": Object {
+                                                                        "below": undefined,
+                                                                        "between": undefined,
+                                                                        "className": undefined,
+                                                                        "horizontal": undefined,
+                                                                        "inline": false,
+                                                                        "inset": undefined,
+                                                                        "tag": "div",
+                                                                        "vertical": undefined,
+                                                                      },
                                                                       "displayName": "Styled(Box)",
                                                                       "foldedComponentIds": Array [],
+                                                                      "propTypes": Object {
+                                                                        "below": [Function],
+                                                                        "between": [Function],
+                                                                        "children": [Function],
+                                                                        "className": [Function],
+                                                                        "horizontal": [Function],
+                                                                        "inline": [Function],
+                                                                        "inset": [Function],
+                                                                        "tag": [Function],
+                                                                        "vertical": [Function],
+                                                                      },
                                                                       "render": [Function],
                                                                       "styledComponentId": "sc-ifAKCX",
-                                                                      "target": [Function],
+                                                                      "target": Object {
+                                                                        "$$typeof": Symbol(react.forward_ref),
+                                                                        "defaultProps": Object {
+                                                                          "below": undefined,
+                                                                          "between": undefined,
+                                                                          "className": undefined,
+                                                                          "horizontal": undefined,
+                                                                          "inline": false,
+                                                                          "inset": undefined,
+                                                                          "tag": "div",
+                                                                          "vertical": undefined,
+                                                                        },
+                                                                        "displayName": "Box",
+                                                                        "propTypes": Object {
+                                                                          "below": [Function],
+                                                                          "between": [Function],
+                                                                          "children": [Function],
+                                                                          "className": [Function],
+                                                                          "horizontal": [Function],
+                                                                          "inline": [Function],
+                                                                          "inset": [Function],
+                                                                          "tag": [Function],
+                                                                          "vertical": [Function],
+                                                                        },
+                                                                        "render": [Function],
+                                                                      },
                                                                       "toString": [Function],
                                                                       "warnTooManyClasses": [Function],
                                                                       "withComponent": [Function],
@@ -2397,6 +2491,7 @@ div.c14 {
                                                                   <Styled(Box)
                                                                     below={4}
                                                                     between={3}
+                                                                    inline={false}
                                                                     size="small"
                                                                     tag="ol"
                                                                     type="indexed"
@@ -2425,17 +2520,64 @@ div.c14 {
                                                                               [Function],
                                                                             ],
                                                                           },
+                                                                          "defaultProps": Object {
+                                                                            "below": undefined,
+                                                                            "between": undefined,
+                                                                            "className": undefined,
+                                                                            "horizontal": undefined,
+                                                                            "inline": false,
+                                                                            "inset": undefined,
+                                                                            "tag": "div",
+                                                                            "vertical": undefined,
+                                                                          },
                                                                           "displayName": "Styled(Box)",
                                                                           "foldedComponentIds": Array [],
+                                                                          "propTypes": Object {
+                                                                            "below": [Function],
+                                                                            "between": [Function],
+                                                                            "children": [Function],
+                                                                            "className": [Function],
+                                                                            "horizontal": [Function],
+                                                                            "inline": [Function],
+                                                                            "inset": [Function],
+                                                                            "tag": [Function],
+                                                                            "vertical": [Function],
+                                                                          },
                                                                           "render": [Function],
                                                                           "styledComponentId": "sc-ifAKCX",
-                                                                          "target": [Function],
+                                                                          "target": Object {
+                                                                            "$$typeof": Symbol(react.forward_ref),
+                                                                            "defaultProps": Object {
+                                                                              "below": undefined,
+                                                                              "between": undefined,
+                                                                              "className": undefined,
+                                                                              "horizontal": undefined,
+                                                                              "inline": false,
+                                                                              "inset": undefined,
+                                                                              "tag": "div",
+                                                                              "vertical": undefined,
+                                                                            },
+                                                                            "displayName": "Box",
+                                                                            "propTypes": Object {
+                                                                              "below": [Function],
+                                                                              "between": [Function],
+                                                                              "children": [Function],
+                                                                              "className": [Function],
+                                                                              "horizontal": [Function],
+                                                                              "inline": [Function],
+                                                                              "inset": [Function],
+                                                                              "tag": [Function],
+                                                                              "vertical": [Function],
+                                                                            },
+                                                                            "render": [Function],
+                                                                          },
                                                                           "toString": [Function],
                                                                           "warnTooManyClasses": [Function],
                                                                           "withComponent": [Function],
                                                                         }
                                                                       }
                                                                       forwardedRef={null}
+                                                                      inline={false}
                                                                       size="small"
                                                                       tag="ol"
                                                                       type="indexed"
@@ -3629,6 +3771,7 @@ div.c14 {
                                               <Styled(Box)
                                                 between={3}
                                                 inline={true}
+                                                tag="div"
                                                 vertical={3}
                                               >
                                                 <StyledComponent
@@ -3645,11 +3788,57 @@ div.c14 {
                                                           "align-items: center;",
                                                         ],
                                                       },
+                                                      "defaultProps": Object {
+                                                        "below": undefined,
+                                                        "between": undefined,
+                                                        "className": undefined,
+                                                        "horizontal": undefined,
+                                                        "inline": false,
+                                                        "inset": undefined,
+                                                        "tag": "div",
+                                                        "vertical": undefined,
+                                                      },
                                                       "displayName": "Styled(Box)",
                                                       "foldedComponentIds": Array [],
+                                                      "propTypes": Object {
+                                                        "below": [Function],
+                                                        "between": [Function],
+                                                        "children": [Function],
+                                                        "className": [Function],
+                                                        "horizontal": [Function],
+                                                        "inline": [Function],
+                                                        "inset": [Function],
+                                                        "tag": [Function],
+                                                        "vertical": [Function],
+                                                      },
                                                       "render": [Function],
                                                       "styledComponentId": "sc-bZQynM",
-                                                      "target": [Function],
+                                                      "target": Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "defaultProps": Object {
+                                                          "below": undefined,
+                                                          "between": undefined,
+                                                          "className": undefined,
+                                                          "horizontal": undefined,
+                                                          "inline": false,
+                                                          "inset": undefined,
+                                                          "tag": "div",
+                                                          "vertical": undefined,
+                                                        },
+                                                        "displayName": "Box",
+                                                        "propTypes": Object {
+                                                          "below": [Function],
+                                                          "between": [Function],
+                                                          "children": [Function],
+                                                          "className": [Function],
+                                                          "horizontal": [Function],
+                                                          "inline": [Function],
+                                                          "inset": [Function],
+                                                          "tag": [Function],
+                                                          "vertical": [Function],
+                                                        },
+                                                        "render": [Function],
+                                                      },
                                                       "toString": [Function],
                                                       "warnTooManyClasses": [Function],
                                                       "withComponent": [Function],
@@ -3657,6 +3846,7 @@ div.c14 {
                                                   }
                                                   forwardedRef={null}
                                                   inline={true}
+                                                  tag="div"
                                                   vertical={3}
                                                 >
                                                   <Box
@@ -4624,11 +4814,57 @@ div.c14 {
                                                                           [Function],
                                                                         ],
                                                                       },
+                                                                      "defaultProps": Object {
+                                                                        "below": undefined,
+                                                                        "between": undefined,
+                                                                        "className": undefined,
+                                                                        "horizontal": undefined,
+                                                                        "inline": false,
+                                                                        "inset": undefined,
+                                                                        "tag": "div",
+                                                                        "vertical": undefined,
+                                                                      },
                                                                       "displayName": "Styled(Box)",
                                                                       "foldedComponentIds": Array [],
+                                                                      "propTypes": Object {
+                                                                        "below": [Function],
+                                                                        "between": [Function],
+                                                                        "children": [Function],
+                                                                        "className": [Function],
+                                                                        "horizontal": [Function],
+                                                                        "inline": [Function],
+                                                                        "inset": [Function],
+                                                                        "tag": [Function],
+                                                                        "vertical": [Function],
+                                                                      },
                                                                       "render": [Function],
                                                                       "styledComponentId": "sc-ifAKCX",
-                                                                      "target": [Function],
+                                                                      "target": Object {
+                                                                        "$$typeof": Symbol(react.forward_ref),
+                                                                        "defaultProps": Object {
+                                                                          "below": undefined,
+                                                                          "between": undefined,
+                                                                          "className": undefined,
+                                                                          "horizontal": undefined,
+                                                                          "inline": false,
+                                                                          "inset": undefined,
+                                                                          "tag": "div",
+                                                                          "vertical": undefined,
+                                                                        },
+                                                                        "displayName": "Box",
+                                                                        "propTypes": Object {
+                                                                          "below": [Function],
+                                                                          "between": [Function],
+                                                                          "children": [Function],
+                                                                          "className": [Function],
+                                                                          "horizontal": [Function],
+                                                                          "inline": [Function],
+                                                                          "inset": [Function],
+                                                                          "tag": [Function],
+                                                                          "vertical": [Function],
+                                                                        },
+                                                                        "render": [Function],
+                                                                      },
                                                                       "toString": [Function],
                                                                       "warnTooManyClasses": [Function],
                                                                       "withComponent": [Function],
@@ -4639,6 +4875,7 @@ div.c14 {
                                                                   <Styled(Box)
                                                                     below={4}
                                                                     between={3}
+                                                                    inline={false}
                                                                     size="small"
                                                                     tag="ol"
                                                                     type="indexed"
@@ -4667,17 +4904,64 @@ div.c14 {
                                                                               [Function],
                                                                             ],
                                                                           },
+                                                                          "defaultProps": Object {
+                                                                            "below": undefined,
+                                                                            "between": undefined,
+                                                                            "className": undefined,
+                                                                            "horizontal": undefined,
+                                                                            "inline": false,
+                                                                            "inset": undefined,
+                                                                            "tag": "div",
+                                                                            "vertical": undefined,
+                                                                          },
                                                                           "displayName": "Styled(Box)",
                                                                           "foldedComponentIds": Array [],
+                                                                          "propTypes": Object {
+                                                                            "below": [Function],
+                                                                            "between": [Function],
+                                                                            "children": [Function],
+                                                                            "className": [Function],
+                                                                            "horizontal": [Function],
+                                                                            "inline": [Function],
+                                                                            "inset": [Function],
+                                                                            "tag": [Function],
+                                                                            "vertical": [Function],
+                                                                          },
                                                                           "render": [Function],
                                                                           "styledComponentId": "sc-ifAKCX",
-                                                                          "target": [Function],
+                                                                          "target": Object {
+                                                                            "$$typeof": Symbol(react.forward_ref),
+                                                                            "defaultProps": Object {
+                                                                              "below": undefined,
+                                                                              "between": undefined,
+                                                                              "className": undefined,
+                                                                              "horizontal": undefined,
+                                                                              "inline": false,
+                                                                              "inset": undefined,
+                                                                              "tag": "div",
+                                                                              "vertical": undefined,
+                                                                            },
+                                                                            "displayName": "Box",
+                                                                            "propTypes": Object {
+                                                                              "below": [Function],
+                                                                              "between": [Function],
+                                                                              "children": [Function],
+                                                                              "className": [Function],
+                                                                              "horizontal": [Function],
+                                                                              "inline": [Function],
+                                                                              "inset": [Function],
+                                                                              "tag": [Function],
+                                                                              "vertical": [Function],
+                                                                            },
+                                                                            "render": [Function],
+                                                                          },
                                                                           "toString": [Function],
                                                                           "warnTooManyClasses": [Function],
                                                                           "withComponent": [Function],
                                                                         }
                                                                       }
                                                                       forwardedRef={null}
+                                                                      inline={false}
                                                                       size="small"
                                                                       tag="ol"
                                                                       type="indexed"
@@ -5375,11 +5659,57 @@ div.c14 {
                                                                                   [Function],
                                                                                 ],
                                                                               },
+                                                                              "defaultProps": Object {
+                                                                                "below": undefined,
+                                                                                "between": undefined,
+                                                                                "className": undefined,
+                                                                                "horizontal": undefined,
+                                                                                "inline": false,
+                                                                                "inset": undefined,
+                                                                                "tag": "div",
+                                                                                "vertical": undefined,
+                                                                              },
                                                                               "displayName": "Styled(Box)",
                                                                               "foldedComponentIds": Array [],
+                                                                              "propTypes": Object {
+                                                                                "below": [Function],
+                                                                                "between": [Function],
+                                                                                "children": [Function],
+                                                                                "className": [Function],
+                                                                                "horizontal": [Function],
+                                                                                "inline": [Function],
+                                                                                "inset": [Function],
+                                                                                "tag": [Function],
+                                                                                "vertical": [Function],
+                                                                              },
                                                                               "render": [Function],
                                                                               "styledComponentId": "sc-ifAKCX",
-                                                                              "target": [Function],
+                                                                              "target": Object {
+                                                                                "$$typeof": Symbol(react.forward_ref),
+                                                                                "defaultProps": Object {
+                                                                                  "below": undefined,
+                                                                                  "between": undefined,
+                                                                                  "className": undefined,
+                                                                                  "horizontal": undefined,
+                                                                                  "inline": false,
+                                                                                  "inset": undefined,
+                                                                                  "tag": "div",
+                                                                                  "vertical": undefined,
+                                                                                },
+                                                                                "displayName": "Box",
+                                                                                "propTypes": Object {
+                                                                                  "below": [Function],
+                                                                                  "between": [Function],
+                                                                                  "children": [Function],
+                                                                                  "className": [Function],
+                                                                                  "horizontal": [Function],
+                                                                                  "inline": [Function],
+                                                                                  "inset": [Function],
+                                                                                  "tag": [Function],
+                                                                                  "vertical": [Function],
+                                                                                },
+                                                                                "render": [Function],
+                                                                              },
                                                                               "toString": [Function],
                                                                               "warnTooManyClasses": [Function],
                                                                               "withComponent": [Function],
@@ -5390,6 +5720,7 @@ div.c14 {
                                                                           <Styled(Box)
                                                                             below={4}
                                                                             between={3}
+                                                                            inline={false}
                                                                             size="small"
                                                                             tag="ul"
                                                                             type="nonIndexed"
@@ -5418,17 +5749,64 @@ div.c14 {
                                                                                       [Function],
                                                                                     ],
                                                                                   },
+                                                                                  "defaultProps": Object {
+                                                                                    "below": undefined,
+                                                                                    "between": undefined,
+                                                                                    "className": undefined,
+                                                                                    "horizontal": undefined,
+                                                                                    "inline": false,
+                                                                                    "inset": undefined,
+                                                                                    "tag": "div",
+                                                                                    "vertical": undefined,
+                                                                                  },
                                                                                   "displayName": "Styled(Box)",
                                                                                   "foldedComponentIds": Array [],
+                                                                                  "propTypes": Object {
+                                                                                    "below": [Function],
+                                                                                    "between": [Function],
+                                                                                    "children": [Function],
+                                                                                    "className": [Function],
+                                                                                    "horizontal": [Function],
+                                                                                    "inline": [Function],
+                                                                                    "inset": [Function],
+                                                                                    "tag": [Function],
+                                                                                    "vertical": [Function],
+                                                                                  },
                                                                                   "render": [Function],
                                                                                   "styledComponentId": "sc-ifAKCX",
-                                                                                  "target": [Function],
+                                                                                  "target": Object {
+                                                                                    "$$typeof": Symbol(react.forward_ref),
+                                                                                    "defaultProps": Object {
+                                                                                      "below": undefined,
+                                                                                      "between": undefined,
+                                                                                      "className": undefined,
+                                                                                      "horizontal": undefined,
+                                                                                      "inline": false,
+                                                                                      "inset": undefined,
+                                                                                      "tag": "div",
+                                                                                      "vertical": undefined,
+                                                                                    },
+                                                                                    "displayName": "Box",
+                                                                                    "propTypes": Object {
+                                                                                      "below": [Function],
+                                                                                      "between": [Function],
+                                                                                      "children": [Function],
+                                                                                      "className": [Function],
+                                                                                      "horizontal": [Function],
+                                                                                      "inline": [Function],
+                                                                                      "inset": [Function],
+                                                                                      "tag": [Function],
+                                                                                      "vertical": [Function],
+                                                                                    },
+                                                                                    "render": [Function],
+                                                                                  },
                                                                                   "toString": [Function],
                                                                                   "warnTooManyClasses": [Function],
                                                                                   "withComponent": [Function],
                                                                                 }
                                                                               }
                                                                               forwardedRef={null}
+                                                                              inline={false}
                                                                               size="small"
                                                                               tag="ul"
                                                                               type="nonIndexed"
@@ -6532,6 +6910,7 @@ div.c14 {
                                               <Styled(Box)
                                                 between={3}
                                                 inline={true}
+                                                tag="div"
                                                 vertical={3}
                                               >
                                                 <StyledComponent
@@ -6548,11 +6927,57 @@ div.c14 {
                                                           "align-items: center;",
                                                         ],
                                                       },
+                                                      "defaultProps": Object {
+                                                        "below": undefined,
+                                                        "between": undefined,
+                                                        "className": undefined,
+                                                        "horizontal": undefined,
+                                                        "inline": false,
+                                                        "inset": undefined,
+                                                        "tag": "div",
+                                                        "vertical": undefined,
+                                                      },
                                                       "displayName": "Styled(Box)",
                                                       "foldedComponentIds": Array [],
+                                                      "propTypes": Object {
+                                                        "below": [Function],
+                                                        "between": [Function],
+                                                        "children": [Function],
+                                                        "className": [Function],
+                                                        "horizontal": [Function],
+                                                        "inline": [Function],
+                                                        "inset": [Function],
+                                                        "tag": [Function],
+                                                        "vertical": [Function],
+                                                      },
                                                       "render": [Function],
                                                       "styledComponentId": "sc-bZQynM",
-                                                      "target": [Function],
+                                                      "target": Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "defaultProps": Object {
+                                                          "below": undefined,
+                                                          "between": undefined,
+                                                          "className": undefined,
+                                                          "horizontal": undefined,
+                                                          "inline": false,
+                                                          "inset": undefined,
+                                                          "tag": "div",
+                                                          "vertical": undefined,
+                                                        },
+                                                        "displayName": "Box",
+                                                        "propTypes": Object {
+                                                          "below": [Function],
+                                                          "between": [Function],
+                                                          "children": [Function],
+                                                          "className": [Function],
+                                                          "horizontal": [Function],
+                                                          "inline": [Function],
+                                                          "inset": [Function],
+                                                          "tag": [Function],
+                                                          "vertical": [Function],
+                                                        },
+                                                        "render": [Function],
+                                                      },
                                                       "toString": [Function],
                                                       "warnTooManyClasses": [Function],
                                                       "withComponent": [Function],
@@ -6560,6 +6985,7 @@ div.c14 {
                                                   }
                                                   forwardedRef={null}
                                                   inline={true}
+                                                  tag="div"
                                                   vertical={3}
                                                 >
                                                   <Box
@@ -7574,11 +8000,57 @@ div.c14 {
                                                                                   [Function],
                                                                                 ],
                                                                               },
+                                                                              "defaultProps": Object {
+                                                                                "below": undefined,
+                                                                                "between": undefined,
+                                                                                "className": undefined,
+                                                                                "horizontal": undefined,
+                                                                                "inline": false,
+                                                                                "inset": undefined,
+                                                                                "tag": "div",
+                                                                                "vertical": undefined,
+                                                                              },
                                                                               "displayName": "Styled(Box)",
                                                                               "foldedComponentIds": Array [],
+                                                                              "propTypes": Object {
+                                                                                "below": [Function],
+                                                                                "between": [Function],
+                                                                                "children": [Function],
+                                                                                "className": [Function],
+                                                                                "horizontal": [Function],
+                                                                                "inline": [Function],
+                                                                                "inset": [Function],
+                                                                                "tag": [Function],
+                                                                                "vertical": [Function],
+                                                                              },
                                                                               "render": [Function],
                                                                               "styledComponentId": "sc-ifAKCX",
-                                                                              "target": [Function],
+                                                                              "target": Object {
+                                                                                "$$typeof": Symbol(react.forward_ref),
+                                                                                "defaultProps": Object {
+                                                                                  "below": undefined,
+                                                                                  "between": undefined,
+                                                                                  "className": undefined,
+                                                                                  "horizontal": undefined,
+                                                                                  "inline": false,
+                                                                                  "inset": undefined,
+                                                                                  "tag": "div",
+                                                                                  "vertical": undefined,
+                                                                                },
+                                                                                "displayName": "Box",
+                                                                                "propTypes": Object {
+                                                                                  "below": [Function],
+                                                                                  "between": [Function],
+                                                                                  "children": [Function],
+                                                                                  "className": [Function],
+                                                                                  "horizontal": [Function],
+                                                                                  "inline": [Function],
+                                                                                  "inset": [Function],
+                                                                                  "tag": [Function],
+                                                                                  "vertical": [Function],
+                                                                                },
+                                                                                "render": [Function],
+                                                                              },
                                                                               "toString": [Function],
                                                                               "warnTooManyClasses": [Function],
                                                                               "withComponent": [Function],
@@ -7589,6 +8061,7 @@ div.c14 {
                                                                           <Styled(Box)
                                                                             below={4}
                                                                             between={3}
+                                                                            inline={false}
                                                                             size="small"
                                                                             tag="ul"
                                                                             type="nonIndexed"
@@ -7617,17 +8090,64 @@ div.c14 {
                                                                                       [Function],
                                                                                     ],
                                                                                   },
+                                                                                  "defaultProps": Object {
+                                                                                    "below": undefined,
+                                                                                    "between": undefined,
+                                                                                    "className": undefined,
+                                                                                    "horizontal": undefined,
+                                                                                    "inline": false,
+                                                                                    "inset": undefined,
+                                                                                    "tag": "div",
+                                                                                    "vertical": undefined,
+                                                                                  },
                                                                                   "displayName": "Styled(Box)",
                                                                                   "foldedComponentIds": Array [],
+                                                                                  "propTypes": Object {
+                                                                                    "below": [Function],
+                                                                                    "between": [Function],
+                                                                                    "children": [Function],
+                                                                                    "className": [Function],
+                                                                                    "horizontal": [Function],
+                                                                                    "inline": [Function],
+                                                                                    "inset": [Function],
+                                                                                    "tag": [Function],
+                                                                                    "vertical": [Function],
+                                                                                  },
                                                                                   "render": [Function],
                                                                                   "styledComponentId": "sc-ifAKCX",
-                                                                                  "target": [Function],
+                                                                                  "target": Object {
+                                                                                    "$$typeof": Symbol(react.forward_ref),
+                                                                                    "defaultProps": Object {
+                                                                                      "below": undefined,
+                                                                                      "between": undefined,
+                                                                                      "className": undefined,
+                                                                                      "horizontal": undefined,
+                                                                                      "inline": false,
+                                                                                      "inset": undefined,
+                                                                                      "tag": "div",
+                                                                                      "vertical": undefined,
+                                                                                    },
+                                                                                    "displayName": "Box",
+                                                                                    "propTypes": Object {
+                                                                                      "below": [Function],
+                                                                                      "between": [Function],
+                                                                                      "children": [Function],
+                                                                                      "className": [Function],
+                                                                                      "horizontal": [Function],
+                                                                                      "inline": [Function],
+                                                                                      "inset": [Function],
+                                                                                      "tag": [Function],
+                                                                                      "vertical": [Function],
+                                                                                    },
+                                                                                    "render": [Function],
+                                                                                  },
                                                                                   "toString": [Function],
                                                                                   "warnTooManyClasses": [Function],
                                                                                   "withComponent": [Function],
                                                                                 }
                                                                               }
                                                                               forwardedRef={null}
+                                                                              inline={false}
                                                                               size="small"
                                                                               tag="ul"
                                                                               type="nonIndexed"
