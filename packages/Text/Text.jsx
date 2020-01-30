@@ -11,6 +11,7 @@ const textSize = ({ size }) => typography[size]
 const textBold = ({ bold, size }) => (bold ? typography.boldFont : typography[`${size}Font`])
 const textBlock = ({ block }) => (block ? typography.blockText : undefined)
 
+// This named export is not guaranteed to be maintained and may be removed at any time.
 export const StyledText = styled.span(textColor, textInheritColor, textSize, textBold, textBlock, {
   sup: typography.sup,
 })
