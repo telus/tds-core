@@ -12,6 +12,7 @@ const ProfileBold = forwardRef(({ copy, ...props }, ref) => (
     {...props}
     ref={ref}
     a11yText={getCopy(profileBoldCopyDictionary, copy).a11yText}
+    copy={copy} // Passed in to satisfy styleguidist workaround
   >
     <StyledInteractiveIconSVG width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
       <path

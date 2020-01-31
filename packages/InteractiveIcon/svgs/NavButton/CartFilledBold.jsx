@@ -25,6 +25,7 @@ const CartFilledBold = forwardRef(({ copy, variant, numItems, ...props }, ref) =
       ref={ref}
       a11yText={a11yText.replace('%{numItems}', numItems)}
       variant={variant}
+      copy={copy} // Passed in to satisfy styleguidist workaround
     >
       <StyledInteractiveIconSVG width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
         <g fillRule="evenodd">
@@ -46,8 +47,12 @@ CartFilledBold.propTypes = {
       a11yText: PropTypes.string.isRequired,
     }),
   ]).isRequired,
-  variant: PropTypes.oneOf(['default', 'inverted']).isRequired,
+  variant: PropTypes.oneOf(['default', 'inverted']),
   numItems: PropTypes.number.isRequired,
+}
+
+CartFilledBold.defaultProps = {
+  variant: 'default',
 }
 
 CartFilledBold.displayName = 'CartFilledBold'
