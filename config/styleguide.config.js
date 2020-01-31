@@ -120,15 +120,15 @@ module.exports = {
     }
 
     if (name === 'SVGIcon') {
-      return `import { Accessible, Speed, Check, [..IconName] } from '@tds/core-decorative-icon'`
+      return `import { Accessible, Speed, Check, [...IconName] } from '@tds/core-decorative-icon'`
     }
 
     if (name === 'FeedbackIcon') {
-      return `import { Checkmark, Times, NotificationSuccess, [..IconName] } from '@tds/core-feedback-icon'`
+      return `import { Checkmark, Times, NotificationSuccess, [...IconName] } from '@tds/core-feedback-icon'`
     }
 
     if (name === 'Dependent') {
-      return `import { Print, Edit, Profile, [..IconName] } from '@tds/core-interactive-icon'`
+      return `import { Print, Edit, Profile, [...IconName] } from '@tds/core-interactive-icon'`
     }
 
     if (name === 'BenefitWithHeading' || name === 'BenefitNoHeading') {
@@ -142,7 +142,7 @@ module.exports = {
     }
 
     if (name === 'InteractiveButton') {
-      return `import { Add, Subtract, PlayVideo, [..IconName] } from '@tds/core-interactive-icon'`
+      return `import { Add, Subtract, PlayVideo, [...IconName] } from '@tds/core-interactive-icon'`
     }
 
     if (name === 'Limited') {
