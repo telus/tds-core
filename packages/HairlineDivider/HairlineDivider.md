@@ -12,3 +12,10 @@
   <Box vertical={7} />
 </Box>
 ```
+
+### Vertical Sizing
+
+```jsx
+<HairlineDivider vertical={4} />
+<HairlineDivider vertical={{xs: 4, md: 5, lg: 8}} />
+```

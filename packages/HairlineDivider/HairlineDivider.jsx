@@ -5,6 +5,8 @@ import styled from 'styled-components'
 import { borders, spacing } from '@tds/shared-styles'
 import { colorGreyGainsboro } from '@tds/core-colours'
 import { safeRest } from '@tds/util-helpers'
+import Box from '@tds/core-box'
+import { responsiveProps } from '@tds/util-prop-types'
 
 const baseStyle = { transform: 'rotate(-0.00001deg)', flexShrink: 0 }
 
@@ -60,15 +62,31 @@ const StyledHairlineDivider = styled.hr(spacing.noSpacing, borders.none, props =
  *
  * @version ./package.json
  */
-const HairlineDivider = ({ vertical, gradient, ...rest }) => (
-  <StyledHairlineDivider {...safeRest(rest)} vertical={vertical} gradient={gradient} />
-)
+const HairlineDivider = ({ vertical, gradient, ...rest }) => {
+  const hairline = (
+    <StyledHairlineDivider {...safeRest(rest)} vertical={!!vertical} gradient={gradient} />
+  )
+  return (
+    <>
+      {vertical ? (
+        <Box inline={!!vertical} between={!!vertical && 1}>
+          {hairline}
+          <Box inline vertical={typeof vertical !== 'boolean' && vertical}>
+            <></>
+          </Box>
+        </Box>
+      ) : (
+        hairline
+      )}
+    </>
+  )
+}
 
 HairlineDivider.propTypes = {
   /**
-   * Draw the divider vertically.
+   * Draw the divider vertically. Select a number between 1-8 to insert a `Box` of that size. This is used when this is the only item in a container with no defined height.
    */
-  vertical: PropTypes.bool,
+  vertical: responsiveProps(PropTypes.oneOf([1, 2, 3, 4, 5, 6, 7, 8, true, false])),
   /**
    * Use a subtle gradient instead of a solid thin line.
    */
