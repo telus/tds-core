@@ -128,7 +128,7 @@ module.exports = {
       kebabizeName = 'terms-and-conditions'
       return `import { ${name} } from '@tds/core-${kebabizeName}'`
     }
-    
+
     // Icons
     if (name === 'Dependent') {
       return `import { Print, Edit, Profile, [...] } from '@tds/core-interactive-icon'`
@@ -145,7 +145,7 @@ module.exports = {
     if (name === 'NavButton') {
       return `import { CartEmptyBold, [...] } from '@tds/core-interactive-icon'`
     }
-    
+
     if (name === 'SVGIcon') {
       return `import { Accessible, Speed, Check, [...] } from '@tds/core-decorative-icon'`
     }
