@@ -119,18 +119,6 @@ module.exports = {
       return `import { ${name} } from '@tds/core-${kebabizeName}'`
     }
 
-    if (name === 'SVGIcon') {
-      return `import { Accessible, Speed, Check, [...IconName] } from '@tds/core-decorative-icon'`
-    }
-
-    if (name === 'FeedbackIcon') {
-      return `import { Checkmark, Times, NotificationSuccess, [...IconName] } from '@tds/core-feedback-icon'`
-    }
-
-    if (name === 'Dependent') {
-      return `import { Print, Edit, Profile, [...IconName] } from '@tds/core-interactive-icon'`
-    }
-
     if (name === 'BenefitWithHeading' || name === 'BenefitNoHeading') {
       kebabizeName = 'benefit'
       return `import { ${name} } from '@tds/core-${kebabizeName}'`
@@ -140,17 +128,30 @@ module.exports = {
       kebabizeName = 'terms-and-conditions'
       return `import { ${name} } from '@tds/core-${kebabizeName}'`
     }
+    
+    // Icons
+    if (name === 'Dependent') {
+      return `import { Print, Edit, Profile, [...] } from '@tds/core-interactive-icon'`
+    }
 
     if (name === 'InteractiveButton') {
-      return `import { Add, Subtract, PlayVideo, [...IconName] } from '@tds/core-interactive-icon'`
+      return `import { Add, Subtract, PlayVideo, [...] } from '@tds/core-interactive-icon'`
     }
 
     if (name === 'Limited') {
-      return `import { CaretUp, ChevronRight, [...IconName] } from '@tds/core-interactive-icon'`
+      return `import { CaretUp, ChevronRight, [...] } from '@tds/core-interactive-icon'`
     }
 
     if (name === 'NavButton') {
-      return `import { CartEmptyBold, [...IconName] } from '@tds/core-interactive-icon'`
+      return `import { CartEmptyBold, [...] } from '@tds/core-interactive-icon'`
+    }
+    
+    if (name === 'SVGIcon') {
+      return `import { Accessible, Speed, Check, [...] } from '@tds/core-decorative-icon'`
+    }
+
+    if (name === 'FeedbackIcon') {
+      return `import { Checkmark, Times, NotificationSuccess, [...] } from '@tds/core-feedback-icon'`
     }
 
     return `import ${name} from '@tds/core-${kebabizeName}'`
