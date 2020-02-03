@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-image",
-  "version": "2.0.19",
+  "version": "2.0.20",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@tds/shared-styles": "^1.5.2",
-    "@tds/util-helpers": "^1.4.1",
+    "@tds/util-helpers": "^1.4.2",
     "prop-types": "^15.5.10"
   }
 }

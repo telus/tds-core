@@ -1,6 +1,6 @@
 {
   "name": "@tds/util-helpers",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "TDS helpers",
   "main": "index.cjs.js",
   "module": "index.es.js",
