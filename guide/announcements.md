@@ -2,6 +2,8 @@
 
 Welcome to the TDS Announcement Board! Check back here regularly for the latest updates on TDS!
 
+- [January 2020](#january-2020)
+- [December 2019](#december-2019)
 - [November 2019](#november-2019)
 - [October 2019](#october-2019)
 - [September 2019](#september-2019)
@@ -16,6 +18,120 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 - [December 2018](#december-2018)
 
 <hr/>
+
+## January 2020
+
+### DSM Updates
+
+**v2.3.11**
+
+- The Success icon has been deprecated and the Check icon should be used instead
+- You can now change the inner padding of Card for various contexts.
+
+**v2.3.10**
+
+New Dependent Icons (Interactive Icons)
+- Each icon has a recommendation for purposeful use
+- Must depend on other interactive components (such as Link (with icons))
+- Available in Link (with icons) component
+- Don’t use decoratively
+
+Updated Link (Link with icons)
+- Available in TDS Core DSM Library v2.3.10
+- Switch between sizes/styles (default/inverted) before applying overrides. For optimal use, import LinkIcon (selected size or style), then apply overrides
+- Available in @tds/core-link@2.2.0
+
+Removed “Links” folder and moved “Link, LinkIcon, and ChevronLink” to the root “Components” folder
+
+**v2.3**
+
+Updated NavButton (Interactive Icons)
+- Updated CartFilled icon to have a more accessible indicator
+- Updated interactive states for inverted NavButton (hover, active, focus, focus and active); designs are more accessible and aligned with art direction
+
+Removed SB Blocks from TDS-Core Library 
+- Designers who use DSM to mock-up designs using Layout Grids (with components, or block templates) there is now a . [Site Builder DSM library] (https://telus.invisionapp.com/dsm/telus/site-builder)
+- It will be maintained by the EPT designers: Marie and Phil [Full announcement here] (https://telusdigital.slack.com/archives/C08K0G798/p1578587471000200)
+
+
+
+### New TDS Core Features 🎁
+
+**InteractiveIcon 1.4.0**
+- New Dependent Icons (Interactive Icons)
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-interactive-icon%401.4.0)
+- [Docs](https://tds.telus.com/components/index.html#!/Dependent)
+
+**Link 2.2.0**
+- Updated link with icons
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-link%402.2.0)
+- [Docs](https://tds.telus.com/components/index.html#!/Link)
+
+**Notification v3.0.11**
+- Added spacing between text and dismiss button
+- You should not allow error or warning notifications to be dismissible, and a console warning will be thrown if you do
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-notification%403.0.11)
+- [Docs](https://tds.telus.com/components/index.html#!/Notification)
+
+**Box 2.1.0**
+- Box can now change its sizing depending on the viewport
+- The old way of using Box is still supported (non-breaking change)
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-box%402.1.0)
+- [Docs](https://tds.telus.com/components/index.html#!/Box)
+
+
+**Card 2.3.0**
+- You can now change the inner padding of Card for various contexts.
+- The old way of using Box is still supported (non-breaking change)
+- Available in TDS Core DSM Library v2.3.11
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-box%402.1.0)
+- [Docs](https://tds.telus.com/components/index.html#!/Card)
+
+**DecorativeIcon 2.6.0**
+- The Success icon has been deprecated and the Check icon should be used instead
+- Available in TDS Core DSM Library v2.3.11
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%402.6.0)
+
+  
+### New TDS Community Features 🎁
+
+**ToggleSwitch 3.0.1**
+- isLoading propType is now optional and must be used with `spinnerLabel` 
+- [Release Notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-toggle-switch%403.0.1)
+
+### New TDS Core Fixes 
+
+**InteractiveIcon 1.3.2**
+- Accessibility improvement: when focusing on the NavButton icon group, a white circle appears. When active, a dark background appears behind the icons
+- Accessibility improvement: the inverted CartFilledBold icon now uses TELUS Green for its dot, to appear clearly on dark backgrounds
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-interactive-icon%401.3.2)
+- [Docs](https://tds.telus.com/components/index.html#!/NavButton)
+
+**Link 2.1.3**
+- prevent React router prop type error by settings Link’s `invert` prop to `undefined` by default, rather than `false`.
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-link%402.1.3)
+- [Docs](https://tds.telus.com/components/index.html#!/Link)
+
+**Video 1.2.32**
+- Accessibility improvement: prevents controls from being focused while the video is displaying its splash screen. 
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-video%401.2.32)
+- [Docs](https://tds.telus.com/components/index.html#!/Video)
+
+**ChevronLink 2.1.18**
+- Prevent misalignment in IE11 when placing content next to ChevronLink while inside the Notification component
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-chevron-link%402.1.8)
+- [Docs](https://tds.telus.com/components/index.html#!/Video)
+
+
+
+## December 2019
+
+### New TDS Core Fixes 
+
+**HairlineDivider 2.0.9**
+- Prevent <1px width in grid with line wrap 
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-hairline-divider%402.0.9)
+
 
 ## November 2019
 
