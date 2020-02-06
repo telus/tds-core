@@ -31,56 +31,62 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 **v2.3.10**
 
 New Dependent Icons (Interactive Icons)
+
 - Each icon has a recommendation for purposeful use
 - Must depend on other interactive components (such as Link (with icons))
 - Available in Link (with icons) component
 - Don’t use decoratively
 
 Updated Link (Link with icons)
+
 - Available in TDS Core DSM Library v2.3.10
 - Switch between sizes/styles (default/inverted) before applying overrides. For optimal use, import LinkIcon (selected size or style), then apply overrides
 - Available in @tds/core-link@2.2.0
 
 Removed “Links” folder and moved “Link, LinkIcon, and ChevronLink” to the root “Components” folder
 
-**v2.3**
+**v2.3.0**
 
 Updated NavButton (Interactive Icons)
+
 - Updated CartFilled icon to have a more accessible indicator
 - Updated interactive states for inverted NavButton (hover, active, focus, focus and active); designs are more accessible and aligned with art direction
 
-Removed SB Blocks from TDS-Core Library 
-- Designers who use DSM to mock-up designs using Layout Grids (with components, or block templates) there is now a . [Site Builder DSM library] (https://telus.invisionapp.com/dsm/telus/site-builder)
-- It will be maintained by the EPT designers: Marie and Phil [Full announcement here] (https://telusdigital.slack.com/archives/C08K0G798/p1578587471000200)
+Removed SB Blocks from TDS-Core Library
 
-
+- Designers who use DSM to mock-up designs using Layout Grids (with components, or block templates) there is now a . [Site Builder DSM library](https://telus.invisionapp.com/dsm/telus/site-builder)
+- It will be maintained by the EPT designers: Marie and Phil [Full announcement here](https://telusdigital.slack.com/archives/C08K0G798/p1578587471000200)
 
 ### New TDS Core Features 🎁
 
 **InteractiveIcon 1.4.0**
+
 - New Dependent Icons (Interactive Icons)
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-interactive-icon%401.4.0)
 - [Docs](https://tds.telus.com/components/index.html#!/Dependent)
 
 **Link 2.2.0**
+
 - Updated link with icons
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-link%402.2.0)
 - [Docs](https://tds.telus.com/components/index.html#!/Link)
 
 **Notification v3.0.11**
+
 - Added spacing between text and dismiss button
 - You should not allow error or warning notifications to be dismissible, and a console warning will be thrown if you do
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-notification%403.0.11)
 - [Docs](https://tds.telus.com/components/index.html#!/Notification)
 
 **Box 2.1.0**
+
 - Box can now change its sizing depending on the viewport
 - The old way of using Box is still supported (non-breaking change)
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-box%402.1.0)
 - [Docs](https://tds.telus.com/components/index.html#!/Box)
 
-
 **Card 2.3.0**
+
 - You can now change the inner padding of Card for various contexts.
 - The old way of using Box is still supported (non-breaking change)
 - Available in TDS Core DSM Library v2.3.11
@@ -88,50 +94,53 @@ Removed SB Blocks from TDS-Core Library
 - [Docs](https://tds.telus.com/components/index.html#!/Card)
 
 **DecorativeIcon 2.6.0**
+
 - The Success icon has been deprecated and the Check icon should be used instead
 - Available in TDS Core DSM Library v2.3.11
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%402.6.0)
 
-  
 ### New TDS Community Features 🎁
 
 **ToggleSwitch 3.0.1**
-- isLoading propType is now optional and must be used with `spinnerLabel` 
+
+- isLoading propType is now optional and must be used with `spinnerLabel`
 - [Release Notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-toggle-switch%403.0.1)
 
-### New TDS Core Fixes 
+### New TDS Core Fixes
 
 **InteractiveIcon 1.3.2**
+
 - Accessibility improvement: when focusing on the NavButton icon group, a white circle appears. When active, a dark background appears behind the icons
 - Accessibility improvement: the inverted CartFilledBold icon now uses TELUS Green for its dot, to appear clearly on dark backgrounds
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-interactive-icon%401.3.2)
 - [Docs](https://tds.telus.com/components/index.html#!/NavButton)
 
 **Link 2.1.3**
+
 - prevent React router prop type error by settings Link’s `invert` prop to `undefined` by default, rather than `false`.
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-link%402.1.3)
 - [Docs](https://tds.telus.com/components/index.html#!/Link)
 
 **Video 1.2.32**
-- Accessibility improvement: prevents controls from being focused while the video is displaying its splash screen. 
+
+- Accessibility improvement: prevents controls from being focused while the video is displaying its splash screen.
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-video%401.2.32)
 - [Docs](https://tds.telus.com/components/index.html#!/Video)
 
 **ChevronLink 2.1.18**
+
 - Prevent misalignment in IE11 when placing content next to ChevronLink while inside the Notification component
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-chevron-link%402.1.8)
 - [Docs](https://tds.telus.com/components/index.html#!/Video)
 
-
-
 ## December 2019
 
-### New TDS Core Fixes 
+### New TDS Core Fixes
 
 **HairlineDivider 2.0.9**
-- Prevent <1px width in grid with line wrap 
-- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-hairline-divider%402.0.9)
 
+- Prevent <1px width in grid with line wrap
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-hairline-divider%402.0.9)
 
 ## November 2019
 
@@ -140,6 +149,7 @@ Removed SB Blocks from TDS-Core Library
 **v2.3.8**
 
 New Modal/Overlay Layer Style
+
 - New layer style to use on top of content as part of the content/dialog modal
 - Must display a hint label when on hover/focus state
 - Use only for top-level navigation (i.e. Global Elements, My TELUS applications like Casa)
@@ -147,14 +157,15 @@ New Modal/Overlay Layer Style
 **v2.3.7**
 
 New NavButton (Interactive Icons)
+
 - NavButton is a button element that renders an icon from a new, specific set of icons
 - Restricted use for upcoming community component
 - [Docs](https://tds.telus.com/components/index.html#navbutton)
 
-
 ### New Community Component 🎁
 
 **DatePicker v1.0.0**
+
 - The DatePicker component is used to select a single date
 - It is available in 2 variants: Overlay DatePicker and Inline DatePicker
 - Overlay DatePicker allows the user to select a date, either by keying in (Input form field) or selecting through the overlay
@@ -166,118 +177,139 @@ New NavButton (Interactive Icons)
 ### New TDS Core Features 🎁
 
 **Text 3.0.0**
-- Removed sup component. Please use the standard HTML <sup> tag in the future. 
+
+- Removed sup component. Please use the standard HTML <sup> tag in the future.
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-text%403.0.0)
-  
+
 **Heading 3.0.0**
-- Removed sup component. Please use the standard HTML <sup> tag in the future. 
+
+- Removed sup component. Please use the standard HTML <sup> tag in the future.
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-heading%403.0.0)
-  
+
 **DisplayHeading 3.0.0**
-- Removed sup component. Please use the standard HTML <sup> tag in the future. 
+
+- Removed sup component. Please use the standard HTML <sup> tag in the future.
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-display-heading%403.0.0)
-  
+
 **InteractiveIcon 1.3.0**
+
 - NavButton is a button element that renders an icon from a new, specific set of icons
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-interactive-icon%401.3.0)
 
 **Card 2.2.0**
+
 - Add fullHeight property
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-card%402.2.0)
 
 **DecorativeIcon 1.5.0**
+
 - Deprecate User icon
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%402.5.0)
 
-### New TDS Core Fixes 
+### New TDS Core Fixes
 
 **StandaloneIcon 2.1.9**
-- Reduce deprecation warnings. 
+
+- Reduce deprecation warnings.
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-standalone-icon%402.1.9)
 
 **Input 3.0.30**
-- Reduce deprecation warnings. 
+
+- Reduce deprecation warnings.
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-input%403.0.30)
 
 **DecorativeIcon 2.5.1**
-- Reduce deprecation warnings. 
+
+- Reduce deprecation warnings.
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%402.5.1)
 
 **Notification 3.0.7**
-- Unmount error fixed. 
+
+- Unmount error fixed.
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-notification%403.0.7)
 
 ### New Community Features 🎁
 
 **TermsAndConditions v1.2.6**
+
 - Add aria-expanded to TermsAndConditons
 - [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-terms-and-conditions%401.2.6)
 
 **ToggleSwitch v3.0.0**
+
 - new usage guidelines! You can now set focus to toggle switch as well as feedback text after an asynchronous process.
 - [Release notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-toggle-switch%403.0.0)
 - [Docs](https://tds.telus.com/community/index.html#!/ToggleSwitch)
-
 
 ## October 2019
 
 ### New TDS Core Features 🎁
 
 **Select@3.2.0**
+
 - Supports option groups, see our docs
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-select%403.2.0)
 - [Docs](https://tds.telus.com/components/index.html#!/Select)
 
 **TermsAndConditions@1.2.0**
+
 - Add support for tags in footnote
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-terms-and-conditions%401.2.0)
 
 **DecorativeIcon@2.4.1**
-- Converts icon sizes from pixels to rem, explicitly set rem units on the size values 
+
+- Converts icon sizes from pixels to rem, explicitly set rem units on the size values
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%402.4.1)
 
 **WebVideo@2.4.1**
+
 - Add onStart callback that fires when the video begins playing
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-web-video%401.1.0)
 
 **DecorativeIcon@2.4.0**
+
 - Update Accessible icon and add new Donate icon
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%402.4.0)
 
-
-### New TDS Core Fixes 
+### New TDS Core Fixes
 
 **Notification@3.0.4**
+
 - Fixes issue with Notification throwing error after being dismissed
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-notification%403.0.4)
 
 **ExpandCollapse@2.0.21 & TermsAndConditions@1.2.1**
+
 - Fixes issue where elements are focusable when collapsed
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fshared-animation%402.0.2)
 
 **Colours@2.2.1**
+
 - Fix path to deprecate.js for windows
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-colours%402.2.1)
 
 **Checkbox@2.0.23**
-- Fix disproportioned size 
+
+- Fix disproportioned size
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-checkbox%402.0.23)
 
 **Checkbox@2.0.23**
-- Fix disproportioned size 
+
+- Fix disproportioned size
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-checkbox%402.0.23)
 
 **Radio@2.0.18**
-- Fix disproportioned size 
+
+- Fix disproportioned size
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-radio%402.0.18)
 
 ### New Community Features 🎁
 
 **Pagination v2.0.0**
+
 - Upgrade to styled components and visual design changes
 - [Release notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-pagination%402.0.0)
 - [Docs](https://tds.telus.com/community/index.html#pagination)
-
 
 ## September 2019
 
@@ -286,39 +318,46 @@ New NavButton (Interactive Icons)
 **v2.3.4**
 
 Icons
+
 - New "Offices" icon added to 'General' DecorativeIcon set
-- [Docs](https://tds.telus.com/components/index.html#decorativeicon) 
+- [Docs](https://tds.telus.com/components/index.html#decorativeicon)
 
 **v2.3.3**
 
 Notifications (new addition and updates to existing)
+
 - Added 2 new components: Warning and Dismissible Warning
 - Warning and Dismissible Warning use the new Warning Feedback Icon, Close Interactive Icon, and Rajah Light (yellow) background
 - Updated existing Dismissible Error/Success with the Close Interactive Icon
-- [Docs](https://tds.telus.com/components/index.html#notification) 
+- [Docs](https://tds.telus.com/components/index.html#notification)
 
 Card (new addition)
+
 - Teams can use the defaultWithBorder variant to add a border to the Card for comparison, horizontal plan, and My TELUS account overview cards
 - Added a new layer style; same as default card background but with a border
-- [Docs](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-card%402.1.0) 
+- [Docs](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-card%402.1.0)
 
 ### New TDS Core Features 🎁
 
 **DecorativeIcon@2.3.0**
+
 - @tds/core-decorative-icon@2.3.0 now includes the `Offices` icon!
 - [Docs](https://tds.telus.com/components/index.html#svgicon)
 
 ### New Community Features 🎁
 
 **SideNavigation v3.0.0**
-- Updated UI and removal of `active` prop from `SubMenu`, hence a breaking change 
+
+- Updated UI and removal of `active` prop from `SubMenu`, hence a breaking change
 - [Release notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-side-navigation%403.0.0)
 
 **Skeleton v3.0.0**
+
 - Skelton component is now converted to styled-components
 - [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fshared-animation%402.0.0)
 
 **Testimonal v3.0.0**
+
 - Testimonal component is now converted to styled-components
 - [Release notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-testimonial%403.0.0)
 
