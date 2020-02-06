@@ -2,7 +2,7 @@
 
 # [TELUS Design System](https://tds.telus.com) ![license](https://img.shields.io/github/license/telus/tds-core.svg?style=flat-square)
 
-[![Build Status][circle-image]][circle-url]
+[![Github Actions](https://img.shields.io/github/workflow/status/telus/tds-core/TDS%20Workflow?label=Github%20Actions&style=for-the-badge)](https://github.com/telus/tds-core/actions?query=workflow%3A%22TDS+Workflow%22+branch%3Amaster)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
 

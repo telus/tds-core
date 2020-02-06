@@ -199,6 +199,5 @@ workflows:
       - release:
           context: npm-library
           requires: [approve-release]
-
-      - screenshots:
-          requires: [release]
+      # - screenshots:
+      #     requires: [release]
