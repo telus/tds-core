@@ -89,6 +89,7 @@
     "babel-plugin-styled-components": "^1.10.0",
     "case": "^1.5.5",
     "chalk": "^3.0.0",
+    "classnames": "^2.2.6",
     "commitizen": "^3.0.7",
     "css-loader": "^2.0.0",
     "css-mediaquery": "^0.1.2",
@@ -155,7 +156,8 @@
     "yargs": "^13.0.0"
   },
   "dependencies": {
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "pumpify": "^2.0.1"
   },
   "config": {
     "commitizen": {
