@@ -37,7 +37,7 @@ const GlobalStyleGuide = createGlobalStyle({
 
   '.docs_flex-grid-coloring': {
     '*[class*=\'row\']': {
-      border: `1px dashed ${colorShark}`
+      border: `1px dashed ${colorGreyShark}`
     },
 
     '*[class*=\'col\']': {
