@@ -179,7 +179,6 @@ module.exports = {
       name: 'Layout',
       sections: [
         {
-<<<<<<< HEAD
           name: 'CssReset',
           content: path.resolve('packages/css-reset/CssReset.md'),
         },
