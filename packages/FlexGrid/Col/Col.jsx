@@ -17,6 +17,7 @@ const StyledCol = styled(({ hiddenLevel, gutter, horizontalAlignLevel, ...rest }
   'div&': {
     paddingLeft: gutter ? '1rem' : 0,
     paddingRight: gutter ? '1rem' : 0,
+    flexGrow: 1,
   },
   ...media.until('sm').css({
     display: hiddenLevel[0] === 0 ? 'none' : 'block',
