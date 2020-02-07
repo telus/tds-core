@@ -1,5 +1,5 @@
 const path = require('path')
-const MiniHtmlWebpackPlugin = require('react-styleguidist/node_modules/mini-html-webpack-plugin')
+const MiniHtmlWebpackPlugin = require('../../node_modules/mini-html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
