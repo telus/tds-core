@@ -391,7 +391,7 @@ Being a component library shipped to npm, proper configuration to the file **pac
   "peerDependencies": {
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
-    "styled-components": "^4.1.3"
+    "styled-components": "^4.1.3 || ^5.0.1"
   }
   ```
 - `dependencies` only contains what is required for the package to run, and they should be publicly available on npm.
