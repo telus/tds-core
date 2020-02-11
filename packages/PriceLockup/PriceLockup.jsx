@@ -29,6 +29,9 @@ const priceValue = {
       fontSize: '1.75rem',
       letterSpacing: '-0.8px',
     }),
+    '&& sup': {
+      top: '-1em',
+    },
   },
   medium: {
     fontSize: '1.75rem',
@@ -39,6 +42,9 @@ const priceValue = {
       fontSize: '2.75rem',
       letterSpacing: 0,
     }),
+    '&& sup': {
+      top: '-1.5em',
+    },
   },
   large: {
     fontSize: '2.75rem',
@@ -47,6 +53,9 @@ const priceValue = {
       fontSize: '4.5rem',
       letterSpacing: '0.2px',
     }),
+    '&& sup': {
+      top: '-3em',
+    },
   },
 }
 
@@ -210,32 +219,40 @@ const PriceLockup = ({
     <StyledWrapperAlignment between={wrapperSpacing}>
       <Box between={size !== 'large' ? 1 : undefined}>
         {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
-        <StyledRateTextWrapper ref={containerRef} inline={footnoteLinksInline}>
+        <StyledRateTextWrapper ref={containerRef}>
           <StyledPriceWrapper ref={rateTextWrapperRef} between={size === 'small' ? 1 : 2} inline>
             <Box between={size === 'large' ? 2 : 1} inline>
               {signDirection === 'left' ? renderDollarSign(size) : undefined}
               <StyledPriceValue data-testid="priceValue" size={size}>
                 {price}
+                {!bottomText &&
+                  !rateText &&
+                  renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
               </StyledPriceValue>
               {signDirection === 'right' ? renderDollarSign(size) : undefined}
             </Box>
             {rateText && (
               <StyledRateText data-testid="rateText" size={size}>
-                <span>{rateText}</span>
+                {rateText}
+                {!bottomText &&
+                  rateText &&
+                  footnoteLinksInline &&
+                  renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
               </StyledRateText>
             )}
           </StyledPriceWrapper>
-          {!bottomText && renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
         </StyledRateTextWrapper>
       </Box>
       {size !== 'large' && bottomText && rateText && <HairlineDivider />}
       {bottomText && (
         <div>
           {renderBottomText(size, bottomText, bottomTextRef)}
-          {footnoteLinks &&
-            renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
+          {renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
         </div>
       )}
+      {!bottomText &&
+        !footnoteLinksInline &&
+        renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
     </StyledWrapperAlignment>
   )
 }
