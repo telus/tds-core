@@ -62,11 +62,13 @@ const ShowFromMd = styled.div({
   display: 'none',
   ...media.from('md').css({
     display: 'inline-block',
+    whiteSpace: 'nowrap',
   }),
 })
 
 const ShowUntilMd = styled.div({
   display: 'inline-block',
+  whiteSpace: 'nowrap',
   ...media.from('md').css({
     display: 'none',
   }),
