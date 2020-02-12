@@ -1021,53 +1021,49 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                           </Box>
                         </StyledComponent>
                       </Styled(Box)>
-                    </div>
-                  </StyledComponent>
-                </styled.div>
-              </Box>
-              <Styled(Text__StyledText)
-                inline={false}
-              >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-ifAKCX",
-                        "isStatic": false,
-                        "lastClassName": "c11",
-                        "rules": Array [
-                          [Function],
-                          [Function],
-                          [Function],
-                          [Function],
-                          [Function],
-                          "sup {",
-                          "top: -0.5em;",
-                          "font-size: 0.875rem;",
-                          "position: relative;",
-                          "vertical-align: baseline;",
-                          "padding-left: 0.1em;",
-                          "}",
-                          [Function],
-                        ],
-                      },
-                      "displayName": "Styled(Text__StyledText)",
-                      "foldedComponentIds": Array [
-                        "Text__StyledText-sc-1m0rr67-0",
-                      ],
-                      "render": [Function],
-                      "styledComponentId": "sc-ifAKCX",
-                      "target": "span",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={
-                    Object {
-                      "current": .c2 {
+                      <Styled(Text__StyledText)
+                        inline={false}
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-ifAKCX",
+                                "isStatic": false,
+                                "lastClassName": "c11",
+                                "rules": Array [
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  "sup {",
+                                  "top: -0.5em;",
+                                  "font-size: 0.875rem;",
+                                  "position: relative;",
+                                  "vertical-align: baseline;",
+                                  "padding-left: 0.1em;",
+                                  "}",
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Styled(Text__StyledText)",
+                              "foldedComponentIds": Array [
+                                "Text__StyledText-sc-1m0rr67-0",
+                              ],
+                              "render": [Function],
+                              "styledComponentId": "sc-ifAKCX",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={
+                            Object {
+                              "current": .c2 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1103,145 +1099,149 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
 }
 
 <span
-                        class="c0"
-                      >
-                        <sup>
-                          <button
-                            class="c1"
-                            data-tds-id="footnote-link"
-                            type="button"
-                          >
-                            <span
-                              class="c2"
-                            >
-                              Read legal footnote
-                            </span>
-                            3
-                          </button>
-                        </sup>
-                      </span>,
-                    }
-                  }
-                  inline={false}
-                >
-                  <span
-                    className="c11"
-                  >
-                    <FootnoteLink
-                      copy="en"
-                      number={3}
-                      onClick={[Function]}
-                    >
-                      <sup
-                        key="3"
-                      >
-                        <FootnoteLink__StyledFootnoteLink
-                          data-tds-id="footnote-link"
-                          key="3"
-                          onClick={[Function]}
-                          type="button"
-                        >
-                          <StyledComponent
-                            data-tds-id="footnote-link"
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
-                                  "isStatic": true,
-                                  "lastClassName": "c12",
-                                  "rules": Array [
-                                    "background-color: transparent;",
-                                    "border: 0;",
-                                    "text-decoration: underline;",
-                                    "padding: 0 0.25rem;",
-                                    "color: inherit;",
-                                  ],
-                                },
-                                "displayName": "FootnoteLink__StyledFootnoteLink",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
-                                "target": "button",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
+                                class="c0"
+                              >
+                                <sup>
+                                  <button
+                                    class="c1"
+                                    data-tds-id="footnote-link"
+                                    type="button"
+                                  >
+                                    <span
+                                      class="c2"
+                                    >
+                                      Read legal footnote
+                                    </span>
+                                    3
+                                  </button>
+                                </sup>
+                              </span>,
                             }
-                            forwardedRef={
-                              Object {
-                                "current": <button
-                                  class="c12"
+                          }
+                          inline={false}
+                        >
+                          <span
+                            className="c11"
+                          >
+                            <FootnoteLink
+                              copy="en"
+                              number={3}
+                              onClick={[Function]}
+                            >
+                              <sup
+                                key="3"
+                              >
+                                <FootnoteLink__StyledFootnoteLink
                                   data-tds-id="footnote-link"
+                                  key="3"
+                                  onClick={[Function]}
                                   type="button"
                                 >
-                                  <span
-                                    class="c13"
-                                  >
-                                    Read legal footnote
-                                  </span>
-                                  3
-                                </button>,
-                              }
-                            }
-                            onClick={[Function]}
-                            type="button"
-                          >
-                            <button
-                              className="c12"
-                              data-tds-id="footnote-link"
-                              onClick={[Function]}
-                              type="button"
-                            >
-                              <A11yContent>
-                                <A11yContent__StyledA11yContent>
                                   <StyledComponent
+                                    data-tds-id="footnote-link"
                                     forwardedComponent={
                                       Object {
                                         "$$typeof": Symbol(react.forward_ref),
                                         "attrs": Array [],
                                         "componentStyle": ComponentStyle {
-                                          "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                          "componentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
                                           "isStatic": true,
-                                          "lastClassName": "c13",
+                                          "lastClassName": "c12",
                                           "rules": Array [
-                                            "position: absolute;",
-                                            "height: 1px;",
-                                            "width: 1px;",
-                                            "overflow: hidden;",
-                                            "clip: rect(1px, 1px, 1px, 1px);",
+                                            "background-color: transparent;",
+                                            "border: 0;",
+                                            "text-decoration: underline;",
+                                            "padding: 0 0.25rem;",
+                                            "color: inherit;",
                                           ],
                                         },
-                                        "displayName": "A11yContent__StyledA11yContent",
+                                        "displayName": "FootnoteLink__StyledFootnoteLink",
                                         "foldedComponentIds": Array [],
                                         "render": [Function],
-                                        "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                        "target": "span",
+                                        "styledComponentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
+                                        "target": "button",
                                         "toString": [Function],
                                         "warnTooManyClasses": [Function],
                                         "withComponent": [Function],
                                       }
                                     }
-                                    forwardedRef={null}
+                                    forwardedRef={
+                                      Object {
+                                        "current": <button
+                                          class="c12"
+                                          data-tds-id="footnote-link"
+                                          type="button"
+                                        >
+                                          <span
+                                            class="c13"
+                                          >
+                                            Read legal footnote
+                                          </span>
+                                          3
+                                        </button>,
+                                      }
+                                    }
+                                    onClick={[Function]}
+                                    type="button"
                                   >
-                                    <span
-                                      className="c13"
+                                    <button
+                                      className="c12"
+                                      data-tds-id="footnote-link"
+                                      onClick={[Function]}
+                                      type="button"
                                     >
-                                      Read legal footnote
-                                    </span>
+                                      <A11yContent>
+                                        <A11yContent__StyledA11yContent>
+                                          <StyledComponent
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                                  "isStatic": true,
+                                                  "lastClassName": "c13",
+                                                  "rules": Array [
+                                                    "position: absolute;",
+                                                    "height: 1px;",
+                                                    "width: 1px;",
+                                                    "overflow: hidden;",
+                                                    "clip: rect(1px, 1px, 1px, 1px);",
+                                                  ],
+                                                },
+                                                "displayName": "A11yContent__StyledA11yContent",
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                                "target": "span",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                          >
+                                            <span
+                                              className="c13"
+                                            >
+                                              Read legal footnote
+                                            </span>
+                                          </StyledComponent>
+                                        </A11yContent__StyledA11yContent>
+                                      </A11yContent>
+                                      3
+                                    </button>
                                   </StyledComponent>
-                                </A11yContent__StyledA11yContent>
-                              </A11yContent>
-                              3
-                            </button>
-                          </StyledComponent>
-                        </FootnoteLink__StyledFootnoteLink>
-                      </sup>
-                    </FootnoteLink>
-                  </span>
-                </StyledComponent>
-              </Styled(Text__StyledText)>
+                                </FootnoteLink__StyledFootnoteLink>
+                              </sup>
+                            </FootnoteLink>
+                          </span>
+                        </StyledComponent>
+                      </Styled(Text__StyledText)>
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </Box>
             </div>
           </StyledComponent>
         </styled.div>
@@ -2272,53 +2272,49 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                           </Box>
                         </StyledComponent>
                       </Styled(Box)>
-                    </div>
-                  </StyledComponent>
-                </styled.div>
-              </Box>
-              <Styled(Text__StyledText)
-                inline={false}
-              >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-ifAKCX",
-                        "isStatic": false,
-                        "lastClassName": "c11",
-                        "rules": Array [
-                          [Function],
-                          [Function],
-                          [Function],
-                          [Function],
-                          [Function],
-                          "sup {",
-                          "top: -0.5em;",
-                          "font-size: 0.875rem;",
-                          "position: relative;",
-                          "vertical-align: baseline;",
-                          "padding-left: 0.1em;",
-                          "}",
-                          [Function],
-                        ],
-                      },
-                      "displayName": "Styled(Text__StyledText)",
-                      "foldedComponentIds": Array [
-                        "Text__StyledText-sc-1m0rr67-0",
-                      ],
-                      "render": [Function],
-                      "styledComponentId": "sc-ifAKCX",
-                      "target": "span",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={
-                    Object {
-                      "current": .c2 {
+                      <Styled(Text__StyledText)
+                        inline={false}
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-ifAKCX",
+                                "isStatic": false,
+                                "lastClassName": "c11",
+                                "rules": Array [
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  "sup {",
+                                  "top: -0.5em;",
+                                  "font-size: 0.875rem;",
+                                  "position: relative;",
+                                  "vertical-align: baseline;",
+                                  "padding-left: 0.1em;",
+                                  "}",
+                                  [Function],
+                                ],
+                              },
+                              "displayName": "Styled(Text__StyledText)",
+                              "foldedComponentIds": Array [
+                                "Text__StyledText-sc-1m0rr67-0",
+                              ],
+                              "render": [Function],
+                              "styledComponentId": "sc-ifAKCX",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={
+                            Object {
+                              "current": .c2 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2354,145 +2350,149 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
 }
 
 <span
-                        class="c0"
-                      >
-                        <sup>
-                          <button
-                            class="c1"
-                            data-tds-id="footnote-link"
-                            type="button"
-                          >
-                            <span
-                              class="c2"
-                            >
-                              Read legal footnote
-                            </span>
-                            3
-                          </button>
-                        </sup>
-                      </span>,
-                    }
-                  }
-                  inline={false}
-                >
-                  <span
-                    className="c11"
-                  >
-                    <FootnoteLink
-                      copy="en"
-                      number={3}
-                      onClick={[Function]}
-                    >
-                      <sup
-                        key="3"
-                      >
-                        <FootnoteLink__StyledFootnoteLink
-                          data-tds-id="footnote-link"
-                          key="3"
-                          onClick={[Function]}
-                          type="button"
-                        >
-                          <StyledComponent
-                            data-tds-id="footnote-link"
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
-                                  "isStatic": true,
-                                  "lastClassName": "c12",
-                                  "rules": Array [
-                                    "background-color: transparent;",
-                                    "border: 0;",
-                                    "text-decoration: underline;",
-                                    "padding: 0 0.25rem;",
-                                    "color: inherit;",
-                                  ],
-                                },
-                                "displayName": "FootnoteLink__StyledFootnoteLink",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
-                                "target": "button",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
+                                class="c0"
+                              >
+                                <sup>
+                                  <button
+                                    class="c1"
+                                    data-tds-id="footnote-link"
+                                    type="button"
+                                  >
+                                    <span
+                                      class="c2"
+                                    >
+                                      Read legal footnote
+                                    </span>
+                                    3
+                                  </button>
+                                </sup>
+                              </span>,
                             }
-                            forwardedRef={
-                              Object {
-                                "current": <button
-                                  class="c12"
+                          }
+                          inline={false}
+                        >
+                          <span
+                            className="c11"
+                          >
+                            <FootnoteLink
+                              copy="en"
+                              number={3}
+                              onClick={[Function]}
+                            >
+                              <sup
+                                key="3"
+                              >
+                                <FootnoteLink__StyledFootnoteLink
                                   data-tds-id="footnote-link"
+                                  key="3"
+                                  onClick={[Function]}
                                   type="button"
                                 >
-                                  <span
-                                    class="c13"
-                                  >
-                                    Read legal footnote
-                                  </span>
-                                  3
-                                </button>,
-                              }
-                            }
-                            onClick={[Function]}
-                            type="button"
-                          >
-                            <button
-                              className="c12"
-                              data-tds-id="footnote-link"
-                              onClick={[Function]}
-                              type="button"
-                            >
-                              <A11yContent>
-                                <A11yContent__StyledA11yContent>
                                   <StyledComponent
+                                    data-tds-id="footnote-link"
                                     forwardedComponent={
                                       Object {
                                         "$$typeof": Symbol(react.forward_ref),
                                         "attrs": Array [],
                                         "componentStyle": ComponentStyle {
-                                          "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                          "componentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
                                           "isStatic": true,
-                                          "lastClassName": "c13",
+                                          "lastClassName": "c12",
                                           "rules": Array [
-                                            "position: absolute;",
-                                            "height: 1px;",
-                                            "width: 1px;",
-                                            "overflow: hidden;",
-                                            "clip: rect(1px, 1px, 1px, 1px);",
+                                            "background-color: transparent;",
+                                            "border: 0;",
+                                            "text-decoration: underline;",
+                                            "padding: 0 0.25rem;",
+                                            "color: inherit;",
                                           ],
                                         },
-                                        "displayName": "A11yContent__StyledA11yContent",
+                                        "displayName": "FootnoteLink__StyledFootnoteLink",
                                         "foldedComponentIds": Array [],
                                         "render": [Function],
-                                        "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                        "target": "span",
+                                        "styledComponentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
+                                        "target": "button",
                                         "toString": [Function],
                                         "warnTooManyClasses": [Function],
                                         "withComponent": [Function],
                                       }
                                     }
-                                    forwardedRef={null}
+                                    forwardedRef={
+                                      Object {
+                                        "current": <button
+                                          class="c12"
+                                          data-tds-id="footnote-link"
+                                          type="button"
+                                        >
+                                          <span
+                                            class="c13"
+                                          >
+                                            Read legal footnote
+                                          </span>
+                                          3
+                                        </button>,
+                                      }
+                                    }
+                                    onClick={[Function]}
+                                    type="button"
                                   >
-                                    <span
-                                      className="c13"
+                                    <button
+                                      className="c12"
+                                      data-tds-id="footnote-link"
+                                      onClick={[Function]}
+                                      type="button"
                                     >
-                                      Read legal footnote
-                                    </span>
+                                      <A11yContent>
+                                        <A11yContent__StyledA11yContent>
+                                          <StyledComponent
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                                  "isStatic": true,
+                                                  "lastClassName": "c13",
+                                                  "rules": Array [
+                                                    "position: absolute;",
+                                                    "height: 1px;",
+                                                    "width: 1px;",
+                                                    "overflow: hidden;",
+                                                    "clip: rect(1px, 1px, 1px, 1px);",
+                                                  ],
+                                                },
+                                                "displayName": "A11yContent__StyledA11yContent",
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                                "target": "span",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                          >
+                                            <span
+                                              className="c13"
+                                            >
+                                              Read legal footnote
+                                            </span>
+                                          </StyledComponent>
+                                        </A11yContent__StyledA11yContent>
+                                      </A11yContent>
+                                      3
+                                    </button>
                                   </StyledComponent>
-                                </A11yContent__StyledA11yContent>
-                              </A11yContent>
-                              3
-                            </button>
-                          </StyledComponent>
-                        </FootnoteLink__StyledFootnoteLink>
-                      </sup>
-                    </FootnoteLink>
-                  </span>
-                </StyledComponent>
-              </Styled(Text__StyledText)>
+                                </FootnoteLink__StyledFootnoteLink>
+                              </sup>
+                            </FootnoteLink>
+                          </span>
+                        </StyledComponent>
+                      </Styled(Text__StyledText)>
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </Box>
             </div>
           </StyledComponent>
         </styled.div>

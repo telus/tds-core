@@ -186,7 +186,6 @@ const PriceLockup = ({
       }
 
       const combinedWidth = textWidth + footnoteLinksWidth
-
       setFootnoteLinksInline(combinedWidth < containerWidth)
     }
   }
@@ -237,6 +236,9 @@ const PriceLockup = ({
             )}
           </StyledPriceWrapper>
         </StyledRateTextWrapper>
+        {!bottomText &&
+          !footnoteLinksInline &&
+          renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
       </Box>
       {size !== 'large' && bottomText && rateText && <HairlineDivider />}
       {bottomText && (
@@ -245,9 +247,6 @@ const PriceLockup = ({
           {renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
         </div>
       )}
-      {!bottomText &&
-        !footnoteLinksInline &&
-        renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
     </StyledWrapperAlignment>
   )
 }

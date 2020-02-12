@@ -4,8 +4,8 @@
   - Use `small` for pricing in product catalogue pages (not in cards)
   - Use `medium` for pricing in product compare cards
   - Use `large` for pricing in banners and promo cards
-- The size prop refers to the size of the PriceLockup rather than the viewport it is being used in
-- PriceLockup is responsive depending on the screen size it is being viewed at
+- The size prop refers to the size of the `PriceLockup` rather than the viewport it is being used in
+- `PriceLockup` is responsive depending on the screen size it is being viewed at
 - Must provide pricing value using the `price` prop
 - Price rate can be provided using the `rateText` prop (eg. /month)
 - Top and bottom text are optional and can be provided using the `topText` and `bottomText` props respectively
@@ -44,8 +44,6 @@
 <div id="pricelockupWithFootnotelink"></div>
 ### PriceLockup with FootnoteLink
 
-**Usage criteria**
-
 When designing with `PriceLockup` and `FootnoteLink`, `FootnoteLink` must be positioned in the appropriate place following the guide below. The coded component can receive `FootnoteLinks` and position them automatically for you.
 
 - Display `FootnoteLink` at the end of `rateText` or `bottomText`
@@ -54,16 +52,9 @@ When designing with `PriceLockup` and `FootnoteLink`, `FootnoteLink` must be pos
   - Display in the same line as the `rateText` or `bottomText` when there’s available space
 - Must not display `FootnoteLinks` in both the the `rateText` and `bottomText`
 
-```jsx
-<PriceLockup
-  size="medium"
-  topText="Starting at"
-  price="25"
-  rateText="/month"
-  signDirection="left"
-  footnoteLinks={<FootnoteLink number={[1, 2, 3]} onClick={(number, ref) => {}} copy="en" />}
 />
-```
+
+````
 
 ```jsx
 <PriceLockup
@@ -75,7 +66,7 @@ When designing with `PriceLockup` and `FootnoteLink`, `FootnoteLink` must be pos
   signDirection="left"
   footnoteLinks={<FootnoteLink number={[1, 2, 3]} onClick={(number, ref) => {}} copy="en" />}
 />
-```
+````
 
 ```jsx
 <FlexGrid>
