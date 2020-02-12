@@ -1,16 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Video renders 1`] = `
-.c8 {
-  display: block;
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
-.c25 {
+.c7 > *:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+.c26 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -20,11 +25,11 @@ exports[`Video renders 1`] = `
   flex-direction: row;
 }
 
-.c25 > *:not(:last-child) {
+.c26 > *:not(:last-child) {
   margin-right: 1rem;
 }
 
-.c9 {
+.c10 {
   color: #fff;
   word-wrap: break-word;
   padding: 0;
@@ -41,7 +46,7 @@ exports[`Video renders 1`] = `
   text-align: center;
 }
 
-.c9 sup {
+.c10 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -49,7 +54,7 @@ exports[`Video renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c11 {
+.c12 {
   color: #fff;
   word-wrap: break-word;
   padding: 0;
@@ -66,7 +71,7 @@ exports[`Video renders 1`] = `
   text-align: center;
 }
 
-.c11 sup {
+.c12 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -144,15 +149,22 @@ exports[`Video renders 1`] = `
   vertical-align: middle;
 }
 
-.c6 svg>path {
+.c6 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 svg>path {
   fill: inherit;
 }
 
-.c7 {
+.c9 {
   display: none;
 }
 
-.c10 {
+.c11 {
   display: block;
 }
 
@@ -167,7 +179,7 @@ exports[`Video renders 1`] = `
   cursor: pointer;
 }
 
-.c18 {
+.c19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -179,13 +191,13 @@ exports[`Video renders 1`] = `
   align-items: center;
 }
 
-.c20 {
+.c21 {
   width: 100%;
   cursor: pointer;
   padding: 5px 0;
 }
 
-input[type=range].c20 {
+input[type=range].c21 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -193,11 +205,11 @@ input[type=range].c20 {
   background: transparent;
 }
 
-input[type=range].c20:focus {
+input[type=range].c21:focus {
   outline: none;
 }
 
-input[type=range].c20::-webkit-slider-thumb {
+input[type=range].c21::-webkit-slider-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -209,7 +221,7 @@ input[type=range].c20::-webkit-slider-thumb {
   margin-top: -3px;
 }
 
-input[type=range].c20::-moz-range-thumb {
+input[type=range].c21::-moz-range-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -222,7 +234,7 @@ input[type=range].c20::-moz-range-thumb {
   border: none;
 }
 
-input[type=range].c20::-ms-thumb {
+input[type=range].c21::-ms-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -235,25 +247,25 @@ input[type=range].c20::-ms-thumb {
   border: none;
 }
 
-input[type=range].c20::-webkit-slider-thumb:hover {
+input[type=range].c21::-webkit-slider-thumb:hover {
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
 
-input[type=range].c20::-moz-range-thumb:hover {
+input[type=range].c21::-moz-range-thumb:hover {
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
 
-input[type=range].c20::-ms-thumb:hover {
+input[type=range].c21::-ms-thumb:hover {
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
 
-input[type=range].c20::-webkit-slider-runnable-track {
+input[type=range].c21::-webkit-slider-runnable-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
@@ -261,7 +273,7 @@ input[type=range].c20::-webkit-slider-runnable-track {
   background: linear-gradient(to right,#6c0 0%,#6c0 NaN% ,rgba(255,255,255,0.5) NaN%);
 }
 
-input[type=range].c20::-moz-range-track {
+input[type=range].c21::-moz-range-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
@@ -269,7 +281,7 @@ input[type=range].c20::-moz-range-track {
   background: linear-gradient(to right,#6c0 0%,#6c0 NaN% ,rgba(255,255,255,0.5) NaN%);
 }
 
-input[type=range].c20::-ms-track {
+input[type=range].c21::-ms-track {
   width: 100%;
   height: 2px;
   margin: 6px 0;
@@ -279,29 +291,29 @@ input[type=range].c20::-ms-track {
   background: linear-gradient(to right,#6c0 0%,#6c0 NaN% ,rgba(255,255,255,0.5) NaN%);
 }
 
-input[type=range].c20::-ms-fill-lower {
+input[type=range].c21::-ms-fill-lower {
   background: transparent;
 }
 
-input[type=range].c20::-ms-tooltip {
+input[type=range].c21::-ms-tooltip {
   display: none;
 }
 
-input[type=range].c20::-ms-tooltip {
+input[type=range].c21::-ms-tooltip {
   display: none;
 }
 
-.c19 {
+.c20 {
   color: #6c0;
   margin: 0 0.5rem;
 }
 
-.c21 {
+.c22 {
   color: white;
   margin: 0 0.5rem;
 }
 
-.c23 {
+.c24 {
   background: none;
   color: inherit;
   border: none;
@@ -318,7 +330,7 @@ input[type=range].c20::-ms-tooltip {
   align-items: center;
 }
 
-.c22 {
+.c23 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -332,13 +344,13 @@ input[type=range].c20::-ms-tooltip {
   align-items: center;
 }
 
-.c24 {
+.c25 {
   width: 100%;
   cursor: pointer;
   padding: 5px 0;
 }
 
-input[type=range].c24 {
+input[type=range].c25 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -346,11 +358,11 @@ input[type=range].c24 {
   background: transparent;
 }
 
-input[type=range].c24:focus {
+input[type=range].c25:focus {
   outline: none;
 }
 
-input[type=range].c24::-webkit-slider-thumb {
+input[type=range].c25::-webkit-slider-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -362,7 +374,7 @@ input[type=range].c24::-webkit-slider-thumb {
   margin-top: -3px;
 }
 
-input[type=range].c24::-moz-range-thumb {
+input[type=range].c25::-moz-range-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -375,7 +387,7 @@ input[type=range].c24::-moz-range-thumb {
   border: none;
 }
 
-input[type=range].c24::-ms-thumb {
+input[type=range].c25::-ms-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -388,25 +400,25 @@ input[type=range].c24::-ms-thumb {
   border: none;
 }
 
-input[type=range].c24::-webkit-slider-thumb:hover {
+input[type=range].c25::-webkit-slider-thumb:hover {
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
 
-input[type=range].c24::-moz-range-thumb:hover {
+input[type=range].c25::-moz-range-thumb:hover {
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
 
-input[type=range].c24::-ms-thumb:hover {
+input[type=range].c25::-ms-thumb:hover {
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
 
-input[type=range].c24::-webkit-slider-runnable-track {
+input[type=range].c25::-webkit-slider-runnable-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
@@ -414,7 +426,7 @@ input[type=range].c24::-webkit-slider-runnable-track {
   background: linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,1)99.99% ,rgba(255,255,255,0.5) 100%);
 }
 
-input[type=range].c24::-moz-range-track {
+input[type=range].c25::-moz-range-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
@@ -422,7 +434,7 @@ input[type=range].c24::-moz-range-track {
   background: linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,1)99.99% ,rgba(255,255,255,0.5) 100%);
 }
 
-input[type=range].c24::-ms-track {
+input[type=range].c25::-ms-track {
   width: 100%;
   height: 2px;
   margin: 6px 0;
@@ -432,19 +444,19 @@ input[type=range].c24::-ms-track {
   background: linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,1)99.99% ,rgba(255,255,255,0.5) 100%);
 }
 
-input[type=range].c24::-ms-fill-lower {
+input[type=range].c25::-ms-fill-lower {
   background: transparent;
 }
 
-input[type=range].c24::-ms-tooltip {
+input[type=range].c25::-ms-tooltip {
   display: none;
 }
 
-input[type=range].c24::-ms-tooltip {
+input[type=range].c25::-ms-tooltip {
   display: none;
 }
 
-.c15 {
+.c16 {
   width: 100%;
   position: relative;
   -webkit-transition: opacity 0.4s;
@@ -452,7 +464,7 @@ input[type=range].c24::-ms-tooltip {
   opacity: 0;
 }
 
-.c16 {
+.c17 {
   position: absolute;
   width: 100%;
   height: 56px;
@@ -474,7 +486,7 @@ input[type=range].c24::-ms-tooltip {
   z-index: 9;
 }
 
-.c17 {
+.c18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -491,14 +503,14 @@ input[type=range].c24::-ms-tooltip {
   position: relative;
 }
 
-.c13 {
+.c14 {
   outline: none;
   width: 100%;
   height: 100%;
   font-size: 0;
 }
 
-.c14 {
+.c15 {
   width: 100%;
   height: 100%;
 }
@@ -517,7 +529,7 @@ input[type=range].c24::-ms-tooltip {
   z-index: 5;
 }
 
-.c12 {
+.c13 {
   position: absolute;
   z-index: 4;
   display: -webkit-box;
@@ -544,13 +556,13 @@ input[type=range].c24::-ms-tooltip {
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c9 {
     display: block;
   }
 }
 
 @media (min-width:768px) {
-  .c10 {
+  .c11 {
     display: none;
   }
 }
@@ -665,16 +677,21 @@ input[type=range].c24::-ms-tooltip {
       }
       forwardedRef={
         Object {
-          "current": .c8 {
-  display: block;
+          "current": .c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
-.c25 {
+.c7 > *:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+.c26 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -684,11 +701,11 @@ input[type=range].c24::-ms-tooltip {
   flex-direction: row;
 }
 
-.c25 > *:not(:last-child) {
+.c26 > *:not(:last-child) {
   margin-right: 1rem;
 }
 
-.c9 {
+.c10 {
   color: #fff;
   word-wrap: break-word;
   padding: 0;
@@ -705,7 +722,7 @@ input[type=range].c24::-ms-tooltip {
   text-align: center;
 }
 
-.c9 sup {
+.c10 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -713,7 +730,7 @@ input[type=range].c24::-ms-tooltip {
   padding-left: 0.1em;
 }
 
-.c11 {
+.c12 {
   color: #fff;
   word-wrap: break-word;
   padding: 0;
@@ -730,7 +747,7 @@ input[type=range].c24::-ms-tooltip {
   text-align: center;
 }
 
-.c11 sup {
+.c12 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -808,15 +825,22 @@ input[type=range].c24::-ms-tooltip {
   vertical-align: middle;
 }
 
-.c6 svg>path {
+.c6 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 svg>path {
   fill: inherit;
 }
 
-.c7 {
+.c9 {
   display: none;
 }
 
-.c10 {
+.c11 {
   display: block;
 }
 
@@ -831,7 +855,7 @@ input[type=range].c24::-ms-tooltip {
   cursor: pointer;
 }
 
-.c18 {
+.c19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -843,13 +867,13 @@ input[type=range].c24::-ms-tooltip {
   align-items: center;
 }
 
-.c20 {
+.c21 {
   width: 100%;
   cursor: pointer;
   padding: 5px 0;
 }
 
-input[type=range].c20 {
+input[type=range].c21 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -857,11 +881,11 @@ input[type=range].c20 {
   background: transparent;
 }
 
-input[type=range].c20:focus {
+input[type=range].c21:focus {
   outline: none;
 }
 
-input[type=range].c20::-webkit-slider-thumb {
+input[type=range].c21::-webkit-slider-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -873,7 +897,7 @@ input[type=range].c20::-webkit-slider-thumb {
   margin-top: -3px;
 }
 
-input[type=range].c20::-moz-range-thumb {
+input[type=range].c21::-moz-range-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -886,7 +910,7 @@ input[type=range].c20::-moz-range-thumb {
   border: none;
 }
 
-input[type=range].c20::-ms-thumb {
+input[type=range].c21::-ms-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -899,25 +923,25 @@ input[type=range].c20::-ms-thumb {
   border: none;
 }
 
-input[type=range].c20::-webkit-slider-thumb:hover {
+input[type=range].c21::-webkit-slider-thumb:hover {
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
 
-input[type=range].c20::-moz-range-thumb:hover {
+input[type=range].c21::-moz-range-thumb:hover {
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
 
-input[type=range].c20::-ms-thumb:hover {
+input[type=range].c21::-ms-thumb:hover {
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
 
-input[type=range].c20::-webkit-slider-runnable-track {
+input[type=range].c21::-webkit-slider-runnable-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
@@ -925,7 +949,7 @@ input[type=range].c20::-webkit-slider-runnable-track {
   background: linear-gradient(to right,#6c0 0%,#6c0 NaN% ,rgba(255,255,255,0.5) NaN%);
 }
 
-input[type=range].c20::-moz-range-track {
+input[type=range].c21::-moz-range-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
@@ -933,7 +957,7 @@ input[type=range].c20::-moz-range-track {
   background: linear-gradient(to right,#6c0 0%,#6c0 NaN% ,rgba(255,255,255,0.5) NaN%);
 }
 
-input[type=range].c20::-ms-track {
+input[type=range].c21::-ms-track {
   width: 100%;
   height: 2px;
   margin: 6px 0;
@@ -943,29 +967,29 @@ input[type=range].c20::-ms-track {
   background: linear-gradient(to right,#6c0 0%,#6c0 NaN% ,rgba(255,255,255,0.5) NaN%);
 }
 
-input[type=range].c20::-ms-fill-lower {
+input[type=range].c21::-ms-fill-lower {
   background: transparent;
 }
 
-input[type=range].c20::-ms-tooltip {
+input[type=range].c21::-ms-tooltip {
   display: none;
 }
 
-input[type=range].c20::-ms-tooltip {
+input[type=range].c21::-ms-tooltip {
   display: none;
 }
 
-.c19 {
+.c20 {
   color: #6c0;
   margin: 0 0.5rem;
 }
 
-.c21 {
+.c22 {
   color: white;
   margin: 0 0.5rem;
 }
 
-.c23 {
+.c24 {
   background: none;
   color: inherit;
   border: none;
@@ -982,7 +1006,7 @@ input[type=range].c20::-ms-tooltip {
   align-items: center;
 }
 
-.c22 {
+.c23 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -996,13 +1020,13 @@ input[type=range].c20::-ms-tooltip {
   align-items: center;
 }
 
-.c24 {
+.c25 {
   width: 100%;
   cursor: pointer;
   padding: 5px 0;
 }
 
-input[type=range].c24 {
+input[type=range].c25 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1010,11 +1034,11 @@ input[type=range].c24 {
   background: transparent;
 }
 
-input[type=range].c24:focus {
+input[type=range].c25:focus {
   outline: none;
 }
 
-input[type=range].c24::-webkit-slider-thumb {
+input[type=range].c25::-webkit-slider-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1026,7 +1050,7 @@ input[type=range].c24::-webkit-slider-thumb {
   margin-top: -3px;
 }
 
-input[type=range].c24::-moz-range-thumb {
+input[type=range].c25::-moz-range-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1039,7 +1063,7 @@ input[type=range].c24::-moz-range-thumb {
   border: none;
 }
 
-input[type=range].c24::-ms-thumb {
+input[type=range].c25::-ms-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1052,25 +1076,25 @@ input[type=range].c24::-ms-thumb {
   border: none;
 }
 
-input[type=range].c24::-webkit-slider-thumb:hover {
+input[type=range].c25::-webkit-slider-thumb:hover {
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
 
-input[type=range].c24::-moz-range-thumb:hover {
+input[type=range].c25::-moz-range-thumb:hover {
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
 
-input[type=range].c24::-ms-thumb:hover {
+input[type=range].c25::-ms-thumb:hover {
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
 
-input[type=range].c24::-webkit-slider-runnable-track {
+input[type=range].c25::-webkit-slider-runnable-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
@@ -1078,7 +1102,7 @@ input[type=range].c24::-webkit-slider-runnable-track {
   background: linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,1)99.99% ,rgba(255,255,255,0.5) 100%);
 }
 
-input[type=range].c24::-moz-range-track {
+input[type=range].c25::-moz-range-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
@@ -1086,7 +1110,7 @@ input[type=range].c24::-moz-range-track {
   background: linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,1)99.99% ,rgba(255,255,255,0.5) 100%);
 }
 
-input[type=range].c24::-ms-track {
+input[type=range].c25::-ms-track {
   width: 100%;
   height: 2px;
   margin: 6px 0;
@@ -1096,19 +1120,19 @@ input[type=range].c24::-ms-track {
   background: linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,1)99.99% ,rgba(255,255,255,0.5) 100%);
 }
 
-input[type=range].c24::-ms-fill-lower {
+input[type=range].c25::-ms-fill-lower {
   background: transparent;
 }
 
-input[type=range].c24::-ms-tooltip {
+input[type=range].c25::-ms-tooltip {
   display: none;
 }
 
-input[type=range].c24::-ms-tooltip {
+input[type=range].c25::-ms-tooltip {
   display: none;
 }
 
-.c15 {
+.c16 {
   width: 100%;
   position: relative;
   -webkit-transition: opacity 0.4s;
@@ -1116,7 +1140,7 @@ input[type=range].c24::-ms-tooltip {
   opacity: 0;
 }
 
-.c16 {
+.c17 {
   position: absolute;
   width: 100%;
   height: 56px;
@@ -1138,7 +1162,7 @@ input[type=range].c24::-ms-tooltip {
   z-index: 9;
 }
 
-.c17 {
+.c18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1155,14 +1179,14 @@ input[type=range].c24::-ms-tooltip {
   position: relative;
 }
 
-.c13 {
+.c14 {
   outline: none;
   width: 100%;
   height: 100%;
   font-size: 0;
 }
 
-.c14 {
+.c15 {
   width: 100%;
   height: 100%;
 }
@@ -1181,7 +1205,7 @@ input[type=range].c24::-ms-tooltip {
   z-index: 5;
 }
 
-.c12 {
+.c13 {
   position: absolute;
   z-index: 4;
   display: -webkit-box;
@@ -1208,13 +1232,13 @@ input[type=range].c24::-ms-tooltip {
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c9 {
     display: block;
   }
 }
 
 @media (min-width:768px) {
-  .c10 {
+  .c11 {
     display: none;
   }
 }
@@ -1242,74 +1266,74 @@ input[type=range].c24::-ms-tooltip {
                       class="c5"
                       id="bigButton"
                     >
-                      <span
-                        class="c6"
+                      <div
+                        class="c6 c6 c7"
                       >
-                        <svg
-                          enable-background="new 0 0 21 24"
-                          height="24px"
-                          id="Layer_1"
-                          version="1.1"
-                          viewBox="0 0 21 24"
-                          width="21px"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g
-                            id="Page-1"
-                          >
-                            <g
-                              id="Video---Play-inactive"
-                              transform="translate(-445.000000, -222.000000)"
-                            >
-                              <path
-                                d="M446.9,223c-0.1,0-0.1,0-0.2,0.1c-0.1,0.1-0.2,0.2-0.2,0.3v21.2c0,0.1,0.1,0.3,0.2,0.3 c0.1,0.1,0.3,0.1,0.4,0l17.7-10.6c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3l-17.7-10.6C447,223,446.9,223,446.9,223 M446.9,246c-0.2,0-0.5-0.1-0.7-0.2c-0.4-0.2-0.7-0.7-0.7-1.2v-21.2c0-0.5,0.3-1,0.7-1.2c0.4-0.2,1-0.2,1.4,0l17.7,10.6 c0.4,0.2,0.7,0.7,0.7,1.2c0,0.5-0.3,0.9-0.7,1.2l-17.7,10.6C447.4,245.9,447.1,246,446.9,246"
-                                fill="#FFFFFF"
-                                id="play"
-                              />
-                            </g>
-                          </g>
-                          <path
-                            d="M1.7,0.7c-0.1,0-0.1,0-0.2,0.1C1.4,0.8,1.3,1,1.3,1.1v21.7c0,0.1,0.1,0.3,0.2,0.3c0.1,0.1,0.3,0.1,0.4,0 L20,12.3c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3L1.9,0.8C1.8,0.7,1.8,0.7,1.7,0.7"
-                            fill="none"
-                          />
-                        </svg>
-                      </span>
-                      <span
-                        class="c7"
-                      >
-                        <div
+                        <span
                           class="c8"
                         >
+                          <svg
+                            enable-background="new 0 0 21 24"
+                            height="24px"
+                            id="Layer_1"
+                            version="1.1"
+                            viewBox="0 0 21 24"
+                            width="21px"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g
+                              id="Page-1"
+                            >
+                              <g
+                                id="Video---Play-inactive"
+                                transform="translate(-445.000000, -222.000000)"
+                              >
+                                <path
+                                  d="M446.9,223c-0.1,0-0.1,0-0.2,0.1c-0.1,0.1-0.2,0.2-0.2,0.3v21.2c0,0.1,0.1,0.3,0.2,0.3 c0.1,0.1,0.3,0.1,0.4,0l17.7-10.6c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3l-17.7-10.6C447,223,446.9,223,446.9,223 M446.9,246c-0.2,0-0.5-0.1-0.7-0.2c-0.4-0.2-0.7-0.7-0.7-1.2v-21.2c0-0.5,0.3-1,0.7-1.2c0.4-0.2,1-0.2,1.4,0l17.7,10.6 c0.4,0.2,0.7,0.7,0.7,1.2c0,0.5-0.3,0.9-0.7,1.2l-17.7,10.6C447.4,245.9,447.1,246,446.9,246"
+                                  fill="#FFFFFF"
+                                  id="play"
+                                />
+                              </g>
+                            </g>
+                            <path
+                              d="M1.7,0.7c-0.1,0-0.1,0-0.2,0.1C1.4,0.8,1.3,1,1.3,1.1v21.7c0,0.1,0.1,0.3,0.2,0.3c0.1,0.1,0.3,0.1,0.4,0 L20,12.3c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3L1.9,0.8C1.8,0.7,1.8,0.7,1.7,0.7"
+                              fill="none"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="c9"
+                        >
                           <p
-                            class="c9"
+                            class="c10"
                           >
                             Watch the video
                           </p>
-                        </div>
-                      </span>
-                      <span
-                        class="c10"
-                      >
-                        <p
+                        </span>
+                        <span
                           class="c11"
                         >
-                          Watch the video
-                        </p>
-                      </span>
-                      0
+                          <p
+                            class="c12"
+                          >
+                            Watch the video
+                          </p>
+                        </span>
+                        0
+                      </div>
                     </button>
                   </div>
                 </div>
               </div>
               <div
-                class="c12"
+                class="c13"
               />
             </div>
             <div
-              class="c13"
+              class="c14"
             >
               <video
-                class="c14"
+                class="c15"
               >
                 <source
                   src="video.mp4"
@@ -1325,24 +1349,24 @@ input[type=range].c24::-ms-tooltip {
               </video>
             </div>
             <div
-              class="c15"
+              class="c16"
             >
               <div
-                class="c16"
+                class="c17"
               >
                 <div
-                  class="c17"
+                  class="c18"
                 >
                   <div
-                    class="c18"
+                    class="c19"
                   >
                     <p
-                      class="c19"
+                      class="c20"
                     >
                       -1:59
                     </p>
                     <input
-                      class="c20"
+                      class="c21"
                       max="0"
                       step="any"
                       tabindex="-1"
@@ -1350,18 +1374,18 @@ input[type=range].c24::-ms-tooltip {
                       value="-1"
                     />
                     <p
-                      class="c21"
+                      class="c22"
                     >
                       0:01
                     </p>
                   </div>
                 </div>
                 <div
-                  class="c22"
+                  class="c23"
                 >
                   <button
                     aria-label="Mute"
-                    class="c23"
+                    class="c24"
                     tabindex="-1"
                   >
                     <svg
@@ -1410,7 +1434,7 @@ input[type=range].c24::-ms-tooltip {
                     </svg>
                   </button>
                   <input
-                    class="c24"
+                    class="c25"
                     id="volumeSlider"
                     max="1"
                     min="0"
@@ -1421,11 +1445,11 @@ input[type=range].c24::-ms-tooltip {
                   />
                 </div>
                 <div
-                  class="c25"
+                  class="c26"
                 >
                   <button
                     aria-label="Select captions"
-                    class="c23"
+                    class="c24"
                     tabindex="-1"
                   >
                     <svg
@@ -1458,7 +1482,7 @@ input[type=range].c24::-ms-tooltip {
                   </button>
                   <button
                     aria-label="Change video quality"
-                    class="c23"
+                    class="c24"
                     tabindex="-1"
                   >
                     <svg
@@ -1496,7 +1520,7 @@ input[type=range].c24::-ms-tooltip {
                   </button>
                   <button
                     aria-label="Toggle fullscreen"
-                    class="c23"
+                    class="c24"
                     tabindex="-1"
                   >
                     <svg
@@ -1806,27 +1830,28 @@ input[type=range].c24::-ms-tooltip {
                                           className="c5"
                                           id="bigButton"
                                         >
-                                          <BigVideoButton__IconContainer>
+                                          <Styled(Box)
+                                            between={1}
+                                          >
                                             <StyledComponent
+                                              between={1}
                                               forwardedComponent={
                                                 Object {
                                                   "$$typeof": Symbol(react.forward_ref),
                                                   "attrs": Array [],
                                                   "componentStyle": ComponentStyle {
-                                                    "componentId": "BigVideoButton__IconContainer-hhla36-2",
+                                                    "componentId": "sc-bwzfXH",
                                                     "isStatic": true,
                                                     "lastClassName": "c6",
                                                     "rules": Array [
-                                                      "svg>path {",
-                                                      "fill: inherit;",
-                                                      "}",
+                                                      "align-items: center;",
                                                     ],
                                                   },
-                                                  "displayName": "BigVideoButton__IconContainer",
+                                                  "displayName": "Styled(Box)",
                                                   "foldedComponentIds": Array [],
                                                   "render": [Function],
-                                                  "styledComponentId": "BigVideoButton__IconContainer-hhla36-2",
-                                                  "target": "span",
+                                                  "styledComponentId": "sc-bwzfXH",
+                                                  "target": [Function],
                                                   "toString": [Function],
                                                   "warnTooManyClasses": [Function],
                                                   "withComponent": [Function],
@@ -1834,292 +1859,325 @@ input[type=range].c24::-ms-tooltip {
                                               }
                                               forwardedRef={null}
                                             >
-                                              <span
+                                              <Box
+                                                between={1}
                                                 className="c6"
+                                                inline={false}
+                                                tag="div"
                                               >
-                                                <Play>
-                                                  <svg
-                                                    enableBackground="new 0 0 21 24"
-                                                    height="24px"
-                                                    id="Layer_1"
-                                                    version="1.1"
-                                                    viewBox="0 0 21 24"
-                                                    width="21px"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                  >
-                                                    <g
-                                                      id="Page-1"
-                                                    >
-                                                      <g
-                                                        id="Video---Play-inactive"
-                                                        transform="translate(-445.000000, -222.000000)"
-                                                      >
-                                                        <path
-                                                          d="M446.9,223c-0.1,0-0.1,0-0.2,0.1c-0.1,0.1-0.2,0.2-0.2,0.3v21.2c0,0.1,0.1,0.3,0.2,0.3 c0.1,0.1,0.3,0.1,0.4,0l17.7-10.6c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3l-17.7-10.6C447,223,446.9,223,446.9,223 M446.9,246c-0.2,0-0.5-0.1-0.7-0.2c-0.4-0.2-0.7-0.7-0.7-1.2v-21.2c0-0.5,0.3-1,0.7-1.2c0.4-0.2,1-0.2,1.4,0l17.7,10.6 c0.4,0.2,0.7,0.7,0.7,1.2c0,0.5-0.3,0.9-0.7,1.2l-17.7,10.6C447.4,245.9,447.1,246,446.9,246"
-                                                          fill="#FFFFFF"
-                                                          id="play"
-                                                        />
-                                                      </g>
-                                                    </g>
-                                                    <path
-                                                      d="M1.7,0.7c-0.1,0-0.1,0-0.2,0.1C1.4,0.8,1.3,1,1.3,1.1v21.7c0,0.1,0.1,0.3,0.2,0.3c0.1,0.1,0.3,0.1,0.4,0 L20,12.3c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3L1.9,0.8C1.8,0.7,1.8,0.7,1.7,0.7"
-                                                      fill="none"
-                                                    />
-                                                  </svg>
-                                                </Play>
-                                              </span>
-                                            </StyledComponent>
-                                          </BigVideoButton__IconContainer>
-                                          <BigVideoButton__BigWatchTextContainer>
-                                            <StyledComponent
-                                              forwardedComponent={
-                                                Object {
-                                                  "$$typeof": Symbol(react.forward_ref),
-                                                  "attrs": Array [],
-                                                  "componentStyle": ComponentStyle {
-                                                    "componentId": "BigVideoButton__BigWatchTextContainer-hhla36-3",
-                                                    "isStatic": true,
-                                                    "lastClassName": "c7",
-                                                    "rules": Array [
-                                                      "display: none;",
-                                                      "@media (min-width: 768px) {",
-                                                      "display: block;",
-                                                      "}",
-                                                    ],
-                                                  },
-                                                  "displayName": "BigVideoButton__BigWatchTextContainer",
-                                                  "foldedComponentIds": Array [],
-                                                  "render": [Function],
-                                                  "styledComponentId": "BigVideoButton__BigWatchTextContainer-hhla36-3",
-                                                  "target": "span",
-                                                  "toString": [Function],
-                                                  "warnTooManyClasses": [Function],
-                                                  "withComponent": [Function],
-                                                }
-                                              }
-                                              forwardedRef={null}
-                                            >
-                                              <span
-                                                className="c7"
-                                              >
-                                                <Box
+                                                <styled.div
+                                                  between={1}
+                                                  className="c6"
                                                   inline={false}
                                                   tag="div"
-                                                  vertical={1}
                                                 >
-                                                  <styled.div
-                                                    inline={false}
-                                                    tag="div"
-                                                    vertical={1}
-                                                  >
-                                                    <StyledComponent
-                                                      forwardedComponent={
-                                                        Object {
-                                                          "$$typeof": Symbol(react.forward_ref),
-                                                          "attrs": Array [
+                                                  <StyledComponent
+                                                    between={1}
+                                                    className="c6"
+                                                    forwardedComponent={
+                                                      Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "attrs": Array [
+                                                          [Function],
+                                                        ],
+                                                        "componentStyle": ComponentStyle {
+                                                          "componentId": "sc-bdVaJa",
+                                                          "isStatic": false,
+                                                          "lastClassName": "c26",
+                                                          "rules": Array [
+                                                            [Function],
+                                                            [Function],
+                                                            [Function],
+                                                            [Function],
                                                             [Function],
                                                           ],
-                                                          "componentStyle": ComponentStyle {
-                                                            "componentId": "sc-bdVaJa",
-                                                            "isStatic": false,
-                                                            "lastClassName": "c25",
-                                                            "rules": Array [
-                                                              [Function],
-                                                              [Function],
-                                                              [Function],
-                                                              [Function],
-                                                              [Function],
-                                                            ],
-                                                          },
-                                                          "displayName": "styled.div",
-                                                          "foldedComponentIds": Array [],
-                                                          "render": [Function],
-                                                          "styledComponentId": "sc-bdVaJa",
-                                                          "target": "div",
-                                                          "toString": [Function],
-                                                          "warnTooManyClasses": [Function],
-                                                          "withComponent": [Function],
-                                                        }
+                                                        },
+                                                        "displayName": "styled.div",
+                                                        "foldedComponentIds": Array [],
+                                                        "render": [Function],
+                                                        "styledComponentId": "sc-bdVaJa",
+                                                        "target": "div",
+                                                        "toString": [Function],
+                                                        "warnTooManyClasses": [Function],
+                                                        "withComponent": [Function],
                                                       }
-                                                      forwardedRef={null}
-                                                      inline={false}
-                                                      tag="div"
-                                                      vertical={1}
+                                                    }
+                                                    forwardedRef={null}
+                                                    inline={false}
+                                                    tag="div"
+                                                  >
+                                                    <div
+                                                      className="c6 sc-bwzfXH c6 c7"
                                                     >
-                                                      <div
-                                                        className="c8"
-                                                      >
-                                                        <Paragraph
-                                                          align="center"
-                                                          bold={true}
-                                                          invert={true}
-                                                          size="medium"
+                                                      <BigVideoButton__IconContainer>
+                                                        <StyledComponent
+                                                          forwardedComponent={
+                                                            Object {
+                                                              "$$typeof": Symbol(react.forward_ref),
+                                                              "attrs": Array [],
+                                                              "componentStyle": ComponentStyle {
+                                                                "componentId": "BigVideoButton__IconContainer-hhla36-2",
+                                                                "isStatic": true,
+                                                                "lastClassName": "c8",
+                                                                "rules": Array [
+                                                                  "svg>path {",
+                                                                  "fill: inherit;",
+                                                                  "}",
+                                                                ],
+                                                              },
+                                                              "displayName": "BigVideoButton__IconContainer",
+                                                              "foldedComponentIds": Array [],
+                                                              "render": [Function],
+                                                              "styledComponentId": "BigVideoButton__IconContainer-hhla36-2",
+                                                              "target": "span",
+                                                              "toString": [Function],
+                                                              "warnTooManyClasses": [Function],
+                                                              "withComponent": [Function],
+                                                            }
+                                                          }
+                                                          forwardedRef={null}
                                                         >
-                                                          <Paragraph__StyledParagraph
-                                                            align="center"
-                                                            bold={true}
-                                                            invert={true}
-                                                            size="medium"
+                                                          <span
+                                                            className="c8"
                                                           >
-                                                            <StyledComponent
+                                                            <Play>
+                                                              <svg
+                                                                enableBackground="new 0 0 21 24"
+                                                                height="24px"
+                                                                id="Layer_1"
+                                                                version="1.1"
+                                                                viewBox="0 0 21 24"
+                                                                width="21px"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                              >
+                                                                <g
+                                                                  id="Page-1"
+                                                                >
+                                                                  <g
+                                                                    id="Video---Play-inactive"
+                                                                    transform="translate(-445.000000, -222.000000)"
+                                                                  >
+                                                                    <path
+                                                                      d="M446.9,223c-0.1,0-0.1,0-0.2,0.1c-0.1,0.1-0.2,0.2-0.2,0.3v21.2c0,0.1,0.1,0.3,0.2,0.3 c0.1,0.1,0.3,0.1,0.4,0l17.7-10.6c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3l-17.7-10.6C447,223,446.9,223,446.9,223 M446.9,246c-0.2,0-0.5-0.1-0.7-0.2c-0.4-0.2-0.7-0.7-0.7-1.2v-21.2c0-0.5,0.3-1,0.7-1.2c0.4-0.2,1-0.2,1.4,0l17.7,10.6 c0.4,0.2,0.7,0.7,0.7,1.2c0,0.5-0.3,0.9-0.7,1.2l-17.7,10.6C447.4,245.9,447.1,246,446.9,246"
+                                                                      fill="#FFFFFF"
+                                                                      id="play"
+                                                                    />
+                                                                  </g>
+                                                                </g>
+                                                                <path
+                                                                  d="M1.7,0.7c-0.1,0-0.1,0-0.2,0.1C1.4,0.8,1.3,1,1.3,1.1v21.7c0,0.1,0.1,0.3,0.2,0.3c0.1,0.1,0.3,0.1,0.4,0 L20,12.3c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3L1.9,0.8C1.8,0.7,1.8,0.7,1.7,0.7"
+                                                                  fill="none"
+                                                                />
+                                                              </svg>
+                                                            </Play>
+                                                          </span>
+                                                        </StyledComponent>
+                                                      </BigVideoButton__IconContainer>
+                                                      <BigVideoButton__BigWatchTextContainer>
+                                                        <StyledComponent
+                                                          forwardedComponent={
+                                                            Object {
+                                                              "$$typeof": Symbol(react.forward_ref),
+                                                              "attrs": Array [],
+                                                              "componentStyle": ComponentStyle {
+                                                                "componentId": "BigVideoButton__BigWatchTextContainer-hhla36-3",
+                                                                "isStatic": true,
+                                                                "lastClassName": "c9",
+                                                                "rules": Array [
+                                                                  "display: none;",
+                                                                  "@media (min-width: 768px) {",
+                                                                  "display: block;",
+                                                                  "}",
+                                                                ],
+                                                              },
+                                                              "displayName": "BigVideoButton__BigWatchTextContainer",
+                                                              "foldedComponentIds": Array [],
+                                                              "render": [Function],
+                                                              "styledComponentId": "BigVideoButton__BigWatchTextContainer-hhla36-3",
+                                                              "target": "span",
+                                                              "toString": [Function],
+                                                              "warnTooManyClasses": [Function],
+                                                              "withComponent": [Function],
+                                                            }
+                                                          }
+                                                          forwardedRef={null}
+                                                        >
+                                                          <span
+                                                            className="c9"
+                                                          >
+                                                            <Paragraph
                                                               align="center"
                                                               bold={true}
-                                                              forwardedComponent={
-                                                                Object {
-                                                                  "$$typeof": Symbol(react.forward_ref),
-                                                                  "attrs": Array [],
-                                                                  "componentStyle": ComponentStyle {
-                                                                    "componentId": "Paragraph__StyledParagraph-efl81j-0",
-                                                                    "isStatic": false,
-                                                                    "lastClassName": "c11",
-                                                                    "rules": Array [
-                                                                      [Function],
-                                                                      "word-wrap: break-word;",
-                                                                      "padding: 0;",
-                                                                      "margin: 0;",
-                                                                      [Function],
-                                                                      [Function],
-                                                                      [Function],
-                                                                      [Function],
-                                                                      "sup {",
-                                                                      "top: -0.5em;",
-                                                                      "font-size: 0.875rem;",
-                                                                      "position: relative;",
-                                                                      "vertical-align: baseline;",
-                                                                      "padding-left: 0.1em;",
-                                                                      "}",
-                                                                    ],
-                                                                  },
-                                                                  "displayName": "Paragraph__StyledParagraph",
-                                                                  "foldedComponentIds": Array [],
-                                                                  "render": [Function],
-                                                                  "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
-                                                                  "target": "p",
-                                                                  "toString": [Function],
-                                                                  "warnTooManyClasses": [Function],
-                                                                  "withComponent": [Function],
-                                                                }
-                                                              }
-                                                              forwardedRef={null}
                                                               invert={true}
                                                               size="medium"
                                                             >
-                                                              <p
-                                                                className="c9"
+                                                              <Paragraph__StyledParagraph
+                                                                align="center"
+                                                                bold={true}
+                                                                invert={true}
                                                                 size="medium"
                                                               >
-                                                                Watch the video
-                                                              </p>
-                                                            </StyledComponent>
-                                                          </Paragraph__StyledParagraph>
-                                                        </Paragraph>
-                                                      </div>
-                                                    </StyledComponent>
-                                                  </styled.div>
-                                                </Box>
-                                              </span>
+                                                                <StyledComponent
+                                                                  align="center"
+                                                                  bold={true}
+                                                                  forwardedComponent={
+                                                                    Object {
+                                                                      "$$typeof": Symbol(react.forward_ref),
+                                                                      "attrs": Array [],
+                                                                      "componentStyle": ComponentStyle {
+                                                                        "componentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                                        "isStatic": false,
+                                                                        "lastClassName": "c12",
+                                                                        "rules": Array [
+                                                                          [Function],
+                                                                          "word-wrap: break-word;",
+                                                                          "padding: 0;",
+                                                                          "margin: 0;",
+                                                                          [Function],
+                                                                          [Function],
+                                                                          [Function],
+                                                                          [Function],
+                                                                          "sup {",
+                                                                          "top: -0.5em;",
+                                                                          "font-size: 0.875rem;",
+                                                                          "position: relative;",
+                                                                          "vertical-align: baseline;",
+                                                                          "padding-left: 0.1em;",
+                                                                          "}",
+                                                                        ],
+                                                                      },
+                                                                      "displayName": "Paragraph__StyledParagraph",
+                                                                      "foldedComponentIds": Array [],
+                                                                      "render": [Function],
+                                                                      "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                                      "target": "p",
+                                                                      "toString": [Function],
+                                                                      "warnTooManyClasses": [Function],
+                                                                      "withComponent": [Function],
+                                                                    }
+                                                                  }
+                                                                  forwardedRef={null}
+                                                                  invert={true}
+                                                                  size="medium"
+                                                                >
+                                                                  <p
+                                                                    className="c10"
+                                                                    size="medium"
+                                                                  >
+                                                                    Watch the video
+                                                                  </p>
+                                                                </StyledComponent>
+                                                              </Paragraph__StyledParagraph>
+                                                            </Paragraph>
+                                                          </span>
+                                                        </StyledComponent>
+                                                      </BigVideoButton__BigWatchTextContainer>
+                                                      <BigVideoButton__LittleWatchTextContainer>
+                                                        <StyledComponent
+                                                          forwardedComponent={
+                                                            Object {
+                                                              "$$typeof": Symbol(react.forward_ref),
+                                                              "attrs": Array [],
+                                                              "componentStyle": ComponentStyle {
+                                                                "componentId": "BigVideoButton__LittleWatchTextContainer-hhla36-4",
+                                                                "isStatic": true,
+                                                                "lastClassName": "c11",
+                                                                "rules": Array [
+                                                                  "display: block;",
+                                                                  "@media (min-width: 768px) {",
+                                                                  "display: none;",
+                                                                  "}",
+                                                                ],
+                                                              },
+                                                              "displayName": "BigVideoButton__LittleWatchTextContainer",
+                                                              "foldedComponentIds": Array [],
+                                                              "render": [Function],
+                                                              "styledComponentId": "BigVideoButton__LittleWatchTextContainer-hhla36-4",
+                                                              "target": "span",
+                                                              "toString": [Function],
+                                                              "warnTooManyClasses": [Function],
+                                                              "withComponent": [Function],
+                                                            }
+                                                          }
+                                                          forwardedRef={null}
+                                                        >
+                                                          <span
+                                                            className="c11"
+                                                          >
+                                                            <Paragraph
+                                                              align="center"
+                                                              bold={true}
+                                                              invert={true}
+                                                              size="small"
+                                                            >
+                                                              <Paragraph__StyledParagraph
+                                                                align="center"
+                                                                bold={true}
+                                                                invert={true}
+                                                                size="small"
+                                                              >
+                                                                <StyledComponent
+                                                                  align="center"
+                                                                  bold={true}
+                                                                  forwardedComponent={
+                                                                    Object {
+                                                                      "$$typeof": Symbol(react.forward_ref),
+                                                                      "attrs": Array [],
+                                                                      "componentStyle": ComponentStyle {
+                                                                        "componentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                                        "isStatic": false,
+                                                                        "lastClassName": "c12",
+                                                                        "rules": Array [
+                                                                          [Function],
+                                                                          "word-wrap: break-word;",
+                                                                          "padding: 0;",
+                                                                          "margin: 0;",
+                                                                          [Function],
+                                                                          [Function],
+                                                                          [Function],
+                                                                          [Function],
+                                                                          "sup {",
+                                                                          "top: -0.5em;",
+                                                                          "font-size: 0.875rem;",
+                                                                          "position: relative;",
+                                                                          "vertical-align: baseline;",
+                                                                          "padding-left: 0.1em;",
+                                                                          "}",
+                                                                        ],
+                                                                      },
+                                                                      "displayName": "Paragraph__StyledParagraph",
+                                                                      "foldedComponentIds": Array [],
+                                                                      "render": [Function],
+                                                                      "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
+                                                                      "target": "p",
+                                                                      "toString": [Function],
+                                                                      "warnTooManyClasses": [Function],
+                                                                      "withComponent": [Function],
+                                                                    }
+                                                                  }
+                                                                  forwardedRef={null}
+                                                                  invert={true}
+                                                                  size="small"
+                                                                >
+                                                                  <p
+                                                                    className="c12"
+                                                                    size="small"
+                                                                  >
+                                                                    Watch the video
+                                                                  </p>
+                                                                </StyledComponent>
+                                                              </Paragraph__StyledParagraph>
+                                                            </Paragraph>
+                                                          </span>
+                                                        </StyledComponent>
+                                                      </BigVideoButton__LittleWatchTextContainer>
+                                                      0
+                                                    </div>
+                                                  </StyledComponent>
+                                                </styled.div>
+                                              </Box>
                                             </StyledComponent>
-                                          </BigVideoButton__BigWatchTextContainer>
-                                          <BigVideoButton__LittleWatchTextContainer>
-                                            <StyledComponent
-                                              forwardedComponent={
-                                                Object {
-                                                  "$$typeof": Symbol(react.forward_ref),
-                                                  "attrs": Array [],
-                                                  "componentStyle": ComponentStyle {
-                                                    "componentId": "BigVideoButton__LittleWatchTextContainer-hhla36-4",
-                                                    "isStatic": true,
-                                                    "lastClassName": "c10",
-                                                    "rules": Array [
-                                                      "display: block;",
-                                                      "@media (min-width: 768px) {",
-                                                      "display: none;",
-                                                      "}",
-                                                    ],
-                                                  },
-                                                  "displayName": "BigVideoButton__LittleWatchTextContainer",
-                                                  "foldedComponentIds": Array [],
-                                                  "render": [Function],
-                                                  "styledComponentId": "BigVideoButton__LittleWatchTextContainer-hhla36-4",
-                                                  "target": "span",
-                                                  "toString": [Function],
-                                                  "warnTooManyClasses": [Function],
-                                                  "withComponent": [Function],
-                                                }
-                                              }
-                                              forwardedRef={null}
-                                            >
-                                              <span
-                                                className="c10"
-                                              >
-                                                <Paragraph
-                                                  align="center"
-                                                  bold={true}
-                                                  invert={true}
-                                                  size="small"
-                                                >
-                                                  <Paragraph__StyledParagraph
-                                                    align="center"
-                                                    bold={true}
-                                                    invert={true}
-                                                    size="small"
-                                                  >
-                                                    <StyledComponent
-                                                      align="center"
-                                                      bold={true}
-                                                      forwardedComponent={
-                                                        Object {
-                                                          "$$typeof": Symbol(react.forward_ref),
-                                                          "attrs": Array [],
-                                                          "componentStyle": ComponentStyle {
-                                                            "componentId": "Paragraph__StyledParagraph-efl81j-0",
-                                                            "isStatic": false,
-                                                            "lastClassName": "c11",
-                                                            "rules": Array [
-                                                              [Function],
-                                                              "word-wrap: break-word;",
-                                                              "padding: 0;",
-                                                              "margin: 0;",
-                                                              [Function],
-                                                              [Function],
-                                                              [Function],
-                                                              [Function],
-                                                              "sup {",
-                                                              "top: -0.5em;",
-                                                              "font-size: 0.875rem;",
-                                                              "position: relative;",
-                                                              "vertical-align: baseline;",
-                                                              "padding-left: 0.1em;",
-                                                              "}",
-                                                            ],
-                                                          },
-                                                          "displayName": "Paragraph__StyledParagraph",
-                                                          "foldedComponentIds": Array [],
-                                                          "render": [Function],
-                                                          "styledComponentId": "Paragraph__StyledParagraph-efl81j-0",
-                                                          "target": "p",
-                                                          "toString": [Function],
-                                                          "warnTooManyClasses": [Function],
-                                                          "withComponent": [Function],
-                                                        }
-                                                      }
-                                                      forwardedRef={null}
-                                                      invert={true}
-                                                      size="small"
-                                                    >
-                                                      <p
-                                                        className="c11"
-                                                        size="small"
-                                                      >
-                                                        Watch the video
-                                                      </p>
-                                                    </StyledComponent>
-                                                  </Paragraph__StyledParagraph>
-                                                </Paragraph>
-                                              </span>
-                                            </StyledComponent>
-                                          </BigVideoButton__LittleWatchTextContainer>
-                                          0
+                                          </Styled(Box)>
                                         </button>
                                       </StyledComponent>
                                     </BigVideoButton__BigPlayButton>
@@ -2143,7 +2201,7 @@ input[type=range].c24::-ms-tooltip {
                       "componentStyle": ComponentStyle {
                         "componentId": "Video__VideoOverlayElementContainer-sc-10rnfmo-5",
                         "isStatic": true,
-                        "lastClassName": "c12",
+                        "lastClassName": "c13",
                         "rules": Array [
                           "position: absolute;",
                           "z-index: 4;",
@@ -2167,7 +2225,7 @@ input[type=range].c24::-ms-tooltip {
                   forwardedRef={null}
                 >
                   <div
-                    className="c12"
+                    className="c13"
                   />
                 </StyledComponent>
               </Video__VideoOverlayElementContainer>
@@ -2186,7 +2244,7 @@ input[type=range].c24::-ms-tooltip {
                 "componentStyle": ComponentStyle {
                   "componentId": "Video__VideoElementContainer-sc-10rnfmo-1",
                   "isStatic": true,
-                  "lastClassName": "c13",
+                  "lastClassName": "c14",
                   "rules": Array [
                     "outline: none;",
                     "width: 100%;",
@@ -2209,7 +2267,7 @@ input[type=range].c24::-ms-tooltip {
             videoIsFullscreen={false}
           >
             <div
-              className="c13"
+              className="c14"
             >
               <Video__VideoPlayer
                 controls={false}
@@ -2225,7 +2283,7 @@ input[type=range].c24::-ms-tooltip {
                       "componentStyle": ComponentStyle {
                         "componentId": "Video__VideoPlayer-sc-10rnfmo-2",
                         "isStatic": true,
-                        "lastClassName": "c14",
+                        "lastClassName": "c15",
                         "rules": Array [
                           "width: 100%;",
                           "height: 100%;",
@@ -2244,7 +2302,7 @@ input[type=range].c24::-ms-tooltip {
                   forwardedRef={
                     Object {
                       "current": <video
-                        class="c14"
+                        class="c15"
                       >
                         <source
                           src="video.mp4"
@@ -2264,7 +2322,7 @@ input[type=range].c24::-ms-tooltip {
                   videoIsFullscreen={false}
                 >
                   <video
-                    className="c14"
+                    className="c15"
                     controls={false}
                   >
                     <source
@@ -2346,7 +2404,7 @@ input[type=range].c24::-ms-tooltip {
           videoPlayer={
             Object {
               "current": <video
-                class="c14"
+                class="c15"
               >
                 <source
                   src="video.mp4"
@@ -2387,74 +2445,74 @@ input[type=range].c24::-ms-tooltip {
                           class="c5"
                           id="bigButton"
                         >
-                          <span
-                            class="c6"
+                          <div
+                            class="c6 sc-bwzfXH c6 c7"
                           >
-                            <svg
-                              enable-background="new 0 0 21 24"
-                              height="24px"
-                              id="Layer_1"
-                              version="1.1"
-                              viewBox="0 0 21 24"
-                              width="21px"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <g
-                                id="Page-1"
-                              >
-                                <g
-                                  id="Video---Play-inactive"
-                                  transform="translate(-445.000000, -222.000000)"
-                                >
-                                  <path
-                                    d="M446.9,223c-0.1,0-0.1,0-0.2,0.1c-0.1,0.1-0.2,0.2-0.2,0.3v21.2c0,0.1,0.1,0.3,0.2,0.3 c0.1,0.1,0.3,0.1,0.4,0l17.7-10.6c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3l-17.7-10.6C447,223,446.9,223,446.9,223 M446.9,246c-0.2,0-0.5-0.1-0.7-0.2c-0.4-0.2-0.7-0.7-0.7-1.2v-21.2c0-0.5,0.3-1,0.7-1.2c0.4-0.2,1-0.2,1.4,0l17.7,10.6 c0.4,0.2,0.7,0.7,0.7,1.2c0,0.5-0.3,0.9-0.7,1.2l-17.7,10.6C447.4,245.9,447.1,246,446.9,246"
-                                    fill="#FFFFFF"
-                                    id="play"
-                                  />
-                                </g>
-                              </g>
-                              <path
-                                d="M1.7,0.7c-0.1,0-0.1,0-0.2,0.1C1.4,0.8,1.3,1,1.3,1.1v21.7c0,0.1,0.1,0.3,0.2,0.3c0.1,0.1,0.3,0.1,0.4,0 L20,12.3c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3L1.9,0.8C1.8,0.7,1.8,0.7,1.7,0.7"
-                                fill="none"
-                              />
-                            </svg>
-                          </span>
-                          <span
-                            class="c7"
-                          >
-                            <div
+                            <span
                               class="c8"
                             >
+                              <svg
+                                enable-background="new 0 0 21 24"
+                                height="24px"
+                                id="Layer_1"
+                                version="1.1"
+                                viewBox="0 0 21 24"
+                                width="21px"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g
+                                  id="Page-1"
+                                >
+                                  <g
+                                    id="Video---Play-inactive"
+                                    transform="translate(-445.000000, -222.000000)"
+                                  >
+                                    <path
+                                      d="M446.9,223c-0.1,0-0.1,0-0.2,0.1c-0.1,0.1-0.2,0.2-0.2,0.3v21.2c0,0.1,0.1,0.3,0.2,0.3 c0.1,0.1,0.3,0.1,0.4,0l17.7-10.6c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3l-17.7-10.6C447,223,446.9,223,446.9,223 M446.9,246c-0.2,0-0.5-0.1-0.7-0.2c-0.4-0.2-0.7-0.7-0.7-1.2v-21.2c0-0.5,0.3-1,0.7-1.2c0.4-0.2,1-0.2,1.4,0l17.7,10.6 c0.4,0.2,0.7,0.7,0.7,1.2c0,0.5-0.3,0.9-0.7,1.2l-17.7,10.6C447.4,245.9,447.1,246,446.9,246"
+                                      fill="#FFFFFF"
+                                      id="play"
+                                    />
+                                  </g>
+                                </g>
+                                <path
+                                  d="M1.7,0.7c-0.1,0-0.1,0-0.2,0.1C1.4,0.8,1.3,1,1.3,1.1v21.7c0,0.1,0.1,0.3,0.2,0.3c0.1,0.1,0.3,0.1,0.4,0 L20,12.3c0.1-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.3-0.2-0.3L1.9,0.8C1.8,0.7,1.8,0.7,1.7,0.7"
+                                  fill="none"
+                                />
+                              </svg>
+                            </span>
+                            <span
+                              class="c9"
+                            >
                               <p
-                                class="c9"
+                                class="c10"
                               >
                                 Watch the video
                               </p>
-                            </div>
-                          </span>
-                          <span
-                            class="c10"
-                          >
-                            <p
+                            </span>
+                            <span
                               class="c11"
                             >
-                              Watch the video
-                            </p>
-                          </span>
-                          0
+                              <p
+                                class="c12"
+                              >
+                                Watch the video
+                              </p>
+                            </span>
+                            0
+                          </div>
                         </button>
                       </div>
                     </div>
                   </div>
                   <div
-                    class="c12"
+                    class="c13"
                   />
                 </div>
                 <div
-                  class="c13"
+                  class="c14"
                 >
                   <video
-                    class="c14"
+                    class="c15"
                   >
                     <source
                       src="video.mp4"
@@ -2470,24 +2528,24 @@ input[type=range].c24::-ms-tooltip {
                   </video>
                 </div>
                 <div
-                  class="c15"
+                  class="c16"
                 >
                   <div
-                    class="c16"
+                    class="c17"
                   >
                     <div
-                      class="c17"
+                      class="c18"
                     >
                       <div
-                        class="c18"
+                        class="c19"
                       >
                         <p
-                          class="c19"
+                          class="c20"
                         >
                           -1:59
                         </p>
                         <input
-                          class="c20"
+                          class="c21"
                           max="0"
                           step="any"
                           tabindex="-1"
@@ -2495,18 +2553,18 @@ input[type=range].c24::-ms-tooltip {
                           value="-1"
                         />
                         <p
-                          class="c21"
+                          class="c22"
                         >
                           0:01
                         </p>
                       </div>
                     </div>
                     <div
-                      class="c22"
+                      class="c23"
                     >
                       <button
                         aria-label="Mute"
-                        class="c23"
+                        class="c24"
                         tabindex="-1"
                       >
                         <svg
@@ -2555,7 +2613,7 @@ input[type=range].c24::-ms-tooltip {
                         </svg>
                       </button>
                       <input
-                        class="c24"
+                        class="c25"
                         id="volumeSlider"
                         max="1"
                         min="0"
@@ -2566,11 +2624,11 @@ input[type=range].c24::-ms-tooltip {
                       />
                     </div>
                     <div
-                      class="c25"
+                      class="c26"
                     >
                       <button
                         aria-label="Select captions"
-                        class="c23"
+                        class="c24"
                         tabindex="-1"
                       >
                         <svg
@@ -2603,7 +2661,7 @@ input[type=range].c24::-ms-tooltip {
                       </button>
                       <button
                         aria-label="Change video quality"
-                        class="c23"
+                        class="c24"
                         tabindex="-1"
                       >
                         <svg
@@ -2641,7 +2699,7 @@ input[type=range].c24::-ms-tooltip {
                       </button>
                       <button
                         aria-label="Toggle fullscreen"
-                        class="c23"
+                        class="c24"
                         tabindex="-1"
                       >
                         <svg
@@ -2707,7 +2765,7 @@ input[type=range].c24::-ms-tooltip {
                   "componentStyle": ComponentStyle {
                     "componentId": "ControlBar__ControlBarContainer-sc-1wksqan-0",
                     "isStatic": false,
-                    "lastClassName": "c15",
+                    "lastClassName": "c16",
                     "rules": Array [
                       [Function],
                     ],
@@ -2731,7 +2789,7 @@ input[type=range].c24::-ms-tooltip {
               onMouseOver={[Function]}
             >
               <div
-                className="c15"
+                className="c16"
                 onBlur={[Function]}
                 onFocus={[Function]}
                 onMouseOut={[Function]}
@@ -2750,7 +2808,7 @@ input[type=range].c24::-ms-tooltip {
                         "componentStyle": ComponentStyle {
                           "componentId": "ControlBar__StyledControlBar-sc-1wksqan-1",
                           "isStatic": false,
-                          "lastClassName": "c16",
+                          "lastClassName": "c17",
                           "rules": Array [
                             [Function],
                           ],
@@ -2769,7 +2827,7 @@ input[type=range].c24::-ms-tooltip {
                     videoPlayerWidth={0}
                   >
                     <div
-                      className="c16"
+                      className="c17"
                     >
                       <ControlBar__VideoProgressBarContainer>
                         <StyledComponent
@@ -2780,7 +2838,7 @@ input[type=range].c24::-ms-tooltip {
                               "componentStyle": ComponentStyle {
                                 "componentId": "ControlBar__VideoProgressBarContainer-sc-1wksqan-2",
                                 "isStatic": true,
-                                "lastClassName": "c17",
+                                "lastClassName": "c18",
                                 "rules": Array [
                                   "display: flex;",
                                   "flex-grow: 1;",
@@ -2799,7 +2857,7 @@ input[type=range].c24::-ms-tooltip {
                           forwardedRef={null}
                         >
                           <div
-                            className="c17"
+                            className="c18"
                           >
                             <VideoProgressBar
                               resetInactivityTimer={[Function]}
@@ -2810,7 +2868,7 @@ input[type=range].c24::-ms-tooltip {
                               videoPlayer={
                                 Object {
                                   "current": <video
-                                    class="c14"
+                                    class="c15"
                                   >
                                     <source
                                       src="video.mp4"
@@ -2836,7 +2894,7 @@ input[type=range].c24::-ms-tooltip {
                                       "componentStyle": ComponentStyle {
                                         "componentId": "VideoProgressBar__ProgressBarContainer-sc-1lt9si3-0",
                                         "isStatic": true,
-                                        "lastClassName": "c18",
+                                        "lastClassName": "c19",
                                         "rules": Array [
                                           "display: flex;",
                                           "width: 100%;",
@@ -2856,7 +2914,7 @@ input[type=range].c24::-ms-tooltip {
                                   forwardedRef={null}
                                 >
                                   <div
-                                    className="c18"
+                                    className="c19"
                                   >
                                     <VideoProgressBar__StyledTimestamp>
                                       <StyledComponent
@@ -2867,7 +2925,7 @@ input[type=range].c24::-ms-tooltip {
                                             "componentStyle": ComponentStyle {
                                               "componentId": "VideoProgressBar__StyledTimestamp-sc-1lt9si3-1",
                                               "isStatic": false,
-                                              "lastClassName": "c21",
+                                              "lastClassName": "c22",
                                               "rules": Array [
                                                 [Function],
                                               ],
@@ -2885,7 +2943,7 @@ input[type=range].c24::-ms-tooltip {
                                         forwardedRef={null}
                                       >
                                         <p
-                                          className="c19"
+                                          className="c20"
                                         >
                                           -1:59
                                         </p>
@@ -2909,9 +2967,9 @@ input[type=range].c24::-ms-tooltip {
                                               [Function],
                                             ],
                                             "componentStyle": ComponentStyle {
-                                              "componentId": "sc-bwzfXH",
+                                              "componentId": "sc-htpNat",
                                               "isStatic": false,
-                                              "lastClassName": "c20",
+                                              "lastClassName": "c21",
                                               "rules": Array [
                                                 [Function],
                                               ],
@@ -2919,7 +2977,7 @@ input[type=range].c24::-ms-tooltip {
                                             "displayName": "styled.input",
                                             "foldedComponentIds": Array [],
                                             "render": [Function],
-                                            "styledComponentId": "sc-bwzfXH",
+                                            "styledComponentId": "sc-htpNat",
                                             "target": "input",
                                             "toString": [Function],
                                             "warnTooManyClasses": [Function],
@@ -2929,7 +2987,7 @@ input[type=range].c24::-ms-tooltip {
                                         forwardedRef={
                                           Object {
                                             "current": <input
-                                              class="c20"
+                                              class="c21"
                                               max="0"
                                               step="any"
                                               tabindex="-1"
@@ -2948,7 +3006,7 @@ input[type=range].c24::-ms-tooltip {
                                         videoCurrentTime={-1}
                                       >
                                         <input
-                                          className="c20"
+                                          className="c21"
                                           max={0}
                                           onChange={[Function]}
                                           onFocus={[Function]}
@@ -2970,7 +3028,7 @@ input[type=range].c24::-ms-tooltip {
                                             "componentStyle": ComponentStyle {
                                               "componentId": "VideoProgressBar__StyledTimestamp-sc-1lt9si3-1",
                                               "isStatic": false,
-                                              "lastClassName": "c21",
+                                              "lastClassName": "c22",
                                               "rules": Array [
                                                 [Function],
                                               ],
@@ -2989,7 +3047,7 @@ input[type=range].c24::-ms-tooltip {
                                         isRemaining={true}
                                       >
                                         <p
-                                          className="c21"
+                                          className="c22"
                                         >
                                           0:01
                                         </p>
@@ -3015,7 +3073,7 @@ input[type=range].c24::-ms-tooltip {
                         videoPlayer={
                           Object {
                             "current": <video
-                              class="c14"
+                              class="c15"
                             >
                               <source
                                 src="video.mp4"
@@ -3046,7 +3104,7 @@ input[type=range].c24::-ms-tooltip {
                                 "componentStyle": ComponentStyle {
                                   "componentId": "VolumeSlider__VolumeSliderContainer-hlqwx2-0",
                                   "isStatic": false,
-                                  "lastClassName": "c22",
+                                  "lastClassName": "c23",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -3065,7 +3123,7 @@ input[type=range].c24::-ms-tooltip {
                             videoPlayerWidth={0}
                           >
                             <div
-                              className="c22"
+                              className="c23"
                             >
                               <VideoButton
                                 disableFocus={true}
@@ -3090,7 +3148,7 @@ input[type=range].c24::-ms-tooltip {
                                         "componentStyle": ComponentStyle {
                                           "componentId": "VideoButton__StyledButton-sc-1eqv6sz-0",
                                           "isStatic": true,
-                                          "lastClassName": "c23",
+                                          "lastClassName": "c24",
                                           "rules": Array [
                                             "background: none;",
                                             "color: inherit;",
@@ -3120,7 +3178,7 @@ input[type=range].c24::-ms-tooltip {
                                   >
                                     <button
                                       aria-label="Mute"
-                                      className="c23"
+                                      className="c24"
                                       onClick={[Function]}
                                       onFocus={[Function]}
                                       onKeyDown={[Function]}
@@ -3196,7 +3254,7 @@ input[type=range].c24::-ms-tooltip {
                                       "componentStyle": ComponentStyle {
                                         "componentId": "VolumeSlider__StyledVolumeSlider-hlqwx2-1",
                                         "isStatic": false,
-                                        "lastClassName": "c24",
+                                        "lastClassName": "c25",
                                         "rules": Array [
                                           [Function],
                                         ],
@@ -3214,7 +3272,7 @@ input[type=range].c24::-ms-tooltip {
                                   forwardedRef={
                                     Object {
                                       "current": <input
-                                        class="c24"
+                                        class="c25"
                                         id="volumeSlider"
                                         max="1"
                                         min="0"
@@ -3237,7 +3295,7 @@ input[type=range].c24::-ms-tooltip {
                                   videoCurrentVolume={1}
                                 >
                                   <input
-                                    className="c24"
+                                    className="c25"
                                     id="volumeSlider"
                                     max="1"
                                     min="0"
@@ -3275,7 +3333,7 @@ input[type=range].c24::-ms-tooltip {
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-bdVaJa",
                                   "isStatic": false,
-                                  "lastClassName": "c25",
+                                  "lastClassName": "c26",
                                   "rules": Array [
                                     [Function],
                                     [Function],
@@ -3299,7 +3357,7 @@ input[type=range].c24::-ms-tooltip {
                             tag="div"
                           >
                             <div
-                              className="c25"
+                              className="c26"
                             >
                               <VideoButton
                                 disableFocus={true}
@@ -3326,7 +3384,7 @@ input[type=range].c24::-ms-tooltip {
                                         "componentStyle": ComponentStyle {
                                           "componentId": "VideoButton__StyledButton-sc-1eqv6sz-0",
                                           "isStatic": true,
-                                          "lastClassName": "c23",
+                                          "lastClassName": "c24",
                                           "rules": Array [
                                             "background: none;",
                                             "color: inherit;",
@@ -3357,7 +3415,7 @@ input[type=range].c24::-ms-tooltip {
                                   >
                                     <button
                                       aria-label="Select captions"
-                                      className="c23"
+                                      className="c24"
                                       onBlur={[Function]}
                                       onClick={[Function]}
                                       onFocus={[Function]}
@@ -3422,7 +3480,7 @@ input[type=range].c24::-ms-tooltip {
                                         "componentStyle": ComponentStyle {
                                           "componentId": "VideoButton__StyledButton-sc-1eqv6sz-0",
                                           "isStatic": true,
-                                          "lastClassName": "c23",
+                                          "lastClassName": "c24",
                                           "rules": Array [
                                             "background: none;",
                                             "color: inherit;",
@@ -3453,7 +3511,7 @@ input[type=range].c24::-ms-tooltip {
                                   >
                                     <button
                                       aria-label="Change video quality"
-                                      className="c23"
+                                      className="c24"
                                       onBlur={[Function]}
                                       onClick={[Function]}
                                       onFocus={[Function]}
@@ -3523,7 +3581,7 @@ input[type=range].c24::-ms-tooltip {
                                         "componentStyle": ComponentStyle {
                                           "componentId": "VideoButton__StyledButton-sc-1eqv6sz-0",
                                           "isStatic": true,
-                                          "lastClassName": "c23",
+                                          "lastClassName": "c24",
                                           "rules": Array [
                                             "background: none;",
                                             "color: inherit;",
@@ -3554,7 +3612,7 @@ input[type=range].c24::-ms-tooltip {
                                   >
                                     <button
                                       aria-label="Toggle fullscreen"
-                                      className="c23"
+                                      className="c24"
                                       onBlur={[Function]}
                                       onClick={[Function]}
                                       onFocus={[Function]}
