@@ -65,6 +65,8 @@ const BigPlayButton = styled.button({
   }),
 })
 
+const BigPlayButtonContentContainer = styled(Box)({ alignItems: 'center' })
+
 const IconContainer = styled.span({
   'svg>path': { fill: 'inherit' },
 })
@@ -84,7 +86,6 @@ const BigVideoButton = ({ icon, label, videoLength, ...rest }) => {
 
   const timestamp = getTimestamp(videoLength)
 
-  // TODO: After Box moves to Styled Components, use one Box with the between prop for spacing
   return (
     <BigPlayButtonContainer {...rest}>
       <BigPlayButton
@@ -93,24 +94,22 @@ const BigVideoButton = ({ icon, label, videoLength, ...rest }) => {
           timestamp.minutes !== 1 ? 's' : ''
         } and ${timestamp.seconds} second${timestamp.minutes !== 1 ? 's' : ''} long`}
       >
-        <IconContainer>{icon}</IconContainer>
+        <BigPlayButtonContentContainer between={1}>
+          <IconContainer>{icon}</IconContainer>
 
-        <BigWatchTextContainer>
-          <Box vertical={1}>
+          <BigWatchTextContainer>
             <Paragraph size="medium" align="center" bold invert>
               {label}
             </Paragraph>
-          </Box>
-        </BigWatchTextContainer>
+          </BigWatchTextContainer>
 
-        <LittleWatchTextContainer>
-          <Paragraph size="small" align="center" bold invert>
-            {label}
-          </Paragraph>
-        </LittleWatchTextContainer>
+          <LittleWatchTextContainer>
+            <Paragraph size="small" align="center" bold invert>
+              {label}
+            </Paragraph>
+          </LittleWatchTextContainer>
 
-        {videoLength && (
-          <Box vertical={1}>
+          {videoLength && (
             <Box between={2} inline>
               <IconAdjust>
                 <Time size={16} variant="inverted" />
@@ -119,8 +118,8 @@ const BigVideoButton = ({ icon, label, videoLength, ...rest }) => {
                 {timestamp.timestamp}
               </Paragraph>
             </Box>
-          </Box>
-        )}
+          )}
+        </BigPlayButtonContentContainer>
       </BigPlayButton>
     </BigPlayButtonContainer>
   )
