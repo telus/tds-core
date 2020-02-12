@@ -173,20 +173,9 @@
     "bracketSpacing": true
   },
   "lint-staged": {
-    "linters": {
-      "*.{js,jsx}": [
-        "eslint --ext '.js,.jsx' --config config/eslint.config.js --quiet --fix",
-        "git add"
-      ],
-      "*.md": [
-        "remark --quiet --frail .",
-        "prettier --write",
-        "git add"
-      ]
-    },
-    "ignore": [
-      "**/*.{png,jpeg,jpg}"
-    ]
+    "*.{js,jsx}": "eslint --ext '.js,.jsx' --config config/eslint.config.js --quiet --fix && git add",
+    "*.md": "remark --quiet --frail . && prettier --write && git add",
+    "ignore": "**/*.{png,jpeg,jpg}"
   },
   "echint": {
     "ignore": [
