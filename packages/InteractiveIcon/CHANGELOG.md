@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.4](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@1.4.3...@tds/core-interactive-icon@1.4.4) (2020-02-12)
+
+
+### Bug Fixes
+
+* **core-interactive-icon:** prevent props are undefined navbutton errors ([e90435d](https://github.com/telus/tds-core/commit/e90435d))
+
+
+
+
+
 ## [1.4.3](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@1.4.2...@tds/core-interactive-icon@1.4.3) (2020-02-03)
 
 **Note:** Version bump only for package @tds/core-interactive-icon
