@@ -1,7 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is provided, regardless of rateText 1`] = `
-.c13 {
+.c11 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  -webkit-transform: rotate(-0.00001deg);
+  -ms-transform: rotate(-0.00001deg);
+  transform: rotate(-0.00001deg);
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.c14 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -10,7 +25,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   clip: rect(1px,1px,1px,1px);
 }
 
-.c12 {
+.c13 {
   background-color: transparent;
   border: 0;
   -webkit-text-decoration: underline;
@@ -140,7 +155,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   display: flex;
 }
 
-.c11 {
+.c12 {
   color: #2a2c2e;
   display: inline-block;
   -webkit-align-self: flex-start;
@@ -149,7 +164,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   margin-top: 0.5rem;
 }
 
-.c11 sup {
+.c12 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -1021,49 +1036,98 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                           </Box>
                         </StyledComponent>
                       </Styled(Box)>
-                      <Styled(Text__StyledText)
-                        inline={false}
-                      >
-                        <StyledComponent
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "componentStyle": ComponentStyle {
-                                "componentId": "sc-ifAKCX",
-                                "isStatic": false,
-                                "lastClassName": "c11",
-                                "rules": Array [
-                                  [Function],
-                                  [Function],
-                                  [Function],
-                                  [Function],
-                                  [Function],
-                                  "sup {",
-                                  "top: -0.5em;",
-                                  "font-size: 0.875rem;",
-                                  "position: relative;",
-                                  "vertical-align: baseline;",
-                                  "padding-left: 0.1em;",
-                                  "}",
-                                  [Function],
-                                ],
-                              },
-                              "displayName": "Styled(Text__StyledText)",
-                              "foldedComponentIds": Array [
-                                "Text__StyledText-sc-1m0rr67-0",
-                              ],
-                              "render": [Function],
-                              "styledComponentId": "sc-ifAKCX",
-                              "target": "span",
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
-                            }
-                          }
-                          forwardedRef={
-                            Object {
-                              "current": .c2 {
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </Box>
+              <HairlineDivider
+                gradient={false}
+                vertical={false}
+              >
+                <HairlineDivider__StyledHairlineDivider
+                  gradient={false}
+                  vertical={false}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                          "isStatic": false,
+                          "lastClassName": "c11",
+                          "rules": Array [
+                            "padding: 0;",
+                            "margin: 0;",
+                            "border-width: 0;",
+                            [Function],
+                          ],
+                        },
+                        "displayName": "HairlineDivider__StyledHairlineDivider",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                        "target": "hr",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    gradient={false}
+                    vertical={false}
+                  >
+                    <hr
+                      className="c11"
+                    />
+                  </StyledComponent>
+                </HairlineDivider__StyledHairlineDivider>
+              </HairlineDivider>
+              <span>
+                <Styled(Text__StyledText)
+                  inline={false}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-ifAKCX",
+                          "isStatic": false,
+                          "lastClassName": "c12",
+                          "rules": Array [
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            "sup {",
+                            "top: -0.5em;",
+                            "font-size: 0.875rem;",
+                            "position: relative;",
+                            "vertical-align: baseline;",
+                            "padding-left: 0.1em;",
+                            "}",
+                            [Function],
+                          ],
+                        },
+                        "displayName": "Styled(Text__StyledText)",
+                        "foldedComponentIds": Array [
+                          "Text__StyledText-sc-1m0rr67-0",
+                        ],
+                        "render": [Function],
+                        "styledComponentId": "sc-ifAKCX",
+                        "target": "span",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={
+                      Object {
+                        "current": .c2 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1099,149 +1163,146 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
 }
 
 <span
-                                class="c0"
+                          class="c0"
+                        >
+                          <sup>
+                            <button
+                              class="c1"
+                              data-tds-id="footnote-link"
+                              type="button"
+                            >
+                              <span
+                                class="c2"
                               >
-                                <sup>
-                                  <button
-                                    class="c1"
+                                Read legal footnote
+                              </span>
+                              3
+                            </button>
+                          </sup>
+                        </span>,
+                      }
+                    }
+                    inline={false}
+                  >
+                    <span
+                      className="c12"
+                    >
+                      <FootnoteLink
+                        copy="en"
+                        number={3}
+                        onClick={[Function]}
+                      >
+                        <sup
+                          key="3"
+                        >
+                          <FootnoteLink__StyledFootnoteLink
+                            data-tds-id="footnote-link"
+                            key="3"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            <StyledComponent
+                              data-tds-id="footnote-link"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
+                                    "isStatic": true,
+                                    "lastClassName": "c13",
+                                    "rules": Array [
+                                      "background-color: transparent;",
+                                      "border: 0;",
+                                      "text-decoration: underline;",
+                                      "padding: 0 0.25rem;",
+                                      "color: inherit;",
+                                    ],
+                                  },
+                                  "displayName": "FootnoteLink__StyledFootnoteLink",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={
+                                Object {
+                                  "current": <button
+                                    class="c13"
                                     data-tds-id="footnote-link"
                                     type="button"
                                   >
                                     <span
-                                      class="c2"
+                                      class="c14"
                                     >
                                       Read legal footnote
                                     </span>
                                     3
-                                  </button>
-                                </sup>
-                              </span>,
-                            }
-                          }
-                          inline={false}
-                        >
-                          <span
-                            className="c11"
-                          >
-                            <FootnoteLink
-                              copy="en"
-                              number={3}
+                                  </button>,
+                                }
+                              }
                               onClick={[Function]}
+                              type="button"
                             >
-                              <sup
-                                key="3"
+                              <button
+                                className="c13"
+                                data-tds-id="footnote-link"
+                                onClick={[Function]}
+                                type="button"
                               >
-                                <FootnoteLink__StyledFootnoteLink
-                                  data-tds-id="footnote-link"
-                                  key="3"
-                                  onClick={[Function]}
-                                  type="button"
-                                >
-                                  <StyledComponent
-                                    data-tds-id="footnote-link"
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
-                                          "isStatic": true,
-                                          "lastClassName": "c12",
-                                          "rules": Array [
-                                            "background-color: transparent;",
-                                            "border: 0;",
-                                            "text-decoration: underline;",
-                                            "padding: 0 0.25rem;",
-                                            "color: inherit;",
-                                          ],
-                                        },
-                                        "displayName": "FootnoteLink__StyledFootnoteLink",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
-                                        "target": "button",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
+                                <A11yContent>
+                                  <A11yContent__StyledA11yContent>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                            "isStatic": true,
+                                            "lastClassName": "c14",
+                                            "rules": Array [
+                                              "position: absolute;",
+                                              "height: 1px;",
+                                              "width: 1px;",
+                                              "overflow: hidden;",
+                                              "clip: rect(1px, 1px, 1px, 1px);",
+                                            ],
+                                          },
+                                          "displayName": "A11yContent__StyledA11yContent",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
                                       }
-                                    }
-                                    forwardedRef={
-                                      Object {
-                                        "current": <button
-                                          class="c12"
-                                          data-tds-id="footnote-link"
-                                          type="button"
-                                        >
-                                          <span
-                                            class="c13"
-                                          >
-                                            Read legal footnote
-                                          </span>
-                                          3
-                                        </button>,
-                                      }
-                                    }
-                                    onClick={[Function]}
-                                    type="button"
-                                  >
-                                    <button
-                                      className="c12"
-                                      data-tds-id="footnote-link"
-                                      onClick={[Function]}
-                                      type="button"
+                                      forwardedRef={null}
                                     >
-                                      <A11yContent>
-                                        <A11yContent__StyledA11yContent>
-                                          <StyledComponent
-                                            forwardedComponent={
-                                              Object {
-                                                "$$typeof": Symbol(react.forward_ref),
-                                                "attrs": Array [],
-                                                "componentStyle": ComponentStyle {
-                                                  "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                                  "isStatic": true,
-                                                  "lastClassName": "c13",
-                                                  "rules": Array [
-                                                    "position: absolute;",
-                                                    "height: 1px;",
-                                                    "width: 1px;",
-                                                    "overflow: hidden;",
-                                                    "clip: rect(1px, 1px, 1px, 1px);",
-                                                  ],
-                                                },
-                                                "displayName": "A11yContent__StyledA11yContent",
-                                                "foldedComponentIds": Array [],
-                                                "render": [Function],
-                                                "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                                "target": "span",
-                                                "toString": [Function],
-                                                "warnTooManyClasses": [Function],
-                                                "withComponent": [Function],
-                                              }
-                                            }
-                                            forwardedRef={null}
-                                          >
-                                            <span
-                                              className="c13"
-                                            >
-                                              Read legal footnote
-                                            </span>
-                                          </StyledComponent>
-                                        </A11yContent__StyledA11yContent>
-                                      </A11yContent>
-                                      3
-                                    </button>
-                                  </StyledComponent>
-                                </FootnoteLink__StyledFootnoteLink>
-                              </sup>
-                            </FootnoteLink>
-                          </span>
-                        </StyledComponent>
-                      </Styled(Text__StyledText)>
-                    </div>
+                                      <span
+                                        className="c14"
+                                      >
+                                        Read legal footnote
+                                      </span>
+                                    </StyledComponent>
+                                  </A11yContent__StyledA11yContent>
+                                </A11yContent>
+                                3
+                              </button>
+                            </StyledComponent>
+                          </FootnoteLink__StyledFootnoteLink>
+                        </sup>
+                      </FootnoteLink>
+                    </span>
                   </StyledComponent>
-                </styled.div>
-              </Box>
+                </Styled(Text__StyledText)>
+              </span>
             </div>
           </StyledComponent>
         </styled.div>
@@ -1252,7 +1313,22 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
 `;
 
 exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is provided 1`] = `
-.c13 {
+.c11 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  -webkit-transform: rotate(-0.00001deg);
+  -ms-transform: rotate(-0.00001deg);
+  transform: rotate(-0.00001deg);
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.c14 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1261,7 +1337,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   clip: rect(1px,1px,1px,1px);
 }
 
-.c12 {
+.c13 {
   background-color: transparent;
   border: 0;
   -webkit-text-decoration: underline;
@@ -1391,7 +1467,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   display: flex;
 }
 
-.c11 {
+.c12 {
   color: #2a2c2e;
   display: inline-block;
   -webkit-align-self: flex-start;
@@ -1400,7 +1476,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   margin-top: 0.5rem;
 }
 
-.c11 sup {
+.c12 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -2272,49 +2348,98 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                           </Box>
                         </StyledComponent>
                       </Styled(Box)>
-                      <Styled(Text__StyledText)
-                        inline={false}
-                      >
-                        <StyledComponent
-                          forwardedComponent={
-                            Object {
-                              "$$typeof": Symbol(react.forward_ref),
-                              "attrs": Array [],
-                              "componentStyle": ComponentStyle {
-                                "componentId": "sc-ifAKCX",
-                                "isStatic": false,
-                                "lastClassName": "c11",
-                                "rules": Array [
-                                  [Function],
-                                  [Function],
-                                  [Function],
-                                  [Function],
-                                  [Function],
-                                  "sup {",
-                                  "top: -0.5em;",
-                                  "font-size: 0.875rem;",
-                                  "position: relative;",
-                                  "vertical-align: baseline;",
-                                  "padding-left: 0.1em;",
-                                  "}",
-                                  [Function],
-                                ],
-                              },
-                              "displayName": "Styled(Text__StyledText)",
-                              "foldedComponentIds": Array [
-                                "Text__StyledText-sc-1m0rr67-0",
-                              ],
-                              "render": [Function],
-                              "styledComponentId": "sc-ifAKCX",
-                              "target": "span",
-                              "toString": [Function],
-                              "warnTooManyClasses": [Function],
-                              "withComponent": [Function],
-                            }
-                          }
-                          forwardedRef={
-                            Object {
-                              "current": .c2 {
+                    </div>
+                  </StyledComponent>
+                </styled.div>
+              </Box>
+              <HairlineDivider
+                gradient={false}
+                vertical={false}
+              >
+                <HairlineDivider__StyledHairlineDivider
+                  gradient={false}
+                  vertical={false}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                          "isStatic": false,
+                          "lastClassName": "c11",
+                          "rules": Array [
+                            "padding: 0;",
+                            "margin: 0;",
+                            "border-width: 0;",
+                            [Function],
+                          ],
+                        },
+                        "displayName": "HairlineDivider__StyledHairlineDivider",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                        "target": "hr",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    gradient={false}
+                    vertical={false}
+                  >
+                    <hr
+                      className="c11"
+                    />
+                  </StyledComponent>
+                </HairlineDivider__StyledHairlineDivider>
+              </HairlineDivider>
+              <span>
+                <Styled(Text__StyledText)
+                  inline={false}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-ifAKCX",
+                          "isStatic": false,
+                          "lastClassName": "c12",
+                          "rules": Array [
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            "sup {",
+                            "top: -0.5em;",
+                            "font-size: 0.875rem;",
+                            "position: relative;",
+                            "vertical-align: baseline;",
+                            "padding-left: 0.1em;",
+                            "}",
+                            [Function],
+                          ],
+                        },
+                        "displayName": "Styled(Text__StyledText)",
+                        "foldedComponentIds": Array [
+                          "Text__StyledText-sc-1m0rr67-0",
+                        ],
+                        "render": [Function],
+                        "styledComponentId": "sc-ifAKCX",
+                        "target": "span",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={
+                      Object {
+                        "current": .c2 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2350,149 +2475,146 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
 }
 
 <span
-                                class="c0"
+                          class="c0"
+                        >
+                          <sup>
+                            <button
+                              class="c1"
+                              data-tds-id="footnote-link"
+                              type="button"
+                            >
+                              <span
+                                class="c2"
                               >
-                                <sup>
-                                  <button
-                                    class="c1"
+                                Read legal footnote
+                              </span>
+                              3
+                            </button>
+                          </sup>
+                        </span>,
+                      }
+                    }
+                    inline={false}
+                  >
+                    <span
+                      className="c12"
+                    >
+                      <FootnoteLink
+                        copy="en"
+                        number={3}
+                        onClick={[Function]}
+                      >
+                        <sup
+                          key="3"
+                        >
+                          <FootnoteLink__StyledFootnoteLink
+                            data-tds-id="footnote-link"
+                            key="3"
+                            onClick={[Function]}
+                            type="button"
+                          >
+                            <StyledComponent
+                              data-tds-id="footnote-link"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
+                                    "isStatic": true,
+                                    "lastClassName": "c13",
+                                    "rules": Array [
+                                      "background-color: transparent;",
+                                      "border: 0;",
+                                      "text-decoration: underline;",
+                                      "padding: 0 0.25rem;",
+                                      "color: inherit;",
+                                    ],
+                                  },
+                                  "displayName": "FootnoteLink__StyledFootnoteLink",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={
+                                Object {
+                                  "current": <button
+                                    class="c13"
                                     data-tds-id="footnote-link"
                                     type="button"
                                   >
                                     <span
-                                      class="c2"
+                                      class="c14"
                                     >
                                       Read legal footnote
                                     </span>
                                     3
-                                  </button>
-                                </sup>
-                              </span>,
-                            }
-                          }
-                          inline={false}
-                        >
-                          <span
-                            className="c11"
-                          >
-                            <FootnoteLink
-                              copy="en"
-                              number={3}
+                                  </button>,
+                                }
+                              }
                               onClick={[Function]}
+                              type="button"
                             >
-                              <sup
-                                key="3"
+                              <button
+                                className="c13"
+                                data-tds-id="footnote-link"
+                                onClick={[Function]}
+                                type="button"
                               >
-                                <FootnoteLink__StyledFootnoteLink
-                                  data-tds-id="footnote-link"
-                                  key="3"
-                                  onClick={[Function]}
-                                  type="button"
-                                >
-                                  <StyledComponent
-                                    data-tds-id="footnote-link"
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
-                                          "isStatic": true,
-                                          "lastClassName": "c12",
-                                          "rules": Array [
-                                            "background-color: transparent;",
-                                            "border: 0;",
-                                            "text-decoration: underline;",
-                                            "padding: 0 0.25rem;",
-                                            "color: inherit;",
-                                          ],
-                                        },
-                                        "displayName": "FootnoteLink__StyledFootnoteLink",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
-                                        "target": "button",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
+                                <A11yContent>
+                                  <A11yContent__StyledA11yContent>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                            "isStatic": true,
+                                            "lastClassName": "c14",
+                                            "rules": Array [
+                                              "position: absolute;",
+                                              "height: 1px;",
+                                              "width: 1px;",
+                                              "overflow: hidden;",
+                                              "clip: rect(1px, 1px, 1px, 1px);",
+                                            ],
+                                          },
+                                          "displayName": "A11yContent__StyledA11yContent",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
                                       }
-                                    }
-                                    forwardedRef={
-                                      Object {
-                                        "current": <button
-                                          class="c12"
-                                          data-tds-id="footnote-link"
-                                          type="button"
-                                        >
-                                          <span
-                                            class="c13"
-                                          >
-                                            Read legal footnote
-                                          </span>
-                                          3
-                                        </button>,
-                                      }
-                                    }
-                                    onClick={[Function]}
-                                    type="button"
-                                  >
-                                    <button
-                                      className="c12"
-                                      data-tds-id="footnote-link"
-                                      onClick={[Function]}
-                                      type="button"
+                                      forwardedRef={null}
                                     >
-                                      <A11yContent>
-                                        <A11yContent__StyledA11yContent>
-                                          <StyledComponent
-                                            forwardedComponent={
-                                              Object {
-                                                "$$typeof": Symbol(react.forward_ref),
-                                                "attrs": Array [],
-                                                "componentStyle": ComponentStyle {
-                                                  "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                                  "isStatic": true,
-                                                  "lastClassName": "c13",
-                                                  "rules": Array [
-                                                    "position: absolute;",
-                                                    "height: 1px;",
-                                                    "width: 1px;",
-                                                    "overflow: hidden;",
-                                                    "clip: rect(1px, 1px, 1px, 1px);",
-                                                  ],
-                                                },
-                                                "displayName": "A11yContent__StyledA11yContent",
-                                                "foldedComponentIds": Array [],
-                                                "render": [Function],
-                                                "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                                "target": "span",
-                                                "toString": [Function],
-                                                "warnTooManyClasses": [Function],
-                                                "withComponent": [Function],
-                                              }
-                                            }
-                                            forwardedRef={null}
-                                          >
-                                            <span
-                                              className="c13"
-                                            >
-                                              Read legal footnote
-                                            </span>
-                                          </StyledComponent>
-                                        </A11yContent__StyledA11yContent>
-                                      </A11yContent>
-                                      3
-                                    </button>
-                                  </StyledComponent>
-                                </FootnoteLink__StyledFootnoteLink>
-                              </sup>
-                            </FootnoteLink>
-                          </span>
-                        </StyledComponent>
-                      </Styled(Text__StyledText)>
-                    </div>
+                                      <span
+                                        className="c14"
+                                      >
+                                        Read legal footnote
+                                      </span>
+                                    </StyledComponent>
+                                  </A11yContent__StyledA11yContent>
+                                </A11yContent>
+                                3
+                              </button>
+                            </StyledComponent>
+                          </FootnoteLink__StyledFootnoteLink>
+                        </sup>
+                      </FootnoteLink>
+                    </span>
                   </StyledComponent>
-                </styled.div>
-              </Box>
+                </Styled(Text__StyledText)>
+              </span>
             </div>
           </StyledComponent>
         </styled.div>
@@ -2514,17 +2636,31 @@ exports[`PriceLockup renders with default props 1`] = `
 }
 
 .c1 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 > *:not(:last-child) {
   margin-bottom: 0.25rem;
 }
 
-.c3 {
+.c4 {
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2534,11 +2670,11 @@ exports[`PriceLockup renders with default props 1`] = `
   flex-direction: row;
 }
 
-.c5 > *:not(:last-child) {
+.c6 > *:not(:last-child) {
   margin-right: 0.25rem;
 }
 
-.c8 {
+.c9 {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -2548,7 +2684,7 @@ exports[`PriceLockup renders with default props 1`] = `
   line-height: 1;
 }
 
-.c7 {
+.c8 {
   word-wrap: break-word;
   padding: 0;
   margin: 0;
@@ -2561,15 +2697,15 @@ exports[`PriceLockup renders with default props 1`] = `
   letter-spacing: -0.7px;
 }
 
-.c7.c7 sup {
+.c8.c8 sup {
   top: -1em;
 }
 
-.c6 {
+.c7 {
   line-height: 1.5;
 }
 
-.c6 medium {
+.c7 medium {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -2583,7 +2719,7 @@ exports[`PriceLockup renders with default props 1`] = `
   text-align: left;
 }
 
-.c4 {
+.c5 {
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -2593,31 +2729,15 @@ exports[`PriceLockup renders with default props 1`] = `
   align-self: flex-start;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c9 {
-  color: #2a2c2e;
-  display: inline-block;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c9 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
 @media (min-width:768px) {
-  .c7 {
+  .c8 {
     font-size: 1.75rem;
     -webkit-letter-spacing: -0.8px;
     -moz-letter-spacing: -0.8px;
@@ -2630,38 +2750,35 @@ exports[`PriceLockup renders with default props 1`] = `
   class="c0 sc-bwzfXH c0 c1"
 >
   <div
-    class="c1"
+    class="c2"
   >
     <div
-      class="c2 sc-bxivhb c2 c3"
+      class="c3 sc-bxivhb c3 c4"
     >
       <div
-        class="c4 sc-htpNat c4 c5"
+        class="c5 sc-htpNat c5 c6"
       >
         <div
-          class="c5"
+          class="c6"
         >
           <span
-            class="c6"
+            class="c7"
             data-testid="dollarSign"
           >
             $
           </span>
           <span
-            class="c7"
+            class="c8"
             data-testid="priceValue"
           >
             25
           </span>
         </div>
         <span
-          class="c8"
+          class="c9"
           data-testid="rateText"
         >
           /month
-          <span
-            class="c9"
-          />
         </span>
       </div>
     </div>
@@ -2670,7 +2787,7 @@ exports[`PriceLockup renders with default props 1`] = `
 `;
 
 exports[`PriceLockup size prop is large renders 1`] = `
-.c2 {
+.c3 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1.25rem;
@@ -2683,7 +2800,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
   font-weight: 400;
 }
 
-.c2 sup {
+.c3 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -2691,14 +2808,14 @@ exports[`PriceLockup size prop is large renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c1 {
+.c2 {
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2708,11 +2825,11 @@ exports[`PriceLockup size prop is large renders 1`] = `
   flex-direction: row;
 }
 
-.c5 > *:not(:last-child) {
+.c6 > *:not(:last-child) {
   margin-right: 0.5rem;
 }
 
-.c8 {
+.c9 {
   word-wrap: break-word;
   font-size: 1.25rem;
   -webkit-letter-spacing: -1px;
@@ -2722,7 +2839,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
   line-height: 1.6;
 }
 
-.c7 {
+.c8 {
   word-wrap: break-word;
   padding: 0;
   margin: 0;
@@ -2731,11 +2848,15 @@ exports[`PriceLockup size prop is large renders 1`] = `
   font-weight: 300;
 }
 
-.c7.c7 sup {
-  top: -3em;
+.c8.c8 sup {
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+  font-size: 1.25rem;
+  top: -1em;
 }
 
-.c6 {
+.c7 {
   color: #2a2c2e;
   font-weight: 400;
   font-size: 1.75rem;
@@ -2750,7 +2871,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
   text-align: left;
 }
 
-.c4 {
+.c5 {
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -2760,31 +2881,47 @@ exports[`PriceLockup size prop is large renders 1`] = `
   align-self: flex-start;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c9 {
-  color: #2a2c2e;
-  display: inline-block;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
+@media (max-width:767px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 
-.c9 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
+  .c1 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c1 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
     font-size: 4.5rem;
     -webkit-letter-spacing: 0.2px;
     -moz-letter-spacing: 0.2px;
@@ -2794,7 +2931,13 @@ exports[`PriceLockup size prop is large renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c8.c8 sup {
+    top: -2em;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
     font-weight: 300;
     font-size: 2.75rem;
     -webkit-letter-spacing: 0;
@@ -2808,43 +2951,40 @@ exports[`PriceLockup size prop is large renders 1`] = `
   class="c0 sc-bwzfXH c0 c1"
 >
   <div
-    class="c1"
+    class="c2"
   >
     <span
-      class="c2"
+      class="c3"
     >
       top text
     </span>
     <div
-      class="c3 sc-bxivhb c3 c1"
+      class="c4 sc-bxivhb c4 c2"
     >
       <div
-        class="c4 sc-htpNat c4 c5"
+        class="c5 sc-htpNat c5 c6"
       >
         <div
-          class="c5"
+          class="c6"
         >
           <span
-            class="c6"
+            class="c7"
             data-testid="dollarSign"
           >
             $
           </span>
           <span
-            class="c7"
+            class="c8"
             data-testid="priceValue"
           >
             25
           </span>
         </div>
         <span
-          class="c8"
+          class="c9"
           data-testid="rateText"
         >
           /month
-          <span
-            class="c9"
-          />
         </span>
       </div>
     </div>
@@ -3009,22 +3149,6 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   display: flex;
 }
 
-.c14 {
-  color: #2a2c2e;
-  display: inline-block;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c14 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
 .c13 {
   color: #2a2c2e;
   word-wrap: break-word;
@@ -3102,16 +3226,13 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   <hr
     class="c12"
   />
-  <div>
+  <span>
     <span
       class="c13"
     >
       bottom text
     </span>
-    <span
-      class="c14"
-    />
-  </div>
+  </span>
 </div>
 `;
 
@@ -3151,6 +3272,20 @@ exports[`PriceLockup size prop is small renders 1`] = `
   padding-left: 0.1em;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3184,20 +3319,6 @@ exports[`PriceLockup size prop is small renders 1`] = `
 
 .c7 > *:not(:last-child) {
   margin-right: 0.25rem;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 > *:not(:last-child) {
-  margin-bottom: 0.5rem;
 }
 
 .c10 {
@@ -3260,22 +3381,6 @@ exports[`PriceLockup size prop is small renders 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c13 {
-  color: #2a2c2e;
-  display: inline-block;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c13 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
 }
 
 .c12 {
@@ -3354,15 +3459,12 @@ exports[`PriceLockup size prop is small renders 1`] = `
   <hr
     class="c11"
   />
-  <div>
+  <span>
     <span
       class="c12"
     >
       bottom text
     </span>
-    <span
-      class="c13"
-    />
-  </div>
+  </span>
 </div>
 `;

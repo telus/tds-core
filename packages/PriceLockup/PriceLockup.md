@@ -14,13 +14,22 @@
 
 ```jsx
 <PriceLockup
+  size="large"
+  topText="Starting at"
+  price="25"
+  signDirection="left"
+  footnoteLinks={<FootnoteLink number={[1, 2, 3, 4]} onClick={(number, ref) => {}} copy="en" />}
+/>
+```
+
+```jsx
+<PriceLockup
   size="small"
   topText="Starting at"
   price="25"
   signDirection="left"
   rateText="/month"
-  bottomText="On a 2-year Easy Share Premium Plus Plan"
-  footnoteLinks={<FootnoteLink number={[7, 8]} onClick={(number, ref) => {}} copy="en" />}
+  footnoteLinks={<FootnoteLink number={[1, 2, 3, 4]} onClick={(number, ref) => {}} copy="en" />}
 />
 ```
 
@@ -52,9 +61,9 @@ When designing with `PriceLockup` and `FootnoteLink`, `FootnoteLink` must be pos
   - Display in the same line as the `rateText` or `bottomText` when there’s available space
 - Must not display `FootnoteLinks` in both the the `rateText` and `bottomText`
 
-/>
-
-````
+```jsx
+<PriceLockup size="large" bottomText="Test" price="29" />
+```
 
 ```jsx
 <PriceLockup
@@ -66,7 +75,7 @@ When designing with `PriceLockup` and `FootnoteLink`, `FootnoteLink` must be pos
   signDirection="left"
   footnoteLinks={<FootnoteLink number={[1, 2, 3]} onClick={(number, ref) => {}} copy="en" />}
 />
-````
+```
 
 ```jsx
 <FlexGrid>
