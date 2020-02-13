@@ -157,7 +157,7 @@ module.exports = {
     return `import ${name} from '@tds/core-${kebabizeName}'`
   },
 
-  usageMode: 'expand',
+  usageMode: 'collapse',
   exampleMode: 'collapse',
   pagePerSection: true,
 
@@ -359,7 +359,7 @@ module.exports = {
     'Markdown/MarkdownHeading': path.resolve(
       'docs/components/custom/MarkdownHeading/MarkdownHeading'
     ),
-    // 'Markdown/Markdown': path.resolve('docs/components/overrides/Markdown/Markdown'),
+    'Markdown/Markdown': path.resolve('docs/components/overrides/Markdown/Markdown'),
     PathlineRenderer: path.resolve('docs/components/overrides/Pathline/PathlineRenderer'),
     SectionHeadingRenderer: path.resolve(
       'docs/components/custom/SectionHeading/SectionHeadingRenderer'
