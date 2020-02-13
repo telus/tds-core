@@ -34,16 +34,3 @@ By default, the `Text` component will inherit font properties from `Paragraph`. 
   </Text>
 </Paragraph>
 ```
-
-## Text.Sup
-
-**Deprecated, please use a `<sup>` element documented above instead.**
-
-```jsx
-<Paragraph>
-  <Text>
-    Enjoy buffer-free streaming any time of day
-    <Text.Sup>2</Text.Sup>.
-  </Text>
-</Paragraph>
-```
