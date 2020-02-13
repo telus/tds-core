@@ -5,7 +5,7 @@
 - For options are 6 and under, use [`Radio`](/#!/radio) groups or [`ButtonGroup`](/#!/ButtonGroup).
 - For options 15 and above, look for alternatives (e.g grouping into categories, or input field with auto-complete etc.)
 
-For information on how to use disabled Selects, please refer to the [disabled form component](#form-disabled-state) guidelines.
+For information on how to use disabled Selects, please refer to the [disabled form component](#/Forms?id=form-disabled-state) guidelines.
 
 [Reference](https://baymard.com/blog/drop-down-usability)
 
@@ -123,7 +123,7 @@ const frameworkSelect = React.createRef()
 
 ### Using Tooltip
 
-When a more in-depth explanation is needed to fill out a `Select` properly, a [`Tooltip`](#!/Tooltip) may be provided to the `tooltip` prop.
+When a more in-depth explanation is needed to fill out a `Select` properly, a [`Tooltip`](#/Forms?id=tooltip) may be provided to the `tooltip` prop.
 
 ```jsx
 <Select
