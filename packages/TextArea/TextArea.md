@@ -78,7 +78,7 @@ that the field is optional. It is a more usable and accessible option than the H
 
 ### Using Tooltip
 
-When a more in-depth explanation is needed to fill out a `TextArea` properly, a [`Tooltip`](#!/Tooltip) may be provided to the `tooltip` prop.
+When a more in-depth explanation is needed to fill out a `TextArea` properly, a [`Tooltip`](#/Forms?id=tooltip) may be provided to the `tooltip` prop.
 
 ```jsx
 <TextArea
