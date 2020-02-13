@@ -2,7 +2,7 @@
 
 ### Usage criteria
 
-These icons indicate interactivity, but are not interactive on their own. They depend on the Link component. They depend on the [Link](#link) component.
+These icons indicate interactivity, but are not interactive on their own. They depend on the Link component. They depend on the [Link](#/Links?id=link) component.
 
 - Must include accessible hidden text using `A11yContent` when label does not explicitly indicate use or action
   - Be mindful of using `A11yContent` appropriately as it may appear before or after the label
