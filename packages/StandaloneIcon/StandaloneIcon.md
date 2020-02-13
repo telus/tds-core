@@ -1,4 +1,4 @@
-**Deprecated, please use [InteractiveIcon](#interactiveicon) instead.**
+**Deprecated, please use [InteractiveIcon](#/Icons?id=section-interactive-icons) instead.**
 
 ### Making interactive icons
 
