@@ -175,107 +175,12 @@ module.exports = {
       name: 'Colours',
       content: path.resolve('packages/colours/Colours.md'),
     },
+
     {
       name: 'Layout',
       sections: [
         {
-          name: 'CssReset',
-          content: path.resolve('packages/css-reset/CssReset.md'),
-        },
-        {
-          name: 'Colours',
-          content: path.resolve('packages/colours/Colours.md'),
-        },
-        {
-          name: 'Layout',
-          sections: [
-            {
-              name: 'Grid',
-              components() {
-                return [
-                  path.resolve('packages/FlexGrid/FlexGrid.jsx'),
-                  path.resolve('packages/FlexGrid/Row/Row.jsx'),
-                  path.resolve('packages/FlexGrid/Col/Col.jsx'),
-                ]
-              },
-            },
-            {
-              name: 'Dividers',
-              components() {
-                return [
-                  path.resolve('packages/WaveDivider/WaveDivider.jsx'),
-                  path.resolve('packages/DimpleDivider/DimpleDivider.jsx'),
-                  path.resolve('packages/HairlineDivider/HairlineDivider.jsx'),
-                ]
-              },
-            },
-          ],
-          components() {
-            return [
-              path.resolve('packages/Responsive/Responsive.jsx'),
-              path.resolve('packages/Box/Box.jsx'),
-            ]
-          },
-        },
-        {
-          name: 'Typography',
-          content: path.resolve('docs/Typography.md'),
-          components() {
-            return [
-              path.resolve('packages/DisplayHeading/DisplayHeading.jsx'),
-              path.resolve('packages/Heading/Heading.jsx'),
-              path.resolve('packages/Paragraph/Paragraph.jsx'),
-              path.resolve('packages/PriceLockup/PriceLockup.jsx'),
-              path.resolve('packages/Text/Text.jsx'),
-              path.resolve('packages/Strong/Strong.jsx'),
-              path.resolve('packages/Small/Small.jsx'),
-            ]
-          },
-        },
-        {
-          name: 'Links',
-          sections: [
-            {
-              name: 'Breadcrumb',
-              components() {
-                return [
-                  path.resolve('packages/Breadcrumbs/Breadcrumbs.jsx'),
-                  path.resolve('packages/Breadcrumbs/Item/Item.jsx'),
-                ]
-              },
-            },
-          ],
-          components() {
-            return [
-              path.resolve('packages/Link/Link.jsx'),
-              path.resolve('packages/ChevronLink/ChevronLink.jsx'),
-              path.resolve('packages/ButtonLink/ButtonLink.jsx'),
-            ]
-          },
-        },
-        {
-          name: 'Icons',
-          content: path.resolve('docs/icons.md'),
-          components() {
-            return [
-              path.resolve('packages/DecorativeIcon/DecorativeIcon.jsx'),
-              path.resolve('packages/DecorativeIcon/SVGIcon.jsx'),
-              path.resolve('packages/StandaloneIcon/StandaloneIcon.jsx'),
-              path.resolve('packages/FeedbackIcon/FeedbackIcon.jsx'),
-            ]
-          },
-          sections: [
-            {
-              name: 'Interactive Icons',
-              components() {
-                return [path.resolve('packages/InteractiveIcon/*.jsx')]
-              },
-            },
-          ],
-        },
-        {
-          name: 'Forms',
-          content: path.resolve('docs/Forms.md'),
+          name: 'Grid',
           components() {
             return [
               path.resolve('packages/FlexGrid/FlexGrid.jsx'),
@@ -347,9 +252,16 @@ module.exports = {
           path.resolve('packages/DecorativeIcon/SVGIcon.jsx'),
           path.resolve('packages/StandaloneIcon/StandaloneIcon.jsx'),
           path.resolve('packages/FeedbackIcon/FeedbackIcon.jsx'),
-          path.resolve('packages/InteractiveIcon/InteractiveIcon.jsx'),
         ]
       },
+      sections: [
+        {
+          name: 'Interactive Icons',
+          components() {
+            return [path.resolve('packages/InteractiveIcon/*.jsx')]
+          },
+        },
+      ],
     },
     {
       name: 'Forms',
@@ -508,7 +420,7 @@ module.exports = {
     // [TDS-381] Increase font size in props tables to match default Paragraph size.
     Table: {
       cell: {
-        fontSize: '1rem',
+        fontSize: '0.9rem',
       },
       cellHeading: {
         fontSize: '1rem',
