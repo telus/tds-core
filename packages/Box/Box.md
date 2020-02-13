@@ -24,7 +24,7 @@ The spacing system defines 8 levels of spacing. Levels `4` and above are always 
 
 ### Recommended usage
 
-- Use levels `1`-`3` to space inline content, such as [Typography](#typography), [Buttons](#/Forms?id=button), or [Icons](#icons)
+- Use levels `1`-`3` to space inline content, such as [Typography](#/Typography), [Buttons](#/Forms?id=button), or [Icons](#/Icons)
 - Use levels `4`-`8` to space block content, such as [Cards](#/Content?id=card) or [Dividers](#/Layout?id=section-dividers)
 - Use levels `5`, `7`, and `8` to vertically stack full-width Blocks
 
@@ -95,7 +95,7 @@ This will do the following:
 - Spacing between the buttons will increase as the viewport size increases to make things look less dense on larger screens
 - Below the `lg` viewport (≤992px), `inline` will be set to `false`, making the buttons stack. On `lg` and larger, the buttons will appear side to side
 
-To learn more about responsive props see [`@tds/util-prop-types`](#proptypes). The following `Box` props support responsive props: `vertical`, `horizontal`, `inset`, `between`, and `inline`.
+To learn more about responsive props see [`@tds/util-prop-types`](#/Utilities?id=section-proptypes). The following `Box` props support responsive props: `vertical`, `horizontal`, `inset`, `between`, and `inline`.
 
 ### Using space-between
 
