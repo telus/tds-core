@@ -9,7 +9,7 @@ will be available as additional components.
 
 Supply additional HTML input attributes as normal.
 
-For information on how to use disabled Inputs, please refer to the [disabled form component](#form-disabled-state) guidelines.
+For information on how to use disabled Inputs, please refer to the [disabled form component](#/Forms?id=form-disabled-state) guidelines.
 
 ```jsx
 <Box between={2}>
