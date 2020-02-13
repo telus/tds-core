@@ -11,13 +11,3 @@ Use as an overlay on Hero, Promo or Headline blocks.
   TELUS Optik TV<sup>®</sup>
 </DisplayHeading>
 ```
-
-## DisplayHeading.Sup
-
-**Deprecated, please use a `<sup>` element documented above instead.**
-
-```jsx
-<DisplayHeading>
-  TELUS Optik TV<DisplayHeading.Sup>®</DisplayHeading.Sup>
-</DisplayHeading>
-```
