@@ -182,6 +182,7 @@ class PanelWrapper extends React.Component {
 
     const headerButton = (
       <HeaderButtonClickable
+        type="button"
         panelDisabled={panelDisabled}
         onClick={this.handleClick}
         onMouseEnter={this.mouseEnter}
