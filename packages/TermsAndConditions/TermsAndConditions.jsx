@@ -77,6 +77,7 @@ const TermsAndConditions = forwardRef(
           <FlexGrid.Row>
             <FlexGrid.Col>
               <StyledClickableHeading
+                type="button"
                 aria-expanded={isOpen}
                 ref={ref}
                 onClick={() => setOpen(!isOpen)}

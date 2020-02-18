@@ -460,6 +460,7 @@ div.c14 {
         <button
           aria-expanded="false"
           class="c4 c5"
+          type="button"
         >
           <div
             class="c6 sc-bZQynM c6 c7"
@@ -1317,6 +1318,7 @@ div.c14 {
                                         <Styled(StyledClickable)
                                           aria-expanded={true}
                                           onClick={[Function]}
+                                          type="button"
                                         >
                                           <StyledComponent
                                             aria-expanded={true}
@@ -1358,11 +1360,13 @@ div.c14 {
                                             }
                                             forwardedRef={null}
                                             onClick={[Function]}
+                                            type="button"
                                           >
                                             <button
                                               aria-expanded={true}
                                               className="c4 c5"
                                               onClick={[Function]}
+                                              type="button"
                                             >
                                               <Styled(Box)
                                                 between={3}
@@ -3548,6 +3552,7 @@ div.c14 {
                                         <Styled(StyledClickable)
                                           aria-expanded={true}
                                           onClick={[Function]}
+                                          type="button"
                                         >
                                           <StyledComponent
                                             aria-expanded={true}
@@ -3589,11 +3594,13 @@ div.c14 {
                                             }
                                             forwardedRef={null}
                                             onClick={[Function]}
+                                            type="button"
                                           >
                                             <button
                                               aria-expanded={true}
                                               className="c4 c5"
                                               onClick={[Function]}
+                                              type="button"
                                             >
                                               <Styled(Box)
                                                 between={3}
@@ -6440,6 +6447,7 @@ div.c14 {
                                         <Styled(StyledClickable)
                                           aria-expanded={true}
                                           onClick={[Function]}
+                                          type="button"
                                         >
                                           <StyledComponent
                                             aria-expanded={true}
@@ -6481,11 +6489,13 @@ div.c14 {
                                             }
                                             forwardedRef={null}
                                             onClick={[Function]}
+                                            type="button"
                                           >
                                             <button
                                               aria-expanded={true}
                                               className="c4 c5"
                                               onClick={[Function]}
+                                              type="button"
                                             >
                                               <Styled(Box)
                                                 between={3}
