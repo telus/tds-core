@@ -34,6 +34,7 @@ const FootnoteLink = ({ number, onClick, copy }) => {
       {numbers.map((n, i) => (
         <sup key={n}>
           <StyledFootnoteLink
+            type="button"
             key={numbers[i]}
             ref={refs[i]}
             onClick={e => {

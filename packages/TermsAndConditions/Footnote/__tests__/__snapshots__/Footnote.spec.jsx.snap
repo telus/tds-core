@@ -412,6 +412,7 @@ div.c5 {
                         <button
                           aria-label="close"
                           class="c11"
+                          type="button"
                         >
                           <svg
                             class="c12"
@@ -881,6 +882,7 @@ div.c5 {
                         <button
                           aria-label="close"
                           class="c11"
+                          type="button"
                         >
                           <svg
                             class="c12"

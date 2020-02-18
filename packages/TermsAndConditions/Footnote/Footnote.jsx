@@ -278,6 +278,7 @@ const Footnote = props => {
                         {getCopy(copyDictionary, copy).heading}
                       </Heading>
                       <StyledClickable
+                        type="button"
                         onClick={e => {
                           closeFootnote(e, { returnFocus: true })
                         }}
