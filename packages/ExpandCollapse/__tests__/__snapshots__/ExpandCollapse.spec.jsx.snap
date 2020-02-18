@@ -137,6 +137,7 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
   onMouseEnter={[Function]}
   onMouseLeave={[Function]}
   panelDisabled={false}
+  type="button"
 >
   <StyledComponent
     aria-expanded={false}
@@ -177,6 +178,7 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     panelDisabled={false}
+    type="button"
   >
     <button
       aria-expanded={false}
@@ -185,6 +187,7 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
       onClick={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
+      type="button"
     >
       <Box
         inline={false}
@@ -825,6 +828,7 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
   onClick={[Function]}
   onMouseEnter={[Function]}
   onMouseLeave={[Function]}
+  type="button"
 >
   <Box
     inline={false}
@@ -1631,6 +1635,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
                   panelDisabled={false}
+                  type="button"
                 >
                   <StyledComponent
                     aria-expanded={false}
@@ -1671,6 +1676,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                     onMouseEnter={[Function]}
                     onMouseLeave={[Function]}
                     panelDisabled={false}
+                    type="button"
                   >
                     <button
                       aria-expanded={false}
@@ -1679,6 +1685,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                       onClick={[Function]}
                       onMouseEnter={[Function]}
                       onMouseLeave={[Function]}
+                      type="button"
                     >
                       <Box
                         inline={false}
@@ -2826,6 +2833,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
                   panelDisabled={false}
+                  type="button"
                 >
                   <StyledComponent
                     aria-expanded={true}
@@ -2866,6 +2874,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                     onMouseEnter={[Function]}
                     onMouseLeave={[Function]}
                     panelDisabled={false}
+                    type="button"
                   >
                     <button
                       aria-expanded={true}
@@ -2874,6 +2883,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                       onClick={[Function]}
                       onMouseEnter={[Function]}
                       onMouseLeave={[Function]}
+                      type="button"
                     >
                       <Box
                         inline={false}
