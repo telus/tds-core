@@ -4,11 +4,19 @@ exports[`<Notification /> can have a variant 1`] = `
 div.c4 {
   padding-left: 1rem;
   padding-right: 1rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 div.c5 {
   padding-left: 0;
   padding-right: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .c3 {
@@ -1043,11 +1051,19 @@ exports[`<Notification /> can have a variant 2`] = `
 div.c4 {
   padding-left: 1rem;
   padding-right: 1rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 div.c5 {
   padding-left: 0;
   padding-right: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .c3 {
@@ -2222,11 +2238,19 @@ exports[`<Notification /> renders 1`] = `
 div.c4 {
   padding-left: 1rem;
   padding-right: 1rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 div.c5 {
   padding-left: 0;
   padding-right: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .c3 {
