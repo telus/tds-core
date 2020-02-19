@@ -207,6 +207,141 @@ exports[`Box between arranges the children horizontally or vertically be either 
 </Box>
 `;
 
+exports[`Box between can handle a between={0} prop 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > *:not(:last-child) {
+  margin-bottom: 0rem;
+}
+
+<Box
+  between={0}
+  inline={false}
+  tag="div"
+>
+  <styled.div
+    between={0}
+    inline={false}
+    tag="div"
+  >
+    <StyledComponent
+      between={0}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      inline={false}
+      tag="div"
+    >
+      <div
+        className="c0"
+      >
+        Some content
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Box>
+`;
+
+exports[`Box between can handle a between={0} prop 2`] = `
+.c0 {
+  display: block;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 0rem;
+}
+
+<Box
+  between={0}
+  inline={true}
+  tag="div"
+>
+  <styled.div
+    between={0}
+    inline={true}
+    tag="div"
+  >
+    <StyledComponent
+      between={0}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [
+            [Function],
+          ],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+              [Function],
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      inline={true}
+      tag="div"
+    >
+      <div
+        className="c0"
+      >
+        Some content
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Box>
+`;
+
 exports[`Box between can handle responsive props 1`] = `
 @media (max-width:767px) {
   .c0 {
