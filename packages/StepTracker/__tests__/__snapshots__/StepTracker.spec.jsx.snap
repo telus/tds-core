@@ -57,11 +57,19 @@ exports[`<StepTracker /> renders 1`] = `
 div.c3 {
   padding-left: 1rem;
   padding-right: 1rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 div.c12 {
   padding-left: 1rem;
   padding-right: 1rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .c2 {
