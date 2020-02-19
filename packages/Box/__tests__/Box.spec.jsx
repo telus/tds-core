@@ -130,6 +130,14 @@ describe('Box', () => {
 
       expect(box).toMatchSnapshot()
     })
+
+    it('can handle a between={0} prop', () => {
+      let box = doMount({ between: 0 })
+      expect(box).toMatchSnapshot()
+
+      box = doMount({ between: 0, inline: true })
+      expect(box).toMatchSnapshot()
+    })
   })
 
   it('passes additional attributes to the wrapping element', () => {
