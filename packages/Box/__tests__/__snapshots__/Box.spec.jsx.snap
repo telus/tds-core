@@ -278,7 +278,10 @@ exports[`Box between can handle a between={0} prop 1`] = `
 
 exports[`Box between can handle a between={0} prop 2`] = `
 .c0 {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
