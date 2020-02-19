@@ -45,6 +45,13 @@ const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth
       borderWidth: [[1, 0, 0, 0]],
       paddingBottom: space[0],
     },
+    '& ul li': {
+      overflow: 'visible',
+      margin: '8px 0px',
+      display: 'block',
+      fontSize: '15px',
+      listStyle: 'none'
+    }
   },
   logo: {
     padding: space[2],
