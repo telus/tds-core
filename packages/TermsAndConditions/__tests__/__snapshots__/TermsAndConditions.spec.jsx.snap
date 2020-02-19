@@ -27,11 +27,19 @@ exports[`TermsAndConditions renders 1`] = `
 div.c3 {
   padding-left: 0;
   padding-right: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 div.c15 {
   padding-left: 1rem;
   padding-right: 1rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .c2 {
@@ -600,11 +608,19 @@ exports[`TermsAndConditions renders expanded 1`] = `
 div.c3 {
   padding-left: 0;
   padding-right: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 div.c15 {
   padding-left: 1rem;
   padding-right: 1rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .c2 {
@@ -2792,11 +2808,19 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
 div.c3 {
   padding-left: 0;
   padding-right: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 div.c15 {
   padding-left: 1rem;
   padding-right: 1rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .c2 {
@@ -5716,11 +5740,19 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
 div.c3 {
   padding-left: 0;
   padding-right: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 div.c15 {
   padding-left: 1rem;
   padding-right: 1rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .c2 {
