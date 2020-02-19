@@ -128,6 +128,7 @@
     "postcss-cli": "^6.0.0",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.17.1",
+    "pumpify": "^2.0.1",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-helmet": "^5.2.0",
@@ -158,8 +159,7 @@
     "yargs": "^13.0.0"
   },
   "dependencies": {
-    "prop-types": "^15.5.10",
-    "pumpify": "^2.0.1"
+    "prop-types": "^15.5.10"
   },
   "config": {
     "commitizen": {
