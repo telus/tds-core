@@ -353,13 +353,12 @@ module.exports = {
     styleguidistEnv === 'e2e' ? path.resolve('docs/scss/e2e.css') : []
   ),
   styleguideComponents: {
-    // Editor: path.resolve('docs/components/overrides/Editor/Editor'),
     Logo: path.resolve('docs/components/custom/Logo/Logo'),
     'Markdown/List': path.resolve('docs/components/custom/MarkdownList/MarkdownList'),
     'Markdown/MarkdownHeading': path.resolve(
       'docs/components/custom/MarkdownHeading/MarkdownHeading'
     ),
-    'Markdown/Markdown': path.resolve('docs/components/overrides/Markdown/Markdown'),
+    Link: path.resolve('docs/components/custom/MarkdownLink/MarkdownLink'),
     PathlineRenderer: path.resolve('docs/components/overrides/Pathline/PathlineRenderer'),
     SectionHeadingRenderer: path.resolve(
       'docs/components/custom/SectionHeading/SectionHeadingRenderer'
