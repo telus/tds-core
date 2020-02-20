@@ -164,7 +164,6 @@ In some cases you want cards to match the height of their parent so that the bot
 
 By _Default_, cards have Box 5 spacing on top/bottom and Box 4 on left/right. They are used for marketing pages to call out or break information.
 
-<img src="card/card-padding-default-highlighted.png" alt="card padding default with highlights" style="max-width: 100%" />
 <img src="card/card-padding-default.png" alt="card padding default" style="max-width: 100%" />
 
 _Narrow_ cards have Box 4 spacing on top/bottom and Box 3 on left/right. This card is used when presenting plans to a customer.
