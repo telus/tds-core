@@ -43,7 +43,7 @@ const inlineBetweenStyles = props =>
     { between: props.between, inline: props.inline },
     ({ between, inline }, breakpoint) => {
       const base = {
-        display: between || !inline ? 'flex' : 'block',
+        display: typeof between !== 'undefined' ? 'flex' : 'block',
         flexDirection: inline ? 'row' : 'column',
       }
 
