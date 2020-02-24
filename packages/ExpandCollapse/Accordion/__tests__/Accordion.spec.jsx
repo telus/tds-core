@@ -150,4 +150,15 @@ describe('Accordion', () => {
     expect(accordion).not.toHaveProp('className', 'my-custom-class')
     expect(accordion).not.toHaveProp('style')
   })
+
+  it('renders empty panels', () => {
+    const { findPanelHeader } = doMount(
+      <Accordion>
+        <Accordion.Panel id="home-service-billing" header="Home service billing (3)" />
+      </Accordion>
+    )
+
+    const panelHeader = findPanelHeader('panel-1')
+    expect(panelHeader).toMatchSnapshot()
+  })
 })

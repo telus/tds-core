@@ -89,9 +89,13 @@ ExpandCollapse.propTypes = {
    */
   tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']),
   /**
-   * The expandable panels. Must be at least one `ExpandCollapse.Panel`.
+   * Panel content. Can be text, any HTML element, or any component.
+   * If content is not provided, only the Panel heading will be
+   * displayed in a non-interactive manner. See documentation for usage.
+   *
+   * @since 2.1.0
    */
-  children: componentWithName('Panel').isRequired,
+  children: componentWithName('Panel'),
 }
 
 ExpandCollapse.defaultProps = {
@@ -99,6 +103,7 @@ ExpandCollapse.defaultProps = {
   topDivider: true,
   onToggle: undefined,
   tag: undefined,
+  children: undefined,
 }
 
 ExpandCollapse.Panel = Panel

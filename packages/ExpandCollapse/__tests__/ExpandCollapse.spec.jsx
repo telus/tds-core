@@ -46,11 +46,13 @@ describe('ExpandCollapse', () => {
     header: 'Panel title',
   }
   const defaultChildren = 'Panel content'
-  const aPanel = ({ ...props }, children = defaultChildren) => (
-    <ExpandCollapse.Panel {...defaultProps} {...props}>
-      {children}
-    </ExpandCollapse.Panel>
-  )
+  const aPanel = ({ ...props }, children = defaultChildren) => {
+    return (
+      <ExpandCollapse.Panel {...defaultProps} {...props}>
+        {children}
+      </ExpandCollapse.Panel>
+    )
+  }
 
   beforeEach(() => {
     mockMatchMedia(768)
@@ -264,6 +266,18 @@ describe('ExpandCollapse', () => {
       clickPanel('panel-1')
 
       expectPanelToBeClosed(findPanel('panel-1'))
+    })
+  })
+
+  describe('empty panels', () => {
+    it('renders', () => {
+      const { expandCollapse } = doMount(
+        <ExpandCollapse>
+          <ExpandCollapse.Panel id="home-service-billing" header="Home service billing (3)" />
+        </ExpandCollapse>
+      )
+
+      expect(expandCollapse).toMatchSnapshot()
     })
   })
 
