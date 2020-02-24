@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.41](https://github.com/telus/tds-core/compare/@tds/core-video@1.2.40...@tds/core-video@1.2.41) (2020-02-24)
+
+**Note:** Version bump only for package @tds/core-video
+
+
+
+
+
 ## [1.2.40](https://github.com/telus/tds-core/compare/@tds/core-video@1.2.39...@tds/core-video@1.2.40) (2020-02-24)
 
 **Note:** Version bump only for package @tds/core-video
