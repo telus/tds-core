@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.9](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@3.0.8...@tds/core-flex-grid@3.0.9) (2020-02-24)
+
+
+### Bug Fixes
+
+* **core-flex-grid:** prevent invisible hairline divider w/ mdOffset+ ([9cdec38](https://github.com/telusdigital/tds/commit/9cdec38))
+
+
+
+
+
 ## [3.0.8](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@3.0.7...@tds/core-flex-grid@3.0.8) (2020-02-06)
 
 
