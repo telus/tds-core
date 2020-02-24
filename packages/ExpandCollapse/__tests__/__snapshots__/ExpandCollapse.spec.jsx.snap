@@ -1324,6 +1324,596 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
 </button>
 `;
 
+exports[`ExpandCollapse empty panels renders 1`] = `
+.c8 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1.25rem;
+  -webkit-letter-spacing: -1px;
+  -moz-letter-spacing: -1px;
+  -ms-letter-spacing: -1px;
+  letter-spacing: -1px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  font-weight: 400;
+}
+
+.c8 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  -webkit-transform: rotate(-0.00001deg);
+  -ms-transform: rotate(-0.00001deg);
+  transform: rotate(-0.00001deg);
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.c3 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c4 > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c7 {
+  width: 100%;
+}
+
+.c2 {
+  margin-left: 1.5rem;
+}
+
+.c0 {
+  background-color: #fff;
+}
+
+<ExpandCollapse
+  open={Array []}
+  topDivider={true}
+>
+  <Panels
+    isPanelOpen={[Function]}
+    open={Array []}
+    togglePanel={[Function]}
+    topDivider={true}
+  >
+    <Panels__PanelBase
+      open={Array []}
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Panels__PanelBase-sc-78ahii-0",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "background-color: #fff;",
+              ],
+            },
+            "displayName": "Panels__PanelBase",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Panels__PanelBase-sc-78ahii-0",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        open={Array []}
+      >
+        <div
+          className="c0"
+          open={Array []}
+        >
+          <HairlineDivider
+            gradient={false}
+            vertical={false}
+          >
+            <HairlineDivider__StyledHairlineDivider
+              gradient={false}
+              vertical={false}
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                      "isStatic": false,
+                      "lastClassName": "c1",
+                      "rules": Array [
+                        "padding: 0;",
+                        "margin: 0;",
+                        "border-width: 0;",
+                        [Function],
+                      ],
+                    },
+                    "displayName": "HairlineDivider__StyledHairlineDivider",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                    "target": "hr",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                gradient={false}
+                vertical={false}
+              >
+                <hr
+                  className="c1"
+                />
+              </StyledComponent>
+            </HairlineDivider__StyledHairlineDivider>
+          </HairlineDivider>
+          <PanelWrapper
+            key="home-service-billing"
+            onClick={[Function]}
+            open={false}
+            panelDisabled={false}
+            panelHeader="Home service billing (3)"
+            panelId="home-service-billing"
+          >
+            <div
+              data-testid="home-service-billing"
+            >
+              <Styled(Box)
+                style={
+                  Object {
+                    "marginLeft": "1.5rem",
+                  }
+                }
+                vertical={3}
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bwzfXH",
+                        "isStatic": true,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "margin-left: 1.5rem;",
+                        ],
+                      },
+                      "displayName": "Styled(Box)",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bwzfXH",
+                      "target": [Function],
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  style={
+                    Object {
+                      "marginLeft": "1.5rem",
+                    }
+                  }
+                  vertical={3}
+                >
+                  <Box
+                    className="c2"
+                    inline={false}
+                    style={
+                      Object {
+                        "marginLeft": "1.5rem",
+                      }
+                    }
+                    tag="div"
+                    vertical={3}
+                  >
+                    <styled.div
+                      className="c2"
+                      inline={false}
+                      style={
+                        Object {
+                          "marginLeft": "1.5rem",
+                        }
+                      }
+                      tag="div"
+                      vertical={3}
+                    >
+                      <StyledComponent
+                        className="c2"
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [
+                              [Function],
+                            ],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-bdVaJa",
+                              "isStatic": false,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                [Function],
+                                [Function],
+                                [Function],
+                                [Function],
+                                [Function],
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-bdVaJa",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        inline={false}
+                        style={
+                          Object {
+                            "marginLeft": "1.5rem",
+                          }
+                        }
+                        tag="div"
+                        vertical={3}
+                      >
+                        <div
+                          className="c2 sc-bwzfXH c2 c3"
+                          style={
+                            Object {
+                              "marginLeft": "1.5rem",
+                            }
+                          }
+                        >
+                          <Box
+                            between={3}
+                            inline={true}
+                            tag="div"
+                          >
+                            <styled.div
+                              between={3}
+                              inline={true}
+                              tag="div"
+                            >
+                              <StyledComponent
+                                between={3}
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [
+                                      [Function],
+                                    ],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bdVaJa",
+                                      "isStatic": false,
+                                      "lastClassName": "c4",
+                                      "rules": Array [
+                                        [Function],
+                                        [Function],
+                                        [Function],
+                                        [Function],
+                                        [Function],
+                                      ],
+                                    },
+                                    "displayName": "styled.div",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bdVaJa",
+                                    "target": "div",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                inline={true}
+                                tag="div"
+                              >
+                                <div
+                                  className="c4"
+                                >
+                                  <PanelWrapper__HeaderContainer
+                                    direction="row"
+                                  >
+                                    <StyledComponent
+                                      direction="row"
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "PanelWrapper__HeaderContainer-doiyjm-2",
+                                            "isStatic": false,
+                                            "lastClassName": "c6",
+                                            "rules": Array [
+                                              [Function],
+                                            ],
+                                          },
+                                          "displayName": "PanelWrapper__HeaderContainer",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "PanelWrapper__HeaderContainer-doiyjm-2",
+                                          "target": "div",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <div
+                                        className="c5"
+                                        direction="row"
+                                      >
+                                        <PanelWrapper__HeaderContainer
+                                          direction="column"
+                                        >
+                                          <StyledComponent
+                                            direction="column"
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "PanelWrapper__HeaderContainer-doiyjm-2",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c6",
+                                                  "rules": Array [
+                                                    [Function],
+                                                  ],
+                                                },
+                                                "displayName": "PanelWrapper__HeaderContainer",
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "styledComponentId": "PanelWrapper__HeaderContainer-doiyjm-2",
+                                                "target": "div",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                          >
+                                            <div
+                                              className="c6"
+                                              direction="column"
+                                            >
+                                              <PanelWrapper__HeaderTitleContainer>
+                                                <StyledComponent
+                                                  forwardedComponent={
+                                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "attrs": Array [],
+                                                      "componentStyle": ComponentStyle {
+                                                        "componentId": "PanelWrapper__HeaderTitleContainer-doiyjm-3",
+                                                        "isStatic": true,
+                                                        "lastClassName": "c7",
+                                                        "rules": Array [
+                                                          "width: 100%;",
+                                                        ],
+                                                      },
+                                                      "displayName": "PanelWrapper__HeaderTitleContainer",
+                                                      "foldedComponentIds": Array [],
+                                                      "render": [Function],
+                                                      "styledComponentId": "PanelWrapper__HeaderTitleContainer-doiyjm-3",
+                                                      "target": "div",
+                                                      "toString": [Function],
+                                                      "warnTooManyClasses": [Function],
+                                                      "withComponent": [Function],
+                                                    }
+                                                  }
+                                                  forwardedRef={null}
+                                                >
+                                                  <div
+                                                    className="c7"
+                                                  >
+                                                    <Text
+                                                      block={false}
+                                                      bold={false}
+                                                      invert={false}
+                                                      size="large"
+                                                    >
+                                                      <Text__StyledText
+                                                        block={false}
+                                                        bold={false}
+                                                        invert={false}
+                                                        size="large"
+                                                      >
+                                                        <StyledComponent
+                                                          block={false}
+                                                          bold={false}
+                                                          forwardedComponent={
+                                                            Object {
+                                                              "$$typeof": Symbol(react.forward_ref),
+                                                              "attrs": Array [],
+                                                              "componentStyle": ComponentStyle {
+                                                                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                                                "isStatic": false,
+                                                                "lastClassName": "c8",
+                                                                "rules": Array [
+                                                                  [Function],
+                                                                  [Function],
+                                                                  [Function],
+                                                                  [Function],
+                                                                  [Function],
+                                                                  "sup {",
+                                                                  "top: -0.5em;",
+                                                                  "font-size: 0.875rem;",
+                                                                  "position: relative;",
+                                                                  "vertical-align: baseline;",
+                                                                  "padding-left: 0.1em;",
+                                                                  "}",
+                                                                ],
+                                                              },
+                                                              "displayName": "Text__StyledText",
+                                                              "foldedComponentIds": Array [],
+                                                              "render": [Function],
+                                                              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                                                              "target": "span",
+                                                              "toString": [Function],
+                                                              "warnTooManyClasses": [Function],
+                                                              "withComponent": [Function],
+                                                            }
+                                                          }
+                                                          forwardedRef={null}
+                                                          invert={false}
+                                                          size="large"
+                                                        >
+                                                          <span
+                                                            className="c8"
+                                                            size="large"
+                                                          >
+                                                            Home service billing (3)
+                                                          </span>
+                                                        </StyledComponent>
+                                                      </Text__StyledText>
+                                                    </Text>
+                                                  </div>
+                                                </StyledComponent>
+                                              </PanelWrapper__HeaderTitleContainer>
+                                            </div>
+                                          </StyledComponent>
+                                        </PanelWrapper__HeaderContainer>
+                                      </div>
+                                    </StyledComponent>
+                                  </PanelWrapper__HeaderContainer>
+                                </div>
+                              </StyledComponent>
+                            </styled.div>
+                          </Box>
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                  </Box>
+                </StyledComponent>
+              </Styled(Box)>
+              <HairlineDivider
+                gradient={false}
+                vertical={false}
+              >
+                <HairlineDivider__StyledHairlineDivider
+                  gradient={false}
+                  vertical={false}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                          "isStatic": false,
+                          "lastClassName": "c1",
+                          "rules": Array [
+                            "padding: 0;",
+                            "margin: 0;",
+                            "border-width: 0;",
+                            [Function],
+                          ],
+                        },
+                        "displayName": "HairlineDivider__StyledHairlineDivider",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                        "target": "hr",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    gradient={false}
+                    vertical={false}
+                  >
+                    <hr
+                      className="c1"
+                    />
+                  </StyledComponent>
+                </HairlineDivider__StyledHairlineDivider>
+              </HairlineDivider>
+            </div>
+          </PanelWrapper>
+        </div>
+      </StyledComponent>
+    </Panels__PanelBase>
+  </Panels>
+</ExpandCollapse>
+`;
+
 exports[`ExpandCollapse renders a closed panel 1`] = `
 .c6 {
   color: #2a2c2e;

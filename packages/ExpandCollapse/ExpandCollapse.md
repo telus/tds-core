@@ -1,10 +1,13 @@
 ### Usage criteria
 
-The `ExpandCollapse` and `Accordion` component allows nesting of content inside a collapsed container. Clicking on the header will reveal the hidden content by expanding the container. Since this interaction hides the content through motion, you need to consider what type of content is placed inside. Below are examples of what to do and what not to do:
+The `ExpandCollapse` and `Accordion` component allows nesting of content inside a collapsible container. Activating the header will reveal the hidden content by expanding the container.
 
-_Ideal_: Static content such as text, links, and images
-
-_Not ideal_: Complex interactions such as tabs, carousels or nested accordions. The extra layers make it confusing and difficult for customers to orient themselves. The customer needs to be able to navigate to other parts of the page after the content is expanded.
+- Carefully consider the type of content to hide and reveal with motion
+- Use static content within Panels such as text, links, and images
+- Avoid complex interactions within Panels such as tabs, carousels or nested accordions. The extra layers make it confusing and difficult for customers to orient themselves. The customer needs to be able to navigate to other parts of the page after the content is expanded
+- May display as a non-interactive `ExpandCollapse` heading
+  - Don’t include content in the `ExpandCollapse.Panel` to display a non-interactive heading without the hide and reveal functionality, and not displaying the Caret icon
+  - Limit use to displaying a list of product items
 
 ### Minimal usage
 
@@ -84,4 +87,39 @@ _Not ideal_: Complex interactions such as tabs, carousels or nested accordions. 
     </ExpandCollapse.Panel>
   </ExpandCollapse>
 </div>
+```
+
+Example of a list of product items displaying points or price information as a series of `ExpandCollapse` panels. A non-interactive `ExpandCollapse.Panel` can be used to arrange items and their corresponding numerals consistently.
+
+```jsx
+<ExpandCollapse topDivider={false} tag="h2">
+  <ExpandCollapse.Panel
+    id="home-service-billing"
+    header="Home service billing (3)"
+    subtext="10/06/2019"
+    tertiaryText="14.82 points"
+  >
+    <Box between={3}>
+      <Box between="space-between" inline>
+        <Paragraph size="medium">Home Phone</Paragraph>
+        <Paragraph size="medium">1.73 points</Paragraph>
+      </Box>
+      <Box between="space-between" inline>
+        <Paragraph size="medium">High Speed Internet</Paragraph>
+        <Paragraph size="medium">1.59 points</Paragraph>
+      </Box>
+      <Box between="space-between" inline>
+        <Paragraph size="medium">Optik TV</Paragraph>
+        <Paragraph size="medium">11.50 points</Paragraph>
+      </Box>
+    </Box>
+  </ExpandCollapse.Panel>
+
+  <ExpandCollapse.Panel
+    id="monthly-mobility-bonus"
+    header="Monthly mobility bonus"
+    subtext="05/06/2019"
+    tertiaryText="2.66 points"
+  />
+</ExpandCollapse>
 ```

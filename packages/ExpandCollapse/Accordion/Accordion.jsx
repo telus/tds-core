@@ -77,15 +77,20 @@ Accordion.propTypes = {
    */
   onToggle: PropTypes.func,
   /**
-   * The expandable panels. Must be at least one `Accordion.Panel`.
+   * Panel content. Can be text, any HTML element, or any component.
+   * If content is not provided, only the Panel heading will be
+   * displayed in a non-interactive manner. See documentation for usage.
+   *
+   * @since 2.1.0
    */
-  children: componentWithName('Panel').isRequired,
+  children: componentWithName('Panel'),
 }
 
 Accordion.defaultProps = {
   open: undefined,
   topDivider: true,
   onToggle: undefined,
+  children: undefined,
 }
 
 Accordion.Panel = Panel

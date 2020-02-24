@@ -2351,3 +2351,5 @@ exports[`Accordion renders an open accordion 1`] = `
   </Panels>
 </Accordion>
 `;
+
+exports[`Accordion renders empty panels 1`] = `null`;

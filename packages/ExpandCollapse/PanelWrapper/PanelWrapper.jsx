@@ -74,6 +74,8 @@ const ShowUntilMd = styled.div({
   }),
 })
 
+const StyledPanellessWrapper = styled(Box)({ marginLeft: '1.5rem' })
+
 class PanelWrapper extends React.Component {
   constructor(props) {
     super(props)
@@ -179,6 +181,19 @@ class PanelWrapper extends React.Component {
       tag,
       children,
     } = this.props
+
+    if (!children.props.children) {
+      return (
+        <>
+          <StyledPanellessWrapper vertical={3} style={{ marginLeft: '1.5rem' }}>
+            <Box inline between={3}>
+              {this.renderHeader(panelHeader, panelSubtext, panelTertiaryText)}
+            </Box>
+          </StyledPanellessWrapper>
+          <HairlineDivider />
+        </>
+      )
+    }
 
     const headerButton = (
       <HeaderButtonClickable

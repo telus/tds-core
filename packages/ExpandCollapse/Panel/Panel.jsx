@@ -40,7 +40,7 @@ Panel.propTypes = {
   /**
    * The content. Can be text, any HTML element, or any component.
    */
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 }
 
 Panel.defaultProps = {
@@ -48,6 +48,7 @@ Panel.defaultProps = {
   tertiaryText: undefined,
   disabled: false,
   onToggle: undefined,
+  children: undefined,
 }
 
 export default Panel
