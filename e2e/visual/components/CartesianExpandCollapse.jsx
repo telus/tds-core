@@ -32,6 +32,12 @@ const CartesianAll = () => (
             Display - OLED
           </ExpandCollapse.Panel>,
         ],
+        [
+          <ExpandCollapse.Panel id="features" header="Features">
+            {`Connected GPS - Connect to your phone's GPS to see real-time run stats.`}
+          </ExpandCollapse.Panel>,
+          <ExpandCollapse.Panel id="specs" header="Specs" />,
+        ],
       ]}
     />
     <Cartesian
@@ -46,6 +52,12 @@ const CartesianAll = () => (
           <ExpandCollapse.Panel id="specs" header="Specs">
             Display - OLED
           </ExpandCollapse.Panel>,
+        ],
+        [
+          <ExpandCollapse.Panel id="features" header="Features">
+            {`Connected GPS - Connect to your phone's GPS to see real-time run stats.`}
+          </ExpandCollapse.Panel>,
+          <ExpandCollapse.Panel id="specs" header="Specs" />,
         ],
       ]}
     />
