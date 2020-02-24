@@ -3,12 +3,17 @@ aesthetics of the TELUS brand. We embed the brand into React components which ar
 
 ```jsx noeditor
 <Notification>
-  <Text bold>New! The TDS documentation experience has been updated to be more performant!</Text>
-  <br />
-  <br /> To navigate the TDS documentation, please use the sidebar to select the component you want
-  to view. Keep in mind that code sandbox changes will not persist if the page is switched to a new
-  component. We recommend opening a new tab if other components need to be referenced while working
-  in a code sandbox.
+  <Box between={2}>
+    <Paragraph bold>
+      New! The TDS documentation experience has been updated to be more performant!
+    </Paragraph>
+    <Paragraph>
+      To navigate the TDS documentation, please use the sidebar to select the component you want to
+      view. Keep in mind that code sandbox changes will not persist if the page is switched to a new
+      component. We recommend opening a new tab if other components need to be referenced while
+      working in a code sandbox.
+    </Paragraph>
+  </Box>
 </Notification>
 ```
 
