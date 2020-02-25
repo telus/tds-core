@@ -20,17 +20,21 @@
 ```jsx
 <Box inline between={3}>
   <Box between={0}>
-    <Text size="large" bold>
-      500
-    </Text>
-    <Text>Users per month</Text>
+    <Paragraph>
+      <Text size="large" bold>
+        500
+      </Text>{' '}
+      Users per month
+    </Paragraph>
   </Box>
   <HairlineDivider vertical />
   <Box between={0}>
-    <Text size="large" bold>
-      400
-    </Text>
-    <Text>Winners</Text>
+    <Paragraph>
+      <Text size="large" bold>
+        400
+      </Text>{' '}
+      Winners
+    </Paragraph>
   </Box>
 </Box>
 ```
