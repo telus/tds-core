@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
@@ -125,7 +125,9 @@ const StyledBox = styled.div.attrs(({ className, tag }) => {
  *
  * @version ./package.json
  */
-const Box = props => <StyledBox {...props} />
+const Box = forwardRef((props, ref) => <StyledBox {...props} ref={ref} />)
+
+Box.displayName = 'Box'
 
 Box.propTypes = {
   /**
