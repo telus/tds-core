@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useEffect, useCallback, useState, useRef } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import Text from '@tds/core-text'
+import { componentWithName } from '@tds/util-prop-types'
+
+import Text, { StyledText } from '@tds/core-text'
 import HairlineDivider from '@tds/core-hairline-divider'
 import Box from '@tds/core-box'
 import { colorText } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
 import {
+  small,
   medium,
   large,
   wordBreak,
@@ -48,14 +51,14 @@ const priceValue = {
   },
 }
 
-const StyledRateText = styled.span(({ size }) => {
+const StyledRateText = styled(StyledText)(({ size }) => {
   if (size === 'large') {
     return large
   }
   if (size === 'medium') {
     return medium
   }
-  return { ...medium, lineHeight: 1 }
+  return { ...small, lineHeight: 1 }
 })
 
 const StyledPriceValue = styled.span(wordBreak, spacing.noSpacing, ({ size }) => {
@@ -63,6 +66,10 @@ const StyledPriceValue = styled.span(wordBreak, spacing.noSpacing, ({ size }) =>
     lineHeight: 1,
     ...priceValue[size],
   }
+})
+
+const StyledFootnoteLinks = styled(StyledText)({
+  display: 'inline-block',
 })
 
 const StyledDollarSign = styled.span(({ size }) => {
@@ -93,12 +100,64 @@ const StyledPriceWrapper = styled(Box)({
   alignItems: 'flex-end',
 })
 
+const StyledBottomText = styled(StyledText)({})
+
 /**
  * A component presenting TELUS product pricing information.
  * @version ./package.json
  */
 
-const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText }) => {
+const PriceLockup = ({
+  size,
+  price,
+  topText,
+  signDirection,
+  rateText,
+  bottomText,
+  footnoteLinks,
+}) => {
+  const [hasTooManyFootnoteLinks, setHasTooManyFootnoteLinks] = useState(false)
+  const [hasEnoughFootnoteSpace, setHasEnoughFootnoteSpace] = useState(true)
+
+  const footnoteLinksRef = useRef()
+  const containerRef = useRef()
+  const priceWrapperRef = useRef()
+
+  const countFootnoteLinks = useCallback(links => {
+    let count = 0
+    if (links) {
+      if (Array.isArray(links)) {
+        count = links.reduce((acc, curr) => acc + curr.props.number.length, 0)
+      } else {
+        count = links.props.number.length
+      }
+    }
+    setHasTooManyFootnoteLinks(count > 3)
+  }, [])
+
+  const checkEnoughSpace = useCallback(() => {
+    if (containerRef.current && footnoteLinksRef.current && priceWrapperRef.current) {
+      const footnoteLinksWidth = footnoteLinksRef.current.offsetWidth
+      const containerWidth = containerRef.current.offsetWidth
+      const priceWrapperWidth = priceWrapperRef.current.offsetWidth
+
+      const contentWidth = footnoteLinksWidth + containerWidth + footnoteLinksWidth
+      setHasEnoughFootnoteSpace(contentWidth < priceWrapperWidth)
+    }
+  }, [])
+
+  useEffect(() => {
+    checkEnoughSpace()
+    window.addEventListener('resize', checkEnoughSpace)
+    return () => {
+      window.removeEventListener('resize', checkEnoughSpace)
+    }
+  }, [checkEnoughSpace])
+
+  useEffect(() => {
+    countFootnoteLinks(footnoteLinks)
+  }, [countFootnoteLinks, footnoteLinks])
+
   const renderDollarSign = () => {
     if (size === 'large') {
       return (
@@ -114,21 +173,47 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
     )
   }
 
+  const renderFootnoteLinks = (links, s) => {
+    return (
+      <StyledFootnoteLinks id="footnoteLinks" ref={footnoteLinksRef} size={s}>
+        {links}
+      </StyledFootnoteLinks>
+    )
+  }
+
+  const shouldRenderWithPriceText =
+    !rateText && !bottomText && !hasTooManyFootnoteLinks && hasEnoughFootnoteSpace
+  const shouldRenderWithRateText =
+    rateText && !bottomText && !hasTooManyFootnoteLinks && hasEnoughFootnoteSpace
+  const shouldRenderWithBottomText =
+    bottomText || hasTooManyFootnoteLinks || !hasEnoughFootnoteSpace
+
   const renderPriceValueSign = () => {
     return (
-      <Box between={size === 'large' ? 2 : 1} inline>
-        {signDirection === 'left' ? renderDollarSign() : undefined}
-        <StyledPriceValue data-testid="priceValue" size={size}>
-          {price}
-        </StyledPriceValue>
-        {signDirection === 'right' ? renderDollarSign() : undefined}
-      </Box>
+      <div id="containerRef" ref={containerRef}>
+        <Box between={size === 'large' ? 2 : 1} inline>
+          {signDirection === 'left' ? renderDollarSign() : undefined}
+          <StyledPriceValue data-testid="priceValue" size={size}>
+            {price}
+          </StyledPriceValue>
+          {signDirection === 'right' ? renderDollarSign() : undefined}
+          {shouldRenderWithPriceText && renderFootnoteLinks(footnoteLinks, size)}
+        </Box>
+      </div>
     )
   }
 
   const renderBottomText = () => {
-    if (size !== 'large' && bottomText) {
-      return <Text size={size}>{bottomText}</Text>
+    if (!bottomText && shouldRenderWithBottomText) {
+      return <div>{renderFootnoteLinks(footnoteLinks, size)}</div>
+    }
+    if (size !== 'large' && (bottomText || (footnoteLinks && shouldRenderWithBottomText))) {
+      return (
+        <div>
+          <StyledBottomText size={size}>{bottomText}</StyledBottomText>
+          {renderFootnoteLinks(footnoteLinks, size)}
+        </div>
+      )
     }
     if (size === 'large' && bottomText) {
       warn('PriceLockup', "The props bottomText and size='large' cannot be used together")
@@ -139,24 +224,28 @@ const PriceLockup = ({ size, price, topText, signDirection, rateText, bottomText
 
   let wrapperSpacing
   if (size === 'small') {
-    if (bottomText && rateText) {
-      wrapperSpacing = 2
-    } else {
-      wrapperSpacing = 1
-    }
+    wrapperSpacing = 2
   } else if (size === 'medium') {
     wrapperSpacing = 3
+  } else {
+    wrapperSpacing = 2
   }
 
   return (
     <StyledWrapperAlignment between={wrapperSpacing}>
       <Box between={size !== 'large' ? 1 : undefined}>
         {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
-        <StyledPriceWrapper between={size === 'small' ? 1 : 2} inline>
+        <StyledPriceWrapper
+          id="wrapperRef"
+          ref={priceWrapperRef}
+          between={size === 'small' ? 1 : 2}
+          inline
+        >
           {renderPriceValueSign()}
           {rateText && (
             <StyledRateText data-testid="rateText" size={size}>
               {rateText}
+              {shouldRenderWithRateText && renderFootnoteLinks(footnoteLinks, size)}
             </StyledRateText>
           )}
         </StyledPriceWrapper>
@@ -192,6 +281,12 @@ PriceLockup.propTypes = {
    * Price value of component
    */
   price: PropTypes.string.isRequired,
+
+  /**
+   * A `FootnoteLink` component or array of `FootnoteLink` compoenents, can be
+   * used to add superscripts to a `PriceLockup`
+   */
+  footnoteLinks: componentWithName('FootnoteLink'),
 }
 
 PriceLockup.defaultProps = {
@@ -199,6 +294,7 @@ PriceLockup.defaultProps = {
   topText: undefined,
   bottomText: undefined,
   rateText: undefined,
+  footnoteLinks: undefined,
 }
 
 export default PriceLockup

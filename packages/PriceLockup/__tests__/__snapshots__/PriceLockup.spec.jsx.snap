@@ -12,137 +12,21 @@ exports[`PriceLockup renders with default props 1`] = `
 }
 
 .c1 > *:not(:last-child) {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
-.c3 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.c3 > *:not(:last-child) {
-  margin-right: 0.25rem;
-}
-
-.c6 {
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1;
-}
-
-.c5 {
-  word-wrap: break-word;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
-  font-size: 1.5rem;
-  font-weight: 400;
-  -webkit-letter-spacing: -0.7px;
-  -moz-letter-spacing: -0.7px;
-  -ms-letter-spacing: -0.7px;
-  letter-spacing: -0.7px;
-}
-
-.c4 {
-  line-height: 1.5;
-}
-
-.c4 medium {
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-}
-
-.c0 {
-  text-align: left;
-}
-
-.c2 {
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-@media (min-width:768px) {
-  .c5 {
-    font-size: 1.75rem;
-    -webkit-letter-spacing: -0.8px;
-    -moz-letter-spacing: -0.8px;
-    -ms-letter-spacing: -0.8px;
-    letter-spacing: -0.8px;
-  }
-}
-
-<div
-  class="c0 sc-bwzfXH c0 c1"
->
-  <div
-    class="c1"
-  >
-    <div
-      class="c2 sc-htpNat c2 c3"
-    >
-      <div
-        class="c3"
-      >
-        <span
-          class="c4"
-          data-testid="dollarSign"
-        >
-          $
-        </span>
-        <span
-          class="c5"
-          data-testid="priceValue"
-        >
-          25
-        </span>
-      </div>
-      <span
-        class="c6"
-        data-testid="rateText"
-      >
-        /month
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`PriceLockup size prop is large renders 1`] = `
-.c2 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
-  line-height: 1.6;
-  word-wrap: break-word;
-  font-weight: 400;
-}
-
-.c2 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
+.c2 > *:not(:last-child) {
+  margin-bottom: 0.25rem;
 }
 
 .c4 {
@@ -156,24 +40,34 @@ exports[`PriceLockup size prop is large renders 1`] = `
 }
 
 .c4 > *:not(:last-child) {
-  margin-right: 0.5rem;
-}
-
-.c1 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  margin-right: 0.25rem;
 }
 
 .c7 {
+  color: #2a2c2e;
   word-wrap: break-word;
-  font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
-  line-height: 1.6;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1;
+}
+
+.c7 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
 }
 
 .c6 {
@@ -181,19 +75,47 @@ exports[`PriceLockup size prop is large renders 1`] = `
   padding: 0;
   margin: 0;
   line-height: 1;
-  font-size: 2.75rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 400;
+  -webkit-letter-spacing: -0.7px;
+  -moz-letter-spacing: -0.7px;
+  -ms-letter-spacing: -0.7px;
+  letter-spacing: -0.7px;
+}
+
+.c8 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.c8 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
 }
 
 .c5 {
-  color: #2a2c2e;
-  font-weight: 400;
-  font-size: 1.75rem;
-  line-height: 1.3;
-  -webkit-letter-spacing: -1.6px;
-  -moz-letter-spacing: -1.6px;
-  -ms-letter-spacing: -1.6px;
-  letter-spacing: -1.6px;
+  line-height: 1.5;
+}
+
+.c5 medium {
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
 }
 
 .c0 {
@@ -209,6 +131,199 @@ exports[`PriceLockup size prop is large renders 1`] = `
 
 @media (min-width:768px) {
   .c6 {
+    font-size: 1.75rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+  }
+}
+
+<div
+  class="c0 sc-bxivhb c0 c1"
+>
+  <div
+    class="c2"
+  >
+    <div
+      class="c3 sc-ifAKCX c3 c4"
+      id="wrapperRef"
+    >
+      <div
+        id="containerRef"
+      >
+        <div
+          class="c4"
+        >
+          <span
+            class="c5"
+            data-testid="dollarSign"
+          >
+            $
+          </span>
+          <span
+            class="c6"
+            data-testid="priceValue"
+          >
+            25
+          </span>
+        </div>
+      </div>
+      <span
+        class="c7"
+        data-testid="rateText"
+      >
+        /month
+        <span
+          class="c8"
+          id="footnoteLinks"
+        />
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PriceLockup size prop is large renders 1`] = `
+.c3 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1.25rem;
+  -webkit-letter-spacing: -1px;
+  -moz-letter-spacing: -1px;
+  -ms-letter-spacing: -1px;
+  letter-spacing: -1px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  font-weight: 400;
+}
+
+.c3 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c5 > *:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.c2 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c8 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1.25rem;
+  -webkit-letter-spacing: -1px;
+  -moz-letter-spacing: -1px;
+  -ms-letter-spacing: -1px;
+  letter-spacing: -1px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  font-weight: 400;
+  word-wrap: break-word;
+  font-size: 1.25rem;
+  -webkit-letter-spacing: -1px;
+  -moz-letter-spacing: -1px;
+  -ms-letter-spacing: -1px;
+  letter-spacing: -1px;
+  line-height: 1.6;
+}
+
+.c8 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c7 {
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-size: 2.75rem;
+  font-weight: 300;
+}
+
+.c9 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1.25rem;
+  -webkit-letter-spacing: -1px;
+  -moz-letter-spacing: -1px;
+  -ms-letter-spacing: -1px;
+  letter-spacing: -1px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.c9 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c6 {
+  color: #2a2c2e;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.3;
+  -webkit-letter-spacing: -1.6px;
+  -moz-letter-spacing: -1.6px;
+  -ms-letter-spacing: -1.6px;
+  letter-spacing: -1.6px;
+}
+
+.c0 {
+  text-align: left;
+}
+
+.c4 {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+@media (min-width:768px) {
+  .c7 {
     font-size: 4.5rem;
     -webkit-letter-spacing: 0.2px;
     -moz-letter-spacing: 0.2px;
@@ -218,7 +333,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     font-weight: 300;
     font-size: 2.75rem;
     -webkit-letter-spacing: 0;
@@ -229,40 +344,49 @@ exports[`PriceLockup size prop is large renders 1`] = `
 }
 
 <div
-  class="c0 sc-bwzfXH c0 c1"
+  class="c0 sc-bxivhb c0 c1"
 >
   <div
-    class="c1"
+    class="c2"
   >
     <span
-      class="c2"
+      class="c3"
     >
       top text
     </span>
     <div
-      class="c3 sc-htpNat c3 c4"
+      class="c4 sc-ifAKCX c4 c5"
+      id="wrapperRef"
     >
       <div
-        class="c4"
+        id="containerRef"
       >
-        <span
+        <div
           class="c5"
-          data-testid="dollarSign"
         >
-          $
-        </span>
-        <span
-          class="c6"
-          data-testid="priceValue"
-        >
-          25
-        </span>
+          <span
+            class="c6"
+            data-testid="dollarSign"
+          >
+            $
+          </span>
+          <span
+            class="c7"
+            data-testid="priceValue"
+          >
+            25
+          </span>
+        </div>
       </div>
       <span
-        class="c7"
+        class="c8"
         data-testid="rateText"
       >
         /month
+        <span
+          class="c9"
+          id="footnoteLinks"
+        />
       </span>
     </div>
   </div>
@@ -298,26 +422,6 @@ exports[`PriceLockup size prop is medium renders 1`] = `
 }
 
 .c3 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c11 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
-.c11 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -382,6 +486,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
 }
 
 .c9 {
+  color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -389,6 +494,22 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   -ms-letter-spacing: -0.8px;
   letter-spacing: -0.8px;
   line-height: 1.5;
+  font-weight: 400;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+}
+
+.c9 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
 }
 
 .c8 {
@@ -402,6 +523,27 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   -ms-letter-spacing: -1.6px;
   letter-spacing: -1.6px;
   font-weight: 400;
+}
+
+.c12 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.c12 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
 }
 
 .c7 {
@@ -425,6 +567,26 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   align-items: flex-end;
 }
 
+.c11 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.c11 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 @media (min-width:768px) {
   .c8 {
     font-weight: 300;
@@ -437,7 +599,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
 }
 
 <div
-  class="c0 sc-bwzfXH c0 c1"
+  class="c0 sc-bxivhb c0 c1"
 >
   <div
     class="c2"
@@ -448,23 +610,28 @@ exports[`PriceLockup size prop is medium renders 1`] = `
       top text
     </span>
     <div
-      class="c4 sc-htpNat c4 c5"
+      class="c4 sc-ifAKCX c4 c5"
+      id="wrapperRef"
     >
       <div
-        class="c6"
+        id="containerRef"
       >
-        <span
-          class="c7"
-          data-testid="dollarSign"
+        <div
+          class="c6"
         >
-          $
-        </span>
-        <span
-          class="c8"
-          data-testid="priceValue"
-        >
-          25
-        </span>
+          <span
+            class="c7"
+            data-testid="dollarSign"
+          >
+            $
+          </span>
+          <span
+            class="c8"
+            data-testid="priceValue"
+          >
+            25
+          </span>
+        </div>
       </div>
       <span
         class="c9"
@@ -477,11 +644,17 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   <hr
     class="c10"
   />
-  <span
-    class="c11"
-  >
-    bottom text
-  </span>
+  <div>
+    <span
+      class="c11"
+    >
+      bottom text
+    </span>
+    <span
+      class="c12"
+      id="footnoteLinks"
+    />
+  </div>
 </div>
 `;
 
@@ -521,6 +694,20 @@ exports[`PriceLockup size prop is small renders 1`] = `
   padding-left: 0.1em;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -549,28 +736,31 @@ exports[`PriceLockup size prop is small renders 1`] = `
   margin-right: 0.25rem;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 > *:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
 .c8 {
+  color: #2a2c2e;
   word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
   line-height: 1;
+}
+
+.c8 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
 }
 
 .c7 {
@@ -584,6 +774,27 @@ exports[`PriceLockup size prop is small renders 1`] = `
   -moz-letter-spacing: -0.7px;
   -ms-letter-spacing: -0.7px;
   letter-spacing: -0.7px;
+}
+
+.c11 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.c11 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
 }
 
 .c6 {
@@ -611,6 +822,26 @@ exports[`PriceLockup size prop is small renders 1`] = `
   align-items: flex-end;
 }
 
+.c10 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c10 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
 @media (min-width:768px) {
   .c7 {
     font-size: 1.75rem;
@@ -622,7 +853,7 @@ exports[`PriceLockup size prop is small renders 1`] = `
 }
 
 <div
-  class="c0 sc-bwzfXH c0 c1"
+  class="c0 sc-bxivhb c0 c1"
 >
   <div
     class="c2"
@@ -633,23 +864,28 @@ exports[`PriceLockup size prop is small renders 1`] = `
       top text
     </span>
     <div
-      class="c4 sc-htpNat c4 c5"
+      class="c4 sc-ifAKCX c4 c5"
+      id="wrapperRef"
     >
       <div
-        class="c5"
+        id="containerRef"
       >
-        <span
-          class="c6"
-          data-testid="dollarSign"
+        <div
+          class="c5"
         >
-          $
-        </span>
-        <span
-          class="c7"
-          data-testid="priceValue"
-        >
-          25
-        </span>
+          <span
+            class="c6"
+            data-testid="dollarSign"
+          >
+            $
+          </span>
+          <span
+            class="c7"
+            data-testid="priceValue"
+          >
+            25
+          </span>
+        </div>
       </div>
       <span
         class="c8"
@@ -662,10 +898,16 @@ exports[`PriceLockup size prop is small renders 1`] = `
   <hr
     class="c9"
   />
-  <span
-    class="c3"
-  >
-    bottom text
-  </span>
+  <div>
+    <span
+      class="c10"
+    >
+      bottom text
+    </span>
+    <span
+      class="c11"
+      id="footnoteLinks"
+    />
+  </div>
 </div>
 `;

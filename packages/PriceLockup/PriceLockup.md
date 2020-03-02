@@ -18,6 +18,17 @@
   topText="Starting at"
   price="25"
   rateText="/month"
+  signDirection="left"
+  footnoteLinks={<FootnoteLink number={[1, 2, 3]} onClick={(number, ref) => {}} copy="en" />}
+/>
+```
+
+```jsx
+<PriceLockup
+  size="medium"
+  topText="Starting at"
+  price="25"
+  rateText="/month"
   bottomText="$68 /month after 3 months"
   signDirection="left"
 />
