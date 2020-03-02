@@ -419,7 +419,7 @@ Object {
 }
 `;
 
-exports[`Link displays a Dependent Icon and sets alignment 1`] = `
+exports[`Link dependent icons displays a Dependent Icon and sets alignment 1`] = `
 .c0 {
   display: inline-block;
 }
@@ -589,7 +589,7 @@ exports[`Link displays a Dependent Icon and sets alignment 1`] = `
 </a>
 `;
 
-exports[`Link displays a Dependent Icon and sets alignment 2`] = `
+exports[`Link dependent icons displays a Dependent Icon and sets alignment 2`] = `
 .c0 {
   display: inline-block;
 }
