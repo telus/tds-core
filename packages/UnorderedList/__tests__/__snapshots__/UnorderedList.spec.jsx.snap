@@ -62,6 +62,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
 >
   <Styled(Box)
     between={2}
+    inline={false}
     tag="ul"
   >
     <StyledComponent
@@ -87,17 +88,64 @@ exports[`<UnorderedList /> can have a list style 1`] = `
               "}",
             ],
           },
+          "defaultProps": Object {
+            "below": undefined,
+            "between": undefined,
+            "className": undefined,
+            "horizontal": undefined,
+            "inline": false,
+            "inset": undefined,
+            "tag": "div",
+            "vertical": undefined,
+          },
           "displayName": "Styled(Box)",
           "foldedComponentIds": Array [],
+          "propTypes": Object {
+            "below": [Function],
+            "between": [Function],
+            "children": [Function],
+            "className": [Function],
+            "horizontal": [Function],
+            "inline": [Function],
+            "inset": [Function],
+            "tag": [Function],
+            "vertical": [Function],
+          },
           "render": [Function],
           "styledComponentId": "c0",
-          "target": [Function],
+          "target": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "below": undefined,
+              "between": undefined,
+              "className": undefined,
+              "horizontal": undefined,
+              "inline": false,
+              "inset": undefined,
+              "tag": "div",
+              "vertical": undefined,
+            },
+            "displayName": "Box",
+            "propTypes": Object {
+              "below": [Function],
+              "between": [Function],
+              "children": [Function],
+              "className": [Function],
+              "horizontal": [Function],
+              "inline": [Function],
+              "inset": [Function],
+              "tag": [Function],
+              "vertical": [Function],
+            },
+            "render": [Function],
+          },
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
       }
       forwardedRef={null}
+      inline={false}
       tag="ul"
     >
       <Box
@@ -307,6 +355,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
 >
   <Styled(Box)
     between={2}
+    inline={false}
     tag="ul"
   >
     <StyledComponent
@@ -332,17 +381,64 @@ exports[`<UnorderedList /> can have a list style 2`] = `
               "}",
             ],
           },
+          "defaultProps": Object {
+            "below": undefined,
+            "between": undefined,
+            "className": undefined,
+            "horizontal": undefined,
+            "inline": false,
+            "inset": undefined,
+            "tag": "div",
+            "vertical": undefined,
+          },
           "displayName": "Styled(Box)",
           "foldedComponentIds": Array [],
+          "propTypes": Object {
+            "below": [Function],
+            "between": [Function],
+            "children": [Function],
+            "className": [Function],
+            "horizontal": [Function],
+            "inline": [Function],
+            "inset": [Function],
+            "tag": [Function],
+            "vertical": [Function],
+          },
           "render": [Function],
           "styledComponentId": "c0",
-          "target": [Function],
+          "target": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "below": undefined,
+              "between": undefined,
+              "className": undefined,
+              "horizontal": undefined,
+              "inline": false,
+              "inset": undefined,
+              "tag": "div",
+              "vertical": undefined,
+            },
+            "displayName": "Box",
+            "propTypes": Object {
+              "below": [Function],
+              "between": [Function],
+              "children": [Function],
+              "className": [Function],
+              "horizontal": [Function],
+              "inline": [Function],
+              "inset": [Function],
+              "tag": [Function],
+              "vertical": [Function],
+            },
+            "render": [Function],
+          },
           "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
       }
       forwardedRef={null}
+      inline={false}
       tag="ul"
     >
       <Box
@@ -569,6 +665,7 @@ exports[`<UnorderedList /> renders 1`] = `
 exports[`<UnorderedList /> renders a mixed list of items 1`] = `
 <Styled(Box)
   between={2}
+  inline={false}
   tag="ul"
 >
   <UnorderedList.Item
