@@ -4,6 +4,7 @@ import React from 'react'
 import { Cartesian } from '@compositor/kit'
 
 import Link from '../../../packages/Link'
+import { Edit } from '../../../packages/InteractiveIcon/svgs/Dependent'
 
 const CartesianLink = props => (
   <Cartesian
@@ -12,6 +13,8 @@ const CartesianLink = props => (
     href="http://tds.telus.com"
     invert={[true, false]}
     children="TELUS Design System"
+    icon={[undefined, Edit]}
+    iconPosition={['left', 'right']}
   />
 )
 
