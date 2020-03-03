@@ -33,7 +33,7 @@
 ### Prerequisites
 
 - [Git](https://git-scm.com/)
-- [Node.JS](https://nodejs.org) v8
+- [Node.JS](https://nodejs.org) v12
 
 To get started, clone [the TDS repository](https://github.com/telusdigital/tds-core) and create your branch from master.
 TELUS Digital developers and partners can push branches to the repository directly. If you do not have write access, you may create a fork instead.
@@ -49,9 +49,6 @@ After setting up TDS locally, the following steps will get you started:
 # This will install node and Gitbook dependencies,
 # set up symlinks for lerna, and build components for tests
 npm run bootstrap
-
-# If the branch's package-lock.json requires an update, please run this command to bootstrap using `npm i`.
-npm run bootstrap:install
 ```
 
 **Note**: Please commit any changes to the lockfile using the `deps` scope. For instance:
@@ -148,6 +145,7 @@ Components are published via our continuous integration pipeline. Do not try pub
 of the TDS Core team, and TDS Community components are the responsibility of the [Digital Platform Ambassadors][tds-community-dpa].
 
 ```sh
+# Ran in pipeline
 npx lerna publish --conventional-commits
 ```
 
