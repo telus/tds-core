@@ -2,6 +2,7 @@
 
 Welcome to the TDS Announcement Board! Check back here regularly for the latest updates on TDS!
 
+- [February 2020](#february-2020)
 - [January 2020](#january-2020)
 - [December 2019](#december-2019)
 - [November 2019](#november-2019)
@@ -18,6 +19,85 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 - [December 2018](#december-2018)
 
 <hr/>
+
+## February 2020
+
+### DSM Updates
+
+**Resolving Invision DSM sync issues**
+
+- Re-released TDS Core DSM library v2.3.11 to fix sync issue notifications that were appearing in TDS Core DSM library
+
+**v2.3.11.1**
+
+- Updated screenshots for [Card](https://tds.telus.com/components/index.html#!/Card) documentation
+- Available in TDS Core DSM Library v2.3.11.1
+- Provided example components instead of artboards
+
+### New TDS Core Features 🎁
+
+**styleguidist v10**
+
+- Upgraded our docs site to use styleguidist v10. This provides us with per-component routing and increased performance
+
+### New TDS Community Features 🎁
+
+**ProgressBar 2.0.0**
+
+- Three visual variants are available (positive, negative, disabled)
+- Available in two sizes (default and mini), height no longer changes based on viewport
+- Available in TDS Community DSM Library v1.0.10
+- Thanks go out to Apurv, Lynne, and Daniel for their extensive help with research and designs
+- [Release Notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-progress%402.0.0)
+- [Docs](https://tds.telus.com/community/index.html#!/Progress%20Bar)
+
+### New TDS Core Fixes
+
+**FlexGrid 3.0.8**
+
+- Add `flex-grow: 1` to FlexGrid.Col
+- [GitHub issue](https://github.com/telus/tds-core/issues/1373)
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-flex-grid%403.0.9)
+- [Docs](https://tds.telus.com/components/index.html#!/FlexGrid)
+
+**FlexGrid 3.0.8**
+
+- Prevent the width of a FlexGrid component from breaking when used inside a Box component
+- [GitHub issue](https://github.com/telus/tds-core/issues/1355)
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-flex-grid%403.0.8)
+- [Docs](https://tds.telus.com/components/index.html#!/FlexGrid)
+
+**ExpandCollapse 2.0.34**
+
+- Prevent panel button from submitting a form
+- [GitHub issue](https://github.com/telus/tds-core/issues/1394)
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-expand-collapse%402.0.34)
+- [Docs](https://tds.telus.com/components/index.html#!/ExpandCollapse)
+
+**ExpandCollapse 2.0.33**
+
+- Prevent `tertiaryText` from wrapping in Safari
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-expand-collapse%402.0.33)
+- [Docs](https://tds.telus.com/components/index.html#!/ExpandCollapse)
+
+**InteractiveIcon 1.4.4**
+
+- Fix a prop type warning when using NavButton icons
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-interactive-icon%401.4.4)
+- [Docs](https://tds.telus.com/components/index.html#!/Interactive%20Icons)
+
+**TermsAndConditions 1.2.14**
+
+- Prevents interactive with footnote button from submitting form
+- [GitHub issue](https://github.com/telus/tds-core/issues/1394)
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-terms-and-conditions%401.2.14)
+- [Docs](https://tds.telus.com/components/index.html#!/Terms%20and%20Conditions)
+
+**Box 2.1.3**
+
+- Use flexbox when `between` is 0
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-box%402.1.3)
+- [Docs](https://tds.telus.com/components/index.html#!/Box)
 
 ## January 2020
 
