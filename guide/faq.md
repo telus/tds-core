@@ -22,11 +22,28 @@ Learn more by reading the [TELUS Design Platform roadmap](roadmap.md).
 
 ## What browsers does TDS support?
 
+The TELUS Design System team aims to support browsers and screen reader combinations across all internal team segments. This support list gets updated on an occasional basis.
+
+Desktop browsers (Windows and macOS)
+
 - Chrome
 - Firefox
 - Safari
-- Microsoft Edge
-- Internet Explorer: 11
+- Microsoft Edge (IE 14, not Chromium-based)
+- Internet Explorer 11
+
+Mobile browsers
+
+- Chrome (Android)
+- Safari (iOS)
+
+Screen reader combinations
+
+- Windows + IE11 + JAWS
+- Windows + Firefox + NVDA
+- macOS + Safari + VoiceOver
+- Android + Chrome + Talkback
+- iOS + Safari + VoiceOver
 
 ## Do I need any polyfills?
 
