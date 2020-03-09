@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-text",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "Inline text",
   "main": "index.cjs.js",
   "module": "index.es.js",
