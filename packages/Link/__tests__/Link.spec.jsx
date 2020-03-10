@@ -4,7 +4,10 @@ import { mount, shallow } from 'enzyme'
 import { warn } from '../../../shared/utils/warn'
 
 import Link from '../Link'
+import Paragraph from '../../Paragraph/Paragraph'
+import Text from '../../Text/Text'
 import Edit from '../../InteractiveIcon/svgs/Dependent/Edit'
+import { StyledDependentSVG } from '../../InteractiveIcon/Dependent'
 
 jest.mock('../../../shared/utils/warn')
 
@@ -70,21 +73,6 @@ describe('Link', () => {
     expect(link).toHaveProp('role', 'button')
   })
 
-  it('displays a Dependent Icon', () => {
-    const link = doMount({ id: 'the-link', role: 'button', icon: Edit }).link
-    expect(link.find('[data-testid="dependentSvg"]')).toExist()
-  })
-
-  it('displays a Dependent Icon and sets alignment', () => {
-    const linkLeft = doMount({ id: 'the-link', role: 'button', icon: Edit, iconPosition: 'right' })
-      .link
-    const linkRight = doMount({ id: 'the-link', role: 'button', icon: Edit, iconPosition: 'right' })
-      .link
-
-    expect(linkLeft).toMatchSnapshot()
-    expect(linkRight).toMatchSnapshot()
-  })
-
   it('does not allow custom CSS', () => {
     const link = doMount({ className: 'my-custom-class', style: { color: 'hotpink' } })
 
@@ -109,5 +97,72 @@ describe('Link', () => {
       .instance()
 
     expect(target).toEqual(ref.current)
+  })
+
+  describe('dependent icons', () => {
+    it('displays a Dependent Icon', () => {
+      const link = doMount({ id: 'the-link', role: 'button', icon: Edit }).link
+      expect(link.find('[data-testid="dependentSvg"]')).toExist()
+    })
+
+    it('displays a Dependent Icon and sets alignment', () => {
+      const linkLeft = doMount({
+        id: 'the-link',
+        role: 'button',
+        icon: Edit,
+        iconPosition: 'right',
+      }).link
+      const linkRight = doMount({
+        id: 'the-link',
+        role: 'button',
+        icon: Edit,
+        iconPosition: 'right',
+      }).link
+
+      expect(linkLeft).toMatchSnapshot()
+      expect(linkRight).toMatchSnapshot()
+    })
+
+    it('inherits size from paragraph', () => {
+      const link = mount(
+        <Paragraph size="large">
+          <Link href="#" icon={Edit}>
+            Edit
+          </Link>
+        </Paragraph>
+      )
+
+      const size = link.find(StyledDependentSVG).prop('paragraphSize')
+      expect(size).toEqual('large')
+    })
+
+    it('inherits size from text', () => {
+      const link = mount(
+        <Text size="small">
+          <Link href="#" icon={Edit}>
+            Edit
+          </Link>
+        </Text>
+      )
+
+      const size = link.find(StyledDependentSVG).prop('paragraphSize')
+      expect(size).toEqual('small')
+    })
+
+    it('inherits size from nearest context', () => {
+      const link = mount(
+        <Paragraph size="small">
+          Need to make changes?
+          <Text size="large">
+            <Link href="#" icon={Edit}>
+              Edit
+            </Link>
+          </Text>
+        </Paragraph>
+      )
+
+      const size = link.find(StyledDependentSVG).prop('paragraphSize')
+      expect(size).toEqual('large')
+    })
   })
 })
