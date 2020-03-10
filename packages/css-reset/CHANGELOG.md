@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/telusdigital/tds/compare/@tds/core-css-reset@2.0.5...@tds/core-css-reset@3.0.0) (2020-03-10)
+
+
+### Features
+
+* **core-css-reset:** add hash to query string for woff and woff2 fonts ([a44d764](https://github.com/telusdigital/tds/commit/a44d764))
+
+
+### BREAKING CHANGES
+
+* **core-css-reset:** add hash to query string for woff and woff2 fonts
+
+
+
+
+
 ## [2.0.5](https://github.com/telusdigital/tds/compare/@tds/core-css-reset@2.0.4...@tds/core-css-reset@2.0.5) (2019-10-09)
 
 **Note:** Version bump only for package @tds/core-css-reset
