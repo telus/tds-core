@@ -62,13 +62,10 @@ The [Dependent](#dependent) InteractiveIcon group can be used within Link.
 - Recommend to align icon to the left when used as
   - Single independent link with icon
   - Group of independent links with icon
-
-#### Developer notes
-
-- Make use of Link's `icon` prop to insert Dependent icon JSX
-- The icon will default to its 24px size, or adapt to the font size of the wrapping Paragraph. Compatible with `@tds/core-paragraph@^2.1.0`
-  - On `large` or `medium` Paragraph sizes, the icon will be 24px
-  - On `small` Paragraph sizes, the icon will be 20px
+- The icon will default to its 24px size, or adapt to the font size of the wrapping `Paragraph` or `Text` component
+  - On `large` or `medium` `Paragraph` or `Text` sizes, the icon will be 24px
+  - On `small` `Paragraph` or `Text` sizes, the icon will be 20px
+  - Use `@tds/core-paragraph@^2.1.0` or `@tds/core-text@^3.1.0` to have `Link` inherit the size of the wrapping component
 
 The following icons are available for use in Links:
 
@@ -135,6 +132,24 @@ The following icons are available for use in Links:
     </span>
   </Box>
 </div>
+```
+
+#### Setting Link and Icon size using Paragraph or Text
+
+```jsx
+<Box between={3}>
+  <Paragraph size="large">
+    <Link href="#" icon={Settings}>
+      Go to Settings
+    </Link>
+  </Paragraph>
+
+  <Text size="small">
+    <Link href="#" icon={Print}>
+      See print-friendly version
+    </Link>
+  </Text>
+</Box>
 ```
 
 #### Grouping icons
