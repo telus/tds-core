@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.27](https://github.com/telusdigital/tds/compare/@tds/core-radio@2.0.26...@tds/core-radio@2.0.27) (2020-03-11)
+
+**Note:** Version bump only for package @tds/core-radio
+
+
+
+
+
 ## [2.0.26](https://github.com/telusdigital/tds/compare/@tds/core-radio@2.0.25...@tds/core-radio@2.0.26) (2020-03-10)
 
 **Note:** Version bump only for package @tds/core-radio

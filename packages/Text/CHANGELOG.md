@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/telusdigital/tds/compare/@tds/core-text@3.0.6...@tds/core-text@3.1.0) (2020-03-11)
+
+
+### Features
+
+* **core-text:** use DependentIconSizeContext ([cb8288e](https://github.com/telusdigital/tds/commit/cb8288e))
+
+
+
+
+
 ## [3.0.6](https://github.com/telusdigital/tds/compare/@tds/core-text@3.0.5...@tds/core-text@3.0.6) (2020-03-10)
 
 
