@@ -101,9 +101,13 @@ const Link = (
     if (Icon) {
       return (
         <>
-          {iconPosition === 'left' && <Icon invert={invert} style={{ marginRight: '0.5rem' }} />}
+          {iconPosition === 'left' && (
+            <Icon color={invert ? 'white' : 'greyShark'} style={{ marginRight: '0.5rem' }} />
+          )}
           {children}
-          {iconPosition === 'right' && <Icon invert={invert} style={{ marginLeft: '0.25rem' }} />}
+          {iconPosition === 'right' && (
+            <Icon color={invert ? 'white' : 'greyShark'} style={{ marginLeft: '0.25rem' }} />
+          )}
         </>
       )
     }
