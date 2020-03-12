@@ -9,7 +9,7 @@ import {
   NotificationError,
   NotificationWarning,
 } from '@tds/core-feedback-icon'
-import { Close } from '@tds/core-interactive-icon'
+import { IconButton, Close } from '@tds/core-interactive-icon'
 import Paragraph from '@tds/core-paragraph'
 import Box from '@tds/core-box'
 import { Reveal, Fade } from '@tds/shared-animation'
@@ -116,7 +116,8 @@ class Notification extends React.Component {
                       </Box>
                       {dismissible && (
                         <StyledDismissButtonWrapper>
-                          <Close
+                          <IconButton
+                            icon={Close}
                             a11yText={getCopy(copyDictionary, copy).close}
                             onClick={() => {
                               this.setState(() => ({ dismissed: true }))
