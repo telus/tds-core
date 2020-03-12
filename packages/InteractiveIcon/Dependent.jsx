@@ -1,9 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { colorWhite } from '@tds/core-colours'
 
 import { DependentIconSizeContext } from '@tds/util-helpers'
+import {
+  colorGreyShark,
+  colorTelusPurple,
+  colorWhite,
+  colorAccessibleGreen,
+} from '@tds/core-colours'
 
 const positionStyles = ({ paragraphSize }) => {
   let top = 0
@@ -17,26 +22,36 @@ const positionStyles = ({ paragraphSize }) => {
   }
 }
 
-const invertStyles = ({ invert }) => {
-  return {
-    fill: invert && colorWhite,
-  }
-}
 export const StyledDependentSVG = styled.svg.attrs({
   'aria-hidden': true,
   focusable: false,
-})(positionStyles, invertStyles, ({ paragraphSize }) => ({
-  width: paragraphSize === 'small' ? 20 : 24,
-  height: paragraphSize === 'small' ? 20 : 24,
-}))
+})(
+  positionStyles,
+  ({ paragraphSize }) => ({
+    width: paragraphSize === 'small' ? 20 : 24,
+    height: paragraphSize === 'small' ? 20 : 24,
+  }),
+  ({ color }) => {
+    let fill
+    if (color === 'greyShark') {
+      fill = colorGreyShark
+    } else if (color === 'white') {
+      fill = colorWhite
+    } else if (color === 'telusPurple') {
+      fill = colorTelusPurple
+    } else if (color === 'accessibleGreen') {
+      fill = colorAccessibleGreen
+    }
+    return { fill }
+  }
+)
 
-const Dependent = ({ invert, children, ...rest }) => {
+const Dependent = ({ children, ...rest }) => {
   return (
     <DependentIconSizeContext.Consumer>
       {({ paragraphSize }) => {
         return React.cloneElement(children, {
           paragraphSize,
-          invert,
           'data-testid': 'dependentSvg',
           ...rest,
         })
@@ -49,15 +64,11 @@ Dependent.propTypes = {
   /**
    * @ignore
    */
-  invert: PropTypes.bool,
-  /**
-   * @ignore
-   */
   children: PropTypes.node.isRequired,
+  color: PropTypes.oneOf(['greyShark', 'white', 'telusPurple', 'accessibleGreen']),
 }
 
 Dependent.defaultProps = {
-  invert: false,
+  color: 'greyShark',
 }
-
 export default Dependent
