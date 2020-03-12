@@ -13,7 +13,6 @@ const StyledInteractiveIconHover = styled.span(
     left: 0,
     width: '100%',
     height: '100%',
-    zIndex: '1',
     borderRadius: '50%',
     transition: 'transform 200ms ease-in-out',
     transform: 'scale(0,0)',
