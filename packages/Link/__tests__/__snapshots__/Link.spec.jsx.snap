@@ -484,6 +484,7 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 1`] =
   top: 0;
   width: 24px;
   height: 24px;
+  fill: #2a2c2e;
 }
 
 <a
@@ -495,6 +496,7 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 1`] =
 >
   Some content
   <Dependent
+    color="greyShark"
     style={
       Object {
         "marginLeft": "0.25rem",
@@ -502,7 +504,7 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 1`] =
     }
   >
     <Dependent
-      invert={false}
+      color="greyShark"
       style={
         Object {
           "marginLeft": "0.25rem",
@@ -510,9 +512,9 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 1`] =
       }
     >
       <styled.svg
+        color="greyShark"
         data-testid="dependentSvg"
         height="24"
-        invert={false}
         style={
           Object {
             "marginLeft": "0.25rem",
@@ -522,6 +524,7 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 1`] =
         width="24"
       >
         <StyledComponent
+          color="greyShark"
           data-testid="dependentSvg"
           forwardedComponent={
             Object {
@@ -554,7 +557,6 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 1`] =
           }
           forwardedRef={null}
           height="24"
-          invert={false}
           style={
             Object {
               "marginLeft": "0.25rem",
@@ -566,6 +568,7 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 1`] =
           <svg
             aria-hidden={true}
             className="c1"
+            color="greyShark"
             data-testid="dependentSvg"
             focusable={false}
             height="24"
@@ -654,6 +657,7 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 2`] =
   top: 0;
   width: 24px;
   height: 24px;
+  fill: #2a2c2e;
 }
 
 <a
@@ -665,6 +669,7 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 2`] =
 >
   Some content
   <Dependent
+    color="greyShark"
     style={
       Object {
         "marginLeft": "0.25rem",
@@ -672,7 +677,7 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 2`] =
     }
   >
     <Dependent
-      invert={false}
+      color="greyShark"
       style={
         Object {
           "marginLeft": "0.25rem",
@@ -680,9 +685,9 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 2`] =
       }
     >
       <styled.svg
+        color="greyShark"
         data-testid="dependentSvg"
         height="24"
-        invert={false}
         style={
           Object {
             "marginLeft": "0.25rem",
@@ -692,6 +697,7 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 2`] =
         width="24"
       >
         <StyledComponent
+          color="greyShark"
           data-testid="dependentSvg"
           forwardedComponent={
             Object {
@@ -724,7 +730,6 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 2`] =
           }
           forwardedRef={null}
           height="24"
-          invert={false}
           style={
             Object {
               "marginLeft": "0.25rem",
@@ -736,6 +741,7 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 2`] =
           <svg
             aria-hidden={true}
             className="c1"
+            color="greyShark"
             data-testid="dependentSvg"
             focusable={false}
             height="24"
