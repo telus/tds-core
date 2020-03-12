@@ -1,5 +1,3 @@
-## Dependent Icons
-
 ### Usage criteria
 
 These icons indicate interactivity, but are not interactive on their own. They depend on the Link component. They depend on the [Link](#/Links?id=link) component.
@@ -12,64 +10,112 @@ These icons indicate interactivity, but are not interactive on their own. They d
 
 ```jsx noeditor
 const IconTable = require('../../docs/components/custom/IconTable/IconTable').default
-;<IconTable
-  heading="Icons"
-  icons={[
-    {
-      name: 'Delete',
-      Component: Delete,
-      usageCriteria:
-        'Delete or edit an item. Use for authenticated or internal applications. Don’t use on marketing pages.',
-    },
-    {
-      name: 'Download',
-      Component: Download,
-      usageCriteria: 'Indicate download function',
-    },
-    {
-      name: 'DownloadPDF',
-      Component: DownloadPDF,
-      usageCriteria: 'Indicate download of a single PDF',
-    },
-    {
-      name: 'DownloadPDFs',
-      Component: DownloadPDFs,
-      usageCriteria: 'Indicate download of multiple PDFs',
-    },
-    {
-      name: 'Edit',
-      Component: Edit,
-      usageCriteria:
-        'Indicate ability to edit. Use for authenticated or internal applications. Don’t use on marketing pages',
-    },
-    {
-      name: 'LinkExternal',
-      Component: LinkExternal,
-      usageCriteria:
-        'Indicate a reference to an external source; will direct away from the TELUS experience or the primary flow ',
-    },
-    {
-      name: 'Print',
-      Component: Print,
-      usageCriteria: 'Prompt native print module',
-    },
-    {
-      name: 'Profile',
-      Component: Profile,
-      usageCriteria: 'Direct to, or indicate user profile',
-    },
-    {
-      name: 'Search',
-      Component: Search,
-      usageCriteria: 'Direct to, or indicate search functions',
-    },
-    {
-      name: 'Settings',
-      Component: Settings,
-      usageCriteria: 'Direct to, or indicate available settings',
-    },
-  ]}
-/>
+;<Box between={4}>
+  <IconTable
+    heading="Icons for use with Links"
+    icons={[
+      {
+        name: 'LinkExternal',
+        Component: LinkExternal,
+        usageCriteria:
+          'Indicate a reference to an external source; will direct away from the TELUS experience or the primary flow ',
+      },
+    ]}
+  />
+  <IconTable
+    heading="Icons for use with Buttons"
+    icons={[
+      {
+        name: 'Add',
+        Component: Add,
+        usageCriteria: 'Used to add items',
+        props: {
+          a11yText: 'Add',
+        },
+      },
+      {
+        name: 'Close',
+        Component: Close,
+        usageCriteria: 'Used to close',
+        props: {
+          a11yText: 'Close',
+        },
+      },
+      {
+        name: 'PlayVideo',
+        Component: PlayVideo,
+        usageCriteria:
+          'Used to indicate that a video is available, used with text link to bring to another page or window',
+        props: {
+          a11yText: 'Play',
+        },
+      },
+      {
+        name: 'Subtract',
+        Component: Subtract,
+        usageCriteria: 'Used to reduce items',
+        props: {
+          a11yText: 'Remove',
+        },
+      },
+      {
+        name: 'Delete',
+        Component: Delete,
+        usageCriteria:
+          'Delete or edit an item. Use for authenticated or internal applications. Don’t use on marketing pages.',
+        props: {
+          a11yText: 'Delete',
+        },
+      },
+    ]}
+  />
+  <IconTable
+    heading="Icons for use with Links or Buttons"
+    icons={[
+      {
+        name: 'Download',
+        Component: Download,
+        usageCriteria: 'Indicate download function',
+      },
+      {
+        name: 'DownloadPDF',
+        Component: DownloadPDF,
+        usageCriteria: 'Indicate download of a single PDF',
+      },
+      {
+        name: 'DownloadPDFs',
+        Component: DownloadPDFs,
+        usageCriteria: 'Indicate download of multiple PDFs',
+      },
+      {
+        name: 'Edit',
+        Component: Edit,
+        usageCriteria:
+          'Indicate ability to edit. Use for authenticated or internal applications. Don’t use on marketing pages',
+      },
+      {
+        name: 'Print',
+        Component: Print,
+        usageCriteria: 'Prompt native print module',
+      },
+      {
+        name: 'Profile',
+        Component: Profile,
+        usageCriteria: 'Direct to, or indicate user profile',
+      },
+      {
+        name: 'Search',
+        Component: Search,
+        usageCriteria: 'Direct to, or indicate search functions',
+      },
+      {
+        name: 'Settings',
+        Component: Settings,
+        usageCriteria: 'Direct to, or indicate available settings',
+      },
+    ]}
+  />
+</Box>
 ```
 
 ### Minimal usage
