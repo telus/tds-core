@@ -27,47 +27,64 @@ const CartesianDependentIcon = props => (
   />
 )
 
-const CartesianInteractiveIcon = props => (
-  <div style={{ display: 'flex', flexWrap: 'wrap', height: '100%' }}>
-    <div style={{ width: '50%' }}>
-      {Object.keys(icons)
-        .filter(icon => icon !== 'default')
-        .map(icon => (
-          <Cartesian
-            {...props}
-            container={StyledIconContainer}
-            component={icons[icon]}
-            a11yText="A11yText"
-            variant={['default', 'alternative', 'inverted']}
-            tag={['button', 'a']}
-            copy="en"
-            numItems={2}
-          />
-        ))}
+const CartesianInteractiveIcon = props => {
+  const renderIcons = () =>
+    Object.keys(icons)
+      .filter(icon => icon !== 'default' && icon !== 'IconButton')
+      .map(icon => (
+        <Cartesian
+          {...props}
+          container={StyledIconContainer}
+          component={icons[icon]}
+          a11yText="A11yText"
+          variant={['default', 'alternative', 'inverted']}
+          tag={['button', 'a']}
+          copy="en"
+          numItems={2}
+        />
+      ))
+  const renderIconButton = () => (
+    <Cartesian
+      {...props}
+      container={StyledIconContainer}
+      component={icons.IconButton}
+      a11yText="A11yText"
+      variant={['default', 'alternative', 'inverted']}
+      tag={['button', 'a']}
+      copy="en"
+      icon={[icons.Add, icons.Close, icons.Subtract, icons.PlayVideo]}
+    />
+  )
+  return (
+    <div style={{ display: 'flex', flexWrap: 'wrap', height: '100%' }}>
+      <div style={{ width: '50%' }}>
+        {renderIcons()}
+        {renderIconButton()}
+      </div>
+      <div style={{ width: '25%' }}>
+        {Object.keys(dependentIcons)
+          .filter(dependentIcon => dependentIcon !== 'default')
+          .map(dependentIcon => (
+            <CartesianDependentIcon
+              icon={dependentIcons[dependentIcon]}
+              iconPosition="left"
+              {...props}
+            />
+          ))}
+      </div>
+      <div style={{ width: '25%' }}>
+        {Object.keys(dependentIcons)
+          .filter(dependentIcon => dependentIcon !== 'default')
+          .map(dependentIcon => (
+            <CartesianDependentIcon
+              iconPosition="right"
+              icon={dependentIcons[dependentIcon]}
+              {...props}
+            />
+          ))}
+      </div>
     </div>
-    <div style={{ width: '25%' }}>
-      {Object.keys(dependentIcons)
-        .filter(dependentIcon => dependentIcon !== 'default')
-        .map(dependentIcon => (
-          <CartesianDependentIcon
-            icon={dependentIcons[dependentIcon]}
-            iconPosition="left"
-            {...props}
-          />
-        ))}
-    </div>
-    <div style={{ width: '25%' }}>
-      {Object.keys(dependentIcons)
-        .filter(dependentIcon => dependentIcon !== 'default')
-        .map(dependentIcon => (
-          <CartesianDependentIcon
-            iconPosition="right"
-            icon={dependentIcons[dependentIcon]}
-            {...props}
-          />
-        ))}
-    </div>
-  </div>
-)
+  )
+}
 
 export default { name: 'InteractiveIcon', Component: CartesianInteractiveIcon }
