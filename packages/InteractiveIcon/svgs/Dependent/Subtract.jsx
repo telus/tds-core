@@ -2,7 +2,7 @@ import React from 'react'
 
 import Dependent, { StyledDependentSVG } from '../../Dependent'
 
-const Close = props => (
+const Subtract = props => (
   <Dependent {...props}>
     <StyledDependentSVG width="24" height="24" viewBox="0 0 24 24">
       <path
@@ -13,6 +13,6 @@ const Close = props => (
   </Dependent>
 )
 
-Close.displayName = 'Subtract'
+Subtract.displayName = 'Dependent'
 
-export default Close
+export default Subtract

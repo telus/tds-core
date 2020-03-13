@@ -13,6 +13,6 @@ const Close = props => (
   </Dependent>
 )
 
-Close.displayName = 'Close'
+Close.displayName = 'Dependent'
 
 export default Close

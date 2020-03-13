@@ -15,7 +15,7 @@ describe('InteractiveIcon', () => {
       </IconButton>
     )
 
-  xit('renders', () => {
+  it('renders', () => {
     const iconButton = mount(
       <IconButton icon={Add} a11yText="This is an interactive icon">
         <svg />

@@ -10,6 +10,7 @@ import { componentWithName } from '@tds/util-prop-types'
 import animations from './shared/animations'
 import SharedStyledInteractiveIconButton from './shared/StyledInteractiveIconButton'
 import SharedStyledInteractiveIconHover from './shared/StyledInteractiveIconHover'
+import { warn } from '../../shared/utils/warn'
 
 export const StyledIconButton = styled(SharedStyledInteractiveIconButton)(
   animations.scale,
@@ -70,6 +71,18 @@ const IconButton = forwardRef(({ a11yText, variant, onClick, tag, icon: Icon, ..
     color = 'greyShark'
   }
 
+  if (
+    Icon.name !== 'Add' &&
+    Icon.name !== 'Close' &&
+    Icon.name !== 'Subtract' &&
+    Icon.name !== 'PlayVideo'
+  ) {
+    warn(
+      'IconButton',
+      'IconButton is meant to be used with the Add, Close, Subtract, and PlayVideo icons for their universal appearance. Other icons should be accompanied with text.'
+    )
+  }
+
   return (
     <ThemeProvider theme={getTheme(variant)}>
       <StyledIconButton {...safeRest(rest)} variant={variant} onClick={onClick} as={tag} ref={ref}>
@@ -104,10 +117,10 @@ IconButton.propTypes = {
    * The icon
    */
   icon: PropTypes.oneOfType([
-    componentWithName('Add', true),
-    componentWithName('Close', true),
-    componentWithName('PlayVideo', true),
-    componentWithName('Subtract', true),
+    componentWithName('Add'),
+    componentWithName('Close'),
+    componentWithName('PlayVideo'),
+    componentWithName('Subtract'),
   ]).isRequired,
 }
 

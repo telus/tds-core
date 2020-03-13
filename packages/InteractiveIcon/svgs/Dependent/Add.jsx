@@ -13,6 +13,6 @@ const Add = props => (
   </Dependent>
 )
 
-Add.displayName = 'Add'
+Add.displayName = 'Dependent'
 
 export default Add
