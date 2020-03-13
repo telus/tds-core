@@ -7,6 +7,7 @@ These icons indicate interactivity, but are not interactive on their own. They d
 - Must not be used in headings
 - Must not be used as an independent interactive component or render as independent SVG
 - Should depend on other interactive components with a visible label as part of the wrapper component
+- Dependent icons are 20x20 when used next to small (14px) links, or 24x24 when used next to medium or large links
 
 ```jsx noeditor
 const IconTable = require('../../docs/components/custom/IconTable/IconTable').default
