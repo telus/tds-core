@@ -86,11 +86,16 @@ exports[`InteractiveIcon renders 1`] = `
   transform: scale(1,1);
 }
 
+.c1 svg {
+  fill: #2a2c2e;
+}
+
 .c4 {
   position: relative;
   top: 0;
   width: 24px;
   height: 24px;
+  fill: #2a2c2e;
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -164,6 +169,7 @@ exports[`InteractiveIcon renders 1`] = `
                 "@media (prefers-reduced-motion: reduce) {",
                 "transition: none;",
                 "}",
+                [Function],
               ],
             },
             "displayName": "Styled(StyledInteractiveIconButton)",
@@ -269,21 +275,20 @@ exports[`InteractiveIcon renders 1`] = `
             </StyledComponent>
           </StyledInteractiveIconHover>
           <Dependent
-            variant="default"
+            color="greyShark"
           >
             <Dependent
-              invert={false}
-              variant="default"
+              color="greyShark"
             >
               <styled.svg
+                color="greyShark"
                 data-testid="dependentSvg"
                 height="24"
-                invert={false}
-                variant="default"
                 viewBox="0 0 24 24"
                 width="24"
               >
                 <StyledComponent
+                  color="greyShark"
                   data-testid="dependentSvg"
                   forwardedComponent={
                     Object {
@@ -316,14 +321,13 @@ exports[`InteractiveIcon renders 1`] = `
                   }
                   forwardedRef={null}
                   height="24"
-                  invert={false}
-                  variant="default"
                   viewBox="0 0 24 24"
                   width="24"
                 >
                   <svg
                     aria-hidden={true}
                     className="c4"
+                    color="greyShark"
                     data-testid="dependentSvg"
                     focusable={false}
                     height="24"

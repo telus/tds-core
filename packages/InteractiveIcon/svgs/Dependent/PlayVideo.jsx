@@ -13,6 +13,6 @@ const PlayVideo = props => (
   </Dependent>
 )
 
-PlayVideo.displayName = 'PlayVideo'
+PlayVideo.displayName = 'Dependent'
 
 export default PlayVideo
