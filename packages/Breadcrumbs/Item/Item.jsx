@@ -66,13 +66,12 @@ Item.displayName = 'Item'
 
 Item.propTypes = {
   /**
-   * Target URL.
+   * Target URL. This will be converted to `to` if the `reactRouterLinkComponent`
+   * prop is provided to the `Item` or parent `Breadcrumbs` element.
    */
   href: PropTypes.string.isRequired,
   /**
-   * @ignore
-   *
-   * React Router Link component. The reactRouterLinkComponent property will be passed down from from the parent `<Breadcrumbs>`.
+   * React Router Link component
    */
   reactRouterLinkComponent: PropTypes.func,
   /**
@@ -82,7 +81,7 @@ Item.propTypes = {
   /**
    * @ignore
    *
-   * Indicates whether or not the Item should be as current/activ
+   * Indicates whether or not the Item should be as current/active
    */
   current: PropTypes.bool,
 }

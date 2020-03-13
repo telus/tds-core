@@ -16,7 +16,6 @@ const omitProps = ({
   current,
   path,
   breadcrumbName,
-  reactRouterLinkComponent,
   indexRoute,
   childRoutes,
   component,
@@ -109,17 +108,25 @@ const Breadcrumbs = ({
   return (
     <nav {...safeRest(rest)}>
       <StyledList>
-        {items.map(({ href, current, breadcrumbName, ...itemRest }) => (
-          <Item
-            {...itemRest}
-            key={href}
-            href={href}
-            reactRouterLinkComponent={reactRouterLinkComponent}
-            current={current}
-          >
-            {breadcrumbName}
-          </Item>
-        ))}
+        {items.map(
+          ({
+            href,
+            current,
+            breadcrumbName,
+            reactRouterLinkComponent: linkComponent,
+            ...itemRest
+          }) => (
+            <Item
+              {...itemRest}
+              key={href}
+              href={href}
+              reactRouterLinkComponent={linkComponent || reactRouterLinkComponent}
+              current={current}
+            >
+              {breadcrumbName}
+            </Item>
+          )
+        )}
       </StyledList>
       <Helmet>
         <script type="application/ld+json">
