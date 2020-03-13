@@ -91,6 +91,42 @@ describe('Breadcrumbs', () => {
       expect(breadcrumbs).toMatchSnapshot()
     })
 
+    it('renders with ReactRouterLinkComponent', () => {
+      const LinkComponent = () => <a href="#react-router-link">TDS</a>
+      const breadcrumbs = doMount({
+        ...defaultPropsWithChildren,
+        reactRouterLinkComponent: LinkComponent,
+      })
+
+      expect(breadcrumbs).toMatchSnapshot()
+      expect(breadcrumbs.find('a[href="#react-router-link"]').length).toEqual(2)
+    })
+
+    it('renders with ReactRouterLinkComponent in Item', () => {
+      const LinkComponent = () => <a href="#react-router-link">TDS</a>
+      const breadcrumbs = doMount({
+        ...defaultPropsWithChildren,
+        children: [
+          <Breadcrumbs.Item key="/" href="/">
+            Home
+          </Breadcrumbs.Item>,
+          <Breadcrumbs.Item
+            key="/mobility"
+            href="/mobility"
+            reactRouterLinkComponent={LinkComponent}
+          >
+            Mobility
+          </Breadcrumbs.Item>,
+          <Breadcrumbs.Item key="/mobility/accessories" href="/mobility/accessories">
+            Accessories
+          </Breadcrumbs.Item>,
+        ],
+      })
+
+      expect(breadcrumbs).toMatchSnapshot()
+      expect(breadcrumbs.find('a[href="#react-router-link"]').length).toEqual(1)
+    })
+
     it('Item forwards refs', () => {
       const ref = React.createRef()
       const item = mount(
