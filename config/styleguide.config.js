@@ -146,6 +146,10 @@ module.exports = {
       return `import { CartEmptyBold, [...] } from '@tds/core-interactive-icon'`
     }
 
+    if (name === 'IconButton') {
+      return `import { IconButton } from '@tds/core-interactive-icon'`
+    }
+
     if (name === 'SVGIcon') {
       return `import { Accessible, Speed, Check, [...] } from '@tds/core-decorative-icon'`
     }
