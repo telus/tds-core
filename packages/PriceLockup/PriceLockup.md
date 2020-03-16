@@ -4,13 +4,19 @@
   - Use `small` for pricing in product catalogue pages (not in cards)
   - Use `medium` for pricing in product compare cards
   - Use `large` for pricing in banners and promo cards
-- The size prop refers to the size of the PriceLockup rather than the viewport it is being used in
-- PriceLockup is responsive depending on the screen size it is being viewed at
-- Must provide pricing value using the `price` prop
-- Price rate can be provided using the `rateText` prop (eg. /month)
-- Top and bottom text are optional and can be provided using the `topText` and `bottomText` props respectively
-- `bottomText` is only available with `small` and `medium` sized `PriceLockup`
-- When displaying prices in French, use `signDirection` to position the dollar sign to the right of the price
+- Sizes refer to the relative size of text within `PriceLockup` rather than viewport
+
+  - The large `PriceLockup` displays responsively based on viewport
+  - Must not display `bottomText` in large `PriceLockup`
+
+- Must use the `price` prop to provide monetary value
+- Use `rateText` prop to provide month or year
+- Use `topText` and `bottomText` props to provide additional information
+- Align the currency sign to the right when displaying prices in French
+
+<div style="text-align: center;">
+  <img src="price_lockup_annotated.png" alt="annotated pricelockup example" style="width: 100%;" />
+</div>
 
 ```jsx
 <PriceLockup
@@ -38,4 +44,58 @@
 
 ```jsx
 <PriceLockup size="medium" topText="À partir de :" price="25" signDirection="right" />
+```
+
+### PriceLockup with FootnoteLink
+
+Usage criteria
+
+- Group multiple `FootnoteLinks` together
+  - Must not display `FootnoteLinks` in both `rateText` and `bottomText`
+- `FootnoteLink` should always be the last element displayed in `PriceLockup`
+- Maximum of 3 `FootnoteLinks` may display inline with the price or `rateText`
+  - Display in the same line as the `price`, `rateText` or `bottomText` when there’s available space
+  - Display with `rateText` or `bottomText`, whichever is the last element
+- If there are more than 3 `FootnoteLinks`
+  - Display `FootnoteLinks` as the last element (bottom) of `PriceLockup`
+
+```jsx
+<PriceLockup
+  size="medium"
+  topText="Starting at"
+  price="25"
+  rateText="/month"
+  signDirection="left"
+  footnoteLinks={<FootnoteLink number={[1, 2, 3]} onClick={(number, ref) => {}} copy="en" />}
+/>
+```
+
+```jsx
+<PriceLockup
+  size="medium"
+  topText="Starting at"
+  price="25"
+  rateText="/month"
+  bottomText="$68 /month after 3 months"
+  signDirection="left"
+  footnoteLinks={<FootnoteLink number={[1, 2, 3]} onClick={(number, ref) => {}} copy="en" />}
+/>
+```
+
+```jsx
+<FlexGrid>
+  <FlexGrid.Row>
+    <FlexGrid.Col xs={3}>
+      <PriceLockup
+        size="medium"
+        topText="Starting at"
+        price="25"
+        rateText="/month"
+        bottomText="$68 /month after 3 months"
+        signDirection="left"
+        footnoteLinks={<FootnoteLink number={[1, 2, 3]} onClick={(number, ref) => {}} copy="en" />}
+      />
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
 ```
