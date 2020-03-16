@@ -7,7 +7,7 @@ These icons indicate interactivity, but are not interactive on their own. They d
 - Must not be used in headings
 - Must not be used as an independent interactive component or render as independent SVG
 - Should depend on other interactive components with a visible label as part of the wrapper component
-- Dependent icons are 20x20 when used next to small (14px) links, or 24x24 when used next to medium or large links
+- When used with [Link](#/Links?id=link), Dependent icons are 20x20 when wrapped by small Paragraph or Text sizes (14px), or 24x24 when wrapped with medium or large Paragraph or Text sizes. See Links with icons for more details
 
 ```jsx noeditor
 const IconTable = require('../../docs/components/custom/IconTable/IconTable').default
@@ -29,7 +29,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
       {
         name: 'Add',
         Component: Add,
-        usageCriteria: 'Used to add items',
+        usageCriteria: (
+          <>
+            Used to add items. Works well with <Link href="#/Icons?id=iconbutton">IconButton</Link>
+          </>
+        ),
         props: {
           a11yText: 'Add',
         },
@@ -37,7 +41,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
       {
         name: 'Close',
         Component: Close,
-        usageCriteria: 'Used to close',
+        usageCriteria: (
+          <>
+            Used to close. Works well with <Link href="#/Icons?id=iconbutton">IconButton</Link>
+          </>
+        ),
         props: {
           a11yText: 'Close',
         },
@@ -45,8 +53,12 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
       {
         name: 'PlayVideo',
         Component: PlayVideo,
-        usageCriteria:
-          'Used to indicate that a video is available, used with text link to bring to another page or window',
+        usageCriteria: (
+          <>
+            Used to indicate that a video is available, used with text link to bring to another page
+            or window. Works well with <Link href="#/Icons?id=iconbutton">IconButton</Link>
+          </>
+        ),
         props: {
           a11yText: 'Play',
         },
@@ -54,7 +66,12 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
       {
         name: 'Subtract',
         Component: Subtract,
-        usageCriteria: 'Used to reduce items',
+        usageCriteria: (
+          <>
+            Used to reduce items. Works well with{' '}
+            <Link href="#/Icons?id=iconbutton">IconButton</Link>
+          </>
+        ),
         props: {
           a11yText: 'Remove',
         },
