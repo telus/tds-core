@@ -42,7 +42,11 @@ const IconTable = ({ icons, heading, noSort }) => {
               <td>
                 <icon.Component {...icon.props} />
               </td>
-              <td dangerouslySetInnerHTML={{ __html: icon.usageCriteria }} />
+              {React.isValidElement(icon.usageCriteria) ? (
+                <td>{icon.usageCriteria}</td>
+              ) : (
+                <td dangerouslySetInnerHTML={{ __html: icon.usageCriteria }} />
+              )}
               {hasAccessibleText && <td>{icon.accessibleText}</td>}
             </tr>
           ))}
