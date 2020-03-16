@@ -2,7 +2,7 @@
 
 - Inherit the font size of surrounding text
 - Available as Default (Shark Grey) or Invert (White)
-- May include an icon, see Links with icons
+- May include an icon, see **Links with icons** below
 - May open link in a new window/tab
   - Use Links with icons; use the `LinkExternal` icon to support recognition
   - Provide appropriate text as part of the label or visually hidden text to anticipate user expectation
@@ -50,7 +50,7 @@
 </Box>
 ```
 
-### <a name="linksWithIcons">Links with icons</a>
+### Links with icons
 
 The [Dependent](#dependent) InteractiveIcon group can be used within Link.
 
