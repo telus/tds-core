@@ -42,7 +42,7 @@ const routes = [
 
 #### React Router 3
 
-To use `Breadcrumbs` with `react-router`, add a `breadcrumbName` prop to each `<Route>` and enure they are properly
+To use `Breadcrumbs` with `react-router`, add a `breadcrumbName` prop to each `<Route>` and ensure they are properly
 nested, then pass the `routes` and `params` prop provided by `<Route>` to `Breadcrumbs`. You must also pass a `reactRouterLinkComponent` prop as you would with [Link](#/Links?id=link)
 
 ```jsx static
@@ -105,7 +105,7 @@ const BreadcrumbNavigation = ({ location }) => {
 
 #### Combining React Router Links with standard anchor links
 
-If you need to combine both React Router `<Link>` components with standard TDS `<Link>` components you can pass set the `reactRouterLinkComponent` directly on the `Breadcrumbs.Item`.
+If you need to combine both `react-router-dom` and TDS `Link` components, you can add a `reactRouterLinkComponent` prop to `Breadcrumbs.Item` where needed as show below.
 
 ```jsx static
 // BreadcrumbNavigation.jsx
