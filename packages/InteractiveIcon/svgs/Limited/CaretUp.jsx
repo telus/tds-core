@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react'
+import PropTypes from 'prop-types'
 
 import LimitedInteractiveIcon, { StyledLimitedInteractiveIconSVG } from '../../Limited'
 
@@ -6,6 +7,7 @@ const CaretUp = forwardRef((props, ref) => (
   <LimitedInteractiveIcon {...props} animationDirection="up" ref={ref}>
     <StyledLimitedInteractiveIconSVG
       animationDirection="up"
+      forceHover={props.forceHover}
       width="24"
       height="24"
       viewBox="0 0 24 24"
@@ -16,5 +18,9 @@ const CaretUp = forwardRef((props, ref) => (
 ))
 
 CaretUp.displayName = 'CaretUp'
+
+CaretUp.propTypes = { forceHover: PropTypes.bool }
+
+CaretUp.defaultProps = { forceHover: false }
 
 export default CaretUp
