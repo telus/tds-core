@@ -71,7 +71,8 @@ Item.propTypes = {
    */
   href: PropTypes.string.isRequired,
   /**
-   * React Router Link component
+   * React Router Link component. This will be passed down from the parent
+   * `<Breadcrumbs>` if the parent has a `reactRouterLinkComponent` provided.
    */
   reactRouterLinkComponent: PropTypes.func,
   /**
