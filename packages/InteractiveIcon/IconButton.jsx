@@ -14,29 +14,7 @@ import { warn } from '../../shared/utils/warn'
 
 export const StyledIconButton = styled(SharedStyledInteractiveIconButton)(
   animations.scale,
-  animations.reduceMotion,
-  ({ variant }) => {
-    // add colour to the DependentIcon
-    if (variant === 'alternative') {
-      return {
-        '& svg': {
-          fill: colorTelusPurple,
-        },
-      }
-    }
-    if (variant === 'inverted') {
-      return {
-        '& svg': {
-          fill: colorWhite,
-        },
-      }
-    }
-    return {
-      '& svg': {
-        fill: colorGreyShark,
-      },
-    }
-  }
+  animations.reduceMotion
 )
 
 const getTheme = variant => {
@@ -79,7 +57,7 @@ const IconButton = forwardRef(({ a11yText, variant, onClick, tag, icon: Icon, ..
   ) {
     warn(
       'IconButton',
-      'IconButton is meant to be used with the Add, Close, Subtract, and PlayVideo icons for their universal appearance. Other icons should be accompanied with text.'
+      'IconButton is meant to be used with the Add, Close, Subtract, and PlayVideo icons for their universally-recognizable appearance. Other icons should be accompanied with text and not as a part of IconButton.'
     )
   }
 
@@ -98,11 +76,11 @@ IconButton.displayName = 'IconButton'
 
 IconButton.propTypes = {
   /**
-   * A description of the icon for screen readers.
+   * A description of the icon for assistive technology.
    */
   a11yText: PropTypes.string.isRequired,
   /**
-   * The style.
+   * The visual style.
    */
   variant: PropTypes.oneOf(['default', 'alternative', 'inverted']),
   /**
