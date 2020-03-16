@@ -1,4 +1,4 @@
-`IconButton` can be used to contain universally-recognizable icons that do not require accompanying text. It can be used with the `Add`, `Close`, `PlayVideo`, and `Subtract` Dependent icons (which are part of InteractiveIcon).
+`IconButton` can be used to contain universally-recognizable icons that do not require accompanying text. It can be used with the `Add`, `Close`, `PlayVideo`, and `Subtract` [Dependent icons](#/Icons?id=dependent).
 
 ```js
 initialState = {
