@@ -42,19 +42,19 @@ const CartesianBenefitNoHeading = props => (
     icon={[undefined, Check]}
     children={[
       <BenefitNoHeading.Item>This is a one item list</BenefitNoHeading.Item>,
-      <React.Fragment>
+      <>
         <BenefitNoHeading.Item icon={SecurityHouse}>This is a list</BenefitNoHeading.Item>
         <BenefitNoHeading.Item icon={Heart}>With different icons per item</BenefitNoHeading.Item>
-      </React.Fragment>,
+      </>,
     ]}
   />
 )
 
 const CartesianBenefit = props => (
-  <React.Fragment>
+  <>
     <CartesianBenefitWithHeading {...props} />
     <CartesianBenefitNoHeading {...props} />
-  </React.Fragment>
+  </>
 )
 
 export default { name: 'Benefit', Component: CartesianBenefit }

@@ -14,13 +14,13 @@ const StyledIconContainer = styled(StyledContainer)({
 })
 
 const CartesianFeedbackIcon = props => (
-  <React.Fragment>
+  <>
     {Object.keys(icons)
       .filter(icon => icon !== 'default')
       .map(icon => (
         <Cartesian {...props} container={StyledIconContainer} component={icons[icon]} />
       ))}
-  </React.Fragment>
+  </>
 )
 
 export default { name: 'FeedbackIcon', Component: CartesianFeedbackIcon }

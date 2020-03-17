@@ -8,7 +8,7 @@ import Tooltip from '../../../packages/Tooltip'
 import InputFeedback from '../../../packages/InputFeedback'
 
 const CartesianSelect = props => (
-  <React.Fragment>
+  <>
     <Cartesian
       {...props}
       component={Select}
@@ -73,7 +73,7 @@ const CartesianSelect = props => (
       helper={[undefined, () => <InputFeedback>InputFeedback</InputFeedback>]}
       tooltip={[undefined, <Tooltip copy="en">Sample Tooltip</Tooltip>]}
     />
-  </React.Fragment>
+  </>
 )
 
 export default { name: 'Select', Component: CartesianSelect }

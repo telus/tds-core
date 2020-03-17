@@ -1,90 +1,54 @@
-/* eslint-disable react/jsx-key, react/no-children-prop react/prop-types */
 import React from 'react'
-import styled from 'styled-components'
 
 import { Cartesian } from '@compositor/kit'
 
-import StyledContainer from '../shared/StyledContainer'
-
-import * as icons from '../../../packages/InteractiveIcon'
-
-import Link from '../../../packages/Link'
+import * as navButtons from '../../../packages/InteractiveIcon/svgs/NavButton'
 import * as dependentIcons from '../../../packages/InteractiveIcon/svgs/Dependent'
+import * as limitedIcons from '../../../packages/InteractiveIcon/svgs/Limited'
+import { IconButton } from '../../../packages/InteractiveIcon'
 
-const StyledIconContainer = styled(StyledContainer)({
-  padding: 12,
-  width: 'auto',
-})
-
-const CartesianDependentIcon = props => (
-  <Cartesian
-    {...props}
-    component={Link}
-    href="http://tds.telus.com"
-    invert={[true, false]}
-    icon={props.icon}
-    children="TELUS Design System"
-  />
-)
-
-const CartesianInteractiveIcon = props => {
-  const renderIcons = () =>
-    Object.keys(icons)
-      .filter(icon => icon !== 'default' && icon !== 'IconButton')
-      .map(icon => (
+const CartesianInteractiveIcon = () => (
+  <div>
+    <div>
+      {Object.keys(navButtons).map(key => (
         <Cartesian
-          {...props}
-          container={StyledIconContainer}
-          component={icons[icon]}
-          a11yText="A11yText"
-          variant={['default', 'alternative', 'inverted']}
-          tag={['button', 'a']}
+          key={key}
+          component={navButtons[key]}
           copy="en"
-          numItems={2}
+          variant={['default', 'inverted']}
         />
-      ))
-  const renderIconButton = () => (
-    <Cartesian
-      {...props}
-      container={StyledIconContainer}
-      component={icons.IconButton}
-      a11yText="A11yText"
-      variant={['default', 'alternative', 'inverted']}
-      tag={['button', 'a']}
-      copy="en"
-      icon={[icons.Add, icons.Close, icons.Subtract, icons.PlayVideo]}
-    />
-  )
-  return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', height: '100%' }}>
-      <div style={{ width: '50%' }}>
-        {renderIcons()}
-        {renderIconButton()}
-      </div>
-      <div style={{ width: '25%' }}>
-        {Object.keys(dependentIcons)
-          .filter(dependentIcon => dependentIcon !== 'default')
-          .map(dependentIcon => (
-            <CartesianDependentIcon
-              icon={dependentIcons[dependentIcon]}
-              iconPosition="left"
-              {...props}
-            />
-          ))}
-      </div>
-      <div style={{ width: '25%' }}>
-        {Object.keys(dependentIcons)
-          .filter(dependentIcon => dependentIcon !== 'default')
-          .map(dependentIcon => (
-            <CartesianDependentIcon
-              iconPosition="right"
-              icon={dependentIcons[dependentIcon]}
-              {...props}
-            />
-          ))}
-      </div>
+      ))}
     </div>
-  )
-}
+
+    <div>
+      {Object.keys(dependentIcons).map(key => (
+        <Cartesian
+          key={key}
+          component={dependentIcons[key]}
+          color={['telusPurple', 'white', 'greyShark', 'accessibleGreen']}
+        />
+      ))}
+    </div>
+
+    <div>
+      {Object.keys(limitedIcons).map(key => (
+        <Cartesian
+          key={key}
+          component={limitedIcons[key]}
+          variant={['default', 'basic', 'alternative', 'inverted']}
+        />
+      ))}
+    </div>
+
+    <div>
+      <Cartesian
+        component={IconButton}
+        a11yText="Hello"
+        variant={['default', 'alternative', 'inverted']}
+        icon={dependentIcons.Add}
+      />
+    </div>
+  </div>
+)
 
 export default { name: 'InteractiveIcon', Component: CartesianInteractiveIcon }
