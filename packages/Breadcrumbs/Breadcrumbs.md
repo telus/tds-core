@@ -86,17 +86,16 @@ const breadcrumbNameMap = {
 }
 
 const BreadcrumbNavigation = ({ location }) => {
-  const Item = Breadcrumbs.Item
   const crumbs = location.pathname.split('/').filter(i => i)
   const extraBreadcrumbItems = crumbs.map((i, index) => {
     const url = `/${crumbs.slice(0, index + 1).join('/')}`
-    return <Item href={url}>{breadcrumbNameMap[url]}</Item>
+    return <Breadcrumbs.Item href={url}>{breadcrumbNameMap[url]}</Breadcrumbs.Item>
   })
 
   const breadcrumbItems = [
-    <Item key="home" href="/">
-      Home
-    </Item>,
+    <Breadcrumbs.Item key="home" href="/">
+      Breadcrumbs.Item
+    </Breadcrumbs.Item>,
   ].concat(extraBreadcrumbItems)
 
   return <Breadcrumbs reactRouterLinkComponent={ReactRouterLink}>{breadcrumbItems}</Breadcrumbs>
@@ -112,17 +111,18 @@ If you need to combine both `react-router-dom` and TDS `Link` components, you ca
 import { Link as ReactRouterLink } from 'react-router-dom'
 import Breadcrumbs from '@tds/core-breadcrumbs'
 
-const Item = Breadcrumbs.Item
-
 const BreadcrumbNavigation = () => (
   <Breadcrumbs>
-    <Item href="/my-account">My TELUS</Item>
-    <Item href="/my-account/services" reactRouterLinkComponent={ReactRouterLink}>
+    <Breadcrumbs.Item href="/my-account">My TELUS</Breadcrumbs.Item>
+    <Breadcrumbs.Item href="/my-account/services" reactRouterLinkComponent={ReactRouterLink}>
       Services
-    </Item>
-    <Item href="/my-account/services/internet" reactRouterLinkComponent={ReactRouterLink}>
+    </Breadcrumbs.Item>
+    <Breadcrumbs.Item
+      href="/my-account/services/internet"
+      reactRouterLinkComponent={ReactRouterLink}
+    >
       Internet
-    </Item>
+    </Breadcrumbs.Item>
   </Breadcrumbs>
 )
 ```
