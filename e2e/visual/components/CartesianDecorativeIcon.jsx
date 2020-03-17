@@ -14,7 +14,7 @@ const StyledIconContainer = styled(StyledContainer)({
 })
 
 const CartesianDecorativeIcon = props => (
-  <React.Fragment>
+  <>
     {Object.keys(icons)
       .filter(icon => icon !== 'default')
       .map(icon => (
@@ -26,7 +26,7 @@ const CartesianDecorativeIcon = props => (
           size={[16, 24]}
         />
       ))}
-  </React.Fragment>
+  </>
 )
 
 export default { name: 'DecorativeIcon', Component: CartesianDecorativeIcon }
