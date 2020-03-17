@@ -12,10 +12,9 @@ import SharedStyledInteractiveIconButton from './shared/StyledInteractiveIconBut
 import SharedStyledInteractiveIconHover from './shared/StyledInteractiveIconHover'
 import { warn } from '../../shared/utils/warn'
 
-export const StyledIconButton = styled(SharedStyledInteractiveIconButton)(
-  animations.scale,
-  animations.reduceMotion
-)
+export const StyledIconButton = styled(SharedStyledInteractiveIconButton)(animations.scale, {
+  '&:hover > svg': animations.reduceMotion,
+})
 
 const getTheme = variant => {
   if (variant === 'alternative') {
