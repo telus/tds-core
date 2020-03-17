@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@1.4.7...@tds/core-interactive-icon@2.0.0) (2020-03-17)
+
+
+### Features
+
+* **core-interactive-icon:** add color prop to dependent icon ([ef70f1e](https://github.com/telus/tds-core/commit/ef70f1e29553cf5dafb8b6d4eb7390211a39db43))
+* **core-interactive-icon:** replace InteractiveIcon with IconButton ([b29f2f5](https://github.com/telus/tds-core/commit/b29f2f5abd0918544c75dc8964c138fff47e53ab))
+
+
+### BREAKING CHANGES
+
+* **core-interactive-icon:** move all InteractiveIcon components to Dependent, add IconButton wrapper component
+
+
+
+
+
 ## [1.4.7](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@1.4.6...@tds/core-interactive-icon@1.4.7) (2020-03-11)
 
 **Note:** Version bump only for package @tds/core-interactive-icon

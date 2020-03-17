@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-link",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",

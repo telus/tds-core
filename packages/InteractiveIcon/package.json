@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-interactive-icon",
-  "version": "1.4.7",
+  "version": "2.0.0",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
