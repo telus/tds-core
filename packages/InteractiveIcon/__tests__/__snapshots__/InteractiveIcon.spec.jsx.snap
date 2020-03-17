@@ -118,7 +118,6 @@ exports[`InteractiveIcon renders 1`] = `
     theme={
       Object {
         "hoverBackgroundColor": "#d8d8d8",
-        "iconColor": "#2a2c2e",
       }
     }
   >

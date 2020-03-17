@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled, { ThemeProvider } from 'styled-components'
 
 import A11yContent from '@tds/core-a11y-content'
-import { colorGreyGainsboro, colorGreyShark, colorTelusPurple, colorWhite } from '@tds/core-colours'
+import { colorGreyGainsboro } from '@tds/core-colours'
 import { safeRest } from '@tds/util-helpers'
 import { componentWithName } from '@tds/util-prop-types'
 
@@ -21,18 +21,15 @@ const getTheme = variant => {
   if (variant === 'alternative') {
     return {
       hoverBackgroundColor: '#D8CBE5',
-      iconColor: colorTelusPurple,
     }
   }
   if (variant === 'inverted') {
     return {
       hoverBackgroundColor: 'transparent',
-      iconColor: colorWhite,
     }
   }
   return {
     hoverBackgroundColor: colorGreyGainsboro,
-    iconColor: colorGreyShark,
   }
 }
 
@@ -92,7 +89,7 @@ IconButton.propTypes = {
    */
   tag: PropTypes.oneOf(['button', 'a']),
   /**
-   * The icon
+   * The icon. Can be one of either the `Add`, `Close`, `PlayVideo`, or `Subtract` icons.
    */
   icon: PropTypes.oneOfType([
     componentWithName('Add'),
