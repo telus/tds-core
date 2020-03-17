@@ -102,7 +102,7 @@ exports[`InteractiveIcon renders 1`] = `
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .c1 {
+  .c1:hover > svg {
     -webkit-transition: none;
     transition: none;
   }
@@ -161,8 +161,10 @@ exports[`InteractiveIcon renders 1`] = `
                 "transition: transform 150ms ease-in-out;",
                 "transform: scale(1, 1);",
                 "}",
+                "&:hover > svg {",
                 "@media (prefers-reduced-motion: reduce) {",
                 "transition: none;",
+                "}",
                 "}",
               ],
             },
