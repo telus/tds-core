@@ -1109,6 +1109,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                           <button
                             class="c1"
                             data-tds-id="footnote-link"
+                            type="button"
                           >
                             <span
                               class="c2"
@@ -1138,6 +1139,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                           data-tds-id="footnote-link"
                           key="3"
                           onClick={[Function]}
+                          type="button"
                         >
                           <StyledComponent
                             data-tds-id="footnote-link"
@@ -1172,6 +1174,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                 "current": <button
                                   class="c12"
                                   data-tds-id="footnote-link"
+                                  type="button"
                                 >
                                   <span
                                     class="c13"
@@ -1183,11 +1186,13 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                               }
                             }
                             onClick={[Function]}
+                            type="button"
                           >
                             <button
                               className="c12"
                               data-tds-id="footnote-link"
                               onClick={[Function]}
+                              type="button"
                             >
                               <A11yContent>
                                 <A11yContent__StyledA11yContent>
@@ -2355,6 +2360,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                           <button
                             class="c1"
                             data-tds-id="footnote-link"
+                            type="button"
                           >
                             <span
                               class="c2"
@@ -2384,6 +2390,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                           data-tds-id="footnote-link"
                           key="3"
                           onClick={[Function]}
+                          type="button"
                         >
                           <StyledComponent
                             data-tds-id="footnote-link"
@@ -2418,6 +2425,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                 "current": <button
                                   class="c12"
                                   data-tds-id="footnote-link"
+                                  type="button"
                                 >
                                   <span
                                     class="c13"
@@ -2429,11 +2437,13 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                               }
                             }
                             onClick={[Function]}
+                            type="button"
                           >
                             <button
                               className="c12"
                               data-tds-id="footnote-link"
                               onClick={[Function]}
+                              type="button"
                             >
                               <A11yContent>
                                 <A11yContent__StyledA11yContent>
