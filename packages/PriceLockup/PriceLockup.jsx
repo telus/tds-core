@@ -148,7 +148,6 @@ const renderBottomText = (size, bottomText, bottomTextRef) => {
   }
   if (size === 'large' && bottomText) {
     warn('PriceLockup', "The props bottomText and size='large' cannot be used together")
-    return undefined
   }
   return undefined
 }
@@ -188,11 +187,7 @@ const PriceLockup = ({
 
       const combinedWidth = textWidth + footnoteLinksWidth
 
-      if (combinedWidth < containerWidth) {
-        setFootnoteLinksInline(true)
-      } else {
-        setFootnoteLinksInline(false)
-      }
+      setFootnoteLinksInline(combinedWidth < containerWidth)
     }
   }
 
@@ -222,14 +217,14 @@ const PriceLockup = ({
         <StyledRateTextWrapper ref={containerRef}>
           <StyledPriceWrapper ref={rateTextWrapperRef} between={size === 'small' ? 1 : 2} inline>
             <Box between={size === 'large' ? 2 : 1} inline>
-              {signDirection === 'left' ? renderDollarSign(size) : undefined}
+              {signDirection === 'left' && renderDollarSign(size)}
               <StyledPriceValue data-testid="priceValue" size={size}>
                 {price}
-                {!bottomText &&
-                  !rateText &&
-                  renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
               </StyledPriceValue>
-              {signDirection === 'right' ? renderDollarSign(size) : undefined}
+              {signDirection === 'right' && renderDollarSign(size)}
+              {!bottomText &&
+                !rateText &&
+                renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
             </Box>
             {rateText && (
               <StyledRateText data-testid="rateText" size={size}>
@@ -259,31 +254,35 @@ const PriceLockup = ({
 
 PriceLockup.propTypes = {
   /**
-   * Font Size of Labels, Price, and Signs
+   * Font Size of Labels, Price, and Signs.
    */
   size: PropTypes.oneOf(['small', 'medium', 'large']).isRequired,
   /**
-   * Position of Dollar Sign relative to Price Value
+   * Position of Dollar Sign relative to Price Value.
    */
   signDirection: PropTypes.oneOf(['left', 'right']),
   /**
-   * Statement above Price Value
+   * Statement above Price Value.
    */
   topText: PropTypes.string,
   /**
-   * Statement below Price Value
+   * Statement below Price Value.
    */
   bottomText: PropTypes.string,
   /**
-   * Statement right of Price Value
+   * Statement right of Price Value.
    */
   rateText: PropTypes.string,
   /**
-   * Price value of component
+   * Price value of component.
    */
   price: PropTypes.string.isRequired,
   /**
-   * A `FootnoteLink` component
+   * A [FootnoteLink](/#/Terms%20and%20Conditions?id=footnotelink) component, which may include multiple footnotes.
+   *
+   * Depending on the amount of available space, and what other `PriceLockup` props are defined,
+   * `FootnoteLink`s will be automatically positioned to the most appropriate place.
+   * See [FootnoteLink with PriceLockup](#/Typography?id=pricelockupWithFootnotelink) for more details.
    */
   footnoteLinks: componentWithName('FootnoteLink'),
 }

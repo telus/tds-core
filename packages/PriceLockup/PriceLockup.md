@@ -41,16 +41,18 @@
 <PriceLockup size="medium" topText="À partir de :" price="25" signDirection="right" />
 ```
 
-### <a name="footnoteLinkWithPriceLockup">PriceLockup with FootnoteLink</a>
+<div id="pricelockupWithFootnotelink"></div>
+### PriceLockup with FootnoteLink
 
-Usage criteria:
+**Usage criteria**
+
+When designing with `PriceLockup` and `FootnoteLink`, `FootnoteLink` must be positioned in the appropriate place following the guide below. The coded component can receive `FootnoteLinks` and position them automatically for you.
 
 - Display `FootnoteLink` at the end of `rateText` or `bottomText`
-- Group multiple `FootnoteLinks` together so that they:
-  - Display in the same line as the `rateText` or `bottomText` when there’s available space,
-  - Or display below `rateText` or `bottomText`, whichever is the last element
+- Group multiple `FootnoteLinks` together
+  - When there is `rateText` or `bottomText`, display `FootnoteLink`s as the last element
+  - Display in the same line as the `rateText` or `bottomText` when there’s available space
 - Must not display `FootnoteLinks` in both the the `rateText` and `bottomText`
-- The coded component can receive `FootnoteLinks` and position them automatically for you
 
 ```jsx
 <PriceLockup
