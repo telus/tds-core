@@ -1,7 +1,7 @@
 ### Usage criteria
 
-- `FootnoteLink` inherits parent element’s text size and colour
-- Avoid using `FootnoteLink` if there is only one annotation on a page, include it as part of the content
+- `FootnoteLink` inherits their parent element’s text size and colour
+- Avoid using `FootnoteLink` if there is only one annotation on a page. The annotation can part of the content instead
 - Must wrap `FootnoteLink` in a `Text`, `Heading`, or `DisplayHeading` component
 - May be used in `PriceLockup`, see [FootnoteLink with PriceLockup](#/Typography?id=pricelockupWithFootnotelink)
 
