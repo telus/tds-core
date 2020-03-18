@@ -3,7 +3,7 @@
 - `FootnoteLink` inherits parent element’s text size and colour
 - Avoid using `FootnoteLink` if there is only one annotation on a page, include it as part of the content
 - Must wrap `FootnoteLink` in a `Text`, `Heading`, or `DisplayHeading` component
-- May be used in `PriceLockup`, see [FootnoteLink within PriceLockup](#footnoteLinkWithPriceLockup)
+- May be used in `PriceLockup`, see [FootnoteLink with PriceLockup](#/Typography?id=pricelockupWithFootnotelink)
 
 ```jsx
 <Card>
@@ -24,10 +24,10 @@
 
 `FootnoteLink` works well with the following TDS components:
 
-- [PriceLockup](#pricelockup)
-- [DisplayHeading](#displayheading)
-- [Heading](#heading)
-- [Text](#text)
+- [PriceLockup](#/Typography?id=pricelockup)
+- [DisplayHeading](#/Typography?id=displayheading)
+- [Heading](#/Typography?id=heading)
+- [Text](#/Typography?id=text)
 
 ```jsx
 <FlexGrid>
