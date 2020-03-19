@@ -39,7 +39,7 @@ const PageDot = ({ isCurrentPage, onClick }) => {
   return <Dot onClick={onClick} isCurrentPage={isCurrentPage} aria-current={isCurrentPage} />
 }
 
-const PageIndicator = ({ currentPage, totalPages, changePage, ...rest }) => {
+const PageIndicator = ({ currentPage, totalPages, changePage, handleSlideTransition, ...rest }) => {
   const generateDots = () => {
     const dots = []
     for (let i = 0; i < totalPages; i += 1) {
@@ -47,7 +47,7 @@ const PageIndicator = ({ currentPage, totalPages, changePage, ...rest }) => {
         <PageDot
           isCurrentPage={currentPage === i + 1}
           onClick={() => {
-            changePage(i + 1)
+            handleSlideTransition(currentPage > i ? 'left' : 'right', i + 1)
           }}
           key={i}
         />
@@ -63,6 +63,7 @@ PageIndicator.propTypes = {
   currentPage: PropTypes.number.isRequired,
   totalPages: PropTypes.number.isRequired,
   changePage: PropTypes.func.isRequired,
+  handleSlideTransition: PropTypes.func.isRequired,
 }
 
 PageIndicator.defaultProps = {}

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import anime from 'animejs'
+// import { useDrag } from 'react-use-gesture'
 
 import { media } from '@tds/core-responsive'
 import { safeRest } from '@tds/util-helpers'
@@ -28,6 +30,7 @@ const DecoyContainer = styled.div({
   position: 'absolute',
   padding: '0 32px',
   transform: 'translateX(100%)',
+  backgroundColor: 'white',
   ...media.from('md').css({ padding: '0 64px' }),
 })
 
@@ -51,20 +54,86 @@ const PageIndicatorContainer = styled.div({
 })
 const ContentCarousel = ({ children, ...rest }) => {
   const [currentPage, setCurrentPage] = useState(1)
-
   const totalPages = children.length || 1
+
+  const switchPages = increment => {
+    setCurrentPage(currentPage + increment)
+  }
+
+  const handleSlideTransition = (direction, increment) => {
+    const decoyRight = document.getElementById('decoyRight')
+    const decoyLeft = document.getElementById('decoyLeft')
+    const itemBelt = document.getElementById('itemBelt')
+    const itemContainer = document.getElementById('itemContainer')
+
+    const tl = anime.timeline({ duration: 602, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
+    if (increment > 1 || increment < -1) {
+      tl.add({
+        targets: itemBelt,
+        filter: 'blur(5px)',
+        duration: 200,
+      })
+    }
+    tl.add({
+      targets: itemContainer,
+      translateX: direction === 'right' ? ['0%', '100%'] : ['0%', '-100%'],
+    })
+      .add({
+        targets: direction === 'left' ? decoyRight : decoyLeft,
+        translateX: direction === 'left' ? ['100%', '0%'] : ['-100%', '0%'],
+        duration: 600,
+        complete: () => {
+          switchPages(increment || direction === 'left' ? 1 : -1)
+        },
+      })
+      .add({
+        targets: itemContainer,
+        translateX: '0%',
+        duration: 1,
+      })
+      .add({
+        targets: direction === 'left' ? decoyRight : decoyLeft,
+        opacity: 0,
+        duration: 1,
+      })
+      .add({
+        targets: direction === 'left' ? decoyRight : decoyLeft,
+        translateX: '100%',
+        opacity: 1,
+        duration: 1,
+      })
+  }
+
+  // const handleSlideSkip = (direction, increment) => {
+  //   const itemBelt = document.getElementById('itemBelt')
+  //   const tl = anime.timeline({ duration: 602, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
+  //   tl.add({
+  //     targets: itemBelt,
+  //     filter: 'blur(5px)',
+  //     duration: 200,
+  //     complete: () => {
+  //       handleSlideTransition('right', increment)
+  //     },
+  //   }).add({ targets: itemBelt, filter: 'blur(0px)', duration: 200 })
+  // }
+
   return (
     <CarouselContainer {...safeRest(rest)}>
-      <ItemBelt>
-        <ItemContainer>{children[currentPage - 1] || children}</ItemContainer>
-        {children.length && <DecoyContainer>{children[currentPage + 1]}</DecoyContainer>}
+      <ItemBelt id="itemBelt">
+        <ItemContainer id="itemContainer">{children[currentPage - 1] || children}</ItemContainer>
+        {children[currentPage - 1] && (
+          <DecoyContainer id="decoyRight">{children[currentPage]}</DecoyContainer>
+        )}
+        {children[currentPage - 2] && (
+          <DecoyContainer id="decoyLeft">{children[currentPage - 2]}</DecoyContainer>
+        )}
       </ItemBelt>
       <NavButtonContainer>
         {currentPage > 1 ? (
           <NavButton
             direction="left"
             onClick={() => {
-              setCurrentPage(currentPage - 1)
+              handleSlideTransition('right')
             }}
           />
         ) : (
@@ -74,7 +143,7 @@ const ContentCarousel = ({ children, ...rest }) => {
           <NavButton
             direction="right"
             onClick={() => {
-              setCurrentPage(currentPage + 1)
+              handleSlideTransition('left')
             }}
           />
         )}
@@ -84,6 +153,7 @@ const ContentCarousel = ({ children, ...rest }) => {
           currentPage={currentPage}
           totalPages={totalPages}
           changePage={setCurrentPage}
+          handleSlideTransition={handleSlideTransition}
         />
       </PageIndicatorContainer>
     </CarouselContainer>

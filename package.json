@@ -159,6 +159,7 @@
     "yargs": "^13.0.0"
   },
   "dependencies": {
+    "animejs": "^3.1.0",
     "prop-types": "^15.5.10"
   },
   "config": {

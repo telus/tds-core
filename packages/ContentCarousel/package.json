@@ -30,6 +30,7 @@
     "@tds/core-interactive-icon": "^1.4.7",
     "@tds/core-responsive": "^1.3.3",
     "@tds/util-helpers": "^1.1.0",
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "react-use-gesture": "^7.0.5"
   }
 }
