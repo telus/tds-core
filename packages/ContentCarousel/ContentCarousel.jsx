@@ -16,12 +16,25 @@ const CarouselContainer = styled.div({
   width: '100%',
   height: '100%',
   position: 'relative',
+  overflow: 'hidden',
 })
 
-const ItemContainer = styled.div({
+const ItemContainer = styled.ul({
   padding: '0 32px',
   ...media.from('md').css({ padding: '0 64px' }),
 })
+
+const DecoyContainer = styled.div({
+  position: 'absolute',
+  padding: '0 32px',
+  transform: 'translateX(100%)',
+  ...media.from('md').css({ padding: '0 64px' }),
+})
+
+const ItemBelt = styled.div({
+  display: 'flex',
+})
+
 const NavButtonContainer = styled.div({
   width: '100%',
   display: 'flex',
@@ -42,7 +55,10 @@ const ContentCarousel = ({ children, ...rest }) => {
   const totalPages = children.length || 1
   return (
     <CarouselContainer {...safeRest(rest)}>
-      <ItemContainer>{children[currentPage - 1] || children}</ItemContainer>
+      <ItemBelt>
+        <ItemContainer>{children[currentPage - 1] || children}</ItemContainer>
+        {children.length && <DecoyContainer>{children[currentPage + 1]}</DecoyContainer>}
+      </ItemBelt>
       <NavButtonContainer>
         {currentPage > 1 ? (
           <NavButton

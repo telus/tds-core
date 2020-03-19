@@ -9,7 +9,7 @@ import { media } from '@tds/core-responsive'
  * @version ./package.json
  */
 
-const ItemContainer = styled.div(({ pictureSide }) => ({
+const ItemContainer = styled.li(({ pictureSide }) => ({
   width: '100%',
   minHeight: 340,
   display: 'flex',

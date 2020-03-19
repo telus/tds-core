@@ -36,7 +36,7 @@ const PageDot = ({ isCurrentPage, onClick }) => {
       backgroundColor: colorGreyRaven,
     }),
   })
-  return <Dot onClick={onClick} isCurrentPage={isCurrentPage} />
+  return <Dot onClick={onClick} isCurrentPage={isCurrentPage} aria-current={isCurrentPage} />
 }
 
 const PageIndicator = ({ currentPage, totalPages, changePage, ...rest }) => {
