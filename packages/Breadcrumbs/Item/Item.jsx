@@ -74,7 +74,7 @@ Item.propTypes = {
    *
    * React Router Link component. The reactRouterLinkComponent property will be passed down from from the parent `<Breadcrumbs>`.
    */
-  reactRouterLinkComponent: PropTypes.func,
+  reactRouterLinkComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
   /**
    * Breadcrumb text
    */
