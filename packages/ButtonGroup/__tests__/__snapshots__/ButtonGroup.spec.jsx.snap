@@ -196,6 +196,7 @@ exports[`ButtonGroup renders 1`] = `
     <Styled(Box)
       between={3}
       inline={true}
+      tag="div"
     >
       <StyledComponent
         between={3}
@@ -212,11 +213,57 @@ exports[`ButtonGroup renders 1`] = `
                 "max-width: 784px;",
               ],
             },
+            "defaultProps": Object {
+              "below": undefined,
+              "between": undefined,
+              "className": undefined,
+              "horizontal": undefined,
+              "inline": false,
+              "inset": undefined,
+              "tag": "div",
+              "vertical": undefined,
+            },
             "displayName": "Styled(Box)",
             "foldedComponentIds": Array [],
+            "propTypes": Object {
+              "below": [Function],
+              "between": [Function],
+              "children": [Function],
+              "className": [Function],
+              "horizontal": [Function],
+              "inline": [Function],
+              "inset": [Function],
+              "tag": [Function],
+              "vertical": [Function],
+            },
             "render": [Function],
             "styledComponentId": "sc-bwzfXH",
-            "target": [Function],
+            "target": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": Object {
+                "below": undefined,
+                "between": undefined,
+                "className": undefined,
+                "horizontal": undefined,
+                "inline": false,
+                "inset": undefined,
+                "tag": "div",
+                "vertical": undefined,
+              },
+              "displayName": "Box",
+              "propTypes": Object {
+                "below": [Function],
+                "between": [Function],
+                "children": [Function],
+                "className": [Function],
+                "horizontal": [Function],
+                "inline": [Function],
+                "inset": [Function],
+                "tag": [Function],
+                "vertical": [Function],
+              },
+              "render": [Function],
+            },
             "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
@@ -224,6 +271,7 @@ exports[`ButtonGroup renders 1`] = `
         }
         forwardedRef={null}
         inline={true}
+        tag="div"
       >
         <Box
           between={3}
