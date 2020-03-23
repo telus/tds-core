@@ -1,6 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is provided, regardless of rateText 1`] = `
+.c10 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  -webkit-transform: rotate(-0.00001deg);
+  -ms-transform: rotate(-0.00001deg);
+  transform: rotate(-0.00001deg);
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
 .c13 {
   position: absolute;
   height: 1px;
@@ -33,14 +48,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   margin-bottom: 0.25rem;
 }
 
-.c4 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c7 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -50,7 +58,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   flex-direction: row;
 }
 
-.c7 > *:not(:last-child) {
+.c6 > *:not(:last-child) {
   margin-right: 0.25rem;
 }
 
@@ -68,7 +76,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   margin-bottom: 1rem;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -78,11 +86,11 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   flex-direction: row;
 }
 
-.c6 > *:not(:last-child) {
+.c5 > *:not(:last-child) {
   margin-right: 0.5rem;
 }
 
-.c10 {
+.c9 {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -92,7 +100,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   line-height: 1.5;
 }
 
-.c9 {
+.c8 {
   word-wrap: break-word;
   padding: 0;
   margin: 0;
@@ -105,11 +113,11 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   font-weight: 400;
 }
 
-.c9.c9 sup {
+.c8.c8 sup {
   top: -1.5em;
 }
 
-.c8 {
+.c7 {
   word-wrap: break-word;
   font-size: 1.25rem;
   -webkit-letter-spacing: -1px;
@@ -123,7 +131,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   text-align: left;
 }
 
-.c5 {
+.c4 {
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -158,7 +166,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c8 {
     font-weight: 300;
     font-size: 2.75rem;
     -webkit-letter-spacing: 0;
@@ -284,7 +292,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-bdVaJa",
                   "isStatic": false,
-                  "lastClassName": "c7",
+                  "lastClassName": "c6",
                   "rules": Array [
                     [Function],
                     [Function],
@@ -331,7 +339,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-bdVaJa",
                           "isStatic": false,
-                          "lastClassName": "c7",
+                          "lastClassName": "c6",
                           "rules": Array [
                             [Function],
                             [Function],
@@ -357,74 +365,25 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                     <div
                       className="c2"
                     >
-                      <Styled(Box)
-                        inline={false}
-                        tag="div"
-                      >
+                      <PriceLockup__StyledRateTextWrapper>
                         <StyledComponent
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-bxivhb",
+                                "componentId": "PriceLockup__StyledRateTextWrapper-crmhv4-4",
                                 "isStatic": true,
                                 "lastClassName": "c3",
                                 "rules": Array [
                                   "display: flex;",
                                 ],
                               },
-                              "defaultProps": Object {
-                                "below": undefined,
-                                "between": undefined,
-                                "className": undefined,
-                                "horizontal": undefined,
-                                "inline": false,
-                                "inset": undefined,
-                                "tag": "div",
-                                "vertical": undefined,
-                              },
-                              "displayName": "Styled(Box)",
+                              "displayName": "PriceLockup__StyledRateTextWrapper",
                               "foldedComponentIds": Array [],
-                              "propTypes": Object {
-                                "below": [Function],
-                                "between": [Function],
-                                "children": [Function],
-                                "className": [Function],
-                                "horizontal": [Function],
-                                "inline": [Function],
-                                "inset": [Function],
-                                "tag": [Function],
-                                "vertical": [Function],
-                              },
                               "render": [Function],
-                              "styledComponentId": "sc-bxivhb",
-                              "target": Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "defaultProps": Object {
-                                  "below": undefined,
-                                  "between": undefined,
-                                  "className": undefined,
-                                  "horizontal": undefined,
-                                  "inline": false,
-                                  "inset": undefined,
-                                  "tag": "div",
-                                  "vertical": undefined,
-                                },
-                                "displayName": "Box",
-                                "propTypes": Object {
-                                  "below": [Function],
-                                  "between": [Function],
-                                  "children": [Function],
-                                  "className": [Function],
-                                  "horizontal": [Function],
-                                  "inline": [Function],
-                                  "inset": [Function],
-                                  "tag": [Function],
-                                  "vertical": [Function],
-                                },
-                                "render": [Function],
-                              },
+                              "styledComponentId": "PriceLockup__StyledRateTextWrapper-crmhv4-4",
+                              "target": "div",
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
@@ -432,28 +391,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                           }
                           forwardedRef={
                             Object {
-                              "current": .c1 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c4 > *:not(:last-child) {
-  margin-right: 0.25rem;
-}
-
-.c3 {
+                              "current": .c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -464,10 +402,24 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
 }
 
 .c3 > *:not(:last-child) {
+  margin-right: 0.25rem;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 > *:not(:last-child) {
   margin-right: 0.5rem;
 }
 
-.c7 {
+.c6 {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -477,7 +429,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   line-height: 1.5;
 }
 
-.c6 {
+.c5 {
   word-wrap: break-word;
   padding: 0;
   margin: 0;
@@ -490,11 +442,11 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   font-weight: 400;
 }
 
-.c6.c6 sup {
+.c5.c5 sup {
   top: -1.5em;
 }
 
-.c5 {
+.c4 {
   word-wrap: break-word;
   font-size: 1.25rem;
   -webkit-letter-spacing: -1px;
@@ -504,7 +456,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   line-height: 1.6;
 }
 
-.c2 {
+.c1 {
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -522,7 +474,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c5 {
     font-weight: 300;
     font-size: 2.75rem;
     -webkit-letter-spacing: 0;
@@ -533,29 +485,29 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
 }
 
 <div
-                                class="c0 c0 c1"
+                                class="c0"
                               >
                                 <div
-                                  class="c2 c2 c3"
+                                  class="c1 c1 c2"
                                 >
                                   <div
-                                    class="c4"
+                                    class="c3"
                                   >
                                     <span
-                                      class="c5"
+                                      class="c4"
                                       data-testid="dollarSign"
                                     >
                                       $
                                     </span>
                                     <span
-                                      class="c6"
+                                      class="c5"
                                       data-testid="priceValue"
                                     >
                                       25
                                     </span>
                                   </div>
                                   <span
-                                    class="c7"
+                                    class="c6"
                                     data-testid="rateText"
                                   >
                                     /month
@@ -564,44 +516,81 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                               </div>,
                             }
                           }
-                          inline={false}
-                          tag="div"
                         >
-                          <Box
+                          <div
                             className="c3"
-                            inline={false}
-                            tag="div"
                           >
-                            <styled.div
-                              className="c3"
-                              inline={false}
+                            <Styled(Box)
+                              between={2}
+                              inline={true}
                               tag="div"
                             >
                               <StyledComponent
-                                className="c3"
+                                between={2}
                                 forwardedComponent={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
-                                    "attrs": Array [
-                                      [Function],
-                                    ],
+                                    "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bdVaJa",
-                                      "isStatic": false,
-                                      "lastClassName": "c7",
+                                      "componentId": "sc-htpNat",
+                                      "isStatic": true,
+                                      "lastClassName": "c4",
                                       "rules": Array [
-                                        [Function],
-                                        [Function],
-                                        [Function],
-                                        [Function],
-                                        [Function],
+                                        "align-items: flex-end;",
+                                        "align-self: flex-start;",
                                       ],
                                     },
-                                    "displayName": "styled.div",
+                                    "defaultProps": Object {
+                                      "below": undefined,
+                                      "between": undefined,
+                                      "className": undefined,
+                                      "horizontal": undefined,
+                                      "inline": false,
+                                      "inset": undefined,
+                                      "tag": "div",
+                                      "vertical": undefined,
+                                    },
+                                    "displayName": "Styled(Box)",
                                     "foldedComponentIds": Array [],
+                                    "propTypes": Object {
+                                      "below": [Function],
+                                      "between": [Function],
+                                      "children": [Function],
+                                      "className": [Function],
+                                      "horizontal": [Function],
+                                      "inline": [Function],
+                                      "inset": [Function],
+                                      "tag": [Function],
+                                      "vertical": [Function],
+                                    },
                                     "render": [Function],
-                                    "styledComponentId": "sc-bdVaJa",
-                                    "target": "div",
+                                    "styledComponentId": "sc-htpNat",
+                                    "target": Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "defaultProps": Object {
+                                        "below": undefined,
+                                        "between": undefined,
+                                        "className": undefined,
+                                        "horizontal": undefined,
+                                        "inline": false,
+                                        "inset": undefined,
+                                        "tag": "div",
+                                        "vertical": undefined,
+                                      },
+                                      "displayName": "Box",
+                                      "propTypes": Object {
+                                        "below": [Function],
+                                        "between": [Function],
+                                        "children": [Function],
+                                        "className": [Function],
+                                        "horizontal": [Function],
+                                        "inline": [Function],
+                                        "inset": [Function],
+                                        "tag": [Function],
+                                        "vertical": [Function],
+                                      },
+                                      "render": [Function],
+                                    },
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
@@ -610,114 +599,74 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                 forwardedRef={
                                   Object {
                                     "current": <div
-                                      class="c3 sc-bxivhb c3 c4"
+                                      class="c4 sc-htpNat c4 c5"
                                     >
                                       <div
-                                        class="c5 sc-htpNat c5 c6"
+                                        class="c6"
                                       >
-                                        <div
-                                          class="c7"
-                                        >
-                                          <span
-                                            class="c8"
-                                            data-testid="dollarSign"
-                                          >
-                                            $
-                                          </span>
-                                          <span
-                                            class="c9"
-                                            data-testid="priceValue"
-                                          >
-                                            25
-                                          </span>
-                                        </div>
                                         <span
-                                          class="c10"
-                                          data-testid="rateText"
+                                          class="c7"
+                                          data-testid="dollarSign"
                                         >
-                                          /month
+                                          $
+                                        </span>
+                                        <span
+                                          class="c8"
+                                          data-testid="priceValue"
+                                        >
+                                          25
                                         </span>
                                       </div>
+                                      <span
+                                        class="c9"
+                                        data-testid="rateText"
+                                      >
+                                        /month
+                                      </span>
                                     </div>,
                                   }
                                 }
-                                inline={false}
+                                inline={true}
                                 tag="div"
                               >
-                                <div
-                                  className="c3 sc-bxivhb c3 c4"
+                                <Box
+                                  between={2}
+                                  className="c4"
+                                  inline={true}
+                                  tag="div"
                                 >
-                                  <Styled(Box)
+                                  <styled.div
                                     between={2}
+                                    className="c4"
                                     inline={true}
                                     tag="div"
                                   >
                                     <StyledComponent
                                       between={2}
+                                      className="c4"
                                       forwardedComponent={
                                         Object {
                                           "$$typeof": Symbol(react.forward_ref),
-                                          "attrs": Array [],
+                                          "attrs": Array [
+                                            [Function],
+                                          ],
                                           "componentStyle": ComponentStyle {
-                                            "componentId": "sc-htpNat",
-                                            "isStatic": true,
-                                            "lastClassName": "c5",
+                                            "componentId": "sc-bdVaJa",
+                                            "isStatic": false,
+                                            "lastClassName": "c6",
                                             "rules": Array [
-                                              "align-items: flex-end;",
-                                              "align-self: flex-start;",
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                              [Function],
                                             ],
                                           },
-                                          "defaultProps": Object {
-                                            "below": undefined,
-                                            "between": undefined,
-                                            "className": undefined,
-                                            "horizontal": undefined,
-                                            "inline": false,
-                                            "inset": undefined,
-                                            "tag": "div",
-                                            "vertical": undefined,
-                                          },
-                                          "displayName": "Styled(Box)",
+                                          "displayName": "styled.div",
                                           "foldedComponentIds": Array [],
-                                          "propTypes": Object {
-                                            "below": [Function],
-                                            "between": [Function],
-                                            "children": [Function],
-                                            "className": [Function],
-                                            "horizontal": [Function],
-                                            "inline": [Function],
-                                            "inset": [Function],
-                                            "tag": [Function],
-                                            "vertical": [Function],
-                                          },
                                           "render": [Function],
-                                          "styledComponentId": "sc-htpNat",
-                                          "target": Object {
-                                            "$$typeof": Symbol(react.forward_ref),
-                                            "defaultProps": Object {
-                                              "below": undefined,
-                                              "between": undefined,
-                                              "className": undefined,
-                                              "horizontal": undefined,
-                                              "inline": false,
-                                              "inset": undefined,
-                                              "tag": "div",
-                                              "vertical": undefined,
-                                            },
-                                            "displayName": "Box",
-                                            "propTypes": Object {
-                                              "below": [Function],
-                                              "between": [Function],
-                                              "children": [Function],
-                                              "className": [Function],
-                                              "horizontal": [Function],
-                                              "inline": [Function],
-                                              "inset": [Function],
-                                              "tag": [Function],
-                                              "vertical": [Function],
-                                            },
-                                            "render": [Function],
-                                          },
+                                          "styledComponentId": "sc-bdVaJa",
+                                          "target": "div",
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
@@ -726,26 +675,26 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                       forwardedRef={
                                         Object {
                                           "current": <div
-                                            class="c5 sc-htpNat c5 c6"
+                                            class="c4 sc-htpNat c4 c5"
                                           >
                                             <div
-                                              class="c7"
+                                              class="c6"
                                             >
                                               <span
-                                                class="c8"
+                                                class="c7"
                                                 data-testid="dollarSign"
                                               >
                                                 $
                                               </span>
                                               <span
-                                                class="c9"
+                                                class="c8"
                                                 data-testid="priceValue"
                                               >
                                                 25
                                               </span>
                                             </div>
                                             <span
-                                              class="c10"
+                                              class="c9"
                                               data-testid="rateText"
                                             >
                                               /month
@@ -756,318 +705,284 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                       inline={true}
                                       tag="div"
                                     >
-                                      <Box
-                                        between={2}
-                                        className="c5"
-                                        inline={true}
-                                        tag="div"
+                                      <div
+                                        className="c4 sc-htpNat c4 c5"
                                       >
-                                        <styled.div
-                                          between={2}
-                                          className="c5"
+                                        <Box
+                                          between={1}
                                           inline={true}
                                           tag="div"
                                         >
-                                          <StyledComponent
-                                            between={2}
-                                            className="c5"
-                                            forwardedComponent={
-                                              Object {
-                                                "$$typeof": Symbol(react.forward_ref),
-                                                "attrs": Array [
-                                                  [Function],
-                                                ],
-                                                "componentStyle": ComponentStyle {
-                                                  "componentId": "sc-bdVaJa",
-                                                  "isStatic": false,
-                                                  "lastClassName": "c7",
-                                                  "rules": Array [
-                                                    [Function],
-                                                    [Function],
-                                                    [Function],
-                                                    [Function],
-                                                    [Function],
-                                                  ],
-                                                },
-                                                "displayName": "styled.div",
-                                                "foldedComponentIds": Array [],
-                                                "render": [Function],
-                                                "styledComponentId": "sc-bdVaJa",
-                                                "target": "div",
-                                                "toString": [Function],
-                                                "warnTooManyClasses": [Function],
-                                                "withComponent": [Function],
-                                              }
-                                            }
-                                            forwardedRef={
-                                              Object {
-                                                "current": <div
-                                                  class="c5 sc-htpNat c5 c6"
-                                                >
-                                                  <div
-                                                    class="c7"
-                                                  >
-                                                    <span
-                                                      class="c8"
-                                                      data-testid="dollarSign"
-                                                    >
-                                                      $
-                                                    </span>
-                                                    <span
-                                                      class="c9"
-                                                      data-testid="priceValue"
-                                                    >
-                                                      25
-                                                    </span>
-                                                  </div>
-                                                  <span
-                                                    class="c10"
-                                                    data-testid="rateText"
-                                                  >
-                                                    /month
-                                                  </span>
-                                                </div>,
-                                              }
-                                            }
+                                          <styled.div
+                                            between={1}
                                             inline={true}
                                             tag="div"
                                           >
-                                            <div
-                                              className="c5 sc-htpNat c5 c6"
+                                            <StyledComponent
+                                              between={1}
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [
+                                                    [Function],
+                                                  ],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "sc-bdVaJa",
+                                                    "isStatic": false,
+                                                    "lastClassName": "c6",
+                                                    "rules": Array [
+                                                      [Function],
+                                                      [Function],
+                                                      [Function],
+                                                      [Function],
+                                                      [Function],
+                                                    ],
+                                                  },
+                                                  "displayName": "styled.div",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "sc-bdVaJa",
+                                                  "target": "div",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
+                                              inline={true}
+                                              tag="div"
                                             >
-                                              <Box
-                                                between={1}
-                                                inline={true}
-                                                tag="div"
+                                              <div
+                                                className="c6"
                                               >
-                                                <styled.div
-                                                  between={1}
-                                                  inline={true}
-                                                  tag="div"
+                                                <PriceLockup__StyledDollarSign
+                                                  data-testid="dollarSign"
+                                                  size="medium"
                                                 >
                                                   <StyledComponent
-                                                    between={1}
+                                                    data-testid="dollarSign"
                                                     forwardedComponent={
                                                       Object {
                                                         "$$typeof": Symbol(react.forward_ref),
-                                                        "attrs": Array [
-                                                          [Function],
-                                                        ],
+                                                        "attrs": Array [],
                                                         "componentStyle": ComponentStyle {
-                                                          "componentId": "sc-bdVaJa",
+                                                          "componentId": "PriceLockup__StyledDollarSign-crmhv4-2",
                                                           "isStatic": false,
                                                           "lastClassName": "c7",
                                                           "rules": Array [
                                                             [Function],
-                                                            [Function],
-                                                            [Function],
-                                                            [Function],
-                                                            [Function],
                                                           ],
                                                         },
-                                                        "displayName": "styled.div",
+                                                        "displayName": "PriceLockup__StyledDollarSign",
                                                         "foldedComponentIds": Array [],
                                                         "render": [Function],
-                                                        "styledComponentId": "sc-bdVaJa",
-                                                        "target": "div",
+                                                        "styledComponentId": "PriceLockup__StyledDollarSign-crmhv4-2",
+                                                        "target": "span",
                                                         "toString": [Function],
                                                         "warnTooManyClasses": [Function],
                                                         "withComponent": [Function],
                                                       }
                                                     }
                                                     forwardedRef={null}
-                                                    inline={true}
-                                                    tag="div"
-                                                  >
-                                                    <div
-                                                      className="c7"
-                                                    >
-                                                      <PriceLockup__StyledDollarSign
-                                                        data-testid="dollarSign"
-                                                        size="medium"
-                                                      >
-                                                        <StyledComponent
-                                                          data-testid="dollarSign"
-                                                          forwardedComponent={
-                                                            Object {
-                                                              "$$typeof": Symbol(react.forward_ref),
-                                                              "attrs": Array [],
-                                                              "componentStyle": ComponentStyle {
-                                                                "componentId": "PriceLockup__StyledDollarSign-crmhv4-2",
-                                                                "isStatic": false,
-                                                                "lastClassName": "c8",
-                                                                "rules": Array [
-                                                                  [Function],
-                                                                ],
-                                                              },
-                                                              "displayName": "PriceLockup__StyledDollarSign",
-                                                              "foldedComponentIds": Array [],
-                                                              "render": [Function],
-                                                              "styledComponentId": "PriceLockup__StyledDollarSign-crmhv4-2",
-                                                              "target": "span",
-                                                              "toString": [Function],
-                                                              "warnTooManyClasses": [Function],
-                                                              "withComponent": [Function],
-                                                            }
-                                                          }
-                                                          forwardedRef={null}
-                                                          size="medium"
-                                                        >
-                                                          <span
-                                                            className="c8"
-                                                            data-testid="dollarSign"
-                                                            size="medium"
-                                                          >
-                                                            $
-                                                          </span>
-                                                        </StyledComponent>
-                                                      </PriceLockup__StyledDollarSign>
-                                                      <PriceLockup__StyledPriceValue
-                                                        data-testid="priceValue"
-                                                        size="medium"
-                                                      >
-                                                        <StyledComponent
-                                                          data-testid="priceValue"
-                                                          forwardedComponent={
-                                                            Object {
-                                                              "$$typeof": Symbol(react.forward_ref),
-                                                              "attrs": Array [],
-                                                              "componentStyle": ComponentStyle {
-                                                                "componentId": "PriceLockup__StyledPriceValue-crmhv4-1",
-                                                                "isStatic": false,
-                                                                "lastClassName": "c9",
-                                                                "rules": Array [
-                                                                  "word-wrap: break-word;",
-                                                                  "padding: 0;",
-                                                                  "margin: 0;",
-                                                                  [Function],
-                                                                ],
-                                                              },
-                                                              "displayName": "PriceLockup__StyledPriceValue",
-                                                              "foldedComponentIds": Array [],
-                                                              "render": [Function],
-                                                              "styledComponentId": "PriceLockup__StyledPriceValue-crmhv4-1",
-                                                              "target": "span",
-                                                              "toString": [Function],
-                                                              "warnTooManyClasses": [Function],
-                                                              "withComponent": [Function],
-                                                            }
-                                                          }
-                                                          forwardedRef={null}
-                                                          size="medium"
-                                                        >
-                                                          <span
-                                                            className="c9"
-                                                            data-testid="priceValue"
-                                                            size="medium"
-                                                          >
-                                                            25
-                                                          </span>
-                                                        </StyledComponent>
-                                                      </PriceLockup__StyledPriceValue>
-                                                    </div>
-                                                  </StyledComponent>
-                                                </styled.div>
-                                              </Box>
-                                              <PriceLockup__StyledRateText
-                                                data-testid="rateText"
-                                                size="medium"
-                                              >
-                                                <StyledComponent
-                                                  data-testid="rateText"
-                                                  forwardedComponent={
-                                                    Object {
-                                                      "$$typeof": Symbol(react.forward_ref),
-                                                      "attrs": Array [],
-                                                      "componentStyle": ComponentStyle {
-                                                        "componentId": "PriceLockup__StyledRateText-crmhv4-0",
-                                                        "isStatic": false,
-                                                        "lastClassName": "c10",
-                                                        "rules": Array [
-                                                          [Function],
-                                                        ],
-                                                      },
-                                                      "displayName": "PriceLockup__StyledRateText",
-                                                      "foldedComponentIds": Array [],
-                                                      "render": [Function],
-                                                      "styledComponentId": "PriceLockup__StyledRateText-crmhv4-0",
-                                                      "target": "span",
-                                                      "toString": [Function],
-                                                      "warnTooManyClasses": [Function],
-                                                      "withComponent": [Function],
-                                                    }
-                                                  }
-                                                  forwardedRef={null}
-                                                  size="medium"
-                                                >
-                                                  <span
-                                                    className="c10"
-                                                    data-testid="rateText"
                                                     size="medium"
                                                   >
-                                                    /month
-                                                  </span>
-                                                </StyledComponent>
-                                              </PriceLockup__StyledRateText>
-                                            </div>
+                                                    <span
+                                                      className="c7"
+                                                      data-testid="dollarSign"
+                                                      size="medium"
+                                                    >
+                                                      $
+                                                    </span>
+                                                  </StyledComponent>
+                                                </PriceLockup__StyledDollarSign>
+                                                <PriceLockup__StyledPriceValue
+                                                  data-testid="priceValue"
+                                                  size="medium"
+                                                >
+                                                  <StyledComponent
+                                                    data-testid="priceValue"
+                                                    forwardedComponent={
+                                                      Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "attrs": Array [],
+                                                        "componentStyle": ComponentStyle {
+                                                          "componentId": "PriceLockup__StyledPriceValue-crmhv4-1",
+                                                          "isStatic": false,
+                                                          "lastClassName": "c8",
+                                                          "rules": Array [
+                                                            "word-wrap: break-word;",
+                                                            "padding: 0;",
+                                                            "margin: 0;",
+                                                            [Function],
+                                                          ],
+                                                        },
+                                                        "displayName": "PriceLockup__StyledPriceValue",
+                                                        "foldedComponentIds": Array [],
+                                                        "render": [Function],
+                                                        "styledComponentId": "PriceLockup__StyledPriceValue-crmhv4-1",
+                                                        "target": "span",
+                                                        "toString": [Function],
+                                                        "warnTooManyClasses": [Function],
+                                                        "withComponent": [Function],
+                                                      }
+                                                    }
+                                                    forwardedRef={null}
+                                                    size="medium"
+                                                  >
+                                                    <span
+                                                      className="c8"
+                                                      data-testid="priceValue"
+                                                      size="medium"
+                                                    >
+                                                      25
+                                                    </span>
+                                                  </StyledComponent>
+                                                </PriceLockup__StyledPriceValue>
+                                              </div>
+                                            </StyledComponent>
+                                          </styled.div>
+                                        </Box>
+                                        <PriceLockup__StyledRateText
+                                          data-testid="rateText"
+                                          size="medium"
+                                        >
+                                          <StyledComponent
+                                            data-testid="rateText"
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "PriceLockup__StyledRateText-crmhv4-0",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c9",
+                                                  "rules": Array [
+                                                    [Function],
+                                                  ],
+                                                },
+                                                "displayName": "PriceLockup__StyledRateText",
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "styledComponentId": "PriceLockup__StyledRateText-crmhv4-0",
+                                                "target": "span",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            size="medium"
+                                          >
+                                            <span
+                                              className="c9"
+                                              data-testid="rateText"
+                                              size="medium"
+                                            >
+                                              /month
+                                            </span>
                                           </StyledComponent>
-                                        </styled.div>
-                                      </Box>
+                                        </PriceLockup__StyledRateText>
+                                      </div>
                                     </StyledComponent>
-                                  </Styled(Box)>
-                                </div>
+                                  </styled.div>
+                                </Box>
                               </StyledComponent>
-                            </styled.div>
-                          </Box>
+                            </Styled(Box)>
+                          </div>
                         </StyledComponent>
-                      </Styled(Box)>
+                      </PriceLockup__StyledRateTextWrapper>
                     </div>
                   </StyledComponent>
                 </styled.div>
               </Box>
-              <Styled(Text__StyledText)
-                inline={false}
+              <HairlineDivider
+                gradient={false}
+                vertical={false}
               >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-ifAKCX",
-                        "isStatic": false,
-                        "lastClassName": "c11",
-                        "rules": Array [
-                          [Function],
-                          [Function],
-                          [Function],
-                          [Function],
-                          [Function],
-                          "sup {",
-                          "top: -0.5em;",
-                          "font-size: 0.875rem;",
-                          "position: relative;",
-                          "vertical-align: baseline;",
-                          "padding-left: 0.1em;",
-                          "}",
-                          [Function],
-                        ],
-                      },
-                      "displayName": "Styled(Text__StyledText)",
-                      "foldedComponentIds": Array [
-                        "Text__StyledText-sc-1m0rr67-0",
-                      ],
-                      "render": [Function],
-                      "styledComponentId": "sc-ifAKCX",
-                      "target": "span",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
+                <HairlineDivider__StyledHairlineDivider
+                  gradient={false}
+                  vertical={false}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                          "isStatic": false,
+                          "lastClassName": "c10",
+                          "rules": Array [
+                            "padding: 0;",
+                            "margin: 0;",
+                            "border-width: 0;",
+                            [Function],
+                          ],
+                        },
+                        "displayName": "HairlineDivider__StyledHairlineDivider",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                        "target": "hr",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
                     }
-                  }
-                  forwardedRef={
-                    Object {
-                      "current": .c2 {
+                    forwardedRef={null}
+                    gradient={false}
+                    vertical={false}
+                  >
+                    <hr
+                      className="c10"
+                    />
+                  </StyledComponent>
+                </HairlineDivider__StyledHairlineDivider>
+              </HairlineDivider>
+              <span>
+                <Styled(Text__StyledText)
+                  inline={false}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bxivhb",
+                          "isStatic": false,
+                          "lastClassName": "c11",
+                          "rules": Array [
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            "sup {",
+                            "top: -0.5em;",
+                            "font-size: 0.875rem;",
+                            "position: relative;",
+                            "vertical-align: baseline;",
+                            "padding-left: 0.1em;",
+                            "}",
+                            [Function],
+                          ],
+                        },
+                        "displayName": "Styled(Text__StyledText)",
+                        "foldedComponentIds": Array [
+                          "Text__StyledText-sc-1m0rr67-0",
+                        ],
+                        "render": [Function],
+                        "styledComponentId": "sc-bxivhb",
+                        "target": "span",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={
+                      Object {
+                        "current": .c2 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -1103,145 +1018,146 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
 }
 
 <span
-                        class="c0"
-                      >
-                        <sup>
-                          <button
-                            class="c1"
-                            data-tds-id="footnote-link"
-                            type="button"
-                          >
-                            <span
-                              class="c2"
-                            >
-                              Read legal footnote
-                            </span>
-                            3
-                          </button>
-                        </sup>
-                      </span>,
-                    }
-                  }
-                  inline={false}
-                >
-                  <span
-                    className="c11"
-                  >
-                    <FootnoteLink
-                      copy="en"
-                      number={3}
-                      onClick={[Function]}
-                    >
-                      <sup
-                        key="3"
-                      >
-                        <FootnoteLink__StyledFootnoteLink
-                          data-tds-id="footnote-link"
-                          key="3"
-                          onClick={[Function]}
-                          type="button"
+                          class="c0"
                         >
-                          <StyledComponent
+                          <sup>
+                            <button
+                              class="c1"
+                              data-tds-id="footnote-link"
+                              type="button"
+                            >
+                              <span
+                                class="c2"
+                              >
+                                Read legal footnote
+                              </span>
+                              3
+                            </button>
+                          </sup>
+                        </span>,
+                      }
+                    }
+                    inline={false}
+                  >
+                    <span
+                      className="c11"
+                    >
+                      <FootnoteLink
+                        copy="en"
+                        number={3}
+                        onClick={[Function]}
+                      >
+                        <sup
+                          key="3"
+                        >
+                          <FootnoteLink__StyledFootnoteLink
                             data-tds-id="footnote-link"
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
-                                  "isStatic": true,
-                                  "lastClassName": "c12",
-                                  "rules": Array [
-                                    "background-color: transparent;",
-                                    "border: 0;",
-                                    "text-decoration: underline;",
-                                    "padding: 0 0.25rem;",
-                                    "color: inherit;",
-                                  ],
-                                },
-                                "displayName": "FootnoteLink__StyledFootnoteLink",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
-                                "target": "button",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={
-                              Object {
-                                "current": <button
-                                  class="c12"
-                                  data-tds-id="footnote-link"
-                                  type="button"
-                                >
-                                  <span
-                                    class="c13"
-                                  >
-                                    Read legal footnote
-                                  </span>
-                                  3
-                                </button>,
-                              }
-                            }
+                            key="3"
                             onClick={[Function]}
                             type="button"
                           >
-                            <button
-                              className="c12"
+                            <StyledComponent
                               data-tds-id="footnote-link"
-                              onClick={[Function]}
-                              type="button"
-                            >
-                              <A11yContent>
-                                <A11yContent__StyledA11yContent>
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                          "isStatic": true,
-                                          "lastClassName": "c13",
-                                          "rules": Array [
-                                            "position: absolute;",
-                                            "height: 1px;",
-                                            "width: 1px;",
-                                            "overflow: hidden;",
-                                            "clip: rect(1px, 1px, 1px, 1px);",
-                                          ],
-                                        },
-                                        "displayName": "A11yContent__StyledA11yContent",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                        "target": "span",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
+                                    "isStatic": true,
+                                    "lastClassName": "c12",
+                                    "rules": Array [
+                                      "background-color: transparent;",
+                                      "border: 0;",
+                                      "text-decoration: underline;",
+                                      "padding: 0 0.25rem;",
+                                      "color: inherit;",
+                                    ],
+                                  },
+                                  "displayName": "FootnoteLink__StyledFootnoteLink",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={
+                                Object {
+                                  "current": <button
+                                    class="c12"
+                                    data-tds-id="footnote-link"
+                                    type="button"
                                   >
                                     <span
-                                      className="c13"
+                                      class="c13"
                                     >
                                       Read legal footnote
                                     </span>
-                                  </StyledComponent>
-                                </A11yContent__StyledA11yContent>
-                              </A11yContent>
-                              3
-                            </button>
-                          </StyledComponent>
-                        </FootnoteLink__StyledFootnoteLink>
-                      </sup>
-                    </FootnoteLink>
-                  </span>
-                </StyledComponent>
-              </Styled(Text__StyledText)>
+                                    3
+                                  </button>,
+                                }
+                              }
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              <button
+                                className="c12"
+                                data-tds-id="footnote-link"
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                <A11yContent>
+                                  <A11yContent__StyledA11yContent>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                            "isStatic": true,
+                                            "lastClassName": "c13",
+                                            "rules": Array [
+                                              "position: absolute;",
+                                              "height: 1px;",
+                                              "width: 1px;",
+                                              "overflow: hidden;",
+                                              "clip: rect(1px, 1px, 1px, 1px);",
+                                            ],
+                                          },
+                                          "displayName": "A11yContent__StyledA11yContent",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="c13"
+                                      >
+                                        Read legal footnote
+                                      </span>
+                                    </StyledComponent>
+                                  </A11yContent__StyledA11yContent>
+                                </A11yContent>
+                                3
+                              </button>
+                            </StyledComponent>
+                          </FootnoteLink__StyledFootnoteLink>
+                        </sup>
+                      </FootnoteLink>
+                    </span>
+                  </StyledComponent>
+                </Styled(Text__StyledText)>
+              </span>
             </div>
           </StyledComponent>
         </styled.div>
@@ -1252,6 +1168,21 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
 `;
 
 exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is provided 1`] = `
+.c10 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  -webkit-transform: rotate(-0.00001deg);
+  -ms-transform: rotate(-0.00001deg);
+  transform: rotate(-0.00001deg);
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
 .c13 {
   position: absolute;
   height: 1px;
@@ -1284,14 +1215,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   margin-bottom: 0.25rem;
 }
 
-.c4 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c7 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1301,7 +1225,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   flex-direction: row;
 }
 
-.c7 > *:not(:last-child) {
+.c6 > *:not(:last-child) {
   margin-right: 0.25rem;
 }
 
@@ -1319,7 +1243,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   margin-bottom: 1rem;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1329,11 +1253,11 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   flex-direction: row;
 }
 
-.c6 > *:not(:last-child) {
+.c5 > *:not(:last-child) {
   margin-right: 0.5rem;
 }
 
-.c10 {
+.c9 {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -1343,7 +1267,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   line-height: 1.5;
 }
 
-.c9 {
+.c8 {
   word-wrap: break-word;
   padding: 0;
   margin: 0;
@@ -1356,11 +1280,11 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   font-weight: 400;
 }
 
-.c9.c9 sup {
+.c8.c8 sup {
   top: -1.5em;
 }
 
-.c8 {
+.c7 {
   word-wrap: break-word;
   font-size: 1.25rem;
   -webkit-letter-spacing: -1px;
@@ -1374,7 +1298,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   text-align: left;
 }
 
-.c5 {
+.c4 {
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -1409,7 +1333,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c8 {
     font-weight: 300;
     font-size: 2.75rem;
     -webkit-letter-spacing: 0;
@@ -1535,7 +1459,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-bdVaJa",
                   "isStatic": false,
-                  "lastClassName": "c7",
+                  "lastClassName": "c6",
                   "rules": Array [
                     [Function],
                     [Function],
@@ -1582,7 +1506,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-bdVaJa",
                           "isStatic": false,
-                          "lastClassName": "c7",
+                          "lastClassName": "c6",
                           "rules": Array [
                             [Function],
                             [Function],
@@ -1608,74 +1532,25 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                     <div
                       className="c2"
                     >
-                      <Styled(Box)
-                        inline={false}
-                        tag="div"
-                      >
+                      <PriceLockup__StyledRateTextWrapper>
                         <StyledComponent
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-bxivhb",
+                                "componentId": "PriceLockup__StyledRateTextWrapper-crmhv4-4",
                                 "isStatic": true,
                                 "lastClassName": "c3",
                                 "rules": Array [
                                   "display: flex;",
                                 ],
                               },
-                              "defaultProps": Object {
-                                "below": undefined,
-                                "between": undefined,
-                                "className": undefined,
-                                "horizontal": undefined,
-                                "inline": false,
-                                "inset": undefined,
-                                "tag": "div",
-                                "vertical": undefined,
-                              },
-                              "displayName": "Styled(Box)",
+                              "displayName": "PriceLockup__StyledRateTextWrapper",
                               "foldedComponentIds": Array [],
-                              "propTypes": Object {
-                                "below": [Function],
-                                "between": [Function],
-                                "children": [Function],
-                                "className": [Function],
-                                "horizontal": [Function],
-                                "inline": [Function],
-                                "inset": [Function],
-                                "tag": [Function],
-                                "vertical": [Function],
-                              },
                               "render": [Function],
-                              "styledComponentId": "sc-bxivhb",
-                              "target": Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "defaultProps": Object {
-                                  "below": undefined,
-                                  "between": undefined,
-                                  "className": undefined,
-                                  "horizontal": undefined,
-                                  "inline": false,
-                                  "inset": undefined,
-                                  "tag": "div",
-                                  "vertical": undefined,
-                                },
-                                "displayName": "Box",
-                                "propTypes": Object {
-                                  "below": [Function],
-                                  "between": [Function],
-                                  "children": [Function],
-                                  "className": [Function],
-                                  "horizontal": [Function],
-                                  "inline": [Function],
-                                  "inset": [Function],
-                                  "tag": [Function],
-                                  "vertical": [Function],
-                                },
-                                "render": [Function],
-                              },
+                              "styledComponentId": "PriceLockup__StyledRateTextWrapper-crmhv4-4",
+                              "target": "div",
                               "toString": [Function],
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
@@ -1683,28 +1558,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                           }
                           forwardedRef={
                             Object {
-                              "current": .c1 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c4 > *:not(:last-child) {
-  margin-right: 0.25rem;
-}
-
-.c3 {
+                              "current": .c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1715,10 +1569,24 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
 }
 
 .c3 > *:not(:last-child) {
+  margin-right: 0.25rem;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 > *:not(:last-child) {
   margin-right: 0.5rem;
 }
 
-.c7 {
+.c6 {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -1728,7 +1596,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   line-height: 1.5;
 }
 
-.c6 {
+.c5 {
   word-wrap: break-word;
   padding: 0;
   margin: 0;
@@ -1741,11 +1609,11 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   font-weight: 400;
 }
 
-.c6.c6 sup {
+.c5.c5 sup {
   top: -1.5em;
 }
 
-.c5 {
+.c4 {
   word-wrap: break-word;
   font-size: 1.25rem;
   -webkit-letter-spacing: -1px;
@@ -1755,7 +1623,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   line-height: 1.6;
 }
 
-.c2 {
+.c1 {
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -1773,7 +1641,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c5 {
     font-weight: 300;
     font-size: 2.75rem;
     -webkit-letter-spacing: 0;
@@ -1784,29 +1652,29 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
 }
 
 <div
-                                class="c0 c0 c1"
+                                class="c0"
                               >
                                 <div
-                                  class="c2 c2 c3"
+                                  class="c1 c1 c2"
                                 >
                                   <div
-                                    class="c4"
+                                    class="c3"
                                   >
                                     <span
-                                      class="c5"
+                                      class="c4"
                                       data-testid="dollarSign"
                                     >
                                       $
                                     </span>
                                     <span
-                                      class="c6"
+                                      class="c5"
                                       data-testid="priceValue"
                                     >
                                       25
                                     </span>
                                   </div>
                                   <span
-                                    class="c7"
+                                    class="c6"
                                     data-testid="rateText"
                                   >
                                     /month
@@ -1815,44 +1683,81 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                               </div>,
                             }
                           }
-                          inline={false}
-                          tag="div"
                         >
-                          <Box
+                          <div
                             className="c3"
-                            inline={false}
-                            tag="div"
                           >
-                            <styled.div
-                              className="c3"
-                              inline={false}
+                            <Styled(Box)
+                              between={2}
+                              inline={true}
                               tag="div"
                             >
                               <StyledComponent
-                                className="c3"
+                                between={2}
                                 forwardedComponent={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
-                                    "attrs": Array [
-                                      [Function],
-                                    ],
+                                    "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bdVaJa",
-                                      "isStatic": false,
-                                      "lastClassName": "c7",
+                                      "componentId": "sc-htpNat",
+                                      "isStatic": true,
+                                      "lastClassName": "c4",
                                       "rules": Array [
-                                        [Function],
-                                        [Function],
-                                        [Function],
-                                        [Function],
-                                        [Function],
+                                        "align-items: flex-end;",
+                                        "align-self: flex-start;",
                                       ],
                                     },
-                                    "displayName": "styled.div",
+                                    "defaultProps": Object {
+                                      "below": undefined,
+                                      "between": undefined,
+                                      "className": undefined,
+                                      "horizontal": undefined,
+                                      "inline": false,
+                                      "inset": undefined,
+                                      "tag": "div",
+                                      "vertical": undefined,
+                                    },
+                                    "displayName": "Styled(Box)",
                                     "foldedComponentIds": Array [],
+                                    "propTypes": Object {
+                                      "below": [Function],
+                                      "between": [Function],
+                                      "children": [Function],
+                                      "className": [Function],
+                                      "horizontal": [Function],
+                                      "inline": [Function],
+                                      "inset": [Function],
+                                      "tag": [Function],
+                                      "vertical": [Function],
+                                    },
                                     "render": [Function],
-                                    "styledComponentId": "sc-bdVaJa",
-                                    "target": "div",
+                                    "styledComponentId": "sc-htpNat",
+                                    "target": Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "defaultProps": Object {
+                                        "below": undefined,
+                                        "between": undefined,
+                                        "className": undefined,
+                                        "horizontal": undefined,
+                                        "inline": false,
+                                        "inset": undefined,
+                                        "tag": "div",
+                                        "vertical": undefined,
+                                      },
+                                      "displayName": "Box",
+                                      "propTypes": Object {
+                                        "below": [Function],
+                                        "between": [Function],
+                                        "children": [Function],
+                                        "className": [Function],
+                                        "horizontal": [Function],
+                                        "inline": [Function],
+                                        "inset": [Function],
+                                        "tag": [Function],
+                                        "vertical": [Function],
+                                      },
+                                      "render": [Function],
+                                    },
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
@@ -1861,114 +1766,74 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                 forwardedRef={
                                   Object {
                                     "current": <div
-                                      class="c3 sc-bxivhb c3 c4"
+                                      class="c4 sc-htpNat c4 c5"
                                     >
                                       <div
-                                        class="c5 sc-htpNat c5 c6"
+                                        class="c6"
                                       >
-                                        <div
-                                          class="c7"
-                                        >
-                                          <span
-                                            class="c8"
-                                            data-testid="dollarSign"
-                                          >
-                                            $
-                                          </span>
-                                          <span
-                                            class="c9"
-                                            data-testid="priceValue"
-                                          >
-                                            25
-                                          </span>
-                                        </div>
                                         <span
-                                          class="c10"
-                                          data-testid="rateText"
+                                          class="c7"
+                                          data-testid="dollarSign"
                                         >
-                                          /month
+                                          $
+                                        </span>
+                                        <span
+                                          class="c8"
+                                          data-testid="priceValue"
+                                        >
+                                          25
                                         </span>
                                       </div>
+                                      <span
+                                        class="c9"
+                                        data-testid="rateText"
+                                      >
+                                        /month
+                                      </span>
                                     </div>,
                                   }
                                 }
-                                inline={false}
+                                inline={true}
                                 tag="div"
                               >
-                                <div
-                                  className="c3 sc-bxivhb c3 c4"
+                                <Box
+                                  between={2}
+                                  className="c4"
+                                  inline={true}
+                                  tag="div"
                                 >
-                                  <Styled(Box)
+                                  <styled.div
                                     between={2}
+                                    className="c4"
                                     inline={true}
                                     tag="div"
                                   >
                                     <StyledComponent
                                       between={2}
+                                      className="c4"
                                       forwardedComponent={
                                         Object {
                                           "$$typeof": Symbol(react.forward_ref),
-                                          "attrs": Array [],
+                                          "attrs": Array [
+                                            [Function],
+                                          ],
                                           "componentStyle": ComponentStyle {
-                                            "componentId": "sc-htpNat",
-                                            "isStatic": true,
-                                            "lastClassName": "c5",
+                                            "componentId": "sc-bdVaJa",
+                                            "isStatic": false,
+                                            "lastClassName": "c6",
                                             "rules": Array [
-                                              "align-items: flex-end;",
-                                              "align-self: flex-start;",
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                              [Function],
+                                              [Function],
                                             ],
                                           },
-                                          "defaultProps": Object {
-                                            "below": undefined,
-                                            "between": undefined,
-                                            "className": undefined,
-                                            "horizontal": undefined,
-                                            "inline": false,
-                                            "inset": undefined,
-                                            "tag": "div",
-                                            "vertical": undefined,
-                                          },
-                                          "displayName": "Styled(Box)",
+                                          "displayName": "styled.div",
                                           "foldedComponentIds": Array [],
-                                          "propTypes": Object {
-                                            "below": [Function],
-                                            "between": [Function],
-                                            "children": [Function],
-                                            "className": [Function],
-                                            "horizontal": [Function],
-                                            "inline": [Function],
-                                            "inset": [Function],
-                                            "tag": [Function],
-                                            "vertical": [Function],
-                                          },
                                           "render": [Function],
-                                          "styledComponentId": "sc-htpNat",
-                                          "target": Object {
-                                            "$$typeof": Symbol(react.forward_ref),
-                                            "defaultProps": Object {
-                                              "below": undefined,
-                                              "between": undefined,
-                                              "className": undefined,
-                                              "horizontal": undefined,
-                                              "inline": false,
-                                              "inset": undefined,
-                                              "tag": "div",
-                                              "vertical": undefined,
-                                            },
-                                            "displayName": "Box",
-                                            "propTypes": Object {
-                                              "below": [Function],
-                                              "between": [Function],
-                                              "children": [Function],
-                                              "className": [Function],
-                                              "horizontal": [Function],
-                                              "inline": [Function],
-                                              "inset": [Function],
-                                              "tag": [Function],
-                                              "vertical": [Function],
-                                            },
-                                            "render": [Function],
-                                          },
+                                          "styledComponentId": "sc-bdVaJa",
+                                          "target": "div",
                                           "toString": [Function],
                                           "warnTooManyClasses": [Function],
                                           "withComponent": [Function],
@@ -1977,26 +1842,26 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                       forwardedRef={
                                         Object {
                                           "current": <div
-                                            class="c5 sc-htpNat c5 c6"
+                                            class="c4 sc-htpNat c4 c5"
                                           >
                                             <div
-                                              class="c7"
+                                              class="c6"
                                             >
                                               <span
-                                                class="c8"
+                                                class="c7"
                                                 data-testid="dollarSign"
                                               >
                                                 $
                                               </span>
                                               <span
-                                                class="c9"
+                                                class="c8"
                                                 data-testid="priceValue"
                                               >
                                                 25
                                               </span>
                                             </div>
                                             <span
-                                              class="c10"
+                                              class="c9"
                                               data-testid="rateText"
                                             >
                                               /month
@@ -2007,318 +1872,284 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                       inline={true}
                                       tag="div"
                                     >
-                                      <Box
-                                        between={2}
-                                        className="c5"
-                                        inline={true}
-                                        tag="div"
+                                      <div
+                                        className="c4 sc-htpNat c4 c5"
                                       >
-                                        <styled.div
-                                          between={2}
-                                          className="c5"
+                                        <Box
+                                          between={1}
                                           inline={true}
                                           tag="div"
                                         >
-                                          <StyledComponent
-                                            between={2}
-                                            className="c5"
-                                            forwardedComponent={
-                                              Object {
-                                                "$$typeof": Symbol(react.forward_ref),
-                                                "attrs": Array [
-                                                  [Function],
-                                                ],
-                                                "componentStyle": ComponentStyle {
-                                                  "componentId": "sc-bdVaJa",
-                                                  "isStatic": false,
-                                                  "lastClassName": "c7",
-                                                  "rules": Array [
-                                                    [Function],
-                                                    [Function],
-                                                    [Function],
-                                                    [Function],
-                                                    [Function],
-                                                  ],
-                                                },
-                                                "displayName": "styled.div",
-                                                "foldedComponentIds": Array [],
-                                                "render": [Function],
-                                                "styledComponentId": "sc-bdVaJa",
-                                                "target": "div",
-                                                "toString": [Function],
-                                                "warnTooManyClasses": [Function],
-                                                "withComponent": [Function],
-                                              }
-                                            }
-                                            forwardedRef={
-                                              Object {
-                                                "current": <div
-                                                  class="c5 sc-htpNat c5 c6"
-                                                >
-                                                  <div
-                                                    class="c7"
-                                                  >
-                                                    <span
-                                                      class="c8"
-                                                      data-testid="dollarSign"
-                                                    >
-                                                      $
-                                                    </span>
-                                                    <span
-                                                      class="c9"
-                                                      data-testid="priceValue"
-                                                    >
-                                                      25
-                                                    </span>
-                                                  </div>
-                                                  <span
-                                                    class="c10"
-                                                    data-testid="rateText"
-                                                  >
-                                                    /month
-                                                  </span>
-                                                </div>,
-                                              }
-                                            }
+                                          <styled.div
+                                            between={1}
                                             inline={true}
                                             tag="div"
                                           >
-                                            <div
-                                              className="c5 sc-htpNat c5 c6"
+                                            <StyledComponent
+                                              between={1}
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [
+                                                    [Function],
+                                                  ],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "sc-bdVaJa",
+                                                    "isStatic": false,
+                                                    "lastClassName": "c6",
+                                                    "rules": Array [
+                                                      [Function],
+                                                      [Function],
+                                                      [Function],
+                                                      [Function],
+                                                      [Function],
+                                                    ],
+                                                  },
+                                                  "displayName": "styled.div",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "sc-bdVaJa",
+                                                  "target": "div",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
+                                              inline={true}
+                                              tag="div"
                                             >
-                                              <Box
-                                                between={1}
-                                                inline={true}
-                                                tag="div"
+                                              <div
+                                                className="c6"
                                               >
-                                                <styled.div
-                                                  between={1}
-                                                  inline={true}
-                                                  tag="div"
+                                                <PriceLockup__StyledDollarSign
+                                                  data-testid="dollarSign"
+                                                  size="medium"
                                                 >
                                                   <StyledComponent
-                                                    between={1}
+                                                    data-testid="dollarSign"
                                                     forwardedComponent={
                                                       Object {
                                                         "$$typeof": Symbol(react.forward_ref),
-                                                        "attrs": Array [
-                                                          [Function],
-                                                        ],
+                                                        "attrs": Array [],
                                                         "componentStyle": ComponentStyle {
-                                                          "componentId": "sc-bdVaJa",
+                                                          "componentId": "PriceLockup__StyledDollarSign-crmhv4-2",
                                                           "isStatic": false,
                                                           "lastClassName": "c7",
                                                           "rules": Array [
                                                             [Function],
-                                                            [Function],
-                                                            [Function],
-                                                            [Function],
-                                                            [Function],
                                                           ],
                                                         },
-                                                        "displayName": "styled.div",
+                                                        "displayName": "PriceLockup__StyledDollarSign",
                                                         "foldedComponentIds": Array [],
                                                         "render": [Function],
-                                                        "styledComponentId": "sc-bdVaJa",
-                                                        "target": "div",
+                                                        "styledComponentId": "PriceLockup__StyledDollarSign-crmhv4-2",
+                                                        "target": "span",
                                                         "toString": [Function],
                                                         "warnTooManyClasses": [Function],
                                                         "withComponent": [Function],
                                                       }
                                                     }
                                                     forwardedRef={null}
-                                                    inline={true}
-                                                    tag="div"
-                                                  >
-                                                    <div
-                                                      className="c7"
-                                                    >
-                                                      <PriceLockup__StyledDollarSign
-                                                        data-testid="dollarSign"
-                                                        size="medium"
-                                                      >
-                                                        <StyledComponent
-                                                          data-testid="dollarSign"
-                                                          forwardedComponent={
-                                                            Object {
-                                                              "$$typeof": Symbol(react.forward_ref),
-                                                              "attrs": Array [],
-                                                              "componentStyle": ComponentStyle {
-                                                                "componentId": "PriceLockup__StyledDollarSign-crmhv4-2",
-                                                                "isStatic": false,
-                                                                "lastClassName": "c8",
-                                                                "rules": Array [
-                                                                  [Function],
-                                                                ],
-                                                              },
-                                                              "displayName": "PriceLockup__StyledDollarSign",
-                                                              "foldedComponentIds": Array [],
-                                                              "render": [Function],
-                                                              "styledComponentId": "PriceLockup__StyledDollarSign-crmhv4-2",
-                                                              "target": "span",
-                                                              "toString": [Function],
-                                                              "warnTooManyClasses": [Function],
-                                                              "withComponent": [Function],
-                                                            }
-                                                          }
-                                                          forwardedRef={null}
-                                                          size="medium"
-                                                        >
-                                                          <span
-                                                            className="c8"
-                                                            data-testid="dollarSign"
-                                                            size="medium"
-                                                          >
-                                                            $
-                                                          </span>
-                                                        </StyledComponent>
-                                                      </PriceLockup__StyledDollarSign>
-                                                      <PriceLockup__StyledPriceValue
-                                                        data-testid="priceValue"
-                                                        size="medium"
-                                                      >
-                                                        <StyledComponent
-                                                          data-testid="priceValue"
-                                                          forwardedComponent={
-                                                            Object {
-                                                              "$$typeof": Symbol(react.forward_ref),
-                                                              "attrs": Array [],
-                                                              "componentStyle": ComponentStyle {
-                                                                "componentId": "PriceLockup__StyledPriceValue-crmhv4-1",
-                                                                "isStatic": false,
-                                                                "lastClassName": "c9",
-                                                                "rules": Array [
-                                                                  "word-wrap: break-word;",
-                                                                  "padding: 0;",
-                                                                  "margin: 0;",
-                                                                  [Function],
-                                                                ],
-                                                              },
-                                                              "displayName": "PriceLockup__StyledPriceValue",
-                                                              "foldedComponentIds": Array [],
-                                                              "render": [Function],
-                                                              "styledComponentId": "PriceLockup__StyledPriceValue-crmhv4-1",
-                                                              "target": "span",
-                                                              "toString": [Function],
-                                                              "warnTooManyClasses": [Function],
-                                                              "withComponent": [Function],
-                                                            }
-                                                          }
-                                                          forwardedRef={null}
-                                                          size="medium"
-                                                        >
-                                                          <span
-                                                            className="c9"
-                                                            data-testid="priceValue"
-                                                            size="medium"
-                                                          >
-                                                            25
-                                                          </span>
-                                                        </StyledComponent>
-                                                      </PriceLockup__StyledPriceValue>
-                                                    </div>
-                                                  </StyledComponent>
-                                                </styled.div>
-                                              </Box>
-                                              <PriceLockup__StyledRateText
-                                                data-testid="rateText"
-                                                size="medium"
-                                              >
-                                                <StyledComponent
-                                                  data-testid="rateText"
-                                                  forwardedComponent={
-                                                    Object {
-                                                      "$$typeof": Symbol(react.forward_ref),
-                                                      "attrs": Array [],
-                                                      "componentStyle": ComponentStyle {
-                                                        "componentId": "PriceLockup__StyledRateText-crmhv4-0",
-                                                        "isStatic": false,
-                                                        "lastClassName": "c10",
-                                                        "rules": Array [
-                                                          [Function],
-                                                        ],
-                                                      },
-                                                      "displayName": "PriceLockup__StyledRateText",
-                                                      "foldedComponentIds": Array [],
-                                                      "render": [Function],
-                                                      "styledComponentId": "PriceLockup__StyledRateText-crmhv4-0",
-                                                      "target": "span",
-                                                      "toString": [Function],
-                                                      "warnTooManyClasses": [Function],
-                                                      "withComponent": [Function],
-                                                    }
-                                                  }
-                                                  forwardedRef={null}
-                                                  size="medium"
-                                                >
-                                                  <span
-                                                    className="c10"
-                                                    data-testid="rateText"
                                                     size="medium"
                                                   >
-                                                    /month
-                                                  </span>
-                                                </StyledComponent>
-                                              </PriceLockup__StyledRateText>
-                                            </div>
+                                                    <span
+                                                      className="c7"
+                                                      data-testid="dollarSign"
+                                                      size="medium"
+                                                    >
+                                                      $
+                                                    </span>
+                                                  </StyledComponent>
+                                                </PriceLockup__StyledDollarSign>
+                                                <PriceLockup__StyledPriceValue
+                                                  data-testid="priceValue"
+                                                  size="medium"
+                                                >
+                                                  <StyledComponent
+                                                    data-testid="priceValue"
+                                                    forwardedComponent={
+                                                      Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "attrs": Array [],
+                                                        "componentStyle": ComponentStyle {
+                                                          "componentId": "PriceLockup__StyledPriceValue-crmhv4-1",
+                                                          "isStatic": false,
+                                                          "lastClassName": "c8",
+                                                          "rules": Array [
+                                                            "word-wrap: break-word;",
+                                                            "padding: 0;",
+                                                            "margin: 0;",
+                                                            [Function],
+                                                          ],
+                                                        },
+                                                        "displayName": "PriceLockup__StyledPriceValue",
+                                                        "foldedComponentIds": Array [],
+                                                        "render": [Function],
+                                                        "styledComponentId": "PriceLockup__StyledPriceValue-crmhv4-1",
+                                                        "target": "span",
+                                                        "toString": [Function],
+                                                        "warnTooManyClasses": [Function],
+                                                        "withComponent": [Function],
+                                                      }
+                                                    }
+                                                    forwardedRef={null}
+                                                    size="medium"
+                                                  >
+                                                    <span
+                                                      className="c8"
+                                                      data-testid="priceValue"
+                                                      size="medium"
+                                                    >
+                                                      25
+                                                    </span>
+                                                  </StyledComponent>
+                                                </PriceLockup__StyledPriceValue>
+                                              </div>
+                                            </StyledComponent>
+                                          </styled.div>
+                                        </Box>
+                                        <PriceLockup__StyledRateText
+                                          data-testid="rateText"
+                                          size="medium"
+                                        >
+                                          <StyledComponent
+                                            data-testid="rateText"
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "PriceLockup__StyledRateText-crmhv4-0",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c9",
+                                                  "rules": Array [
+                                                    [Function],
+                                                  ],
+                                                },
+                                                "displayName": "PriceLockup__StyledRateText",
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "styledComponentId": "PriceLockup__StyledRateText-crmhv4-0",
+                                                "target": "span",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            size="medium"
+                                          >
+                                            <span
+                                              className="c9"
+                                              data-testid="rateText"
+                                              size="medium"
+                                            >
+                                              /month
+                                            </span>
                                           </StyledComponent>
-                                        </styled.div>
-                                      </Box>
+                                        </PriceLockup__StyledRateText>
+                                      </div>
                                     </StyledComponent>
-                                  </Styled(Box)>
-                                </div>
+                                  </styled.div>
+                                </Box>
                               </StyledComponent>
-                            </styled.div>
-                          </Box>
+                            </Styled(Box)>
+                          </div>
                         </StyledComponent>
-                      </Styled(Box)>
+                      </PriceLockup__StyledRateTextWrapper>
                     </div>
                   </StyledComponent>
                 </styled.div>
               </Box>
-              <Styled(Text__StyledText)
-                inline={false}
+              <HairlineDivider
+                gradient={false}
+                vertical={false}
               >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-ifAKCX",
-                        "isStatic": false,
-                        "lastClassName": "c11",
-                        "rules": Array [
-                          [Function],
-                          [Function],
-                          [Function],
-                          [Function],
-                          [Function],
-                          "sup {",
-                          "top: -0.5em;",
-                          "font-size: 0.875rem;",
-                          "position: relative;",
-                          "vertical-align: baseline;",
-                          "padding-left: 0.1em;",
-                          "}",
-                          [Function],
-                        ],
-                      },
-                      "displayName": "Styled(Text__StyledText)",
-                      "foldedComponentIds": Array [
-                        "Text__StyledText-sc-1m0rr67-0",
-                      ],
-                      "render": [Function],
-                      "styledComponentId": "sc-ifAKCX",
-                      "target": "span",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
+                <HairlineDivider__StyledHairlineDivider
+                  gradient={false}
+                  vertical={false}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                          "isStatic": false,
+                          "lastClassName": "c10",
+                          "rules": Array [
+                            "padding: 0;",
+                            "margin: 0;",
+                            "border-width: 0;",
+                            [Function],
+                          ],
+                        },
+                        "displayName": "HairlineDivider__StyledHairlineDivider",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "HairlineDivider__StyledHairlineDivider-biamlk-0",
+                        "target": "hr",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
                     }
-                  }
-                  forwardedRef={
-                    Object {
-                      "current": .c2 {
+                    forwardedRef={null}
+                    gradient={false}
+                    vertical={false}
+                  >
+                    <hr
+                      className="c10"
+                    />
+                  </StyledComponent>
+                </HairlineDivider__StyledHairlineDivider>
+              </HairlineDivider>
+              <span>
+                <Styled(Text__StyledText)
+                  inline={false}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bxivhb",
+                          "isStatic": false,
+                          "lastClassName": "c11",
+                          "rules": Array [
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            [Function],
+                            "sup {",
+                            "top: -0.5em;",
+                            "font-size: 0.875rem;",
+                            "position: relative;",
+                            "vertical-align: baseline;",
+                            "padding-left: 0.1em;",
+                            "}",
+                            [Function],
+                          ],
+                        },
+                        "displayName": "Styled(Text__StyledText)",
+                        "foldedComponentIds": Array [
+                          "Text__StyledText-sc-1m0rr67-0",
+                        ],
+                        "render": [Function],
+                        "styledComponentId": "sc-bxivhb",
+                        "target": "span",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={
+                      Object {
+                        "current": .c2 {
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2354,145 +2185,146 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
 }
 
 <span
-                        class="c0"
-                      >
-                        <sup>
-                          <button
-                            class="c1"
-                            data-tds-id="footnote-link"
-                            type="button"
-                          >
-                            <span
-                              class="c2"
-                            >
-                              Read legal footnote
-                            </span>
-                            3
-                          </button>
-                        </sup>
-                      </span>,
-                    }
-                  }
-                  inline={false}
-                >
-                  <span
-                    className="c11"
-                  >
-                    <FootnoteLink
-                      copy="en"
-                      number={3}
-                      onClick={[Function]}
-                    >
-                      <sup
-                        key="3"
-                      >
-                        <FootnoteLink__StyledFootnoteLink
-                          data-tds-id="footnote-link"
-                          key="3"
-                          onClick={[Function]}
-                          type="button"
+                          class="c0"
                         >
-                          <StyledComponent
+                          <sup>
+                            <button
+                              class="c1"
+                              data-tds-id="footnote-link"
+                              type="button"
+                            >
+                              <span
+                                class="c2"
+                              >
+                                Read legal footnote
+                              </span>
+                              3
+                            </button>
+                          </sup>
+                        </span>,
+                      }
+                    }
+                    inline={false}
+                  >
+                    <span
+                      className="c11"
+                    >
+                      <FootnoteLink
+                        copy="en"
+                        number={3}
+                        onClick={[Function]}
+                      >
+                        <sup
+                          key="3"
+                        >
+                          <FootnoteLink__StyledFootnoteLink
                             data-tds-id="footnote-link"
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
-                                  "isStatic": true,
-                                  "lastClassName": "c12",
-                                  "rules": Array [
-                                    "background-color: transparent;",
-                                    "border: 0;",
-                                    "text-decoration: underline;",
-                                    "padding: 0 0.25rem;",
-                                    "color: inherit;",
-                                  ],
-                                },
-                                "displayName": "FootnoteLink__StyledFootnoteLink",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
-                                "target": "button",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={
-                              Object {
-                                "current": <button
-                                  class="c12"
-                                  data-tds-id="footnote-link"
-                                  type="button"
-                                >
-                                  <span
-                                    class="c13"
-                                  >
-                                    Read legal footnote
-                                  </span>
-                                  3
-                                </button>,
-                              }
-                            }
+                            key="3"
                             onClick={[Function]}
                             type="button"
                           >
-                            <button
-                              className="c12"
+                            <StyledComponent
                               data-tds-id="footnote-link"
-                              onClick={[Function]}
-                              type="button"
-                            >
-                              <A11yContent>
-                                <A11yContent__StyledA11yContent>
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                          "isStatic": true,
-                                          "lastClassName": "c13",
-                                          "rules": Array [
-                                            "position: absolute;",
-                                            "height: 1px;",
-                                            "width: 1px;",
-                                            "overflow: hidden;",
-                                            "clip: rect(1px, 1px, 1px, 1px);",
-                                          ],
-                                        },
-                                        "displayName": "A11yContent__StyledA11yContent",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                        "target": "span",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
+                                    "isStatic": true,
+                                    "lastClassName": "c12",
+                                    "rules": Array [
+                                      "background-color: transparent;",
+                                      "border: 0;",
+                                      "text-decoration: underline;",
+                                      "padding: 0 0.25rem;",
+                                      "color: inherit;",
+                                    ],
+                                  },
+                                  "displayName": "FootnoteLink__StyledFootnoteLink",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "FootnoteLink__StyledFootnoteLink-pzcbe1-0",
+                                  "target": "button",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={
+                                Object {
+                                  "current": <button
+                                    class="c12"
+                                    data-tds-id="footnote-link"
+                                    type="button"
                                   >
                                     <span
-                                      className="c13"
+                                      class="c13"
                                     >
                                       Read legal footnote
                                     </span>
-                                  </StyledComponent>
-                                </A11yContent__StyledA11yContent>
-                              </A11yContent>
-                              3
-                            </button>
-                          </StyledComponent>
-                        </FootnoteLink__StyledFootnoteLink>
-                      </sup>
-                    </FootnoteLink>
-                  </span>
-                </StyledComponent>
-              </Styled(Text__StyledText)>
+                                    3
+                                  </button>,
+                                }
+                              }
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              <button
+                                className="c12"
+                                data-tds-id="footnote-link"
+                                onClick={[Function]}
+                                type="button"
+                              >
+                                <A11yContent>
+                                  <A11yContent__StyledA11yContent>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                            "isStatic": true,
+                                            "lastClassName": "c13",
+                                            "rules": Array [
+                                              "position: absolute;",
+                                              "height: 1px;",
+                                              "width: 1px;",
+                                              "overflow: hidden;",
+                                              "clip: rect(1px, 1px, 1px, 1px);",
+                                            ],
+                                          },
+                                          "displayName": "A11yContent__StyledA11yContent",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="c13"
+                                      >
+                                        Read legal footnote
+                                      </span>
+                                    </StyledComponent>
+                                  </A11yContent__StyledA11yContent>
+                                </A11yContent>
+                                3
+                              </button>
+                            </StyledComponent>
+                          </FootnoteLink__StyledFootnoteLink>
+                        </sup>
+                      </FootnoteLink>
+                    </span>
+                  </StyledComponent>
+                </Styled(Text__StyledText)>
+              </span>
             </div>
           </StyledComponent>
         </styled.div>
@@ -2514,14 +2346,21 @@ exports[`PriceLockup renders with default props 1`] = `
 }
 
 .c1 > *:not(:last-child) {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
-.c3 {
-  display: block;
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.c2 > *:not(:last-child) {
+  margin-bottom: 0.25rem;
 }
 
 .c5 {
@@ -2593,7 +2432,7 @@ exports[`PriceLockup renders with default props 1`] = `
   align-self: flex-start;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2630,10 +2469,10 @@ exports[`PriceLockup renders with default props 1`] = `
   class="c0 sc-bwzfXH c0 c1"
 >
   <div
-    class="c1"
+    class="c2"
   >
     <div
-      class="c2 sc-bxivhb c2 c3"
+      class="c3"
     >
       <div
         class="c4 sc-htpNat c4 c5"
@@ -2670,7 +2509,7 @@ exports[`PriceLockup renders with default props 1`] = `
 `;
 
 exports[`PriceLockup size prop is large renders 1`] = `
-.c2 {
+.c3 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1.25rem;
@@ -2683,7 +2522,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
   font-weight: 400;
 }
 
-.c2 sup {
+.c3 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -2691,14 +2530,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
   padding-left: 0.1em;
 }
 
-.c1 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2708,11 +2540,18 @@ exports[`PriceLockup size prop is large renders 1`] = `
   flex-direction: row;
 }
 
-.c5 > *:not(:last-child) {
+.c6 > *:not(:last-child) {
   margin-right: 0.5rem;
 }
 
-.c8 {
+.c2 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c9 {
   word-wrap: break-word;
   font-size: 1.25rem;
   -webkit-letter-spacing: -1px;
@@ -2722,7 +2561,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
   line-height: 1.6;
 }
 
-.c7 {
+.c8 {
   word-wrap: break-word;
   padding: 0;
   margin: 0;
@@ -2731,11 +2570,11 @@ exports[`PriceLockup size prop is large renders 1`] = `
   font-weight: 300;
 }
 
-.c7.c7 sup {
+.c8.c8 sup {
   top: -3em;
 }
 
-.c6 {
+.c7 {
   color: #2a2c2e;
   font-weight: 400;
   font-size: 1.75rem;
@@ -2750,7 +2589,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
   text-align: left;
 }
 
-.c4 {
+.c5 {
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -2760,14 +2599,14 @@ exports[`PriceLockup size prop is large renders 1`] = `
   align-self: flex-start;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c9 {
+.c10 {
   color: #2a2c2e;
   display: inline-block;
   -webkit-align-self: flex-start;
@@ -2775,7 +2614,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
   align-self: flex-start;
 }
 
-.c9 sup {
+.c10 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -2783,8 +2622,40 @@ exports[`PriceLockup size prop is large renders 1`] = `
   padding-left: 0.1em;
 }
 
+@media (max-width:767px) {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c1 > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
 @media (min-width:768px) {
-  .c7 {
+  .c1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c1 > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
     font-size: 4.5rem;
     -webkit-letter-spacing: 0.2px;
     -moz-letter-spacing: 0.2px;
@@ -2794,7 +2665,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     font-weight: 300;
     font-size: 2.75rem;
     -webkit-letter-spacing: 0;
@@ -2808,42 +2679,42 @@ exports[`PriceLockup size prop is large renders 1`] = `
   class="c0 sc-bwzfXH c0 c1"
 >
   <div
-    class="c1"
+    class="c2"
   >
     <span
-      class="c2"
+      class="c3"
     >
       top text
     </span>
     <div
-      class="c3 sc-bxivhb c3 c1"
+      class="c4"
     >
       <div
-        class="c4 sc-htpNat c4 c5"
+        class="c5 sc-htpNat c5 c6"
       >
         <div
-          class="c5"
+          class="c6"
         >
           <span
-            class="c6"
+            class="c7"
             data-testid="dollarSign"
           >
             $
           </span>
           <span
-            class="c7"
+            class="c8"
             data-testid="priceValue"
           >
             25
           </span>
         </div>
         <span
-          class="c8"
+          class="c9"
           data-testid="rateText"
         >
           /month
           <span
-            class="c9"
+            class="c10"
           />
         </span>
       </div>
@@ -2853,7 +2724,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
 `;
 
 exports[`PriceLockup size prop is medium renders 1`] = `
-.c12 {
+.c11 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -2902,14 +2773,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   margin-bottom: 0.25rem;
 }
 
-.c5 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2919,7 +2783,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   flex-direction: row;
 }
 
-.c8 > *:not(:last-child) {
+.c7 > *:not(:last-child) {
   margin-right: 0.25rem;
 }
 
@@ -2937,7 +2801,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   margin-bottom: 1rem;
 }
 
-.c7 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2947,11 +2811,11 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   flex-direction: row;
 }
 
-.c7 > *:not(:last-child) {
+.c6 > *:not(:last-child) {
   margin-right: 0.5rem;
 }
 
-.c11 {
+.c10 {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -2961,7 +2825,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   line-height: 1.5;
 }
 
-.c10 {
+.c9 {
   word-wrap: break-word;
   padding: 0;
   margin: 0;
@@ -2974,11 +2838,11 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   font-weight: 400;
 }
 
-.c10.c10 sup {
+.c9.c9 sup {
   top: -1.5em;
 }
 
-.c9 {
+.c8 {
   word-wrap: break-word;
   font-size: 1.25rem;
   -webkit-letter-spacing: -1px;
@@ -2992,260 +2856,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   text-align: left;
 }
 
-.c6 {
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c14 {
-  color: #2a2c2e;
-  display: inline-block;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c14 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c13 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-  font-weight: 400;
-  display: inline-block;
-}
-
-.c13 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-@media (min-width:768px) {
-  .c10 {
-    font-weight: 300;
-    font-size: 2.75rem;
-    -webkit-letter-spacing: 0;
-    -moz-letter-spacing: 0;
-    -ms-letter-spacing: 0;
-    letter-spacing: 0;
-  }
-}
-
-<div
-  class="c0 sc-bwzfXH c0 c1"
->
-  <div
-    class="c2"
-  >
-    <span
-      class="c3"
-    >
-      top text
-    </span>
-    <div
-      class="c4 sc-bxivhb c4 c5"
-    >
-      <div
-        class="c6 sc-htpNat c6 c7"
-      >
-        <div
-          class="c8"
-        >
-          <span
-            class="c9"
-            data-testid="dollarSign"
-          >
-            $
-          </span>
-          <span
-            class="c10"
-            data-testid="priceValue"
-          >
-            25
-          </span>
-        </div>
-        <span
-          class="c11"
-          data-testid="rateText"
-        >
-          /month
-        </span>
-      </div>
-    </div>
-  </div>
-  <hr
-    class="c12"
-  />
-  <div>
-    <span
-      class="c13"
-    >
-      bottom text
-    </span>
-    <span
-      class="c14"
-    />
-  </div>
-</div>
-`;
-
-exports[`PriceLockup size prop is small renders 1`] = `
-.c11 {
-  padding: 0;
-  margin: 0;
-  border-width: 0;
-  -webkit-transform: rotate(-0.00001deg);
-  -ms-transform: rotate(-0.00001deg);
-  transform: rotate(-0.00001deg);
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #d8d8d8;
-}
-
-.c3 {
-  color: #2a2c2e;
-  word-wrap: break-word;
-  font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
-  line-height: 1.42857;
-  font-weight: 500;
-}
-
-.c3 sup {
-  top: -0.5em;
-  font-size: 0.875rem;
-  position: relative;
-  vertical-align: baseline;
-  padding-left: 0.1em;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c2 > *:not(:last-child) {
-  margin-bottom: 0.25rem;
-}
-
 .c5 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c7 > *:not(:last-child) {
-  margin-right: 0.25rem;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 > *:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
-.c10 {
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1;
-}
-
-.c9 {
-  word-wrap: break-word;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
-  font-size: 1.5rem;
-  font-weight: 400;
-  -webkit-letter-spacing: -0.7px;
-  -moz-letter-spacing: -0.7px;
-  -ms-letter-spacing: -0.7px;
-  letter-spacing: -0.7px;
-}
-
-.c9.c9 sup {
-  top: -1em;
-}
-
-.c8 {
-  line-height: 1.5;
-}
-
-.c8 medium {
-  word-wrap: break-word;
-  font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  line-height: 1.5;
-}
-
-.c0 {
-  text-align: left;
-}
-
-.c6 {
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -3281,13 +2892,13 @@ exports[`PriceLockup size prop is small renders 1`] = `
 .c12 {
   color: #2a2c2e;
   word-wrap: break-word;
-  font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
-  line-height: 1.42857;
-  font-weight: 500;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 400;
   display: inline-block;
 }
 
@@ -3301,11 +2912,12 @@ exports[`PriceLockup size prop is small renders 1`] = `
 
 @media (min-width:768px) {
   .c9 {
-    font-size: 1.75rem;
-    -webkit-letter-spacing: -0.8px;
-    -moz-letter-spacing: -0.8px;
-    -ms-letter-spacing: -0.8px;
-    letter-spacing: -0.8px;
+    font-weight: 300;
+    font-size: 2.75rem;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
   }
 }
 
@@ -3321,10 +2933,10 @@ exports[`PriceLockup size prop is small renders 1`] = `
       top text
     </span>
     <div
-      class="c4 sc-bxivhb c4 c5"
+      class="c4"
     >
       <div
-        class="c6 sc-htpNat c6 c7"
+        class="c5 sc-htpNat c5 c6"
       >
         <div
           class="c7"
@@ -3354,7 +2966,7 @@ exports[`PriceLockup size prop is small renders 1`] = `
   <hr
     class="c11"
   />
-  <div>
+  <span>
     <span
       class="c12"
     >
@@ -3363,6 +2975,251 @@ exports[`PriceLockup size prop is small renders 1`] = `
     <span
       class="c13"
     />
+  </span>
+</div>
+`;
+
+exports[`PriceLockup size prop is small renders 1`] = `
+.c10 {
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  -webkit-transform: rotate(-0.00001deg);
+  -ms-transform: rotate(-0.00001deg);
+  transform: rotate(-0.00001deg);
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.c3 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+}
+
+.c3 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 > *:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c6 > *:not(:last-child) {
+  margin-right: 0.25rem;
+}
+
+.c9 {
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1;
+}
+
+.c8 {
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-size: 1.5rem;
+  font-weight: 400;
+  -webkit-letter-spacing: -0.7px;
+  -moz-letter-spacing: -0.7px;
+  -ms-letter-spacing: -0.7px;
+  letter-spacing: -0.7px;
+}
+
+.c8.c8 sup {
+  top: -1em;
+}
+
+.c7 {
+  line-height: 1.5;
+}
+
+.c7 medium {
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+}
+
+.c0 {
+  text-align: left;
+}
+
+.c5 {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c12 {
+  color: #2a2c2e;
+  display: inline-block;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.c12 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c11 {
+  color: #2a2c2e;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.c11 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+@media (min-width:768px) {
+  .c8 {
+    font-size: 1.75rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+  }
+}
+
+<div
+  class="c0 sc-bwzfXH c0 c1"
+>
+  <div
+    class="c2"
+  >
+    <span
+      class="c3"
+    >
+      top text
+    </span>
+    <div
+      class="c4"
+    >
+      <div
+        class="c5 sc-htpNat c5 c6"
+      >
+        <div
+          class="c6"
+        >
+          <span
+            class="c7"
+            data-testid="dollarSign"
+          >
+            $
+          </span>
+          <span
+            class="c8"
+            data-testid="priceValue"
+          >
+            25
+          </span>
+        </div>
+        <span
+          class="c9"
+          data-testid="rateText"
+        >
+          /month
+        </span>
+      </div>
+    </div>
   </div>
+  <hr
+    class="c10"
+  />
+  <span>
+    <span
+      class="c11"
+    >
+      bottom text
+    </span>
+    <span
+      class="c12"
+    />
+  </span>
 </div>
 `;

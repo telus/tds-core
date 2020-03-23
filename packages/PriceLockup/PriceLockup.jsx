@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState, useEffect, useCallback } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -20,6 +20,7 @@ import { spacing } from '@tds/shared-styles'
 
 import { warn } from '../../shared/utils/warn'
 
+const FOOTNOTE_COUNT_LIMIT = 3
 const priceValue = {
   small: {
     fontSize: '1.5rem',
@@ -105,7 +106,7 @@ const StyledPriceWrapper = styled(Box)({
   alignSelf: 'flex-start',
 })
 
-const StyledRateTextWrapper = styled(Box)({
+const StyledRateTextWrapper = styled.div({
   display: 'flex',
 })
 
@@ -119,11 +120,7 @@ const StyledBottomText = styled(StyledText)({ display: 'inline-block' })
 
 const renderDollarSign = size => {
   if (size === 'large') {
-    return (
-      <StyledLargeDollarSign data-testid="dollarSign" as="span" level="h1">
-        &#36;
-      </StyledLargeDollarSign>
-    )
+    return <StyledLargeDollarSign data-testid="dollarSign">&#36;</StyledLargeDollarSign>
   }
   return (
     <StyledDollarSign data-testid="dollarSign" size={size}>
@@ -173,6 +170,18 @@ const PriceLockup = ({
 
   const [footnoteLinksInline, setFootnoteLinksInline] = useState(true)
 
+  const footnoteCount = useCallback(() => {
+    let count = 0
+    if (footnoteLinks) {
+      if (Array.isArray(footnoteLinks)) {
+        count = footnoteLinks.reduce((acc, curr) => acc + curr.props.number.length, 0)
+      } else {
+        count = footnoteLinks.props.number.length
+      }
+    }
+    return count
+  }, [footnoteLinks])
+
   const checkInline = () => {
     if (containerRef.current && footnoteLinksRef.current) {
       const footnoteLinksWidth = footnoteLinksRef.current.offsetWidth
@@ -186,28 +195,31 @@ const PriceLockup = ({
       }
 
       const combinedWidth = textWidth + footnoteLinksWidth
-
-      setFootnoteLinksInline(combinedWidth < containerWidth)
+      setFootnoteLinksInline(
+        combinedWidth < containerWidth && footnoteCount() <= FOOTNOTE_COUNT_LIMIT
+      )
     }
   }
 
+  useEffect(checkInline, [])
   useEffect(() => {
     window.addEventListener('resize', checkInline)
     return () => {
       window.removeEventListener('resize', checkInline)
     }
   })
-  useEffect(checkInline, [])
+  useEffect(checkInline, [footnoteLinks])
 
   let wrapperSpacing
   if (size === 'small') {
-    if (bottomText && rateText) {
-      wrapperSpacing = 2
-    } else {
-      wrapperSpacing = 1
-    }
+    wrapperSpacing = 2
   } else if (size === 'medium') {
     wrapperSpacing = 3
+  } else {
+    wrapperSpacing = {
+      xs: 2,
+      md: 3,
+    }
   }
 
   return (
@@ -222,15 +234,16 @@ const PriceLockup = ({
                 {price}
               </StyledPriceValue>
               {signDirection === 'right' && renderDollarSign(size)}
-              {!bottomText &&
-                !rateText &&
-                renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
+              {!bottomText && !rateText && footnoteLinksInline && (
+                <StyledPriceValue data-testid="priceValue" size={size}>
+                  {renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
+                </StyledPriceValue>
+              )}
             </Box>
             {rateText && (
               <StyledRateText data-testid="rateText" size={size}>
                 {rateText}
                 {!bottomText &&
-                  rateText &&
                   footnoteLinksInline &&
                   renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
               </StyledRateText>
@@ -238,16 +251,15 @@ const PriceLockup = ({
           </StyledPriceWrapper>
         </StyledRateTextWrapper>
       </Box>
-      {size !== 'large' && bottomText && rateText && <HairlineDivider />}
-      {bottomText && (
-        <div>
-          {renderBottomText(size, bottomText, bottomTextRef)}
-          {renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
-        </div>
+      {((size !== 'large' && bottomText) || (footnoteLinks && !footnoteLinksInline)) && (
+        <>
+          <HairlineDivider />
+          <span>
+            {renderBottomText(size, bottomText, bottomTextRef)}
+            {renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
+          </span>
+        </>
       )}
-      {!bottomText &&
-        !footnoteLinksInline &&
-        renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
     </StyledWrapperAlignment>
   )
 }
