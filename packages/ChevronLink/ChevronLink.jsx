@@ -97,7 +97,7 @@ ChevronLink.propTypes = {
   /**
    * React Router Link component.
    */
-  reactRouterLinkComponent: PropTypes.func,
+  reactRouterLinkComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
   /**
    * Target URL (if using 'reactRouterLinkComponent')
    */
