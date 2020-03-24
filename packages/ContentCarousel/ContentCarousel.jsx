@@ -67,13 +67,7 @@ const ContentCarousel = ({ children, ...rest }) => {
     const itemContainer = document.getElementById('itemContainer')
 
     const tl = anime.timeline({ duration: 602, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
-    if (increment > 1 || increment < -1) {
-      tl.add({
-        targets: itemBelt,
-        filter: 'blur(5px)',
-        duration: 200,
-      })
-    }
+
     tl.add({
       targets: itemContainer,
       translateX: direction === 'right' ? ['0%', '100%'] : ['0%', '-100%'],
@@ -83,9 +77,10 @@ const ContentCarousel = ({ children, ...rest }) => {
         translateX: direction === 'left' ? ['100%', '0%'] : ['-100%', '0%'],
         duration: 600,
         complete: () => {
-          switchPages(increment || direction === 'left' ? 1 : -1)
+          console.log(increment)
+          switchPages(increment || (direction === 'left' ? 1 : -1))
         },
-      })
+      }, 0)
       .add({
         targets: itemContainer,
         translateX: '0%',
@@ -102,20 +97,18 @@ const ContentCarousel = ({ children, ...rest }) => {
         opacity: 1,
         duration: 1,
       })
-  }
 
-  // const handleSlideSkip = (direction, increment) => {
-  //   const itemBelt = document.getElementById('itemBelt')
-  //   const tl = anime.timeline({ duration: 602, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
-  //   tl.add({
-  //     targets: itemBelt,
-  //     filter: 'blur(5px)',
-  //     duration: 200,
-  //     complete: () => {
-  //       handleSlideTransition('right', increment)
-  //     },
-  //   }).add({ targets: itemBelt, filter: 'blur(0px)', duration: 200 })
-  // }
+    if (increment > 1 || increment < -1) {
+      tl.add({
+        targets: itemBelt,
+        filter: 'blur(5px)',
+        duration: 200,
+      }, 100).add({
+        targets: itemBelt,
+        filter: 'blur(0px)'
+      }, 600)
+    }
+  }
 
   return (
     <CarouselContainer {...safeRest(rest)}>
@@ -133,17 +126,21 @@ const ContentCarousel = ({ children, ...rest }) => {
           <NavButton
             direction="left"
             onClick={() => {
-              handleSlideTransition('right')
+              if (anime.running.length === 0) {
+                handleSlideTransition('right')
+              }
             }}
           />
         ) : (
-          <div />
-        )}
+            <div />
+          )}
         {currentPage !== totalPages && (
           <NavButton
             direction="right"
             onClick={() => {
-              handleSlideTransition('left')
+              if (anime.running.length === 0) {
+                handleSlideTransition('left')
+              }
             }}
           />
         )}

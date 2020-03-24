@@ -47,7 +47,13 @@ const PageIndicator = ({ currentPage, totalPages, changePage, handleSlideTransit
         <PageDot
           isCurrentPage={currentPage === i + 1}
           onClick={() => {
-            handleSlideTransition(currentPage > i ? 'left' : 'right', i + 1)
+            console.log(i + 1)
+            if (currentPage > i + 1) {
+              handleSlideTransition('right', (i + 1) - currentPage) // Seems like it's not updating properly between transitions?
+            }
+            else if (currentPage < i + 1) {
+              handleSlideTransition('left', i)
+            }
           }}
           key={i}
         />
