@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.15](https://github.com/telusdigital/tds/compare/@tds/core-button-link@2.1.14...@tds/core-button-link@2.1.15) (2020-03-25)
+
+
+### Bug Fixes
+
+* **core-button-link:** prop type warnings for reactRouterLinkComponent ([d30d356](https://github.com/telusdigital/tds/commit/d30d35657f018e45a2746066f3223d1d4d9b8db1)), closes [#1401](https://github.com/telusdigital/tds/issues/1401)
+
+
+
+
+
 ## [2.1.14](https://github.com/telusdigital/tds/compare/@tds/core-button-link@2.1.13...@tds/core-button-link@2.1.14) (2020-02-03)
 
 **Note:** Version bump only for package @tds/core-button-link

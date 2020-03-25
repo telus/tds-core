@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.2](https://github.com/telusdigital/tds-core/compare/@tds/core-breadcrumbs@2.2.1...@tds/core-breadcrumbs@2.2.2) (2020-03-25)
+
+
+### Bug Fixes
+
+* **core-breadcrumbs:** prop type warnings for reactRouterLinkComponent ([d79fbd9](https://github.com/telusdigital/tds-core/commit/d79fbd9286daf1ea771e1ee3f3da2bb168a566cc)), closes [#1401](https://github.com/telusdigital/tds-core/issues/1401)
+
+
+
+
+
 ## [2.2.1](https://github.com/telusdigital/tds-core/compare/@tds/core-breadcrumbs@2.2.0...@tds/core-breadcrumbs@2.2.1) (2020-03-17)
 
 **Note:** Version bump only for package @tds/core-breadcrumbs

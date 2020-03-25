@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.15](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.1.14...@tds/core-chevron-link@2.1.15) (2020-03-25)
+
+
+### Bug Fixes
+
+* **core-chevron-link:** prop type warnings for reactRouterLinkComponent ([3b3d7f2](https://github.com/telusdigital/tds/commit/3b3d7f21912a2172ebd78a69eb5bddfd12b76932)), closes [#1401](https://github.com/telusdigital/tds/issues/1401)
+
+
+
+
+
 ## [2.1.14](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.1.13...@tds/core-chevron-link@2.1.14) (2020-02-24)
 
 **Note:** Version bump only for package @tds/core-chevron-link
