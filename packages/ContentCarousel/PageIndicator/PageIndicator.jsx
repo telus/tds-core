@@ -33,7 +33,7 @@ const PageDot = ({ isCurrentPage, onClick }) => {
       backgroundColor: colorGreyRaven,
     },
     '&:focus': {
-      '& div': { opacity: 1 }
+      '& div': { opacity: 1 },
     },
     ...(isCurrentPage && {
       transform: 'scale(1)',
@@ -52,9 +52,13 @@ const PageDot = ({ isCurrentPage, onClick }) => {
     transformOrigin: 'bottom',
     border: `2px solid ${colorGreyRaven}`,
     borderRadius: '50%',
-    opacity: 0
+    opacity: 0,
   })
-  return <Dot onClick={onClick} isCurrentPage={isCurrentPage} aria-current={isCurrentPage}><FocusOutline /></Dot>
+  return (
+    <Dot onClick={onClick} isCurrentPage={isCurrentPage} aria-current={isCurrentPage}>
+      <FocusOutline />
+    </Dot>
+  )
 }
 
 const PageIndicator = ({ currentPage, totalPages, changePage, handleSlideTransition, ...rest }) => {
@@ -67,9 +71,8 @@ const PageIndicator = ({ currentPage, totalPages, changePage, handleSlideTransit
           onClick={() => {
             console.log(i + 1)
             if (currentPage > i + 1) {
-              handleSlideTransition('right', (i + 1) - currentPage) // Seems like it's not updating properly between transitions?
-            }
-            else if (currentPage < i + 1) {
+              handleSlideTransition('right', i + 1 - currentPage) // Seems like it's not updating properly between transitions?
+            } else if (currentPage < i + 1) {
               handleSlideTransition('left', i)
             }
           }}

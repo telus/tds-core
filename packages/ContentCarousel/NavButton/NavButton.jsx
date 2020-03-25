@@ -40,9 +40,10 @@ const NavButtonContainer = styled.button(({ direction }) => ({
   }),
 
   '&:focus': {
-    borderColor: colorGreyGainsboro, '& div': {
-      opacity: 1
-    }
+    borderColor: colorGreyGainsboro,
+    '& div': {
+      opacity: 1,
+    },
   },
   '&:active': { backgroundColor: colorGreyAthens },
 }))
@@ -60,9 +61,10 @@ const FocusOutline = styled.div(({ direction }) => ({
     width: 58,
     height: 58,
     right: 'initial',
+    left: 'initial',
     borderRadius: '50%',
-    borderLeftWidth: 1,
-    borderRightWidth: 1,
+    borderLeftWidth: 3,
+    borderRightWidth: 3,
   }),
   ...(direction === 'left' && {
     borderTopRightRadius: 64,

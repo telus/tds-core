@@ -45,7 +45,7 @@ const NavButtonContainer = styled.div({
   position: 'absolute',
   top: '50%',
   transform: 'translateY(-50%)',
-  padding: '0 5px'
+  padding: '0 5px',
 })
 const PageIndicatorContainer = styled.div({
   width: '100%',
@@ -73,15 +73,18 @@ const ContentCarousel = ({ children, ...rest }) => {
       targets: itemContainer,
       translateX: direction === 'right' ? ['0%', '100%'] : ['0%', '-100%'],
     })
-      .add({
-        targets: direction === 'left' ? decoyRight : decoyLeft,
-        translateX: direction === 'left' ? ['100%', '0%'] : ['-100%', '0%'],
-        duration: 600,
-        complete: () => {
-          console.log(increment)
-          switchPages(increment || (direction === 'left' ? 1 : -1))
+      .add(
+        {
+          targets: direction === 'left' ? decoyRight : decoyLeft,
+          translateX: direction === 'left' ? ['100%', '0%'] : ['-100%', '0%'],
+          duration: 600,
+          complete: () => {
+            console.log(increment)
+            switchPages(increment || (direction === 'left' ? 1 : -1))
+          },
         },
-      }, 0)
+        0
+      )
       .add({
         targets: itemContainer,
         translateX: '0%',
@@ -100,14 +103,20 @@ const ContentCarousel = ({ children, ...rest }) => {
       })
 
     if (increment > 1 || increment < -1) {
-      tl.add({
-        targets: itemBelt,
-        filter: 'blur(5px)',
-        duration: 200,
-      }, 100).add({
-        targets: itemBelt,
-        filter: 'blur(0px)'
-      }, 600)
+      tl.add(
+        {
+          targets: itemBelt,
+          filter: 'blur(5px)',
+          duration: 200,
+        },
+        100
+      ).add(
+        {
+          targets: itemBelt,
+          filter: 'blur(0px)',
+        },
+        600
+      )
     }
   }
 
@@ -133,8 +142,8 @@ const ContentCarousel = ({ children, ...rest }) => {
             }}
           />
         ) : (
-            <div />
-          )}
+          <div />
+        )}
         {currentPage !== totalPages && (
           <NavButton
             direction="right"
