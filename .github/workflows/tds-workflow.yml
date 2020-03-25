@@ -69,3 +69,33 @@ jobs:
         with:
           name: output
           path: e2e/output/components
+  docs:
+    name: Documentation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@v1
+      - name: Setup Node 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Bootstrap
+        run: npm ci && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build -- --all
+      - name: Build Gitbook and Styleguidist
+        run: npm run build-docs:gitbook && npm run ci:build-docs:styleguide-staging
+      - name: Copy files
+        run: mkdir -p build/staging && cp -R guide/_book/* build/staging && cp -R styleguide/staging build/staging/components
+      - name: Get Branch Name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: get_branch
+      - name: Upload Styleguidist and Gitbook To S3 Bucket
+        uses: jakejarvis/s3-sync-action@v0.5.0
+        with:
+          args: --acl public-read --follow-symlinks --delete
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          SOURCE_DIR: 'build/staging'
+          DEST_DIR: 'pr/${{steps.get_branch.outputs.branch}}/docs'
