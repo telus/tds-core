@@ -15,20 +15,25 @@ const PageDot = ({ isCurrentPage, onClick }) => {
     width: 12,
     height: 12,
     borderRadius: '50%',
+    position: 'relative',
     border: `1px solid ${colorGreyRaven}`,
     backgroundColor: colorWhite,
     appearance: 'none',
     padding: 0,
     margin: '0 8px',
     transformOrigin: 'bottom',
+    outline: 'none',
     '&:hover': {
       transform: 'scale(1.3)',
       border: `3px solid ${colorGreyRaven}`,
     },
-    [`:focus, :active`]: {
+    '&:active': {
       transform: 'scale(1)',
       border: `1px solid ${colorGreyRaven}`,
       backgroundColor: colorGreyRaven,
+    },
+    '&:focus': {
+      '& div': { opacity: 1 }
     },
     ...(isCurrentPage && {
       transform: 'scale(1)',
@@ -36,7 +41,20 @@ const PageDot = ({ isCurrentPage, onClick }) => {
       backgroundColor: colorGreyRaven,
     }),
   })
-  return <Dot onClick={onClick} isCurrentPage={isCurrentPage} aria-current={isCurrentPage} />
+
+  const FocusOutline = styled.div({
+    width: 18,
+    height: 18,
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    transformOrigin: 'bottom',
+    border: `2px solid ${colorGreyRaven}`,
+    borderRadius: '50%',
+    opacity: 0
+  })
+  return <Dot onClick={onClick} isCurrentPage={isCurrentPage} aria-current={isCurrentPage}><FocusOutline /></Dot>
 }
 
 const PageIndicator = ({ currentPage, totalPages, changePage, handleSlideTransition, ...rest }) => {

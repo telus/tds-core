@@ -45,6 +45,7 @@ const NavButtonContainer = styled.div({
   position: 'absolute',
   top: '50%',
   transform: 'translateY(-50%)',
+  padding: '0 5px'
 })
 const PageIndicatorContainer = styled.div({
   width: '100%',
