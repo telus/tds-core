@@ -34,6 +34,9 @@ Links:
 - [Cartesian Components](http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/pr/${
   process.env.CIRCLE_BRANCH
 }/e2e/)
+- [Documentation](http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/pr/${
+  process.env.CIRCLE_BRANCH
+}/docs/)
 `
 
 const changes = `
