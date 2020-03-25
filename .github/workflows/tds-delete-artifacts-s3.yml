@@ -1,0 +1,12 @@
+on:
+  push:
+    branches:
+      - 1761-test
+
+jobs:
+  artifacts:
+    name: Delete artifacts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello
+        run: echo Hello
