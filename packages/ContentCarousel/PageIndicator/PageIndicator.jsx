@@ -61,7 +61,7 @@ const PageDot = ({ isCurrentPage, onClick }) => {
   )
 }
 
-const PageIndicator = ({ currentPage, totalPages, changePage, handleSlideTransition, ...rest }) => {
+const PageIndicator = ({ currentPage, totalPages, changePage, handleSlideSkip, ...rest }) => {
   const generateDots = () => {
     const dots = []
     for (let i = 0; i < totalPages; i += 1) {
@@ -69,11 +69,10 @@ const PageIndicator = ({ currentPage, totalPages, changePage, handleSlideTransit
         <PageDot
           isCurrentPage={currentPage === i + 1}
           onClick={() => {
-            console.log(i + 1)
             if (currentPage > i + 1) {
-              handleSlideTransition('right', i + 1 - currentPage) // Seems like it's not updating properly between transitions?
+              handleSlideSkip(i + 1 - currentPage) // Seems like it's not updating properly between transitions?
             } else if (currentPage < i + 1) {
-              handleSlideTransition('left', i)
+              handleSlideSkip(i - (currentPage - 1))
             }
           }}
           key={i}
@@ -90,7 +89,7 @@ PageIndicator.propTypes = {
   currentPage: PropTypes.number.isRequired,
   totalPages: PropTypes.number.isRequired,
   changePage: PropTypes.func.isRequired,
-  handleSlideTransition: PropTypes.func.isRequired,
+  handleSlideSkip: PropTypes.func.isRequired,
 }
 
 PageIndicator.defaultProps = {}

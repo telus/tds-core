@@ -16,7 +16,7 @@
       infinite scrolling content slider.
     </Paragraph>
   </ContentCarousel.Item>
-  <ContentCarousel.Item picture={<Image src="image-example.jpg" />} pictureSide="left">
+  <ContentCarousel.Item picture={<Image src="test-poster.jpg" />} pictureSide="right">
     <Paragraph bold>This is slide 3</Paragraph>
     <Heading level="h2">Use outside of a card to keep open feeling</Heading>
     <Paragraph>

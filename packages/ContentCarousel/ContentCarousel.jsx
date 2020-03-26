@@ -64,7 +64,6 @@ const ContentCarousel = ({ children, ...rest }) => {
   const handleSlideTransition = (direction, increment) => {
     const decoyRight = document.getElementById('decoyRight')
     const decoyLeft = document.getElementById('decoyLeft')
-    const itemBelt = document.getElementById('itemBelt')
     const itemContainer = document.getElementById('itemContainer')
 
     const tl = anime.timeline({ duration: 602, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
@@ -101,22 +100,32 @@ const ContentCarousel = ({ children, ...rest }) => {
         opacity: 1,
         duration: 1,
       })
+  }
 
+  const handleSlideSkip = (increment) => {
+    const itemBelt = document.getElementById('itemBelt')
+    const decoyRight = document.getElementById('decoyRight')
+    const decoyLeft = document.getElementById('decoyLeft')
     if (increment > 1 || increment < -1) {
-      tl.add(
-        {
-          targets: itemBelt,
-          filter: 'blur(5px)',
-          duration: 200,
-        },
-        100
-      ).add(
-        {
-          targets: itemBelt,
-          filter: 'blur(0px)',
-        },
-        600
-      )
+      const tl = anime.timeline({ duration: 602, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
+      tl.add({ targets: [decoyRight, decoyLeft], opacity: 0 })
+        .add(
+          {
+            targets: itemBelt,
+            filter: 'blur(18px)',
+            translateX: increment > 0 ? '-100%' : '100%',
+            complete: () => { switchPages(increment) }
+          }
+        ).add({ targets: itemBelt, translateX: increment > 0 ? '100%' : '-100%', duration: 1 }).add(
+          {
+            targets: itemBelt,
+            filter: 'blur(0px)',
+            translateX: '0%',
+          }
+        ).add({ targets: [decoyRight, decoyLeft], opacity: 1 })
+    }
+    else {
+      handleSlideTransition(increment < 1 ? 'right' : 'left', increment)
     }
   }
 
@@ -135,13 +144,13 @@ const ContentCarousel = ({ children, ...rest }) => {
   return (
     <CarouselContainer {...safeRest(rest)}>
       <ItemBelt id="itemBelt" {...handleSwipeGesture()}>
-        {children[currentPage - 2] && (
-          <DecoyContainer position='left' id="decoyLeft" aria-hidden={true}>{children[currentPage - 2]}</DecoyContainer>
-        )}
+
+        <DecoyContainer position='left' id="decoyLeft" aria-hidden={true}>{children[currentPage - 2] || undefined}</DecoyContainer>
+
         <ItemContainer id="itemContainer">{children[currentPage - 1] || children}</ItemContainer>
-        {children[currentPage - 1] && (
-          <DecoyContainer position='right' id="decoyRight" aria-hidden={true}>{children[currentPage]}</DecoyContainer>
-        )}
+
+        <DecoyContainer position='right' id="decoyRight" aria-hidden={true}>{children[currentPage] || undefined}</DecoyContainer>
+
       </ItemBelt>
       <NavButtonContainer>
         {currentPage > 1 ? (
@@ -172,7 +181,7 @@ const ContentCarousel = ({ children, ...rest }) => {
           currentPage={currentPage}
           totalPages={totalPages}
           changePage={setCurrentPage}
-          handleSlideTransition={handleSlideTransition}
+          handleSlideSkip={handleSlideSkip}
         />
       </PageIndicatorContainer>
     </CarouselContainer>

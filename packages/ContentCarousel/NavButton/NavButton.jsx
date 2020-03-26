@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { safeRest } from '@tds/util-helpers'
 import { ChevronLeft, ChevronRight } from '@tds/core-interactive-icon'
 import { media } from '@tds/core-responsive'
-import { colorWhite, colorGreyGainsboro, colorGreyRaven, colorGreyAthens } from '@tds/core-colours'
+import { colorWhite, colorGreyGainsboro, colorGreyAthens } from '@tds/core-colours'
 
 /**
  * @version ./package.json
