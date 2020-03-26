@@ -120,57 +120,27 @@ const ContentCarousel = ({ children, ...rest }) => {
     }
   }
 
-  const handleSlideGesture = (direction, startPoint) => {
-    const decoyRight = document.getElementById('decoyRight')
-    const decoyLeft = document.getElementById('decoyLeft')
-    const itemBelt = document.getElementById('itemBelt')
-    const itemContainer = document.getElementById('itemContainer')
-
-    const tl = anime.timeline({ duration: 602, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
-    tl.add({
-      targets: itemContainer,
-      translateX: direction === 'right' ? [startPoint, '100%'] : [startPoint, '-100%'],
-    })
-  }
-
-  const gesture = useDrag(({ dragging, offset: [x, y], velocity, movement }) => {
-    const itemBelt = document.getElementById('itemBelt')
-    const switchThreshold = 100
-    console.log(dragging, velocity, movement)
-    if ((movement[0] > 0 && currentPage > 1) || (movement[0] < 0 && currentPage < totalPages)) {
-      anime({ targets: itemBelt, translateX: movement[0] })
-    }
-    if (!dragging) {
-      if (movement[0] < -switchThreshold && currentPage < totalPages) {
-        anime({
-          targets: itemBelt,
-          translateX: 0,
-          complete: () => {
-            handleSlideTransition('left', 1)
-          },
-        })
-      } else if (movement[0] > switchThreshold && currentPage > 1) {
-        anime({
-          targets: itemBelt,
-          translateX: 0,
-          complete: () => {
-            handleSlideTransition('right', -1)
-          },
-        })
+  const handleSwipeGesture = useDrag(({ dragging, movement, event }) => {
+    if (!dragging && event.type === 'touchend') {
+      if (movement[0] < 0 && currentPage < totalPages) {
+        handleSlideTransition('left', 1)
+      }
+      else if (movement[0] > 0 && currentPage > 1) {
+        handleSlideTransition('right', -1)
       }
     }
   },
-    { filterTaps: true, axis: 'x' })
+    { filterTaps: true, axis: 'x', threshold: 100 })
 
   return (
     <CarouselContainer {...safeRest(rest)}>
-      <ItemBelt id="itemBelt" {...gesture()}>
+      <ItemBelt id="itemBelt" {...handleSwipeGesture()}>
         {children[currentPage - 2] && (
-          <DecoyContainer position='left' id="decoyLeft">{children[currentPage - 2]}</DecoyContainer>
+          <DecoyContainer position='left' id="decoyLeft" aria-hidden={true}>{children[currentPage - 2]}</DecoyContainer>
         )}
         <ItemContainer id="itemContainer">{children[currentPage - 1] || children}</ItemContainer>
         {children[currentPage - 1] && (
-          <DecoyContainer position='right' id="decoyRight">{children[currentPage]}</DecoyContainer>
+          <DecoyContainer position='right' id="decoyRight" aria-hidden={true}>{children[currentPage]}</DecoyContainer>
         )}
       </ItemBelt>
       <NavButtonContainer>
