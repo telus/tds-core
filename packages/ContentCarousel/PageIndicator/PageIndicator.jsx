@@ -70,7 +70,7 @@ const PageIndicator = ({ currentPage, totalPages, changePage, handleSlideSkip, .
           isCurrentPage={currentPage === i + 1}
           onClick={() => {
             if (currentPage > i + 1) {
-              handleSlideSkip(i + 1 - currentPage) // Seems like it's not updating properly between transitions?
+              handleSlideSkip(i + 1 - currentPage)
             } else if (currentPage < i + 1) {
               handleSlideSkip(i - (currentPage - 1))
             }

@@ -66,66 +66,70 @@ const ContentCarousel = ({ children, ...rest }) => {
     const decoyLeft = document.getElementById('decoyLeft')
     const itemContainer = document.getElementById('itemContainer')
 
-    const tl = anime.timeline({ duration: 602, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
+    if (anime.running.length === 0) {
 
-    tl.add({
-      targets: itemContainer,
-      translateX: direction === 'right' ? ['0%', '100%'] : ['0%', '-100%'],
-    })
-      .add(
-        {
-          targets: direction === 'left' ? decoyRight : decoyLeft,
-          translateX: direction === 'left' ? ['100%', '0%'] : ['-100%', '0%'],
-          duration: 600,
-          complete: () => {
-            console.log(increment)
-            switchPages(increment || (direction === 'left' ? 1 : -1))
-          },
-        },
-        0
-      )
-      .add({
+      const tl = anime.timeline({ duration: 602, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
+
+      tl.add({
         targets: itemContainer,
-        translateX: '0%',
-        duration: 1,
+        translateX: direction === 'right' ? ['0%', '100%'] : ['0%', '-100%'],
       })
-      .add({
-        targets: direction === 'left' ? decoyRight : decoyLeft,
-        opacity: 0,
-        duration: 1,
-      })
-      .add({
-        targets: direction === 'left' ? decoyRight : decoyLeft,
-        translateX: '100%',
-        opacity: 1,
-        duration: 1,
-      })
+        .add(
+          {
+            targets: direction === 'left' ? decoyRight : decoyLeft,
+            translateX: direction === 'left' ? ['100%', '0%'] : ['-100%', '0%'],
+            duration: 600,
+            complete: () => {
+              switchPages(increment || (direction === 'left' ? 1 : -1))
+            },
+          },
+          0
+        )
+        .add({
+          targets: itemContainer,
+          translateX: '0%',
+          duration: 1,
+        })
+        .add({
+          targets: direction === 'left' ? decoyRight : decoyLeft,
+          opacity: 0,
+          duration: 1,
+        })
+        .add({
+          targets: direction === 'left' ? decoyRight : decoyLeft,
+          translateX: '100%',
+          opacity: 1,
+          duration: 1,
+        })
+    }
   }
 
   const handleSlideSkip = (increment) => {
     const itemBelt = document.getElementById('itemBelt')
     const decoyRight = document.getElementById('decoyRight')
     const decoyLeft = document.getElementById('decoyLeft')
-    if (increment > 1 || increment < -1) {
-      const tl = anime.timeline({ duration: 602, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
-      tl.add({ targets: [decoyRight, decoyLeft], opacity: 0 })
-        .add(
-          {
-            targets: itemBelt,
-            filter: 'blur(18px)',
-            translateX: increment > 0 ? '-100%' : '100%',
-            complete: () => { switchPages(increment) }
-          }
-        ).add({ targets: itemBelt, translateX: increment > 0 ? '100%' : '-100%', duration: 1 }).add(
-          {
-            targets: itemBelt,
-            filter: 'blur(0px)',
-            translateX: '0%',
-          }
-        ).add({ targets: [decoyRight, decoyLeft], opacity: 1 })
-    }
-    else {
-      handleSlideTransition(increment < 1 ? 'right' : 'left', increment)
+    if (anime.running.length === 0) {
+      if (increment > 1 || increment < -1) {
+        const tl = anime.timeline({ duration: 400, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
+        tl.add({ targets: [decoyRight, decoyLeft], opacity: 0 })
+          .add(
+            {
+              targets: itemBelt,
+              filter: 'blur(18px)',
+              translateX: increment > 0 ? '-100%' : '100%',
+              complete: () => { switchPages(increment) }
+            }
+          ).add({ targets: itemBelt, translateX: increment > 0 ? '100%' : '-100%', duration: 1 }).add(
+            {
+              targets: itemBelt,
+              filter: 'blur(0px)',
+              translateX: '0%',
+            }
+          ).add({ targets: [decoyRight, decoyLeft], opacity: 1 })
+      }
+      else {
+        handleSlideTransition(increment < 1 ? 'right' : 'left', increment)
+      }
     }
   }
 
@@ -157,9 +161,7 @@ const ContentCarousel = ({ children, ...rest }) => {
           <NavButton
             direction="left"
             onClick={() => {
-              if (anime.running.length === 0) {
-                handleSlideTransition('right')
-              }
+              handleSlideTransition('right')
             }}
           />
         ) : (
@@ -169,9 +171,7 @@ const ContentCarousel = ({ children, ...rest }) => {
           <NavButton
             direction="right"
             onClick={() => {
-              if (anime.running.length === 0) {
-                handleSlideTransition('left')
-              }
+              handleSlideTransition('left')
             }}
           />
         )}
