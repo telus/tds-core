@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import anime from 'animejs'
-// import { useDrag } from 'react-use-gesture'
+import { useDrag } from 'react-use-gesture'
 
 import { media } from '@tds/core-responsive'
 import { safeRest } from '@tds/util-helpers'
@@ -120,9 +120,27 @@ const ContentCarousel = ({ children, ...rest }) => {
     }
   }
 
+
+  // const [{ x, y }, set] = anime(() => ({ x: 0, y: 0 }))
+  // Set the drag hook and define component movement based on gesture data
+  const gesture = useDrag(({ dragging, offset: [x, y], velocity, movement }) => {
+    const itemBelt = document.getElementById('itemBelt')
+    const switchThreshold = 50
+    console.log(dragging, x, velocity, movement)
+    // anime({ targets: itemBelt, translateX: x })
+    if (movement[0] < -switchThreshold || movement[0] > switchThreshold) {
+      anime({
+        targets: itemBelt, translateX: 0, complete: () => {
+          handleSlideTransition((movement[0] < -switchThreshold ? 'left' : 'right'), movement[0] < -switchThreshold ? 1 : -1)
+        }
+      })
+    }
+  })
+
+
   return (
     <CarouselContainer {...safeRest(rest)}>
-      <ItemBelt id="itemBelt">
+      <ItemBelt id="itemBelt" {...gesture()}>
         <ItemContainer id="itemContainer">{children[currentPage - 1] || children}</ItemContainer>
         {children[currentPage - 1] && (
           <DecoyContainer id="decoyRight">{children[currentPage]}</DecoyContainer>
@@ -142,8 +160,8 @@ const ContentCarousel = ({ children, ...rest }) => {
             }}
           />
         ) : (
-          <div />
-        )}
+            <div />
+          )}
         {currentPage !== totalPages && (
           <NavButton
             direction="right"
