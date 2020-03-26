@@ -26,13 +26,13 @@ const ItemContainer = styled.ul({
   ...media.from('md').css({ padding: '0 64px' }),
 })
 
-const DecoyContainer = styled.div({
+const DecoyContainer = styled.div(({ position }) => ({
   position: 'absolute',
   padding: '0 32px',
-  transform: 'translateX(100%)',
+  transform: position === 'right' ? 'translateX(100%)' : 'translateX(-100%)',
   backgroundColor: 'white',
   ...media.from('md').css({ padding: '0 64px' }),
-})
+}))
 
 const ItemBelt = styled.div({
   display: 'flex',
@@ -120,33 +120,57 @@ const ContentCarousel = ({ children, ...rest }) => {
     }
   }
 
+  const handleSlideGesture = (direction, startPoint) => {
+    const decoyRight = document.getElementById('decoyRight')
+    const decoyLeft = document.getElementById('decoyLeft')
+    const itemBelt = document.getElementById('itemBelt')
+    const itemContainer = document.getElementById('itemContainer')
 
-  // const [{ x, y }, set] = anime(() => ({ x: 0, y: 0 }))
-  // Set the drag hook and define component movement based on gesture data
+    const tl = anime.timeline({ duration: 602, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
+    tl.add({
+      targets: itemContainer,
+      translateX: direction === 'right' ? [startPoint, '100%'] : [startPoint, '-100%'],
+    })
+  }
+
   const gesture = useDrag(({ dragging, offset: [x, y], velocity, movement }) => {
     const itemBelt = document.getElementById('itemBelt')
-    const switchThreshold = 50
-    console.log(dragging, x, velocity, movement)
-    // anime({ targets: itemBelt, translateX: x })
-    if (movement[0] < -switchThreshold || movement[0] > switchThreshold) {
-      anime({
-        targets: itemBelt, translateX: 0, complete: () => {
-          handleSlideTransition((movement[0] < -switchThreshold ? 'left' : 'right'), movement[0] < -switchThreshold ? 1 : -1)
-        }
-      })
+    const switchThreshold = 100
+    console.log(dragging, velocity, movement)
+    if ((movement[0] > 0 && currentPage > 1) || (movement[0] < 0 && currentPage < totalPages)) {
+      anime({ targets: itemBelt, translateX: movement[0] })
     }
-  })
-
+    if (!dragging) {
+      if (movement[0] < -switchThreshold && currentPage < totalPages) {
+        anime({
+          targets: itemBelt,
+          translateX: 0,
+          complete: () => {
+            handleSlideTransition('left', 1)
+          },
+        })
+      } else if (movement[0] > switchThreshold && currentPage > 1) {
+        anime({
+          targets: itemBelt,
+          translateX: 0,
+          complete: () => {
+            handleSlideTransition('right', -1)
+          },
+        })
+      }
+    }
+  },
+    { filterTaps: true, axis: 'x' })
 
   return (
     <CarouselContainer {...safeRest(rest)}>
       <ItemBelt id="itemBelt" {...gesture()}>
+        {children[currentPage - 2] && (
+          <DecoyContainer position='left' id="decoyLeft">{children[currentPage - 2]}</DecoyContainer>
+        )}
         <ItemContainer id="itemContainer">{children[currentPage - 1] || children}</ItemContainer>
         {children[currentPage - 1] && (
-          <DecoyContainer id="decoyRight">{children[currentPage]}</DecoyContainer>
-        )}
-        {children[currentPage - 2] && (
-          <DecoyContainer id="decoyLeft">{children[currentPage - 2]}</DecoyContainer>
+          <DecoyContainer position='right' id="decoyRight">{children[currentPage]}</DecoyContainer>
         )}
       </ItemBelt>
       <NavButtonContainer>
