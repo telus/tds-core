@@ -3,6 +3,7 @@
   <ContentCarousel.Item picture={<Image src="image-example.jpg" />} pictureSide="left">
     <Paragraph bold>Use branded images</Paragraph>
     <Heading level="h2">Use outside of a card to keep open feeling</Heading>
+    <Button>Hi!</Button>
     <Paragraph>
       Don't show previous/next chevron button when showing first/last slide. Doesn't render as an
       infinite scrolling content slider.
