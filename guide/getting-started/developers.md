@@ -24,7 +24,17 @@ To install the latest version of a component:
 npm install @tds/core-<component-name> --save
 ```
 
-That's it! You don't need any other dependencies to use the TDS.
+Note, most TDS components require some `peerDependencies` including `react`, `react-dom`, and `styled-components`.
+
+```json
+// Example from @tds/core-text/package.json
+...
+"peerDependencies": {
+  "react": "^16.8.2",
+  "react-dom": "^16.8.2",
+  "styled-components": "^4.1.3"
+},
+```
 
 ## Usage
 
