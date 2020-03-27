@@ -23,17 +23,18 @@ const PageDot = ({ isCurrentPage, onClick }) => {
     margin: '0 8px',
     transformOrigin: 'bottom',
     outline: 'none',
+    '&:focus': {
+      '& div': { opacity: 1 },
+    },
     '&:hover': {
       transform: 'scale(1.3)',
       border: `3px solid ${colorGreyRaven}`,
+      '& div': { opacity: 0 },
     },
     '&:active': {
       transform: 'scale(1)',
       border: `1px solid ${colorGreyRaven}`,
       backgroundColor: colorGreyRaven,
-    },
-    '&:focus': {
-      '& div': { opacity: 1 },
     },
     ...(isCurrentPage && {
       transform: 'scale(1)',
