@@ -50,9 +50,9 @@ getPackageNames(process.argv, packageNames => {
         ...process.env,
         PACKAGES: onlyCorePackages,
         UPDATE_ALL_SCREENSHOTS: tdsOptions['update-screenshots'],
-        URL: `http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/e2e/${
+        URL: `http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/pr/${
           tdsOptions.name
-        }/#`,
+        }/e2e/#`,
       },
       stdio: 'inherit',
     }
