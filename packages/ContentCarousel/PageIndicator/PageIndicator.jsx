@@ -9,7 +9,11 @@ import { colorWhite, colorGreyRaven } from '@tds/core-colours'
  * @version ./package.json
  */
 
-const IndicatorContainer = styled.div({ margin: 'auto', paddingBottom: 2, backgroundColor: colorWhite, })
+const IndicatorContainer = styled.div({
+  margin: 'auto',
+  paddingBottom: 2,
+  backgroundColor: colorWhite,
+})
 const PageDot = ({ isCurrentPage, onClick }) => {
   const Dot = styled.button({
     width: 12,

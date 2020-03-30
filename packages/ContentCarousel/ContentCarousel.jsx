@@ -67,7 +67,6 @@ const ContentCarousel = ({ children, ...rest }) => {
     const itemContainer = document.getElementById('itemContainer')
 
     if (anime.running.length === 0) {
-
       const tl = anime.timeline({ duration: 602, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
 
       tl.add({
@@ -104,7 +103,7 @@ const ContentCarousel = ({ children, ...rest }) => {
     }
   }
 
-  const handleSlideSkip = (increment) => {
+  const handleSlideSkip = increment => {
     const itemBelt = document.getElementById('itemBelt')
     const decoyRight = document.getElementById('decoyRight')
     const decoyLeft = document.getElementById('decoyLeft')
@@ -112,49 +111,50 @@ const ContentCarousel = ({ children, ...rest }) => {
       if (increment > 1 || increment < -1) {
         const tl = anime.timeline({ duration: 400, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
         tl.add({ targets: [decoyRight, decoyLeft], opacity: 0, duration: 1 })
-          .add(
-            {
-              targets: itemBelt,
-              filter: 'blur(18px)',
-              translateX: increment > 0 ? '-100%' : '100%',
-              complete: () => { switchPages(increment) }
-            }
-          ).add({ targets: itemBelt, translateX: increment > 0 ? '100%' : '-100%', duration: 1 }).add(
-            {
-              targets: itemBelt,
-              filter: 'blur(0px)',
-              translateX: '0%',
-            }
-          ).add({ targets: [decoyRight, decoyLeft], opacity: 1 })
-      }
-      else {
+          .add({
+            targets: itemBelt,
+            filter: 'blur(18px)',
+            translateX: increment > 0 ? '-100%' : '100%',
+            complete: () => {
+              switchPages(increment)
+            },
+          })
+          .add({ targets: itemBelt, translateX: increment > 0 ? '100%' : '-100%', duration: 1 })
+          .add({
+            targets: itemBelt,
+            filter: 'blur(0px)',
+            translateX: '0%',
+          })
+          .add({ targets: [decoyRight, decoyLeft], opacity: 1 })
+      } else {
         handleSlideTransition(increment < 1 ? 'right' : 'left', increment)
       }
     }
   }
 
-  const handleSwipeGesture = useDrag(({ dragging, movement, event }) => {
-    if (dragging) {
-      document.body.ontouchmove = (e) => {
-        e.preventDefault()
-        return false
+  const handleSwipeGesture = useDrag(
+    ({ dragging, movement, event }) => {
+      if (dragging) {
+        document.body.ontouchmove = e => {
+          e.preventDefault()
+          return false
+        }
       }
-    }
-    if (!dragging && event.type === 'touchend') {
-      document.body.ontouchmove = () => { }
-      if (movement[0] < 0 && currentPage < totalPages) {
-        handleSlideTransition('left', 1)
+      if (!dragging && event.type === 'touchend') {
+        document.body.ontouchmove = () => {}
+        if (movement[0] < 0 && currentPage < totalPages) {
+          handleSlideTransition('left', 1)
+        } else if (movement[0] > 0 && currentPage > 1) {
+          handleSlideTransition('right', -1)
+        }
       }
-      else if (movement[0] > 0 && currentPage > 1) {
-        handleSlideTransition('right', -1)
-      }
-    }
-  },
-    { filterTaps: true, axis: 'x', threshold: 100 })
+    },
+    { filterTaps: true, axis: 'x', threshold: 100 }
+  )
 
-  const preloadImage = (url) => {
-    var img = new Image();
-    img.src = url;
+  const preloadImage = url => {
+    const img = new Image()
+    img.src = url
   }
 
   const findImages = () => {
@@ -170,9 +170,15 @@ const ContentCarousel = ({ children, ...rest }) => {
   return (
     <CarouselContainer {...safeRest(rest)}>
       <ItemBelt id="itemBelt" {...handleSwipeGesture()}>
-        <DecoyContainer position='left' id="decoyLeft" aria-hidden={true}>{(children && children[currentPage - 2]) || ''}</DecoyContainer>
-        <ItemContainer id="itemContainer">{(children && children[currentPage - 1]) || ''}</ItemContainer>
-        <DecoyContainer position='right' id="decoyRight" aria-hidden={true}>{(children && children[currentPage]) || ''}</DecoyContainer>
+        <DecoyContainer position="left" id="decoyLeft" aria-hidden={true}>
+          {(children && children[currentPage - 2]) || ''}
+        </DecoyContainer>
+        <ItemContainer id="itemContainer">
+          {(children && children[currentPage - 1]) || ''}
+        </ItemContainer>
+        <DecoyContainer position="right" id="decoyRight" aria-hidden={true}>
+          {(children && children[currentPage]) || ''}
+        </DecoyContainer>
       </ItemBelt>
       <NavButtonContainer>
         {currentPage > 1 ? (
@@ -183,8 +189,8 @@ const ContentCarousel = ({ children, ...rest }) => {
             }}
           />
         ) : (
-            <div />
-          )}
+          <div />
+        )}
         {currentPage !== totalPages && (
           <NavButton
             direction="right"
@@ -207,10 +213,11 @@ const ContentCarousel = ({ children, ...rest }) => {
 }
 
 ContentCarousel.propTypes = {
+  variant: PropTypes.oneOf(['open']),
   children: PropTypes.node.isRequired,
 }
 
-ContentCarousel.defaultProps = {}
+ContentCarousel.defaultProps = { variant: 'open' }
 
 ContentCarousel.Item = Item
 export default ContentCarousel

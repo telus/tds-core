@@ -1,3 +1,10 @@
+This component will display `ContentCarousel.Item`s passed into it via its `children` in a slider format.
+
+*Acessibility Note*
+
+`ContentCarousel` does _not_ support autoplay. The autoplay option can be distracting or even distressing to those who struggle with sensory overload. We believe that omitting this feature will encourage the most inclusive experience possible for our customers.
+
+
 ```jsx
 <ContentCarousel>
   <ContentCarousel.Item picture={<Image src="image-example.jpg" />} pictureSide="left">
