@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import anime from 'animejs'
@@ -18,7 +18,7 @@ const CarouselContainer = styled.div({
   width: '100%',
   height: '100%',
   position: 'relative',
-  overflow: 'hidden'
+  overflow: 'hidden',
 })
 
 const ItemContainer = styled.ul({
@@ -152,16 +152,27 @@ const ContentCarousel = ({ children, ...rest }) => {
   },
     { filterTaps: true, axis: 'x', threshold: 100 })
 
+  const preloadImage = (url) => {
+    var img = new Image();
+    img.src = url;
+  }
+
+  const findImages = () => {
+    for (let i = 0; i < (children.length || 1); i += 1) {
+      preloadImage(children[i].props.picture.props.src)
+    }
+  }
+
+  useEffect(() => {
+    findImages()
+  })
+
   return (
     <CarouselContainer {...safeRest(rest)}>
       <ItemBelt id="itemBelt" {...handleSwipeGesture()}>
-
         <DecoyContainer position='left' id="decoyLeft" aria-hidden={true}>{(children && children[currentPage - 2]) || ''}</DecoyContainer>
-
         <ItemContainer id="itemContainer">{(children && children[currentPage - 1]) || ''}</ItemContainer>
-
         <DecoyContainer position='right' id="decoyRight" aria-hidden={true}>{(children && children[currentPage]) || ''}</DecoyContainer>
-
       </ItemBelt>
       <NavButtonContainer>
         {currentPage > 1 ? (
