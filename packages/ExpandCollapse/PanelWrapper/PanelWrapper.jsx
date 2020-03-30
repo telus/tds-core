@@ -230,7 +230,11 @@ class PanelWrapper extends React.Component {
   render() {
     const { panelId } = this.props
 
-    return <div data-testid={panelId}>{this.renderPanelWrapper()}</div>
+    return (
+      <div id={panelId} data-testid={panelId}>
+        {this.renderPanelWrapper()}
+      </div>
+    )
   }
 }
 
