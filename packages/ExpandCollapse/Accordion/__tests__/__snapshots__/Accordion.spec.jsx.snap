@@ -296,6 +296,7 @@ exports[`Accordion renders a closed accordion 1`] = `
           >
             <div
               data-testid="panel-1"
+              id="panel-1"
             >
               <div>
                 <PanelWrapper__HeaderButtonClickable
@@ -1474,6 +1475,7 @@ exports[`Accordion renders an open accordion 1`] = `
           >
             <div
               data-testid="panel-1"
+              id="panel-1"
             >
               <div>
                 <PanelWrapper__HeaderButtonClickable

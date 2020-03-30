@@ -1626,6 +1626,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
           >
             <div
               data-testid="panel-1"
+              id="panel-1"
             >
               <div>
                 <PanelWrapper__HeaderButtonClickable
@@ -2824,6 +2825,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
           >
             <div
               data-testid="panel-1"
+              id="panel-1"
             >
               <div>
                 <PanelWrapper__HeaderButtonClickable
