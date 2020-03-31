@@ -11,7 +11,9 @@ module.exports = {
     path.resolve('docs/components'),
     path.resolve('shared'),
     path.resolve('e2e/visual'),
+    path.resolve('scripts'),
   ],
+  testPathIgnorePatterns: [path.resolve('scripts/scaffolding')],
   moduleNameMapper: {
     '^.+\\.css$': path.resolve('config/jest/__mocks__/styleMock.js'),
   },
