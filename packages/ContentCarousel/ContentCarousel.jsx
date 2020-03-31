@@ -66,7 +66,21 @@ const ContentCarousel = ({ children, ...rest }) => {
     const decoyLeft = document.getElementById('decoyLeft')
     const itemContainer = document.getElementById('itemContainer')
 
-    if (anime.running.length === 0) {
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
+
+    if (mediaQuery.matches) {
+      const tl = anime.timeline({ duration: 400, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
+      tl.add({
+        targets: itemContainer,
+        opacity: 0,
+        complete: () => {
+          switchPages(increment || (direction === 'left' ? 1 : -1))
+        },
+      }).add({
+        targets: itemContainer,
+        opacity: 1,
+      })
+    } else if (anime.running.length === 0) {
       const tl = anime.timeline({ duration: 602, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
 
       tl.add({
@@ -107,7 +121,22 @@ const ContentCarousel = ({ children, ...rest }) => {
     const itemBelt = document.getElementById('itemBelt')
     const decoyRight = document.getElementById('decoyRight')
     const decoyLeft = document.getElementById('decoyLeft')
-    if (anime.running.length === 0) {
+
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
+
+    if (mediaQuery.matches) {
+      const tl = anime.timeline({ duration: 400, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
+      tl.add({
+        targets: itemBelt,
+        opacity: 0,
+        complete: () => {
+          switchPages(increment)
+        },
+      }).add({
+        targets: itemBelt,
+        opacity: 1,
+      })
+    } else if (anime.running.length === 0) {
       if (increment > 1 || increment < -1) {
         const tl = anime.timeline({ duration: 400, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
         tl.add({ targets: [decoyRight, decoyLeft], opacity: 0, duration: 1 })

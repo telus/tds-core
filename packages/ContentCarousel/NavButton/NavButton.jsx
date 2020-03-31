@@ -16,6 +16,7 @@ const NavButtonContainer = styled.button(({ direction }) => ({
   height: 32,
   display: 'flex',
   justifyContent: 'center',
+  alignItems: 'center', // Edge fix
   padding: 0,
   border: `1px solid ${colorGreyGainsboro}`,
   backgroundColor: colorWhite,

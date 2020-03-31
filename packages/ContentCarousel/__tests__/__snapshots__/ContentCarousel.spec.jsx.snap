@@ -1,188 +1,200 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContentCarousel renders 1`] = `
-.c2 {
-  fill: #2a2c2e;
-  width: 1.5rem;
-  height: 1.5rem;
-  z-index: 2;
-  -webkit-transition: -webkit-transform 150ms ease-in-out;
-  -webkit-transition: transform 150ms ease-in-out;
-  transition: transform 150ms ease-in-out;
-}
-
-.c2:hover,
-.c2:focus,
-.c2:active {
-  -webkit-transform: translateX(-4px);
-  -ms-transform: translateX(-4px);
-  transform: translateX(-4px);
-}
-
-.c4 {
-  fill: #2a2c2e;
-  width: 1.5rem;
-  height: 1.5rem;
-  z-index: 2;
-  -webkit-transition: -webkit-transform 150ms ease-in-out;
-  -webkit-transition: transform 150ms ease-in-out;
-  transition: transform 150ms ease-in-out;
-}
-
-.c4:hover,
-.c4:focus,
-.c4:active {
-  -webkit-transform: translateX(4px);
-  -ms-transform: translateX(4px);
-  transform: translateX(4px);
-}
-
-.c1 {
-  width: 24px;
-  height: 24px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 0;
-  border: 1px solid #d8d8d8;
+.c7 {
+  margin: auto;
+  padding-bottom: 2px;
   background-color: #fff;
-  border-top-left-radius: 48px;
-  border-bottom-left-radius: 48px;
-  border-right: 0;
-}
-
-.c1:focus {
-  border-color: #71757b;
-}
-
-.c1:active {
-  background-color: #d8d8d8;
-}
-
-.c3 {
-  width: 24px;
-  height: 24px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 0;
-  border: 1px solid #d8d8d8;
-  background-color: #fff;
-  border-top-right-radius: 48px;
-  border-bottom-right-radius: 48px;
-  border-left: 0;
-}
-
-.c3:focus {
-  border-color: #71757b;
-}
-
-.c3:active {
-  background-color: #d8d8d8;
 }
 
 .c0 {
   width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion:reduce) {
-  .c2 {
-    -webkit-transition: none;
-    transition: none;
-  }
+.c3 {
+  padding: 0 32px;
 }
 
-@media (prefers-reduced-motion:reduce) {
-  .c2 {
-    -webkit-transition: none;
-    transition: none;
-  }
+.c2 {
+  position: absolute;
+  padding: 0 32px;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  background-color: white;
 }
 
-@media (prefers-reduced-motion:reduce) {
-  .c4 {
-    -webkit-transition: none;
-    transition: none;
-  }
+.c4 {
+  position: absolute;
+  padding: 0 32px;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  background-color: white;
 }
 
-@media (prefers-reduced-motion:reduce) {
-  .c4 {
-    -webkit-transition: none;
-    transition: none;
-  }
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-@media (min-width:768px) {
-  .c1 {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    border-left: 1px;
-    border-right: 1px;
-    box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
-  }
+.c5 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 0 5px;
+}
+
+.c6 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.c8 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid #71757b;
+  background-color: #71757b;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  margin: 0 8px;
+  outline: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c8:focus div {
+  opacity: 1;
+}
+
+.c8:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  border: 3px solid #71757b;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+.c8:hover div {
+  opacity: 0;
+}
+
+.c8:active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  border: 1px solid #71757b;
+  background-color: #71757b;
+}
+
+.c9 {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  border: 2px solid #71757b;
+  border-radius: 50%;
+  opacity: 0;
 }
 
 @media (min-width:768px) {
   .c3 {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    border-left: 1px;
-    border-right: 1px;
-    box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+    padding: 0 64px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    padding: 0 64px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    padding: 0 64px;
   }
 }
 
 <div
   class="c0"
 >
-  <div />
-  <div>
-    <button
-      class="c1"
-      direction="left"
-    >
-      <svg
-        class="c2"
-        height="24"
-        viewBox="0 0 24 24"
-        width="24"
-      >
-        <path
-          d="M14.8167698,17.7940812 C14.5160501,18.1456996 14.0649573,17.9792355 13.920071,17.7940809 C13.920071,17.7940809 8.12410347,12.2849025 8.12339734,12.2849025 C7.95886755,12.1060729 7.95886755,11.8136521 8.12339734,11.6348225 L13.9200711,6.24327169 C14.0838947,6.06520964 14.4535067,5.83994757 14.8167698,6.16524043 C15.1800328,6.49053328 14.9185479,6.93839231 14.7547243,7.11722187 L10.259447,11.9968161 L14.7547243,16.8868854 C14.9549557,17.0896181 15.1174894,17.4424627 14.8167698,17.7940812 Z"
-        />
-      </svg>
-    </button>
-    <button
+  <div
+    class="c1"
+    id="itemBelt"
+  >
+    <div
+      aria-hidden="true"
+      class="c2"
+      id="decoyLeft"
+    />
+    <ul
       class="c3"
-      direction="right"
-    >
-      <svg
-        class="c4"
-        height="24"
-        viewBox="0 0 24 24"
-        width="24"
-      >
-        <path
-          d="M9.18323023,17.7940812 C8.8825106,17.4424627 9.04504427,17.0896181 9.24527574,16.8868854 L13.740553,11.9968161 L9.24527573,7.11722187 C9.08145209,6.93839231 8.81996721,6.49053328 9.18323023,6.16524043 C9.54649326,5.83994757 9.91610528,6.06520964 10.0799289,6.24327169 L15.8766027,11.6348225 C16.0411324,11.8136521 16.0411324,12.1060729 15.8766027,12.2849025 C15.8758965,12.2849025 10.079929,17.7940809 10.079929,17.7940809 C9.93504267,17.9792355 9.48394985,18.1456996 9.18323023,17.7940812 Z"
-        />
-      </svg>
-    </button>
+      id="itemContainer"
+    />
+    <div
+      aria-hidden="true"
+      class="c4"
+      id="decoyRight"
+    />
   </div>
-  <div>
-    PROGRESS
+  <div
+    class="c5"
+  >
+    <div />
+  </div>
+  <div
+    class="c6"
+  >
+    <div
+      class="c7"
+    >
+      <button
+        aria-current="true"
+        class="c8"
+      >
+        <div
+          class="c9"
+        />
+      </button>
+    </div>
   </div>
 </div>
 `;
