@@ -1,6 +1,123 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ContentCarousel renders 1`] = `
+exports[`ContentCarousel loads children 1`] = `
+Array [
+  .c0 {
+  padding: 0 32px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding: 0 64px;
+  }
+}
+
+<ContentCarousel__ItemContainer
+    data-testid="itemContainer"
+    id="itemContainer"
+  >
+    <StyledComponent
+      data-testid="itemContainer"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "ContentCarousel__ItemContainer-sc-19885k4-1",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "padding: 0 32px;",
+              "@media (min-width: 768px) {",
+              "padding: 0 64px;",
+              "}",
+            ],
+          },
+          "displayName": "ContentCarousel__ItemContainer",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "ContentCarousel__ItemContainer-sc-19885k4-1",
+          "target": "ul",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      id="itemContainer"
+    >
+      <ul
+        className="c0"
+        data-testid="itemContainer"
+        id="itemContainer"
+      />
+    </StyledComponent>
+  </ContentCarousel__ItemContainer>,
+  .c0 {
+  padding: 0 32px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding: 0 64px;
+  }
+}
+
+<StyledComponent
+    data-testid="itemContainer"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "ContentCarousel__ItemContainer-sc-19885k4-1",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "padding: 0 32px;",
+            "@media (min-width: 768px) {",
+            "padding: 0 64px;",
+            "}",
+          ],
+        },
+        "displayName": "ContentCarousel__ItemContainer",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "ContentCarousel__ItemContainer-sc-19885k4-1",
+        "target": "ul",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    id="itemContainer"
+  >
+    <ul
+      className="c0"
+      data-testid="itemContainer"
+      id="itemContainer"
+    />
+  </StyledComponent>,
+  .c0 {
+  padding: 0 32px;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding: 0 64px;
+  }
+}
+
+<ul
+    className="c0"
+    data-testid="itemContainer"
+    id="itemContainer"
+  />,
+]
+`;
+
+exports[`ContentCarousel renders empty 1`] = `
 .c7 {
   margin: auto;
   padding-bottom: 2px;
@@ -167,6 +284,7 @@ exports[`ContentCarousel renders 1`] = `
     />
     <ul
       class="c3"
+      data-testid="itemContainer"
       id="itemContainer"
     />
     <div

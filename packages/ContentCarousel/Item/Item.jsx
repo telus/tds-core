@@ -44,7 +44,7 @@ const ContentContainer = styled.div(({ pictureSide }) => ({
 }))
 const Item = ({ picture, pictureSide, children, ...rest }) => {
   return (
-    <ItemContainer pictureSide={pictureSide} {...safeRest(rest)} aria-live="polite">
+    <ItemContainer pictureSide={pictureSide} {...safeRest(rest)} aria-live="polite" data-testid="carouselItem">
       <PictureContainer>{picture}</PictureContainer>
       <ContentContainer pictureSide={pictureSide}>{children}</ContentContainer>
     </ItemContainer>

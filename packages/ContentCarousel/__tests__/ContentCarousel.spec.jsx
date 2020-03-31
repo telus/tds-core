@@ -1,21 +1,26 @@
 import React from 'react'
-import { shallow, render } from 'enzyme'
+import { shallow, mount, render } from 'enzyme'
 
 import ContentCarousel from '../ContentCarousel'
+import Item from '../Item/Item'
+import Image from '../../Image'
 
 describe('ContentCarousel', () => {
-  const doShallow = (props = {}) => shallow(<ContentCarousel {...props} />)
+  const doShallow = (props = {}) => shallow(<ContentCarousel {...props}><Item picture={<Image src="image-example.jpg" />}><p data-testid="childCheck">Hi!</p></Item></ContentCarousel>)
+  const doMount = (props = {}) => mount(<ContentCarousel  {...props}><Item picture={<Image src="image-example.jpg" />}><p data-testid="childCheck">Hi!</p></Item></ContentCarousel>)
 
-  it('renders', () => {
+
+  it('renders empty', () => {
     const contentCarousel = render(<ContentCarousel />)
 
     expect(contentCarousel).toMatchSnapshot()
   })
 
-  it('does other things', () => {
-    const contentCarousel = doShallow()
-
-    expect(contentCarousel).toExist()
+  it('loads children', () => {
+    const contentCarousel = doMount()
+    // console.log(contentCarousel.find('[data-testid="itemContainer"]').children().find('ul').render().find('[data-testid="childCheck"]'))
+    expect(contentCarousel.find('[data-testid="itemContainer"]').children().find('ul').html()).toEqual(true)
+    expect(contentCarousel.find('[data-testid="itemContainer"]')).toMatchSnapshot()
   })
 
   it('passes additional attributes to the element', () => {

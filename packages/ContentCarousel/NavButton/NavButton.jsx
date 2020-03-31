@@ -94,8 +94,8 @@ const NavButton = ({ direction, ...rest }) => {
       {...safeRest(rest)}
     >
       <FocusOutline direction={direction} />
-      {direction === 'left' && <ChevronLeft variant="basic" forceHover={isHovered} />}
-      {direction === 'right' && <ChevronRight variant="basic" forceHover={isHovered} />}
+      {direction === 'left' && <ChevronLeft variant="basic" forceHover={isHovered} data-testid="leftNavButton" />}
+      {direction === 'right' && <ChevronRight variant="basic" forceHover={isHovered} data-testid="rightNavButton" />}
     </NavButtonContainer>
   )
 }

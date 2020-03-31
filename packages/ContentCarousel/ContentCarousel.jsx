@@ -170,7 +170,7 @@ const ContentCarousel = ({ children, ...rest }) => {
         }
       }
       if (!dragging && event.type === 'touchend') {
-        document.body.ontouchmove = () => {}
+        document.body.ontouchmove = () => { }
         if (movement[0] < 0 && currentPage < totalPages) {
           handleSlideTransition('left', 1)
         } else if (movement[0] > 0 && currentPage > 1) {
@@ -187,7 +187,7 @@ const ContentCarousel = ({ children, ...rest }) => {
   }
 
   const findImages = () => {
-    for (let i = 0; i < (children.length || 1); i += 1) {
+    for (let i = 0; i < (children.length || 0); i += 1) {
       preloadImage(children[i].props.picture.props.src)
     }
   }
@@ -202,7 +202,7 @@ const ContentCarousel = ({ children, ...rest }) => {
         <DecoyContainer position="left" id="decoyLeft" aria-hidden={true}>
           {(children && children[currentPage - 2]) || ''}
         </DecoyContainer>
-        <ItemContainer id="itemContainer">
+        <ItemContainer id="itemContainer" data-testid="itemContainer">
           {(children && children[currentPage - 1]) || ''}
         </ItemContainer>
         <DecoyContainer position="right" id="decoyRight" aria-hidden={true}>
@@ -218,8 +218,8 @@ const ContentCarousel = ({ children, ...rest }) => {
             }}
           />
         ) : (
-          <div />
-        )}
+            <div />
+          )}
         {currentPage !== totalPages && (
           <NavButton
             direction="right"
@@ -237,7 +237,7 @@ const ContentCarousel = ({ children, ...rest }) => {
           handleSlideSkip={handleSlideSkip}
         />
       </PageIndicatorContainer>
-    </CarouselContainer>
+    </CarouselContainer >
   )
 }
 
