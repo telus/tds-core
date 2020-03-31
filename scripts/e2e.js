@@ -16,11 +16,12 @@ Usage: npm run test:e2e [component name...] [options] [lerna options]
 */
 
 const { spawnSync } = require('child_process')
-const { tdsOptions } = require('./utils/parseArgs')
+const parseArgs = require('./utils/parseArgs')
 
 const getPackageNames = require('./utils/getPackageNames')
 
-getPackageNames(packageNames => {
+getPackageNames(process.argv, packageNames => {
+  const { tdsOptions } = parseArgs(process.argv)
   if (!tdsOptions.name) {
     // eslint-disable-next-line no-console
     console.error(

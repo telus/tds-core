@@ -1,10 +1,12 @@
 /* eslint-disable no-console */
 
 const { exec } = require('child_process')
-const { userPackageNames, tdsOptions, lernaOptions } = require('./parseArgs')
+const parseArgs = require('./parseArgs')
 const { ignoredPackages } = require('../../config/constants')
 
-const getPackageNames = (callback, forceUpdatedPackages) => {
+const getPackageNames = (args, callback, forceUpdatedPackages) => {
+  const { userPackageNames, tdsOptions, lernaOptions } = parseArgs(args)
+
   if (!forceUpdatedPackages && userPackageNames.length > 0) {
     callback(userPackageNames)
     return
