@@ -17,28 +17,34 @@ const { spawnSync } = require('child_process')
 const readline = require('readline')
 
 const getPackageNames = require('./utils/getPackageNames')
-const { lernaOptions } = require('./utils/parseArgs')
+const parseArgs = require('./utils/parseArgs')
 
 const read = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 })
 
-getPackageNames(packageNames => {
-  console.warn(`You are about to publish the following packages: ${packageNames}`)
+getPackageNames(
+  process.argv,
+  packageNames => {
+    const { lernaOptions } = parseArgs(process.argv)
 
-  read.question(
-    'Are these the exact packages you wish to publish? (You will be prompted after this for versioning confirmation) (y/n) ',
-    answer => {
-      if (answer === 'Y' || answer === 'y') {
-        spawnSync('npx', ['lerna', 'publish', '--conventional-commits'].concat(lernaOptions), {
-          stdio: 'inherit',
-        })
-      } else {
-        console.log('Publishing aborted!')
+    console.warn(`You are about to publish the following packages: ${packageNames}`)
+
+    read.question(
+      'Are these the exact packages you wish to publish? (You will be prompted after this for versioning confirmation) (y/n) ',
+      answer => {
+        if (answer === 'Y' || answer === 'y') {
+          spawnSync('npx', ['lerna', 'publish', '--conventional-commits'].concat(lernaOptions), {
+            stdio: 'inherit',
+          })
+        } else {
+          console.log('Publishing aborted!')
+        }
+
+        read.close()
       }
-
-      read.close()
-    }
-  )
-}, true)
+    )
+  },
+  true
+)
