@@ -1,0 +1,598 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentCarousel populates the nav dots 1`] = `
+Array [
+  .c0 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid #71757b;
+  background-color: #71757b;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  margin: 0 8px;
+  outline: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0:focus div {
+  opacity: 1;
+}
+
+.c0:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  border: 3px solid #71757b;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+.c0:hover div {
+  opacity: 0;
+}
+
+.c0:active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  border: 1px solid #71757b;
+  background-color: #71757b;
+}
+
+.c1 {
+  width: 1.125rem;
+  height: 1.125rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  border: 2px solid #71757b;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+<PageIndicator__Dot
+    aria-current={true}
+    data-testid="pageDot"
+    isCurrentPage={true}
+    onClick={[Function]}
+  >
+    <StyledComponent
+      aria-current={true}
+      data-testid="pageDot"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "PageIndicator__Dot-sc-1vrp57v-1",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              [Function],
+            ],
+          },
+          "displayName": "PageIndicator__Dot",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "PageIndicator__Dot-sc-1vrp57v-1",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      isCurrentPage={true}
+      onClick={[Function]}
+    >
+      <button
+        aria-current={true}
+        className="c0"
+        data-testid="pageDot"
+        onClick={[Function]}
+      >
+        <PageIndicator__FocusOutline>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "PageIndicator__FocusOutline-sc-1vrp57v-2",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "width: 1.125rem;",
+                    "height: 1.125rem;",
+                    "position: absolute;",
+                    "top: 50%;",
+                    "left: 50%;",
+                    "transform: translate(-50%, -50%);",
+                    "transform-origin: bottom;",
+                    "border: 2px solid #71757b;",
+                    "border-radius: 50%;",
+                    "opacity: 0;",
+                  ],
+                },
+                "displayName": "PageIndicator__FocusOutline",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "PageIndicator__FocusOutline-sc-1vrp57v-2",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            />
+          </StyledComponent>
+        </PageIndicator__FocusOutline>
+      </button>
+    </StyledComponent>
+  </PageIndicator__Dot>,
+  .c0 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid #71757b;
+  background-color: #71757b;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  margin: 0 8px;
+  outline: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0:focus div {
+  opacity: 1;
+}
+
+.c0:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  border: 3px solid #71757b;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+.c0:hover div {
+  opacity: 0;
+}
+
+.c0:active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  border: 1px solid #71757b;
+  background-color: #71757b;
+}
+
+.c1 {
+  width: 1.125rem;
+  height: 1.125rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  border: 2px solid #71757b;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+<StyledComponent
+    aria-current={true}
+    data-testid="pageDot"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "PageIndicator__Dot-sc-1vrp57v-1",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            [Function],
+          ],
+        },
+        "displayName": "PageIndicator__Dot",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "PageIndicator__Dot-sc-1vrp57v-1",
+        "target": "button",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isCurrentPage={true}
+    onClick={[Function]}
+  >
+    <button
+      aria-current={true}
+      className="c0"
+      data-testid="pageDot"
+      onClick={[Function]}
+    >
+      <PageIndicator__FocusOutline>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "PageIndicator__FocusOutline-sc-1vrp57v-2",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "width: 1.125rem;",
+                  "height: 1.125rem;",
+                  "position: absolute;",
+                  "top: 50%;",
+                  "left: 50%;",
+                  "transform: translate(-50%, -50%);",
+                  "transform-origin: bottom;",
+                  "border: 2px solid #71757b;",
+                  "border-radius: 50%;",
+                  "opacity: 0;",
+                ],
+              },
+              "displayName": "PageIndicator__FocusOutline",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "PageIndicator__FocusOutline-sc-1vrp57v-2",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            className="c1"
+          />
+        </StyledComponent>
+      </PageIndicator__FocusOutline>
+    </button>
+  </StyledComponent>,
+  .c0 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid #71757b;
+  background-color: #71757b;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  margin: 0 8px;
+  outline: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0:focus div {
+  opacity: 1;
+}
+
+.c0:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  border: 3px solid #71757b;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+.c0:hover div {
+  opacity: 0;
+}
+
+.c0:active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  border: 1px solid #71757b;
+  background-color: #71757b;
+}
+
+.c1 {
+  width: 1.125rem;
+  height: 1.125rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  border: 2px solid #71757b;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+<button
+    aria-current={true}
+    className="c0"
+    data-testid="pageDot"
+    onClick={[Function]}
+  >
+    <PageIndicator__FocusOutline>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "PageIndicator__FocusOutline-sc-1vrp57v-2",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "width: 1.125rem;",
+                "height: 1.125rem;",
+                "position: absolute;",
+                "top: 50%;",
+                "left: 50%;",
+                "transform: translate(-50%, -50%);",
+                "transform-origin: bottom;",
+                "border: 2px solid #71757b;",
+                "border-radius: 50%;",
+                "opacity: 0;",
+              ],
+            },
+            "displayName": "PageIndicator__FocusOutline",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "PageIndicator__FocusOutline-sc-1vrp57v-2",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="c1"
+        />
+      </StyledComponent>
+    </PageIndicator__FocusOutline>
+  </button>,
+]
+`;
+
+exports[`ContentCarousel renders 1`] = `
+.c7 {
+  margin: auto;
+  padding-bottom: 2px;
+  background-color: #fff;
+}
+
+.c8 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid #71757b;
+  background-color: #71757b;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  margin: 0 8px;
+  outline: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c8:focus div {
+  opacity: 1;
+}
+
+.c8:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  border: 3px solid #71757b;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+.c8:hover div {
+  opacity: 0;
+}
+
+.c8:active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  border: 1px solid #71757b;
+  background-color: #71757b;
+}
+
+.c9 {
+  width: 1.125rem;
+  height: 1.125rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  border: 2px solid #71757b;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.c0 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.c3 {
+  padding: 0 1.5rem;
+}
+
+.c2 {
+  position: absolute;
+  padding: 0 1.5rem;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  background-color: white;
+}
+
+.c4 {
+  position: absolute;
+  padding: 0 1.5rem;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  background-color: white;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 0 5px;
+}
+
+.c6 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: auto;
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    padding: 0 4rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+    id="itemBelt"
+  >
+    <div
+      aria-hidden="true"
+      class="c2"
+      id="decoyLeft"
+    />
+    <ul
+      class="c3"
+      data-testid="itemContainer"
+      id="itemContainer"
+    />
+    <div
+      aria-hidden="true"
+      class="c4"
+      id="decoyRight"
+    />
+  </div>
+  <div
+    class="c5"
+  >
+    <div />
+  </div>
+  <div
+    class="c6"
+  >
+    <div
+      class="c7"
+    >
+      <button
+        aria-current="true"
+        class="c8"
+        data-testid="pageDot"
+      >
+        <div
+          class="c9"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
