@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react'
+import PropTypes from 'prop-types'
 
 import LimitedInteractiveIcon, { StyledLimitedInteractiveIconSVG } from '../../Limited'
 
@@ -6,6 +7,7 @@ const ChevronRight = forwardRef((props, ref) => (
   <LimitedInteractiveIcon {...props} ref={ref}>
     <StyledLimitedInteractiveIconSVG
       animationDirection="right"
+      forceHover={props.forceHover}
       width="24"
       height="24"
       viewBox="0 0 24 24"
@@ -16,5 +18,9 @@ const ChevronRight = forwardRef((props, ref) => (
 ))
 
 ChevronRight.displayName = 'ChevronRight'
+
+ChevronRight.propTypes = { forceHover: PropTypes.bool }
+
+ChevronRight.defaultProps = { forceHover: false }
 
 export default ChevronRight
