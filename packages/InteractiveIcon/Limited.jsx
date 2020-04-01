@@ -8,7 +8,7 @@ import animations from './shared/animations'
 import StyledInteractiveIconSVG from './shared/StyledInteractiveIconSVG'
 
 export const StyledLimitedInteractiveIconSVG = styled(StyledInteractiveIconSVG)(
-  ({ animationDirection }) => ({
+  ({ animationDirection, forceHover }) => ({
     transition: 'transform 150ms ease-in-out',
     '@media (prefers-reduced-motion: reduce)': {
       transition: 'none',
@@ -18,6 +18,11 @@ export const StyledLimitedInteractiveIconSVG = styled(StyledInteractiveIconSVG)(
         animationDirection === 'up' || animationDirection === 'down' ? 'Y' : 'X'
       }(${animationDirection === 'up' || animationDirection === 'left' ? '-' : ''}4px)`,
     },
+    ...(forceHover && {
+      transform: `translate${
+        animationDirection === 'up' || animationDirection === 'down' ? 'Y' : 'X'
+      }(${animationDirection === 'up' || animationDirection === 'left' ? '-' : ''}4px)`,
+    }),
   }),
   animations.reduceMotion
 )
@@ -62,6 +67,12 @@ Limited.propTypes = {
    */
   variant: PropTypes.oneOf(['default', 'basic', 'alternative', 'inverted']),
   /**
+   * Forces the hover state
+   * @ignore
+   */
+  // eslint-disable-next-line react/no-unused-prop-types
+  forceHover: PropTypes.bool,
+  /**
    * @ignore
    */
   children: PropTypes.node.isRequired,
@@ -69,6 +80,7 @@ Limited.propTypes = {
 
 Limited.defaultProps = {
   variant: 'default',
+  forceHover: undefined,
 }
 
 export default Limited
