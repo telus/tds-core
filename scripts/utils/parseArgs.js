@@ -11,7 +11,7 @@ const parseArgs = args => {
   }
 
   const lernaOptions = []
-  const lernaLS = execSync('npx lerna ls')
+  const lernaLS = execSync('npx lerna ls', { stdio: ['pipe'] })
     .toString('utf8')
     .trim()
     .split('\n')
