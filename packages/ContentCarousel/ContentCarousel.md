@@ -45,7 +45,7 @@ Though the `ContentCarousel` has been built with many accessibility consideratio
 `ContentCarousel` does _not_ support autoplay. The autoplay option can be distracting or even distressing to those who struggle with sensory overload. We believe that omitting this feature will encourage the most inclusive experience possible for our customers.
 
 ```jsx
-<ContentCarousel>
+<ContentCarousel copy="en">
   <ContentCarousel.Item picture={<Image src="image-example.jpg" />} pictureSide="left">
     <Paragraph bold>Use branded images</Paragraph>
     <Heading level="h2">Use outside of a card to keep open feeling</Heading>
@@ -79,7 +79,7 @@ Though the `ContentCarousel` has been built with many accessibility consideratio
 It's possible to change the side the `Image` supplied through the `picture` prop appears on in each slide. This is accomplished by providing either the directions `"left"` or `"right"` to the `pictureSide` prop.
 
 ```jsx
-<ContentCarousel>
+<ContentCarousel copy="en">
   <ContentCarousel.Item picture={<Image src="image-example.jpg" />} pictureSide="right">
     <Paragraph bold>Use branded images</Paragraph>
     <Heading level="h2">Use outside of a card to keep open feeling</Heading>

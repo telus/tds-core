@@ -5,10 +5,12 @@ import anime from 'animejs'
 import { useDrag } from 'react-use-gesture'
 
 import { media } from '@tds/core-responsive'
-import { safeRest } from '@tds/util-helpers'
+import { safeRest, getCopy } from '@tds/util-helpers'
 import NavButton from './NavButton/NavButton'
 import Item from './Item/Item'
 import PageIndicator from './PageIndicator/PageIndicator'
+
+import carouselText from './carouselText'
 
 /**
  * @version ./package.json
@@ -53,7 +55,7 @@ const PageIndicatorContainer = styled.div({
   justifyContent: 'space-between',
   margin: 'auto',
 })
-const ContentCarousel = ({ children, ...rest }) => {
+const ContentCarousel = ({ copy, children, ...rest }) => {
   const [currentPage, setCurrentPage] = useState(1)
   const totalPages = (children && children.length) || 1
 
@@ -216,6 +218,7 @@ const ContentCarousel = ({ children, ...rest }) => {
             onClick={() => {
               handleSlideTransition('right')
             }}
+            aria-label={getCopy(carouselText, copy).prevNavButton}
           />
         ) : (
           <div />
@@ -226,6 +229,7 @@ const ContentCarousel = ({ children, ...rest }) => {
             onClick={() => {
               handleSlideTransition('left')
             }}
+            aria-label={getCopy(carouselText, copy).nextNavButton}
           />
         )}
       </NavButtonContainer>
@@ -235,6 +239,7 @@ const ContentCarousel = ({ children, ...rest }) => {
           totalPages={totalPages}
           changePage={setCurrentPage}
           handleSlideSkip={handleSlideSkip}
+          copy={copy}
         />
       </PageIndicatorContainer>
     </CarouselContainer>
@@ -242,7 +247,26 @@ const ContentCarousel = ({ children, ...rest }) => {
 }
 
 ContentCarousel.propTypes = {
+  /**
+   * The carousel's style.
+   */
   variant: PropTypes.oneOf(['open']),
+  /**
+   * Use the copy prop to either select provided English or French copy
+   * by passing `'en'` or `'fr'` respectively.
+   *
+   * To provide your own, pass a JSON object.
+   */
+  copy: PropTypes.oneOfType([
+    PropTypes.oneOf(['en', 'fr']),
+    PropTypes.shape({
+      prevNavButton: PropTypes.string.isRequired,
+      nextNavButton: PropTypes.string.isRequired,
+      slide: PropTypes.string.isRequired,
+      of: PropTypes.string.isRequired,
+      goto: PropTypes.string.isRequired,
+    }),
+  ]).isRequired,
   children: PropTypes.node.isRequired,
 }
 

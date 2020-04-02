@@ -65,12 +65,14 @@ Array [
 
 <PageIndicator__Dot
     aria-current={true}
+    aria-label="undefined undefined 1"
     data-testid="pageDot"
     isCurrentPage={true}
     onClick={[Function]}
   >
     <StyledComponent
       aria-current={true}
+      aria-label="undefined undefined 1"
       data-testid="pageDot"
       forwardedComponent={
         Object {
@@ -100,6 +102,7 @@ Array [
     >
       <button
         aria-current={true}
+        aria-label="undefined undefined 1"
         className="c0"
         data-testid="pageDot"
         onClick={[Function]}
@@ -210,6 +213,7 @@ Array [
 
 <StyledComponent
     aria-current={true}
+    aria-label="undefined undefined 1"
     data-testid="pageDot"
     forwardedComponent={
       Object {
@@ -239,6 +243,7 @@ Array [
   >
     <button
       aria-current={true}
+      aria-label="undefined undefined 1"
       className="c0"
       data-testid="pageDot"
       onClick={[Function]}
@@ -348,6 +353,7 @@ Array [
 
 <button
     aria-current={true}
+    aria-label="undefined undefined 1"
     className="c0"
     data-testid="pageDot"
     onClick={[Function]}
@@ -585,6 +591,7 @@ exports[`ContentCarousel renders 1`] = `
     >
       <button
         aria-current="true"
+        aria-label="undefined undefined 1"
         class="c8"
         data-testid="pageDot"
       >

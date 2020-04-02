@@ -2,8 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { safeRest } from '@tds/util-helpers'
+import { safeRest, getCopy } from '@tds/util-helpers'
 import { colorWhite, colorGreyRaven } from '@tds/core-colours'
+
+import carouselText from '../carouselText'
 
 /**
  * @version ./package.json
@@ -60,12 +62,15 @@ const FocusOutline = styled.div({
   opacity: 0,
 })
 
-const PageDot = ({ isCurrentPage, onClick }) => {
+const PageDot = ({ isCurrentPage, pageNumber, copy, onClick }) => {
   return (
     <Dot
       onClick={onClick}
       isCurrentPage={isCurrentPage}
       aria-current={isCurrentPage}
+      aria-label={`${getCopy(carouselText, copy).goto} ${
+        getCopy(carouselText, copy).slide
+      } ${pageNumber}`}
       data-testid="pageDot"
     >
       <FocusOutline />
@@ -73,13 +78,15 @@ const PageDot = ({ isCurrentPage, onClick }) => {
   )
 }
 
-const PageIndicator = ({ currentPage, totalPages, changePage, handleSlideSkip, ...rest }) => {
+const PageIndicator = ({ currentPage, totalPages, changePage, handleSlideSkip, copy, ...rest }) => {
   const generateDots = () => {
     const dots = []
     for (let i = 0; i < totalPages; i += 1) {
       dots.push(
         <PageDot
           isCurrentPage={currentPage === i + 1}
+          pageNumber={i + 1}
+          copy={copy}
           onClick={() => {
             if (currentPage > i + 1) {
               handleSlideSkip(i + 1 - currentPage)
@@ -102,6 +109,16 @@ PageIndicator.propTypes = {
   totalPages: PropTypes.number.isRequired,
   changePage: PropTypes.func.isRequired,
   handleSlideSkip: PropTypes.func.isRequired,
+  copy: PropTypes.oneOfType([
+    PropTypes.oneOf(['en', 'fr']),
+    PropTypes.shape({
+      prevNavButton: PropTypes.string.isRequired,
+      nextNavButton: PropTypes.string.isRequired,
+      slide: PropTypes.string.isRequired,
+      of: PropTypes.string.isRequired,
+      goto: PropTypes.string.isRequired,
+    }),
+  ]).isRequired,
 }
 
 PageIndicator.defaultProps = {}
@@ -109,6 +126,17 @@ PageIndicator.defaultProps = {}
 PageDot.propTypes = {
   isCurrentPage: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
+  pageNumber: PropTypes.number.isRequired,
+  copy: PropTypes.oneOfType([
+    PropTypes.oneOf(['en', 'fr']),
+    PropTypes.shape({
+      prevNavButton: PropTypes.string.isRequired,
+      nextNavButton: PropTypes.string.isRequired,
+      slide: PropTypes.string.isRequired,
+      of: PropTypes.string.isRequired,
+      goto: PropTypes.string.isRequired,
+    }),
+  ]).isRequired,
 }
 
 export default PageIndicator
