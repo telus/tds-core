@@ -2,17 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { Checkmark, Times } from '@tds/core-feedback-icon'
+import { NotificationSuccess, NotificationError } from '@tds/core-feedback-icon'
 import { Fade } from '@tds/shared-animation'
 
 const StyledIcon = styled.div({ lineHeight: 1 })
 
 const renderIcon = feedback => {
   if (feedback === 'success') {
-    return <Checkmark copy={{ a11yText: 'The value of this input field is valid.' }} />
+    return <NotificationSuccess copy={{ a11yText: 'The value of this input field is valid.' }} />
   }
   if (feedback === 'error') {
-    return <Times copy={{ a11yText: 'The value of this input field is invalid.' }} />
+    return <NotificationError copy={{ a11yText: 'The value of this input field is invalid.' }} />
   }
   return null
 }
