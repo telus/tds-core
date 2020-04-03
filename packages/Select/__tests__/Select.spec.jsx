@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, mount } from 'enzyme'
 
-import { Checkmark, Times } from '@tds/core-feedback-icon'
+import { NotificationSuccess, NotificationError } from '@tds/core-feedback-icon'
 import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import InputFeedback from '@tds/core-input-feedback'
@@ -158,20 +158,15 @@ describe('Select', () => {
 
   describe('feedback states', () => {
     it('renders a checkmark icon on success feedback state', () => {
-      const { findFeedbackIconFade } = doMount({ feedback: 'success' })
+      const { select } = doMount({ feedback: 'success' })
 
-      expect(findFeedbackIconFade()).toContainReact(
-        <Checkmark copy={{ a11yText: 'The value of this input field is valid.' }} />
-      )
+      expect(select.find(NotificationSuccess)).toExist()
     })
 
     it('renders an error icon on error feedback state', () => {
-      const { select, findFeedbackIconFade } = doMount({ feedback: 'error' })
+      const { select } = doMount({ feedback: 'error' })
 
-      expect(select.find(DecorativeIcon)).toHaveProp('variant', 'error')
-      expect(findFeedbackIconFade()).toContainReact(
-        <Times copy={{ a11yText: 'The value of this input field is invalid.' }} />
-      )
+      expect(select.find(NotificationError)).toExist()
     })
 
     it('fades the feedback icon in on focus lost and out on focus gained', () => {
@@ -210,8 +205,8 @@ describe('Select', () => {
     it('hides any icons', () => {
       const { select } = doMount({ disabled: true, feedback: 'error' })
 
-      expect(select.find(Checkmark)).not.toExist()
-      expect(select.find(Times)).not.toExist()
+      expect(select.find(NotificationSuccess)).not.toExist()
+      expect(select.find(NotificationError)).not.toExist()
       expect(select.find(DecorativeIcon)).not.toExist()
     })
   })
