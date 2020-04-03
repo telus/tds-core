@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, mount } from 'enzyme'
 
-import { Checkmark, Times } from '@tds/core-feedback-icon'
+import { NotificationSuccess, NotificationError } from '@tds/core-feedback-icon'
 import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import InputFeedback from '@tds/core-input-feedback'
@@ -166,19 +166,15 @@ describe('Input', () => {
 
   describe('feedback states', () => {
     it('renders a checkmark icon on success feedback state', () => {
-      const { findFeedbackIconFade } = doMount({ feedback: 'success' })
+      const { input } = doMount({ feedback: 'success' })
 
-      expect(findFeedbackIconFade()).toContainReact(
-        <Checkmark copy={{ a11yText: 'The value of this input field is valid.' }} />
-      )
+      expect(input.find(NotificationSuccess)).toExist()
     })
 
     it('renders an error icon on error feedback state', () => {
-      const { findFeedbackIconFade } = doMount({ feedback: 'error' })
+      const { input } = doMount({ feedback: 'error' })
 
-      expect(findFeedbackIconFade()).toContainReact(
-        <Times copy={{ a11yText: 'The value of this input field is invalid.' }} />
-      )
+      expect(input.find(NotificationError)).toExist()
     })
 
     it('fades the feedback icon in on focus lost and out on focus gained', () => {
@@ -210,8 +206,8 @@ describe('Input', () => {
     it('hides any icons', () => {
       const { input } = doMount({ disabled: true, feedback: 'error' })
 
-      expect(input.find(Checkmark)).not.toExist()
-      expect(input.find(Times)).not.toExist()
+      expect(input.find(NotificationSuccess)).not.toExist()
+      expect(input.find(NotificationError)).not.toExist()
     })
   })
 

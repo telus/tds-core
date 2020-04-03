@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, mount } from 'enzyme'
 
-import { Checkmark, Times } from '@tds/core-feedback-icon'
+import { NotificationSuccess, NotificationError } from '@tds/core-feedback-icon'
 import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import InputFeedback from '@tds/core-input-feedback'
@@ -136,19 +136,15 @@ describe('TextArea', () => {
 
   describe('feedback states', () => {
     it('renders a checkmark icon on success feedback state', () => {
-      const { findFeedbackIconFade } = doMount({ feedback: 'success' })
+      const { textarea } = doMount({ feedback: 'success' })
 
-      expect(findFeedbackIconFade()).toContainReact(
-        <Checkmark copy={{ a11yText: 'The value of this input field is valid.' }} />
-      )
+      expect(textarea.find(NotificationSuccess)).toExist()
     })
 
     it('renders an error icon on error feedback state', () => {
-      const { findFeedbackIconFade } = doMount({ feedback: 'error' })
+      const { textarea } = doMount({ feedback: 'error' })
 
-      expect(findFeedbackIconFade()).toContainReact(
-        <Times copy={{ a11yText: 'The value of this input field is invalid.' }} />
-      )
+      expect(textarea.find(NotificationError)).toExist()
     })
 
     it('fades the feedback icon in on focus lost and out on focus gained', () => {
@@ -180,8 +176,8 @@ describe('TextArea', () => {
     it('hides any icons', () => {
       const { textarea } = doMount({ disabled: true, feedback: 'error' })
 
-      expect(textarea.find(Checkmark)).not.toExist()
-      expect(textarea.find(Times)).not.toExist()
+      expect(textarea.find(NotificationSuccess)).not.toExist()
+      expect(textarea.find(NotificationError)).not.toExist()
     })
   })
 
