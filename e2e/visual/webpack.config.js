@@ -55,7 +55,7 @@ module.exports = {
       },
       {
         test: /\.jsx?$/,
-        exclude: /node_modules\/(?!(@compositor\/webfont|@mdx-js\/mdx|@mdx-js\/mdxast|gray-matter)\/).*/,
+        exclude: /node_modules\/(?!(@compositor\/webfont|@mdx-js\/mdx|@mdx-js\/mdxast|gray-matter|acorn-jsx|regexpu-core|unicode-match-property-ecmascript|unicode-match-property-value-ecmascript)\/).*/,
         loader: 'babel-loader',
         options: {
           sourceType: 'unambiguous',
