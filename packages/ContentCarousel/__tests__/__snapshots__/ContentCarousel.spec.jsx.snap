@@ -403,13 +403,72 @@ Array [
 `;
 
 exports[`ContentCarousel renders 1`] = `
-.c7 {
-  margin: auto;
-  padding-bottom: 2px;
-  background-color: #fff;
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c9 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.c5 {
+  width: 100%;
+  min-height: 340px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-height: 340px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.c6 img {
+  max-width: 100%;
 }
 
 .c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c14 {
+  margin: auto;
+  padding-bottom: 2px;
+}
+
+.c15 {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -427,11 +486,11 @@ exports[`ContentCarousel renders 1`] = `
   transform: scale(1);
 }
 
-.c8:focus div {
+.c15:focus div {
   opacity: 1;
 }
 
-.c8:hover {
+.c15:hover {
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
   transform: scale(1.3);
@@ -441,11 +500,11 @@ exports[`ContentCarousel renders 1`] = `
   transform-origin: bottom;
 }
 
-.c8:hover div {
+.c15:hover div {
   opacity: 0;
 }
 
-.c8:active {
+.c15:active {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -453,7 +512,7 @@ exports[`ContentCarousel renders 1`] = `
   background-color: #71757b;
 }
 
-.c9 {
+.c16 {
   width: 1.125rem;
   height: 1.125rem;
   position: absolute;
@@ -477,12 +536,28 @@ exports[`ContentCarousel renders 1`] = `
   overflow: hidden;
 }
 
-.c3 {
+.c4 {
+  width: 100%;
   padding: 0 1.5rem;
+  z-index: 101;
+  position: relative;
 }
 
 .c2 {
+  width: 100%;
   position: absolute;
+  z-index: 99;
+  padding: 0 1.5rem;
+  -webkit-transform: translateX(-130%);
+  -ms-transform: translateX(-130%);
+  transform: translateX(-130%);
+  background-color: white;
+}
+
+.c3 {
+  width: 100%;
+  position: absolute;
+  z-index: 100;
   padding: 0 1.5rem;
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
@@ -490,12 +565,25 @@ exports[`ContentCarousel renders 1`] = `
   background-color: white;
 }
 
-.c4 {
+.c10 {
+  width: 100%;
   position: absolute;
+  z-index: 100;
   padding: 0 1.5rem;
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
+  background-color: white;
+}
+
+.c11 {
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+  padding: 0 1.5rem;
+  -webkit-transform: translateX(130%);
+  -ms-transform: translateX(130%);
+  transform: translateX(130%);
   background-color: white;
 }
 
@@ -504,9 +592,13 @@ exports[`ContentCarousel renders 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c5 {
+.c12 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -522,9 +614,10 @@ exports[`ContentCarousel renders 1`] = `
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   padding: 0 5px;
+  z-index: 101;
 }
 
-.c6 {
+.c13 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -537,21 +630,87 @@ exports[`ContentCarousel renders 1`] = `
   margin: auto;
 }
 
+.c7 {
+  height: auto;
+  max-width: 100%;
+}
+
 @media (min-width:768px) {
-  .c3 {
+  .c5 {
+    width: 100%;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    width: 50%;
+    height: 100%;
+    max-height: 100%;
+    margin-bottom: 0;
+  }
+
+  .c6 img {
+    height: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    width: 50%;
+    padding-left: 3.125rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    width: 100%;
     padding: 0 4rem;
   }
 }
 
 @media (min-width:768px) {
   .c2 {
+    width: 100%;
     padding: 0 4rem;
   }
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c3 {
+    width: 100%;
     padding: 0 4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    width: 100%;
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c11 {
+    width: 100%;
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    position: initial;
+    left: initial;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
   }
 }
 
@@ -560,43 +719,82 @@ exports[`ContentCarousel renders 1`] = `
 >
   <div
     class="c1"
-    id="itemBelt"
   >
     <div
       aria-hidden="true"
       class="c2"
-      id="decoyLeft"
-    />
-    <ul
-      class="c3"
-      data-testid="itemContainer"
-      id="itemContainer"
+      offset="1"
     />
     <div
       aria-hidden="true"
+      class="c3"
+      offset="0"
+    />
+    <ul
       class="c4"
-      id="decoyRight"
+      data-testid="itemContainer"
+    >
+      <li
+        aria-live="polite"
+        class="c5"
+        data-testid="carouselItem"
+      >
+        <div
+          class="c6"
+        >
+          <img
+            alt="Test picture"
+            class="c7"
+            height="200"
+            src="image-example.jpg"
+            width="200"
+          />
+        </div>
+        <div
+          class="c8"
+        >
+          <div
+            class="c9"
+          >
+            <p
+              data-testid="childCheck"
+            >
+              Hi 2!
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div
+      aria-hidden="true"
+      class="c10"
+      offset="0"
+    />
+    <div
+      aria-hidden="true"
+      class="c11"
+      offset="1"
     />
   </div>
   <div
-    class="c5"
+    class="c12"
   >
     <div />
   </div>
   <div
-    class="c6"
+    class="c13"
   >
     <div
-      class="c7"
+      class="c14"
     >
       <button
         aria-current="true"
         aria-label="undefined undefined 1"
-        class="c8"
+        class="c15"
         data-testid="pageDot"
       >
         <div
-          class="c9"
+          class="c16"
         />
       </button>
     </div>

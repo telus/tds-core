@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 import anime from 'animejs'
 import { useDrag } from 'react-use-gesture'
 
-import { media } from '@tds/core-responsive'
+import { media, breakpoints } from '@tds/core-responsive'
 import { safeRest, getCopy } from '@tds/util-helpers'
 import NavButton from './NavButton/NavButton'
 import Item from './Item/Item'
@@ -23,140 +23,227 @@ const CarouselContainer = styled.div({
   overflow: 'hidden',
 })
 
-const ItemContainer = styled.ul({
-  padding: '0 1.5rem',
-  ...media.from('md').css({ padding: '0 4rem' }),
-})
-
-const DecoyContainer = styled.div(({ position }) => ({
-  position: 'absolute',
-  padding: '0 1.5rem',
-  transform: position === 'right' ? 'translateX(100%)' : 'translateX(-100%)',
-  backgroundColor: 'white',
-  ...media.from('md').css({ padding: '0 4rem' }),
+const ItemContainer = styled.ul(({ variant }) => ({
+  width: variant === 'open' ? '100%' : '70%',
+  padding: variant === 'open' ? '0 1.5rem' : '0 0.5rem',
+  zIndex: 101,
+  position: 'relative',
+  ...media
+    .from('md')
+    .css({ width: '100%', padding: variant === 'open' ? '0 4rem' : '0 1.8125rem' }),
 }))
 
-const ItemBelt = styled.div({
-  display: 'flex',
-})
+const DecoyContainer = styled.div(({ position, offset, variant }) => ({
+  width: variant === 'open' ? '100%' : '70%',
+  position: 'absolute',
+  zIndex: 100 - offset,
+  padding: variant === 'open' ? '0 1.5rem' : '0 0.5rem',
+  transform:
+    position === 'right'
+      ? `translateX(${100 + 30 * offset}%)`
+      : `translateX(-${100 + 30 * offset}%)`,
+  backgroundColor: 'white',
+  opacity: variant === 'card' && 1,
+  ...media.from('md').css({
+    width: '100%',
+    padding: variant === 'open' ? '0 4rem' : '0 1.8125rem',
+    opacity: variant === 'card' && offset !== 0 && 0,
+  }),
+}))
 
-const NavButtonContainer = styled.div({
+const ItemBelt = styled.div(({ variant }) => ({
+  display: 'flex',
+  ...(variant === 'card' && { position: 'relative', left: '50%', transform: 'translateX(-33%)' }),
+  ...media.from('md').css({ position: 'initial', left: 'initial', transform: 'translateX(0%)' }),
+}))
+
+const NavButtonContainer = styled.div(({ variant }) => ({
   width: '100%',
   display: 'flex',
   justifyContent: 'space-between',
   position: 'absolute',
-  top: '50%',
+  top: variant === 'open' ? '50%' : '35%',
   transform: 'translateY(-50%)',
   padding: '0 5px',
-})
+  zIndex: 101,
+  ...media.from('xs').css({ top: '50%' }),
+}))
 const PageIndicatorContainer = styled.div({
   width: '100%',
   display: 'flex',
   justifyContent: 'space-between',
   margin: 'auto',
 })
-const ContentCarousel = ({ copy, children, ...rest }) => {
+const ContentCarousel = ({ variant, copy, children, ...rest }) => {
   const [currentPage, setCurrentPage] = useState(1)
   const totalPages = (children && children.length) || 1
+
+  const decoyRight = useRef(null)
+  const decoyLeft = useRef(null)
+  const decoyFarRight = useRef(null)
+  const decoyFarLeft = useRef(null)
+  const itemContainer = useRef(null)
+  const itemBelt = useRef(null)
 
   const switchPages = increment => {
     setCurrentPage(currentPage + increment)
   }
 
   const handleSlideTransition = (direction, increment) => {
-    const decoyRight = document.getElementById('decoyRight')
-    const decoyLeft = document.getElementById('decoyLeft')
-    const itemContainer = document.getElementById('itemContainer')
-
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
 
-    if (mediaQuery.matches) {
+    if (mediaQuery.matches && anime.running.length === 0) {
       const tl = anime.timeline({ duration: 400, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
       tl.add({
-        targets: itemContainer,
+        targets: itemContainer.current,
         opacity: 0,
         complete: () => {
           switchPages(increment || (direction === 'left' ? 1 : -1))
         },
       }).add({
-        targets: itemContainer,
+        targets: itemContainer.current,
         opacity: 1,
       })
     } else if (anime.running.length === 0) {
       const tl = anime.timeline({ duration: 602, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
 
       tl.add({
-        targets: itemContainer,
-        translateX: direction === 'right' ? ['0%', '100%'] : ['0%', '-100%'],
+        targets: itemContainer.current,
+        translateX: direction === 'left' ? ['0%', '-100%'] : ['0%', '100%'],
       })
         .add(
           {
-            targets: direction === 'left' ? decoyRight : decoyLeft,
+            targets: direction === 'right' ? decoyRight.current : decoyLeft.current,
+            translateX: direction === 'right' ? '130%' : '-130%',
+            duration: variant === 'open' ? 200 : 400,
+          },
+          0
+        )
+        .add(
+          {
+            targets: direction === 'left' ? decoyRight.current : decoyLeft.current,
             translateX: direction === 'left' ? ['100%', '0%'] : ['-100%', '0%'],
             duration: 600,
             complete: () => {
               switchPages(increment || (direction === 'left' ? 1 : -1))
             },
           },
-          0
+          variant === 'open' ? 300 : 0
         )
         .add({
-          targets: itemContainer,
+          targets: direction === 'right' ? decoyRight.current : decoyLeft.current,
+          translateX: direction === 'right' ? '100%' : '-100%',
+          duration: 1,
+        })
+        .add({
+          targets: itemContainer.current,
           translateX: '0%',
           duration: 1,
         })
         .add({
-          targets: direction === 'left' ? decoyRight : decoyLeft,
-          opacity: 0,
+          targets: direction === 'left' ? decoyRight.current : decoyLeft.current,
+          translateX: direction === 'left' ? '100%' : '-100%',
           duration: 1,
         })
-        .add({
-          targets: direction === 'left' ? decoyRight : decoyLeft,
-          translateX: '100%',
-          opacity: 1,
-          duration: 1,
-        })
+        .add(
+          {
+            targets: direction === 'left' ? decoyFarRight.current : decoyFarLeft.current,
+            translateX: [
+              {
+                value: direction === 'left' ? ['120%', '100%'] : ['-120%', '-100%'],
+                duration: 400,
+              },
+              { value: direction === 'left' ? '120%' : '-120%', delay: 500, duration: 1 },
+            ],
+          },
+          variant === 'open' ? null : 247
+        )
     }
   }
 
   const handleSlideSkip = increment => {
-    const itemBelt = document.getElementById('itemBelt')
-    const decoyRight = document.getElementById('decoyRight')
-    const decoyLeft = document.getElementById('decoyLeft')
-
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
 
-    if (mediaQuery.matches) {
+    if (mediaQuery.matche && anime.running.length === 0) {
       const tl = anime.timeline({ duration: 400, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
       tl.add({
-        targets: itemBelt,
+        targets: itemBelt.current,
         opacity: 0,
         complete: () => {
           switchPages(increment)
         },
       }).add({
-        targets: itemBelt,
+        targets: itemBelt.current,
         opacity: 1,
       })
     } else if (anime.running.length === 0) {
       if (increment > 1 || increment < -1) {
-        const tl = anime.timeline({ duration: 400, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
-        tl.add({ targets: [decoyRight, decoyLeft], opacity: 0, duration: 1 })
-          .add({
-            targets: itemBelt,
-            filter: 'blur(18px)',
-            translateX: increment > 0 ? '-100%' : '100%',
-            complete: () => {
-              switchPages(increment)
-            },
+        if (variant === 'open') {
+          const tl = anime.timeline({ duration: 400, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
+          tl.add({
+            targets: [
+              decoyRight.current,
+              decoyFarRight.current,
+              decoyLeft.current,
+              decoyFarLeft.current,
+            ],
+            ...(variant === 'open' && { opacity: 0 }),
+            duration: 1,
           })
-          .add({ targets: itemBelt, translateX: increment > 0 ? '100%' : '-100%', duration: 1 })
-          .add({
-            targets: itemBelt,
-            filter: 'blur(0px)',
-            translateX: '0%',
+            .add({
+              targets: itemBelt.current,
+              filter: 'blur(18px)',
+              translateX: increment > 0 ? '-100%' : '100%',
+              complete: () => {
+                switchPages(increment)
+              },
+            })
+            .add({
+              targets: itemBelt.current,
+              translateX: increment > 0 ? '100%' : '-100%',
+              duration: 1,
+            })
+            .add({
+              targets: itemBelt.current,
+              filter: 'blur(0px)',
+              translateX: '0%',
+            })
+            .add({ targets: [decoyRight.current, decoyLeft.current], opacity: 1 })
+        } else if (variant === 'card') {
+          const tl = anime.timeline({ duration: 250, easing: 'cubicBezier(0.8, 0, 0.55, 0.94)' })
+
+          tl.add({
+            targets: [
+              decoyRight.current,
+              decoyFarRight.current,
+              decoyLeft.current,
+              decoyFarLeft.current,
+            ],
+            opacity: 0,
+            duration: 100,
           })
-          .add({ targets: [decoyRight, decoyLeft], opacity: 1 })
+            .add({
+              targets: itemBelt.current,
+              filter: 'blur(18px)',
+              translateX: increment > 0 ? '-300%' : '300%',
+              complete: () => {
+                switchPages(increment)
+              },
+            })
+            .add({ targets: itemContainer.current, opacity: 0, duration: 400 }, 150)
+            .add({
+              targets: itemBelt.current,
+              translateX: increment > 0 ? '300%' : '-300%',
+              duration: 1,
+            })
+            .add({
+              targets: itemBelt.current,
+              filter: 'blur(0px)',
+              translateX: window.innerWidth <= breakpoints.md ? '-33%' : '0%',
+            })
+            .add({ targets: itemContainer.current, opacity: 1, duration: 400 }, '-=150')
+            .add({ targets: [decoyRight.current, decoyLeft.current], opacity: 1 })
+        }
       } else {
         handleSlideTransition(increment < 1 ? 'right' : 'left', increment)
       }
@@ -194,21 +281,115 @@ const ContentCarousel = ({ copy, children, ...rest }) => {
     }
   }
 
+  const handleResize = () => {
+    if (window.innerWidth > breakpoints.md) {
+      anime({
+        targets: itemBelt.current,
+        translateX: '0%',
+        easing: 'linear',
+        duration: 1,
+      })
+    } else {
+      anime({
+        targets: itemBelt.current,
+        translateX: '-33%',
+        easing: 'linear',
+        duration: 1,
+      })
+    }
+  }
+
   useEffect(() => {
     findImages()
+    window.addEventListener('resize', handleResize)
   })
+
+  const slideVariantStyles = {
+    open: {
+      name: 'open',
+      itemContainer: {
+        width: { desktop: '100%', mobile: '100%' },
+        maxHeight: { desktop: '480px', mobile: '' },
+      },
+      pictureContainer: {
+        width: { desktop: '', mobile: '' },
+        height: { desktop: '100%', mobile: '' },
+        maxWidth: { desktop: '100%', mobile: '100%' },
+        maxHeight: { desktop: '', mobile: '' },
+        marginBottom: { desktop: '0', mobile: '1.5rem' },
+      },
+    },
+    card: {
+      name: 'card',
+      itemContainer: {
+        width: { desktop: '100%', mobile: '60%' },
+        maxHeight: { desktop: '468px', mobile: 'initial' },
+      },
+      pictureContainer: {
+        width: { desktop: 'initial', mobile: 'auto' },
+        height: { desktop: 'initial', mobile: 'initial' },
+        maxWidth: { desktop: '85vw', mobile: '' },
+        maxHeight: { desktop: '', mobile: '' },
+        margin: { desktop: '-3rem 0 -4.125rem -2rem', mobile: '-2rem -2rem 0 -1.5rem' },
+        marginBottom: { desktop: '', mobile: '' },
+      },
+    },
+  }
 
   return (
     <CarouselContainer {...safeRest(rest)}>
-      <ItemBelt id="itemBelt" {...handleSwipeGesture()}>
-        <DecoyContainer position="left" id="decoyLeft" aria-hidden={true}>
-          {(children && children[currentPage - 2]) || ''}
+      <ItemBelt variant={variant} ref={itemBelt} {...handleSwipeGesture()}>
+        <DecoyContainer
+          position="left"
+          offset={1}
+          variant={variant}
+          ref={decoyFarLeft}
+          aria-hidden={true}
+        >
+          <ThemeProvider theme={slideVariantStyles[variant]}>
+            {(children && children[currentPage - 3]) || ''}
+          </ThemeProvider>
         </DecoyContainer>
-        <ItemContainer id="itemContainer" data-testid="itemContainer">
-          {(children && children[currentPage - 1]) || ''}
+
+        <DecoyContainer
+          position="left"
+          offset={0}
+          variant={variant}
+          ref={decoyLeft}
+          aria-hidden={true}
+        >
+          <ThemeProvider theme={slideVariantStyles[variant]}>
+            {(children && children[currentPage - 2]) || ''}
+          </ThemeProvider>
+        </DecoyContainer>
+
+        <ItemContainer variant={variant} ref={itemContainer} data-testid="itemContainer">
+          <ThemeProvider theme={slideVariantStyles[variant]}>
+            {(children && children[currentPage - 1]) || children}
+          </ThemeProvider>
         </ItemContainer>
-        <DecoyContainer position="right" id="decoyRight" aria-hidden={true}>
-          {(children && children[currentPage]) || ''}
+
+        <DecoyContainer
+          position="right"
+          offset={0}
+          variant={variant}
+          ref={decoyRight}
+          aria-hidden={true}
+        >
+          <ThemeProvider theme={slideVariantStyles[variant]}>
+            {(children && children[currentPage]) || ''}
+          </ThemeProvider>
+        </DecoyContainer>
+        <DecoyContainer
+          position="right"
+          offset={1}
+          variant={variant}
+          ref={decoyFarRight}
+          aria-hidden={true}
+        >
+          <ThemeProvider theme={slideVariantStyles[variant]}>
+            {(children && children[currentPage + 1]) || ''}
+          </ThemeProvider>
         </DecoyContainer>
       </ItemBelt>
       <NavButtonContainer>
@@ -250,7 +431,7 @@ ContentCarousel.propTypes = {
   /**
    * The carousel's style.
    */
-  variant: PropTypes.oneOf(['open']),
+  variant: PropTypes.oneOf(['open', 'card']),
   /**
    * Use the copy prop to either select provided English or French copy
    * by passing `'en'` or `'fr'` respectively.

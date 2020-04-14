@@ -14,7 +14,6 @@ import carouselText from '../carouselText'
 const IndicatorContainer = styled.div({
   margin: 'auto',
   paddingBottom: 2,
-  backgroundColor: colorWhite,
 })
 
 const Dot = styled.button(({ isCurrentPage }) => ({
