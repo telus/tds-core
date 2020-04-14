@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@2.0.28...@tds/core-price-lockup@2.1.0) (2020-04-14)
+
+
+### Features
+
+* **core-price-lockup:** add footnoteLinks prop ([cd0d1bf](https://github.com/telusdigital/tds-core/commit/cd0d1bfecea6bcd308c3e06ac7387fcc8f0017a7))
+
+
+
+
+
 ## [2.0.28](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@2.0.27...@tds/core-price-lockup@2.0.28) (2020-03-11)
 
 **Note:** Version bump only for package @tds/core-price-lockup

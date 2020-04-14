@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telusdigital/tds/compare/@tds/core-box@2.1.3...@tds/core-box@2.2.0) (2020-04-14)
+
+
+### Features
+
+* **core-box:** forward refs ([6c99104](https://github.com/telusdigital/tds/commit/6c99104b94889ad988e922bbfac681079359a241))
+
+
+
+
+
 ## [2.1.3](https://github.com/telusdigital/tds/compare/@tds/core-box@2.1.2...@tds/core-box@2.1.3) (2020-02-24)
 
 

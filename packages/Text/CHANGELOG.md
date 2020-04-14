@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](https://github.com/telusdigital/tds/compare/@tds/core-text@3.1.0...@tds/core-text@3.1.1) (2020-04-14)
+
+
+### Bug Fixes
+
+* **core-text:** export StyledText component ([11363b5](https://github.com/telusdigital/tds/commit/11363b584246994cbfac2ace0345a4ff3c37412a))
+
+
+
+
+
 # [3.1.0](https://github.com/telusdigital/tds/compare/@tds/core-text@3.0.6...@tds/core-text@3.1.0) (2020-03-11)
 
 
