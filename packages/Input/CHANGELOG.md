@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.39](https://github.com/telus/tds/compare/@tds/core-input@3.0.38...@tds/core-input@3.0.39) (2020-04-14)
+
+
+### Bug Fixes
+
+* **core-input:** update success and error icons ([b8f726f](https://github.com/telus/tds/commit/b8f726f5cc0625e8a2f7520017ddee7f86d00518))
+
+
+
+
+
 ## [3.0.38](https://github.com/telus/tds/compare/@tds/core-input@3.0.37...@tds/core-input@3.0.38) (2020-03-11)
 
 **Note:** Version bump only for package @tds/core-input
