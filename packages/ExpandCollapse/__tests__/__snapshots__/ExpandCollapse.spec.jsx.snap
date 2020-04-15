@@ -1529,13 +1529,16 @@ exports[`ExpandCollapse empty panels renders 1`] = `
           >
             <div
               data-testid="home-service-billing"
+              id="home-service-billing"
             >
               <Styled(Box)
+                inline={false}
                 style={
                   Object {
                     "marginLeft": "1.5rem",
                   }
                 }
+                tag="div"
                 vertical={3}
               >
                 <StyledComponent
@@ -1551,22 +1554,70 @@ exports[`ExpandCollapse empty panels renders 1`] = `
                           "margin-left: 1.5rem;",
                         ],
                       },
+                      "defaultProps": Object {
+                        "below": undefined,
+                        "between": undefined,
+                        "className": undefined,
+                        "horizontal": undefined,
+                        "inline": false,
+                        "inset": undefined,
+                        "tag": "div",
+                        "vertical": undefined,
+                      },
                       "displayName": "Styled(Box)",
                       "foldedComponentIds": Array [],
+                      "propTypes": Object {
+                        "below": [Function],
+                        "between": [Function],
+                        "children": [Function],
+                        "className": [Function],
+                        "horizontal": [Function],
+                        "inline": [Function],
+                        "inset": [Function],
+                        "tag": [Function],
+                        "vertical": [Function],
+                      },
                       "render": [Function],
                       "styledComponentId": "sc-bwzfXH",
-                      "target": [Function],
+                      "target": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "defaultProps": Object {
+                          "below": undefined,
+                          "between": undefined,
+                          "className": undefined,
+                          "horizontal": undefined,
+                          "inline": false,
+                          "inset": undefined,
+                          "tag": "div",
+                          "vertical": undefined,
+                        },
+                        "displayName": "Box",
+                        "propTypes": Object {
+                          "below": [Function],
+                          "between": [Function],
+                          "children": [Function],
+                          "className": [Function],
+                          "horizontal": [Function],
+                          "inline": [Function],
+                          "inset": [Function],
+                          "tag": [Function],
+                          "vertical": [Function],
+                        },
+                        "render": [Function],
+                      },
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
                   }
                   forwardedRef={null}
+                  inline={false}
                   style={
                     Object {
                       "marginLeft": "1.5rem",
                     }
                   }
+                  tag="div"
                   vertical={3}
                 >
                   <Box
