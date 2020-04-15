@@ -115,6 +115,7 @@ The following group are the active maintainers of this project, and have merge r
     <td align="center"><a href="https://github.com/hamedmam"><img src="https://avatars1.githubusercontent.com/u/24867760?v=4" width="100px;" alt="Hamed Mamdoohi"/><br /><sub><b>Hamed Mamdoohi</b></sub></a><br /><a href="#tds-hamedmam" title=""></a></td>
     <td align="center"><a href="https://github.com/DougTelus"><img src="https://avatars3.githubusercontent.com/u/32107656?v=4" width="100px;" alt="DougL"/><br /><sub><b>DougL</b></sub></a><br /><a href="#tds-DougTelus" title=""></a></td>
     <td align="center"><a href="https://iamstuartwilson.com"><img src="https://avatars1.githubusercontent.com/u/3594817?v=4" width="100px;" alt="Stuart Wilson"/><br /><sub><b>Stuart Wilson</b></sub></a><br /><a href="#tds-iamstuartwilson" title=""></a></td>
+    <td align="center"><a href="https://github.com/mburtch"><img src="https://avatars1.githubusercontent.com/u/93336?v=4" width="100px;" alt="mburtch"/><br /><sub><b>mburtch</b></sub></a><br /><a href="#tds-mburtch" title=""></a></td>
   </tr>
 </table>
 
