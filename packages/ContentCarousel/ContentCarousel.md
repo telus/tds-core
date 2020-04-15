@@ -68,12 +68,9 @@ Though the `ContentCarousel` has been built with many accessibility consideratio
     <Paragraph bold>Mobility for Good</Paragraph>
     <Heading level="h2">Helping youth achieve independence</Heading>
     <Paragraph>
-      For youth leaving foster care, their phone can be their lifeline, helping them build credit,
-      search for somewhere to live, find education and job opportunities, and stay in touch with
-      friends and vital support networks. A collaboration between TELUS and Children’s Aid
-      Foundation of Canada (CAFC) and select Centre de Jeunesse Foundations, Mobility for GoodTM
-      helps these kids achieve independence by providing them with a free phone and a $0 plan,
-      including 3 GB of data for two years.
+      A collaboration between TELUS and Children’s Aid Foundation of Canada (CAFC) and select Centre
+      de Jeunesse Foundations, Mobility for GoodTM helps these kids achieve independence by
+      providing them with a free phone and a $0 plan, including 3 GB of data for two years.
     </Paragraph>
   </ContentCarousel.Item>
   <ContentCarousel.Item
@@ -91,12 +88,7 @@ Though the `ContentCarousel` has been built with many accessibility consideratio
     <Heading level="h2">Ensuring digital accessibility for everyone</Heading>
     <Paragraph>
       Promoting inclusion and accessibility within our workplace and the communities in which we
-      serve is important to us. So is providing inclusive access to our products, services and
-      solutions for persons of all abilities. Through our Tech for GoodTM program, TELUS customers
-      with disabilities who require assistive technology such as additional hardware or software to
-      independently use their smartphone or tablet can receive specialized assistance, tools and
-      training. In some cases, we also offer financial assistance to help cover the cost of
-      assistive technology*.
+      serve is important to us.
     </Paragraph>
   </ContentCarousel.Item>
   <ContentCarousel.Item
@@ -113,11 +105,6 @@ Though the `ContentCarousel` has been built with many accessibility consideratio
     <Heading level="h2">Connecting families in need</Heading>
     <Paragraph>
       Having access to reliable internet is increasingly important in today’s interconnected world.
-      But for less fortunate families, it can still be a struggle. 42% of low-income homes don’t
-      have internet. Internet for GoodTM is an innovative partnership between TELUS, the British
-      Columbia Ministry of Social Development and Poverty Reduction, and the Ministry of Community
-      and Social Services in Alberta that provides eligible families with the tools and connectivity
-      they need to succeed.
     </Paragraph>
   </ContentCarousel.Item>
 </ContentCarousel>
@@ -133,12 +120,9 @@ Though the `ContentCarousel` has been built with many accessibility consideratio
     <Paragraph bold>Mobility for Good</Paragraph>
     <Heading level="h2">Helping youth achieve independence</Heading>
     <Paragraph>
-      For youth leaving foster care, their phone can be their lifeline, helping them build credit,
-      search for somewhere to live, find education and job opportunities, and stay in touch with
-      friends and vital support networks. A collaboration between TELUS and Children’s Aid
-      Foundation of Canada (CAFC) and select Centre de Jeunesse Foundations, Mobility for GoodTM
-      helps these kids achieve independence by providing them with a free phone and a $0 plan,
-      including 3 GB of data for two years.
+      A collaboration between TELUS and Children’s Aid Foundation of Canada (CAFC) and select Centre
+      de Jeunesse Foundations, Mobility for GoodTM helps these kids achieve independence by
+      providing them with a free phone and a $0 plan, including 3 GB of data for two years.
     </Paragraph>
   </ContentCarousel.Item>
   <ContentCarousel.Item
@@ -156,12 +140,7 @@ Though the `ContentCarousel` has been built with many accessibility consideratio
     <Heading level="h2">Ensuring digital accessibility for everyone</Heading>
     <Paragraph>
       Promoting inclusion and accessibility within our workplace and the communities in which we
-      serve is important to us. So is providing inclusive access to our products, services and
-      solutions for persons of all abilities. Through our Tech for GoodTM program, TELUS customers
-      with disabilities who require assistive technology such as additional hardware or software to
-      independently use their smartphone or tablet can receive specialized assistance, tools and
-      training. In some cases, we also offer financial assistance to help cover the cost of
-      assistive technology*.
+      serve is important to us.
     </Paragraph>
   </ContentCarousel.Item>
   <ContentCarousel.Item
@@ -178,11 +157,6 @@ Though the `ContentCarousel` has been built with many accessibility consideratio
     <Heading level="h2">Connecting families in need</Heading>
     <Paragraph>
       Having access to reliable internet is increasingly important in today’s interconnected world.
-      But for less fortunate families, it can still be a struggle. 42% of low-income homes don’t
-      have internet. Internet for GoodTM is an innovative partnership between TELUS, the British
-      Columbia Ministry of Social Development and Poverty Reduction, and the Ministry of Community
-      and Social Services in Alberta that provides eligible families with the tools and connectivity
-      they need to succeed.
     </Paragraph>
   </ContentCarousel.Item>
 </ContentCarousel>
@@ -208,12 +182,9 @@ It's possible to change the side the `Image` supplied through the `picture` prop
     <Paragraph bold>Mobility for Good</Paragraph>
     <Heading level="h2">Helping youth achieve independence</Heading>
     <Paragraph>
-      For youth leaving foster care, their phone can be their lifeline, helping them build credit,
-      search for somewhere to live, find education and job opportunities, and stay in touch with
-      friends and vital support networks. A collaboration between TELUS and Children’s Aid
-      Foundation of Canada (CAFC) and select Centre de Jeunesse Foundations, Mobility for GoodTM
-      helps these kids achieve independence by providing them with a free phone and a $0 plan,
-      including 3 GB of data for two years.
+      A collaboration between TELUS and Children’s Aid Foundation of Canada (CAFC) and select Centre
+      de Jeunesse Foundations, Mobility for GoodTM helps these kids achieve independence by
+      providing them with a free phone and a $0 plan, including 3 GB of data for two years.
     </Paragraph>
   </ContentCarousel.Item>
   <ContentCarousel.Item
@@ -231,12 +202,7 @@ It's possible to change the side the `Image` supplied through the `picture` prop
     <Heading level="h2">Ensuring digital accessibility for everyone</Heading>
     <Paragraph>
       Promoting inclusion and accessibility within our workplace and the communities in which we
-      serve is important to us. So is providing inclusive access to our products, services and
-      solutions for persons of all abilities. Through our Tech for GoodTM program, TELUS customers
-      with disabilities who require assistive technology such as additional hardware or software to
-      independently use their smartphone or tablet can receive specialized assistance, tools and
-      training. In some cases, we also offer financial assistance to help cover the cost of
-      assistive technology*.
+      serve is important to us.
     </Paragraph>
   </ContentCarousel.Item>
   <ContentCarousel.Item
@@ -254,11 +220,6 @@ It's possible to change the side the `Image` supplied through the `picture` prop
     <Heading level="h2">Connecting families in need</Heading>
     <Paragraph>
       Having access to reliable internet is increasingly important in today’s interconnected world.
-      But for less fortunate families, it can still be a struggle. 42% of low-income homes don’t
-      have internet. Internet for GoodTM is an innovative partnership between TELUS, the British
-      Columbia Ministry of Social Development and Poverty Reduction, and the Ministry of Community
-      and Social Services in Alberta that provides eligible families with the tools and connectivity
-      they need to succeed.
     </Paragraph>
   </ContentCarousel.Item>
 </ContentCarousel>

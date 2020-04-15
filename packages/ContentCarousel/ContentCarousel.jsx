@@ -16,12 +16,20 @@ import carouselText from './carouselText'
  * @version ./package.json
  */
 
-const CarouselContainer = styled.div({
+const CarouselContainer = styled.div(({ tallestHeight }) => ({
   width: '100%',
-  height: '100%',
+  height: `calc(${tallestHeight}px + 3rem)`,
   position: 'relative',
   overflow: 'hidden',
-})
+  ...media
+    .from('md')
+    .until('xl')
+    .css({ height: `calc(${tallestHeight}px + 3rem)` }),
+  ...media
+    .from('sm')
+    .until('md')
+    .css({ height: `calc(${tallestHeight}px + 2rem)` }),
+}))
 
 const ItemContainer = styled.ul(({ variant }) => ({
   width: variant === 'open' ? '100%' : '70%',
@@ -51,10 +59,30 @@ const DecoyContainer = styled.div(({ position, offset, variant }) => ({
   }),
 }))
 
-const ItemBelt = styled.div(({ variant }) => ({
+const ItemBelt = styled.div(({ variant, heightBelt }) => ({
   display: 'flex',
-  ...(variant === 'card' && { position: 'relative', left: '50%', transform: 'translateX(-33%)' }),
-  ...media.from('md').css({ position: 'initial', left: 'initial', transform: 'translateX(0%)' }),
+  ...(variant === 'card' &&
+    !heightBelt && { position: 'relative', left: '50%', transform: 'translateX(-33%)' }),
+  ...(heightBelt && {
+    width: '100%',
+    position: 'absolute',
+    opacity: 0,
+    top: 999999,
+    left: 990999,
+    pointerEvents: 'none',
+    marginBottom: '1rem',
+    ...media.from('md').css({ marginBottom: '3rem' }),
+  }),
+  ...media.from('md').css({
+    ...(heightBelt && {
+      width: 'initial',
+      height: 'initial',
+      transform: 'initial',
+    }),
+    position: 'initial',
+    left: 'initial',
+    transform: 'translateX(0%)',
+  }),
 }))
 
 const NavButtonContainer = styled.div(({ variant }) => ({
@@ -73,10 +101,14 @@ const PageIndicatorContainer = styled.div({
   display: 'flex',
   justifyContent: 'space-between',
   margin: 'auto',
+  position: 'absolute',
+  bottom: 0,
 })
 const ContentCarousel = ({ variant, copy, children, ...rest }) => {
   const [currentPage, setCurrentPage] = useState(1)
   const totalPages = (children && children.length) || 1
+
+  const [tallestHeight, setTallestHeight] = useState('auto')
 
   const decoyRight = useRef(null)
   const decoyLeft = useRef(null)
@@ -84,9 +116,44 @@ const ContentCarousel = ({ variant, copy, children, ...rest }) => {
   const decoyFarLeft = useRef(null)
   const itemContainer = useRef(null)
   const itemBelt = useRef(null)
+  const heightBelt = useRef(null)
 
   const switchPages = increment => {
     setCurrentPage(currentPage + increment)
+  }
+
+  const slideVariantStyles = {
+    open: {
+      name: 'open',
+      itemContainer: {
+        width: { desktop: '100%', mobile: '100%' },
+        height: { desktop: 'inherit', mobile: 'inherit' },
+        maxHeight: { desktop: '480px', mobile: '' },
+      },
+      pictureContainer: {
+        width: { desktop: '', mobile: '' },
+        height: { desktop: '100%', mobile: '' },
+        maxWidth: { desktop: '100%', mobile: '100%' },
+        maxHeight: { desktop: '', mobile: '' },
+        marginBottom: { desktop: '0', mobile: '1.5rem' },
+      },
+    },
+    card: {
+      name: 'card',
+      itemContainer: {
+        width: { desktop: '100%', mobile: '60%' },
+        height: { desktop: 'inherit', mobile: `calc(${tallestHeight}px - 5rem)` },
+        maxHeight: { desktop: '468px', mobile: 'initial' },
+      },
+      pictureContainer: {
+        width: { desktop: 'initial', mobile: 'auto' },
+        height: { desktop: 'initial', mobile: 'initial' },
+        maxWidth: { desktop: '55vw', mobile: '' },
+        maxHeight: { desktop: '480px', mobile: '' },
+        margin: { desktop: '-3rem 0 -4.125rem -2rem', mobile: '-2rem -2rem 0 -1.5rem' },
+        marginBottom: { desktop: '', mobile: '' },
+      },
+    },
   }
 
   const handleSlideTransition = (direction, increment) => {
@@ -281,7 +348,20 @@ const ContentCarousel = ({ variant, copy, children, ...rest }) => {
     }
   }
 
+  const getTallest = () => {
+    let winner = 0
+    for (let i = 0; i < totalPages; i += 1) {
+      const height =
+        heightBelt.current.children && heightBelt.current.children[0].children[i].clientHeight
+      if (height > winner) {
+        winner = height
+      }
+    }
+    return winner
+  }
+
   const handleResize = () => {
+    setTallestHeight(getTallest())
     if (window.innerWidth > breakpoints.md) {
       anime({
         targets: itemBelt.current,
@@ -289,55 +369,32 @@ const ContentCarousel = ({ variant, copy, children, ...rest }) => {
         easing: 'linear',
         duration: 1,
       })
-    } else {
+    } else if (variant === 'card') {
       anime({
         targets: itemBelt.current,
-        translateX: '-33%',
+        translateX: '-35%',
         easing: 'linear',
         duration: 1,
       })
     }
   }
 
+  const generateHeightBelt = () =>
+    React.createElement(
+      ItemContainer,
+      { variant },
+      React.Children.map(children, child => React.cloneElement(child, { variant }))
+    )
+
   useEffect(() => {
     findImages()
+    handleResize()
     window.addEventListener('resize', handleResize)
-  })
-
-  const slideVariantStyles = {
-    open: {
-      name: 'open',
-      itemContainer: {
-        width: { desktop: '100%', mobile: '100%' },
-        maxHeight: { desktop: '480px', mobile: '' },
-      },
-      pictureContainer: {
-        width: { desktop: '', mobile: '' },
-        height: { desktop: '100%', mobile: '' },
-        maxWidth: { desktop: '100%', mobile: '100%' },
-        maxHeight: { desktop: '', mobile: '' },
-        marginBottom: { desktop: '0', mobile: '1.5rem' },
-      },
-    },
-    card: {
-      name: 'card',
-      itemContainer: {
-        width: { desktop: '100%', mobile: '60%' },
-        maxHeight: { desktop: '468px', mobile: 'initial' },
-      },
-      pictureContainer: {
-        width: { desktop: 'initial', mobile: 'auto' },
-        height: { desktop: 'initial', mobile: 'initial' },
-        maxWidth: { desktop: '85vw', mobile: '' },
-        maxHeight: { desktop: '', mobile: '' },
-        margin: { desktop: '-3rem 0 -4.125rem -2rem', mobile: '-2rem -2rem 0 -1.5rem' },
-        marginBottom: { desktop: '', mobile: '' },
-      },
-    },
-  }
-
+    setTallestHeight(getTallest())
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []) // Behaves like componentDidMount
   return (
-    <CarouselContainer {...safeRest(rest)}>
+    <CarouselContainer tallestHeight={tallestHeight} {...safeRest(rest)}>
       <ItemBelt variant={variant} ref={itemBelt} {...handleSwipeGesture()}>
         <DecoyContainer
           position="left"
@@ -423,6 +480,16 @@ const ContentCarousel = ({ variant, copy, children, ...rest }) => {
           copy={copy}
         />
       </PageIndicatorContainer>
+
+      <ItemBelt
+        heightBelt
+        variant={variant}
+        ref={heightBelt}
+        aira-hidden={true}
+        {...handleSwipeGesture()}
+      >
+        <ThemeProvider theme={slideVariantStyles[variant]}>{generateHeightBelt()}</ThemeProvider>
+      </ItemBelt>
     </CarouselContainer>
   )
 }

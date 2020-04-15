@@ -65,14 +65,14 @@ Array [
 
 <PageIndicator__Dot
     aria-current={true}
-    aria-label="undefined undefined 1"
+    aria-label="go to slide 1"
     data-testid="pageDot"
     isCurrentPage={true}
     onClick={[Function]}
   >
     <StyledComponent
       aria-current={true}
-      aria-label="undefined undefined 1"
+      aria-label="go to slide 1"
       data-testid="pageDot"
       forwardedComponent={
         Object {
@@ -102,7 +102,7 @@ Array [
     >
       <button
         aria-current={true}
-        aria-label="undefined undefined 1"
+        aria-label="go to slide 1"
         className="c0"
         data-testid="pageDot"
         onClick={[Function]}
@@ -213,7 +213,7 @@ Array [
 
 <StyledComponent
     aria-current={true}
-    aria-label="undefined undefined 1"
+    aria-label="go to slide 1"
     data-testid="pageDot"
     forwardedComponent={
       Object {
@@ -243,7 +243,7 @@ Array [
   >
     <button
       aria-current={true}
-      aria-label="undefined undefined 1"
+      aria-label="go to slide 1"
       className="c0"
       data-testid="pageDot"
       onClick={[Function]}
@@ -353,7 +353,7 @@ Array [
 
 <button
     aria-current={true}
-    aria-label="undefined undefined 1"
+    aria-label="go to slide 1"
     className="c0"
     data-testid="pageDot"
     onClick={[Function]}
@@ -419,6 +419,7 @@ exports[`ContentCarousel renders 1`] = `
 
 .c5 {
   width: 100%;
+  height: inherit;
   min-height: 340px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -531,7 +532,7 @@ exports[`ContentCarousel renders 1`] = `
 
 .c0 {
   width: 100%;
-  height: 100%;
+  height: calc(autopx + 3rem);
   position: relative;
   overflow: hidden;
 }
@@ -594,6 +595,20 @@ exports[`ContentCarousel renders 1`] = `
   display: flex;
 }
 
+.c17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  top: 999999px;
+  left: 990999px;
+  pointer-events: none;
+  margin-bottom: 1rem;
+}
+
 .c12 {
   width: 100%;
   display: -webkit-box;
@@ -624,6 +639,8 @@ exports[`ContentCarousel renders 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: auto;
+  position: absolute;
+  bottom: 0;
 }
 
 .c7 {
@@ -634,6 +651,7 @@ exports[`ContentCarousel renders 1`] = `
 @media (min-width:768px) {
   .c5 {
     width: 100%;
+    height: inherit;
     max-height: 480px;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -663,6 +681,18 @@ exports[`ContentCarousel renders 1`] = `
   .c8 {
     width: 50%;
     padding-left: 3.125rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+  .c0 {
+    height: calc(autopx + 3rem);
+  }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+  .c0 {
+    height: calc(autopx + 2rem);
   }
 }
 
@@ -708,6 +738,18 @@ exports[`ContentCarousel renders 1`] = `
     -webkit-transform: translateX(0%);
     -ms-transform: translateX(0%);
     transform: translateX(0%);
+  }
+}
+
+@media (min-width:768px) {
+  .c17 {
+    width: initial;
+    height: initial;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    position: initial;
+    left: initial;
   }
 }
 
@@ -786,7 +828,7 @@ exports[`ContentCarousel renders 1`] = `
     >
       <button
         aria-current="true"
-        aria-label="undefined undefined 1"
+        aria-label="go to slide 1"
         class="c15"
         data-testid="pageDot"
       >
@@ -795,6 +837,44 @@ exports[`ContentCarousel renders 1`] = `
         />
       </button>
     </div>
+  </div>
+  <div
+    class="c17"
+  >
+    <ul
+      class="c4"
+    >
+      <li
+        aria-live="polite"
+        class="c5"
+        data-testid="carouselItem"
+      >
+        <div
+          class="c6"
+        >
+          <img
+            alt="Test picture"
+            class="c7"
+            height="200"
+            src="image-example.jpg"
+            width="200"
+          />
+        </div>
+        <div
+          class="c8"
+        >
+          <div
+            class="c9"
+          >
+            <p
+              data-testid="childCheck"
+            >
+              Hi 2!
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
 </div>
 `;

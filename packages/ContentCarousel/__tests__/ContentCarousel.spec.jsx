@@ -6,7 +6,7 @@ import Item from '../Item/Item'
 import Image from '../../Image'
 
 describe('ContentCarousel', () => {
-  const doShallow = (props = {}) =>
+  const doShallow = (props = { copy: 'en' }) =>
     shallow(
       <ContentCarousel {...props}>
         <Item
@@ -16,7 +16,7 @@ describe('ContentCarousel', () => {
         </Item>
       </ContentCarousel>
     )
-  const doMount = (props = {}) =>
+  const doMount = (props = { copy: 'en' }) =>
     mount(
       <ContentCarousel {...props}>
         <Item
@@ -30,7 +30,7 @@ describe('ContentCarousel', () => {
 
   it('renders', () => {
     const contentCarousel = render(
-      <ContentCarousel>
+      <ContentCarousel copy="en">
         <Item
           picture={<Image src="image-example.jpg" width={200} height={200} alt="Test picture" />}
         >

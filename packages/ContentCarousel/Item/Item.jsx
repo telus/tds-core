@@ -14,6 +14,7 @@ import Card from '@tds/core-card'
 
 const ItemContainer = styled.li(({ pictureSide, theme }) => ({
   width: '100%',
+  height: theme.itemContainer && theme.itemContainer.height.mobile,
   minHeight: '340px',
   maxHeight: theme.itemContainer && theme.itemContainer.maxHeight.mobile,
   display: 'flex',
@@ -21,6 +22,7 @@ const ItemContainer = styled.li(({ pictureSide, theme }) => ({
   marginBottom: '1rem',
   ...media.from('md').css({
     width: theme.itemContainer && theme.itemContainer.width.desktop,
+    height: theme.itemContainer && theme.itemContainer.height.desktop,
     maxHeight: theme.itemContainer && theme.itemContainer.maxHeight.desktop,
     flexDirection: pictureSide === 'left' ? 'row' : 'row-reverse',
     alignItems: 'center',
