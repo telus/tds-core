@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telus/tds-core/compare/@tds/core-expand-collapse@2.1.0...@tds/core-expand-collapse@2.2.0) (2020-04-15)
+
+
+### Features
+
+* **core-expand-collapse:** add support for childless panels ([0b5b5f9](https://github.com/telus/tds-core/commit/0b5b5f9fe630ba47a31b103e9e09fe6a2caafc6c))
+
+
+
+
+
 # [2.1.0](https://github.com/telus/tds-core/compare/@tds/core-expand-collapse@2.0.39...@tds/core-expand-collapse@2.1.0) (2020-04-15)
 
 
