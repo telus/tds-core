@@ -34,7 +34,7 @@ const CartesianAll = () => (
         ],
         [
           <ExpandCollapse.Panel id="features" header="Features">
-            {`Connected GPS - Connect to your phone's GPS to see real-time run stats.`}
+            Connected GPS - Connect to your phone&apos;s GPS to see real-time run stats.
           </ExpandCollapse.Panel>,
           <ExpandCollapse.Panel id="specs" header="Specs" />,
         ],
@@ -55,7 +55,7 @@ const CartesianAll = () => (
         ],
         [
           <ExpandCollapse.Panel id="features" header="Features">
-            {`Connected GPS - Connect to your phone's GPS to see real-time run stats.`}
+            Connected GPS - Connect to your phone&apos;s GPS to see real-time run stats.
           </ExpandCollapse.Panel>,
           <ExpandCollapse.Panel id="specs" header="Specs" />,
         ],
