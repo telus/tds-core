@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-expand-collapse",
-  "version": "2.0.39",
+  "version": "2.1.0",
   "description": "A connected series of expandable content areas",
   "main": "index.cjs.js",
   "module": "index.es.js",

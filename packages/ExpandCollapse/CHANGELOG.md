@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telus/tds-core/compare/@tds/core-expand-collapse@2.0.39...@tds/core-expand-collapse@2.1.0) (2020-04-15)
+
+
+### Features
+
+* **core-expand-collapse:** render id attribute on panels ([548fb3e](https://github.com/telus/tds-core/commit/548fb3ee12a8a76983d9a95d25776ed6462cfdce))
+
+
+
+
+
 ## [2.0.39](https://github.com/telus/tds-core/compare/@tds/core-expand-collapse@2.0.38...@tds/core-expand-collapse@2.0.39) (2020-04-14)
 
 **Note:** Version bump only for package @tds/core-expand-collapse
