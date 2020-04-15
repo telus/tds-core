@@ -242,7 +242,7 @@ const ContentCarousel = ({ variant, copy, children, ...rest }) => {
               translateX: window.innerWidth <= breakpoints.md ? '-33%' : '0%',
             })
             .add({ targets: itemContainer.current, opacity: 1, duration: 400 }, '-=150')
-            .add({ targets: [decoyRight.current, decoyLeft.current], opacity: 1 })
+            .add({ targets: [decoyRight.current, decoyLeft.current], opacity: 1 }, '-=200')
         }
       } else {
         handleSlideTransition(increment < 1 ? 'right' : 'left', increment)

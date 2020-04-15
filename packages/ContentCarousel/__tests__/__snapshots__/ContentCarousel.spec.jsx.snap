@@ -440,9 +440,9 @@ exports[`ContentCarousel renders 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   max-height: 340px;
+  overflow: hidden;
   width: 100%;
   margin-bottom: 1.5rem;
-  overflow: hidden;
 }
 
 .c6 img {
@@ -592,10 +592,6 @@ exports[`ContentCarousel renders 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c12 {
@@ -638,6 +634,7 @@ exports[`ContentCarousel renders 1`] = `
 @media (min-width:768px) {
   .c5 {
     width: 100%;
+    max-height: 480px;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
