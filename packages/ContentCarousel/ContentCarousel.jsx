@@ -33,7 +33,7 @@ const CarouselContainer = styled.div(({ tallestHeight }) => ({
 
 const ItemContainer = styled.ul(({ variant }) => ({
   width: variant === 'open' ? '100%' : '70%',
-  padding: variant === 'open' ? '0 1.5rem' : '0 0.5rem',
+  padding: variant === 'open' ? '0 2rem' : '0 0.5rem',
   zIndex: 101,
   position: 'relative',
   ...media
@@ -45,7 +45,7 @@ const DecoyContainer = styled.div(({ position, offset, variant }) => ({
   width: variant === 'open' ? '100%' : '70%',
   position: 'absolute',
   zIndex: 100 - offset,
-  padding: variant === 'open' ? '0 1.5rem' : '0 0.5rem',
+  padding: variant === 'open' ? '0 2rem' : '0 0.5rem',
   transform:
     position === 'right'
       ? `translateX(${100 + 30 * offset}%)`
@@ -90,11 +90,12 @@ const NavButtonContainer = styled.div(({ variant }) => ({
   display: 'flex',
   justifyContent: 'space-between',
   position: 'absolute',
+  padding: 0,
   top: variant === 'open' ? '50%' : '35%',
   transform: 'translateY(-50%)',
-  padding: '0 5px',
   zIndex: 101,
   ...media.from('xs').css({ top: '50%' }),
+  ...media.from('md').css({ padding: '0 5px' }),
 }))
 const PageIndicatorContainer = styled.div({
   width: '100%',
