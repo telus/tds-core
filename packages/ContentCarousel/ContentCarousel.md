@@ -60,7 +60,7 @@ Though the `ContentCarousel` has been built with many accessibility consideratio
 - Images have an appropriate alt text in both English and French
 - Content can be navigated and read by using assistive technologies
 
-```jsx
+```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
 <ContentCarousel copy="en">
   <ContentCarousel.Item
     picture={<Image src="carousel-example-1.jpg" width={1168} height={876} alt="Woman smiling" />}
@@ -112,7 +112,7 @@ Though the `ContentCarousel` has been built with many accessibility consideratio
 
 ## Card Variant
 
-```jsx
+```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
 <ContentCarousel copy="en" variant="card">
   <ContentCarousel.Item
     picture={<Image src="carousel-example-1.jpg" width={1168} height={876} alt="Woman smiling" />}
@@ -166,7 +166,7 @@ Though the `ContentCarousel` has been built with many accessibility consideratio
 
 It's possible to change the side the `Image` supplied through the `picture` prop appears on in each slide. This is accomplished by providing either the directions `"left"` or `"right"` to the `pictureSide` prop.
 
-```jsx
+```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
 <ContentCarousel copy="en">
   <ContentCarousel.Item
     picture={
