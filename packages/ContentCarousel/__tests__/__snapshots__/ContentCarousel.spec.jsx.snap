@@ -539,7 +539,7 @@ exports[`ContentCarousel renders 1`] = `
 
 .c4 {
   width: 100%;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   z-index: 101;
   position: relative;
 }
@@ -548,7 +548,7 @@ exports[`ContentCarousel renders 1`] = `
   width: 100%;
   position: absolute;
   z-index: 99;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   -webkit-transform: translateX(-130%);
   -ms-transform: translateX(-130%);
   transform: translateX(-130%);
@@ -559,7 +559,7 @@ exports[`ContentCarousel renders 1`] = `
   width: 100%;
   position: absolute;
   z-index: 100;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
@@ -570,7 +570,7 @@ exports[`ContentCarousel renders 1`] = `
   width: 100%;
   position: absolute;
   z-index: 100;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
@@ -581,7 +581,7 @@ exports[`ContentCarousel renders 1`] = `
   width: 100%;
   position: absolute;
   z-index: 99;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   -webkit-transform: translateX(130%);
   -ms-transform: translateX(130%);
   transform: translateX(130%);
@@ -620,11 +620,11 @@ exports[`ContentCarousel renders 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: absolute;
+  padding: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  padding: 0 5px;
   z-index: 101;
 }
 
@@ -700,6 +700,7 @@ exports[`ContentCarousel renders 1`] = `
   .c4 {
     width: 100%;
     padding: 0 4rem;
+    box-sizing: border-box;
   }
 }
 
@@ -707,6 +708,7 @@ exports[`ContentCarousel renders 1`] = `
   .c2 {
     width: 100%;
     padding: 0 4rem;
+    box-sizing: border-box;
   }
 }
 
@@ -714,6 +716,7 @@ exports[`ContentCarousel renders 1`] = `
   .c3 {
     width: 100%;
     padding: 0 4rem;
+    box-sizing: border-box;
   }
 }
 
@@ -721,6 +724,7 @@ exports[`ContentCarousel renders 1`] = `
   .c10 {
     width: 100%;
     padding: 0 4rem;
+    box-sizing: border-box;
   }
 }
 
@@ -728,6 +732,7 @@ exports[`ContentCarousel renders 1`] = `
   .c11 {
     width: 100%;
     padding: 0 4rem;
+    box-sizing: border-box;
   }
 }
 
@@ -750,6 +755,12 @@ exports[`ContentCarousel renders 1`] = `
     transform: translateX(0%);
     position: initial;
     left: initial;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 {
+    padding: 0 5px;
   }
 }
 
