@@ -63,20 +63,18 @@ Though the `ContentCarousel` has been built with many accessibility consideratio
 ```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
 <ContentCarousel copy="en">
   <ContentCarousel.Item
-    picture={<Image src="carousel-example-1.jpg" width={1168} height={876} alt="Woman smiling" />}
+    picture={<Image src="carousel-nature.png" width={1168} height={876} alt="Woman smiling" />}
   >
-    <Paragraph bold>Mobility for Good</Paragraph>
-    <Heading level="h2">Helping youth achieve independence</Heading>
+    <Heading level="h2">Get a FREE 55" Samsung 4K HDR Smart TV.</Heading>
     <Paragraph>
-      A collaboration between TELUS and Children’s Aid Foundation of Canada (CAFC) and select Centre
-      de Jeunesse Foundations, Mobility for GoodTM helps these kids achieve independence by
-      providing them with a free phone and a $0 plan, including 3 GB of data for two years.
+      Get a FREE 55" Samsung 4K HDR Smart TV when you order Internet and Optik TV on a 2 year term.
+      Plus, get a $300 bill credit (including tax) when you order online.
     </Paragraph>
   </ContentCarousel.Item>
   <ContentCarousel.Item
     picture={
       <Image
-        src="carousel-example-2.jpg"
+        src="carousel-rewards.png"
         width={1168}
         height={876}
         alt="Child interacting with acessible technology while mother watches"
@@ -84,27 +82,28 @@ Though the `ContentCarousel` has been built with many accessibility consideratio
     }
     pictureSide="right"
   >
-    <Paragraph bold>Tech for Good</Paragraph>
-    <Heading level="h2">Ensuring digital accessibility for everyone</Heading>
+    <Heading level="h2">
+      Save up to $1080 when you sign up for Optik TV and Internet on a 2 year term.
+    </Heading>
     <Paragraph>
-      Promoting inclusion and accessibility within our workplace and the communities in which we
-      serve is important to us.
+      Sign up for 2 years and save BIG on your first 24 months. Plus get a $300 credit (including
+      tax) when you order online.
     </Paragraph>
   </ContentCarousel.Item>
   <ContentCarousel.Item
     picture={
       <Image
-        src="carousel-example-3.jpg"
+        src="carousel-stevie-macaw.png"
         width={1168}
         height={876}
         alt="Two women smiling, sitting on a couch behind bouqet of flowers"
       />
     }
   >
-    <Paragraph bold>Internet for Good</Paragraph>
-    <Heading level="h2">Connecting families in need</Heading>
+    <Heading level="h2">Earn, redeem, repeat – with TELUS Rewards.</Heading>
     <Paragraph>
-      Having access to reliable internet is increasingly important in today’s interconnected world.
+      Earn points each month just for being a customer, and redeem them for great rewards like Video
+      on Demand, charity donations, TELUS bill credits, and more.
     </Paragraph>
   </ContentCarousel.Item>
 </ContentCarousel>
