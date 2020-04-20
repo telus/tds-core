@@ -8,6 +8,14 @@
 
 > TELUS Design System (TDS) core components
 
+<strong>As of April 2020, the TELUS Design System will be maintained with reduced capacity until further notice.</strong>
+Full details are available on the <a href="https://telusdigital.slack.com/archives/C02B5E4AC/p1587147916343700">TELUS Slack</a>.
+Please see our <a href="https://tds.telus.com/contact.html">contact us</a> page for more information on how to get support.
+
+At this time, we highly encourage teams to use existing TDS components, and continue sharing UI patterns to drive consistent digital customer experiences.
+
+---
+
 - [Documentation](https://tds.telus.com)
 - [Component catalogue](https://tds.telus.com/components/index.html)
 - [Roadmap](https://tds.telus.com/roadmap.html)
