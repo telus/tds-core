@@ -51,7 +51,7 @@ const DecoyContainer = styled.div(({ position, offset, variant }) => ({
       ? `translateX(${100 + 30 * offset}%)`
       : `translateX(-${100 + 30 * offset}%)`,
   backgroundColor: 'white',
-  opacity: variant === 'card' && 1,
+  opacity: variant === 'card' && 0.7,
   ...media.from('md').css({
     width: '100%',
     padding: variant === 'open' ? '0 4rem' : '0 1.8125rem',

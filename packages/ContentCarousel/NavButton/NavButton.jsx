@@ -12,7 +12,7 @@ import { colorWhite, colorGreyGainsboro, colorGreyAthens } from '@tds/core-colou
  */
 
 const NavButtonContainer = styled.button(({ direction }) => ({
-  width: '1.5rem',
+  width: '2rem',
   height: '2rem',
   display: 'flex',
   justifyContent: 'center',
@@ -50,8 +50,8 @@ const NavButtonContainer = styled.button(({ direction }) => ({
 }))
 
 const FocusOutline = styled.div(({ direction }) => ({
-  width: '1.75rem',
-  height: '2.5625rem',
+  width: '2.3rem',
+  height: '2.6rem',
   position: 'absolute',
   top: '50%',
   ...(direction === 'right' ? { right: 0 } : { left: 0 }),

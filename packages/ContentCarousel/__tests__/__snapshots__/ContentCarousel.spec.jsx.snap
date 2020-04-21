@@ -700,7 +700,6 @@ exports[`ContentCarousel renders 1`] = `
   .c4 {
     width: 100%;
     padding: 0 4rem;
-    box-sizing: border-box;
   }
 }
 
@@ -708,7 +707,6 @@ exports[`ContentCarousel renders 1`] = `
   .c2 {
     width: 100%;
     padding: 0 4rem;
-    box-sizing: border-box;
   }
 }
 
@@ -716,7 +714,6 @@ exports[`ContentCarousel renders 1`] = `
   .c3 {
     width: 100%;
     padding: 0 4rem;
-    box-sizing: border-box;
   }
 }
 
@@ -724,7 +721,6 @@ exports[`ContentCarousel renders 1`] = `
   .c10 {
     width: 100%;
     padding: 0 4rem;
-    box-sizing: border-box;
   }
 }
 
@@ -732,7 +728,6 @@ exports[`ContentCarousel renders 1`] = `
   .c11 {
     width: 100%;
     padding: 0 4rem;
-    box-sizing: border-box;
   }
 }
 
