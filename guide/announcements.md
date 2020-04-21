@@ -2,6 +2,7 @@
 
 Welcome to the TDS Announcement Board! Check back here regularly for the latest updates on TDS!
 
+- [April 2020](#april-2020)
 - [March 2020](#march-2020)
 - [February 2020](#february-2020)
 - [January 2020](#january-2020)
@@ -21,6 +22,35 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 
 <hr/>
 
+## April 2020
+
+### New TDS Community Component 🎁
+
+**Modal v1.0.0**
+
+- Render a Content Modal and Dialogue Modal on your page, please use with care and see its documentation
+- [Docs for community-modal](https://tds.telus.com/community/index.html#modal)
+- DSM release: TDS_Community DSM Library v1.0.13
+- Special thanks to Nicholas Mak for co-developing, Apurv Ray and Dan Genuardi for co-designing, and Oskar Westin for a11y research
+
+### TDS Community fixes
+
+**InputGroup v1.0.1**
+
+- A passed-in `id` will now render correctly in the `<input />` element
+- [Docs for community-input-group](https://tds.telus.com/community/index.html#inputgroup)
+- [Release notes for @tds/community-input-group@1.0.1](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-input-group%401.0.1)
+- Special thanks to Matt Burch for reporting and Edison Li for fixing
+
+### TDS Core Features 🎁
+
+**ExpandCollapse 2.1.0**
+
+- Render an id attribute on each ExpandCollapse panel
+- [Docs for core-expand-collapse](https://tds.telus.com/components/index.html#/Expand%20collapse?id=expandcollapse)
+- [GitHub issue #1415](https://github.com/telus/tds-core/issues/1415)
+- [Release notes for @tds/core-expand-collapse@2.1.0](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-expand-collapse%402.1.0)
+
 ## March 2020
 
 ### DSM Updates
@@ -35,9 +65,9 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 
 - Filter your product catalogues using Tags
 - See documentation for accessibility and content guidelines!
-- [Docs](https://tds.telus.com/community/index.html#tags)
+- [Docs for community-tags](https://tds.telus.com/community/index.html#tags)
 - TDS_Community DSM Release: v1.0.12
-- [GitHub release notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-tags%401.0.0)
+- [GitHub release notes for @tds/community-tags@1.0.0](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-tags%401.0.0)
 
 ### TDS Core Features 🎁
 
@@ -45,19 +75,19 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 
 - Allow use of reactRouterLinkComponent on individual Breadcrumbs.Item
 - [GitHub issue #1414](https://github.com/telus/tds-core/issues/1414)
-- [Release notes](https://gihub.com/telus/tds-core/releases/tag/%40tds%2Fcore-breadcrumbs%402.2.0)
-- [Docs](https://tds.telus.com/components/index.html#/Links?id=breadcrumbs)
+- [Docs for core-breadcrumbs](https://tds.telus.com/components/index.html#/Links?id=breadcrumbs)
+- [Release notes for @tds/core-breadcrumbs@2.2.0](https://gihub.com/telus/tds-core/releases/tag/%40tds%2Fcore-breadcrumbs%402.2.0)
 - Shoutout to Stuart Wilson for contributing this feature
 
 **Text v3.1.0**
 
 - Text will now inherit font sizing from parent components
-- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-text%403.1.0)
+- [Release notes for @tds/core-text@3.1.0](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-text%403.1.0)
 
 **CSS Reset v3.0.0**
 
 - Fonts are now cache-busted
-- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-css-reset%403.0.0)
+- [Release Notes for @tds/core-css-reset@3.0.0](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-css-reset%403.0.0)
 
 ### TDS Core Fixes
 
