@@ -2,6 +2,7 @@
 
 Welcome to the TDS Announcement Board! Check back here regularly for the latest updates on TDS!
 
+- [March 2020](#march-2020)
 - [February 2020](#february-2020)
 - [January 2020](#january-2020)
 - [December 2019](#december-2019)
@@ -20,6 +21,55 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 
 <hr/>
 
+## March 2020
+
+### DSM Updates
+
+**TDS_Community v1.0.12**
+
+- New: Tags are the first element in a larger filter system. It is used to represent information used in catalogue experiences and allows for filtering of that content.
+
+### New TDS Community Component 🎁
+
+**Tags v1.0.0**
+
+- Filter your product catalogues using Tags
+- See documentation for accessibility and content guidelines!
+- [Docs](https://tds.telus.com/community/index.html#tags)
+- TDS_Community DSM Release: v1.0.12
+- [GitHub release notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-tags%401.0.0)
+
+### TDS Core Features 🎁
+
+**Breadcrumbs v2.2.0**
+
+- Allow use of reactRouterLinkComponent on individual Breadcrumbs.Item
+- [GitHub issue #1414](https://github.com/telus/tds-core/issues/1414)
+- [Release notes](https://gihub.com/telus/tds-core/releases/tag/%40tds%2Fcore-breadcrumbs%402.2.0)
+- [Docs](https://tds.telus.com/components/index.html#/Links?id=breadcrumbs)
+- Shoutout to Stuart Wilson for contributing this feature
+
+**Text v3.1.0**
+
+- Text will now inherit font sizing from parent components
+- [Release notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-text%403.1.0)
+
+**CSS Reset v3.0.0**
+
+- Fonts are now cache-busted
+- [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-css-reset%403.0.0)
+
+### TDS Core Fixes
+
+**Link v2.2.5, ChevronLink 2.1.1, ButtonLink v2.1.15, Breadcrumbs v2.2.2**
+
+- Resolved prop validation issue with React Router 5
+- Release notes:
+  - [@tds/core-link@2.2.5](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-link%402.2.5)
+  - [@tds/chevron-link@2.1.15](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-chevron-link%402.1.15)
+  - [@tds/core-button-link@2.1.15](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-button-link%402.1.15)
+  - [@tds/core-breadcrumbs@2.2.2](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-breadcrumbs%402.2.2)
+
 ## February 2020
 
 ### DSM Updates
@@ -34,13 +84,13 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 - Available in TDS Core DSM Library v2.3.11.1
 - Provided example components instead of artboards
 
-### New TDS Core Features 🎁
+### TDS Core Features 🎁
 
 **styleguidist v10**
 
 - Upgraded our docs site to use styleguidist v10. This provides us with per-component routing and increased performance
 
-### New TDS Community Features 🎁
+### TDS Community Features 🎁
 
 **ProgressBar 2.0.0**
 
@@ -51,7 +101,7 @@ Welcome to the TDS Announcement Board! Check back here regularly for the latest 
 - [Release Notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-progress%402.0.0)
 - [Docs](https://tds.telus.com/community/index.html#!/Progress%20Bar)
 
-### New TDS Core Fixes
+### TDS Core Fixes
 
 **FlexGrid 3.0.8**
 
@@ -137,7 +187,7 @@ Removed SB Blocks from TDS-Core Library
 - Designers who use DSM to mock-up designs using Layout Grids (with components, or block templates) there is now a . [Site Builder DSM library](https://telus.invisionapp.com/dsm/telus/site-builder)
 - It will be maintained by the EPT designers: Marie and Phil [Full announcement here](https://telusdigital.slack.com/archives/C08K0G798/p1578587471000200)
 
-### New TDS Core Features 🎁
+### TDS Core Features 🎁
 
 **InteractiveIcon 1.4.0**
 
@@ -179,14 +229,14 @@ Removed SB Blocks from TDS-Core Library
 - Available in TDS Core DSM Library v2.3.11
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%402.6.0)
 
-### New TDS Community Features 🎁
+### TDS Community Features 🎁
 
 **ToggleSwitch 3.0.1**
 
 - isLoading propType is now optional and must be used with `spinnerLabel`
 - [Release Notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-toggle-switch%403.0.1)
 
-### New TDS Core Fixes
+### TDS Core Fixes
 
 **InteractiveIcon 1.3.2**
 
@@ -215,7 +265,7 @@ Removed SB Blocks from TDS-Core Library
 
 ## December 2019
 
-### New TDS Core Fixes
+### TDS Core Fixes
 
 **HairlineDivider 2.0.9**
 
@@ -254,7 +304,7 @@ New NavButton (Interactive Icons)
 - [Release notes](https://github.com/telus/tds-community/releases/tag/%40tds%2Fcommunity-date-picker%401.0.0)
 - [Docs](https://tds.telus.com/community/index.html#!/DatePicker)
 
-### New TDS Core Features 🎁
+### TDS Core Features 🎁
 
 **Text 3.0.0**
 
@@ -286,7 +336,7 @@ New NavButton (Interactive Icons)
 - Deprecate User icon
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%402.5.0)
 
-### New TDS Core Fixes
+### TDS Core Fixes
 
 **StandaloneIcon 2.1.9**
 
@@ -323,7 +373,7 @@ New NavButton (Interactive Icons)
 
 ## October 2019
 
-### New TDS Core Features 🎁
+### TDS Core Features 🎁
 
 **Select@3.2.0**
 
@@ -351,7 +401,7 @@ New NavButton (Interactive Icons)
 - Update Accessible icon and add new Donate icon
 - [Release Notes](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-decorative-icon%402.4.0)
 
-### New TDS Core Fixes
+### TDS Core Fixes
 
 **Notification@3.0.4**
 
@@ -417,7 +467,7 @@ Card (new addition)
 - Added a new layer style; same as default card background but with a border
 - [Docs](https://github.com/telus/tds-core/releases/tag/%40tds%2Fcore-card%402.1.0)
 
-### New TDS Core Features 🎁
+### TDS Core Features 🎁
 
 **DecorativeIcon@2.3.0**
 
@@ -443,7 +493,7 @@ Card (new addition)
 
 ## August 2019
 
-### New TDS Core Component ✨
+### TDS Core Component ✨
 
 👉**Interactive icons** 👈
 
@@ -519,7 +569,7 @@ Shadow
 - Colours (updated Accessible Green, added Raven Grey and Rajah Yellow colour set)
 - Shadow (updated shadow specifications on affected layer styles)
 
-### New TDS Core Features 🎁
+### TDS Core Features 🎁
 
 **DecorativeIcon@2.2.0**
 
@@ -652,7 +702,7 @@ Shadow
 
 ## July 2019
 
-### New TDS Core Component ✨
+### TDS Core Component ✨
 
 **TermsAndConditions v1**
 
@@ -666,7 +716,7 @@ Show legal copy to your users quickly and in an accessible manner! Footnote comb
 
 [Terms and Conditions docs](https://tds.telus.com/components/index.html#terms-and-conditions)
 
-### New TDS Community Component ✨
+### TDS Community Component ✨
 
 **Skeleton Provider**
 
