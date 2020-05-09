@@ -556,6 +556,7 @@ input[type=range].c24::-ms-tooltip {
 }
 
 <Video
+  analyticsTracking={[Function]}
   beginMuted={false}
   copy="en"
   defaultDesktopQuality={1}
@@ -592,6 +593,7 @@ input[type=range].c24::-ms-tooltip {
   videoBorder={false}
 >
   <Video__VideoPlayerContainer
+    analyticsTracking={[Function]}
     aria-label="Video selected. Press Q to listen to controls."
     beginMuted={false}
     copy="en"
@@ -634,6 +636,7 @@ input[type=range].c24::-ms-tooltip {
     videoBorder={false}
   >
     <StyledComponent
+      analyticsTracking={[Function]}
       aria-label="Video selected. Press Q to listen to controls."
       beginMuted={false}
       copy="en"
