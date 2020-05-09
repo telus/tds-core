@@ -23,6 +23,8 @@ describe('Video', () => {
           },
         ]}
         copy="en"
+        // eslint-disable-next-line
+        analyticsTracking={object => {console.log('object', object)}}
         {...props}
       />
     )
