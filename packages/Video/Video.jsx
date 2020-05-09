@@ -102,6 +102,7 @@ class Video extends React.Component {
       captionsMenuOpen: false,
       isMobile: false,
       videoPlayerWidth: 0,
+      percentPlayed: 'watched 0%',
     }
   }
 
@@ -168,6 +169,9 @@ class Video extends React.Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
+    if (nextState.videoIsPlaying !== this.state.videoIsPlaying) {
+      this.updateAnalyticsData()
+    }
     if (nextState !== this.state || nextProps !== this.props) {
       return true
     }
@@ -177,6 +181,7 @@ class Video extends React.Component {
   componentWillUnmount() {
     this.clearInactivityTimer()
     window.onresize = undefined
+    clearInterval(this.state.intervalId)
   }
 
   // ******** Begin Initialization Functions *********
@@ -311,6 +316,44 @@ class Video extends React.Component {
     this.clearInactivityTimer()
   }
 
+  updateAnalyticsData = () => {
+    const analyticsObject = {}
+    analyticsObject.action = this.state.videoIsPlaying ? 'pause' : 'play'
+    this.props.analyticsTracking(analyticsObject)
+  }
+
+  // required for analytics
+  calculatePercentageWatched = () => {
+    let percentValue = (this.state.videoCurrentTime / this.state.videoLength) * 100
+    percentValue = Math.round(percentValue)
+    const previousValue = this.state.percentPlayed
+    this.percentageBucket(percentValue)
+    if (previousValue !== this.state.percentPlayed) {
+      const analyticsObject = {}
+      analyticsObject.action = this.state.percentPlayed
+      this.props.analyticsTracking(analyticsObject)
+    }
+  }
+
+  percentageBucket = percentValue => {
+    if (percentValue < 25) {
+      return this.setState({ percentPlayed: 'watched 0%' })
+    }
+    if (percentValue < 50) {
+      return this.setState({ percentPlayed: 'watched 25%' })
+    }
+    if (percentValue < 75) {
+      return this.setState({ percentPlayed: 'watched 50%' })
+    }
+    if (percentValue < 100) {
+      return this.setState({ percentPlayed: 'watched 75%' })
+    }
+    if (percentValue === 100) {
+      return this.setState({ percentPlayed: 'watched 100%' })
+    }
+    return false
+  }
+
   updateBufferProgress = () => {
     if (this.refVideoPlayer.current && this.refVideoPlayer.current.readyState >= 2) {
       this.setState({
@@ -376,6 +419,8 @@ class Video extends React.Component {
     this.setTextTracks(-1)
     this.setPlaying(true)
     this.refVideoPlayerContainer.current.focus()
+    const intervalId = setInterval(this.calculatePercentageWatched, 300)
+    this.setState({ intervalId })
   }
 
   setPlaying = isPlaying => {
@@ -826,6 +871,11 @@ Video.propTypes = {
    * @since 1.2.0
    */
   videoBorder: PropTypes.bool,
+  /**
+   * Object with tracking information for analytics
+   * @since 1.3.0
+   */
+  analyticsTracking: PropTypes.func,
 }
 
 Video.defaultProps = {
@@ -837,6 +887,7 @@ Video.defaultProps = {
   crossOrigin: undefined,
   simpleMode: false,
   videoBorder: false,
+  analyticsTracking: () => {},
 }
 
 export default Video

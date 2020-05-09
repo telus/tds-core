@@ -21,6 +21,10 @@ Each video will appear in the "Quality" dialogue from top to bottom sorted by `q
 
 Tracks are supplied to the player through the `tracks` prop, which accepts an array of objects. Each object in the array represents a track file. Typically, these will be different languages or separate files for closed captions, subtitles, or descriptions. If no tracks are provided, the captions button will not be visible in the player.
 
+#### Analytics tracking
+
+You can pass in a callback function to Video, in order to track analytics. The parameter this function takes will give you access to the analytics object which will be updated every time an action is fired (this inclues "play", "pause", percentage watched as an interval of "25%")
+
 ```jsx
 <Video
   sources={[
@@ -55,6 +59,9 @@ Tracks are supplied to the player through the `tracks` prop, which accepts an ar
     },
   ]}
   copy="en"
+  analyticsTracking={object => {
+    console.log('object', object)
+  }}
 />
 ```
 
