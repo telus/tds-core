@@ -102,7 +102,7 @@ class Video extends React.Component {
       captionsMenuOpen: false,
       isMobile: false,
       videoPlayerWidth: 0,
-      percentPlayed: 'watched 0%',
+      elapsedTime: 'watched 0%',
     }
   }
 
@@ -326,30 +326,30 @@ class Video extends React.Component {
   calculatePercentageWatched = () => {
     let percentValue = (this.state.videoCurrentTime / this.state.videoLength) * 100
     percentValue = Math.round(percentValue)
-    const previousValue = this.state.percentPlayed
+    const previousValue = this.state.elapsedTime
     this.percentageBucket(percentValue)
-    if (previousValue !== this.state.percentPlayed) {
+    if (previousValue !== this.state.elapsedTime) {
       const analyticsObject = {}
-      analyticsObject.action = this.state.percentPlayed
+      analyticsObject.action = this.state.elapsedTime
       this.props.analyticsTracking(analyticsObject)
     }
   }
 
   percentageBucket = percentValue => {
     if (percentValue < 25) {
-      return this.setState({ percentPlayed: 'watched 0%' })
+      return this.setState({ elapsedTime: 'watched 0%' })
     }
     if (percentValue < 50) {
-      return this.setState({ percentPlayed: 'watched 25%' })
+      return this.setState({ elapsedTime: 'watched 25%' })
     }
     if (percentValue < 75) {
-      return this.setState({ percentPlayed: 'watched 50%' })
+      return this.setState({ elapsedTime: 'watched 50%' })
     }
     if (percentValue < 100) {
-      return this.setState({ percentPlayed: 'watched 75%' })
+      return this.setState({ elapsedTime: 'watched 75%' })
     }
     if (percentValue === 100) {
-      return this.setState({ percentPlayed: 'watched 100%' })
+      return this.setState({ elapsedTime: 'watched 100%' })
     }
     return false
   }
