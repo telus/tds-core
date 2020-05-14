@@ -19,6 +19,8 @@ import Pause from './svg/Pause'
 import Play from './svg/Play'
 import Replay from './svg/Replay'
 
+import { warn } from '../../shared/utils/warn'
+
 const VideoPlayerContainer = styled.div(({ videoBorder }) => ({
   width: '100%',
   outline: 'none',
@@ -102,7 +104,7 @@ class Video extends React.Component {
       captionsMenuOpen: false,
       isMobile: false,
       videoPlayerWidth: 0,
-      elapsedTime: 'watched 0%',
+      percentageWatched: 'watched 0%',
     }
   }
 
@@ -166,16 +168,6 @@ class Video extends React.Component {
     // **** End Interaction Events ****
 
     // ******** End Video Event Handlers *********
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    if (nextState.videoIsPlaying !== this.state.videoIsPlaying) {
-      this.updateAnalyticsData()
-    }
-    if (nextState !== this.state || nextProps !== this.props) {
-      return true
-    }
-    return false
   }
 
   componentWillUnmount() {
@@ -298,12 +290,14 @@ class Video extends React.Component {
       videoUnplayed: false,
       videoQualityChanged: false,
     })
+    this.updateAnalyticsData()
     this.resetInactivityTimer()
   }
 
   setAsPaused = () => {
     this.clearInactivityTimer()
     this.setState({ videoIsPlaying: false })
+    this.updateAnalyticsData()
   }
 
   returnFromEndState = () => {
@@ -317,8 +311,8 @@ class Video extends React.Component {
   }
 
   updateAnalyticsData = () => {
-    const analyticsObject = {}
-    analyticsObject.action = this.state.videoIsPlaying ? 'pause' : 'play'
+    const analyticsObject = { name: 'video tracking', details: this.props.videoTitle }
+    analyticsObject.action = this.state.videoIsPlaying ? 'play' : 'pause'
     this.props.analyticsTracking(analyticsObject)
   }
 
@@ -326,30 +320,55 @@ class Video extends React.Component {
   calculatePercentageWatched = () => {
     let percentValue = (this.state.videoCurrentTime / this.state.videoLength) * 100
     percentValue = Math.round(percentValue)
-    const previousValue = this.state.elapsedTime
+    const previousValue = this.state.percentageWatched
     this.percentageBucket(percentValue)
-    if (previousValue !== this.state.elapsedTime) {
-      const analyticsObject = {}
-      analyticsObject.action = this.state.elapsedTime
+    if (previousValue !== this.state.percentageWatched) {
+      const analyticsObject = { name: 'video tracking', details: this.props.videoTitle }
+      analyticsObject.action = this.state.percentageWatched
       this.props.analyticsTracking(analyticsObject)
     }
   }
 
   percentageBucket = percentValue => {
     if (percentValue < 25) {
-      return this.setState({ elapsedTime: 'watched 0%' })
+      return this.setState(prevState => {
+        if (prevState !== 'watched 0%') {
+          return { percentageWatched: 'watched 0%' }
+        }
+        return false
+      })
     }
     if (percentValue < 50) {
-      return this.setState({ elapsedTime: 'watched 25%' })
+      return this.setState(prevState => {
+        if (prevState !== 'watched 25%') {
+          return { percentageWatched: 'watched 25%' }
+        }
+        return false
+      })
     }
     if (percentValue < 75) {
-      return this.setState({ elapsedTime: 'watched 50%' })
+      return this.setState(prevState => {
+        if (prevState !== 'watched 50%') {
+          return { percentageWatched: 'watched 50%' }
+        }
+        return false
+      })
     }
     if (percentValue < 100) {
-      return this.setState({ elapsedTime: 'watched 75%' })
+      return this.setState(prevState => {
+        if (prevState !== 'watched 75%') {
+          return { percentageWatched: 'watched 75%' }
+        }
+        return false
+      })
     }
     if (percentValue === 100) {
-      return this.setState({ elapsedTime: 'watched 100%' })
+      return this.setState(prevState => {
+        if (prevState !== 'watched 100%') {
+          return { percentageWatched: 'watched 100%' }
+        }
+        return false
+      })
     }
     return false
   }
@@ -419,15 +438,21 @@ class Video extends React.Component {
     this.setTextTracks(-1)
     this.setPlaying(true)
     this.refVideoPlayerContainer.current.focus()
-    const intervalId = setInterval(this.calculatePercentageWatched, 300)
-    this.setState({ intervalId })
   }
 
   setPlaying = isPlaying => {
     if (isPlaying) {
       this.refVideoPlayer.current.play()
+      if (this.props.analyticsTracking !== undefined && this.props.videoTitle) {
+        const intervalId = setInterval(this.calculatePercentageWatched, 300)
+        this.setState({ intervalId })
+      }
+      if (this.props.analyticsTracking !== undefined && this.props.videoTitle === undefined) {
+        warn('Video', 'AnalyticsTracking requires videoTitle to return analytics data object')
+      }
     } else {
       this.refVideoPlayer.current.pause()
+      clearInterval(this.state.intervalId)
     }
   }
 
@@ -872,10 +897,21 @@ Video.propTypes = {
    */
   videoBorder: PropTypes.bool,
   /**
-   * Object with tracking information for analytics
+   * A function that gets called when a customer interacts with Video.
+   * When using `analyticsTracking`, `videoTitle` must also be defined.
    * @since 1.3.0
+   *
+   * @param {Object} analyticsObject Contains video data based on customer interactions
+   * @param {string} analyticsObject.name Always 'video tracking'
+   * @param {string} analyticsObject.action Contains the latest customer action
+   * @param {string} analyticsObject.details The name of the video based on the `videoTitle` prop
    */
   analyticsTracking: PropTypes.func,
+  /**
+   * The title of the video being rendered. This is used for analytics purposes
+   * @since 1.3.0
+   */
+  videoTitle: PropTypes.string,
 }
 
 Video.defaultProps = {
@@ -887,7 +923,8 @@ Video.defaultProps = {
   crossOrigin: undefined,
   simpleMode: false,
   videoBorder: false,
-  analyticsTracking: () => {},
+  analyticsTracking: undefined,
+  videoTitle: undefined,
 }
 
 export default Video

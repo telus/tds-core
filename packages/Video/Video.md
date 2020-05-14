@@ -23,7 +23,7 @@ Tracks are supplied to the player through the `tracks` prop, which accepts an ar
 
 #### Analytics tracking
 
-You can pass in a callback function to Video, in order to track analytics. The parameter this function takes will give you access to the analytics object which will be updated every time an action is fired (this inclues "play", "pause", percentage watched as an interval of "25%")
+You can pass in a callback function to Video, in order to track analytics. The parameter this function takes will give you access to the analytics object which will be updated every time an action is fired (this inclues "play", "pause", percentage watched as an interval of "25%"). See analyticsTracking in the props table for more details.
 
 ```jsx
 <Video
@@ -62,6 +62,7 @@ You can pass in a callback function to Video, in order to track analytics. The p
   analyticsTracking={object => {
     console.log('object', object)
   }}
+  videoTitle="Demo video"
 />
 ```
 
