@@ -168,6 +168,17 @@ class Video extends React.Component {
     // **** End Interaction Events ****
 
     // ******** End Video Event Handlers *********
+
+    // **** Video Analytics ****
+    if (
+      (this.props.analyticsTracking !== undefined && this.props.videoTitle === undefined) ||
+      (this.props.analyticsTracking === undefined && this.props.videoTitle !== undefined)
+    ) {
+      warn(
+        'Video',
+        'Both the `analyticsTracking` and `videoTitle` props must be defined in order to return a proper analytics object.'
+      )
+    }
   }
 
   componentWillUnmount() {
@@ -446,9 +457,6 @@ class Video extends React.Component {
       if (this.props.analyticsTracking !== undefined && this.props.videoTitle) {
         const intervalId = setInterval(this.calculatePercentageWatched, 300)
         this.setState({ intervalId })
-      }
-      if (this.props.analyticsTracking !== undefined && this.props.videoTitle === undefined) {
-        warn('Video', 'AnalyticsTracking requires videoTitle to return analytics data object')
       }
     } else {
       this.refVideoPlayer.current.pause()
@@ -897,8 +905,10 @@ Video.propTypes = {
    */
   videoBorder: PropTypes.bool,
   /**
-   * A function that gets called when a customer interacts with Video.
+   * A callback function that fires when a customer interacts with Video.
    * When using `analyticsTracking`, `videoTitle` must also be defined.
+   *
+   * When invoked, your callback function returns an object containing three keys (see below).
    * @since 1.3.0
    *
    * @param {Object} analyticsObject Contains video data based on customer interactions
@@ -908,7 +918,7 @@ Video.propTypes = {
    */
   analyticsTracking: PropTypes.func,
   /**
-   * The title of the video being rendered. This is used for analytics purposes
+   * The title of the video being rendered. This is used for analytics purposes in conjunction with `analyticsTracking`.
    * @since 1.3.0
    */
   videoTitle: PropTypes.string,
