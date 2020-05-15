@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/telus/tds-core/compare/@tds/core-video@1.2.45...@tds/core-video@1.3.0) (2020-05-15)
+
+
+### Features
+
+* **core-video:** adding analytics to video ([01b1e9e](https://github.com/telus/tds-core/commit/01b1e9ec0d97ecb4ad3c5572493e22e67b66fe78))
+
+
+
+
+
 ## [1.2.45](https://github.com/telus/tds-core/compare/@tds/core-video@1.2.44...@tds/core-video@1.2.45) (2020-04-14)
 
 **Note:** Version bump only for package @tds/core-video
