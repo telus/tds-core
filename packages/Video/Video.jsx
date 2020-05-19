@@ -324,7 +324,9 @@ class Video extends React.Component {
   updateAnalyticsData = () => {
     const analyticsObject = { name: 'video tracking', details: this.props.videoTitle }
     analyticsObject.action = this.state.videoIsPlaying ? 'play' : 'pause'
-    this.props.analyticsTracking(analyticsObject)
+    if (this.state.percentageWatched !== 'watched 100%') {
+      this.props.analyticsTracking(analyticsObject)
+    }
   }
 
   // required for analytics
