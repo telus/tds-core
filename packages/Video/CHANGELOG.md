@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/telus/tds-core/compare/@tds/core-video@1.3.0...@tds/core-video@1.3.1) (2020-05-20)
+
+
+### Bug Fixes
+
+* **core-video:** preventing action override on vid complete analytics ([f6ee4bd](https://github.com/telus/tds-core/commit/f6ee4bd5a05a9aec242f7c953947af0a6c9a471a))
+
+
+
+
+
 # [1.3.0](https://github.com/telus/tds-core/compare/@tds/core-video@1.2.45...@tds/core-video@1.3.0) (2020-05-15)
 
 
