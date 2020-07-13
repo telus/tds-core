@@ -23,7 +23,6 @@ const StyledButtonLink = styled(StyledButton)(
   ({ variant }) => {
     let color
     let hoverColor
-
     if (variant === 'primary') {
       color = buttonTextColor
       hoverColor = primaryBgColor
@@ -43,6 +42,17 @@ const StyledButtonLink = styled(StyledButton)(
         color: hoverColor,
       },
     }
+  },
+  ({ fullwidth }) => {
+    let width
+    if (fullwidth) {
+      width = '100%'
+    }
+    return {
+      '&:link,&:visited': {
+        width,
+      },
+    }
   }
 )
 
@@ -51,22 +61,25 @@ const StyledButtonLink = styled(StyledButton)(
  *
  * @version ./package.json
  */
-const ButtonLink = forwardRef(({ reactRouterLinkComponent, variant, children, ...rest }, ref) => {
-  if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
-    warn('Link Button', 'The props `reactRouterLinkComponent` and `to` must be used together.')
-  }
+const ButtonLink = forwardRef(
+  ({ reactRouterLinkComponent, variant, fullwidth, children, ...rest }, ref) => {
+    if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
+      warn('Link Button', 'The props `reactRouterLinkComponent` and `to` must be used together.')
+    }
 
-  return (
-    <StyledButtonLink
-      {...safeRest(rest)}
-      as={reactRouterLinkComponent || 'a'}
-      variant={variant}
-      ref={ref}
-    >
-      {children}
-    </StyledButtonLink>
-  )
-})
+    return (
+      <StyledButtonLink
+        {...safeRest(rest)}
+        as={reactRouterLinkComponent || 'a'}
+        variant={variant}
+        ref={ref}
+        fullwidth={fullwidth}
+      >
+        {children}
+      </StyledButtonLink>
+    )
+  }
+)
 
 ButtonLink.displayName = 'ButtonLink'
 
@@ -87,6 +100,7 @@ ButtonLink.propTypes = {
    * Target URL
    */
   href: PropTypes.string,
+  fullwidth: PropTypes.string,
   /**
    * The label. It can include the `A11yContent` component or strings.
    */
@@ -97,6 +111,7 @@ ButtonLink.defaultProps = {
   reactRouterLinkComponent: null,
   to: null,
   href: null,
+  fullwidth: null,
 }
 
 export default ButtonLink
