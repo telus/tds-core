@@ -76,7 +76,10 @@ export const StyledButton = styled.button(
   ({ fullwidth }) => {
     let width
     if (fullwidth) {
-      width = '100% !important'
+      return {
+        width: '100%',
+        ...media.from('md').css({ width: '100%' }),
+      }
     }
     return {
       width,
