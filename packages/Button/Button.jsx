@@ -18,7 +18,6 @@ const preventDisabling = ({ disabled, ...props }) => {
 
   return props
 }
-const fullwidthButton = '100% !important'
 const baseButton = {
   margin: 0,
   padding: '0 2rem',
@@ -77,7 +76,7 @@ export const StyledButton = styled.button(
   ({ fullwidth }) => {
     let width
     if (fullwidth) {
-      width = fullwidthButton
+      width = '100% !important'
     }
     return {
       width,
