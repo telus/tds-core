@@ -18,7 +18,7 @@ const preventDisabling = ({ disabled, ...props }) => {
 
   return props
 }
-
+const fullwidthButton = '100% !important'
 const baseButton = {
   margin: 0,
   padding: '0 2rem',
@@ -36,7 +36,6 @@ const baseButton = {
     minWidth: '180px',
   }),
 }
-
 export const StyledButton = styled.button(
   borders.none,
   borders.rounded,
@@ -74,6 +73,15 @@ export const StyledButton = styled.button(
       color,
       '&:hover': hover,
     }
+  },
+  ({ fullwidth }) => {
+    let width
+    if (fullwidth) {
+      width = fullwidthButton
+    }
+    return {
+      width,
+    }
   }
 )
 
@@ -84,11 +92,17 @@ export const ButtonTextWrapper = styled.span({
 /**
  * @version ./package.json
  */
-const Button = forwardRef(({ type, variant, children, ...rest }, ref) => {
+const Button = forwardRef(({ type, variant, fullwidth, children, ...rest }, ref) => {
   const restNoDisabled = preventDisabling(rest)
 
   return (
-    <StyledButton {...safeRest(restNoDisabled)} variant={variant} type={type} ref={ref}>
+    <StyledButton
+      {...safeRest(restNoDisabled)}
+      variant={variant}
+      fullwidth={fullwidth}
+      type={type}
+      ref={ref}
+    >
       <ButtonTextWrapper>{children}</ButtonTextWrapper>
     </StyledButton>
   )
@@ -109,10 +123,16 @@ Button.propTypes = {
    * The label. It can include the `A11yContent` component or strings.
    */
   children: or([PropTypes.string, componentWithName('A11yContent')]).isRequired,
+  /**
+   * If `true`, sets `Button` to 100% width.
+   * @since 2.2.0
+   */
+  fullwidth: PropTypes.bool,
 }
 Button.defaultProps = {
   type: 'button',
   variant: 'primary',
+  fullwidth: false,
 }
 
 export default Button
