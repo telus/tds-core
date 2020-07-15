@@ -100,7 +100,11 @@ ButtonLink.propTypes = {
    * Target URL
    */
   href: PropTypes.string,
-  fullwidth: PropTypes.string,
+  /**
+   * If `true`, sets `ButtonLink` to 100% width.
+   * @since 2.2.0
+   */
+  fullwidth: PropTypes.bool,
   /**
    * The label. It can include the `A11yContent` component or strings.
    */
@@ -111,7 +115,7 @@ ButtonLink.defaultProps = {
   reactRouterLinkComponent: null,
   to: null,
   href: null,
-  fullwidth: null,
+  fullwidth: false,
 }
 
 export default ButtonLink
