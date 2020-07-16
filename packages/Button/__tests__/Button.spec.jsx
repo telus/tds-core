@@ -40,12 +40,6 @@ describe('Button', () => {
     expect(button).toMatchSnapshot()
   })
 
-  it('can be presented as one of the allowed fullwidth', () => {
-    const button = render(<Button fullwidth>Submit</Button>)
-
-    expect(button).toMatchSnapshot()
-  })
-
   it('can not be disabled', () => {
     const button = doShallow({ disabled: true })
 
