@@ -65,6 +65,12 @@ describe('ButtonLink', () => {
     expect(link).toMatchSnapshot()
   })
 
+  it('can be presented as one of the allowed fullwidth', () => {
+    const link = render(<ButtonLink fullwidth>Go home</ButtonLink>)
+
+    expect(link).toMatchSnapshot()
+  })
+
   it('passes additional attributes to link element', () => {
     const link = doShallow({ id: 'the-link', tabIndex: 1 })
 

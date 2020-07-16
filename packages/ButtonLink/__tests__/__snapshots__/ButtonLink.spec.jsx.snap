@@ -1,5 +1,94 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ButtonLink can be presented as one of the allowed fullwidth 1`] = `
+.c0 {
+  border-width: 0;
+  border-radius: 4px;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 700;
+  height: 3.25rem;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 0 2rem;
+  cursor: pointer;
+  background: none;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #2B8000;
+  color: #fff;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover {
+  box-shadow: 0 0 0 1px;
+  background-color: #fff;
+  color: #2B8000;
+}
+
+.c0:focus {
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.c0:link,
+.c0:visited {
+  color: #fff;
+}
+
+.c0:hover {
+  color: #2B8000;
+}
+
+.c0:link,
+.c0:visited {
+  width: 100%;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: auto;
+    min-width: 180px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+<a
+  class="c0"
+>
+  Go home
+</a>
+`;
+
 exports[`ButtonLink can be presented as one of the allowed variants 1`] = `
 .c0 {
   border-width: 0;
