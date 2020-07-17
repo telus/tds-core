@@ -36,7 +36,6 @@ exports[`ButtonLink can be presented as one of the allowed fullwidth 1`] = `
   justify-content: center;
   background-color: #2B8000;
   color: #fff;
-  width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -73,12 +72,6 @@ exports[`ButtonLink can be presented as one of the allowed fullwidth 1`] = `
     display: inline-flex;
     width: auto;
     min-width: 180px;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    width: 100%;
   }
 }
 
