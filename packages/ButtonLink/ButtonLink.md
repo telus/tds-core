@@ -34,6 +34,8 @@ Use the `A11yContent` component to create invisible text that is read out loud b
 
 ```jsx
 <Button href="#">
-  Shop <A11yContent>iPhone</A11yContent>
+  <span>
+    Shop <A11yContent>iPhone</A11yContent>Now
+  </span>
 </Button>
 ```
