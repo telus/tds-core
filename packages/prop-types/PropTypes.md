@@ -57,6 +57,56 @@ PlanChooser.propTypes = {
 }
 ```
 
+### `htmlElement(element: String)`
+
+Limits the prop to only allow a specific HTML tag.
+
+```jsx noeditor static
+import { htmlElement } from '@tds/util-prop-types'
+
+const Link = () => {
+  return <a>{children}</a>
+}
+
+const App = () => (
+  <CustomLink>
+    <span>Purchase Pixel 3</span>
+  </CustomLink>
+)
+
+CustomLink.propTypes = {
+  children: htmlElement('span').isRequired,
+}
+```
+
+`htmlElement` is especially useful in keeping space between elements. A common use case for this is when you need to insert an `A11yContent` component in between 2 surrounding components. See the example below.
+
+```jsx noeditor static
+import { htmlElement } from '@tds/util-prop-types'
+
+const Link = () => {
+  return <Link>{children}</Link>
+}
+
+const App = () => (
+  <Link>
+    <span>Purchase <A11yContent>Pixel 3</A11yContent> Now</span>
+  </Link>
+)
+
+Link.propTypes = {
+  children: or([PropTypes.string, componentWithName('A11yContent'), htmlElement('span')).isRequired,
+}
+```
+
+```jsx
+<ButtonLink>
+  <span>
+    Purchase <A11yContent>Pixel 3</A11yContent> Now
+  </span>
+</ButtonLink>
+```
+
 ### `or(validators: Array)`
 
 Limits the prop to only allow PropTypes that match those specified.
