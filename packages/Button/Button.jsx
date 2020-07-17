@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { componentWithName, or } from '@tds/util-prop-types'
+import { componentWithName, or, htmlElement } from '@tds/util-prop-types'
 import { borders, forms } from '@tds/shared-styles'
 import { medium, boldFont } from '@tds/shared-typography'
 import { colorPrimary, colorSecondary, colorWhite, colorText } from '@tds/core-colours'
@@ -106,9 +106,10 @@ Button.propTypes = {
    */
   variant: PropTypes.oneOf(['primary', 'secondary', 'inverted']),
   /**
-   * The label. It can include the `A11yContent` component or strings.
+   * The label. It can include the `A11yContent` component, strings, or strings wrapped in a `<span>`.
    */
-  children: or([PropTypes.string, componentWithName('A11yContent')]).isRequired,
+  children: or([PropTypes.string, componentWithName('A11yContent'), htmlElement('span')])
+    .isRequired,
 }
 Button.defaultProps = {
   type: 'button',
