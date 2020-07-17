@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { componentWithName, or } from '@tds/util-prop-types'
+import { componentWithName, or, htmlElement } from '@tds/util-prop-types'
 import { StyledButton } from '@tds/core-button'
 import { links } from '@tds/shared-styles'
 import {
@@ -88,9 +88,10 @@ ButtonLink.propTypes = {
    */
   href: PropTypes.string,
   /**
-   * The label. It can include the `A11yContent` component or strings.
+   * The label. It can include the `A11yContent` component, strings, or strings wrapped in a `<span>`.
    */
-  children: or([PropTypes.string, componentWithName('A11yContent')]).isRequired,
+  children: or([PropTypes.string, componentWithName('A11yContent'), htmlElement('span')])
+    .isRequired,
 }
 ButtonLink.defaultProps = {
   variant: 'primary',
