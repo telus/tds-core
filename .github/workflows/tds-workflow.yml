@@ -11,7 +11,7 @@ jobs:
       - name: Setup Node 12
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: '12.14.x'
       - name: Bootstrap
         run: npm ci && npx lerna bootstrap --hoist && npm run build -- --all
       - name: Run Lint Tests
@@ -25,7 +25,7 @@ jobs:
       - name: Setup Node 12
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: '12.14.x'
       - name: Bootstrap
         run: npm ci && npx lerna bootstrap --hoist && npm run build -- --all
       - name: Run Unit Tests
@@ -39,7 +39,7 @@ jobs:
       - name: Setup Node 12
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: '12.14.x'
       - name: Bootstrap
         run: npm ci && npx lerna bootstrap --hoist && npm run build -- --all
       - name: Build Cartesian Components
@@ -78,7 +78,7 @@ jobs:
       - name: Setup Node 12
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: '12.14.x'
       - name: Bootstrap
         run: npm ci && npm run gitbook:install && npx lerna bootstrap --hoist && npm run build -- --all
       - name: Build Gitbook and Styleguidist
