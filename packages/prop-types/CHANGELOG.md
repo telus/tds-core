@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/telusdigital/tds/compare/@tds/util-prop-types@1.3.2...@tds/util-prop-types@1.4.0) (2020-07-22)
+
+
+### Features
+
+* **util-prop-types:** add htmlElement prop type validator ([3f7111d](https://github.com/telusdigital/tds/commit/3f7111d9c3120bbf5f7ea80e4b26e7250a9c8e90))
+
+
+
+
+
 ## [1.3.2](https://github.com/telusdigital/tds/compare/@tds/util-prop-types@1.3.1...@tds/util-prop-types@1.3.2) (2019-05-13)
 
 

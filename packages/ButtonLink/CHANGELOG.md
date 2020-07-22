@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telusdigital/tds/compare/@tds/core-button-link@2.1.15...@tds/core-button-link@2.2.0) (2020-07-22)
+
+
+### Features
+
+* **core-button-link:** add span as a valid child prop-type ([8507eb6](https://github.com/telusdigital/tds/commit/8507eb60ed12e39652ed29004bbfd4092f795492))
+
+
+
+
+
 ## [2.1.15](https://github.com/telusdigital/tds/compare/@tds/core-button-link@2.1.14...@tds/core-button-link@2.1.15) (2020-03-25)
 
 
