@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ButtonLink can be presented as one of the allowed fullwidth 1`] = `
+exports[`ButtonLink can be presented as one of the allowed fullWidth 1`] = `
 .c0 {
   border-width: 0;
   border-radius: 4px;

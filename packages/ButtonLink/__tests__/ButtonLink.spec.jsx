@@ -65,8 +65,8 @@ describe('ButtonLink', () => {
     expect(link).toMatchSnapshot()
   })
 
-  it('can be presented as one of the allowed fullwidth', () => {
-    const link = render(<ButtonLink fullwidth>Go home</ButtonLink>)
+  it('can be presented as one of the allowed fullWidth', () => {
+    const link = render(<ButtonLink fullWidth>Go home</ButtonLink>)
 
     expect(link).toMatchSnapshot()
   })

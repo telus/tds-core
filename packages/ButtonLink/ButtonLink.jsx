@@ -43,9 +43,9 @@ const StyledButtonLink = styled(StyledButton)(
       },
     }
   },
-  ({ fullwidth }) => {
+  ({ fullWidth }) => {
     let width
-    if (fullwidth) {
+    if (fullWidth) {
       width = '100%'
     }
     return {
@@ -62,7 +62,7 @@ const StyledButtonLink = styled(StyledButton)(
  * @version ./package.json
  */
 const ButtonLink = forwardRef(
-  ({ reactRouterLinkComponent, variant, fullwidth, children, ...rest }, ref) => {
+  ({ reactRouterLinkComponent, variant, fullWidth, children, ...rest }, ref) => {
     if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
       warn('Link Button', 'The props `reactRouterLinkComponent` and `to` must be used together.')
     }
@@ -73,7 +73,7 @@ const ButtonLink = forwardRef(
         as={reactRouterLinkComponent || 'a'}
         variant={variant}
         ref={ref}
-        fullwidth={fullwidth}
+        fullWidth={fullWidth}
       >
         {children}
       </StyledButtonLink>
@@ -104,7 +104,7 @@ ButtonLink.propTypes = {
    * If `true`, sets `ButtonLink` to 100% width.
    * @since 2.2.0
    */
-  fullwidth: PropTypes.bool,
+  fullWidth: PropTypes.bool,
   /**
    * The label. It can include the `A11yContent` component or strings.
    */
@@ -115,7 +115,7 @@ ButtonLink.defaultProps = {
   reactRouterLinkComponent: null,
   to: null,
   href: null,
-  fullwidth: false,
+  fullWidth: false,
 }
 
 export default ButtonLink
