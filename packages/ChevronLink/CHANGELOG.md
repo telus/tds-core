@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.1.16...@tds/core-chevron-link@2.2.0) (2020-07-22)
+
+
+### Features
+
+* **core-chevron-link:** add span as a valid child prop-type ([0109516](https://github.com/telusdigital/tds/commit/010951615d7e6e27d2ba6f1e3fd545d9c8ea0734))
+
+
+
+
+
 ## [2.1.16](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.1.15...@tds/core-chevron-link@2.1.16) (2020-04-14)
 
 **Note:** Version bump only for package @tds/core-chevron-link

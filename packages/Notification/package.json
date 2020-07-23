@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-notification",
-  "version": "3.0.25",
+  "version": "3.0.26",
   "description": "A banner that highlights important messages",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -26,11 +26,11 @@
     "styled-components": "^4.1.3"
   },
   "dependencies": {
-    "@tds/core-box": "^2.2.0",
+    "@tds/core-box": "^2.2.1",
     "@tds/core-colours": "^2.2.1",
     "@tds/core-feedback-icon": "^1.0.7",
-    "@tds/core-flex-grid": "^3.0.10",
-    "@tds/core-interactive-icon": "^2.0.1",
+    "@tds/core-flex-grid": "^3.0.11",
+    "@tds/core-interactive-icon": "^2.0.2",
     "@tds/core-paragraph": "^2.0.12",
     "@tds/shared-animation": "^3.0.0",
     "@tds/shared-styles": "^1.5.2",
