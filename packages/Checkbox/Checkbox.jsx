@@ -52,7 +52,7 @@ const FakeCheckbox = styled.span({
   },
 })
 const HiddenInput = styled.input({
-  position: 'fixed',
+  position: 'absolute',
   opacity: '0',
   pointerEvents: 'none',
 })
