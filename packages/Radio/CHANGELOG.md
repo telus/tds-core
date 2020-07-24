@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.30](https://github.com/telusdigital/tds/compare/@tds/core-radio@2.0.29...@tds/core-radio@2.0.30) (2020-07-24)
+
+
+### Bug Fixes
+
+* **core-radio:** adjust size and spacing of hidden input ([10a6849](https://github.com/telusdigital/tds/commit/10a68491af7199b26f69336e68ec9309600e529a))
+
+
+
+
+
 ## [2.0.29](https://github.com/telusdigital/tds/compare/@tds/core-radio@2.0.28...@tds/core-radio@2.0.29) (2020-07-22)
 
 **Note:** Version bump only for package @tds/core-radio

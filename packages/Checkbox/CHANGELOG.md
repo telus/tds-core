@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.40](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@2.0.39...@tds/core-checkbox@2.0.40) (2020-07-24)
+
+
+### Bug Fixes
+
+* **core-checkbox:** adjust size and spacing of hidden input ([e78c518](https://github.com/telusdigital/tds/commit/e78c518152fe860c06e461f268dc792f2b502f85))
+* **core-checkbox:** fixed accessibility issue ([e7ffe81](https://github.com/telusdigital/tds/commit/e7ffe81ecc582763d6eadb3d7911f441403d4e65))
+
+
+
+
+
 ## [2.0.39](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@2.0.38...@tds/core-checkbox@2.0.39) (2020-07-22)
 
 **Note:** Version bump only for package @tds/core-checkbox

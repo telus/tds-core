@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-radio",
-  "version": "2.0.29",
+  "version": "2.0.30",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
