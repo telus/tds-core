@@ -125,6 +125,7 @@ The following group are the active maintainers of this project, and have merge r
     <td align="center"><a href="https://iamstuartwilson.com"><img src="https://avatars1.githubusercontent.com/u/3594817?v=4" width="100px;" alt="Stuart Wilson"/><br /><sub><b>Stuart Wilson</b></sub></a><br /><a href="#tds-iamstuartwilson" title=""></a></td>
     <td align="center"><a href="https://github.com/mburtch"><img src="https://avatars1.githubusercontent.com/u/93336?v=4" width="100px;" alt="mburtch"/><br /><sub><b>mburtch</b></sub></a><br /><a href="#tds-mburtch" title=""></a></td>
     <td align="center"><a href="https://github.com/mike-bunce"><img src="https://avatars1.githubusercontent.com/u/3803746?v=4" width="100px;" alt="Mike Bunce"/><br /><sub><b>Mike Bunce</b></sub></a><br /><a href="#tds-mike-bunce" title=""></a></td>
+    <td align="center"><a href="http://www.canrozanes.com"><img src="https://avatars1.githubusercontent.com/u/37912128?v=4" width="100px;" alt="Can Rozanes"/><br /><sub><b>Can Rozanes</b></sub></a><br /><a href="#tds-canrozanes" title=""></a></td>
   </tr>
 </table>
 
