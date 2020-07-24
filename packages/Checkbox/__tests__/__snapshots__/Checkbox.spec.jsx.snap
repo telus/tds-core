@@ -103,6 +103,9 @@ exports[`Checkbox allows numbers as value 1`] = `
 
 .c2 {
   position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 2px 1px;
   opacity: 0;
   pointer-events: none;
 }
@@ -5708,6 +5711,9 @@ exports[`Checkbox renders 1`] = `
 
 .c2 {
   position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 2px 1px;
   opacity: 0;
   pointer-events: none;
 }
