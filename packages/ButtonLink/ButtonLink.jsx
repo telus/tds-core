@@ -43,6 +43,20 @@ const StyledButtonLink = styled(StyledButton)(
         color: hoverColor,
       },
     }
+  },
+  ({ fullWidth }) => {
+    let width
+    if (fullWidth === 'true') {
+      width = '100%'
+    }
+    if (fullWidth === 'false') {
+      width = 'auto'
+    }
+    return {
+      '&:link,&:visited': {
+        width,
+      },
+    }
   }
 )
 
@@ -51,22 +65,25 @@ const StyledButtonLink = styled(StyledButton)(
  *
  * @version ./package.json
  */
-const ButtonLink = forwardRef(({ reactRouterLinkComponent, variant, children, ...rest }, ref) => {
-  if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
-    warn('Link Button', 'The props `reactRouterLinkComponent` and `to` must be used together.')
-  }
+const ButtonLink = forwardRef(
+  ({ reactRouterLinkComponent, variant, fullWidth, children, ...rest }, ref) => {
+    if ((reactRouterLinkComponent || rest.to) && !(reactRouterLinkComponent && rest.to)) {
+      warn('Link Button', 'The props `reactRouterLinkComponent` and `to` must be used together.')
+    }
 
-  return (
-    <StyledButtonLink
-      {...safeRest(rest)}
-      as={reactRouterLinkComponent || 'a'}
-      variant={variant}
-      ref={ref}
-    >
-      {children}
-    </StyledButtonLink>
-  )
-})
+    return (
+      <StyledButtonLink
+        {...safeRest(rest)}
+        as={reactRouterLinkComponent || 'a'}
+        variant={variant}
+        ref={ref}
+        fullWidth={fullWidth}
+      >
+        {children}
+      </StyledButtonLink>
+    )
+  }
+)
 
 ButtonLink.displayName = 'ButtonLink'
 
@@ -88,6 +105,11 @@ ButtonLink.propTypes = {
    */
   href: PropTypes.string,
   /**
+   * If `true`, sets `ButtonLink` to 100% width.
+   * @since 2.2.0
+   */
+  fullWidth: PropTypes.oneOf(['true', 'false']),
+  /**
    * The label. It can include the `A11yContent` component, strings, or strings wrapped in a `<span>`.
    */
   children: or([PropTypes.string, componentWithName('A11yContent'), htmlElement('span')])
@@ -98,6 +120,7 @@ ButtonLink.defaultProps = {
   reactRouterLinkComponent: null,
   to: null,
   href: null,
+  fullWidth: false,
 }
 
 export default ButtonLink
