@@ -46,8 +46,11 @@ const StyledButtonLink = styled(StyledButton)(
   },
   ({ fullWidth }) => {
     let width
-    if (fullWidth) {
+    if (fullWidth === 'true') {
       width = '100%'
+    }
+    if (fullWidth === 'false') {
+      width = 'auto'
     }
     return {
       '&:link,&:visited': {
@@ -105,7 +108,7 @@ ButtonLink.propTypes = {
    * If `true`, sets `ButtonLink` to 100% width.
    * @since 2.2.0
    */
-  fullWidth: PropTypes.bool,
+  fullWidth: PropTypes.oneOf(['true', 'false']),
   /**
    * The label. It can include the `A11yContent` component, strings, or strings wrapped in a `<span>`.
    */
