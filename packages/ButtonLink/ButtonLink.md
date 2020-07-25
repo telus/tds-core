@@ -39,3 +39,7 @@ Use the `A11yContent` component to create invisible text that is read out loud b
   </span>
 </Button>
 ```
+
+### Full width option
+
+The full width button option is available to be used in Cards where the button should fill the full width of the Card. Please use this only where it makes sense visually to do so.
