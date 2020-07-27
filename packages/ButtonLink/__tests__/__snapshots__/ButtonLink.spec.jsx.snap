@@ -141,6 +141,11 @@ exports[`ButtonLink can be presented as one of the allowed variants 1`] = `
   color: #4b286d;
 }
 
+.c0:link,
+.c0:visited {
+  width: auto;
+}
+
 @media (min-width:768px) {
   .c0 {
     display: -webkit-inline-box;
@@ -216,6 +221,11 @@ exports[`ButtonLink renders 1`] = `
 
 .c0:hover {
   color: #2B8000;
+}
+
+.c0:link,
+.c0:visited {
+  width: auto;
 }
 
 @media (min-width:768px) {
