@@ -12,7 +12,7 @@ const CartesianButtonLink = props => (
     variant={['primary', 'secondary', 'inverted']}
     href="http://tds.telus.com"
     children="TELUS Design System"
-    fullWidth="false"
+    fullWidth={[false, true]}
   />
 )
 
