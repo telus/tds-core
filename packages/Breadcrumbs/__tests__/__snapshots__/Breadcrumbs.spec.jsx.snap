@@ -253,7 +253,7 @@ exports[`Breadcrumbs with children renders 1`] = `
                                 "inheritColor": true,
                               }
                             }
-                            hasIcon={false}
+                            hasInlineIcon={false}
                             href="/"
                             to={null}
                           >
@@ -310,7 +310,7 @@ exports[`Breadcrumbs with children renders 1`] = `
                                 }
                               }
                               forwardedRef={null}
-                              hasIcon={false}
+                              hasInlineIcon={false}
                               href="/"
                               to={null}
                             >
@@ -439,7 +439,7 @@ exports[`Breadcrumbs with children renders 1`] = `
                                 "inheritColor": true,
                               }
                             }
-                            hasIcon={false}
+                            hasInlineIcon={false}
                             href="/mobility"
                             to={null}
                           >
@@ -496,7 +496,7 @@ exports[`Breadcrumbs with children renders 1`] = `
                                 }
                               }
                               forwardedRef={null}
-                              hasIcon={false}
+                              hasInlineIcon={false}
                               href="/mobility"
                               to={null}
                             >
@@ -980,7 +980,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
                                 "inheritColor": true,
                               }
                             }
-                            hasIcon={false}
+                            hasInlineIcon={false}
                             href={null}
                             to="/"
                           >
@@ -1037,7 +1037,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
                                 }
                               }
                               forwardedRef={null}
-                              hasIcon={false}
+                              hasInlineIcon={false}
                               href={null}
                               to="/"
                             >
@@ -1048,7 +1048,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
                                     "inheritColor": true,
                                   }
                                 }
-                                hasIcon={false}
+                                hasInlineIcon={false}
                                 href={null}
                                 to="/"
                               >
@@ -1178,7 +1178,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
                                 "inheritColor": true,
                               }
                             }
-                            hasIcon={false}
+                            hasInlineIcon={false}
                             href={null}
                             to="/mobility"
                           >
@@ -1235,7 +1235,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
                                 }
                               }
                               forwardedRef={null}
-                              hasIcon={false}
+                              hasInlineIcon={false}
                               href={null}
                               to="/mobility"
                             >
@@ -1246,7 +1246,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
                                     "inheritColor": true,
                                   }
                                 }
-                                hasIcon={false}
+                                hasInlineIcon={false}
                                 href={null}
                                 to="/mobility"
                               >
@@ -1727,7 +1727,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
                                 "inheritColor": true,
                               }
                             }
-                            hasIcon={false}
+                            hasInlineIcon={false}
                             href="/"
                             to={null}
                           >
@@ -1784,7 +1784,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
                                 }
                               }
                               forwardedRef={null}
-                              hasIcon={false}
+                              hasInlineIcon={false}
                               href="/"
                               to={null}
                             >
@@ -1915,7 +1915,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
                                 "inheritColor": true,
                               }
                             }
-                            hasIcon={false}
+                            hasInlineIcon={false}
                             href={null}
                             to="/mobility"
                           >
@@ -1972,7 +1972,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
                                 }
                               }
                               forwardedRef={null}
-                              hasIcon={false}
+                              hasInlineIcon={false}
                               href={null}
                               to="/mobility"
                             >
@@ -1983,7 +1983,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
                                     "inheritColor": true,
                                   }
                                 }
-                                hasIcon={false}
+                                hasInlineIcon={false}
                                 href={null}
                                 to="/mobility"
                               >
@@ -2478,7 +2478,7 @@ exports[`Breadcrumbs with routes renders 1`] = `
                                 "inheritColor": true,
                               }
                             }
-                            hasIcon={false}
+                            hasInlineIcon={false}
                             href="/"
                             to={null}
                           >
@@ -2535,7 +2535,7 @@ exports[`Breadcrumbs with routes renders 1`] = `
                                 }
                               }
                               forwardedRef={null}
-                              hasIcon={false}
+                              hasInlineIcon={false}
                               href="/"
                               to={null}
                             >
@@ -2664,7 +2664,7 @@ exports[`Breadcrumbs with routes renders 1`] = `
                                 "inheritColor": true,
                               }
                             }
-                            hasIcon={false}
+                            hasInlineIcon={false}
                             href="/mobility"
                             to={null}
                           >
@@ -2721,7 +2721,7 @@ exports[`Breadcrumbs with routes renders 1`] = `
                                 }
                               }
                               forwardedRef={null}
-                              hasIcon={false}
+                              hasInlineIcon={false}
                               href="/mobility"
                               to={null}
                             >
