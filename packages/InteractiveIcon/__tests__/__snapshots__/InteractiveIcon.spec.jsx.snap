@@ -434,7 +434,7 @@ exports[`InteractiveIcon renders Dependent icon with Link 1`] = `
           "inheritColor": undefined,
         }
       }
-      hasInlineIcon={true}
+      hasLinkIcon={true}
       href="#"
       to={null}
     >
@@ -491,7 +491,7 @@ exports[`InteractiveIcon renders Dependent icon with Link 1`] = `
           }
         }
         forwardedRef={null}
-        hasInlineIcon={true}
+        hasLinkIcon={true}
         href="#"
         to={null}
       >
