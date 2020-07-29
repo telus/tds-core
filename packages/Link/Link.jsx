@@ -73,8 +73,8 @@ const StyledLink = styled.a(
     return {}
   },
   states,
-  ({ hasIcon }) => {
-    if (hasIcon) {
+  ({ hasInlineIcon }) => {
+    if (hasInlineIcon) {
       return {
         display: 'inline-block',
         '& > svg': {
@@ -121,7 +121,7 @@ const Link = (
       invert={invert}
       context={context}
       ref={forwardedRef}
-      hasIcon={!!Icon}
+      hasInlineIcon={!!Icon}
     >
       {renderChildren()}
     </StyledLink>

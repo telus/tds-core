@@ -126,7 +126,7 @@ Object {
             "inheritColor": undefined,
           }
         }
-        hasIcon={false}
+        hasInlineIcon={false}
         href={null}
         to={null}
       >
@@ -183,7 +183,7 @@ Object {
             }
           }
           forwardedRef={null}
-          hasIcon={false}
+          hasInlineIcon={false}
           href={null}
           to={null}
         >
@@ -342,7 +342,7 @@ Object {
             "inheritColor": undefined,
           }
         }
-        hasIcon={false}
+        hasInlineIcon={false}
         href={null}
         invert={true}
         to={null}
@@ -400,7 +400,7 @@ Object {
             }
           }
           forwardedRef={null}
-          hasIcon={false}
+          hasInlineIcon={false}
           href={null}
           invert={true}
           to={null}
