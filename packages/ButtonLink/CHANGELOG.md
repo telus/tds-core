@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/telusdigital/tds/compare/@tds/core-button-link@2.2.1...@tds/core-button-link@2.3.0) (2020-07-30)
+
+
+### Features
+
+* **core-button-link:**  adding a prop to make the button full width ([8d9fda0](https://github.com/telusdigital/tds/commit/8d9fda0f6c03399c6e2b6f7296210348433dc146))
+* **core-button-link:** added proptypes to boolean ([3d6cd1f](https://github.com/telusdigital/tds/commit/3d6cd1f313c9c26680e21330363f1f6ffc3a599b))
+* **core-button-link:** changed fullWidth with ternary operator ([cd41a3e](https://github.com/telusdigital/tds/commit/cd41a3e975e7d2b0e8d55c06660e60dbb5b99f92))
+* **core-button-link:** update fullWidth with ternary operator ([3dc47b4](https://github.com/telusdigital/tds/commit/3dc47b40129df773b763330184a7b28f2056d7ac))
+
+
+
+
+
 ## [2.2.1](https://github.com/telusdigital/tds/compare/@tds/core-button-link@2.2.0...@tds/core-button-link@2.2.1) (2020-07-24)
 
 **Note:** Version bump only for package @tds/core-button-link
