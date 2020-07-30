@@ -100,7 +100,7 @@ ButtonLink.propTypes = {
   href: PropTypes.string,
   /**
    * If `true`, sets `ButtonLink` to 100% width.
-   * @since 2.2.0
+   * @since 2.3.0
    */
   fullWidth: PropTypes.bool,
   /**
