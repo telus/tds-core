@@ -4,8 +4,6 @@ import styled from 'styled-components'
 
 import { colorTelusGreen } from '@tds/core-colours'
 
-const videoProgressBar = React.createRef()
-
 const ProgressBarContainer = styled.div({
   display: 'flex',
   width: '100%',
@@ -117,6 +115,8 @@ const VideoProgressBar = ({
   setSeek,
   resetInactivityTimer,
 }) => {
+  const videoProgressBar = React.createRef()
+
   const handleVideoSkip = () => {
     setSeek(videoProgressBar.current.value)
   }
