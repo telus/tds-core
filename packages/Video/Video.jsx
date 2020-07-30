@@ -301,14 +301,20 @@ class Video extends React.Component {
       videoUnplayed: false,
       videoQualityChanged: false,
     })
-    this.updateAnalyticsData()
+
+    if (this.props.analyticsTracking) {
+      this.updateAnalyticsData()
+    }
+
     this.resetInactivityTimer()
   }
 
   setAsPaused = () => {
     this.clearInactivityTimer()
     this.setState({ videoIsPlaying: false })
-    this.updateAnalyticsData()
+    if (this.props.analyticsTracking) {
+      this.updateAnalyticsData()
+    }
   }
 
   returnFromEndState = () => {
