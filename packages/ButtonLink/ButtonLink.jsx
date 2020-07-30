@@ -45,7 +45,7 @@ const StyledButtonLink = styled(StyledButton)(
     }
   },
   ({ fullWidth }) => {
-    const width = fullWidth === 'true' ? '100%' : 'auto'
+    const width = fullWidth ? '100%' : 'auto'
     return {
       '&:link,&:visited': {
         width,
