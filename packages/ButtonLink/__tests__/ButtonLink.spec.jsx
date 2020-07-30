@@ -66,7 +66,7 @@ describe('ButtonLink', () => {
   })
 
   it('can be presented as one of the allowed fullwidth', () => {
-    const link = render(<ButtonLink fullWidth="true">Go home</ButtonLink>)
+    const link = render(<ButtonLink fullWidth>Go home</ButtonLink>)
 
     expect(link).toMatchSnapshot()
   })
