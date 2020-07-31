@@ -35,8 +35,6 @@ The following group are the active maintainers of this project, and have merge r
 | Member           | Role          | Slack           | GitHub        |
 | ---------------- | ------------- | --------------- | ------------- |
 | Varun Jain       | Product Owner | @varunjain      | @varunj90     |
-| Enrico Sacchetti | Tech Lead     | @enrico         | @theetrain    |
-| Marco Donnici    | Developer     | @marcod         | @marcod1419   |
 | Jordan Raffoul   | Developer     | @Jordan Raffoul | @jraff        |
 | Christina Lo     | Design Lead   | @Christina L.   | @Christina-Lo |
 | Donna Vitan      | Design        | @donnavitan     | @donnavitan   |
