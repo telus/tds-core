@@ -26,5 +26,3 @@ peopleList
 spawnSync('all-contributors', ['generate'], {
   stdio: 'inherit',
 })
-
-spawnSync('git', ['add', '.all-contributorsrc', 'README.md'])
