@@ -126,41 +126,54 @@ jobs:
       - run:
           name: Lerna Publish
           command: npm run lerna:cipublish
-
-  screenshots:
-    executor: browsers
-    steps:
-      - attach
-      - add_ssh_keys:
-          fingerprints:
-            - '16:04:2d:ed:15:8d:0b:56:ea:ee:82:6e:01:a4:5b:09'
       - run:
-          name: Add Github Key
-          command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+          name: Update contributors
+          command: npm run contributors:update
       - run:
-          name: Configure Git Config & Branch
-          command: |
-            git status
-            git config --global user.email "tds.github.bot@gmail.com"
-            git config --global user.name "TDSBot"
-            git pull
-      - run:
-          name: Styleguidist Server
-          command: npm run dev:e2e-direct
-          background: true
-      - run:
-          name: Update Screenshots
-          command: npm run test:e2e -- -a -u
-      - run:
-          name: Commit updated e2e screenshots
+          name: Commit updated contributors
           command: |
             if [[ $(git diff --name-only) ]]
-              then git add e2e
-              git commit -m "test(e2e): update screenshots with version bump"
+              git add .all-contributorsrc README.md
+              git commit -m "chore(other): update contributors"
               git push
             else
-              echo 'No screenshot changes.'
+              echo 'No contributor changes.'
             fi
+
+  # screenshots:
+  #   executor: browsers
+  #   steps:
+  #     - attach
+  #     - add_ssh_keys:
+  #         fingerprints:
+  #           - '16:04:2d:ed:15:8d:0b:56:ea:ee:82:6e:01:a4:5b:09'
+  #     - run:
+  #         name: Add Github Key
+  #         command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+  #     - run:
+  #         name: Configure Git Config & Branch
+  #         command: |
+  #           git status
+  #           git config --global user.email "tds.github.bot@gmail.com"
+  #           git config --global user.name "TDSBot"
+  #           git pull
+  #     - run:
+  #         name: Styleguidist Server
+  #         command: npm run dev:e2e-direct
+  #         background: true
+  #     - run:
+  #         name: Update Screenshots
+  #         command: npm run test:e2e -- -a -u
+  #     - run:
+  #         name: Commit updated e2e screenshots
+  #         command: |
+  #           if [[ $(git diff --name-only) ]]
+  #             then git add e2e
+  #             git commit -m "test(e2e): update screenshots with version bump"
+  #             git push
+  #           else
+  #             echo 'No screenshot changes.'
+  #           fi
 
 workflows:
   version: 2
