@@ -1283,6 +1283,126 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
 </Card>
 `;
 
+exports[`<Card /> spacing renders intermediate spacing 2`] = `
+.c1 {
+  display: block;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 {
+  border-width: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+<Card
+  fullHeight={false}
+  spacing="image"
+  variant="default"
+>
+  <Styled(Component)
+    fullHeight={false}
+    variant="default"
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "border-width: 0;",
+              "border-radius: 4px;",
+              [Function],
+              [Function],
+            ],
+          },
+          "displayName": "Styled(Component)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      fullHeight={false}
+      variant="default"
+    >
+      <Component
+        className="c0"
+        fullHeight={false}
+        variant="default"
+      >
+        <Box
+          className="c0"
+          inline={false}
+          tag="div"
+          variant="default"
+        >
+          <styled.div
+            className="c0"
+            inline={false}
+            tag="div"
+            variant="default"
+          >
+            <StyledComponent
+              className="c0"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [
+                    [Function],
+                  ],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              inline={false}
+              tag="div"
+              variant="default"
+            >
+              <div
+                className="c0 sc-bwzfXH c0 c1"
+              >
+                Some content
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </Box>
+      </Component>
+    </StyledComponent>
+  </Styled(Component)>
+</Card>
+`;
+
 exports[`<Card /> spacing renders narrow spacing 1`] = `
 .c1 {
   display: block;

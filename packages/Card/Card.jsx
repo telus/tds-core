@@ -103,7 +103,7 @@ Card.propTypes = {
    * Sets the `Card`'s `height` equal to its parent.
    */
   fullHeight: PropTypes.bool,
-  spacing: PropTypes.oneOf(['default', 'narrow', 'compact', 'intermediate']),
+  spacing: PropTypes.oneOf(['default', 'narrow', 'compact', 'intermediate', 'image']),
 }
 
 Card.defaultProps = {

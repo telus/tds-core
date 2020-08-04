@@ -179,3 +179,23 @@ _Compact_ cards have Box 3 padding all around it.
 _Intermediate_ cards have Box 4 padding all around it.
 
 <img src="card/card-padding-intermediate.png" alt="card padding intermediate" style="max-width: 100%" />
+
+_Image_ cards have no preset padding. To be used when a full bleed image is desired.
+
+```jsx
+<Card spacing={'image'} variant={'defaultWithBorder'}>
+  <Box inline between={'space-between'}>
+    <Box inset={4} between={2}>
+      <Heading level="h3">Your first bill isn't ready yet.</Heading>
+      <Paragraph>
+        We'll send you an email or text message when it's available. Want to pay your bills
+        automatically?
+        <ChevronLink href="#" variant="secondary">
+          Set up pre-authorized payments
+        </ChevronLink>
+      </Paragraph>
+    </Box>
+    <Image src="salal_branch.png" width={398} height={147} alt="Image of Salal Branch" />
+  </Box>
+</Card>
+```
