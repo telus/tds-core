@@ -41,7 +41,7 @@
     "intl:deps": "npm run updated",
     "lint:md": "remark --quiet --frail .",
     "intl:audit": "npm run audit",
-    "precommit": "lint-staged && npm run test && npm run contributors:update",
+    "precommit": "lint-staged && npm run test",
     "prepare": "npm run gitbook:install",
     "prepr": "npm run test:e2e && scripts/prePr.sh",
     "prepr:quick": "scripts/prePr.sh",
@@ -204,7 +204,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS && node ./scripts/commit-scope-lint.js -m $HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged && npm run test:quick && npm run contributors:update",
+      "pre-commit": "lint-staged && npm run test:quick",
       "pre-push": "npm run ci:build && npm-run-all --parallel test lint build-docs:*"
     }
   }
