@@ -71,7 +71,7 @@ describe('<Card />', () => {
       expect(card).toMatchSnapshot()
     })
 
-    it('renders intermediate spacing', () => {
+    it('renders image spacing', () => {
       const card = doMount({ spacing: 'image' })
       expect(card).toMatchSnapshot()
     })
