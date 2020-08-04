@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.3](https://github.com/telus/tds-core/compare/@tds/core-video@1.3.2...@tds/core-video@1.3.3) (2020-08-04)
+
+
+### Bug Fixes
+
+* **core-video:** move VideoProgressBar create inside component ([7e7daee](https://github.com/telus/tds-core/commit/7e7daee5bcef9087fe6cf97e5b93cc2862ebb7c1))
+* **core-video:** only call analyticsTracking if prop exists ([278d36d](https://github.com/telus/tds-core/commit/278d36d414b98f63385f3975be79baba88405911))
+
+
+
+
+
 ## [1.3.2](https://github.com/telus/tds-core/compare/@tds/core-video@1.3.1...@tds/core-video@1.3.2) (2020-07-22)
 
 **Note:** Version bump only for package @tds/core-video
