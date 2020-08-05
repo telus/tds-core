@@ -133,6 +133,7 @@ jobs:
           name: Commit updated contributors
           command: |
             if [[ $(git diff --name-only) ]]
+            then
               git add .all-contributorsrc README.md
               git commit -m "chore(other): update contributors"
               git push
