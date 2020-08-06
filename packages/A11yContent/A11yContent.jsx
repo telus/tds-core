@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { safeRest } from '@tds/util-helpers'
+import { componentWithName, or } from '@tds/util-prop-types'
 
 const StyledA11yContent = styled.span({
   position: 'absolute',
@@ -22,9 +23,9 @@ const A11yContent = ({ children, ...rest }) => {
 
 A11yContent.propTypes = {
   /**
-   * Accessible content.
+   * Accessible content. Can be either a string or a `Heading` Component
    */
-  children: PropTypes.string.isRequired,
+  children: or([PropTypes.string, componentWithName('Heading')]).isRequired,
 }
 A11yContent.defaultProps = {}
 
