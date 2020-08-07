@@ -3,11 +3,15 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Box from '@tds/core-box'
+import Image from '@tds/core-image'
+import { responsiveProps } from '@tds/util-prop-types'
+
 import { colorWhite, colorWhiteLilac, colorGreyAthens, colorGreyGainsboro } from '@tds/core-colours'
 import { borders } from '@tds/shared-styles'
 import { safeRest } from '@tds/util-helpers'
 
 import { deprecate } from '../../shared/utils/warn'
+import handleResponsiveStyles from './handleResponsiveStyles'
 
 const getVariant = ({ variant }) => {
   if (variant === 'white' || variant === 'default' || variant === 'defaultWithBorder') {
@@ -36,7 +40,7 @@ const deprecationWarning = deprecatedVariant => {
   }' variant.`
 }
 
-export const StyledCard = styled(({ fullHeight, ...props }) => <Box {...props} />)(
+export const StyledCard = styled(({ fullHeight, fullBleedImage, ...props }) => <Box {...props} />)(
   borders.none,
   borders.rounded,
   getVariant,
@@ -47,13 +51,12 @@ export const StyledCard = styled(({ fullHeight, ...props }) => <Box {...props} /
     return {}
   }
 )
-
 /**
  * A content container.
  *
  * @version ./package.json
  */
-const Card = ({ variant, children, fullHeight, spacing, ...rest }) => {
+const Card = ({ variant, children, fullHeight, spacing, fullBleedImage, ...rest }) => {
   if (variant === 'white' || variant === 'lavendar' || variant === 'grey') {
     deprecate('@tds/core-card', deprecationWarning(variant))
   }
@@ -71,9 +74,35 @@ const Card = ({ variant, children, fullHeight, spacing, ...rest }) => {
     spacingProps.inset = 4
   }
 
+  const ContainerStyles = imageProps =>
+    handleResponsiveStyles({ position: imageProps?.position }, ({ position }) => {
+      if (!imageProps) return {}
+      const direction = {
+        left: 'row',
+        right: 'row-reverse',
+        top: 'column',
+        bottom: 'column-reverse',
+        none: 'row',
+      }
+      const styles = {
+        display: 'flex',
+        flexDirection: direction[position],
+        justifyContent: 'space-between',
+        '> img': {
+          display: position === 'none' ? 'none' : 'block',
+          margin: '0 auto',
+        },
+      }
+      return styles
+    })
+
+  const StyledDiv = styled.div(ContainerStyles)
   return (
-    <StyledCard {...safeRest(rest)} fullHeight={fullHeight} variant={variant} {...spacingProps}>
-      {children}
+    <StyledCard {...safeRest(rest)} fullHeight={fullHeight} variant={variant}>
+      <StyledDiv {...fullBleedImage}>
+        {fullBleedImage ? <Image {...fullBleedImage} /> : ''}
+        <Box {...spacingProps}>{children}</Box>
+      </StyledDiv>
     </StyledCard>
   )
 }
@@ -104,12 +133,21 @@ Card.propTypes = {
    */
   fullHeight: PropTypes.bool,
   spacing: PropTypes.oneOf(['default', 'narrow', 'compact', 'intermediate']),
+  fullBleedImage: PropTypes.shape({
+    src: PropTypes.string.isRequired,
+    width: PropTypes.number.isRequired,
+    height: PropTypes.number.isRequired,
+    alt: PropTypes.string.isRequired,
+    position: responsiveProps(PropTypes.oneOf(['left', 'right', 'top', 'bottom', 'none']))
+      .isRequired,
+  }),
 }
 
 Card.defaultProps = {
   variant: 'default',
   fullHeight: false,
   spacing: 'default',
+  fullBleedImage: undefined,
 }
 
 export default Card

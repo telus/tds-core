@@ -179,3 +179,54 @@ _Compact_ cards have Box 3 padding all around it.
 _Intermediate_ cards have Box 4 padding all around it.
 
 <img src="card/card-padding-intermediate.png" alt="card padding intermediate" style="max-width: 100%" />
+
+```jsx
+<Card
+  fullBleedImage={{
+    src: 'image-example.jpg',
+    width: 200,
+    height: 200,
+    alt: 'image',
+    position: 'right',
+  }}
+>
+  <Box>
+    <Heading level="h2">Need a hand?</Heading>
+    <Paragraph>
+      Ready to order? Have a question? We'll get back to you, with volume discounts available to
+      larger accounts.
+    </Paragraph>
+  </Box>
+</Card>
+```
+
+```jsx
+<FlexGrid>
+  <FlexGrid.Row>
+    <FlexGrid.Col xs={12} md={5}>
+      <Card
+        variant="defaultWithBorder"
+        fullBleedImage={{
+          src: 'image-example.jpg',
+          width: 200,
+          height: 200,
+          alt: 'image',
+          position: { xs: 'top', md: 'bottom' },
+        }}
+      >
+        <Box between={3}>
+          <Heading level="h3">Internet 15 - Special Offer</Heading>
+          <PriceLockup
+            size="medium"
+            price="55"
+            rateText="per month"
+            bottomText="for 24 months, then $75 per month"
+            signDirection="left"
+          />
+          <HairlineDivider />
+        </Box>
+      </Card>
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
+```
