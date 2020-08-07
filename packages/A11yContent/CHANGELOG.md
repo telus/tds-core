@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telusdigital/tds/compare/@tds/core-a11y-content@2.1.5...@tds/core-a11y-content@2.2.0) (2020-08-07)
+
+
+### Features
+
+* **core-a11y-content:** add tds-heading as valid child prop-type ([fdd194b](https://github.com/telusdigital/tds/commit/fdd194b6ac24f4d9111d198af55a5db2edb450f4))
+
+
+
+
+
 ## [2.1.5](https://github.com/telusdigital/tds/compare/@tds/core-a11y-content@2.1.4...@tds/core-a11y-content@2.1.5) (2020-02-03)
 
 **Note:** Version bump only for package @tds/core-a11y-content

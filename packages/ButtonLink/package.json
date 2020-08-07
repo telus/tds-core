@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-button-link",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "A link that is styled as a button",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -34,6 +34,6 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-a11y-content": "^2.1.5"
+    "@tds/core-a11y-content": "^2.2.0"
   }
 }
