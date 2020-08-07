@@ -13,6 +13,7 @@ exports[`ButtonLink can be presented as one of the allowed fullwidth 1`] = `
   line-height: 1.5;
   word-wrap: break-word;
   font-weight: 700;
+  height: 3.25rem;
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 0 2rem;
@@ -33,18 +34,10 @@ exports[`ButtonLink can be presented as one of the allowed fullwidth 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  text-align: center;
-  min-height: 3.25rem;
   background-color: #2B8000;
   color: #fff;
   -webkit-text-decoration: none;
   text-decoration: none;
-}
-
-.c0:after {
-  content: "";
-  min-height: inherit;
-  font-size: 0;
 }
 
 .c0:hover {
@@ -102,6 +95,7 @@ exports[`ButtonLink can be presented as one of the allowed variants 1`] = `
   line-height: 1.5;
   word-wrap: break-word;
   font-weight: 700;
+  height: 3.25rem;
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 0 2rem;
@@ -122,18 +116,10 @@ exports[`ButtonLink can be presented as one of the allowed variants 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  text-align: center;
-  min-height: 3.25rem;
   background-color: #4b286d;
   color: #fff;
   -webkit-text-decoration: none;
   text-decoration: none;
-}
-
-.c0:after {
-  content: "";
-  min-height: inherit;
-  font-size: 0;
 }
 
 .c0:hover {
@@ -191,6 +177,7 @@ exports[`ButtonLink renders 1`] = `
   line-height: 1.5;
   word-wrap: break-word;
   font-weight: 700;
+  height: 3.25rem;
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 0 2rem;
@@ -211,18 +198,10 @@ exports[`ButtonLink renders 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  text-align: center;
-  min-height: 3.25rem;
   background-color: #2B8000;
   color: #fff;
   -webkit-text-decoration: none;
   text-decoration: none;
-}
-
-.c0:after {
-  content: "";
-  min-height: inherit;
-  font-size: 0;
 }
 
 .c0:hover {

@@ -68,27 +68,6 @@ exports[`ButtonGroup renders 1`] = `
   word-wrap: break-word;
   font-weight: 700;
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
-  margin: 0;
-  padding: 0 2rem;
-  cursor: pointer;
-  background: none;
-  -webkit-transition: background 0.2s;
-  transition: background 0.2s;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
-  min-height: 3.25rem;
   -webkit-transition: background 0.2s,color 0.2s,box-shadow 0.2s;
   transition: background 0.2s,color 0.2s,box-shadow 0.2s;
   background-color: #fff;
@@ -96,12 +75,6 @@ exports[`ButtonGroup renders 1`] = `
   color: #4b286d;
   white-space: nowrap;
   min-width: 136px;
-}
-
-.c5:after {
-  content: "";
-  min-height: inherit;
-  font-size: 0;
 }
 
 .c5:hover {
@@ -115,17 +88,6 @@ exports[`ButtonGroup renders 1`] = `
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   max-width: 784px;
-}
-
-@media (min-width:768px) {
-  .c5 {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    width: auto;
-    min-width: 180px;
-  }
 }
 
 @media (min-width:768px) {
@@ -453,27 +415,6 @@ exports[`ButtonGroup renders 1`] = `
                                     "word-wrap: break-word;",
                                     "font-weight: 700;",
                                     "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
-                                    "margin: 0;",
-                                    "padding: 0 2rem;",
-                                    "cursor: pointer;",
-                                    "background: none;",
-                                    "transition: background 0.2s;",
-                                    "display: flex;",
-                                    "width: 100%;",
-                                    "align-items: center;",
-                                    "justify-content: center;",
-                                    "text-align: center;",
-                                    "min-height: 3.25rem;",
-                                    "@media (min-width: 768px) {",
-                                    "display: inline-flex;",
-                                    "width: auto;",
-                                    "min-width: 180px;",
-                                    "}",
-                                    "&:after {",
-                                    "content: \\"\\";",
-                                    "min-height: inherit;",
-                                    "font-size: 0;",
-                                    "}",
                                     "transition: background 0.2s, color 0.2s, box-shadow 0.2s;",
                                     "background-color: #fff;",
                                     "box-shadow: 0px 0px 0px 1px #4b286d;",
@@ -632,27 +573,6 @@ exports[`ButtonGroup renders 1`] = `
                                     "word-wrap: break-word;",
                                     "font-weight: 700;",
                                     "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
-                                    "margin: 0;",
-                                    "padding: 0 2rem;",
-                                    "cursor: pointer;",
-                                    "background: none;",
-                                    "transition: background 0.2s;",
-                                    "display: flex;",
-                                    "width: 100%;",
-                                    "align-items: center;",
-                                    "justify-content: center;",
-                                    "text-align: center;",
-                                    "min-height: 3.25rem;",
-                                    "@media (min-width: 768px) {",
-                                    "display: inline-flex;",
-                                    "width: auto;",
-                                    "min-width: 180px;",
-                                    "}",
-                                    "&:after {",
-                                    "content: \\"\\";",
-                                    "min-height: inherit;",
-                                    "font-size: 0;",
-                                    "}",
                                     "transition: background 0.2s, color 0.2s, box-shadow 0.2s;",
                                     "background-color: #fff;",
                                     "box-shadow: 0px 0px 0px 1px #4b286d;",
@@ -811,27 +731,6 @@ exports[`ButtonGroup renders 1`] = `
                                     "word-wrap: break-word;",
                                     "font-weight: 700;",
                                     "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
-                                    "margin: 0;",
-                                    "padding: 0 2rem;",
-                                    "cursor: pointer;",
-                                    "background: none;",
-                                    "transition: background 0.2s;",
-                                    "display: flex;",
-                                    "width: 100%;",
-                                    "align-items: center;",
-                                    "justify-content: center;",
-                                    "text-align: center;",
-                                    "min-height: 3.25rem;",
-                                    "@media (min-width: 768px) {",
-                                    "display: inline-flex;",
-                                    "width: auto;",
-                                    "min-width: 180px;",
-                                    "}",
-                                    "&:after {",
-                                    "content: \\"\\";",
-                                    "min-height: inherit;",
-                                    "font-size: 0;",
-                                    "}",
                                     "transition: background 0.2s, color 0.2s, box-shadow 0.2s;",
                                     "background-color: #fff;",
                                     "box-shadow: 0px 0px 0px 1px #4b286d;",

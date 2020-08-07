@@ -71,4 +71,37 @@ describe('<Card />', () => {
       expect(card).toMatchSnapshot()
     })
   })
+
+  describe('full bleed image', () => {
+    it('renders without an image', () => {
+      const card = doMount()
+      expect(card).toMatchSnapshot()
+    })
+
+    it('renders with an image', () => {
+      const card = doMount({
+        fullBleedImage: {
+          src: 'image-example.jpg',
+          width: 200,
+          height: 200,
+          alt: 'image',
+          position: 'top',
+        },
+      })
+      expect(card).toMatchSnapshot()
+    })
+
+    it('renders with responsive image props', () => {
+      const card = doMount({
+        fullBleedImage: {
+          src: 'image-example.jpg',
+          width: 200,
+          height: 200,
+          alt: 'image',
+          position: { xs: 'top', md: 'bottom' },
+        },
+      })
+      expect(card).toMatchSnapshot()
+    })
+  })
 })
