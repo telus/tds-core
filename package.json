@@ -132,7 +132,7 @@
     "pumpify": "^2.0.1",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
-    "react-helmet": "^5.2.0",
+    "react-helmet": "^6.0.0",
     "react-router-dom": "^5.1.2",
     "react-styleguidist": "^10.6.1",
     "react-test-renderer": "^16.0.0",
