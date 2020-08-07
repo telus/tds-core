@@ -180,50 +180,66 @@ _Intermediate_ cards have Box 4 padding all around it.
 
 <img src="card/card-padding-intermediate.png" alt="card padding intermediate" style="max-width: 100%" />
 
+### Full Bleed Image Card
+
+In cases where designs should have images without margins (full bleed images), use the Full Bleed Image property. If passing a full bleed image, the src, width, height, alt tag, and position are required.
+
+Position can be passed as one of the following words: 'left', 'right', 'top', 'bottom', or 'none', depending on where in the card you would like the image to be. This property may also be passed as a responsive prop, using the TDS breakpoints. A full bleed image with position: {xs: 'none', md: 'left'} for example, will have a full bleed image to the left of card content when viewed on desktops, and no image when viewed on mobile screens.
+
+In a horizontal card the image height should be appropriately matched to that of the card.
+In a vertical card, the width of the image would ideally match the width of the card. In cases where the image is smaller than the width of the card, the full bleed image will be centered in the card.
+
+#### Horizontal card with a full bleed image positioned right on desktop, none on mobile
+
 ```jsx
 <Card
   fullBleedImage={{
-    src: 'image-example.jpg',
-    width: 200,
-    height: 200,
-    alt: 'image',
-    position: 'right',
+    src: 'card/salal_branch_tall.png',
+    width: 191,
+    height: 176,
+    alt: 'salal branch image',
+    position: { xs: 'none', md: 'right' },
   }}
+  variant="defaultWithBorder"
 >
-  <Box>
-    <Heading level="h2">Need a hand?</Heading>
+  <Box between={2}>
+    <Heading level="h3">Your first bill isn't ready yet.</Heading>
     <Paragraph>
-      Ready to order? Have a question? We'll get back to you, with volume discounts available to
-      larger accounts.
+      We'll send you an email or text message when it's available. Want to pay your bills
+      automatically?
+      <ChevronLink href="#" variant="secondary">
+        Set up pre-authorized payments
+      </ChevronLink>
     </Paragraph>
   </Box>
 </Card>
 ```
+
+#### Vertical card with a full bleed image positioned bottom on both desktop and mobile
 
 ```jsx
 <FlexGrid>
   <FlexGrid.Row>
     <FlexGrid.Col xs={12} md={5}>
       <Card
-        variant="defaultWithBorder"
         fullBleedImage={{
-          src: 'image-example.jpg',
-          width: 200,
-          height: 200,
-          alt: 'image',
-          position: { xs: 'top', md: 'bottom' },
+          src: 'card/salal_branch.png',
+          width: 398,
+          height: 147,
+          alt: 'salal branch image',
+          position: 'bottom',
         }}
+        variant="defaultWithBorder"
       >
-        <Box between={3}>
-          <Heading level="h3">Internet 15 - Special Offer</Heading>
-          <PriceLockup
-            size="medium"
-            price="55"
-            rateText="per month"
-            bottomText="for 24 months, then $75 per month"
-            signDirection="left"
-          />
-          <HairlineDivider />
+        <Box between={2}>
+          <Heading level="h3">Your first bill isn't ready yet.</Heading>
+          <Paragraph>
+            We'll send you an email or text message when it's available. Want to pay your bills
+            automatically?
+            <ChevronLink href="#" variant="secondary">
+              Set up pre-authorized payments
+            </ChevronLink>
+          </Paragraph>
         </Box>
       </Card>
     </FlexGrid.Col>
