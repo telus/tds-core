@@ -1247,7 +1247,7 @@ exports[`<Card /> full bleed image renders with an image 1`] = `
 
 .c2 > img {
   display: block;
-  margin: 0 auto;
+  margin: auto;
 }
 
 @media (max-width:767px) {
@@ -1620,7 +1620,7 @@ exports[`<Card /> full bleed image renders with responsive image props 1`] = `
 
   .c2 > img {
     display: block;
-    margin: 0 auto;
+    margin: auto;
   }
 }
 
@@ -1641,7 +1641,7 @@ exports[`<Card /> full bleed image renders with responsive image props 1`] = `
 
   .c2 > img {
     display: block;
-    margin: 0 auto;
+    margin: auto;
   }
 }
 
