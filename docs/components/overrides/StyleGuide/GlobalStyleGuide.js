@@ -64,6 +64,12 @@ const GlobalStyleGuide = createGlobalStyle({
     marginRight: '-50vw'
   },
 
+  '.docs_full-width-footer': {
+    'a': {
+      textDecoration: 'none !important',
+    }
+  },
+
   '.docs_full-height-box': {
     height: '100%'
   },
