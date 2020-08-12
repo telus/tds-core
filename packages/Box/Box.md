@@ -95,7 +95,7 @@ This will do the following:
 - Spacing between the buttons will increase as the viewport size increases to make things look less dense on larger screens
 - Below the `lg` viewport (≤992px), `inline` will be set to `false`, making the buttons stack. On `lg` and larger, the buttons will appear side to side
 
-To learn more about responsive props see [`@tds/util-prop-types`](#/Utilities?id=section-proptypes). The following `Box` props support responsive props: `vertical`, `horizontal`, `inset`, `between`, and `inline`.
+To learn more about responsive props see [`@tds/util-prop-types`](#/Utilities?id=section-proptypes). The following `Box` props support responsive props: `vertical`, `horizontal`, `inset`, `between`, `inline`, and `below`.
 
 ### Using space-between
 

@@ -152,12 +152,7 @@ Box.propTypes = {
    */
   inset: responsiveProps(PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6, 7, 8])),
   /**
-   * @ignore
-   *
-   * We are keeping this hidden for now as we are not sold on the necessity. We use it internally still to apply
-   * spacing to Markdown components, but would like to use between instead if the library allows it.
-   *
-   * Sets a `margin-bottom`.
+   * Indent content from the container's bottom edge by applying margin-bottom.
    *
    * One of: `0,1,2,3,4,5,6,7,8` as a [**responsive prop**](#responsiveProps)
    */
