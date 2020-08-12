@@ -90,7 +90,7 @@ const Card = ({ variant, children, fullHeight, spacing, fullBleedImage, ...rest 
         justifyContent: 'space-between',
         '> img': {
           display: position === 'none' ? 'none' : 'block',
-          margin: '0 auto',
+          margin: 'auto',
         },
       }
       return styles
