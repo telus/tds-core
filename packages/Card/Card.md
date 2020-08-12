@@ -182,12 +182,11 @@ _Intermediate_ cards have Box 4 padding all around it.
 
 ### Full Bleed Image Card
 
-In cases where designs should have images without margins (full bleed images), use the Full Bleed Image property. If passing a full bleed image, the src, width, height, alt tag, and position are required.
+In cases where a full bleed image is desired, use the Full Bleed Image property of the Card component. If passing a full bleed image property, the src, width, height, alt tag, and position are required.
 
 Position can be passed as one of the following words: 'left', 'right', 'top', 'bottom', or 'none', depending on where in the card you would like the image to be. This property may also be passed as a responsive prop, using the TDS breakpoints. A full bleed image with position: {xs: 'none', md: 'left'} for example, will have a full bleed image to the left of card content when viewed on desktops, and no image when viewed on mobile screens.
 
-In a horizontal card the image height should be appropriately matched to that of the card.
-In a vertical card, the width of the image would ideally match the width of the card. In cases where the image is smaller than the width of the card, the full bleed image will be centered in the card.
+The image dimensions should be appropriately matched to that of the card. In cases where the image is smaller than the dimensions of the card, the full bleed image will be centered in the card.
 
 #### Horizontal card with a full bleed image positioned right on desktop, none on mobile
 
