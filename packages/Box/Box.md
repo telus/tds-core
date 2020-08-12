@@ -170,3 +170,84 @@ This prop implements `justify-content: space-between;` in CSS. With `space-betwe
 ```
 
 Use `space-between` to space elements inside of `Box` evenly, dynamically fitted to the `Box`'s size.
+
+### Below
+
+```jsx { "props": { "className": "docs_full-width-playground docs_full-width-footer" } }
+<div>
+  <Box below={8}>
+    <FlexGrid>
+      <FlexGrid.Row>
+        <FlexGrid.Col>
+          <Box inset={4} between={3}>
+            <Heading level="h2">Mobile internet plans</Heading>
+            <Paragraph>
+              Take your business out of the office. All across Canada businesses use TELUS mobile
+              phones to go where their customers are and stay connected.
+            </Paragraph>
+            <ChevronLink href="#">Learn more</ChevronLink>
+          </Box>
+        </FlexGrid.Col>
+      </FlexGrid.Row>
+    </FlexGrid>
+  </Box>
+  <div style={{ 'background-color': 'rgb(42, 44, 46)' }}>
+    <FlexGrid>
+      <FlexGrid.Row>
+        <FlexGrid.Col xs={3}>
+          <Box between={3} vertical={3}>
+            <Link href="#" invert>
+              About us
+            </Link>
+            <Link href="#" invert>
+              Accessibility
+            </Link>
+            <Link href="#" invert>
+              Careers
+            </Link>
+          </Box>
+        </FlexGrid.Col>
+        <FlexGrid.Col xs={3}>
+          <Box between={3} vertical={3}>
+            <Link href="#" invert>
+              Support
+            </Link>
+            <Link href="#" invert>
+              Contact Us
+            </Link>
+            <Link href="#" invert>
+              Neighbourhood
+            </Link>
+          </Box>
+        </FlexGrid.Col>
+        <FlexGrid.Col xs={3}>
+          <Box between={3} vertical={3}>
+            <Link href="#" invert>
+              TELUS & CRTC Internet Code
+            </Link>
+            <Link href="#" invert>
+              Internet Code, SimplifiedAccessibility
+            </Link>
+            <Link href="#" invert>
+              TELUS & CRTC Wireless Code
+            </Link>
+          </Box>
+        </FlexGrid.Col>
+        <FlexGrid.Col xs={3}>
+          <Box between={3} vertical={3}>
+            <Link href="#" invert>
+              TELUS Digital
+            </Link>
+            <Link href="#" invert>
+              TELUS International
+            </Link>
+            <Link href="#" invert>
+              TELUS Partner Solutions
+            </Link>
+          </Box>
+        </FlexGrid.Col>
+      </FlexGrid.Row>
+    </FlexGrid>
+  </div>
+</div>
+```
