@@ -13,23 +13,6 @@ import { safeRest } from '@tds/util-helpers'
 
 import generateId from '../../../shared/utils/generateId/generateId'
 
-const baseButton = {
-  margin: 0,
-  padding: '0 2rem',
-  cursor: 'pointer',
-  background: 'none',
-  transition: 'background 0.2s',
-  display: 'flex',
-  width: '100%',
-  alignItems: 'center',
-  justifyContent: 'center',
-  ...media.from('md').css({
-    display: 'inline-flex',
-    width: 'auto',
-    minWidth: '136px',
-  }),
-}
-
 const StyledButtonGroupItem = styled.div({
   margin: '0.5rem 0',
 })
@@ -50,9 +33,8 @@ const StyledLabel = styled.label(
   borders.rounded,
   medium,
   boldFont,
-  forms.buttonHeight,
   forms.font,
-  baseButton,
+  forms.baseButton,
   {
     transition: 'background 0.2s, color 0.2s, box-shadow 0.2s',
     backgroundColor: colorWhite,
@@ -65,6 +47,9 @@ const StyledLabel = styled.label(
       color: colorTelusPurple,
       boxShadow: `0px 0px 0px 2px ${colorTelusPurple}, 0px 0px 8px 1px ${colorTelusPurple}`,
     },
+    ...media.from('md').css({
+      minWidth: '136px',
+    }),
   }
 )
 
