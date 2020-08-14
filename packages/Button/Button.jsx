@@ -6,9 +6,8 @@ import { componentWithName, or, htmlElement } from '@tds/util-prop-types'
 import { borders, forms } from '@tds/shared-styles'
 import { medium, boldFont } from '@tds/shared-typography'
 import { colorPrimary, colorSecondary, colorWhite, colorText } from '@tds/core-colours'
-import { media } from '@tds/core-responsive'
-
 import { safeRest } from '@tds/util-helpers'
+
 import { warn } from '../../shared/utils/warn'
 
 const preventDisabling = ({ disabled, ...props }) => {
@@ -19,32 +18,13 @@ const preventDisabling = ({ disabled, ...props }) => {
   return props
 }
 
-const baseButton = {
-  margin: 0,
-  padding: '0 2rem',
-  cursor: 'pointer',
-  background: 'none',
-  transition: 'background 0.2s',
-  display: 'flex',
-  width: '100%',
-  alignItems: 'center',
-  justifyContent: 'center',
-
-  ...media.from('md').css({
-    display: 'inline-flex',
-    width: 'auto',
-    minWidth: '180px',
-  }),
-}
-
 export const StyledButton = styled.button(
   borders.none,
   borders.rounded,
   medium,
   boldFont,
-  forms.buttonHeight,
   forms.font,
-  baseButton,
+  forms.baseButton,
   ({ variant }) => {
     let backgroundColor
     let color
