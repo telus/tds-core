@@ -75,7 +75,9 @@ const Card = ({ variant, children, fullHeight, spacing, fullBleedImage, ...rest 
   }
 
   const ContainerStyles = imageProps =>
-    handleResponsiveStyles({ position: imageProps?.position }, ({ position }) => {
+    imageProps &&
+    imageProps.position &&
+    handleResponsiveStyles({ position: imageProps.position }, ({ position }) => {
       if (!imageProps) return {}
       const direction = {
         left: 'row',
@@ -100,7 +102,7 @@ const Card = ({ variant, children, fullHeight, spacing, fullBleedImage, ...rest 
   return (
     <StyledCard {...safeRest(rest)} fullHeight={fullHeight} variant={variant}>
       <StyledDiv {...fullBleedImage}>
-        {fullBleedImage ? <Image {...fullBleedImage} /> : ''}
+        {fullBleedImage && <Image {...fullBleedImage} />}
         <Box {...spacingProps}>{children}</Box>
       </StyledDiv>
     </StyledCard>
