@@ -13,7 +13,7 @@ exports[`ButtonLink can be presented as one of the allowed fullwidth 1`] = `
   line-height: 1.5;
   word-wrap: break-word;
   font-weight: 700;
-  height: 3.25rem;
+  min-height: 3.25rem;
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 0 2rem;
@@ -34,6 +34,7 @@ exports[`ButtonLink can be presented as one of the allowed fullwidth 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  text-align: center;
   background-color: #2B8000;
   color: #fff;
   -webkit-text-decoration: none;
@@ -95,7 +96,7 @@ exports[`ButtonLink can be presented as one of the allowed variants 1`] = `
   line-height: 1.5;
   word-wrap: break-word;
   font-weight: 700;
-  height: 3.25rem;
+  min-height: 3.25rem;
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 0 2rem;
@@ -116,6 +117,7 @@ exports[`ButtonLink can be presented as one of the allowed variants 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  text-align: center;
   background-color: #4b286d;
   color: #fff;
   -webkit-text-decoration: none;
@@ -177,7 +179,7 @@ exports[`ButtonLink renders 1`] = `
   line-height: 1.5;
   word-wrap: break-word;
   font-weight: 700;
-  height: 3.25rem;
+  min-height: 3.25rem;
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 0 2rem;
@@ -198,6 +200,7 @@ exports[`ButtonLink renders 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  text-align: center;
   background-color: #2B8000;
   color: #fff;
   -webkit-text-decoration: none;
