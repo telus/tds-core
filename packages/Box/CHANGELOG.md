@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/telusdigital/tds/compare/@tds/core-box@2.2.1...@tds/core-box@2.3.0) (2020-08-17)
+
+
+### Features
+
+* **core-box:** make below prop public ([05badf0](https://github.com/telusdigital/tds/commit/05badf0fd727c7da296b2e22946321e335d38f79))
+
+
+
+
+
 ## [2.2.1](https://github.com/telusdigital/tds/compare/@tds/core-box@2.2.0...@tds/core-box@2.2.1) (2020-07-22)
 
 **Note:** Version bump only for package @tds/core-box

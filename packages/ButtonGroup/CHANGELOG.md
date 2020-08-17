@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.17](https://github.com/telusdigital/tds-core/compare/@tds/core-button-group@2.1.16...@tds/core-button-group@2.1.17) (2020-08-17)
+
+**Note:** Version bump only for package @tds/core-button-group
+
+
+
+
+
 ## [2.1.16](https://github.com/telusdigital/tds-core/compare/@tds/core-button-group@2.1.15...@tds/core-button-group@2.1.16) (2020-07-22)
 
 **Note:** Version bump only for package @tds/core-button-group
