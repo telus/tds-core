@@ -19,7 +19,11 @@ export const StyledLimitedInteractiveIconSVG = styled(StyledInteractiveIconSVG)(
       }(${animationDirection === 'up' || animationDirection === 'left' ? '-' : ''}4px)`,
     },
   }),
-  animations.reduceMotion
+  animations.reduceMotion,
+  ({ size }) => ({
+    width: size === 20 ? '20px' : '24px',
+    height: size === 20 ? '20px' : '24px',
+  })
 )
 
 const getTheme = variant => {
