@@ -7,7 +7,7 @@ They're not to be used or displayed on their own.
 - Must depend on other interactive components
 - Must appear with a visible label as part of the wrapper component
 - May include additional accessible but hidden text
-- Icon size is 24px height and width
+- Icon size is specified through the `size` property. The default is 24px height and width.
 - Additional colour variants (green) are available to limited icons
 
 ```jsx noeditor
@@ -65,5 +65,16 @@ These interactive icons have a default colour of Accessible Green with the follo
   <div style={{ backgroundColor: '#4B286D', display: 'inline-block' }}>
     <ChevronRight variant="inverted" />
   </div>
+</Box>
+```
+
+```jsx
+<Box between={2}>
+  <Heading level="h4">Icon size 20</Heading>
+  <ChevronRight variant="basic" size={20} />
+  <CaretDown variant="basic" size={20} />
+  <Heading level="h4">Icon size 24</Heading>
+  <ChevronRight variant="basic" />
+  <CaretDown variant="basic" />
 </Box>
 ```
