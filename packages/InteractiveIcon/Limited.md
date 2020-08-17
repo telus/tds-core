@@ -67,14 +67,3 @@ These interactive icons have a default colour of Accessible Green with the follo
   </div>
 </Box>
 ```
-
-```jsx
-<Box between={2}>
-  <Heading level="h4">Icon size 20</Heading>
-  <ChevronRight variant="basic" size={20} />
-  <CaretDown variant="basic" size={20} />
-  <Heading level="h4">Icon size 24</Heading>
-  <ChevronRight variant="basic" />
-  <CaretDown variant="basic" />
-</Box>
-```
