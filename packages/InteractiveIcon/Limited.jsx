@@ -54,8 +54,10 @@ const getTheme = variant => {
 /**
  * @version ./package.json
  */
-const Limited = ({ variant, children }) => (
-  <ThemeProvider theme={getTheme(variant)}>{children}</ThemeProvider>
+const Limited = ({ variant, children, size }) => (
+  <ThemeProvider theme={getTheme(variant)} size={size}>
+    {children}
+  </ThemeProvider>
 )
 
 Limited.displayName = 'Limited'
@@ -66,6 +68,10 @@ Limited.propTypes = {
    */
   variant: PropTypes.oneOf(['default', 'basic', 'alternative', 'inverted']),
   /**
+   * The icon size in pixels.
+   */
+  size: PropTypes.oneOf([20, 24]),
+  /**
    * @ignore
    */
   children: PropTypes.node.isRequired,
@@ -73,6 +79,7 @@ Limited.propTypes = {
 
 Limited.defaultProps = {
   variant: 'default',
+  size: 24,
 }
 
 export default Limited
