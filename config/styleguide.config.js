@@ -483,27 +483,27 @@ module.exports = {
           exclude: /node_modules/,
           loader: 'babel-loader',
         },
-        {
-          test: /flexboxgrid/,
-          use: [
-            'style-loader',
-            {
-              loader: 'css-loader',
-              options: {
-                modules: true,
-                localIdentName: 'TDS_[name]__[local]___[hash:base64:5]',
-                importLoaders: 2, // Number of loaders applied before CSS loader
-              },
-            },
-            {
-              loader: 'postcss-loader',
-              options: {
-                ident: 'postcss',
-                plugins: [require('autoprefixer')()],
-              },
-            },
-          ],
-        },
+        // {
+        //   test: /flexboxgrid/,
+        //   use: [
+        //     'style-loader',
+        //     {
+        //       loader: 'css-loader',
+        //       options: {
+        //         modules: true,
+        //         localIdentName: 'TDS_[name]__[local]___[hash:base64:5]',
+        //         importLoaders: 2, // Number of loaders applied before CSS loader
+        //       },
+        //     },
+        //     {
+        //       loader: 'postcss-loader',
+        //       options: {
+        //         ident: 'postcss',
+        //         plugins: [require('autoprefixer')()],
+        //       },
+        //     },
+        //   ],
+        // },
         {
           test: /\.css$/,
           exclude: /flexboxgrid/,

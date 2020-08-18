@@ -1,5 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 import { colorSecondary, colorGreyShark, colorPanache, colorGreyAthens } from '../../../../packages/colours/colours';
+import { StyledCol } from '../../../../packages/FlexGrid/Col/Col';
+import { StyledRow } from '../../../../packages/FlexGrid/Row/Row';
+
 import heroBackground from '../../../images/hero-background.jpg'
 
 const GlobalStyleGuide = createGlobalStyle({
@@ -36,11 +39,11 @@ const GlobalStyleGuide = createGlobalStyle({
   },
 
   '.docs_flex-grid-coloring': {
-    '*[class*=\'row\']': {
+    [StyledRow]: {
       border: `1px dashed ${colorGreyShark}`
     },
 
-    '*[class*=\'col\']': {
+    [StyledCol]: {
       backgroundColor: colorPanache,
       border: `1px solid ${colorGreyShark}`
     }

@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { media, breakpoints } from '@tds/core-responsive'
 import { safeRest } from '@tds/util-helpers'
 
-import { Grid } from 'react-flexbox-grid'
+import { Grid } from 'react-styled-flexboxgrid'
 
 import Col from './Col/Col'
 import Row from './Row/Row'

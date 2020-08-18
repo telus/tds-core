@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { Col as ReactFlexboxGridCol } from 'react-flexbox-grid'
+import { Col as ReactFlexboxGridCol } from 'react-styled-flexboxgrid'
 import { responsiveProps } from '@tds/util-prop-types'
 import { media } from '@tds/core-responsive'
 import { safeRest } from '@tds/util-helpers'
@@ -11,7 +11,7 @@ import GutterContext from '../gutterContext'
 import { deprecate } from '../../../shared/utils/warn'
 import calculateLevel from '../calculateLevel'
 
-const StyledCol = styled(({ hiddenLevel, gutter, horizontalAlignLevel, ...rest }) => (
+export const StyledCol = styled(({ hiddenLevel, gutter, horizontalAlignLevel, ...rest }) => (
   <ReactFlexboxGridCol {...rest} />
 ))(({ hiddenLevel, gutter, horizontalAlignLevel }) => ({
   'div&': {
