@@ -13,6 +13,10 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .c0 {
@@ -20,34 +24,6 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
   border-radius: 4px;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
 
 <Card
@@ -222,6 +198,10 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .c0 {
@@ -229,34 +209,6 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
   border-radius: 4px;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
 
 <Card
@@ -431,40 +383,16 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .c0 {
   border-width: 0;
   border-radius: 4px;
   background-color: #f2eff4;
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
 
 <Card
@@ -639,40 +567,16 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .c0 {
   border-width: 0;
   border-radius: 4px;
   background-color: #f7f7f8;
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
 
 <Card
@@ -847,6 +751,10 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .c0 {
@@ -855,34 +763,6 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
   border: 1px solid #d8d8d8;
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
 
 <Card
@@ -1057,6 +937,10 @@ exports[`<Card /> full bleed image renders with an image 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .c3 {
@@ -1088,34 +972,6 @@ exports[`<Card /> full bleed image renders with an image 1`] = `
 .c2 > img {
   display: block;
   margin: auto;
-}
-
-@media (max-width:767px) {
-  .c4 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c4 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
 
 <Card
@@ -1398,6 +1254,10 @@ exports[`<Card /> full bleed image renders with responsive image props 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .c3 {
@@ -1410,34 +1270,6 @@ exports[`<Card /> full bleed image renders with responsive image props 1`] = `
   border-radius: 4px;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
-}
-
-@media (max-width:767px) {
-  .c4 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c4 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
 
 @media (max-width:767px) {
@@ -1775,6 +1607,10 @@ exports[`<Card /> full bleed image renders without an image 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .c0 {
@@ -1782,34 +1618,6 @@ exports[`<Card /> full bleed image renders without an image 1`] = `
   border-radius: 4px;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
 
 <Card
@@ -1984,6 +1792,10 @@ exports[`<Card /> renders 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .c0 {
@@ -1991,34 +1803,6 @@ exports[`<Card /> renders 1`] = `
   border-radius: 4px;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
 
 <div
@@ -2227,6 +2011,10 @@ exports[`<Card /> spacing renders default spacing 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .c0 {
@@ -2234,34 +2022,6 @@ exports[`<Card /> spacing renders default spacing 1`] = `
   border-radius: 4px;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
 
 <Card
@@ -2436,6 +2196,10 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .c0 {
@@ -2443,24 +2207,6 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
   border-radius: 4px;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
 }
 
 <Card
@@ -2634,6 +2380,8 @@ exports[`<Card /> spacing renders narrow spacing 1`] = `
   flex-direction: column;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .c0 {
@@ -2641,20 +2389,6 @@ exports[`<Card /> spacing renders narrow spacing 1`] = `
   border-radius: 4px;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
-}
-
-@media (max-width:767px) {
-  .c2 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
 }
 
 <Card

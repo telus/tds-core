@@ -209,7 +209,7 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-bdVaJa",
                   "isStatic": false,
-                  "lastClassName": "dBqVkr",
+                  "lastClassName": "eHGTRX",
                   "rules": Array [
                     [Function],
                     [Function],
@@ -257,7 +257,7 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-bdVaJa",
                           "isStatic": false,
-                          "lastClassName": "dBqVkr",
+                          "lastClassName": "eHGTRX",
                           "rules": Array [
                             [Function],
                             [Function],
@@ -850,7 +850,7 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
             "componentStyle": ComponentStyle {
               "componentId": "sc-bdVaJa",
               "isStatic": false,
-              "lastClassName": "dBqVkr",
+              "lastClassName": "eHGTRX",
               "rules": Array [
                 [Function],
                 [Function],
@@ -898,7 +898,7 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
                     "componentStyle": ComponentStyle {
                       "componentId": "sc-bdVaJa",
                       "isStatic": false,
-                      "lastClassName": "dBqVkr",
+                      "lastClassName": "eHGTRX",
                       "rules": Array [
                         [Function],
                         [Function],
@@ -2068,6 +2068,10 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .c12 {
@@ -2149,24 +2153,6 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
   .c11 {
     -webkit-transition: none !important;
     transition: none !important;
-  }
-}
-
-@media (max-width:767px) {
-  .c13 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c13 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 }
 
@@ -3247,6 +3233,10 @@ exports[`ExpandCollapse renders an open panel 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .c12 {
@@ -3328,24 +3318,6 @@ exports[`ExpandCollapse renders an open panel 1`] = `
   .c11 {
     -webkit-transition: none !important;
     transition: none !important;
-  }
-}
-
-@media (max-width:767px) {
-  .c13 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:768px) {
-  .c13 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 }
 
