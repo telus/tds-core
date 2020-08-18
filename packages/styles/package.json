@@ -1,6 +1,6 @@
 {
   "name": "@tds/shared-styles",
-  "version": "1.5.2",
+  "version": "2.0.0",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",

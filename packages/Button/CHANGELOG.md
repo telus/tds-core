@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/telusdigital/tds/compare/@tds/core-button@2.2.0...@tds/core-button@3.0.0) (2020-08-18)
+
+
+### Features
+
+* **core-button:** replace height with minHeight add textAlign center ([c31ba6b](https://github.com/telusdigital/tds/commit/c31ba6b199dfbfdcb720175543d7ef5f863a76b9))
+
+
+### BREAKING CHANGES
+
+* **core-button:** replace height with minHeight
+
+
+
+
+
 # [2.2.0](https://github.com/telusdigital/tds/compare/@tds/core-button@2.1.14...@tds/core-button@2.2.0) (2020-07-22)
 
 

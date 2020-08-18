@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-interactive-icon",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -29,7 +29,7 @@
     "@tds/core-a11y-content": "^2.2.0",
     "@tds/core-colours": "^2.2.1",
     "@tds/core-text": "^3.1.1",
-    "@tds/shared-styles": "^1.5.2",
+    "@tds/shared-styles": "^2.0.0",
     "@tds/util-helpers": "^1.4.2",
     "@tds/util-prop-types": "^1.4.0",
     "prop-types": "^15.5.10"

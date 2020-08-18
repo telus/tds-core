@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/telusdigital/tds/compare/@tds/shared-styles@1.5.2...@tds/shared-styles@2.0.0) (2020-08-18)
+
+
+### Features
+
+* **shared-styles:** remove buttonHeight and add baseButton styles ([b3c1807](https://github.com/telusdigital/tds/commit/b3c18074db8b5e237e9a591f48e457790957714c))
+
+
+### BREAKING CHANGES
+
+* **shared-styles:** remove buttonHeight export
+
+
+
+
+
 ## [1.5.2](https://github.com/telusdigital/tds/compare/@tds/shared-styles@1.5.1...@tds/shared-styles@1.5.2) (2019-10-09)
 
 **Note:** Version bump only for package @tds/shared-styles
