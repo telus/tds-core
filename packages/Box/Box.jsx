@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import { responsiveProps } from '@tds/util-prop-types'
 
-import handleResponsiveStyles from './handleResponsiveStyles'
+import { generateResponsiveStyles } from '@tds/util-helpers'
 
 const spacing = {
   mobile: {
@@ -39,7 +39,7 @@ export const convertToRem = (level, breakpoint) => {
 }
 
 const inlineBetweenStyles = props =>
-  handleResponsiveStyles(
+  generateResponsiveStyles(
     { between: props.between, inline: props.inline },
     ({ between, inline }, breakpoint) => {
       const base = {
@@ -66,7 +66,7 @@ const inlineBetweenStyles = props =>
   )
 
 const horizontalStyles = props =>
-  handleResponsiveStyles({ horizontal: props.horizontal }, ({ horizontal }, breakpoint) => {
+  generateResponsiveStyles({ horizontal: props.horizontal }, ({ horizontal }, breakpoint) => {
     if (horizontal === undefined) {
       return undefined
     }
@@ -77,7 +77,7 @@ const horizontalStyles = props =>
   })
 
 const verticalStyles = props =>
-  handleResponsiveStyles({ vertical: props.vertical }, ({ vertical }, breakpoint) => {
+  generateResponsiveStyles({ vertical: props.vertical }, ({ vertical }, breakpoint) => {
     if (vertical === undefined) {
       return undefined
     }
@@ -88,7 +88,7 @@ const verticalStyles = props =>
   })
 
 const insetStyles = props =>
-  handleResponsiveStyles({ inset: props.inset }, ({ inset }, breakpoint) => {
+  generateResponsiveStyles({ inset: props.inset }, ({ inset }, breakpoint) => {
     if (inset === undefined) {
       return undefined
     }
@@ -104,7 +104,7 @@ const insetStyles = props =>
   })
 
 const belowStyles = props =>
-  handleResponsiveStyles({ below: props.below }, ({ below }, breakpoint) => {
+  generateResponsiveStyles({ below: props.below }, ({ below }, breakpoint) => {
     if (below === undefined) {
       return undefined
     }
