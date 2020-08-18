@@ -8,10 +8,9 @@ import { responsiveProps } from '@tds/util-prop-types'
 
 import { colorWhite, colorWhiteLilac, colorGreyAthens, colorGreyGainsboro } from '@tds/core-colours'
 import { borders } from '@tds/shared-styles'
-import { safeRest } from '@tds/util-helpers'
+import { safeRest, generateResponsiveStyles } from '@tds/util-helpers'
 
 import { deprecate } from '../../shared/utils/warn'
-import handleResponsiveStyles from './handleResponsiveStyles'
 
 const getVariant = ({ variant }) => {
   if (variant === 'white' || variant === 'default' || variant === 'defaultWithBorder') {
@@ -51,6 +50,33 @@ export const StyledCard = styled(({ fullHeight, fullBleedImage, ...props }) => <
     return {}
   }
 )
+
+const ContainerStyles = fullBleedImage =>
+  fullBleedImage &&
+  fullBleedImage.position &&
+  generateResponsiveStyles({ position: fullBleedImage.position }, ({ position }) => {
+    if (!fullBleedImage) return {}
+    const direction = {
+      left: 'row',
+      right: 'row-reverse',
+      top: 'column',
+      bottom: 'column-reverse',
+      none: 'row',
+    }
+    const styles = {
+      display: 'flex',
+      flexDirection: direction[position],
+      justifyContent: 'space-between',
+      '> img': {
+        display: position === 'none' ? 'none' : 'block',
+        margin: 'auto',
+      },
+    }
+    return styles
+  })
+
+const StyledDiv = styled.div(ContainerStyles)
+
 /**
  * A content container.
  *
@@ -74,37 +100,21 @@ const Card = ({ variant, children, fullHeight, spacing, fullBleedImage, ...rest 
     spacingProps.inset = 4
   }
 
-  const ContainerStyles = imageProps =>
-    imageProps &&
-    imageProps.position &&
-    handleResponsiveStyles({ position: imageProps.position }, ({ position }) => {
-      if (!imageProps) return {}
-      const direction = {
-        left: 'row',
-        right: 'row-reverse',
-        top: 'column',
-        bottom: 'column-reverse',
-        none: 'row',
-      }
-      const styles = {
-        display: 'flex',
-        flexDirection: direction[position],
-        justifyContent: 'space-between',
-        '> img': {
-          display: position === 'none' ? 'none' : 'block',
-          margin: 'auto',
-        },
-      }
-      return styles
-    })
-
-  const StyledDiv = styled.div(ContainerStyles)
   return (
     <StyledCard {...safeRest(rest)} fullHeight={fullHeight} variant={variant}>
-      <StyledDiv {...fullBleedImage}>
-        {fullBleedImage && <Image {...fullBleedImage} />}
+      {fullBleedImage ? (
+        <StyledDiv {...fullBleedImage}>
+          <Image
+            src={fullBleedImage.src}
+            width={fullBleedImage.width}
+            height={fullBleedImage.height}
+            alt={fullBleedImage.alt}
+          />
+          <Box {...spacingProps}>{children}</Box>
+        </StyledDiv>
+      ) : (
         <Box {...spacingProps}>{children}</Box>
-      </StyledDiv>
+      )}
     </StyledCard>
   )
 }

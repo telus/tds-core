@@ -144,93 +144,61 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Card__StyledDiv>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "Card__StyledDiv-fwbr1q-0",
-                          "isStatic": false,
-                          "lastClassName": "sAizx",
-                          "rules": Array [
+                <Box
+                  horizontal={4}
+                  inline={false}
+                  tag="div"
+                  vertical={5}
+                >
+                  <styled.div
+                    horizontal={4}
+                    inline={false}
+                    tag="div"
+                    vertical={5}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
                             [Function],
                           ],
-                        },
-                        "displayName": "Card__StyledDiv",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "Card__StyledDiv-fwbr1q-0",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
                       }
-                    }
-                    forwardedRef={null}
-                  >
-                    <div
-                      className=""
+                      forwardedRef={null}
+                      horizontal={4}
+                      inline={false}
+                      tag="div"
+                      vertical={5}
                     >
-                      <Box
-                        horizontal={4}
-                        inline={false}
-                        tag="div"
-                        vertical={5}
+                      <div
+                        className="c2"
                       >
-                        <styled.div
-                          horizontal={4}
-                          inline={false}
-                          tag="div"
-                          vertical={5}
-                        >
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [
-                                  [Function],
-                                ],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bdVaJa",
-                                  "isStatic": false,
-                                  "lastClassName": "c2",
-                                  "rules": Array [
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                  ],
-                                },
-                                "displayName": "styled.div",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bdVaJa",
-                                "target": "div",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                            horizontal={4}
-                            inline={false}
-                            tag="div"
-                            vertical={5}
-                          >
-                            <div
-                              className="c2"
-                            >
-                              Some content
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </Box>
-                    </div>
-                  </StyledComponent>
-                </Card__StyledDiv>
+                        Some content
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </Box>
               </div>
             </StyledComponent>
           </styled.div>
@@ -385,93 +353,61 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Card__StyledDiv>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "Card__StyledDiv-fwbr1q-0",
-                          "isStatic": false,
-                          "lastClassName": "sAizx",
-                          "rules": Array [
+                <Box
+                  horizontal={4}
+                  inline={false}
+                  tag="div"
+                  vertical={5}
+                >
+                  <styled.div
+                    horizontal={4}
+                    inline={false}
+                    tag="div"
+                    vertical={5}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
                             [Function],
                           ],
-                        },
-                        "displayName": "Card__StyledDiv",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "Card__StyledDiv-fwbr1q-0",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
                       }
-                    }
-                    forwardedRef={null}
-                  >
-                    <div
-                      className=""
+                      forwardedRef={null}
+                      horizontal={4}
+                      inline={false}
+                      tag="div"
+                      vertical={5}
                     >
-                      <Box
-                        horizontal={4}
-                        inline={false}
-                        tag="div"
-                        vertical={5}
+                      <div
+                        className="c2"
                       >
-                        <styled.div
-                          horizontal={4}
-                          inline={false}
-                          tag="div"
-                          vertical={5}
-                        >
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [
-                                  [Function],
-                                ],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bdVaJa",
-                                  "isStatic": false,
-                                  "lastClassName": "c2",
-                                  "rules": Array [
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                  ],
-                                },
-                                "displayName": "styled.div",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bdVaJa",
-                                "target": "div",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                            horizontal={4}
-                            inline={false}
-                            tag="div"
-                            vertical={5}
-                          >
-                            <div
-                              className="c2"
-                            >
-                              Some content
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </Box>
-                    </div>
-                  </StyledComponent>
-                </Card__StyledDiv>
+                        Some content
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </Box>
               </div>
             </StyledComponent>
           </styled.div>
@@ -625,93 +561,61 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Card__StyledDiv>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "Card__StyledDiv-fwbr1q-0",
-                          "isStatic": false,
-                          "lastClassName": "sAizx",
-                          "rules": Array [
+                <Box
+                  horizontal={4}
+                  inline={false}
+                  tag="div"
+                  vertical={5}
+                >
+                  <styled.div
+                    horizontal={4}
+                    inline={false}
+                    tag="div"
+                    vertical={5}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
                             [Function],
                           ],
-                        },
-                        "displayName": "Card__StyledDiv",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "Card__StyledDiv-fwbr1q-0",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
                       }
-                    }
-                    forwardedRef={null}
-                  >
-                    <div
-                      className=""
+                      forwardedRef={null}
+                      horizontal={4}
+                      inline={false}
+                      tag="div"
+                      vertical={5}
                     >
-                      <Box
-                        horizontal={4}
-                        inline={false}
-                        tag="div"
-                        vertical={5}
+                      <div
+                        className="c2"
                       >
-                        <styled.div
-                          horizontal={4}
-                          inline={false}
-                          tag="div"
-                          vertical={5}
-                        >
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [
-                                  [Function],
-                                ],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bdVaJa",
-                                  "isStatic": false,
-                                  "lastClassName": "c2",
-                                  "rules": Array [
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                  ],
-                                },
-                                "displayName": "styled.div",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bdVaJa",
-                                "target": "div",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                            horizontal={4}
-                            inline={false}
-                            tag="div"
-                            vertical={5}
-                          >
-                            <div
-                              className="c2"
-                            >
-                              Some content
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </Box>
-                    </div>
-                  </StyledComponent>
-                </Card__StyledDiv>
+                        Some content
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </Box>
               </div>
             </StyledComponent>
           </styled.div>
@@ -865,93 +769,61 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Card__StyledDiv>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "Card__StyledDiv-fwbr1q-0",
-                          "isStatic": false,
-                          "lastClassName": "sAizx",
-                          "rules": Array [
+                <Box
+                  horizontal={4}
+                  inline={false}
+                  tag="div"
+                  vertical={5}
+                >
+                  <styled.div
+                    horizontal={4}
+                    inline={false}
+                    tag="div"
+                    vertical={5}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
                             [Function],
                           ],
-                        },
-                        "displayName": "Card__StyledDiv",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "Card__StyledDiv-fwbr1q-0",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
                       }
-                    }
-                    forwardedRef={null}
-                  >
-                    <div
-                      className=""
+                      forwardedRef={null}
+                      horizontal={4}
+                      inline={false}
+                      tag="div"
+                      vertical={5}
                     >
-                      <Box
-                        horizontal={4}
-                        inline={false}
-                        tag="div"
-                        vertical={5}
+                      <div
+                        className="c2"
                       >
-                        <styled.div
-                          horizontal={4}
-                          inline={false}
-                          tag="div"
-                          vertical={5}
-                        >
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [
-                                  [Function],
-                                ],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bdVaJa",
-                                  "isStatic": false,
-                                  "lastClassName": "c2",
-                                  "rules": Array [
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                  ],
-                                },
-                                "displayName": "styled.div",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bdVaJa",
-                                "target": "div",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                            horizontal={4}
-                            inline={false}
-                            tag="div"
-                            vertical={5}
-                          >
-                            <div
-                              className="c2"
-                            >
-                              Some content
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </Box>
-                    </div>
-                  </StyledComponent>
-                </Card__StyledDiv>
+                        Some content
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </Box>
               </div>
             </StyledComponent>
           </styled.div>
@@ -1107,93 +979,61 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Card__StyledDiv>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "Card__StyledDiv-fwbr1q-0",
-                          "isStatic": false,
-                          "lastClassName": "sAizx",
-                          "rules": Array [
+                <Box
+                  horizontal={4}
+                  inline={false}
+                  tag="div"
+                  vertical={5}
+                >
+                  <styled.div
+                    horizontal={4}
+                    inline={false}
+                    tag="div"
+                    vertical={5}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
                             [Function],
                           ],
-                        },
-                        "displayName": "Card__StyledDiv",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "Card__StyledDiv-fwbr1q-0",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
                       }
-                    }
-                    forwardedRef={null}
-                  >
-                    <div
-                      className=""
+                      forwardedRef={null}
+                      horizontal={4}
+                      inline={false}
+                      tag="div"
+                      vertical={5}
                     >
-                      <Box
-                        horizontal={4}
-                        inline={false}
-                        tag="div"
-                        vertical={5}
+                      <div
+                        className="c2"
                       >
-                        <styled.div
-                          horizontal={4}
-                          inline={false}
-                          tag="div"
-                          vertical={5}
-                        >
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [
-                                  [Function],
-                                ],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bdVaJa",
-                                  "isStatic": false,
-                                  "lastClassName": "c2",
-                                  "rules": Array [
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                  ],
-                                },
-                                "displayName": "styled.div",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bdVaJa",
-                                "target": "div",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                            horizontal={4}
-                            inline={false}
-                            tag="div"
-                            vertical={5}
-                          >
-                            <div
-                              className="c2"
-                            >
-                              Some content
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </Box>
-                    </div>
-                  </StyledComponent>
-                </Card__StyledDiv>
+                        Some content
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </Box>
               </div>
             </StyledComponent>
           </styled.div>
@@ -1428,14 +1268,12 @@ exports[`<Card /> full bleed image renders with an image 1`] = `
                       <Image
                         alt="image"
                         height={200}
-                        position="top"
                         src="image-example.jpg"
                         width={200}
                       >
                         <Image__StyledImage
                           alt="image"
                           height={200}
-                          position="top"
                           src="image-example.jpg"
                           width={200}
                         >
@@ -1466,7 +1304,6 @@ exports[`<Card /> full bleed image renders with an image 1`] = `
                             }
                             forwardedRef={null}
                             height={200}
-                            position="top"
                             src="image-example.jpg"
                             width={200}
                           >
@@ -1808,24 +1645,12 @@ exports[`<Card /> full bleed image renders with responsive image props 1`] = `
                       <Image
                         alt="image"
                         height={200}
-                        position={
-                          Object {
-                            "md": "bottom",
-                            "xs": "top",
-                          }
-                        }
                         src="image-example.jpg"
                         width={200}
                       >
                         <Image__StyledImage
                           alt="image"
                           height={200}
-                          position={
-                            Object {
-                              "md": "bottom",
-                              "xs": "top",
-                            }
-                          }
                           src="image-example.jpg"
                           width={200}
                         >
@@ -1856,12 +1681,6 @@ exports[`<Card /> full bleed image renders with responsive image props 1`] = `
                             }
                             forwardedRef={null}
                             height={200}
-                            position={
-                              Object {
-                                "md": "bottom",
-                                "xs": "top",
-                              }
-                            }
                             src="image-example.jpg"
                             width={200}
                           >
@@ -2087,93 +1906,61 @@ exports[`<Card /> full bleed image renders without an image 1`] = `
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Card__StyledDiv>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "Card__StyledDiv-fwbr1q-0",
-                          "isStatic": false,
-                          "lastClassName": "sAizx",
-                          "rules": Array [
+                <Box
+                  horizontal={4}
+                  inline={false}
+                  tag="div"
+                  vertical={5}
+                >
+                  <styled.div
+                    horizontal={4}
+                    inline={false}
+                    tag="div"
+                    vertical={5}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
                             [Function],
                           ],
-                        },
-                        "displayName": "Card__StyledDiv",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "Card__StyledDiv-fwbr1q-0",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
                       }
-                    }
-                    forwardedRef={null}
-                  >
-                    <div
-                      className=""
+                      forwardedRef={null}
+                      horizontal={4}
+                      inline={false}
+                      tag="div"
+                      vertical={5}
                     >
-                      <Box
-                        horizontal={4}
-                        inline={false}
-                        tag="div"
-                        vertical={5}
+                      <div
+                        className="c2"
                       >
-                        <styled.div
-                          horizontal={4}
-                          inline={false}
-                          tag="div"
-                          vertical={5}
-                        >
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [
-                                  [Function],
-                                ],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bdVaJa",
-                                  "isStatic": false,
-                                  "lastClassName": "c2",
-                                  "rules": Array [
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                  ],
-                                },
-                                "displayName": "styled.div",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bdVaJa",
-                                "target": "div",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                            horizontal={4}
-                            inline={false}
-                            tag="div"
-                            vertical={5}
-                          >
-                            <div
-                              className="c2"
-                            >
-                              Some content
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </Box>
-                    </div>
-                  </StyledComponent>
-                </Card__StyledDiv>
+                        Some content
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </Box>
               </div>
             </StyledComponent>
           </styled.div>
@@ -2238,13 +2025,9 @@ exports[`<Card /> renders 1`] = `
   class="c0 sc-bxivhb c0 c1"
 >
   <div
-    class=""
+    class="c2"
   >
-    <div
-      class="c2"
-    >
-      Children
-    </div>
+    Children
   </div>
 </div>
 `;
@@ -2369,90 +2152,58 @@ exports[`<Card /> spacing renders compact spacing 1`] = `
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Card__StyledDiv>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "Card__StyledDiv-fwbr1q-0",
-                          "isStatic": false,
-                          "lastClassName": "sAizx",
-                          "rules": Array [
+                <Box
+                  inline={false}
+                  inset={3}
+                  tag="div"
+                >
+                  <styled.div
+                    inline={false}
+                    inset={3}
+                    tag="div"
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
                             [Function],
                           ],
-                        },
-                        "displayName": "Card__StyledDiv",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "Card__StyledDiv-fwbr1q-0",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
                       }
-                    }
-                    forwardedRef={null}
-                  >
-                    <div
-                      className=""
+                      forwardedRef={null}
+                      inline={false}
+                      inset={3}
+                      tag="div"
                     >
-                      <Box
-                        inline={false}
-                        inset={3}
-                        tag="div"
+                      <div
+                        className="c2"
                       >
-                        <styled.div
-                          inline={false}
-                          inset={3}
-                          tag="div"
-                        >
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [
-                                  [Function],
-                                ],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bdVaJa",
-                                  "isStatic": false,
-                                  "lastClassName": "c2",
-                                  "rules": Array [
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                  ],
-                                },
-                                "displayName": "styled.div",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bdVaJa",
-                                "target": "div",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                            inline={false}
-                            inset={3}
-                            tag="div"
-                          >
-                            <div
-                              className="c2"
-                            >
-                              Some content
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </Box>
-                    </div>
-                  </StyledComponent>
-                </Card__StyledDiv>
+                        Some content
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </Box>
               </div>
             </StyledComponent>
           </styled.div>
@@ -2607,93 +2358,61 @@ exports[`<Card /> spacing renders default spacing 1`] = `
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Card__StyledDiv>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "Card__StyledDiv-fwbr1q-0",
-                          "isStatic": false,
-                          "lastClassName": "sAizx",
-                          "rules": Array [
+                <Box
+                  horizontal={4}
+                  inline={false}
+                  tag="div"
+                  vertical={5}
+                >
+                  <styled.div
+                    horizontal={4}
+                    inline={false}
+                    tag="div"
+                    vertical={5}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
                             [Function],
                           ],
-                        },
-                        "displayName": "Card__StyledDiv",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "Card__StyledDiv-fwbr1q-0",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
                       }
-                    }
-                    forwardedRef={null}
-                  >
-                    <div
-                      className=""
+                      forwardedRef={null}
+                      horizontal={4}
+                      inline={false}
+                      tag="div"
+                      vertical={5}
                     >
-                      <Box
-                        horizontal={4}
-                        inline={false}
-                        tag="div"
-                        vertical={5}
+                      <div
+                        className="c2"
                       >
-                        <styled.div
-                          horizontal={4}
-                          inline={false}
-                          tag="div"
-                          vertical={5}
-                        >
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [
-                                  [Function],
-                                ],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bdVaJa",
-                                  "isStatic": false,
-                                  "lastClassName": "c2",
-                                  "rules": Array [
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                  ],
-                                },
-                                "displayName": "styled.div",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bdVaJa",
-                                "target": "div",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                            horizontal={4}
-                            inline={false}
-                            tag="div"
-                            vertical={5}
-                          >
-                            <div
-                              className="c2"
-                            >
-                              Some content
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </Box>
-                    </div>
-                  </StyledComponent>
-                </Card__StyledDiv>
+                        Some content
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </Box>
               </div>
             </StyledComponent>
           </styled.div>
@@ -2838,90 +2557,58 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Card__StyledDiv>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "Card__StyledDiv-fwbr1q-0",
-                          "isStatic": false,
-                          "lastClassName": "sAizx",
-                          "rules": Array [
+                <Box
+                  inline={false}
+                  inset={4}
+                  tag="div"
+                >
+                  <styled.div
+                    inline={false}
+                    inset={4}
+                    tag="div"
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
                             [Function],
                           ],
-                        },
-                        "displayName": "Card__StyledDiv",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "Card__StyledDiv-fwbr1q-0",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
                       }
-                    }
-                    forwardedRef={null}
-                  >
-                    <div
-                      className=""
+                      forwardedRef={null}
+                      inline={false}
+                      inset={4}
+                      tag="div"
                     >
-                      <Box
-                        inline={false}
-                        inset={4}
-                        tag="div"
+                      <div
+                        className="c2"
                       >
-                        <styled.div
-                          inline={false}
-                          inset={4}
-                          tag="div"
-                        >
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [
-                                  [Function],
-                                ],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bdVaJa",
-                                  "isStatic": false,
-                                  "lastClassName": "c2",
-                                  "rules": Array [
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                  ],
-                                },
-                                "displayName": "styled.div",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bdVaJa",
-                                "target": "div",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                            inline={false}
-                            inset={4}
-                            tag="div"
-                          >
-                            <div
-                              className="c2"
-                            >
-                              Some content
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </Box>
-                    </div>
-                  </StyledComponent>
-                </Card__StyledDiv>
+                        Some content
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </Box>
               </div>
             </StyledComponent>
           </styled.div>
@@ -3064,93 +2751,61 @@ exports[`<Card /> spacing renders narrow spacing 1`] = `
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Card__StyledDiv>
-                  <StyledComponent
-                    forwardedComponent={
-                      Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "attrs": Array [],
-                        "componentStyle": ComponentStyle {
-                          "componentId": "Card__StyledDiv-fwbr1q-0",
-                          "isStatic": false,
-                          "lastClassName": "sAizx",
-                          "rules": Array [
+                <Box
+                  horizontal={3}
+                  inline={false}
+                  tag="div"
+                  vertical={4}
+                >
+                  <styled.div
+                    horizontal={3}
+                    inline={false}
+                    tag="div"
+                    vertical={4}
+                  >
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [
                             [Function],
                           ],
-                        },
-                        "displayName": "Card__StyledDiv",
-                        "foldedComponentIds": Array [],
-                        "render": [Function],
-                        "styledComponentId": "Card__StyledDiv-fwbr1q-0",
-                        "target": "div",
-                        "toString": [Function],
-                        "warnTooManyClasses": [Function],
-                        "withComponent": [Function],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": false,
+                            "lastClassName": "c2",
+                            "rules": Array [
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                              [Function],
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
                       }
-                    }
-                    forwardedRef={null}
-                  >
-                    <div
-                      className=""
+                      forwardedRef={null}
+                      horizontal={3}
+                      inline={false}
+                      tag="div"
+                      vertical={4}
                     >
-                      <Box
-                        horizontal={3}
-                        inline={false}
-                        tag="div"
-                        vertical={4}
+                      <div
+                        className="c2"
                       >
-                        <styled.div
-                          horizontal={3}
-                          inline={false}
-                          tag="div"
-                          vertical={4}
-                        >
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [
-                                  [Function],
-                                ],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bdVaJa",
-                                  "isStatic": false,
-                                  "lastClassName": "c2",
-                                  "rules": Array [
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                  ],
-                                },
-                                "displayName": "styled.div",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bdVaJa",
-                                "target": "div",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
-                            horizontal={3}
-                            inline={false}
-                            tag="div"
-                            vertical={4}
-                          >
-                            <div
-                              className="c2"
-                            >
-                              Some content
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </Box>
-                    </div>
-                  </StyledComponent>
-                </Card__StyledDiv>
+                        Some content
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </Box>
               </div>
             </StyledComponent>
           </styled.div>
