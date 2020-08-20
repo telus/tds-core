@@ -74,6 +74,53 @@ horizontal padding from all child columns.
 </FlexGrid>
 ```
 
+### Removing the outside gutter
+
+In some layouts, there might be the need to remove the gutter from the left and right of the row.
+For example, if the layout requires a `FlexGrid` to be nested under another `FlexGrid` Column,
+the child `FlexGrid`'s columns will not line up with the parent `FlexGrid`'s columns due to the additional gutter between the child columns.
+
+It is possible to avoid this situation while keeping the gutters between the columns,
+to do so, pass `outsideGutter={false}` to the child `FlexGrid`.
+This will remove the gutter on the left and the right of the `FlexGrid`.
+
+`outsideGutter` should not be false if parent `FlexGrid` has `gutter={false}`.
+
+```jsx { "props": { "className": "docs_full-width-playground docs_flex-grid-coloring" } }
+<FlexGrid>
+  <FlexGrid.Row>
+    <FlexGrid.Col>
+      <Box vertical={2}>
+        <Text>Parent Column</Text>
+      </Box>
+    </FlexGrid.Col>
+    <FlexGrid.Col>
+      <Box vertical={2}>
+        <Text>Parent Column</Text>
+      </Box>
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+  <FlexGrid.Row>
+    <FlexGrid.Col>
+      <FlexGrid outsideGutter={false}>
+        <FlexGrid.Row>
+          <FlexGrid.Col>
+            <Box vertical={2}>
+              <Text>Child Column</Text>
+            </Box>
+          </FlexGrid.Col>
+          <FlexGrid.Col>
+            <Box vertical={2}>
+              <Text>Child Column</Text>
+            </Box>
+          </FlexGrid.Col>
+        </FlexGrid.Row>
+      </FlexGrid>
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
+```
+
 ### Working with full-width and limited-width content
 
 Pages should have multiple instances of `FlexGrid` to separate full-width content and regular limited-width content.

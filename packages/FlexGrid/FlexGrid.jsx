@@ -15,35 +15,34 @@ import GutterContext from './gutterContext'
 const rem = breakpoint => {
   return `${breakpoints[breakpoint] / 16}rem`
 }
-
-const StyledGrid = styled(({ reverseLevel, limitWidth, ...rest }) => <Grid {...rest} />)(
-  ({ reverseLevel, limitWidth }) => ({
-    display: 'flex',
-    flexWrap: 'wrap',
-    margin: '0 auto',
-    width: '100%',
-    'div&': { padding: 0 },
-    ...media.until('sm').css({
-      flexDirection: reverseLevel[0] ? 'column-reverse' : 'column',
-    }),
-    ...media.from('sm').css({
-      ...(limitWidth && { maxWidth: rem('sm') }),
-      flexDirection: reverseLevel[1] ? 'column-reverse' : 'column',
-    }),
-    ...media.from('md').css({
-      ...(limitWidth && { maxWidth: rem('md') }),
-      flexDirection: reverseLevel[2] ? 'column-reverse' : 'column',
-    }),
-    ...media.from('lg').css({
-      ...(limitWidth && { maxWidth: rem('lg') }),
-      flexDirection: reverseLevel[3] ? 'column-reverse' : 'column',
-    }),
-    ...media.from('xl').css({
-      ...(limitWidth && { maxWidth: rem('xl') }),
-      flexDirection: reverseLevel[4] ? 'column-reverse' : 'column',
-    }),
-  })
-)
+const StyledGrid = styled(({ reverseLevel, limitWidth, outsideGutter, ...rest }) => (
+  <Grid {...rest} />
+))(({ reverseLevel, limitWidth, outsideGutter }) => ({
+  display: 'flex',
+  flexWrap: 'wrap',
+  margin: `0 ${!outsideGutter ? '-1rem' : 'auto'}`,
+  width: !outsideGutter ? undefined : '100%',
+  'div&': { padding: 0 },
+  ...media.until('sm').css({
+    flexDirection: reverseLevel[0] ? 'column-reverse' : 'column',
+  }),
+  ...media.from('sm').css({
+    ...(limitWidth && { maxWidth: rem('sm') }),
+    flexDirection: reverseLevel[1] ? 'column-reverse' : 'column',
+  }),
+  ...media.from('md').css({
+    ...(limitWidth && { maxWidth: rem('md') }),
+    flexDirection: reverseLevel[2] ? 'column-reverse' : 'column',
+  }),
+  ...media.from('lg').css({
+    ...(limitWidth && { maxWidth: rem('lg') }),
+    flexDirection: reverseLevel[3] ? 'column-reverse' : 'column',
+  }),
+  ...media.from('xl').css({
+    ...(limitWidth && { maxWidth: rem('xl') }),
+    flexDirection: reverseLevel[4] ? 'column-reverse' : 'column',
+  }),
+}))
 
 /**
  * A mobile-first flexbox grid.
@@ -54,6 +53,7 @@ const StyledGrid = styled(({ reverseLevel, limitWidth, ...rest }) => <Grid {...r
 const FlexGrid = ({
   limitWidth,
   gutter,
+  outsideGutter,
   xsReverse,
   smReverse,
   mdReverse,
@@ -65,7 +65,13 @@ const FlexGrid = ({
   const reverseLevel = calculateLevel(xsReverse, smReverse, mdReverse, lgReverse, xlReverse)
   return (
     <GutterContext.Provider value={gutter}>
-      <StyledGrid {...safeRest(rest)} fluid reverseLevel={reverseLevel} limitWidth={limitWidth}>
+      <StyledGrid
+        {...safeRest(rest)}
+        fluid
+        outsideGutter={outsideGutter}
+        reverseLevel={reverseLevel}
+        limitWidth={limitWidth}
+      >
         {children}
       </StyledGrid>
     </GutterContext.Provider>
@@ -81,6 +87,10 @@ FlexGrid.propTypes = {
    * Whether or not to include gutters in between columns.
    */
   gutter: PropTypes.bool,
+  /**
+   * Whether or not to include gutter at the ends to the left and right of the FlexGrid
+   */
+  outsideGutter: PropTypes.bool,
   /**
    * Choose if the item order should be reversed from the 'xs' breakpoint. When you pass in false, the order will be normal from the xs breakpoint. By default, it inherits the behaviour set by the preceding prop.
    */
@@ -110,6 +120,7 @@ FlexGrid.propTypes = {
 FlexGrid.defaultProps = {
   limitWidth: true,
   gutter: true,
+  outsideGutter: true,
   xsReverse: undefined,
   smReverse: undefined,
   mdReverse: undefined,
