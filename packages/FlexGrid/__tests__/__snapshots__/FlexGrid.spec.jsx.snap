@@ -1137,8 +1137,7 @@ div.c1 {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0 auto;
-  width: 100%;
+  margin: 0 -1rem;
 }
 
 div.c0 {
