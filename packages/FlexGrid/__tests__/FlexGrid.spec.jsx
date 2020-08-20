@@ -110,7 +110,7 @@ describe('FlexGrid', () => {
 
   it('renders with no outside gutter', () => {
     const { flexGrid } = doMount({
-      outsideGutter: true,
+      outsideGutter: false,
     })
     expect(flexGrid).toMatchSnapshot()
   })
