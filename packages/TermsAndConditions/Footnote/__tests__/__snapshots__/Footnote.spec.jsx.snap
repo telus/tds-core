@@ -6,8 +6,6 @@ exports[`Footnote renders closed 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .c9 {
@@ -175,6 +173,20 @@ div.c5 {
 
 .c13 {
   display: none;
+}
+
+@media (max-width:767px) {
+  .c4 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 @media (max-width:575px) {
@@ -465,8 +477,6 @@ exports[`Footnote renders opened 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .c9 {
@@ -637,6 +647,20 @@ div.c5 {
 
 .c13 {
   display: none;
+}
+
+@media (max-width:767px) {
+  .c4 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 @media (max-width:575px) {
