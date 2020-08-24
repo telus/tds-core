@@ -102,8 +102,36 @@ export const generateStyles = (breakpoints, style) => {
   return styles
 }
 
+const handleBoundaryCrossing = (acc, curr) => {
+  if (
+    isMobileBreakpoint(curr.from) &&
+    ((curr.until !== 'md' && isDesktopBreakpoint(curr.until)) || typeof curr.until === 'undefined')
+  ) {
+    const props = Object.keys(curr.props).filter(
+      prop => typeof curr.props[prop] === 'number' && curr.props[prop] > 3
+    )
+    if (props.length !== 0) {
+      const mobileBreakpoint = { ...curr, props: curr.props }
+      const desktopBreakpoint = { ...curr, props: curr.props }
+
+      mobileBreakpoint.until = 'md'
+      desktopBreakpoint.from = 'md'
+
+      return acc.concat([mobileBreakpoint, desktopBreakpoint])
+    }
+  }
+  return acc.concat([curr])
+}
+
 export const generateResponsiveStyles = (props, styleFn) => {
   const breakpoints = prepareArray(props)
+  return generateStyles(breakpoints, styleFn)
+}
+
+export const handleResponsiveStyles = (props, styleFn) => {
+  const breakpoints = prepareArray(props)
+    .filter(bp => Object.keys(bp.props).length > 0)
+    .reduce(handleBoundaryCrossing, [])
   return generateStyles(breakpoints, styleFn)
 }
 
