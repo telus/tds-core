@@ -2,10 +2,7 @@
 
 exports[`SVGIcon consumer renders 1`] = `
 .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -38,10 +35,7 @@ exports[`SVGIcon consumer renders 1`] = `
 
 exports[`SVGIcon has size set to 24 1`] = `
 .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -64,10 +58,7 @@ exports[`SVGIcon has size set to 24 1`] = `
 
 exports[`SVGIcon renders 1`] = `
 .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
 }
 
 .c0 > svg {

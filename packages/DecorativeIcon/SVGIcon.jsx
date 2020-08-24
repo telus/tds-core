@@ -26,7 +26,7 @@ const svgSize = ({ size }) => ({
 
 const StyledSVGIcon = styled.i(
   {
-    display: 'inline-flex',
+    display: 'inline-block',
   },
   svgVariant,
   svgSize
