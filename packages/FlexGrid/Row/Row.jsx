@@ -5,31 +5,81 @@ import styled from 'styled-components'
 import { media } from '@tds/core-responsive'
 import { safeRest } from '@tds/util-helpers'
 
-import { Row as ReactFlexboxGridRow } from 'react-flexbox-grid'
 import calculateLevel from '../calculateLevel'
 
-const StyledRow = styled(({ reverseLevel, ...rest }) => <ReactFlexboxGridRow {...rest} />)(
+const horizontalAlignStyles = ({ horizontalAlign }) => {
+  switch (horizontalAlign) {
+    case 'start':
+      return {
+        justifyContent: 'flex-start',
+        textAlign: 'left',
+      }
+    case 'center':
+      return {
+        justifyContent: 'center',
+        textAlign: 'center',
+      }
+    case 'end':
+      return {
+        justifyContent: 'flex-end',
+        textAlign: 'right',
+      }
+    default:
+      return {}
+  }
+}
+
+const verticalAlignStyles = ({ verticalAlign }) => {
+  switch (verticalAlign) {
+    case 'top':
+      return { alignItems: 'flex-start' }
+    case 'middle':
+      return { alignItems: 'center' }
+    case 'bottom':
+      return { alignItems: 'flex-end' }
+    default:
+      return {}
+  }
+}
+
+const distributeStyles = ({ distribute }) => {
+  let justifyContent
+  if (distribute === 'between') {
+    justifyContent = 'space-between'
+  }
+  if (distribute === 'around') {
+    justifyContent = 'space-around'
+  }
+  return { justifyContent }
+}
+
+export const StyledRow = styled.div(
+  horizontalAlignStyles,
+  verticalAlignStyles,
+  distributeStyles,
   ({ reverseLevel }) => ({
     width: '100%',
-    'div&': {
-      margin: '0 auto',
-      flexShrink: 0,
-      ...media.until('sm').css({
-        flexDirection: reverseLevel[0] ? 'row-reverse' : 'row',
-      }),
-      ...media.from('sm').css({
-        flexDirection: reverseLevel[1] ? 'row-reverse' : 'row',
-      }),
-      ...media.from('md').css({
-        flexDirection: reverseLevel[2] ? 'row-reverse' : 'row',
-      }),
-      ...media.from('lg').css({
-        flexDirection: reverseLevel[3] ? 'row-reverse' : 'row',
-      }),
-      ...media.from('xl').css({
-        flexDirection: reverseLevel[4] ? 'row-reverse' : 'row',
-      }),
-    },
+    margin: '0 auto',
+    display: 'flex',
+    flex: '0 1 auto',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    flexShrink: 0,
+    ...media.until('sm').css({
+      flexDirection: reverseLevel[0] ? 'row-reverse' : 'row',
+    }),
+    ...media.from('sm').css({
+      flexDirection: reverseLevel[1] ? 'row-reverse' : 'row',
+    }),
+    ...media.from('md').css({
+      flexDirection: reverseLevel[2] ? 'row-reverse' : 'row',
+    }),
+    ...media.from('lg').css({
+      flexDirection: reverseLevel[3] ? 'row-reverse' : 'row',
+    }),
+    ...media.from('xl').css({
+      flexDirection: reverseLevel[4] ? 'row-reverse' : 'row',
+    }),
   })
 )
 
@@ -45,31 +95,14 @@ const Row = ({
   children,
   ...rest
 }) => {
-  const getAlignment = () => {
-    return {
-      start: horizontalAlign === 'start' ? 'xs' : undefined,
-      center: horizontalAlign === 'center' ? 'xs' : undefined,
-      end: horizontalAlign === 'end' ? 'xs' : undefined,
-      top: verticalAlign === 'top' ? 'xs' : undefined,
-      middle: verticalAlign === 'middle' ? 'xs' : undefined,
-      bottom: verticalAlign === 'bottom' ? 'xs' : undefined,
-    }
-  }
-
-  const getDistribution = () => {
-    return {
-      around: distribute === 'around' ? 'xs' : undefined,
-      between: distribute === 'between' ? 'xs' : undefined,
-    }
-  }
-
   const reverseLevel = calculateLevel(xsReverse, smReverse, mdReverse, lgReverse, xlReverse)
 
   return (
     <StyledRow
       {...safeRest(rest)}
-      {...getAlignment()}
-      {...getDistribution()}
+      horizontalAlign={horizontalAlign}
+      verticalAlign={verticalAlign}
+      distribute={distribute}
       reverseLevel={reverseLevel}
     >
       {children}

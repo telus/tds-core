@@ -5,8 +5,6 @@ import styled from 'styled-components'
 import { media, breakpoints } from '@tds/core-responsive'
 import { safeRest } from '@tds/util-helpers'
 
-import { Grid } from 'react-flexbox-grid'
-
 import Col from './Col/Col'
 import Row from './Row/Row'
 import calculateLevel from './calculateLevel'
@@ -15,14 +13,12 @@ import GutterContext from './gutterContext'
 const rem = breakpoint => {
   return `${breakpoints[breakpoint] / 16}rem`
 }
-const StyledGrid = styled(({ reverseLevel, limitWidth, outsideGutter, ...rest }) => (
-  <Grid {...rest} />
-))(({ reverseLevel, limitWidth, outsideGutter }) => ({
+
+export const StyledGrid = styled.div(({ reverseLevel, limitWidth, outsideGutter }) => ({
   display: 'flex',
   flexWrap: 'wrap',
   margin: `0 ${!outsideGutter ? '-1rem' : 'auto'}`,
   width: !outsideGutter ? undefined : '100%',
-  'div&': { padding: 0 },
   ...media.until('sm').css({
     flexDirection: reverseLevel[0] ? 'column-reverse' : 'column',
   }),
@@ -67,7 +63,6 @@ const FlexGrid = ({
     <GutterContext.Provider value={gutter}>
       <StyledGrid
         {...safeRest(rest)}
-        fluid
         outsideGutter={outsideGutter}
         reverseLevel={reverseLevel}
         limitWidth={limitWidth}

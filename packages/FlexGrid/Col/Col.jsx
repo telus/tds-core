@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { Col as ReactFlexboxGridCol } from 'react-flexbox-grid'
 import { responsiveProps } from '@tds/util-prop-types'
 import { media } from '@tds/core-responsive'
 import { safeRest } from '@tds/util-helpers'
@@ -11,35 +10,88 @@ import GutterContext from '../gutterContext'
 import { deprecate } from '../../../shared/utils/warn'
 import calculateLevel from '../calculateLevel'
 
-const StyledCol = styled(({ hiddenLevel, gutter, horizontalAlignLevel, ...rest }) => (
-  <ReactFlexboxGridCol {...rest} />
-))(({ hiddenLevel, gutter, horizontalAlignLevel }) => ({
-  'div&': {
+const toPercent = num => {
+  return `${(num / 12) * 100}%`
+}
+
+const calculateWidth = (breakpoint, value) => {
+  if (value && typeof value === 'number') {
+    const percent = toPercent(value)
+
+    return media.from(breakpoint).css({
+      minWidth: percent,
+      flexBasis: percent,
+    })
+  }
+
+  if (breakpoint === 'xs') {
+    return {
+      flexGrow: 1,
+      flexBasis: 0,
+      maxWidth: '100%',
+    }
+  }
+  return {}
+}
+
+const calculateOffset = (breakpoint, value) => {
+  if (value && typeof value === 'number') {
+    const percent = toPercent(value)
+
+    return media.from(breakpoint).css({
+      marginLeft: percent,
+    })
+  }
+  return {}
+}
+
+const sizeStyles = ({ xs, sm, md, lg, xl }) => ({
+  flex: '0 0 auto',
+  flexBasis: '100%',
+  maxWidth: '100%',
+  ...calculateWidth('xs', xs),
+  ...calculateWidth('sm', sm),
+  ...calculateWidth('md', md),
+  ...calculateWidth('lg', lg),
+  ...calculateWidth('xl', xl),
+})
+
+const offsetStyles = ({ xsOffset, smOffset, mdOffset, lgOffset, xlOffset }) => ({
+  ...calculateOffset('xs', xsOffset),
+  ...calculateOffset('sm', smOffset),
+  ...calculateOffset('md', mdOffset),
+  ...calculateOffset('lg', lgOffset),
+  ...calculateOffset('xl', xlOffset),
+})
+
+export const StyledCol = styled.div(
+  sizeStyles,
+  offsetStyles,
+  ({ hiddenLevel, gutter, horizontalAlignLevel }) => ({
     paddingLeft: gutter ? '1rem' : 0,
     paddingRight: gutter ? '1rem' : 0,
-    flexGrow: 1,
-  },
-  ...media.until('sm').css({
-    display: hiddenLevel[0] === 0 ? 'none' : 'block',
-    textAlign: horizontalAlignLevel[0],
-  }),
-  ...media.from('sm').css({
-    display: hiddenLevel[1] === 0 ? 'none' : 'block',
-    textAlign: horizontalAlignLevel[1],
-  }),
-  ...media.from('md').css({
-    display: hiddenLevel[2] === 0 ? 'none' : 'block',
-    textAlign: horizontalAlignLevel[2],
-  }),
-  ...media.from('lg').css({
-    display: hiddenLevel[3] === 0 ? 'none' : 'block',
-    textAlign: horizontalAlignLevel[3],
-  }),
-  ...media.from('xl').css({
-    display: hiddenLevel[4] === 0 ? 'none' : 'block',
-    textAlign: horizontalAlignLevel[4],
-  }),
-}))
+    ...media.until('sm').css({
+      display: hiddenLevel[0] === 0 ? 'none' : 'block',
+      textAlign: horizontalAlignLevel[0],
+    }),
+    ...media.from('sm').css({
+      display: hiddenLevel[1] === 0 ? 'none' : 'block',
+      textAlign: horizontalAlignLevel[1],
+    }),
+    ...media.from('md').css({
+      display: hiddenLevel[2] === 0 ? 'none' : 'block',
+      textAlign: horizontalAlignLevel[2],
+    }),
+    ...media.from('lg').css({
+      display: hiddenLevel[3] === 0 ? 'none' : 'block',
+      textAlign: horizontalAlignLevel[3],
+    }),
+    ...media.from('xl').css({
+      display: hiddenLevel[4] === 0 ? 'none' : 'block',
+      textAlign: horizontalAlignLevel[4],
+    }),
+  })
+)
 
 const Col = ({ span, offset, horizontalAlign, children, ...rest }) => {
   if (offset) {
