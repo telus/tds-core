@@ -25,10 +25,7 @@ exports[`WebVideo renders 1`] = `
 }
 
 .c13 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
 }
 
 .c13 > svg {
@@ -936,7 +933,7 @@ exports[`WebVideo renders 1`] = `
                                                                         "isStatic": false,
                                                                         "lastClassName": "c13",
                                                                         "rules": Array [
-                                                                          "display: inline-flex;",
+                                                                          "display: inline-block;",
                                                                           [Function],
                                                                           [Function],
                                                                         ],
