@@ -1,4 +1,4 @@
-import { prepareArray, generateStyles } from '../generateResponsiveStyles'
+import { prepareArray, generateStyles, handleResponsiveStyles } from '../generateResponsiveStyles'
 
 describe('generateResponsiveStyles', () => {
   describe('prepareArray', () => {
@@ -342,6 +342,33 @@ describe('generateResponsiveStyles', () => {
         '@media (min-width: 992px)': {
           flexDirection: 'row',
           marginRight: 8,
+        },
+      })
+    })
+  })
+
+  describe('handleResponsiveStyle', () => {
+    const props = {
+      vertical: { xs: 4, md: 8 },
+    }
+    const styleFn = ({ vertical }) => {
+      if (vertical === undefined) {
+        return undefined
+      }
+
+      return { paddingTop: vertical, paddingBottom: vertical }
+    }
+
+    it('works', () => {
+      const styles = handleResponsiveStyles(props, styleFn)
+      expect(styles).toEqual({
+        '@media (max-width: 767px)': {
+          paddingTop: 4,
+          paddingBottom: 4,
+        },
+        '@media (min-width: 768px)': {
+          paddingTop: 8,
+          paddingBottom: 8,
         },
       })
     })

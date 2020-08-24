@@ -7,4 +7,5 @@ export {
   default as generateResponsiveStyles,
   prepareArray,
   generateStyles,
+  handleResponsiveStyles,
 } from './generateResponsiveStyles'
