@@ -8,7 +8,7 @@ import { responsiveProps } from '@tds/util-prop-types'
 
 import { colorWhite, colorWhiteLilac, colorGreyAthens, colorGreyGainsboro } from '@tds/core-colours'
 import { borders } from '@tds/shared-styles'
-import { safeRest, generateResponsiveStyles } from '@tds/util-helpers'
+import { safeRest, handleResponsiveStyles } from '@tds/util-helpers'
 
 import { deprecate } from '../../shared/utils/warn'
 
@@ -54,7 +54,7 @@ export const StyledCard = styled(({ fullHeight, fullBleedImage, ...props }) => <
 const ContainerStyles = fullBleedImage =>
   fullBleedImage &&
   fullBleedImage.position &&
-  generateResponsiveStyles({ position: fullBleedImage.position }, ({ position }) => {
+  handleResponsiveStyles({ position: fullBleedImage.position }, ({ position }) => {
     if (!fullBleedImage) return {}
     const direction = {
       left: 'row',
