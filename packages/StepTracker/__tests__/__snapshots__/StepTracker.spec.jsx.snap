@@ -54,30 +54,48 @@ exports[`<StepTracker /> renders 1`] = `
   padding-left: 0.1em;
 }
 
-div.c3 {
+.c3 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+  min-width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
 }
 
-div.c12 {
+.c12 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+  min-width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
 }
 
 .c2 {
   width: 100%;
-}
-
-div.c2 {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -93,10 +111,6 @@ div.c2 {
   flex-wrap: wrap;
   margin: 0 auto;
   width: 100%;
-}
-
-div.c1 {
-  padding: 0;
 }
 
 .c5 {
@@ -248,7 +262,7 @@ div.c1 {
 }
 
 @media (max-width:575px) {
-  div.c2 {
+  .c2 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -256,7 +270,7 @@ div.c1 {
 }
 
 @media (min-width:576px) {
-  div.c2 {
+  .c2 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -264,7 +278,7 @@ div.c1 {
 }
 
 @media (min-width:768px) {
-  div.c2 {
+  .c2 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -272,7 +286,7 @@ div.c1 {
 }
 
 @media (min-width:992px) {
-  div.c2 {
+  .c2 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -280,7 +294,7 @@ div.c1 {
 }
 
 @media (min-width:1200px) {
-  div.c2 {
+  .c2 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -342,13 +356,13 @@ div.c1 {
   data-testid="stepTrackerContainer"
 >
   <div
-    class="c1 container-fluid"
+    class="c1"
   >
     <div
-      class="c2 row"
+      class="c2"
     >
       <div
-        class="col-xs-12 c3"
+        class="c3"
       >
         <div
           class="c4"
@@ -426,10 +440,10 @@ div.c1 {
       </div>
     </div>
     <div
-      class="c2 row"
+      class="c2"
     >
       <div
-        class="col-xs-12 col-md-0 c12"
+        class="c12"
       >
         <div
           class="c13"
