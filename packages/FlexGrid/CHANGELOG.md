@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@3.0.11...@tds/core-flex-grid@3.1.0) (2020-08-25)
+
+
+### Features
+
+* **core-flex-grid:** add outsideGutter property ([d5b1a36](https://github.com/telusdigital/tds/commit/d5b1a3650b9511ec3796573550968e7ef207909e))
+
+
+
+
+
 ## [3.0.11](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@3.0.10...@tds/core-flex-grid@3.0.11) (2020-07-22)
 
 **Note:** Version bump only for package @tds/core-flex-grid
