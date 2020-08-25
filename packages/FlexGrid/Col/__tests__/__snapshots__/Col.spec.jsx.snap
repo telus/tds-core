@@ -1,13 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Col can align column content horizontally using a responsive prop object 1`] = `
-div.c0 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.c0 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  max-width: 100%;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (max-width:575px) {
@@ -45,26 +52,99 @@ div.c0 {
   }
 }
 
-<Col
-  className="c0"
+<Col__StyledCol
+  gutter={true}
+  hiddenLevel={
+    Array [
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]
+  }
+  horizontalAlignLevel={
+    Array [
+      "center",
+      "center",
+      "left",
+      "left",
+      "left",
+    ]
+  }
   xs={true}
 >
-  <div
-    className="col-xs c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Col__StyledCol-sc-15yvjc7-0",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            [Function],
+            [Function],
+            [Function],
+          ],
+        },
+        "displayName": "Col__StyledCol",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Col__StyledCol-sc-15yvjc7-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    gutter={true}
+    hiddenLevel={
+      Array [
+        false,
+        false,
+        false,
+        false,
+        false,
+      ]
+    }
+    horizontalAlignLevel={
+      Array [
+        "center",
+        "center",
+        "left",
+        "left",
+        "left",
+      ]
+    }
+    xs={true}
   >
-    Some content
-  </div>
-</Col>
+    <div
+      className="c0"
+    >
+      Some content
+    </div>
+  </StyledComponent>
+</Col__StyledCol>
 `;
 
 exports[`Col can align column content horizontally using a string 1`] = `
-div.c0 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.c0 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  max-width: 100%;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (max-width:575px) {
@@ -102,26 +182,108 @@ div.c0 {
   }
 }
 
-<Col
-  className="c0"
+<Col__StyledCol
+  gutter={true}
+  hiddenLevel={
+    Array [
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]
+  }
+  horizontalAlignLevel={
+    Array [
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+    ]
+  }
   xs={true}
 >
-  <div
-    className="col-xs c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Col__StyledCol-sc-15yvjc7-0",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            [Function],
+            [Function],
+            [Function],
+          ],
+        },
+        "displayName": "Col__StyledCol",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Col__StyledCol-sc-15yvjc7-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    gutter={true}
+    hiddenLevel={
+      Array [
+        false,
+        false,
+        false,
+        false,
+        false,
+      ]
+    }
+    horizontalAlignLevel={
+      Array [
+        "right",
+        "right",
+        "right",
+        "right",
+        "right",
+      ]
+    }
+    xs={true}
   >
-    Some content
-  </div>
-</Col>
+    <div
+      className="c0"
+    >
+      Some content
+    </div>
+  </StyledComponent>
+</Col__StyledCol>
 `;
 
 exports[`Col can hide columns 1`] = `
-div.c0 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.c0 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  max-width: 100%;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    min-width: 8.333333333333332%;
+    -webkit-flex-basis: 8.333333333333332%;
+    -ms-flex-preferred-size: 8.333333333333332%;
+    flex-basis: 8.333333333333332%;
+  }
 }
 
 @media (max-width:575px) {
@@ -159,29 +321,105 @@ div.c0 {
   }
 }
 
-<Col
-  className="c0"
+<Col__StyledCol
+  gutter={true}
+  hiddenLevel={
+    Array [
+      0,
+      0,
+      1,
+      1,
+      0,
+    ]
+  }
+  horizontalAlignLevel={
+    Array [
+      "inherit",
+      "inherit",
+      "inherit",
+      "inherit",
+      "inherit",
+    ]
+  }
   md={1}
   sm={0}
   xl={0}
   xs={true}
 >
-  <div
-    className="col-xs col-sm-0 col-md-1 col-xl-0 c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Col__StyledCol-sc-15yvjc7-0",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            [Function],
+            [Function],
+            [Function],
+          ],
+        },
+        "displayName": "Col__StyledCol",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Col__StyledCol-sc-15yvjc7-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    gutter={true}
+    hiddenLevel={
+      Array [
+        0,
+        0,
+        1,
+        1,
+        0,
+      ]
+    }
+    horizontalAlignLevel={
+      Array [
+        "inherit",
+        "inherit",
+        "inherit",
+        "inherit",
+        "inherit",
+      ]
+    }
+    md={1}
+    sm={0}
+    xl={0}
+    xs={true}
   >
-    Some content
-  </div>
-</Col>
+    <div
+      className="c0"
+    >
+      Some content
+    </div>
+  </StyledComponent>
+</Col__StyledCol>
 `;
 
 exports[`Col renders 1`] = `
-div.c0 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.c0 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  max-width: 100%;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (max-width:575px) {
@@ -219,26 +457,117 @@ div.c0 {
   }
 }
 
-<Col
-  className="c0"
+<Col__StyledCol
+  gutter={true}
+  hiddenLevel={
+    Array [
+      false,
+      false,
+      false,
+      false,
+      false,
+    ]
+  }
+  horizontalAlignLevel={
+    Array [
+      "inherit",
+      "inherit",
+      "inherit",
+      "inherit",
+      "inherit",
+    ]
+  }
   xs={true}
 >
-  <div
-    className="col-xs c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Col__StyledCol-sc-15yvjc7-0",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            [Function],
+            [Function],
+            [Function],
+          ],
+        },
+        "displayName": "Col__StyledCol",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Col__StyledCol-sc-15yvjc7-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    gutter={true}
+    hiddenLevel={
+      Array [
+        false,
+        false,
+        false,
+        false,
+        false,
+      ]
+    }
+    horizontalAlignLevel={
+      Array [
+        "inherit",
+        "inherit",
+        "inherit",
+        "inherit",
+        "inherit",
+      ]
+    }
+    xs={true}
   >
-    Some content
-  </div>
-</Col>
+    <div
+      className="c0"
+    >
+      Some content
+    </div>
+  </StyledComponent>
+</Col__StyledCol>
 `;
 
 exports[`Col supports responsive hidden columns 1`] = `
-div.c0 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.c0 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  max-width: 100%;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width:576px) {
+  .c0 {
+    min-width: 8.333333333333332%;
+    -webkit-flex-basis: 8.333333333333332%;
+    -ms-flex-preferred-size: 8.333333333333332%;
+    flex-basis: 8.333333333333332%;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    min-width: 8.333333333333332%;
+    -webkit-flex-basis: 8.333333333333332%;
+    -ms-flex-preferred-size: 8.333333333333332%;
+    flex-basis: 8.333333333333332%;
+  }
 }
 
 @media (max-width:575px) {
@@ -276,18 +605,88 @@ div.c0 {
   }
 }
 
-<Col
-  className="c0"
+<Col__StyledCol
+  gutter={true}
+  hiddenLevel={
+    Array [
+      0,
+      1,
+      0,
+      1,
+      0,
+    ]
+  }
+  horizontalAlignLevel={
+    Array [
+      "inherit",
+      "inherit",
+      "inherit",
+      "inherit",
+      "inherit",
+    ]
+  }
   lg={1}
   md={0}
   sm={1}
   xl={0}
   xs={true}
 >
-  <div
-    className="col-xs col-sm-1 col-md-0 col-lg-1 col-xl-0 c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "Col__StyledCol-sc-15yvjc7-0",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            [Function],
+            [Function],
+            [Function],
+          ],
+        },
+        "displayName": "Col__StyledCol",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "Col__StyledCol-sc-15yvjc7-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    gutter={true}
+    hiddenLevel={
+      Array [
+        0,
+        1,
+        0,
+        1,
+        0,
+      ]
+    }
+    horizontalAlignLevel={
+      Array [
+        "inherit",
+        "inherit",
+        "inherit",
+        "inherit",
+        "inherit",
+      ]
+    }
+    lg={1}
+    md={0}
+    sm={1}
+    xl={0}
+    xs={true}
   >
-    Some content
-  </div>
-</Col>
+    <div
+      className="c0"
+    >
+      Some content
+    </div>
+  </StyledComponent>
+</Col__StyledCol>
 `;

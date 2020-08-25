@@ -1,11 +1,10 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Col as ReactFlexboxGridCol } from 'react-flexbox-grid'
 
 import { deprecate } from '../../../../shared/utils/warn'
 
 import FlexGrid from '../../FlexGrid'
-import Col from '../Col'
+import Col, { StyledCol } from '../Col'
 
 jest.mock('../../../../shared/utils/warn')
 
@@ -17,7 +16,7 @@ describe('Col', () => {
       </FlexGrid>
     )
 
-    return wrapper.find(ReactFlexboxGridCol)
+    return wrapper.find(StyledCol)
   }
 
   it('renders', () => {
@@ -29,7 +28,7 @@ describe('Col', () => {
   it('renders a react-flexbox-grid Col component', () => {
     const col = doMount()
 
-    expect(col).toMatchSelector(ReactFlexboxGridCol)
+    expect(col).toMatchSelector(StyledCol)
   })
 
   it('has auto width by default', () => {
