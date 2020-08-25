@@ -13,27 +13,7 @@ exports[`ButtonLink can be presented as one of the allowed fullwidth 1`] = `
   line-height: 1.5;
   word-wrap: break-word;
   font-weight: 700;
-  height: 3.25rem;
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
-  margin: 0;
-  padding: 0 2rem;
-  cursor: pointer;
-  background: none;
-  -webkit-transition: background 0.2s;
-  transition: background 0.2s;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   background-color: #2B8000;
   color: #fff;
   -webkit-text-decoration: none;
@@ -64,17 +44,6 @@ exports[`ButtonLink can be presented as one of the allowed fullwidth 1`] = `
   width: 100%;
 }
 
-@media (min-width:768px) {
-  .c0 {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    width: auto;
-    min-width: 180px;
-  }
-}
-
 <a
   class="c0"
 >
@@ -95,27 +64,7 @@ exports[`ButtonLink can be presented as one of the allowed variants 1`] = `
   line-height: 1.5;
   word-wrap: break-word;
   font-weight: 700;
-  height: 3.25rem;
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
-  margin: 0;
-  padding: 0 2rem;
-  cursor: pointer;
-  background: none;
-  -webkit-transition: background 0.2s;
-  transition: background 0.2s;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   background-color: #4b286d;
   color: #fff;
   -webkit-text-decoration: none;
@@ -146,17 +95,6 @@ exports[`ButtonLink can be presented as one of the allowed variants 1`] = `
   width: auto;
 }
 
-@media (min-width:768px) {
-  .c0 {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    width: auto;
-    min-width: 180px;
-  }
-}
-
 <a
   class="c0"
 >
@@ -177,27 +115,7 @@ exports[`ButtonLink renders 1`] = `
   line-height: 1.5;
   word-wrap: break-word;
   font-weight: 700;
-  height: 3.25rem;
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
-  margin: 0;
-  padding: 0 2rem;
-  cursor: pointer;
-  background: none;
-  -webkit-transition: background 0.2s;
-  transition: background 0.2s;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   background-color: #2B8000;
   color: #fff;
   -webkit-text-decoration: none;
@@ -226,17 +144,6 @@ exports[`ButtonLink renders 1`] = `
 .c0:link,
 .c0:visited {
   width: auto;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    width: auto;
-    min-width: 180px;
-  }
 }
 
 <a
