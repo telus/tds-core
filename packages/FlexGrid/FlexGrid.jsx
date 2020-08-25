@@ -88,6 +88,7 @@ FlexGrid.propTypes = {
    */
   gutter: PropTypes.bool,
   /**
+   * @since 3.1.0
    * Whether or not to include gutter at the ends to the left and right of the FlexGrid
    */
   outsideGutter: PropTypes.bool,
