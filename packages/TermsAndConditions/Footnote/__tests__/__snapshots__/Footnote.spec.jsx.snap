@@ -49,21 +49,35 @@ exports[`Footnote renders closed 1`] = `
   letter-spacing: inherit;
 }
 
-div.c7 {
+.c7 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+  min-width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
 }
 
 .c6 {
   width: 100%;
-}
-
-div.c6 {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -79,10 +93,6 @@ div.c6 {
   flex-wrap: wrap;
   margin: 0 auto;
   width: 100%;
-}
-
-div.c5 {
-  padding: 0;
 }
 
 .c3 {
@@ -225,7 +235,7 @@ div.c5 {
 }
 
 @media (max-width:575px) {
-  div.c6 {
+  .c6 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -233,7 +243,7 @@ div.c5 {
 }
 
 @media (min-width:576px) {
-  div.c6 {
+  .c6 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -241,7 +251,7 @@ div.c5 {
 }
 
 @media (min-width:768px) {
-  div.c6 {
+  .c6 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -249,7 +259,7 @@ div.c5 {
 }
 
 @media (min-width:992px) {
-  div.c6 {
+  .c6 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -257,7 +267,7 @@ div.c5 {
 }
 
 @media (min-width:1200px) {
-  div.c6 {
+  .c6 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -395,16 +405,16 @@ div.c5 {
                 class="c4"
               >
                 <div
-                  class="c5 container-fluid"
+                  class="c5"
                 >
                   <div
-                    class="c6 row"
+                    class="c6"
                   >
                     <div
-                      class="col-xs-12 c7"
+                      class="c7"
                     >
                       <div
-                        class="c8 sc-htoDjs c8 c9"
+                        class="c8 sc-EHOje c8 c9"
                       >
                         <h2
                           class="c10"
@@ -520,21 +530,35 @@ exports[`Footnote renders opened 1`] = `
   letter-spacing: inherit;
 }
 
-div.c7 {
+.c7 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+  min-width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
 }
 
 .c6 {
   width: 100%;
-}
-
-div.c6 {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -550,10 +574,6 @@ div.c6 {
   flex-wrap: wrap;
   margin: 0 auto;
   width: 100%;
-}
-
-div.c5 {
-  padding: 0;
 }
 
 .c3 {
@@ -699,7 +719,7 @@ div.c5 {
 }
 
 @media (max-width:575px) {
-  div.c6 {
+  .c6 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -707,7 +727,7 @@ div.c5 {
 }
 
 @media (min-width:576px) {
-  div.c6 {
+  .c6 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -715,7 +735,7 @@ div.c5 {
 }
 
 @media (min-width:768px) {
-  div.c6 {
+  .c6 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -723,7 +743,7 @@ div.c5 {
 }
 
 @media (min-width:992px) {
-  div.c6 {
+  .c6 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -731,7 +751,7 @@ div.c5 {
 }
 
 @media (min-width:1200px) {
-  div.c6 {
+  .c6 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -869,16 +889,16 @@ div.c5 {
                 class="c4"
               >
                 <div
-                  class="c5 container-fluid"
+                  class="c5"
                 >
                   <div
-                    class="c6 row"
+                    class="c6"
                   >
                     <div
-                      class="col-xs-12 c7"
+                      class="c7"
                     >
                       <div
-                        class="c8 sc-htoDjs c8 c9"
+                        class="c8 sc-EHOje c8 c9"
                       >
                         <h2
                           class="c10"
