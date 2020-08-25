@@ -1,9 +1,8 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { Row as ReactFlexboxGridRow } from 'react-flexbox-grid'
 
 import FlexGrid from '../../FlexGrid'
-import Row from '../Row'
+import Row, { StyledRow } from '../Row'
 
 describe('Row', () => {
   const doMount = (props = {}) => {
@@ -12,7 +11,7 @@ describe('Row', () => {
         <Row {...props}>Some content</Row>
       </FlexGrid>
     )
-    return wrapper.find(ReactFlexboxGridRow)
+    return wrapper.find(StyledRow)
   }
 
   it('renders', () => {
@@ -23,7 +22,7 @@ describe('Row', () => {
   it('renders a react-flexbox-grid Row component', () => {
     const row = doMount()
 
-    expect(row).toMatchSelector(ReactFlexboxGridRow)
+    expect(row).toMatchSelector(StyledRow)
   })
 
   it('passes additional attributes to the react-flexbox-grid Row', () => {
@@ -36,40 +35,39 @@ describe('Row', () => {
   describe('alignment', () => {
     it('can align columns horizontally to the start, center, or end', () => {
       let row = doMount({ horizontalAlign: 'start' })
-      expect(row).toHaveProp('start', 'xs')
+      expect(row).toMatchSnapshot()
 
       row = doMount({ horizontalAlign: 'center' })
-      expect(row).toHaveProp('center', 'xs')
+      expect(row).toMatchSnapshot()
 
       row = doMount({ horizontalAlign: 'end' })
-      expect(row).toHaveProp('end', 'xs')
+      expect(row).toMatchSnapshot()
     })
 
     it('can align columns vertically to the top, middle, or bottom', () => {
       let row = doMount({ verticalAlign: 'top' })
-      expect(row).toHaveProp('top', 'xs')
+      expect(row).toMatchSnapshot()
 
       row = doMount({ verticalAlign: 'middle' })
-      expect(row).toHaveProp('middle', 'xs')
+      expect(row).toMatchSnapshot()
 
       row = doMount({ verticalAlign: 'bottom' })
-      expect(row).toHaveProp('bottom', 'xs')
+      expect(row).toMatchSnapshot()
     })
 
     it('can be horizontally and vertically aligned', () => {
       const row = doMount({ horizontalAlign: 'start', verticalAlign: 'top' })
 
-      expect(row).toHaveProp('start', 'xs')
-      expect(row).toHaveProp('top', 'xs')
+      expect(row).toMatchSnapshot()
     })
   })
 
   it('can distribute columns around or between', () => {
     let row = doMount({ distribute: 'around' })
-    expect(row).toHaveProp('around', 'xs')
+    expect(row).toMatchSnapshot()
 
     row = doMount({ distribute: 'between' })
-    expect(row).toHaveProp('between', 'xs')
+    expect(row).toMatchSnapshot()
   })
 
   it('supports responsive reversal', () => {
