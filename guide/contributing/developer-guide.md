@@ -57,7 +57,7 @@ npm run bootstrap
 chore(deps): update lockfile
 ```
 
-For more information on commits and commit scopes, see [make a commit](#make-a-commit).  
+For more information on commits and commit scopes, see [make a commit](#make-a-commit).
 For information on using lerna while developing for TDS, see [using lerna](#using-lerna).
 
 #### Text editor
@@ -186,7 +186,7 @@ use the `chore` type.
 
 For example, the [changelog for core-button](https://github.com/telus/tds-core/blob/3aa8d4e8ed4bfa480cb9cc205fa6d5b5b733b861/packages/Button/CHANGELOG.md) has an entry under version 2.1.0 that reads:
 
-> Features  
+> Features
 > core-button: add forwardRef (fd8f181)
 
 This was parsed from a [commit](https://github.com/telus/tds-core/commit/fd8f181) using the `feat` type.
@@ -389,7 +389,7 @@ Being a component library shipped to npm, proper configuration to the file **pac
   "peerDependencies": {
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
-    "styled-components": "^4.1.3"
+    "styled-components": "^4.1.3 || ^5.1.0"
   }
   ```
 - `dependencies` only contains what is required for the package to run, and they should be publicly available on npm.
