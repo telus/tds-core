@@ -151,7 +151,7 @@ Link.propTypes = {
   /**
    * @ignore
    */
-  forwardedRef: PropTypes.object,
+  forwardedRef: PropTypes.oneOfType([PropTypes.object, PropTypes.func]),
   /**
    * Provide an icon from the Dependent icon group in `@tds/core-interactive-icon`.
    * @since 2.2.0
