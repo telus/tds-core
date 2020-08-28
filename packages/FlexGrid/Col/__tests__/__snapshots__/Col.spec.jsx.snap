@@ -277,12 +277,30 @@ exports[`Col can hide columns 1`] = `
   padding-right: 1rem;
 }
 
+@media (min-width:576px) {
+  .c0 {
+    max-width: 0%;
+    -webkit-flex-basis: 0%;
+    -ms-flex-preferred-size: 0%;
+    flex-basis: 0%;
+  }
+}
+
 @media (min-width:768px) {
   .c0 {
-    min-width: 8.333333333333332%;
+    max-width: 8.333333333333332%;
     -webkit-flex-basis: 8.333333333333332%;
     -ms-flex-preferred-size: 8.333333333333332%;
     flex-basis: 8.333333333333332%;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    max-width: 0%;
+    -webkit-flex-basis: 0%;
+    -ms-flex-preferred-size: 0%;
+    flex-basis: 0%;
   }
 }
 
@@ -554,19 +572,37 @@ exports[`Col supports responsive hidden columns 1`] = `
 
 @media (min-width:576px) {
   .c0 {
-    min-width: 8.333333333333332%;
+    max-width: 8.333333333333332%;
     -webkit-flex-basis: 8.333333333333332%;
     -ms-flex-preferred-size: 8.333333333333332%;
     flex-basis: 8.333333333333332%;
   }
 }
 
+@media (min-width:768px) {
+  .c0 {
+    max-width: 0%;
+    -webkit-flex-basis: 0%;
+    -ms-flex-preferred-size: 0%;
+    flex-basis: 0%;
+  }
+}
+
 @media (min-width:992px) {
   .c0 {
-    min-width: 8.333333333333332%;
+    max-width: 8.333333333333332%;
     -webkit-flex-basis: 8.333333333333332%;
     -ms-flex-preferred-size: 8.333333333333332%;
     flex-basis: 8.333333333333332%;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    max-width: 0%;
+    -webkit-flex-basis: 0%;
+    -ms-flex-preferred-size: 0%;
+    flex-basis: 0%;
   }
 }
 
