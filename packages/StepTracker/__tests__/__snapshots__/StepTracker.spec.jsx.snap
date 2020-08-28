@@ -62,7 +62,6 @@ exports[`<StepTracker /> renders 1`] = `
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100%;
-  min-width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -75,7 +74,6 @@ exports[`<StepTracker /> renders 1`] = `
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100%;
-  min-width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -223,6 +221,15 @@ exports[`<StepTracker /> renders 1`] = `
   .c3 {
     display: block;
     text-align: inherit;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 {
+    max-width: 0%;
+    -webkit-flex-basis: 0%;
+    -ms-flex-preferred-size: 0%;
+    flex-basis: 0%;
   }
 }
 
