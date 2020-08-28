@@ -57,7 +57,6 @@ exports[`Footnote renders closed 1`] = `
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100%;
-  min-width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -538,7 +537,6 @@ exports[`Footnote renders opened 1`] = `
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   max-width: 100%;
-  min-width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
 }
