@@ -51,7 +51,7 @@ export const StyledCard = styled(({ fullHeight, fullBleedImage, ...props }) => <
   }
 )
 
-const ContainerStyles = fullBleedImage =>
+const fullBleedImageStyles = fullBleedImage =>
   fullBleedImage &&
   fullBleedImage.position &&
   handleResponsiveStyles({ position: fullBleedImage.position }, ({ position }) => {
@@ -75,7 +75,7 @@ const ContainerStyles = fullBleedImage =>
     return styles
   })
 
-const StyledDiv = styled.div(ContainerStyles)
+const StyledFullBleedImage = styled.div(fullBleedImageStyles)
 
 /**
  * A content container.
@@ -100,10 +100,10 @@ const Card = ({ variant, children, fullHeight, spacing, fullBleedImage, ...rest 
     spacingProps.inset = 4
   }
 
-  return (
-    <StyledCard {...safeRest(rest)} fullHeight={fullHeight} variant={variant}>
-      {fullBleedImage ? (
-        <StyledDiv {...fullBleedImage}>
+  if (fullBleedImage) {
+    return (
+      <StyledCard {...safeRest(rest)} fullHeight={fullHeight} variant={variant}>
+        <StyledFullBleedImage {...fullBleedImage}>
           <Image
             src={fullBleedImage.src}
             width={fullBleedImage.width}
@@ -111,10 +111,14 @@ const Card = ({ variant, children, fullHeight, spacing, fullBleedImage, ...rest 
             alt={fullBleedImage.alt}
           />
           <Box {...spacingProps}>{children}</Box>
-        </StyledDiv>
-      ) : (
-        <Box {...spacingProps}>{children}</Box>
-      )}
+        </StyledFullBleedImage>
+      </StyledCard>
+    )
+  }
+
+  return (
+    <StyledCard {...safeRest(rest)} fullHeight={fullHeight} variant={variant} {...spacingProps}>
+      {children}
     </StyledCard>
   )
 }

@@ -8,13 +8,6 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
   flex-direction: column;
 }
 
-.c2 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .c0 {
   border-width: 0;
   border-radius: 4px;
@@ -23,28 +16,28 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
@@ -57,7 +50,9 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
 >
   <Styled(Component)
     fullHeight={false}
+    horizontal={4}
     variant="default"
+    vertical={5}
   >
     <StyledComponent
       forwardedComponent={
@@ -87,24 +82,32 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
       }
       forwardedRef={null}
       fullHeight={false}
+      horizontal={4}
       variant="default"
+      vertical={5}
     >
       <Component
         className="c0"
         fullHeight={false}
+        horizontal={4}
         variant="default"
+        vertical={5}
       >
         <Box
           className="c0"
+          horizontal={4}
           inline={false}
           tag="div"
           variant="default"
+          vertical={5}
         >
           <styled.div
             className="c0"
+            horizontal={4}
             inline={false}
             tag="div"
             variant="default"
+            vertical={5}
           >
             <StyledComponent
               className="c0"
@@ -117,7 +120,7 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-bdVaJa",
                     "isStatic": false,
-                    "lastClassName": "c2",
+                    "lastClassName": "c1",
                     "rules": Array [
                       [Function],
                       [Function],
@@ -137,68 +140,16 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
                 }
               }
               forwardedRef={null}
+              horizontal={4}
               inline={false}
               tag="div"
               variant="default"
+              vertical={5}
             >
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Box
-                  horizontal={4}
-                  inline={false}
-                  tag="div"
-                  vertical={5}
-                >
-                  <styled.div
-                    horizontal={4}
-                    inline={false}
-                    tag="div"
-                    vertical={5}
-                  >
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [
-                            [Function],
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bdVaJa",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bdVaJa",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                      horizontal={4}
-                      inline={false}
-                      tag="div"
-                      vertical={5}
-                    >
-                      <div
-                        className="c2"
-                      >
-                        Some content
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                </Box>
+                Some content
               </div>
             </StyledComponent>
           </styled.div>
@@ -217,13 +168,6 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
   flex-direction: column;
 }
 
-.c2 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .c0 {
   border-width: 0;
   border-radius: 4px;
@@ -232,28 +176,28 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
@@ -266,7 +210,9 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
 >
   <Styled(Component)
     fullHeight={false}
+    horizontal={4}
     variant="default"
+    vertical={5}
   >
     <StyledComponent
       forwardedComponent={
@@ -296,24 +242,32 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
       }
       forwardedRef={null}
       fullHeight={false}
+      horizontal={4}
       variant="default"
+      vertical={5}
     >
       <Component
         className="c0"
         fullHeight={false}
+        horizontal={4}
         variant="default"
+        vertical={5}
       >
         <Box
           className="c0"
+          horizontal={4}
           inline={false}
           tag="div"
           variant="default"
+          vertical={5}
         >
           <styled.div
             className="c0"
+            horizontal={4}
             inline={false}
             tag="div"
             variant="default"
+            vertical={5}
           >
             <StyledComponent
               className="c0"
@@ -326,7 +280,7 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-bdVaJa",
                     "isStatic": false,
-                    "lastClassName": "c2",
+                    "lastClassName": "c1",
                     "rules": Array [
                       [Function],
                       [Function],
@@ -346,68 +300,16 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
                 }
               }
               forwardedRef={null}
+              horizontal={4}
               inline={false}
               tag="div"
               variant="default"
+              vertical={5}
             >
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Box
-                  horizontal={4}
-                  inline={false}
-                  tag="div"
-                  vertical={5}
-                >
-                  <styled.div
-                    horizontal={4}
-                    inline={false}
-                    tag="div"
-                    vertical={5}
-                  >
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [
-                            [Function],
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bdVaJa",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bdVaJa",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                      horizontal={4}
-                      inline={false}
-                      tag="div"
-                      vertical={5}
-                    >
-                      <div
-                        className="c2"
-                      >
-                        Some content
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                </Box>
+                Some content
               </div>
             </StyledComponent>
           </styled.div>
@@ -426,13 +328,6 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
   flex-direction: column;
 }
 
-.c2 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .c0 {
   border-width: 0;
   border-radius: 4px;
@@ -440,28 +335,28 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
@@ -474,7 +369,9 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
 >
   <Styled(Component)
     fullHeight={false}
+    horizontal={4}
     variant="branded"
+    vertical={5}
   >
     <StyledComponent
       forwardedComponent={
@@ -504,24 +401,32 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
       }
       forwardedRef={null}
       fullHeight={false}
+      horizontal={4}
       variant="branded"
+      vertical={5}
     >
       <Component
         className="c0"
         fullHeight={false}
+        horizontal={4}
         variant="branded"
+        vertical={5}
       >
         <Box
           className="c0"
+          horizontal={4}
           inline={false}
           tag="div"
           variant="branded"
+          vertical={5}
         >
           <styled.div
             className="c0"
+            horizontal={4}
             inline={false}
             tag="div"
             variant="branded"
+            vertical={5}
           >
             <StyledComponent
               className="c0"
@@ -534,7 +439,7 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-bdVaJa",
                     "isStatic": false,
-                    "lastClassName": "c2",
+                    "lastClassName": "c1",
                     "rules": Array [
                       [Function],
                       [Function],
@@ -554,68 +459,16 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
                 }
               }
               forwardedRef={null}
+              horizontal={4}
               inline={false}
               tag="div"
               variant="branded"
+              vertical={5}
             >
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Box
-                  horizontal={4}
-                  inline={false}
-                  tag="div"
-                  vertical={5}
-                >
-                  <styled.div
-                    horizontal={4}
-                    inline={false}
-                    tag="div"
-                    vertical={5}
-                  >
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [
-                            [Function],
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bdVaJa",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bdVaJa",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                      horizontal={4}
-                      inline={false}
-                      tag="div"
-                      vertical={5}
-                    >
-                      <div
-                        className="c2"
-                      >
-                        Some content
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                </Box>
+                Some content
               </div>
             </StyledComponent>
           </styled.div>
@@ -634,13 +487,6 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
   flex-direction: column;
 }
 
-.c2 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .c0 {
   border-width: 0;
   border-radius: 4px;
@@ -648,28 +494,28 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
@@ -682,7 +528,9 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
 >
   <Styled(Component)
     fullHeight={false}
+    horizontal={4}
     variant="alternative"
+    vertical={5}
   >
     <StyledComponent
       forwardedComponent={
@@ -712,24 +560,32 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
       }
       forwardedRef={null}
       fullHeight={false}
+      horizontal={4}
       variant="alternative"
+      vertical={5}
     >
       <Component
         className="c0"
         fullHeight={false}
+        horizontal={4}
         variant="alternative"
+        vertical={5}
       >
         <Box
           className="c0"
+          horizontal={4}
           inline={false}
           tag="div"
           variant="alternative"
+          vertical={5}
         >
           <styled.div
             className="c0"
+            horizontal={4}
             inline={false}
             tag="div"
             variant="alternative"
+            vertical={5}
           >
             <StyledComponent
               className="c0"
@@ -742,7 +598,7 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-bdVaJa",
                     "isStatic": false,
-                    "lastClassName": "c2",
+                    "lastClassName": "c1",
                     "rules": Array [
                       [Function],
                       [Function],
@@ -762,68 +618,16 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
                 }
               }
               forwardedRef={null}
+              horizontal={4}
               inline={false}
               tag="div"
               variant="alternative"
+              vertical={5}
             >
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Box
-                  horizontal={4}
-                  inline={false}
-                  tag="div"
-                  vertical={5}
-                >
-                  <styled.div
-                    horizontal={4}
-                    inline={false}
-                    tag="div"
-                    vertical={5}
-                  >
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [
-                            [Function],
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bdVaJa",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bdVaJa",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                      horizontal={4}
-                      inline={false}
-                      tag="div"
-                      vertical={5}
-                    >
-                      <div
-                        className="c2"
-                      >
-                        Some content
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                </Box>
+                Some content
               </div>
             </StyledComponent>
           </styled.div>
@@ -842,13 +646,6 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
   flex-direction: column;
 }
 
-.c2 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .c0 {
   border-width: 0;
   border-radius: 4px;
@@ -858,28 +655,28 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
@@ -892,7 +689,9 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
 >
   <Styled(Component)
     fullHeight={false}
+    horizontal={4}
     variant="defaultWithBorder"
+    vertical={5}
   >
     <StyledComponent
       forwardedComponent={
@@ -922,24 +721,32 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
       }
       forwardedRef={null}
       fullHeight={false}
+      horizontal={4}
       variant="defaultWithBorder"
+      vertical={5}
     >
       <Component
         className="c0"
         fullHeight={false}
+        horizontal={4}
         variant="defaultWithBorder"
+        vertical={5}
       >
         <Box
           className="c0"
+          horizontal={4}
           inline={false}
           tag="div"
           variant="defaultWithBorder"
+          vertical={5}
         >
           <styled.div
             className="c0"
+            horizontal={4}
             inline={false}
             tag="div"
             variant="defaultWithBorder"
+            vertical={5}
           >
             <StyledComponent
               className="c0"
@@ -952,7 +759,7 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-bdVaJa",
                     "isStatic": false,
-                    "lastClassName": "c2",
+                    "lastClassName": "c1",
                     "rules": Array [
                       [Function],
                       [Function],
@@ -972,68 +779,16 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
                 }
               }
               forwardedRef={null}
+              horizontal={4}
               inline={false}
               tag="div"
               variant="defaultWithBorder"
+              vertical={5}
             >
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Box
-                  horizontal={4}
-                  inline={false}
-                  tag="div"
-                  vertical={5}
-                >
-                  <styled.div
-                    horizontal={4}
-                    inline={false}
-                    tag="div"
-                    vertical={5}
-                  >
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [
-                            [Function],
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bdVaJa",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bdVaJa",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                      horizontal={4}
-                      inline={false}
-                      tag="div"
-                      vertical={5}
-                    >
-                      <div
-                        className="c2"
-                      >
-                        Some content
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                </Box>
+                Some content
               </div>
             </StyledComponent>
           </styled.div>
@@ -1045,14 +800,14 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
 `;
 
 exports[`<Card /> full bleed image renders with an image 1`] = `
-.c1 {
+.c4 {
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 
-.c4 {
+.c1 {
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -1221,7 +976,7 @@ exports[`<Card /> full bleed image renders with an image 1`] = `
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Card__StyledDiv
+                <Card__StyledFullBleedImage
                   alt="image"
                   height={200}
                   position="top"
@@ -1235,17 +990,17 @@ exports[`<Card /> full bleed image renders with an image 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "Card__StyledDiv-fwbr1q-0",
+                          "componentId": "Card__StyledFullBleedImage-fwbr1q-0",
                           "isStatic": false,
                           "lastClassName": "c2",
                           "rules": Array [
                             [Function],
                           ],
                         },
-                        "displayName": "Card__StyledDiv",
+                        "displayName": "Card__StyledFullBleedImage",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "Card__StyledDiv-fwbr1q-0",
+                        "styledComponentId": "Card__StyledFullBleedImage-fwbr1q-0",
                         "target": "div",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -1374,7 +1129,7 @@ exports[`<Card /> full bleed image renders with an image 1`] = `
                       </Box>
                     </div>
                   </StyledComponent>
-                </Card__StyledDiv>
+                </Card__StyledFullBleedImage>
               </div>
             </StyledComponent>
           </styled.div>
@@ -1386,14 +1141,14 @@ exports[`<Card /> full bleed image renders with an image 1`] = `
 `;
 
 exports[`<Card /> full bleed image renders with responsive image props 1`] = `
-.c1 {
+.c4 {
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 
-.c4 {
+.c1 {
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -1588,7 +1343,7 @@ exports[`<Card /> full bleed image renders with responsive image props 1`] = `
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Card__StyledDiv
+                <Card__StyledFullBleedImage
                   alt="image"
                   height={200}
                   position={
@@ -1607,17 +1362,17 @@ exports[`<Card /> full bleed image renders with responsive image props 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "Card__StyledDiv-fwbr1q-0",
+                          "componentId": "Card__StyledFullBleedImage-fwbr1q-0",
                           "isStatic": false,
                           "lastClassName": "c2",
                           "rules": Array [
                             [Function],
                           ],
                         },
-                        "displayName": "Card__StyledDiv",
+                        "displayName": "Card__StyledFullBleedImage",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "Card__StyledDiv-fwbr1q-0",
+                        "styledComponentId": "Card__StyledFullBleedImage-fwbr1q-0",
                         "target": "div",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -1751,7 +1506,7 @@ exports[`<Card /> full bleed image renders with responsive image props 1`] = `
                       </Box>
                     </div>
                   </StyledComponent>
-                </Card__StyledDiv>
+                </Card__StyledFullBleedImage>
               </div>
             </StyledComponent>
           </styled.div>
@@ -1770,13 +1525,6 @@ exports[`<Card /> full bleed image renders without an image 1`] = `
   flex-direction: column;
 }
 
-.c2 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .c0 {
   border-width: 0;
   border-radius: 4px;
@@ -1785,28 +1533,28 @@ exports[`<Card /> full bleed image renders without an image 1`] = `
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
@@ -1819,7 +1567,9 @@ exports[`<Card /> full bleed image renders without an image 1`] = `
 >
   <Styled(Component)
     fullHeight={false}
+    horizontal={4}
     variant="default"
+    vertical={5}
   >
     <StyledComponent
       forwardedComponent={
@@ -1849,24 +1599,32 @@ exports[`<Card /> full bleed image renders without an image 1`] = `
       }
       forwardedRef={null}
       fullHeight={false}
+      horizontal={4}
       variant="default"
+      vertical={5}
     >
       <Component
         className="c0"
         fullHeight={false}
+        horizontal={4}
         variant="default"
+        vertical={5}
       >
         <Box
           className="c0"
+          horizontal={4}
           inline={false}
           tag="div"
           variant="default"
+          vertical={5}
         >
           <styled.div
             className="c0"
+            horizontal={4}
             inline={false}
             tag="div"
             variant="default"
+            vertical={5}
           >
             <StyledComponent
               className="c0"
@@ -1879,7 +1637,7 @@ exports[`<Card /> full bleed image renders without an image 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-bdVaJa",
                     "isStatic": false,
-                    "lastClassName": "c2",
+                    "lastClassName": "c1",
                     "rules": Array [
                       [Function],
                       [Function],
@@ -1899,68 +1657,16 @@ exports[`<Card /> full bleed image renders without an image 1`] = `
                 }
               }
               forwardedRef={null}
+              horizontal={4}
               inline={false}
               tag="div"
               variant="default"
+              vertical={5}
             >
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Box
-                  horizontal={4}
-                  inline={false}
-                  tag="div"
-                  vertical={5}
-                >
-                  <styled.div
-                    horizontal={4}
-                    inline={false}
-                    tag="div"
-                    vertical={5}
-                  >
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [
-                            [Function],
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bdVaJa",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bdVaJa",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                      horizontal={4}
-                      inline={false}
-                      tag="div"
-                      vertical={5}
-                    >
-                      <div
-                        className="c2"
-                      >
-                        Some content
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                </Box>
+                Some content
               </div>
             </StyledComponent>
           </styled.div>
@@ -1979,13 +1685,6 @@ exports[`<Card /> renders 1`] = `
   flex-direction: column;
 }
 
-.c2 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .c0 {
   border-width: 0;
   border-radius: 4px;
@@ -1994,28 +1693,28 @@ exports[`<Card /> renders 1`] = `
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
@@ -2024,23 +1723,12 @@ exports[`<Card /> renders 1`] = `
 <div
   class="c0 sc-bxivhb c0 c1"
 >
-  <div
-    class="c2"
-  >
-    Children
-  </div>
+  Children
 </div>
 `;
 
 exports[`<Card /> spacing renders compact spacing 1`] = `
 .c1 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c2 {
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -2065,6 +1753,7 @@ exports[`<Card /> spacing renders compact spacing 1`] = `
 >
   <Styled(Component)
     fullHeight={false}
+    inset={3}
     variant="default"
   >
     <StyledComponent
@@ -2095,22 +1784,26 @@ exports[`<Card /> spacing renders compact spacing 1`] = `
       }
       forwardedRef={null}
       fullHeight={false}
+      inset={3}
       variant="default"
     >
       <Component
         className="c0"
         fullHeight={false}
+        inset={3}
         variant="default"
       >
         <Box
           className="c0"
           inline={false}
+          inset={3}
           tag="div"
           variant="default"
         >
           <styled.div
             className="c0"
             inline={false}
+            inset={3}
             tag="div"
             variant="default"
           >
@@ -2125,7 +1818,7 @@ exports[`<Card /> spacing renders compact spacing 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-bdVaJa",
                     "isStatic": false,
-                    "lastClassName": "c2",
+                    "lastClassName": "c1",
                     "rules": Array [
                       [Function],
                       [Function],
@@ -2146,64 +1839,14 @@ exports[`<Card /> spacing renders compact spacing 1`] = `
               }
               forwardedRef={null}
               inline={false}
+              inset={3}
               tag="div"
               variant="default"
             >
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Box
-                  inline={false}
-                  inset={3}
-                  tag="div"
-                >
-                  <styled.div
-                    inline={false}
-                    inset={3}
-                    tag="div"
-                  >
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [
-                            [Function],
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bdVaJa",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bdVaJa",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                      inline={false}
-                      inset={3}
-                      tag="div"
-                    >
-                      <div
-                        className="c2"
-                      >
-                        Some content
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                </Box>
+                Some content
               </div>
             </StyledComponent>
           </styled.div>
@@ -2222,13 +1865,6 @@ exports[`<Card /> spacing renders default spacing 1`] = `
   flex-direction: column;
 }
 
-.c2 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .c0 {
   border-width: 0;
   border-radius: 4px;
@@ -2237,28 +1873,28 @@ exports[`<Card /> spacing renders default spacing 1`] = `
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
@@ -2271,7 +1907,9 @@ exports[`<Card /> spacing renders default spacing 1`] = `
 >
   <Styled(Component)
     fullHeight={false}
+    horizontal={4}
     variant="default"
+    vertical={5}
   >
     <StyledComponent
       forwardedComponent={
@@ -2301,24 +1939,32 @@ exports[`<Card /> spacing renders default spacing 1`] = `
       }
       forwardedRef={null}
       fullHeight={false}
+      horizontal={4}
       variant="default"
+      vertical={5}
     >
       <Component
         className="c0"
         fullHeight={false}
+        horizontal={4}
         variant="default"
+        vertical={5}
       >
         <Box
           className="c0"
+          horizontal={4}
           inline={false}
           tag="div"
           variant="default"
+          vertical={5}
         >
           <styled.div
             className="c0"
+            horizontal={4}
             inline={false}
             tag="div"
             variant="default"
+            vertical={5}
           >
             <StyledComponent
               className="c0"
@@ -2331,7 +1977,7 @@ exports[`<Card /> spacing renders default spacing 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-bdVaJa",
                     "isStatic": false,
-                    "lastClassName": "c2",
+                    "lastClassName": "c1",
                     "rules": Array [
                       [Function],
                       [Function],
@@ -2351,68 +1997,16 @@ exports[`<Card /> spacing renders default spacing 1`] = `
                 }
               }
               forwardedRef={null}
+              horizontal={4}
               inline={false}
               tag="div"
               variant="default"
+              vertical={5}
             >
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Box
-                  horizontal={4}
-                  inline={false}
-                  tag="div"
-                  vertical={5}
-                >
-                  <styled.div
-                    horizontal={4}
-                    inline={false}
-                    tag="div"
-                    vertical={5}
-                  >
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [
-                            [Function],
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bdVaJa",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bdVaJa",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                      horizontal={4}
-                      inline={false}
-                      tag="div"
-                      vertical={5}
-                    >
-                      <div
-                        className="c2"
-                      >
-                        Some content
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                </Box>
+                Some content
               </div>
             </StyledComponent>
           </styled.div>
@@ -2431,13 +2025,6 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
   flex-direction: column;
 }
 
-.c2 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .c0 {
   border-width: 0;
   border-radius: 4px;
@@ -2446,7 +2033,7 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 1.5rem;
@@ -2455,7 +2042,7 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
@@ -2470,6 +2057,7 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
 >
   <Styled(Component)
     fullHeight={false}
+    inset={4}
     variant="default"
   >
     <StyledComponent
@@ -2500,22 +2088,26 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
       }
       forwardedRef={null}
       fullHeight={false}
+      inset={4}
       variant="default"
     >
       <Component
         className="c0"
         fullHeight={false}
+        inset={4}
         variant="default"
       >
         <Box
           className="c0"
           inline={false}
+          inset={4}
           tag="div"
           variant="default"
         >
           <styled.div
             className="c0"
             inline={false}
+            inset={4}
             tag="div"
             variant="default"
           >
@@ -2530,7 +2122,7 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-bdVaJa",
                     "isStatic": false,
-                    "lastClassName": "c2",
+                    "lastClassName": "c1",
                     "rules": Array [
                       [Function],
                       [Function],
@@ -2551,64 +2143,14 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
               }
               forwardedRef={null}
               inline={false}
+              inset={4}
               tag="div"
               variant="default"
             >
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Box
-                  inline={false}
-                  inset={4}
-                  tag="div"
-                >
-                  <styled.div
-                    inline={false}
-                    inset={4}
-                    tag="div"
-                  >
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [
-                            [Function],
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bdVaJa",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bdVaJa",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                      inline={false}
-                      inset={4}
-                      tag="div"
-                    >
-                      <div
-                        className="c2"
-                      >
-                        Some content
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                </Box>
+                Some content
               </div>
             </StyledComponent>
           </styled.div>
@@ -2625,13 +2167,6 @@ exports[`<Card /> spacing renders narrow spacing 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.c2 {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -2644,14 +2179,14 @@ exports[`<Card /> spacing renders narrow spacing 1`] = `
 }
 
 @media (max-width:767px) {
-  .c2 {
+  .c1 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
@@ -2664,7 +2199,9 @@ exports[`<Card /> spacing renders narrow spacing 1`] = `
 >
   <Styled(Component)
     fullHeight={false}
+    horizontal={3}
     variant="default"
+    vertical={4}
   >
     <StyledComponent
       forwardedComponent={
@@ -2694,24 +2231,32 @@ exports[`<Card /> spacing renders narrow spacing 1`] = `
       }
       forwardedRef={null}
       fullHeight={false}
+      horizontal={3}
       variant="default"
+      vertical={4}
     >
       <Component
         className="c0"
         fullHeight={false}
+        horizontal={3}
         variant="default"
+        vertical={4}
       >
         <Box
           className="c0"
+          horizontal={3}
           inline={false}
           tag="div"
           variant="default"
+          vertical={4}
         >
           <styled.div
             className="c0"
+            horizontal={3}
             inline={false}
             tag="div"
             variant="default"
+            vertical={4}
           >
             <StyledComponent
               className="c0"
@@ -2724,7 +2269,7 @@ exports[`<Card /> spacing renders narrow spacing 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-bdVaJa",
                     "isStatic": false,
-                    "lastClassName": "c2",
+                    "lastClassName": "c1",
                     "rules": Array [
                       [Function],
                       [Function],
@@ -2744,68 +2289,16 @@ exports[`<Card /> spacing renders narrow spacing 1`] = `
                 }
               }
               forwardedRef={null}
+              horizontal={3}
               inline={false}
               tag="div"
               variant="default"
+              vertical={4}
             >
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Box
-                  horizontal={3}
-                  inline={false}
-                  tag="div"
-                  vertical={4}
-                >
-                  <styled.div
-                    horizontal={3}
-                    inline={false}
-                    tag="div"
-                    vertical={4}
-                  >
-                    <StyledComponent
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [
-                            [Function],
-                          ],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "sc-bdVaJa",
-                            "isStatic": false,
-                            "lastClassName": "c2",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                            ],
-                          },
-                          "displayName": "styled.div",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "sc-bdVaJa",
-                          "target": "div",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
-                      horizontal={3}
-                      inline={false}
-                      tag="div"
-                      vertical={4}
-                    >
-                      <div
-                        className="c2"
-                      >
-                        Some content
-                      </div>
-                    </StyledComponent>
-                  </styled.div>
-                </Box>
+                Some content
               </div>
             </StyledComponent>
           </styled.div>
