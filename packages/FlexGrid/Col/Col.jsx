@@ -15,7 +15,7 @@ const toPercent = num => {
 }
 
 const calculateWidth = (breakpoint, value) => {
-  if (value && typeof value === 'number') {
+  if (typeof value === 'number') {
     const percent = toPercent(value)
 
     return media.from(breakpoint).css({
@@ -35,7 +35,7 @@ const calculateWidth = (breakpoint, value) => {
 }
 
 const calculateOffset = (breakpoint, value) => {
-  if (value && typeof value === 'number') {
+  if (typeof value === 'number') {
     const percent = toPercent(value)
 
     return media.from(breakpoint).css({
