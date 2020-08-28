@@ -19,7 +19,7 @@ const calculateWidth = (breakpoint, value) => {
     const percent = toPercent(value)
 
     return media.from(breakpoint).css({
-      minWidth: percent,
+      maxWidth: percent,
       flexBasis: percent,
     })
   }
