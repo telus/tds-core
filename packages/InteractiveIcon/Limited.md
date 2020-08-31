@@ -7,7 +7,7 @@ They're not to be used or displayed on their own.
 - Must depend on other interactive components
 - Must appear with a visible label as part of the wrapper component
 - May include additional accessible but hidden text
-- Icon size is specified through the `size` property. The default is 24px height and width.
+- Icon size is specified through the `size` property. The default is 24px height and width
 - Additional colour variants (green) are available to limited icons
 
 ```jsx noeditor
