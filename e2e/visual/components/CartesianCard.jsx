@@ -28,6 +28,29 @@ const CartesianContainer = () => (
       spacing={['default', 'narrow', 'compact', 'intermediate']}
       children="Get a new smartphone for $0 on a 2-year plan"
     />
+
+    <Cartesian
+      component={Card}
+      variant="defaultWithBorder"
+      children="Get a new smartphone for $0 on a 2-year plan"
+      fullBleedImage={[
+        undefined,
+        {
+          src: 'https://tds.telus.com/components/image-example.jpg',
+          width: 191,
+          height: 176,
+          alt: 'salal branch image',
+          position: 'right',
+        },
+        {
+          src: 'https://tds.telus.com/components/image-example.jpg',
+          width: 191,
+          height: 176,
+          alt: 'salal branch image',
+          position: 'top',
+        },
+      ]}
+    />
   </div>
 )
 export default { name: 'Card', Component: CartesianContainer }
