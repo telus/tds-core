@@ -15,6 +15,10 @@ const toPercent = num => {
 }
 
 const calculateWidth = (breakpoint, value) => {
+  if (typeof value === 'undefined') {
+    return {}
+  }
+
   if (typeof value === 'number') {
     const percent = toPercent(value)
 
@@ -24,14 +28,11 @@ const calculateWidth = (breakpoint, value) => {
     })
   }
 
-  if (breakpoint === 'xs') {
-    return {
-      flexGrow: 1,
-      flexBasis: 0,
-      maxWidth: '100%',
-    }
+  return {
+    flexGrow: 1,
+    flexBasis: 0,
+    maxWidth: '100%',
   }
-  return {}
 }
 
 const calculateOffset = (breakpoint, value) => {
