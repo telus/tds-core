@@ -48,13 +48,6 @@ items:
         - type: GitHub
           github:
             secret: tisk
-      resources:
-        requests:
-          cpu: 200m
-          memory: 512Mi
-        limits:
-          cpu: '1'
-          memory: 1Gi
       runPolicy: SerialLatestOnly
       strategy:
         type: JenkinsPipeline
@@ -81,13 +74,6 @@ items:
           - secret:
               name: npmrc-secret
         runPolicy: Parallel
-      resources:
-        requests:
-          cpu: 200m
-          memory: 512Mi
-        limits:
-          cpu: '1'
-          memory: 1Gi
       strategy:
         type: Docker
         dockerStrategy:
