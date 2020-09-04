@@ -50,7 +50,7 @@ items:
             secret: tisk
       resources:
         requests:
-          cpu: 200m
+          cpu: 500m
           memory: 512Mi
         limits:
           cpu: '1'
@@ -83,7 +83,7 @@ items:
         runPolicy: Parallel
       resources:
         requests:
-          cpu: 200m
+          cpu: 500m
           memory: 512Mi
         limits:
           cpu: '1'
