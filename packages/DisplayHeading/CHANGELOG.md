@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.6](https://github.com/telusdigital/tds/compare/@tds/core-display-heading@3.0.5...@tds/core-display-heading@3.0.6) (2020-09-04)
+
+**Note:** Version bump only for package @tds/core-display-heading
+
+
+
+
+
 ## [3.0.5](https://github.com/telusdigital/tds/compare/@tds/core-display-heading@3.0.4...@tds/core-display-heading@3.0.5) (2020-08-18)
 
 **Note:** Version bump only for package @tds/core-display-heading

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/telusdigital/tds/compare/@tds/core-card@2.3.9...@tds/core-card@2.4.0) (2020-09-04)
+
+
+### Features
+
+* **core-card:** add full bleed image ([5574ba9](https://github.com/telusdigital/tds/commit/5574ba96bda15793f8ed32f873c03616337cf79f))
+
+
+
+
+
 ## [2.3.9](https://github.com/telusdigital/tds/compare/@tds/core-card@2.3.8...@tds/core-card@2.3.9) (2020-08-18)
 
 **Note:** Version bump only for package @tds/core-card

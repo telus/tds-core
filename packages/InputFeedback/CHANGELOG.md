@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.21](https://github.com/telusdigital/tds/compare/@tds/core-input-feedback@2.0.20...@tds/core-input-feedback@2.0.21) (2020-09-04)
+
+**Note:** Version bump only for package @tds/core-input-feedback
+
+
+
+
+
 ## [2.0.20](https://github.com/telusdigital/tds/compare/@tds/core-input-feedback@2.0.19...@tds/core-input-feedback@2.0.20) (2020-08-18)
 
 **Note:** Version bump only for package @tds/core-input-feedback

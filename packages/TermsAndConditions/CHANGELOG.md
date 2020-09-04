@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.2.28...@tds/core-terms-and-conditions@1.3.0) (2020-09-04)
+
+
+### Features
+
+* **core-card:** add full bleed image ([5574ba9](https://github.com/telus/tds-core/commit/5574ba96bda15793f8ed32f873c03616337cf79f))
+
+
+
+
+
 ## [1.2.28](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.2.27...@tds/core-terms-and-conditions@1.2.28) (2020-08-25)
 
 **Note:** Version bump only for package @tds/core-terms-and-conditions

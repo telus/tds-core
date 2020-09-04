@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/telusdigital/tds/compare/@tds/core-button@3.0.0...@tds/core-button@3.1.0) (2020-09-04)
+
+
+### Features
+
+* **core-card:** add full bleed image ([5574ba9](https://github.com/telusdigital/tds/commit/5574ba96bda15793f8ed32f873c03616337cf79f))
+
+
+
+
+
 # [3.0.0](https://github.com/telusdigital/tds/compare/@tds/core-button@2.2.0...@tds/core-button@3.0.0) (2020-08-18)
 
 

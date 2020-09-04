@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.20](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@4.2.19...@tds/core-tooltip@4.2.20) (2020-09-04)
+
+**Note:** Version bump only for package @tds/core-tooltip
+
+
+
+
+
 ## [4.2.19](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@4.2.18...@tds/core-tooltip@4.2.19) (2020-08-18)
 
 **Note:** Version bump only for package @tds/core-tooltip

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/telus/tds-core/compare/@tds/util-helpers@1.4.2...@tds/util-helpers@1.5.0) (2020-09-04)
+
+
+### Features
+
+* **util-helpers:** add handle responsive styles for use in box and card ([f3ac104](https://github.com/telus/tds-core/commit/f3ac10457cb57025abc48565939f6456711dede1))
+
+
+
+
+
 ## [1.4.2](https://github.com/telus/tds-core/compare/@tds/util-helpers@1.4.1...@tds/util-helpers@1.4.2) (2020-02-03)
 
 **Note:** Version bump only for package @tds/util-helpers
