@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@3.1.2...@tds/core-flex-grid@4.0.0) (2020-09-08)
+
+
+### Features
+
+* **core-flex-grid:** handle boolean sizes ([0f8cb9b](https://github.com/telusdigital/tds/commit/0f8cb9bd7049c8abc5805e82830ad25818141a7f))
+
+
+### BREAKING CHANGES
+
+* **core-flex-grid:** drop support for xs={undefined} style props
+
+
+
+
+
 ## [3.1.2](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@3.1.1...@tds/core-flex-grid@3.1.2) (2020-09-08)
 
 
