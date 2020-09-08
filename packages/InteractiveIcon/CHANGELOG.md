@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@2.0.6...@tds/core-interactive-icon@2.1.0) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-interactive-icon:** make size prop responsive ([090f0a0](https://github.com/telus/tds-core/commit/090f0a0f5f19b90aa95cd95eeec0730c242927db))
+
+
+### Features
+
+* **core-interactive-icon:** add size property ([a59265b](https://github.com/telus/tds-core/commit/a59265b67d8b229c7c0ea586947c74221c6f33eb))
+
+
+
+
+
 ## [2.0.6](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@2.0.5...@tds/core-interactive-icon@2.0.6) (2020-09-08)
 
 
