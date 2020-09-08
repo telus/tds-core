@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.6](https://github.com/telusdigital/tds/compare/@tds/core-heading@3.0.5...@tds/core-heading@3.0.6) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-heading:** add support for styled-components v5 ([279d803](https://github.com/telusdigital/tds/commit/279d8031bcb71fc0151ea478c2050c9ce49be7c7))
+
+
+
+
+
 ## [3.0.5](https://github.com/telusdigital/tds/compare/@tds/core-heading@3.0.4...@tds/core-heading@3.0.5) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-heading

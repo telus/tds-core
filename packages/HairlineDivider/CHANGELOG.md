@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.16](https://github.com/telusdigital/tds/compare/@tds/core-hairline-divider@2.0.15...@tds/core-hairline-divider@2.0.16) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-hairline-divider:** add support for styled-components v5 ([5e0e3f4](https://github.com/telusdigital/tds/commit/5e0e3f4735db982d818f8c12f3d6a906f21485f4))
+
+
+
+
+
 ## [2.0.15](https://github.com/telusdigital/tds/compare/@tds/core-hairline-divider@2.0.14...@tds/core-hairline-divider@2.0.15) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-hairline-divider

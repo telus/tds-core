@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.45](https://github.com/telus/tds/compare/@tds/core-text-area@3.0.44...@tds/core-text-area@3.0.45) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-text-area:** add support for styled-components v5 ([4726b35](https://github.com/telus/tds/commit/4726b35b77f71b79c85bd4d4979b0ec6c5ec1a25))
+
+
+
+
+
 ## [3.0.44](https://github.com/telus/tds/compare/@tds/core-text-area@3.0.43...@tds/core-text-area@3.0.44) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-text-area

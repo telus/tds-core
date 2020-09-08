@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.15](https://github.com/telus/tds-core/compare/@tds/core-web-video@1.1.14...@tds/core-web-video@1.1.15) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-web-video:** add support for styled-components v5 ([8b7a30a](https://github.com/telus/tds-core/commit/8b7a30ad4bb4c2d95ff2e8084d46932662acb563))
+
+
+
+
+
 ## [1.1.14](https://github.com/telus/tds-core/compare/@tds/core-web-video@1.1.13...@tds/core-web-video@1.1.14) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-web-video

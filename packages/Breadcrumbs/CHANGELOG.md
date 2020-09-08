@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.8](https://github.com/telusdigital/tds-core/compare/@tds/core-breadcrumbs@2.2.7...@tds/core-breadcrumbs@2.2.8) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-breadcrumbs:** add support for styled-components v5 ([255a819](https://github.com/telusdigital/tds-core/commit/255a81943bcdcb9b07124ed27c90d71dfffeff72))
+
+
+
+
+
 ## [2.2.7](https://github.com/telusdigital/tds-core/compare/@tds/core-breadcrumbs@2.2.6...@tds/core-breadcrumbs@2.2.7) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-breadcrumbs

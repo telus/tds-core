@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.21](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@4.2.20...@tds/core-tooltip@4.2.21) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-tooltip:** add support for styled-components v5 ([978f1a9](https://github.com/telusdigital/tds/commit/978f1a96df0154694d177288ec43c41a0f62db27))
+
+
+
+
+
 ## [4.2.20](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@4.2.19...@tds/core-tooltip@4.2.20) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-tooltip

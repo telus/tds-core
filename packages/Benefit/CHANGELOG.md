@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.45](https://github.com/telus/tds-core/compare/@tds/core-benefit@1.0.44...@tds/core-benefit@1.0.45) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-benefit:** add support for styled-components v5 ([244c149](https://github.com/telus/tds-core/commit/244c149100cfa5e81bbb7b10f675a6a743660e34))
+
+
+
+
+
 ## [1.0.44](https://github.com/telus/tds-core/compare/@tds/core-benefit@1.0.43...@tds/core-benefit@1.0.44) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-benefit

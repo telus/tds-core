@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.22](https://github.com/telusdigital/tds/compare/@tds/core-input-feedback@2.0.21...@tds/core-input-feedback@2.0.22) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-input-feedback:** add support for styled-components v5 ([7ddd67d](https://github.com/telusdigital/tds/commit/7ddd67d10a8838c58bac10dfd4f48dbb7b4a911e))
+
+
+
+
+
 ## [2.0.21](https://github.com/telusdigital/tds/compare/@tds/core-input-feedback@2.0.20...@tds/core-input-feedback@2.0.21) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-input-feedback

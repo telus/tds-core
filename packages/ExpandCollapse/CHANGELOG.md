@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.5](https://github.com/telus/tds-core/compare/@tds/core-expand-collapse@2.2.4...@tds/core-expand-collapse@2.2.5) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-expand-collapse:** add support for styled-components v5 ([b9d6a54](https://github.com/telus/tds-core/commit/b9d6a549601c4acf63782d819f27a1f71cc58d01))
+
+
+
+
+
 ## [2.2.4](https://github.com/telus/tds-core/compare/@tds/core-expand-collapse@2.2.3...@tds/core-expand-collapse@2.2.4) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-expand-collapse

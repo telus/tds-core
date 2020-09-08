@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.46](https://github.com/telus/tds/compare/@tds/core-input@3.0.45...@tds/core-input@3.0.46) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-input:** add support for styled-components v5 ([2a1ca0b](https://github.com/telus/tds/commit/2a1ca0b100a75cb292bb930c247add39ee44fcad))
+
+
+
+
+
 ## [3.0.45](https://github.com/telus/tds/compare/@tds/core-input@3.0.44...@tds/core-input@3.0.45) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-input

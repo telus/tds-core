@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-decorative-icon",
-  "version": "2.6.5",
+  "version": "2.6.6",
   "description": "An icon used for visual aesthetics only",
   "main": "index.cjs.js",
   "module": "index.es.js",

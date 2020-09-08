@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.1](https://github.com/telusdigital/tds/compare/@tds/core-card@2.4.0...@tds/core-card@2.4.1) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-card:** add support for styled-components v5 ([46eeff7](https://github.com/telusdigital/tds/commit/46eeff78075fa0b742944beba68da4e6cc8c32ad))
+
+
+
+
+
 # [2.4.0](https://github.com/telusdigital/tds/compare/@tds/core-card@2.3.9...@tds/core-card@2.4.0) (2020-09-04)
 
 

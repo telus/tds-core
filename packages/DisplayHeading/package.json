@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-display-heading",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "description": "Large page titles",
   "main": "index.cjs.js",
   "module": "index.es.js",

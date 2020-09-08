@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.23](https://github.com/telus/tds/compare/@tds/core-select@3.2.22...@tds/core-select@3.2.23) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-select:** add support for styled-components v5 ([2aa5e22](https://github.com/telus/tds/commit/2aa5e2252557fc2f9939ba500c0ff7c7ccfd452c))
+
+
+
+
+
 ## [3.2.22](https://github.com/telus/tds/compare/@tds/core-select@3.2.21...@tds/core-select@3.2.22) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-select

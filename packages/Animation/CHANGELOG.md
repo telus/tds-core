@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/telus/tds/compare/@tds/shared-animation@3.0.0...@tds/shared-animation@3.0.1) (2020-09-08)
+
+
+### Bug Fixes
+
+* **shared-animation:** add support for styled-components v5 ([9404e7f](https://github.com/telus/tds/commit/9404e7f0a073f62e8237a3c49d1431314ffe024e))
+
+
+
+
+
 # [3.0.0](https://github.com/telus/tds/compare/@tds/shared-animation@2.1.0...@tds/shared-animation@3.0.0) (2019-11-19)
 
 

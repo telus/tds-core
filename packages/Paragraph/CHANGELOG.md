@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.15](https://github.com/telusdigital/tds/compare/@tds/core-paragraph@2.0.14...@tds/core-paragraph@2.0.15) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-paragraph:** add support for styled-components v5 ([e1cc5e4](https://github.com/telusdigital/tds/commit/e1cc5e44cd0660ca08c95c3aa31463a305aa6944))
+
+
+
+
+
 ## [2.0.14](https://github.com/telusdigital/tds/compare/@tds/core-paragraph@2.0.13...@tds/core-paragraph@2.0.14) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-paragraph

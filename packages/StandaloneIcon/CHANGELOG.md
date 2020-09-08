@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.17](https://github.com/telusdigital/tds/compare/@tds/core-standalone-icon@2.1.16...@tds/core-standalone-icon@2.1.17) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-standalone-icon:** add support for styled-components v5 ([b98c35c](https://github.com/telusdigital/tds/commit/b98c35cfa404b2132a54f6a957d963594d260f0b))
+
+
+
+
+
 ## [2.1.16](https://github.com/telusdigital/tds/compare/@tds/core-standalone-icon@2.1.15...@tds/core-standalone-icon@2.1.16) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-standalone-icon

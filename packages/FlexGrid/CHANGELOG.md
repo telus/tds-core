@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.2](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@3.1.1...@tds/core-flex-grid@3.1.2) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-flex-grid:** add support for styled-components v5 ([4a57473](https://github.com/telusdigital/tds/commit/4a57473860b92321eb71cbc058506f5089623ff6))
+
+
+
+
+
 ## [3.1.1](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@3.1.0...@tds/core-flex-grid@3.1.1) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-flex-grid

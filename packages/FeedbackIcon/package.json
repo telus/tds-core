@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-feedback-icon",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",

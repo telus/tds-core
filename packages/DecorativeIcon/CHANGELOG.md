@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.6](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.6.5...@tds/core-decorative-icon@2.6.6) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-decorative-icon:** add support for styled-components v5 ([c3430d0](https://github.com/telusdigital/tds/commit/c3430d0203eb3a90ce0fa2fd7a192704791ab3be))
+
+
+
+
+
 ## [2.6.5](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.6.4...@tds/core-decorative-icon@2.6.5) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-decorative-icon

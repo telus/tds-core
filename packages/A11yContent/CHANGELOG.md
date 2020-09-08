@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.2](https://github.com/telusdigital/tds/compare/@tds/core-a11y-content@2.2.1...@tds/core-a11y-content@2.2.2) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-a11y-content:** add support for styled-components v5 ([d665a98](https://github.com/telusdigital/tds/commit/d665a98e85c91eb7b111e8230c767c0d7fbe04f5))
+
+
+
+
+
 ## [2.2.1](https://github.com/telusdigital/tds/compare/@tds/core-a11y-content@2.2.0...@tds/core-a11y-content@2.2.1) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-a11y-content

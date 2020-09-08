@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.23](https://github.com/telusdigital/tds/compare/@tds/core-image@2.0.22...@tds/core-image@2.0.23) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-image:** add support for styled-components v5 ([cc68788](https://github.com/telusdigital/tds/commit/cc68788f858dafe32f920f30b5ee463ca7a9ef7f))
+
+
+
+
+
 ## [2.0.22](https://github.com/telusdigital/tds/compare/@tds/core-image@2.0.21...@tds/core-image@2.0.22) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-image

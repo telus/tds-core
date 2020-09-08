@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.6](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@2.0.5...@tds/core-interactive-icon@2.0.6) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-interactive-icon:** add support for styled-components v5 ([0c99bef](https://github.com/telus/tds-core/commit/0c99befd5e72e2976f10fe25f347c4625fd48944))
+
+
+
+
+
 ## [2.0.5](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@2.0.4...@tds/core-interactive-icon@2.0.5) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-interactive-icon

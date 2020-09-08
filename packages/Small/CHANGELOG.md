@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.12](https://github.com/telusdigital/tds/compare/@tds/core-small@2.1.11...@tds/core-small@2.1.12) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-small:** add support for styled-components v5 ([a718f4f](https://github.com/telusdigital/tds/commit/a718f4f9739ba431f3841be323d797cffc5bb548))
+
+
+
+
+
 ## [2.1.11](https://github.com/telusdigital/tds/compare/@tds/core-small@2.1.10...@tds/core-small@2.1.11) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-small

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.38](https://github.com/telusdigital/tds/compare/@tds/core-step-tracker@4.0.37...@tds/core-step-tracker@4.0.38) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-step-tracker:** add support for styled-components v5 ([d7f7c51](https://github.com/telusdigital/tds/commit/d7f7c51c3e8712256d352c6d62c4fc7fc72438f0))
+
+
+
+
+
 ## [4.0.37](https://github.com/telusdigital/tds/compare/@tds/core-step-tracker@4.0.36...@tds/core-step-tracker@4.0.37) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-step-tracker

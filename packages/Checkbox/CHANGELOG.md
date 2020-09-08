@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.44](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@2.0.43...@tds/core-checkbox@2.0.44) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-checkbox:** add support for styled-components v5 ([25139ba](https://github.com/telusdigital/tds/commit/25139ba9cfc6231aa68a4040062d4947173f9ade))
+
+
+
+
+
 ## [2.0.43](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@2.0.42...@tds/core-checkbox@2.0.43) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-checkbox

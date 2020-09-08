@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.2](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.3.1...@tds/core-terms-and-conditions@1.3.2) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-terms-and-conditions:** add support for styled-components v5 ([34867fd](https://github.com/telus/tds-core/commit/34867fd939a2dbc75d4bc9056dac29c0393e213c))
+
+
+
+
+
 ## [1.3.1](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.3.0...@tds/core-terms-and-conditions@1.3.1) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-terms-and-conditions

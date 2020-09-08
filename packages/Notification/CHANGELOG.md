@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](https://github.com/telusdigital/tds/compare/@tds/core-notification@3.1.0...@tds/core-notification@3.1.1) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-notification:** add support for styled-components v5 ([9f86dfe](https://github.com/telusdigital/tds/commit/9f86dfedf2e5520e4bea935aa3b6b9a33d276aec))
+
+
+
+
+
 # [3.1.0](https://github.com/telusdigital/tds/compare/@tds/core-notification@3.0.30...@tds/core-notification@3.1.0) (2020-09-04)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.24](https://github.com/telusdigital/tds/compare/@tds/core-ordered-list@3.0.23...@tds/core-ordered-list@3.0.24) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-ordered-list:** add support for styled-components v5 ([7ad5451](https://github.com/telusdigital/tds/commit/7ad54513fe698f542b356cb813905206dde32741))
+
+
+
+
+
 ## [3.0.23](https://github.com/telusdigital/tds/compare/@tds/core-ordered-list@3.0.22...@tds/core-ordered-list@3.0.23) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-ordered-list

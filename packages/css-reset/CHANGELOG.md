@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/telusdigital/tds/compare/@tds/core-css-reset@3.0.0...@tds/core-css-reset@3.0.1) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-css-reset:** add support for styled-components v5 ([2d29e17](https://github.com/telusdigital/tds/commit/2d29e1762ea7187876da2b4623acf8331b4dcd85))
+
+
+
+
+
 # [3.0.0](https://github.com/telusdigital/tds/compare/@tds/core-css-reset@2.0.5...@tds/core-css-reset@3.0.0) (2020-03-10)
 
 

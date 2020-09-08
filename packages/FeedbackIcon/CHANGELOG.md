@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.9](https://github.com/telus/tds-core/compare/@tds/core-feedback-icon@1.0.8...@tds/core-feedback-icon@1.0.9) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-feedback-icon:** add support for styled-components v5 ([3394ebe](https://github.com/telus/tds-core/commit/3394ebeac40b3138c09ef9ab7a89849a386fee42))
+
+
+
+
+
 ## [1.0.8](https://github.com/telus/tds-core/compare/@tds/core-feedback-icon@1.0.7...@tds/core-feedback-icon@1.0.8) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-feedback-icon

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.16](https://github.com/telusdigital/tds/compare/@tds/core-spinner@3.1.15...@tds/core-spinner@3.1.16) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-spinner:** add support for styled-components v5 ([b59ba1b](https://github.com/telusdigital/tds/commit/b59ba1bd69c7b05b8e1fe2669608a73c8d487a87))
+
+
+
+
+
 ## [3.1.15](https://github.com/telusdigital/tds/compare/@tds/core-spinner@3.1.14...@tds/core-spinner@3.1.15) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-spinner

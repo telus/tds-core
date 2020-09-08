@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.5](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@2.1.4...@tds/core-price-lockup@2.1.5) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-price-lockup:** add support for styled-components v5 ([5311aa6](https://github.com/telusdigital/tds-core/commit/5311aa601ea59b9e77ee19c5fc49ee182541d7c4))
+
+
+
+
+
 ## [2.1.4](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@2.1.3...@tds/core-price-lockup@2.1.4) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-price-lockup

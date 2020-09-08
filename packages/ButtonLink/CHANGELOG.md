@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](https://github.com/telusdigital/tds/compare/@tds/core-button-link@3.1.0...@tds/core-button-link@3.1.1) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-button-link:** add support for styled-components v5 ([0ccde20](https://github.com/telusdigital/tds/commit/0ccde208e9e73b1cd9282d7c33744cbbc8a189b6))
+
+
+
+
+
 # [3.1.0](https://github.com/telusdigital/tds/compare/@tds/core-button-link@3.0.0...@tds/core-button-link@3.1.0) (2020-09-04)
 
 

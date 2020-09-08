@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.10](https://github.com/telusdigital/tds/compare/@tds/core-link@2.2.9...@tds/core-link@2.2.10) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-link:** add support for styled-components v5 ([3b4d9b0](https://github.com/telusdigital/tds/commit/3b4d9b0012bacd916ddfcca29a76884c1ac0baed))
+
+
+
+
+
 ## [2.2.9](https://github.com/telusdigital/tds/compare/@tds/core-link@2.2.8...@tds/core-link@2.2.9) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-link

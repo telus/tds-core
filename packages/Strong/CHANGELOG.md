@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.12](https://github.com/telusdigital/tds/compare/@tds/core-strong@2.1.11...@tds/core-strong@2.1.12) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-strong:** add support for styled-components v5 ([c9664cc](https://github.com/telusdigital/tds/commit/c9664cc69839495d80411ecf01fbe98524ddc12e))
+
+
+
+
+
 ## [2.1.11](https://github.com/telusdigital/tds/compare/@tds/core-strong@2.1.10...@tds/core-strong@2.1.11) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-strong

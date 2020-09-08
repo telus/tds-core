@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.15](https://github.com/telusdigital/tds/compare/@tds/core-dimple-divider@2.0.14...@tds/core-dimple-divider@2.0.15) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-dimple-divider:** add support for styled-components v5 ([68f04a3](https://github.com/telusdigital/tds/commit/68f04a3997b4a4de696a765debbb1d049a1a032e))
+
+
+
+
+
 ## [2.0.14](https://github.com/telusdigital/tds/compare/@tds/core-dimple-divider@2.0.13...@tds/core-dimple-divider@2.0.14) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-dimple-divider

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.11](https://github.com/telusdigital/tds/compare/@tds/core-wave-divider@2.0.10...@tds/core-wave-divider@2.0.11) (2020-09-08)
+
+
+### Bug Fixes
+
+* **core-wave-divider:** add support for styled-components v5 ([f60bd60](https://github.com/telusdigital/tds/commit/f60bd60b88498312c7b0d31d52edb31161fa9a03))
+
+
+
+
+
 ## [2.0.10](https://github.com/telusdigital/tds/compare/@tds/core-wave-divider@2.0.9...@tds/core-wave-divider@2.0.10) (2020-09-04)
 
 **Note:** Version bump only for package @tds/core-wave-divider
