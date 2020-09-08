@@ -1,0 +1,886 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentCarousel populates the nav dots 1`] = `
+Array [
+  .c0 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid #71757b;
+  background-color: #71757b;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  margin: 0 8px;
+  outline: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0:focus div {
+  opacity: 1;
+}
+
+.c0:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  border: 3px solid #71757b;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+.c0:hover div {
+  opacity: 0;
+}
+
+.c0:active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  border: 1px solid #71757b;
+  background-color: #71757b;
+}
+
+.c1 {
+  width: 1.125rem;
+  height: 1.125rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  border: 2px solid #71757b;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+<PageIndicator__Dot
+    aria-current={true}
+    aria-label="go to slide 1"
+    data-testid="pageDot"
+    isCurrentPage={true}
+    onClick={[Function]}
+  >
+    <StyledComponent
+      aria-current={true}
+      aria-label="go to slide 1"
+      data-testid="pageDot"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "PageIndicator__Dot-sc-1vrp57v-1",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              [Function],
+            ],
+          },
+          "displayName": "PageIndicator__Dot",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "PageIndicator__Dot-sc-1vrp57v-1",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      isCurrentPage={true}
+      onClick={[Function]}
+    >
+      <button
+        aria-current={true}
+        aria-label="go to slide 1"
+        className="c0"
+        data-testid="pageDot"
+        onClick={[Function]}
+      >
+        <PageIndicator__FocusOutline>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "PageIndicator__FocusOutline-sc-1vrp57v-2",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "width: 1.125rem;",
+                    "height: 1.125rem;",
+                    "position: absolute;",
+                    "top: 50%;",
+                    "left: 50%;",
+                    "transform: translate(-50%, -50%);",
+                    "transform-origin: bottom;",
+                    "border: 2px solid #71757b;",
+                    "border-radius: 50%;",
+                    "opacity: 0;",
+                  ],
+                },
+                "displayName": "PageIndicator__FocusOutline",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "PageIndicator__FocusOutline-sc-1vrp57v-2",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            />
+          </StyledComponent>
+        </PageIndicator__FocusOutline>
+      </button>
+    </StyledComponent>
+  </PageIndicator__Dot>,
+  .c0 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid #71757b;
+  background-color: #71757b;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  margin: 0 8px;
+  outline: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0:focus div {
+  opacity: 1;
+}
+
+.c0:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  border: 3px solid #71757b;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+.c0:hover div {
+  opacity: 0;
+}
+
+.c0:active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  border: 1px solid #71757b;
+  background-color: #71757b;
+}
+
+.c1 {
+  width: 1.125rem;
+  height: 1.125rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  border: 2px solid #71757b;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+<StyledComponent
+    aria-current={true}
+    aria-label="go to slide 1"
+    data-testid="pageDot"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "PageIndicator__Dot-sc-1vrp57v-1",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            [Function],
+          ],
+        },
+        "displayName": "PageIndicator__Dot",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "PageIndicator__Dot-sc-1vrp57v-1",
+        "target": "button",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isCurrentPage={true}
+    onClick={[Function]}
+  >
+    <button
+      aria-current={true}
+      aria-label="go to slide 1"
+      className="c0"
+      data-testid="pageDot"
+      onClick={[Function]}
+    >
+      <PageIndicator__FocusOutline>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "PageIndicator__FocusOutline-sc-1vrp57v-2",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "width: 1.125rem;",
+                  "height: 1.125rem;",
+                  "position: absolute;",
+                  "top: 50%;",
+                  "left: 50%;",
+                  "transform: translate(-50%, -50%);",
+                  "transform-origin: bottom;",
+                  "border: 2px solid #71757b;",
+                  "border-radius: 50%;",
+                  "opacity: 0;",
+                ],
+              },
+              "displayName": "PageIndicator__FocusOutline",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "PageIndicator__FocusOutline-sc-1vrp57v-2",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            className="c1"
+          />
+        </StyledComponent>
+      </PageIndicator__FocusOutline>
+    </button>
+  </StyledComponent>,
+  .c0 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid #71757b;
+  background-color: #71757b;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  margin: 0 8px;
+  outline: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0:focus div {
+  opacity: 1;
+}
+
+.c0:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  border: 3px solid #71757b;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+.c0:hover div {
+  opacity: 0;
+}
+
+.c0:active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  border: 1px solid #71757b;
+  background-color: #71757b;
+}
+
+.c1 {
+  width: 1.125rem;
+  height: 1.125rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  border: 2px solid #71757b;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+<button
+    aria-current={true}
+    aria-label="go to slide 1"
+    className="c0"
+    data-testid="pageDot"
+    onClick={[Function]}
+  >
+    <PageIndicator__FocusOutline>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "PageIndicator__FocusOutline-sc-1vrp57v-2",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "width: 1.125rem;",
+                "height: 1.125rem;",
+                "position: absolute;",
+                "top: 50%;",
+                "left: 50%;",
+                "transform: translate(-50%, -50%);",
+                "transform-origin: bottom;",
+                "border: 2px solid #71757b;",
+                "border-radius: 50%;",
+                "opacity: 0;",
+              ],
+            },
+            "displayName": "PageIndicator__FocusOutline",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "PageIndicator__FocusOutline-sc-1vrp57v-2",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="c1"
+        />
+      </StyledComponent>
+    </PageIndicator__FocusOutline>
+  </button>,
+]
+`;
+
+exports[`ContentCarousel renders 1`] = `
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c9 > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.c5 {
+  width: 100%;
+  height: inherit;
+  min-height: 340px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-height: 340px;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.c6 img {
+  max-width: 100%;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c14 {
+  margin: auto;
+  padding-bottom: 2px;
+}
+
+.c15 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid #71757b;
+  background-color: #71757b;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  margin: 0 8px;
+  outline: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c15:focus div {
+  opacity: 1;
+}
+
+.c15:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  border: 3px solid #71757b;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+.c15:hover div {
+  opacity: 0;
+}
+
+.c15:active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  border: 1px solid #71757b;
+  background-color: #71757b;
+}
+
+.c16 {
+  width: 1.125rem;
+  height: 1.125rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  border: 2px solid #71757b;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.c0 {
+  width: 100%;
+  height: calc(autopx + 3rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.c4 {
+  width: 100%;
+  padding: 0 2rem;
+  z-index: 101;
+  position: relative;
+}
+
+.c2 {
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+  padding: 0 2rem;
+  -webkit-transform: translateX(-130%);
+  -ms-transform: translateX(-130%);
+  transform: translateX(-130%);
+  background-color: white;
+}
+
+.c3 {
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  padding: 0 2rem;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  background-color: white;
+}
+
+.c10 {
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  padding: 0 2rem;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  background-color: white;
+}
+
+.c11 {
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+  padding: 0 2rem;
+  -webkit-transform: translateX(130%);
+  -ms-transform: translateX(130%);
+  transform: translateX(130%);
+  background-color: white;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  top: 999999px;
+  left: 990999px;
+  pointer-events: none;
+  margin-bottom: 1rem;
+}
+
+.c12 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: absolute;
+  padding: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 101;
+}
+
+.c13 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.c7 {
+  height: auto;
+  max-width: 100%;
+}
+
+@media (min-width:768px) {
+  .c5 {
+    width: 100%;
+    height: inherit;
+    max-height: 480px;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    width: 50%;
+    height: 100%;
+    max-height: 100%;
+    margin-bottom: 0;
+  }
+
+  .c6 img {
+    height: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    width: 50%;
+    padding-left: 3.125rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+  .c0 {
+    height: calc(autopx + 3rem);
+  }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+  .c0 {
+    height: calc(autopx + 2rem);
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    width: 100%;
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 100%;
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    width: 100%;
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    width: 100%;
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c11 {
+    width: 100%;
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    position: initial;
+    left: initial;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+@media (min-width:768px) {
+  .c17 {
+    width: initial;
+    height: initial;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    position: initial;
+    left: initial;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 {
+    padding: 0 5px;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      aria-hidden="true"
+      class="c2"
+      offset="1"
+    />
+    <div
+      aria-hidden="true"
+      class="c3"
+      offset="0"
+    />
+    <ul
+      class="c4"
+      data-testid="itemContainer"
+    >
+      <li
+        aria-live="polite"
+        class="c5"
+        data-testid="carouselItem"
+      >
+        <div
+          class="c6"
+        >
+          <img
+            alt="Test picture"
+            class="c7"
+            height="200"
+            src="image-example.jpg"
+            width="200"
+          />
+        </div>
+        <div
+          class="c8"
+        >
+          <div
+            class="c9"
+          >
+            <p
+              data-testid="childCheck"
+            >
+              Hi 2!
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div
+      aria-hidden="true"
+      class="c10"
+      offset="0"
+    />
+    <div
+      aria-hidden="true"
+      class="c11"
+      offset="1"
+    />
+  </div>
+  <div
+    class="c12"
+  >
+    <div />
+  </div>
+  <div
+    class="c13"
+  >
+    <div
+      class="c14"
+    >
+      <button
+        aria-current="true"
+        aria-label="go to slide 1"
+        class="c15"
+        data-testid="pageDot"
+      >
+        <div
+          class="c16"
+        />
+      </button>
+    </div>
+  </div>
+  <div
+    class="c17"
+  >
+    <ul
+      class="c4"
+    >
+      <li
+        aria-live="polite"
+        class="c5"
+        data-testid="carouselItem"
+      >
+        <div
+          class="c6"
+        >
+          <img
+            alt="Test picture"
+            class="c7"
+            height="200"
+            src="image-example.jpg"
+            width="200"
+          />
+        </div>
+        <div
+          class="c8"
+        >
+          <div
+            class="c9"
+          >
+            <p
+              data-testid="childCheck"
+            >
+              Hi 2!
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
