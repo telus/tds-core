@@ -1,11 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { ThemeProvider } from 'styled-components'
+import { responsiveProps } from '@tds/util-prop-types'
+import { handleResponsiveStyles } from '@tds/util-helpers'
 
 import { colorShark, colorTelusPurple, colorWhite, colorAccessibleGreen } from '@tds/core-colours'
 
 import animations from './shared/animations'
 import StyledInteractiveIconSVG from './shared/StyledInteractiveIconSVG'
+
+const iconSize = props =>
+  handleResponsiveStyles({ size: props.size }, ({ size }) => ({
+    width: size === 20 ? '20px' : '24px',
+    height: size === 20 ? '20px' : '24px',
+  }))
 
 export const StyledLimitedInteractiveIconSVG = styled(StyledInteractiveIconSVG)(
   ({ animationDirection }) => ({
@@ -20,10 +28,7 @@ export const StyledLimitedInteractiveIconSVG = styled(StyledInteractiveIconSVG)(
     },
   }),
   animations.reduceMotion,
-  ({ size }) => ({
-    width: size === 20 ? '20px' : '24px',
-    height: size === 20 ? '20px' : '24px',
-  })
+  iconSize
 )
 
 const getTheme = variant => {
@@ -68,9 +73,9 @@ Limited.propTypes = {
    */
   variant: PropTypes.oneOf(['default', 'basic', 'alternative', 'inverted']),
   /**
-   * The icon size in pixels.
+   * The icon size in pixels as a [**responsive prop**](#responsiveProps).
    */
-  size: PropTypes.oneOf([20, 24]),
+  size: responsiveProps(PropTypes.oneOf([20, 24])),
   /**
    * @ignore
    */
