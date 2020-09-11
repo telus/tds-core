@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.46](https://github.com/telus/tds-core/compare/@tds/core-benefit@1.0.45...@tds/core-benefit@1.0.46) (2020-09-11)
+
+**Note:** Version bump only for package @tds/core-benefit
+
+
+
+
+
 ## [1.0.45](https://github.com/telus/tds-core/compare/@tds/core-benefit@1.0.44...@tds/core-benefit@1.0.45) (2020-09-08)
 
 

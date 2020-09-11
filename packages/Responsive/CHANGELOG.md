@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.4](https://github.com/telusdigital/tds/compare/@tds/core-responsive@1.3.3...@tds/core-responsive@1.3.4) (2020-09-11)
+
+
+### Bug Fixes
+
+* **core-responsive:** moving react media to dependancy ([37907f0](https://github.com/telusdigital/tds/commit/37907f06995a5270e34ff73ad13e6a98243817c4))
+
+
+
+
+
 ## [1.3.3](https://github.com/telusdigital/tds/compare/@tds/core-responsive@1.3.2...@tds/core-responsive@1.3.3) (2020-01-27)
 
 

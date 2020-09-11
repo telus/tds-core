@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.7](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.6.6...@tds/core-decorative-icon@2.6.7) (2020-09-11)
+
+**Note:** Version bump only for package @tds/core-decorative-icon
+
+
+
+
+
 ## [2.6.6](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.6.5...@tds/core-decorative-icon@2.6.6) (2020-09-08)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.2](https://github.com/telusdigital/tds/compare/@tds/core-card@2.4.1...@tds/core-card@2.4.2) (2020-09-11)
+
+**Note:** Version bump only for package @tds/core-card
+
+
+
+
+
 ## [2.4.1](https://github.com/telusdigital/tds/compare/@tds/core-card@2.4.0...@tds/core-card@2.4.1) (2020-09-08)
 
 
