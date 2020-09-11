@@ -26,9 +26,7 @@
   },
   "dependencies": {
     "prop-types": "^15.5.10",
-    "sass-mq": "^5.0.0"
-  },
-  "devDependencies": {
+    "sass-mq": "^5.0.0",
     "react-media": "^1.10.0"
   }
 }
