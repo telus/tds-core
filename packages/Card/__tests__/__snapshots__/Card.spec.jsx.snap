@@ -976,160 +976,177 @@ exports[`<Card /> full bleed image renders with an image 1`] = `
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Card__StyledFullBleedImage
-                  alt="image"
-                  height={200}
-                  position="top"
-                  src="image-example.jpg"
-                  width={200}
+                <Styled(Component)
+                  fullBleedImage={
+                    Object {
+                      "alt": "image",
+                      "height": 200,
+                      "position": "top",
+                      "src": "image-example.jpg",
+                      "width": 200,
+                    }
+                  }
                 >
                   <StyledComponent
-                    alt="image"
                     forwardedComponent={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "Card__StyledFullBleedImage-fwbr1q-0",
+                          "componentId": "sc-ifAKCX",
                           "isStatic": false,
                           "lastClassName": "c2",
                           "rules": Array [
                             [Function],
                           ],
                         },
-                        "displayName": "Card__StyledFullBleedImage",
+                        "displayName": "Styled(Component)",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "Card__StyledFullBleedImage-fwbr1q-0",
-                        "target": "div",
+                        "styledComponentId": "sc-ifAKCX",
+                        "target": [Function],
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
                     }
                     forwardedRef={null}
-                    height={200}
-                    position="top"
-                    src="image-example.jpg"
-                    width={200}
+                    fullBleedImage={
+                      Object {
+                        "alt": "image",
+                        "height": 200,
+                        "position": "top",
+                        "src": "image-example.jpg",
+                        "width": 200,
+                      }
+                    }
                   >
-                    <div
-                      alt="image"
+                    <Component
                       className="c2"
-                      height={200}
-                      src="image-example.jpg"
-                      width={200}
+                      fullBleedImage={
+                        Object {
+                          "alt": "image",
+                          "height": 200,
+                          "position": "top",
+                          "src": "image-example.jpg",
+                          "width": 200,
+                        }
+                      }
                     >
-                      <Image
-                        alt="image"
-                        height={200}
-                        src="image-example.jpg"
-                        width={200}
+                      <div
+                        className="c2"
                       >
-                        <Image__StyledImage
+                        <Image
                           alt="image"
                           height={200}
                           src="image-example.jpg"
                           width={200}
                         >
-                          <StyledComponent
+                          <Image__StyledImage
                             alt="image"
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "Image__StyledImage-b16p20-0",
-                                  "isStatic": true,
-                                  "lastClassName": "c3",
-                                  "rules": Array [
-                                    "height: auto;",
-                                    "max-width: 100%;",
-                                  ],
-                                },
-                                "displayName": "Image__StyledImage",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "Image__StyledImage-b16p20-0",
-                                "target": "img",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
                             height={200}
                             src="image-example.jpg"
                             width={200}
                           >
-                            <img
+                            <StyledComponent
                               alt="image"
-                              className="c3"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "Image__StyledImage-b16p20-0",
+                                    "isStatic": true,
+                                    "lastClassName": "c3",
+                                    "rules": Array [
+                                      "height: auto;",
+                                      "max-width: 100%;",
+                                    ],
+                                  },
+                                  "displayName": "Image__StyledImage",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "Image__StyledImage-b16p20-0",
+                                  "target": "img",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
                               height={200}
                               src="image-example.jpg"
                               width={200}
-                            />
-                          </StyledComponent>
-                        </Image__StyledImage>
-                      </Image>
-                      <Box
-                        horizontal={4}
-                        inline={false}
-                        tag="div"
-                        vertical={5}
-                      >
-                        <styled.div
+                            >
+                              <img
+                                alt="image"
+                                className="c3"
+                                height={200}
+                                src="image-example.jpg"
+                                width={200}
+                              />
+                            </StyledComponent>
+                          </Image__StyledImage>
+                        </Image>
+                        <Box
                           horizontal={4}
                           inline={false}
                           tag="div"
                           vertical={5}
                         >
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [
-                                  [Function],
-                                ],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bdVaJa",
-                                  "isStatic": false,
-                                  "lastClassName": "c4",
-                                  "rules": Array [
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                  ],
-                                },
-                                "displayName": "styled.div",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bdVaJa",
-                                "target": "div",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
+                          <styled.div
                             horizontal={4}
                             inline={false}
                             tag="div"
                             vertical={5}
                           >
-                            <div
-                              className="c4"
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [
+                                    [Function],
+                                  ],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-bdVaJa",
+                                    "isStatic": false,
+                                    "lastClassName": "c4",
+                                    "rules": Array [
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "styled.div",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-bdVaJa",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              horizontal={4}
+                              inline={false}
+                              tag="div"
+                              vertical={5}
                             >
-                              Some content
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </Box>
-                    </div>
+                              <div
+                                className="c4"
+                              >
+                                Some content
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </Box>
+                      </div>
+                    </Component>
                   </StyledComponent>
-                </Card__StyledFullBleedImage>
+                </Styled(Component)>
               </div>
             </StyledComponent>
           </styled.div>
@@ -1343,170 +1360,186 @@ exports[`<Card /> full bleed image renders with responsive image props 1`] = `
               <div
                 className="c0 sc-bxivhb c0 c1"
               >
-                <Card__StyledFullBleedImage
-                  alt="image"
-                  height={200}
-                  position={
+                <Styled(Component)
+                  fullBleedImage={
                     Object {
-                      "md": "bottom",
-                      "xs": "top",
+                      "alt": "image",
+                      "height": 200,
+                      "position": Object {
+                        "md": "bottom",
+                        "xs": "top",
+                      },
+                      "src": "image-example.jpg",
+                      "width": 200,
                     }
                   }
-                  src="image-example.jpg"
-                  width={200}
                 >
                   <StyledComponent
-                    alt="image"
                     forwardedComponent={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "Card__StyledFullBleedImage-fwbr1q-0",
+                          "componentId": "sc-ifAKCX",
                           "isStatic": false,
                           "lastClassName": "c2",
                           "rules": Array [
                             [Function],
                           ],
                         },
-                        "displayName": "Card__StyledFullBleedImage",
+                        "displayName": "Styled(Component)",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "Card__StyledFullBleedImage-fwbr1q-0",
-                        "target": "div",
+                        "styledComponentId": "sc-ifAKCX",
+                        "target": [Function],
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
                     }
                     forwardedRef={null}
-                    height={200}
-                    position={
+                    fullBleedImage={
                       Object {
-                        "md": "bottom",
-                        "xs": "top",
+                        "alt": "image",
+                        "height": 200,
+                        "position": Object {
+                          "md": "bottom",
+                          "xs": "top",
+                        },
+                        "src": "image-example.jpg",
+                        "width": 200,
                       }
                     }
-                    src="image-example.jpg"
-                    width={200}
                   >
-                    <div
-                      alt="image"
+                    <Component
                       className="c2"
-                      height={200}
-                      src="image-example.jpg"
-                      width={200}
+                      fullBleedImage={
+                        Object {
+                          "alt": "image",
+                          "height": 200,
+                          "position": Object {
+                            "md": "bottom",
+                            "xs": "top",
+                          },
+                          "src": "image-example.jpg",
+                          "width": 200,
+                        }
+                      }
                     >
-                      <Image
-                        alt="image"
-                        height={200}
-                        src="image-example.jpg"
-                        width={200}
+                      <div
+                        className="c2"
                       >
-                        <Image__StyledImage
+                        <Image
                           alt="image"
                           height={200}
                           src="image-example.jpg"
                           width={200}
                         >
-                          <StyledComponent
+                          <Image__StyledImage
                             alt="image"
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "Image__StyledImage-b16p20-0",
-                                  "isStatic": true,
-                                  "lastClassName": "c3",
-                                  "rules": Array [
-                                    "height: auto;",
-                                    "max-width: 100%;",
-                                  ],
-                                },
-                                "displayName": "Image__StyledImage",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "Image__StyledImage-b16p20-0",
-                                "target": "img",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
                             height={200}
                             src="image-example.jpg"
                             width={200}
                           >
-                            <img
+                            <StyledComponent
                               alt="image"
-                              className="c3"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "Image__StyledImage-b16p20-0",
+                                    "isStatic": true,
+                                    "lastClassName": "c3",
+                                    "rules": Array [
+                                      "height: auto;",
+                                      "max-width: 100%;",
+                                    ],
+                                  },
+                                  "displayName": "Image__StyledImage",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "Image__StyledImage-b16p20-0",
+                                  "target": "img",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
                               height={200}
                               src="image-example.jpg"
                               width={200}
-                            />
-                          </StyledComponent>
-                        </Image__StyledImage>
-                      </Image>
-                      <Box
-                        horizontal={4}
-                        inline={false}
-                        tag="div"
-                        vertical={5}
-                      >
-                        <styled.div
+                            >
+                              <img
+                                alt="image"
+                                className="c3"
+                                height={200}
+                                src="image-example.jpg"
+                                width={200}
+                              />
+                            </StyledComponent>
+                          </Image__StyledImage>
+                        </Image>
+                        <Box
                           horizontal={4}
                           inline={false}
                           tag="div"
                           vertical={5}
                         >
-                          <StyledComponent
-                            forwardedComponent={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "attrs": Array [
-                                  [Function],
-                                ],
-                                "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bdVaJa",
-                                  "isStatic": false,
-                                  "lastClassName": "c4",
-                                  "rules": Array [
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                    [Function],
-                                  ],
-                                },
-                                "displayName": "styled.div",
-                                "foldedComponentIds": Array [],
-                                "render": [Function],
-                                "styledComponentId": "sc-bdVaJa",
-                                "target": "div",
-                                "toString": [Function],
-                                "warnTooManyClasses": [Function],
-                                "withComponent": [Function],
-                              }
-                            }
-                            forwardedRef={null}
+                          <styled.div
                             horizontal={4}
                             inline={false}
                             tag="div"
                             vertical={5}
                           >
-                            <div
-                              className="c4"
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [
+                                    [Function],
+                                  ],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-bdVaJa",
+                                    "isStatic": false,
+                                    "lastClassName": "c4",
+                                    "rules": Array [
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "styled.div",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-bdVaJa",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              horizontal={4}
+                              inline={false}
+                              tag="div"
+                              vertical={5}
                             >
-                              Some content
-                            </div>
-                          </StyledComponent>
-                        </styled.div>
-                      </Box>
-                    </div>
+                              <div
+                                className="c4"
+                              >
+                                Some content
+                              </div>
+                            </StyledComponent>
+                          </styled.div>
+                        </Box>
+                      </div>
+                    </Component>
                   </StyledComponent>
-                </Card__StyledFullBleedImage>
+                </Styled(Component)>
               </div>
             </StyledComponent>
           </styled.div>
