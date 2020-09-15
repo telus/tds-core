@@ -39,7 +39,7 @@ const deprecationWarning = deprecatedVariant => {
   }' variant.`
 }
 
-export const StyledCard = styled(({ fullHeight, fullBleedImage, ...props }) => <Box {...props} />)(
+export const StyledCard = styled(({ fullHeight, ...props }) => <Box {...props} />)(
   borders.none,
   borders.rounded,
   getVariant,
@@ -75,7 +75,9 @@ const fullBleedImageStyles = fullBleedImage =>
     return styles
   })
 
-const StyledFullBleedImage = styled.div(fullBleedImageStyles)
+const StyledImageCard = styled(({ fullBleedImage, ...props }) => <div {...props} />)(
+  ({ fullBleedImage }) => fullBleedImageStyles(fullBleedImage)
+)
 
 /**
  * A content container.
@@ -103,7 +105,7 @@ const Card = ({ variant, children, fullHeight, spacing, fullBleedImage, ...rest 
   if (fullBleedImage) {
     return (
       <StyledCard {...safeRest(rest)} fullHeight={fullHeight} variant={variant}>
-        <StyledFullBleedImage {...fullBleedImage}>
+        <StyledImageCard fullBleedImage={fullBleedImage}>
           <Image
             src={fullBleedImage.src}
             width={fullBleedImage.width}
@@ -111,7 +113,7 @@ const Card = ({ variant, children, fullHeight, spacing, fullBleedImage, ...rest 
             alt={fullBleedImage.alt}
           />
           <Box {...spacingProps}>{children}</Box>
-        </StyledFullBleedImage>
+        </StyledImageCard>
       </StyledCard>
     )
   }
