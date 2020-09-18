@@ -13,6 +13,7 @@ const StyledFootnoteLink = styled.button({
   textDecoration: 'underline',
   padding: '0 0.25rem',
   color: 'inherit',
+  cursor: 'pointer',
 })
 
 const FootnoteLink = ({ number, onClick, copy }) => {
