@@ -32,6 +32,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   text-decoration: underline;
   padding: 0 0.25rem;
   color: inherit;
+  cursor: pointer;
 }
 
 .c2 {
@@ -998,6 +999,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   text-decoration: underline;
   padding: 0 0.25rem;
   color: inherit;
+  cursor: pointer;
 }
 
 .c0 {
@@ -1072,6 +1074,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                       "text-decoration: underline;",
                                       "padding: 0 0.25rem;",
                                       "color: inherit;",
+                                      "cursor: pointer;",
                                     ],
                                   },
                                   "displayName": "FootnoteLink__StyledFootnoteLink",
@@ -1199,6 +1202,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   text-decoration: underline;
   padding: 0 0.25rem;
   color: inherit;
+  cursor: pointer;
 }
 
 .c2 {
@@ -2165,6 +2169,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   text-decoration: underline;
   padding: 0 0.25rem;
   color: inherit;
+  cursor: pointer;
 }
 
 .c0 {
@@ -2239,6 +2244,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                       "text-decoration: underline;",
                                       "padding: 0 0.25rem;",
                                       "color: inherit;",
+                                      "cursor: pointer;",
                                     ],
                                   },
                                   "displayName": "FootnoteLink__StyledFootnoteLink",
