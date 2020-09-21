@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.5](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.3.4...@tds/core-terms-and-conditions@1.3.5) (2020-09-21)
+
+
+### Bug Fixes
+
+* **core-terms-and-conditions:** make footnote link cursor pointer ([72eebe9](https://github.com/telus/tds-core/commit/72eebe9792073aea7d0266a049c48b458bd8b0f1))
+
+
+
+
+
 ## [1.3.4](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.3.3...@tds/core-terms-and-conditions@1.3.4) (2020-09-11)
 
 **Note:** Version bump only for package @tds/core-terms-and-conditions
