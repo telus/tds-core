@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.3](https://github.com/telusdigital/tds/compare/@tds/core-card@2.4.2...@tds/core-card@2.4.3) (2020-09-21)
+
+
+### Bug Fixes
+
+* **core-card:** remove fullBleedImage props from div ([292431f](https://github.com/telusdigital/tds/commit/292431f3b02adf7a379e360e72347c3ff25330a3))
+
+
+
+
+
 ## [2.4.2](https://github.com/telusdigital/tds/compare/@tds/core-card@2.4.1...@tds/core-card@2.4.2) (2020-09-11)
 
 **Note:** Version bump only for package @tds/core-card
