@@ -1,3 +1,4 @@
-import Paragraph from './dist/index.es'
+import Paragraph, { StyledParagraph } from './dist/index.es'
 
+export { StyledParagraph }
 export default Paragraph
