@@ -124,7 +124,7 @@ module.exports = {
       return `import { ${name} } from '@tds/core-${kebabizeName}'`
     }
 
-    if (name === 'Footnote' || name === 'FootnoteLink') {
+    if (name === 'Footnote' || name === 'FootnoteLink' || name === 'Disclaimer') {
       kebabizeName = 'terms-and-conditions'
       return `import { ${name} } from '@tds/core-${kebabizeName}'`
     }
@@ -336,6 +336,7 @@ module.exports = {
           path.resolve('packages/TermsAndConditions/TermsAndConditions.jsx'),
           path.resolve('packages/TermsAndConditions/Footnote/Footnote.jsx'),
           path.resolve('packages/TermsAndConditions/FootnoteLink/FootnoteLink.jsx'),
+          path.resolve('packages/TermsAndConditions/Disclaimer/Disclaimer.jsx'),
         ]
       },
     },
@@ -537,6 +538,7 @@ module.exports = {
     FlexGrid: path.resolve('packages/FlexGrid'),
     Footnote: path.resolve('packages/TermsAndConditions/Footnote/Footnote.jsx'),
     FootnoteLink: path.resolve('packages/TermsAndConditions/FootnoteLink/FootnoteLink.jsx'),
+    Disclaimer: path.resolve('packages/TermsAndConditions/Disclaimer/Disclaimer.jsx'),
     HairlineDivider: path.resolve('packages/HairlineDivider'),
     Heading: path.resolve('packages/Heading'),
     Image: path.resolve('packages/Image'),
