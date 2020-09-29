@@ -48,9 +48,9 @@ exports[`ButtonLink can be presented as one of the allowed fullwidth 1`] = `
 }
 
 .c0:hover {
-  box-shadow: 0 0 0 1px;
   background-color: #fff;
   color: #2B8000;
+  box-shadow: 0 0 0 1px;
 }
 
 .c0:focus {
@@ -137,9 +137,9 @@ exports[`ButtonLink can be presented as one of the allowed variants 1`] = `
 }
 
 .c0:hover {
-  box-shadow: 0 0 0 1px;
   background-color: #fff;
   color: #4b286d;
+  box-shadow: 0 0 0 1px;
 }
 
 .c0:focus {
@@ -226,9 +226,9 @@ exports[`ButtonLink renders 1`] = `
 }
 
 .c0:hover {
-  box-shadow: 0 0 0 1px;
   background-color: #fff;
   color: #2B8000;
+  box-shadow: 0 0 0 1px;
 }
 
 .c0:focus {
