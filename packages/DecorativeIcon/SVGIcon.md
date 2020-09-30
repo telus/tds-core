@@ -133,6 +133,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: RemoteControl,
         usageCriteria: 'Controlled by remote control',
       },
+      {
+        name: 'TVChoiceAndFlexibility',
+        Component: TVChoiceAndFlexibility,
+        usageCriteria: 'For use in value prop statements',
+      },
     ]}
   />
 
@@ -845,6 +850,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         usageCriteria: 'Roadside assistance',
       },
       { name: 'Donate', Component: Donate, usageCriteria: 'Donation' },
+      {
+        name: 'NoContract',
+        Component: NoContract,
+        usageCriteria: 'For use in value prop statements',
+      },
     ]}
   />
 </Box>
