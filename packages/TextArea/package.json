@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-text-area",
-  "version": "3.0.46",
+  "version": "3.0.47",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -27,9 +27,9 @@
   "dependencies": {
     "@tds/core-box": "^2.3.3",
     "@tds/core-colours": "^2.2.1",
-    "@tds/core-input": "^3.0.47",
+    "@tds/core-input": "^3.0.48",
     "@tds/core-input-feedback": "^2.0.23",
-    "@tds/core-paragraph": "^2.0.16",
+    "@tds/core-paragraph": "^2.0.17",
     "@tds/core-text": "^3.1.4",
     "@tds/shared-animation": "^3.0.1",
     "@tds/shared-styles": "^2.0.1",

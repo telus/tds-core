@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-paragraph",
-  "version": "2.0.16",
+  "version": "2.0.17",
   "description": "Block text",
   "main": "index.cjs.js",
   "module": "index.es.js",

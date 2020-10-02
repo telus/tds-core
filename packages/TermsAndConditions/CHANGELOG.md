@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.3.5...@tds/core-terms-and-conditions@1.4.0) (2020-10-02)
+
+
+### Features
+
+* **core-terms-and-conditions:** add Disclaimer component ([396779d](https://github.com/telus/tds-core/commit/396779d9c7060e7d774947e81baab0a1c4b0bddb))
+
+
+
+
+
 ## [1.3.5](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.3.4...@tds/core-terms-and-conditions@1.3.5) (2020-09-21)
 
 
