@@ -41,7 +41,7 @@ exports[`ButtonGroup renders 1`] = `
 }
 
 .c4 {
-  position: fixed;
+  position: absolute;
   opacity: 0;
 }
 
@@ -391,7 +391,7 @@ exports[`ButtonGroup renders 1`] = `
                                   "isStatic": true,
                                   "lastClassName": "c4",
                                   "rules": Array [
-                                    "position: fixed;",
+                                    "position: absolute;",
                                     "opacity: 0;",
                                     "&:checked ~ label {",
                                     "background-color: #4b286d;",
@@ -570,7 +570,7 @@ exports[`ButtonGroup renders 1`] = `
                                   "isStatic": true,
                                   "lastClassName": "c4",
                                   "rules": Array [
-                                    "position: fixed;",
+                                    "position: absolute;",
                                     "opacity: 0;",
                                     "&:checked ~ label {",
                                     "background-color: #4b286d;",
@@ -749,7 +749,7 @@ exports[`ButtonGroup renders 1`] = `
                                   "isStatic": true,
                                   "lastClassName": "c4",
                                   "rules": Array [
-                                    "position: fixed;",
+                                    "position: absolute;",
                                     "opacity: 0;",
                                     "&:checked ~ label {",
                                     "background-color: #4b286d;",
