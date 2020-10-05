@@ -17,7 +17,7 @@ const StyledButtonGroupItem = styled.div({
   margin: '0.5rem 0',
 })
 const StyledInput = styled.input({
-  position: 'fixed',
+  position: 'absolute',
   opacity: '0',
   '&:checked ~ label': {
     backgroundColor: colorTelusPurple,
