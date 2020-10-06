@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.3](https://github.com/telusdigital/tds-core/compare/@tds/core-button-group@3.1.2...@tds/core-button-group@3.1.3) (2020-10-06)
+
+
+### Bug Fixes
+
+* **core-button-group:** move focus to button group when navigated to ([8fb89cd](https://github.com/telusdigital/tds-core/commit/8fb89cd24b401bdb59761b996337b6bb3d9f6d1a))
+
+
+
+
+
 ## [3.1.2](https://github.com/telusdigital/tds-core/compare/@tds/core-button-group@3.1.1...@tds/core-button-group@3.1.2) (2020-09-11)
 
 **Note:** Version bump only for package @tds/core-button-group
