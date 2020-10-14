@@ -2,37 +2,48 @@ import { colorText, colorWhite } from '@tds/core-colours'
 
 export const fontTelus = '"TELUS-Web", "Helvetica Neue", Helvetica, Arial, sans-serif'
 
-export const helveticaNeueThin35 = {
+/**
+ * helveticaNeueThin35 300
+ * helveticaNeueLight45 400
+ * helveticaNeueRoman55 500
+ * helveticaNeueMedium65 700
+ */
+
+export const helveticaNowExtraLight = {
   fontWeight: 300,
 }
 
-export const helveticaNeueLight45 = {
+export const helveticaNowLight = {
+  fontWeight: 325,
+}
+
+export const helveticaNowRegular = {
   fontWeight: 400,
 }
 
-export const helveticaNeueRoman55 = {
+export const helveticaNowMedium = {
   fontWeight: 500,
 }
 
-export const helveticaNeueMedium65 = {
+export const helveticaNowBold = {
   fontWeight: 700,
 }
 
 export const sizeSmall = {
   fontSize: '0.875rem',
-  letterSpacing: -0.6,
+  letterSpacing: '0px',
   lineHeight: '1.42857',
 }
 
 export const sizeMedium = {
   fontSize: '1rem',
-  letterSpacing: -0.8,
+  letterSpacing: '0px',
   lineHeight: '1.5',
 }
 
 export const sizeLarge = {
   fontSize: '1.25rem',
-  letterSpacing: -1,
+  letterSpacing: '0px',
   lineHeight: '1.6',
 }
 
@@ -67,7 +78,7 @@ export const small = {
 }
 
 export const smallFont = {
-  ...helveticaNeueRoman55,
+  ...helveticaNowRegular,
 }
 
 export const medium = {
@@ -76,7 +87,7 @@ export const medium = {
 }
 
 export const mediumFont = {
-  ...helveticaNeueLight45,
+  ...helveticaNowLight,
 }
 
 export const large = {
@@ -86,12 +97,12 @@ export const large = {
 
 export const largeFont = {
   ...wordBreak,
-  ...helveticaNeueLight45,
+  ...helveticaNowLight,
 }
 
 export const boldFont = {
   ...wordBreak,
-  ...helveticaNeueMedium65,
+  ...helveticaNowMedium,
 }
 
 export const color = {
