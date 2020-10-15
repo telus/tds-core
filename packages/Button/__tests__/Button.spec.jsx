@@ -40,6 +40,12 @@ describe('Button', () => {
     expect(button).toMatchSnapshot()
   })
 
+  it('can be presented as one of the new allowed variants', () => {
+    const button = render(<Button variant="standard">Submit</Button>)
+
+    expect(button).toMatchSnapshot()
+  })
+
   it('can not be disabled', () => {
     const button = doShallow({ disabled: true })
 
