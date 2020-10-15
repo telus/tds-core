@@ -9,7 +9,7 @@ Provide a function as the `onClick` prop to perform an action when clicked. **Av
 - Keep the text short and precise. It should fit on a single line (our recommendation is 2-24 characters for French and English)
 - Make use of the A11yContent core component to provide more written context for assistive technology users for when they navigate a page using only button landmarks
 - Make sure the button text describes an action
-  Buttons should not be disabled. Use inline (on blur) error messaging to provide feedback when the form is invalid
+- Buttons should not be disabled. Use inline (on blur) error messaging to provide feedback when the form is invalid
 
 ### OLD Button variants
 
