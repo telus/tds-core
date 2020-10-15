@@ -37,12 +37,7 @@ const getVariant = ({ variant, rank }) => {
   const hover = {}
   const active = {}
   const focus = {}
-  if (
-    variant === 'standard' ||
-    variant === 'brand' ||
-    variant === 'inverse' ||
-    variant === 'danger'
-  ) {
+  if (variant === 'standard' || variant === 'brand' || variant === 'danger') {
     height = '3.25rem'
     paddingTop = '0.8125rem'
     paddingBottom = '0.9375rem'
@@ -73,6 +68,7 @@ const getVariant = ({ variant, rank }) => {
       hover.backgroundColor = 'transparent'
       hover.color = colorWhite
       break
+
     case 'standard':
       if (rank === 'main') {
         backgroundColor = colorAccessibleGreen
@@ -81,7 +77,7 @@ const getVariant = ({ variant, rank }) => {
         hover.boxShadow = '0 0 0 0.125rem #1F5C09'
         active.backgroundColor = '#163E06 !important'
         focus.backgroundColor = '#1F5C09'
-        focus.boxShadow = `0 0 0 0.1875rem #509F33, 0 0 0 0.125rem ${colorWhite}  inset`
+        focus.boxShadow = `0 0 0 0.1875rem #509F33, 0 0 0 0.125rem ${colorWhite} inset`
       } else {
         backgroundColor = colorWhite
         color = colorAccessibleGreen
