@@ -25,6 +25,16 @@ const CartesianButton = props => (
         children={[`Pre-order Galaxy Note20 Ultra 5G `]}
       />
     </div>
+    <div>
+      <Cartesian
+        {...props}
+        component={Button}
+        type="button"
+        variant={['primary', 'secondary', 'inverted', 'standard', 'brand', 'danger']}
+        rank={['main', 'common']}
+        children={[`View Bill`]}
+      />
+    </div>
   </div>
 )
 
