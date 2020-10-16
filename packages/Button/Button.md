@@ -13,7 +13,7 @@ Provide a function as the `onClick` prop to perform an action when clicked. **Av
 
 ### OLD Button variants
 
-**NOTE:** New Button variants have been introduced. Future projects should adopt the new variants, as the older variants will have a deprecation plan. Avoid using both new and old variants together within the same experience.
+**Deprecated:** New Button variants have been introduced. Future projects should adopt the new variants, as the older variants will be deprecated. Avoid using both new and old variants together within the same experience.
 
 Currently, by default, Buttons will be displayed in the `Primary` variant.
 
