@@ -13,6 +13,8 @@ import {
   colorAccessibleGreen,
   colorTelusPurple,
   colorCardinal,
+  colorWhiteLilac,
+  colorLavenderBlush,
 } from '@tds/core-colours'
 import { safeRest } from '@tds/util-helpers'
 
@@ -105,7 +107,7 @@ const getVariant = ({ variant, rank }) => {
         border = `0.0625rem solid ${colorTelusPurple}`
         hover.boxShadow = `0 0 0 0.125rem ${colorTelusPurple}`
         active.color = '#371E4F'
-        active.backgroundColor = '#F2EFF4 !important'
+        active.backgroundColor = `${colorLavenderBlush} !important`
         focus.border = '0.0625rem solid #7C53A5'
         focus.boxShadow = `0 0 0 0.125rem #7C53A5, 0 0 0 0.125rem ${colorWhite} inset, 0 0 0 0.1875rem ${colorTelusPurple} inset`
       }
@@ -117,7 +119,7 @@ const getVariant = ({ variant, rank }) => {
       border = `0.0625rem solid ${colorCardinal}`
       hover.boxShadow = `0 0 0 0.125rem ${colorCardinal}`
       active.color = '#770F1B'
-      active.backgroundColor = '#FFF6F8 !important'
+      active.backgroundColor = `${colorWhiteLilac} !important`
       focus.border = '0.0625rem solid #D7707B'
       focus.boxShadow = `0 0 0 0.125rem #D7707B, 0 0 0 0.125rem ${colorWhite} inset, 0 0 0 0.1875rem ${colorCardinal} inset`
       break
