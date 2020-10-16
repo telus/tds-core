@@ -32,17 +32,11 @@ const getVariant = ({ variant, rank }) => {
   let backgroundColor
   let color
   let border
-  let height
-  let paddingTop
-  let paddingBottom
   let transition
   const hover = {}
   const active = {}
   const focus = {}
   if (variant === 'standard' || variant === 'brand' || variant === 'danger') {
-    height = '3.25rem'
-    paddingTop = '0.8125rem'
-    paddingBottom = '0.9375rem'
     focus.outline = 'none !important'
     transition = 'background 0.2s, color 0.2s, border 0.2s ease'
   } else {
