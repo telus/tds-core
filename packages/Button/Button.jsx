@@ -18,7 +18,7 @@ import {
 } from '@tds/core-colours'
 import { safeRest } from '@tds/util-helpers'
 
-import { warn } from '../../shared/utils/warn'
+import { deprecate, warn } from '../../shared/utils/warn'
 
 const preventDisabling = ({ disabled, ...props }) => {
   if (disabled) {
@@ -160,6 +160,13 @@ const isOldButton = variant => {
  */
 const Button = forwardRef(({ type, variant, rank, children, ...rest }, ref) => {
   const restNoDisabled = preventDisabling(rest)
+
+  if (isOldButton(variant)) {
+    deprecate(
+      '@tds/core-button',
+      "The 'primary' and 'secondary' variants have been deprecated. Please see https://tds.telus.com/components/index.html#/Forms?id=button for more details."
+    )
+  }
 
   return (
     <StyledButton {...safeRest(restNoDisabled)} variant={variant} rank={rank} type={type} ref={ref}>
