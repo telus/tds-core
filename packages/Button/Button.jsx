@@ -132,9 +132,6 @@ const getVariant = ({ variant, rank }) => {
     backgroundColor,
     color,
     border,
-    height,
-    paddingTop,
-    paddingBottom,
     transition,
     '&:hover': hover,
     '&:active': active,
@@ -155,9 +152,14 @@ export const StyledButton = styled.button(
   getVariant
 )
 
-export const ButtonTextWrapper = styled.span({
+export const ButtonTextWrapper = styled.span(({ isOldButton }) => ({
   width: '100%',
-})
+  marginTop: !isOldButton && '-1px',
+}))
+
+const isOldButton = variant => {
+  return ['primary', 'secondary'].includes(variant)
+}
 
 /**
  * @version ./package.json
@@ -167,7 +169,7 @@ const Button = forwardRef(({ type, variant, rank, children, ...rest }, ref) => {
 
   return (
     <StyledButton {...safeRest(restNoDisabled)} variant={variant} rank={rank} type={type} ref={ref}>
-      <ButtonTextWrapper>{children}</ButtonTextWrapper>
+      <ButtonTextWrapper isOldButton={isOldButton(variant)}>{children}</ButtonTextWrapper>
     </StyledButton>
   )
 })
