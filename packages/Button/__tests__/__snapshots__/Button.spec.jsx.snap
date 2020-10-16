@@ -123,9 +123,6 @@ exports[`Button can be presented as one of the new allowed variants 1`] = `
   background-color: #fff;
   color: #2B8000;
   border: 0.0625rem solid #2B8000;
-  height: 3.25rem;
-  padding-top: 0.8125rem;
-  padding-bottom: 0.9375rem;
   -webkit-transition: background 0.2s,color 0.2s,border 0.2s ease;
   transition: background 0.2s,color 0.2s,border 0.2s ease;
 }
@@ -153,6 +150,7 @@ exports[`Button can be presented as one of the new allowed variants 1`] = `
 
 .c1 {
   width: 100%;
+  margin-top: -1px;
 }
 
 @media (min-width:768px) {
