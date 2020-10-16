@@ -7,7 +7,7 @@ import Button from '../../../packages/Button'
 
 const CartesianButton = props => (
   <div>
-    <div>
+    <div style={{ display: 'inline-flex', flexDirection: 'column' }}>
       <Cartesian
         {...props}
         component={Button}
@@ -16,7 +16,7 @@ const CartesianButton = props => (
         children={['Hello, world!']}
       />
     </div>
-    <div style={{ width: 200 }}>
+    <div style={{ display: 'inline-flex', flexDirection: 'column' }}>
       <Cartesian
         {...props}
         component={Button}
@@ -25,7 +25,7 @@ const CartesianButton = props => (
         children={[`Pre-order Galaxy Note20 Ultra 5G `]}
       />
     </div>
-    <div>
+    <div style={{ display: 'inline-flex', flexDirection: 'column' }}>
       <Cartesian
         {...props}
         component={Button}
@@ -33,6 +33,16 @@ const CartesianButton = props => (
         variant={['primary', 'secondary', 'inverted', 'standard', 'brand', 'danger']}
         rank={['main', 'common']}
         children={[`View Bill`]}
+      />
+    </div>
+
+    <div style={{ display: 'inline-flex', flexDirection: 'column', width: 300 }}>
+      <Cartesian
+        {...props}
+        component={Button}
+        type="button"
+        variant={['primary', 'secondary', 'inverted']}
+        children={[`Pre-order Galaxy Note20 Ultra 5G `]}
       />
     </div>
   </div>
