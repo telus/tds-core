@@ -25,13 +25,13 @@ exports[`Footnote renders closed 1`] = `
 .c10 {
   word-wrap: break-word;
   color: #2a2c2e;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1rem;
-  line-height: 1.25;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  line-height: 1.5;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
 }
 
 .c10 sup {
@@ -496,13 +496,13 @@ exports[`Footnote renders opened 1`] = `
 .c10 {
   word-wrap: break-word;
   color: #2a2c2e;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1rem;
-  line-height: 1.25;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  line-height: 1.5;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
 }
 
 .c10 sup {

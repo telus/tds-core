@@ -93,10 +93,10 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
 .c9 {
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
 }
 
@@ -120,10 +120,10 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
 .c7 {
   word-wrap: break-word;
   font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.6;
 }
 
@@ -422,10 +422,10 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
 .c6 {
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
 }
 
@@ -449,10 +449,10 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
 .c4 {
   word-wrap: break-word;
   font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.6;
 }
 
@@ -1260,10 +1260,10 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
 .c9 {
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
 }
 
@@ -1287,10 +1287,10 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
 .c7 {
   word-wrap: break-word;
   font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.6;
 }
 
@@ -1589,10 +1589,10 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
 .c6 {
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
 }
 
@@ -1616,10 +1616,10 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
 .c4 {
   word-wrap: break-word;
   font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.6;
 }
 
@@ -2380,10 +2380,10 @@ exports[`PriceLockup renders with default props 1`] = `
 .c8 {
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1;
 }
 
@@ -2411,10 +2411,10 @@ exports[`PriceLockup renders with default props 1`] = `
 .c6 medium {
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
 }
 
@@ -2513,13 +2513,13 @@ exports[`PriceLockup size prop is large renders 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.6;
   word-wrap: break-word;
-  font-weight: 400;
+  font-weight: 325;
 }
 
 .c3 sup {
@@ -2554,10 +2554,10 @@ exports[`PriceLockup size prop is large renders 1`] = `
 .c9 {
   word-wrap: break-word;
   font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.6;
 }
 
@@ -2743,12 +2743,12 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c3 sup {
@@ -2818,10 +2818,10 @@ exports[`PriceLockup size prop is medium renders 1`] = `
 .c10 {
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
 }
 
@@ -2845,10 +2845,10 @@ exports[`PriceLockup size prop is medium renders 1`] = `
 .c8 {
   word-wrap: break-word;
   font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.6;
 }
 
@@ -2893,12 +2893,12 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 325;
   display: inline-block;
 }
 
@@ -2999,12 +2999,12 @@ exports[`PriceLockup size prop is small renders 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c3 sup {
@@ -3060,10 +3060,10 @@ exports[`PriceLockup size prop is small renders 1`] = `
 .c9 {
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1;
 }
 
@@ -3091,10 +3091,10 @@ exports[`PriceLockup size prop is small renders 1`] = `
 .c7 medium {
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
 }
 
@@ -3139,12 +3139,12 @@ exports[`PriceLockup size prop is small renders 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
-  font-weight: 500;
+  font-weight: 400;
   display: inline-block;
 }
 

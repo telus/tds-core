@@ -5,13 +5,13 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.6;
   word-wrap: break-word;
-  font-weight: 400;
+  font-weight: 325;
 }
 
 .c4 sup {
@@ -690,13 +690,13 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.6;
   word-wrap: break-word;
-  font-weight: 400;
+  font-weight: 325;
 }
 
 .c5 sup {
@@ -1329,13 +1329,13 @@ exports[`ExpandCollapse empty panels renders 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.6;
   word-wrap: break-word;
-  font-weight: 400;
+  font-weight: 325;
 }
 
 .c8 sup {
@@ -1970,13 +1970,13 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.6;
   word-wrap: break-word;
-  font-weight: 400;
+  font-weight: 325;
 }
 
 .c6 sup {
@@ -3149,13 +3149,13 @@ exports[`ExpandCollapse renders an open panel 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.6;
   word-wrap: break-word;
-  font-weight: 400;
+  font-weight: 325;
 }
 
 .c6 sup {

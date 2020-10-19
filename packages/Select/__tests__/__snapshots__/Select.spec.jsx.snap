@@ -5,13 +5,13 @@ exports[`Select can have an error message 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
   word-wrap: break-word;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .c3 sup {
@@ -29,12 +29,12 @@ exports[`Select can have an error message 1`] = `
   margin: 0;
   word-wrap: break-word;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
-  font-weight: 500;
+  font-weight: 400;
   text-align: left;
 }
 
@@ -153,12 +153,12 @@ exports[`Select can have an error message 1`] = `
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 325;
   color: #2a2c2e;
   -moz-appearance: textfield;
   min-height: 3rem;
@@ -872,9 +872,9 @@ exports[`Select can have an error message 1`] = `
                                   "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
                                   "word-wrap: break-word;",
                                   "font-size: 1rem;",
-                                  "letter-spacing: -0.8px;",
+                                  "letter-spacing: 0px;",
                                   "line-height: 1.5;",
-                                  "font-weight: 400;",
+                                  "font-weight: 325;",
                                   "color: #2a2c2e;",
                                   [Function],
                                   "&:focus {",
@@ -1292,13 +1292,13 @@ exports[`Select label can have a hint below 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
   word-wrap: break-word;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .c2 sup {
@@ -1541,13 +1541,13 @@ exports[`Select label can have a short hint 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
   word-wrap: break-word;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .c2 sup {
@@ -1562,12 +1562,12 @@ exports[`Select label can have a short hint 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c3 sup {
@@ -1875,13 +1875,13 @@ exports[`Select label must have a label 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
   word-wrap: break-word;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .c2 sup {
@@ -2128,13 +2128,13 @@ exports[`Select renders 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
   word-wrap: break-word;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .c3 sup {
@@ -2232,12 +2232,12 @@ exports[`Select renders 1`] = `
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 325;
   color: #2a2c2e;
   -moz-appearance: textfield;
   min-height: 3rem;
@@ -2395,13 +2395,13 @@ exports[`Select renders with a feedback state and icon 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
   word-wrap: break-word;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .c3 sup {
@@ -2503,12 +2503,12 @@ exports[`Select renders with a feedback state and icon 1`] = `
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 325;
   color: #2a2c2e;
   -moz-appearance: textfield;
   min-height: 3rem;

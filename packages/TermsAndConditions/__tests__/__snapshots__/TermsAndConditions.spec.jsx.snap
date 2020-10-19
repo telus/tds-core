@@ -88,13 +88,13 @@ div.c14 {
 .c10 {
   word-wrap: break-word;
   color: #2a2c2e;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1rem;
-  line-height: 1.25;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  line-height: 1.5;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
 }
 
 .c10 sup {
@@ -166,17 +166,17 @@ div.c14 {
 }
 
 .c18 > span {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c16 {
   word-wrap: break-word;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
   padding-left: 2rem;
   list-style: decimal;
@@ -669,13 +669,13 @@ div.c14 {
 .c10 {
   word-wrap: break-word;
   color: #2a2c2e;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1rem;
-  line-height: 1.25;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  line-height: 1.5;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
 }
 
 .c10 sup {
@@ -753,17 +753,17 @@ div.c14 {
 }
 
 .c18 > span {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c16 {
   word-wrap: break-word;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
   padding-left: 2rem;
   list-style: decimal;
@@ -2431,9 +2431,9 @@ div.c14 {
                                                                         "lastClassName": "c16",
                                                                         "rules": Array [
                                                                           "word-wrap: break-word;",
-                                                                          "font-weight: 700;",
+                                                                          "font-weight: 500;",
                                                                           "font-size: 0.875rem;",
-                                                                          "letter-spacing: -0.6px;",
+                                                                          "letter-spacing: 0px;",
                                                                           "line-height: 1.42857;",
                                                                           "padding-left: 2rem;",
                                                                           "@media (min-width: 768px) {",
@@ -2521,9 +2521,9 @@ div.c14 {
                                                                             "lastClassName": "c16",
                                                                             "rules": Array [
                                                                               "word-wrap: break-word;",
-                                                                              "font-weight: 700;",
+                                                                              "font-weight: 500;",
                                                                               "font-size: 0.875rem;",
-                                                                              "letter-spacing: -0.6px;",
+                                                                              "letter-spacing: 0px;",
                                                                               "line-height: 1.42857;",
                                                                               "padding-left: 2rem;",
                                                                               "@media (min-width: 768px) {",
@@ -2667,7 +2667,7 @@ div.c14 {
                                                                                       "lastClassName": "c18",
                                                                                       "rules": Array [
                                                                                         "& > span {",
-                                                                                        "font-weight: 500;",
+                                                                                        "font-weight: 400;",
                                                                                         "}",
                                                                                         "padding-left: 1rem;",
                                                                                       ],
@@ -2695,7 +2695,7 @@ div.c14 {
                                                                                           "lastClassName": "c18",
                                                                                           "rules": Array [
                                                                                             "& > span {",
-                                                                                            "font-weight: 500;",
+                                                                                            "font-weight: 400;",
                                                                                             "}",
                                                                                             "padding-left: 1rem;",
                                                                                           ],
@@ -2732,7 +2732,7 @@ div.c14 {
                                                                                       "lastClassName": "c18",
                                                                                       "rules": Array [
                                                                                         "& > span {",
-                                                                                        "font-weight: 500;",
+                                                                                        "font-weight: 400;",
                                                                                         "}",
                                                                                         "padding-left: 1rem;",
                                                                                       ],
@@ -2760,7 +2760,7 @@ div.c14 {
                                                                                           "lastClassName": "c18",
                                                                                           "rules": Array [
                                                                                             "& > span {",
-                                                                                            "font-weight: 500;",
+                                                                                            "font-weight: 400;",
                                                                                             "}",
                                                                                             "padding-left: 1rem;",
                                                                                           ],
@@ -2797,7 +2797,7 @@ div.c14 {
                                                                                       "lastClassName": "c18",
                                                                                       "rules": Array [
                                                                                         "& > span {",
-                                                                                        "font-weight: 500;",
+                                                                                        "font-weight: 400;",
                                                                                         "}",
                                                                                         "padding-left: 1rem;",
                                                                                       ],
@@ -2825,7 +2825,7 @@ div.c14 {
                                                                                           "lastClassName": "c18",
                                                                                           "rules": Array [
                                                                                             "& > span {",
-                                                                                            "font-weight: 500;",
+                                                                                            "font-weight: 400;",
                                                                                             "}",
                                                                                             "padding-left: 1rem;",
                                                                                           ],
@@ -3023,13 +3023,13 @@ div.c14 {
 .c10 {
   word-wrap: break-word;
   color: #2a2c2e;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1rem;
-  line-height: 1.25;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  line-height: 1.5;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
 }
 
 .c10 sup {
@@ -3121,17 +3121,17 @@ div.c14 {
 }
 
 .c18 > span {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c16 {
   word-wrap: break-word;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
   padding-left: 2rem;
   list-style: decimal;
@@ -3139,12 +3139,12 @@ div.c14 {
 
 .c21 {
   word-wrap: break-word;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
   padding-left: 2rem;
   list-style: none;
@@ -4827,9 +4827,9 @@ div.c14 {
                                                                         "lastClassName": "c21",
                                                                         "rules": Array [
                                                                           "word-wrap: break-word;",
-                                                                          "font-weight: 700;",
+                                                                          "font-weight: 500;",
                                                                           "font-size: 0.875rem;",
-                                                                          "letter-spacing: -0.6px;",
+                                                                          "letter-spacing: 0px;",
                                                                           "line-height: 1.42857;",
                                                                           "padding-left: 2rem;",
                                                                           "@media (min-width: 768px) {",
@@ -4917,9 +4917,9 @@ div.c14 {
                                                                             "lastClassName": "c21",
                                                                             "rules": Array [
                                                                               "word-wrap: break-word;",
-                                                                              "font-weight: 700;",
+                                                                              "font-weight: 500;",
                                                                               "font-size: 0.875rem;",
-                                                                              "letter-spacing: -0.6px;",
+                                                                              "letter-spacing: 0px;",
                                                                               "line-height: 1.42857;",
                                                                               "padding-left: 2rem;",
                                                                               "@media (min-width: 768px) {",
@@ -5063,7 +5063,7 @@ div.c14 {
                                                                                       "lastClassName": "c18",
                                                                                       "rules": Array [
                                                                                         "& > span {",
-                                                                                        "font-weight: 500;",
+                                                                                        "font-weight: 400;",
                                                                                         "}",
                                                                                         "padding-left: 1rem;",
                                                                                       ],
@@ -5091,7 +5091,7 @@ div.c14 {
                                                                                           "lastClassName": "c18",
                                                                                           "rules": Array [
                                                                                             "& > span {",
-                                                                                            "font-weight: 500;",
+                                                                                            "font-weight: 400;",
                                                                                             "}",
                                                                                             "padding-left: 1rem;",
                                                                                           ],
@@ -5128,7 +5128,7 @@ div.c14 {
                                                                                       "lastClassName": "c18",
                                                                                       "rules": Array [
                                                                                         "& > span {",
-                                                                                        "font-weight: 500;",
+                                                                                        "font-weight: 400;",
                                                                                         "}",
                                                                                         "padding-left: 1rem;",
                                                                                       ],
@@ -5156,7 +5156,7 @@ div.c14 {
                                                                                           "lastClassName": "c18",
                                                                                           "rules": Array [
                                                                                             "& > span {",
-                                                                                            "font-weight: 500;",
+                                                                                            "font-weight: 400;",
                                                                                             "}",
                                                                                             "padding-left: 1rem;",
                                                                                           ],
@@ -5193,7 +5193,7 @@ div.c14 {
                                                                                       "lastClassName": "c18",
                                                                                       "rules": Array [
                                                                                         "& > span {",
-                                                                                        "font-weight: 500;",
+                                                                                        "font-weight: 400;",
                                                                                         "}",
                                                                                         "padding-left: 1rem;",
                                                                                       ],
@@ -5221,7 +5221,7 @@ div.c14 {
                                                                                           "lastClassName": "c18",
                                                                                           "rules": Array [
                                                                                             "& > span {",
-                                                                                            "font-weight: 500;",
+                                                                                            "font-weight: 400;",
                                                                                             "}",
                                                                                             "padding-left: 1rem;",
                                                                                           ],
@@ -5676,9 +5676,9 @@ div.c14 {
                                                                                 "lastClassName": "c21",
                                                                                 "rules": Array [
                                                                                   "word-wrap: break-word;",
-                                                                                  "font-weight: 700;",
+                                                                                  "font-weight: 500;",
                                                                                   "font-size: 0.875rem;",
-                                                                                  "letter-spacing: -0.6px;",
+                                                                                  "letter-spacing: 0px;",
                                                                                   "line-height: 1.42857;",
                                                                                   "padding-left: 2rem;",
                                                                                   "@media (min-width: 768px) {",
@@ -5766,9 +5766,9 @@ div.c14 {
                                                                                     "lastClassName": "c21",
                                                                                     "rules": Array [
                                                                                       "word-wrap: break-word;",
-                                                                                      "font-weight: 700;",
+                                                                                      "font-weight: 500;",
                                                                                       "font-size: 0.875rem;",
-                                                                                      "letter-spacing: -0.6px;",
+                                                                                      "letter-spacing: 0px;",
                                                                                       "line-height: 1.42857;",
                                                                                       "padding-left: 2rem;",
                                                                                       "@media (min-width: 768px) {",
@@ -5912,7 +5912,7 @@ div.c14 {
                                                                                               "lastClassName": "c18",
                                                                                               "rules": Array [
                                                                                                 "& > span {",
-                                                                                                "font-weight: 500;",
+                                                                                                "font-weight: 400;",
                                                                                                 "}",
                                                                                                 "padding-left: 1rem;",
                                                                                               ],
@@ -5940,7 +5940,7 @@ div.c14 {
                                                                                                   "lastClassName": "c18",
                                                                                                   "rules": Array [
                                                                                                     "& > span {",
-                                                                                                    "font-weight: 500;",
+                                                                                                    "font-weight: 400;",
                                                                                                     "}",
                                                                                                     "padding-left: 1rem;",
                                                                                                   ],
@@ -5977,7 +5977,7 @@ div.c14 {
                                                                                               "lastClassName": "c18",
                                                                                               "rules": Array [
                                                                                                 "& > span {",
-                                                                                                "font-weight: 500;",
+                                                                                                "font-weight: 400;",
                                                                                                 "}",
                                                                                                 "padding-left: 1rem;",
                                                                                               ],
@@ -6005,7 +6005,7 @@ div.c14 {
                                                                                                   "lastClassName": "c18",
                                                                                                   "rules": Array [
                                                                                                     "& > span {",
-                                                                                                    "font-weight: 500;",
+                                                                                                    "font-weight: 400;",
                                                                                                     "}",
                                                                                                     "padding-left: 1rem;",
                                                                                                   ],
@@ -6207,13 +6207,13 @@ div.c14 {
 .c10 {
   word-wrap: break-word;
   color: #2a2c2e;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1rem;
-  line-height: 1.25;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  line-height: 1.5;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
 }
 
 .c10 sup {
@@ -6305,17 +6305,17 @@ div.c14 {
 }
 
 .c19 > span {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c17 {
   word-wrap: break-word;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
   padding-left: 2rem;
   list-style: none;
@@ -8029,9 +8029,9 @@ div.c14 {
                                                                                 "lastClassName": "c17",
                                                                                 "rules": Array [
                                                                                   "word-wrap: break-word;",
-                                                                                  "font-weight: 700;",
+                                                                                  "font-weight: 500;",
                                                                                   "font-size: 0.875rem;",
-                                                                                  "letter-spacing: -0.6px;",
+                                                                                  "letter-spacing: 0px;",
                                                                                   "line-height: 1.42857;",
                                                                                   "padding-left: 2rem;",
                                                                                   "@media (min-width: 768px) {",
@@ -8119,9 +8119,9 @@ div.c14 {
                                                                                     "lastClassName": "c17",
                                                                                     "rules": Array [
                                                                                       "word-wrap: break-word;",
-                                                                                      "font-weight: 700;",
+                                                                                      "font-weight: 500;",
                                                                                       "font-size: 0.875rem;",
-                                                                                      "letter-spacing: -0.6px;",
+                                                                                      "letter-spacing: 0px;",
                                                                                       "line-height: 1.42857;",
                                                                                       "padding-left: 2rem;",
                                                                                       "@media (min-width: 768px) {",
@@ -8265,7 +8265,7 @@ div.c14 {
                                                                                               "lastClassName": "c19",
                                                                                               "rules": Array [
                                                                                                 "& > span {",
-                                                                                                "font-weight: 500;",
+                                                                                                "font-weight: 400;",
                                                                                                 "}",
                                                                                                 "padding-left: 1rem;",
                                                                                               ],
@@ -8293,7 +8293,7 @@ div.c14 {
                                                                                                   "lastClassName": "c19",
                                                                                                   "rules": Array [
                                                                                                     "& > span {",
-                                                                                                    "font-weight: 500;",
+                                                                                                    "font-weight: 400;",
                                                                                                     "}",
                                                                                                     "padding-left: 1rem;",
                                                                                                   ],
@@ -8330,7 +8330,7 @@ div.c14 {
                                                                                               "lastClassName": "c19",
                                                                                               "rules": Array [
                                                                                                 "& > span {",
-                                                                                                "font-weight: 500;",
+                                                                                                "font-weight: 400;",
                                                                                                 "}",
                                                                                                 "padding-left: 1rem;",
                                                                                               ],
@@ -8358,7 +8358,7 @@ div.c14 {
                                                                                                   "lastClassName": "c19",
                                                                                                   "rules": Array [
                                                                                                     "& > span {",
-                                                                                                    "font-weight: 500;",
+                                                                                                    "font-weight: 400;",
                                                                                                     "}",
                                                                                                     "padding-left: 1rem;",
                                                                                                   ],

@@ -76,10 +76,10 @@ exports[`Breadcrumbs with children renders 1`] = `
 .c1 {
   display: inline;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
   color: #54595f;
 }
@@ -87,10 +87,10 @@ exports[`Breadcrumbs with children renders 1`] = `
 .c4 {
   display: inline;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
   color: #4b286d;
   font-weight: 700;
@@ -105,10 +105,10 @@ exports[`Breadcrumbs with children renders 1`] = `
 .c3 {
   display: inline;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
   margin: 0 0.5rem;
 }
@@ -126,10 +126,10 @@ exports[`Breadcrumbs with children renders 1`] = `
 @media (min-width:768px) {
   .c1 {
     font-size: 1rem;
-    -webkit-letter-spacing: -0.8px;
-    -moz-letter-spacing: -0.8px;
-    -ms-letter-spacing: -0.8px;
-    letter-spacing: -0.8px;
+    -webkit-letter-spacing: 0px;
+    -moz-letter-spacing: 0px;
+    -ms-letter-spacing: 0px;
+    letter-spacing: 0px;
     line-height: 1.5;
   }
 }
@@ -137,10 +137,10 @@ exports[`Breadcrumbs with children renders 1`] = `
 @media (min-width:768px) {
   .c4 {
     font-size: 1rem;
-    -webkit-letter-spacing: -0.8px;
-    -moz-letter-spacing: -0.8px;
-    -ms-letter-spacing: -0.8px;
-    letter-spacing: -0.8px;
+    -webkit-letter-spacing: 0px;
+    -moz-letter-spacing: 0px;
+    -ms-letter-spacing: 0px;
+    letter-spacing: 0px;
     line-height: 1.5;
   }
 }
@@ -148,10 +148,10 @@ exports[`Breadcrumbs with children renders 1`] = `
 @media (min-width:768px) {
   .c3 {
     font-size: 1rem;
-    -webkit-letter-spacing: -0.8px;
-    -moz-letter-spacing: -0.8px;
-    -ms-letter-spacing: -0.8px;
-    letter-spacing: -0.8px;
+    -webkit-letter-spacing: 0px;
+    -moz-letter-spacing: 0px;
+    -ms-letter-spacing: 0px;
+    letter-spacing: 0px;
     line-height: 1.5;
   }
 }
@@ -341,11 +341,11 @@ exports[`Breadcrumbs with children renders 1`] = `
                                 "rules": Array [
                                   "display: inline;",
                                   "font-size: 0.875rem;",
-                                  "letter-spacing: -0.6px;",
+                                  "letter-spacing: 0px;",
                                   "line-height: 1.42857;",
                                   "@media (min-width: 768px) {",
                                   "font-size: 1rem;",
-                                  "letter-spacing: -0.8px;",
+                                  "letter-spacing: 0px;",
                                   "line-height: 1.5;",
                                   "}",
                                   "margin: 0 0.5rem;",
@@ -527,11 +527,11 @@ exports[`Breadcrumbs with children renders 1`] = `
                                 "rules": Array [
                                   "display: inline;",
                                   "font-size: 0.875rem;",
-                                  "letter-spacing: -0.6px;",
+                                  "letter-spacing: 0px;",
                                   "line-height: 1.42857;",
                                   "@media (min-width: 768px) {",
                                   "font-size: 1rem;",
-                                  "letter-spacing: -0.8px;",
+                                  "letter-spacing: 0px;",
                                   "line-height: 1.5;",
                                   "}",
                                   "margin: 0 0.5rem;",
@@ -800,10 +800,10 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
 .c1 {
   display: inline;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
   color: #54595f;
 }
@@ -811,10 +811,10 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
 .c4 {
   display: inline;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
   color: #4b286d;
   font-weight: 700;
@@ -829,10 +829,10 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
 .c3 {
   display: inline;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
   margin: 0 0.5rem;
 }
@@ -850,10 +850,10 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
 @media (min-width:768px) {
   .c1 {
     font-size: 1rem;
-    -webkit-letter-spacing: -0.8px;
-    -moz-letter-spacing: -0.8px;
-    -ms-letter-spacing: -0.8px;
-    letter-spacing: -0.8px;
+    -webkit-letter-spacing: 0px;
+    -moz-letter-spacing: 0px;
+    -ms-letter-spacing: 0px;
+    letter-spacing: 0px;
     line-height: 1.5;
   }
 }
@@ -861,10 +861,10 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
 @media (min-width:768px) {
   .c4 {
     font-size: 1rem;
-    -webkit-letter-spacing: -0.8px;
-    -moz-letter-spacing: -0.8px;
-    -ms-letter-spacing: -0.8px;
-    letter-spacing: -0.8px;
+    -webkit-letter-spacing: 0px;
+    -moz-letter-spacing: 0px;
+    -ms-letter-spacing: 0px;
+    letter-spacing: 0px;
     line-height: 1.5;
   }
 }
@@ -872,10 +872,10 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
 @media (min-width:768px) {
   .c3 {
     font-size: 1rem;
-    -webkit-letter-spacing: -0.8px;
-    -moz-letter-spacing: -0.8px;
-    -ms-letter-spacing: -0.8px;
-    letter-spacing: -0.8px;
+    -webkit-letter-spacing: 0px;
+    -moz-letter-spacing: 0px;
+    -ms-letter-spacing: 0px;
+    letter-spacing: 0px;
     line-height: 1.5;
   }
 }
@@ -1078,11 +1078,11 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
                                 "rules": Array [
                                   "display: inline;",
                                   "font-size: 0.875rem;",
-                                  "letter-spacing: -0.6px;",
+                                  "letter-spacing: 0px;",
                                   "line-height: 1.42857;",
                                   "@media (min-width: 768px) {",
                                   "font-size: 1rem;",
-                                  "letter-spacing: -0.8px;",
+                                  "letter-spacing: 0px;",
                                   "line-height: 1.5;",
                                   "}",
                                   "margin: 0 0.5rem;",
@@ -1276,11 +1276,11 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
                                 "rules": Array [
                                   "display: inline;",
                                   "font-size: 0.875rem;",
-                                  "letter-spacing: -0.6px;",
+                                  "letter-spacing: 0px;",
                                   "line-height: 1.42857;",
                                   "@media (min-width: 768px) {",
                                   "font-size: 1rem;",
-                                  "letter-spacing: -0.8px;",
+                                  "letter-spacing: 0px;",
                                   "line-height: 1.5;",
                                   "}",
                                   "margin: 0 0.5rem;",
@@ -1550,10 +1550,10 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
 .c1 {
   display: inline;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
   color: #54595f;
 }
@@ -1561,10 +1561,10 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
 .c4 {
   display: inline;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
   color: #4b286d;
   font-weight: 700;
@@ -1579,10 +1579,10 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
 .c3 {
   display: inline;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
   margin: 0 0.5rem;
 }
@@ -1600,10 +1600,10 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
 @media (min-width:768px) {
   .c1 {
     font-size: 1rem;
-    -webkit-letter-spacing: -0.8px;
-    -moz-letter-spacing: -0.8px;
-    -ms-letter-spacing: -0.8px;
-    letter-spacing: -0.8px;
+    -webkit-letter-spacing: 0px;
+    -moz-letter-spacing: 0px;
+    -ms-letter-spacing: 0px;
+    letter-spacing: 0px;
     line-height: 1.5;
   }
 }
@@ -1611,10 +1611,10 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
 @media (min-width:768px) {
   .c4 {
     font-size: 1rem;
-    -webkit-letter-spacing: -0.8px;
-    -moz-letter-spacing: -0.8px;
-    -ms-letter-spacing: -0.8px;
-    letter-spacing: -0.8px;
+    -webkit-letter-spacing: 0px;
+    -moz-letter-spacing: 0px;
+    -ms-letter-spacing: 0px;
+    letter-spacing: 0px;
     line-height: 1.5;
   }
 }
@@ -1622,10 +1622,10 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
 @media (min-width:768px) {
   .c3 {
     font-size: 1rem;
-    -webkit-letter-spacing: -0.8px;
-    -moz-letter-spacing: -0.8px;
-    -ms-letter-spacing: -0.8px;
-    letter-spacing: -0.8px;
+    -webkit-letter-spacing: 0px;
+    -moz-letter-spacing: 0px;
+    -ms-letter-spacing: 0px;
+    letter-spacing: 0px;
     line-height: 1.5;
   }
 }
@@ -1815,11 +1815,11 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
                                 "rules": Array [
                                   "display: inline;",
                                   "font-size: 0.875rem;",
-                                  "letter-spacing: -0.6px;",
+                                  "letter-spacing: 0px;",
                                   "line-height: 1.42857;",
                                   "@media (min-width: 768px) {",
                                   "font-size: 1rem;",
-                                  "letter-spacing: -0.8px;",
+                                  "letter-spacing: 0px;",
                                   "line-height: 1.5;",
                                   "}",
                                   "margin: 0 0.5rem;",
@@ -2013,11 +2013,11 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
                                 "rules": Array [
                                   "display: inline;",
                                   "font-size: 0.875rem;",
-                                  "letter-spacing: -0.6px;",
+                                  "letter-spacing: 0px;",
                                   "line-height: 1.42857;",
                                   "@media (min-width: 768px) {",
                                   "font-size: 1rem;",
-                                  "letter-spacing: -0.8px;",
+                                  "letter-spacing: 0px;",
                                   "line-height: 1.5;",
                                   "}",
                                   "margin: 0 0.5rem;",
@@ -2286,10 +2286,10 @@ exports[`Breadcrumbs with routes renders 1`] = `
 .c1 {
   display: inline;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
   color: #54595f;
 }
@@ -2297,10 +2297,10 @@ exports[`Breadcrumbs with routes renders 1`] = `
 .c4 {
   display: inline;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
   color: #4b286d;
   font-weight: 700;
@@ -2315,10 +2315,10 @@ exports[`Breadcrumbs with routes renders 1`] = `
 .c3 {
   display: inline;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
   margin: 0 0.5rem;
 }
@@ -2336,10 +2336,10 @@ exports[`Breadcrumbs with routes renders 1`] = `
 @media (min-width:768px) {
   .c1 {
     font-size: 1rem;
-    -webkit-letter-spacing: -0.8px;
-    -moz-letter-spacing: -0.8px;
-    -ms-letter-spacing: -0.8px;
-    letter-spacing: -0.8px;
+    -webkit-letter-spacing: 0px;
+    -moz-letter-spacing: 0px;
+    -ms-letter-spacing: 0px;
+    letter-spacing: 0px;
     line-height: 1.5;
   }
 }
@@ -2347,10 +2347,10 @@ exports[`Breadcrumbs with routes renders 1`] = `
 @media (min-width:768px) {
   .c4 {
     font-size: 1rem;
-    -webkit-letter-spacing: -0.8px;
-    -moz-letter-spacing: -0.8px;
-    -ms-letter-spacing: -0.8px;
-    letter-spacing: -0.8px;
+    -webkit-letter-spacing: 0px;
+    -moz-letter-spacing: 0px;
+    -ms-letter-spacing: 0px;
+    letter-spacing: 0px;
     line-height: 1.5;
   }
 }
@@ -2358,10 +2358,10 @@ exports[`Breadcrumbs with routes renders 1`] = `
 @media (min-width:768px) {
   .c3 {
     font-size: 1rem;
-    -webkit-letter-spacing: -0.8px;
-    -moz-letter-spacing: -0.8px;
-    -ms-letter-spacing: -0.8px;
-    letter-spacing: -0.8px;
+    -webkit-letter-spacing: 0px;
+    -moz-letter-spacing: 0px;
+    -ms-letter-spacing: 0px;
+    letter-spacing: 0px;
     line-height: 1.5;
   }
 }
@@ -2566,11 +2566,11 @@ exports[`Breadcrumbs with routes renders 1`] = `
                                 "rules": Array [
                                   "display: inline;",
                                   "font-size: 0.875rem;",
-                                  "letter-spacing: -0.6px;",
+                                  "letter-spacing: 0px;",
                                   "line-height: 1.42857;",
                                   "@media (min-width: 768px) {",
                                   "font-size: 1rem;",
-                                  "letter-spacing: -0.8px;",
+                                  "letter-spacing: 0px;",
                                   "line-height: 1.5;",
                                   "}",
                                   "margin: 0 0.5rem;",
@@ -2752,11 +2752,11 @@ exports[`Breadcrumbs with routes renders 1`] = `
                                 "rules": Array [
                                   "display: inline;",
                                   "font-size: 0.875rem;",
-                                  "letter-spacing: -0.6px;",
+                                  "letter-spacing: 0px;",
                                   "line-height: 1.42857;",
                                   "@media (min-width: 768px) {",
                                   "font-size: 1rem;",
-                                  "letter-spacing: -0.8px;",
+                                  "letter-spacing: 0px;",
                                   "line-height: 1.5;",
                                   "}",
                                   "margin: 0 0.5rem;",

@@ -20,23 +20,23 @@ exports[`<OrderedList /> can have a list style 1`] = `
   padding-left: 1rem;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 325;
 }
 
 .c4 {
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 325;
 }
 
 .c1 {
@@ -97,23 +97,23 @@ exports[`<OrderedList /> can have a list style 2`] = `
   padding-left: 1rem;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 325;
 }
 
 .c4 {
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 325;
 }
 
 .c5 .c0 {
@@ -179,23 +179,23 @@ exports[`<OrderedList /> renders 1`] = `
   padding-left: 1rem;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 325;
 }
 
 .c4 {
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 325;
 }
 
 .c1 {

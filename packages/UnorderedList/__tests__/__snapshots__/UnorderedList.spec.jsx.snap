@@ -20,11 +20,11 @@ exports[`<UnorderedList /> can have a list style 1`] = `
   line-height: 1.5;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  font-weight: 400;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
+  font-weight: 325;
 }
 
 .c3::before {
@@ -317,11 +317,11 @@ exports[`<UnorderedList /> can have a list style 2`] = `
   line-height: 1.5;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  font-weight: 400;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
+  font-weight: 325;
 }
 
 .c3::before {
@@ -610,11 +610,11 @@ exports[`<UnorderedList /> renders 1`] = `
   line-height: 1.5;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
-  font-weight: 400;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
+  font-weight: 325;
 }
 
 .c3::before {

@@ -19,13 +19,13 @@ exports[`ButtonGroup renders 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
   word-wrap: break-word;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .c0 sup {
@@ -60,13 +60,13 @@ exports[`ButtonGroup renders 1`] = `
   border-radius: 4px;
   word-wrap: break-word;
   font-size: 1rem;
-  -webkit-letter-spacing: -0.8px;
-  -moz-letter-spacing: -0.8px;
-  -ms-letter-spacing: -0.8px;
-  letter-spacing: -0.8px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.5;
   word-wrap: break-word;
-  font-weight: 700;
+  font-weight: 500;
   font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 0 2rem;
@@ -448,10 +448,10 @@ exports[`ButtonGroup renders 1`] = `
                                     "border-radius: 4px;",
                                     "word-wrap: break-word;",
                                     "font-size: 1rem;",
-                                    "letter-spacing: -0.8px;",
+                                    "letter-spacing: 0px;",
                                     "line-height: 1.5;",
                                     "word-wrap: break-word;",
-                                    "font-weight: 700;",
+                                    "font-weight: 500;",
                                     "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
                                     "margin: 0;",
                                     "padding: 0 2rem;",
@@ -627,10 +627,10 @@ exports[`ButtonGroup renders 1`] = `
                                     "border-radius: 4px;",
                                     "word-wrap: break-word;",
                                     "font-size: 1rem;",
-                                    "letter-spacing: -0.8px;",
+                                    "letter-spacing: 0px;",
                                     "line-height: 1.5;",
                                     "word-wrap: break-word;",
-                                    "font-weight: 700;",
+                                    "font-weight: 500;",
                                     "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
                                     "margin: 0;",
                                     "padding: 0 2rem;",
@@ -806,10 +806,10 @@ exports[`ButtonGroup renders 1`] = `
                                     "border-radius: 4px;",
                                     "word-wrap: break-word;",
                                     "font-size: 1rem;",
-                                    "letter-spacing: -0.8px;",
+                                    "letter-spacing: 0px;",
                                     "line-height: 1.5;",
                                     "word-wrap: break-word;",
-                                    "font-weight: 700;",
+                                    "font-weight: 500;",
                                     "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
                                     "margin: 0;",
                                     "padding: 0 2rem;",

@@ -49,12 +49,12 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c5 sup {
@@ -738,12 +738,12 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c5 sup {
@@ -1414,12 +1414,12 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c5 sup {
@@ -2046,12 +2046,12 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c3 sup {
@@ -2242,12 +2242,12 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c3 sup {
@@ -2437,12 +2437,12 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c3 sup {
@@ -2677,12 +2677,12 @@ exports[`Tooltip renders 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c5 sup {

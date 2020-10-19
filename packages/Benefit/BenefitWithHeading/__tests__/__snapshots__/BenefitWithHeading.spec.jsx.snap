@@ -20,13 +20,13 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
 .c4 {
   word-wrap: break-word;
   color: #2a2c2e;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1rem;
-  line-height: 1.25;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  line-height: 1.5;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
 }
 
 .c4 sup {
@@ -85,12 +85,12 @@ exports[`BenefitWithHeading renders with icons set in each item 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c5 sup {
@@ -202,13 +202,13 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
 .c4 {
   word-wrap: break-word;
   color: #2a2c2e;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1rem;
-  line-height: 1.25;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  line-height: 1.5;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
 }
 
 .c4 sup {
@@ -267,12 +267,12 @@ exports[`BenefitWithHeading renders with one icon set in the parent 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 0.875rem;
-  -webkit-letter-spacing: -0.6px;
-  -moz-letter-spacing: -0.6px;
-  -ms-letter-spacing: -0.6px;
-  letter-spacing: -0.6px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.42857;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .c5 sup {

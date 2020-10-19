@@ -43,7 +43,7 @@ exports[`<StepTracker /> renders 1`] = `
   word-wrap: break-word;
   font-size: inherit;
   word-wrap: break-word;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .c10 sup {

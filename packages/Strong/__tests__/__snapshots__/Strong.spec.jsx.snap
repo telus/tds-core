@@ -3,7 +3,7 @@
 exports[`Strong renders 1`] = `
 .c0 {
   word-wrap: break-word;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .c0 sup {

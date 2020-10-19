@@ -72,13 +72,13 @@ exports[`Accordion renders a closed accordion 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.6;
   word-wrap: break-word;
-  font-weight: 400;
+  font-weight: 325;
 }
 
 .c6 sup {
@@ -1245,13 +1245,13 @@ exports[`Accordion renders an open accordion 1`] = `
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1.25rem;
-  -webkit-letter-spacing: -1px;
-  -moz-letter-spacing: -1px;
-  -ms-letter-spacing: -1px;
-  letter-spacing: -1px;
+  -webkit-letter-spacing: 0px;
+  -moz-letter-spacing: 0px;
+  -ms-letter-spacing: 0px;
+  letter-spacing: 0px;
   line-height: 1.6;
   word-wrap: break-word;
-  font-weight: 400;
+  font-weight: 325;
 }
 
 .c6 sup {
