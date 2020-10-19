@@ -25,11 +25,11 @@ describe('Paragraph', () => {
     it('can be bold', () => {
       let paragraph = doShallowStyled({ bold: false })
       expect(paragraph).not.toHaveStyleRule('font-weight', '700')
-      expect(paragraph).toHaveStyleRule('font-weight', '400')
+      expect(paragraph).toHaveStyleRule('font-weight', '325')
 
       paragraph = doShallowStyled({ bold: true })
-      expect(paragraph).toHaveStyleRule('font-weight', '700')
-      expect(paragraph).not.toHaveStyleRule('font-weight', '500')
+      expect(paragraph).toHaveStyleRule('font-weight', '500')
+      expect(paragraph).not.toHaveStyleRule('font-weight', '700')
     })
 
     it('can be inverted', () => {
@@ -53,12 +53,12 @@ describe('Paragraph', () => {
     it('can be sized', () => {
       let paragraph = doShallowStyled()
       expect(paragraph).toHaveStyleRule('font-size', '1rem')
-      expect(paragraph).toHaveStyleRule('letter-spacing', '-0.8px')
+      expect(paragraph).toHaveStyleRule('letter-spacing', '0px')
       expect(paragraph).toHaveStyleRule('line-height', '1.5')
 
       paragraph = doShallowStyled({ size: 'small' })
       expect(paragraph).toHaveStyleRule('font-size', '0.875rem')
-      expect(paragraph).toHaveStyleRule('letter-spacing', '-0.6px')
+      expect(paragraph).toHaveStyleRule('letter-spacing', '0px')
       expect(paragraph).toHaveStyleRule('line-height', '1.42857')
     })
   })
