@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 
 import styled from 'styled-components'
 import {
-  helveticaNeueLight45,
-  helveticaNeueThin35,
-  helveticaNeueMedium65,
+  helveticaNowLight,
+  helveticaNowExtraLight,
+  helveticaNowMedium,
   wordBreak,
   baseSupSubScripts,
 } from '@tds/shared-typography'
@@ -15,15 +15,15 @@ import { safeRest } from '@tds/util-helpers'
 
 const HeadingLevels = {
   h1: {
-    ...helveticaNeueLight45,
-    fontSize: '1.75rem',
-    lineHeight: '1.29', // 36px
-    letterSpacing: '-1.6px',
+    ...helveticaNowLight,
+    fontSize: '1.75rem', // 28px
+    lineHeight: '1.285', // 36px
+    letterSpacing: '-0.5px',
     ...media.from('md').css({
-      ...helveticaNeueThin35,
-      fontSize: '2.75rem',
-      lineHeight: '1.18',
-      letterSpacing: '0',
+      ...helveticaNowExtraLight,
+      fontSize: '2.75rem', // 44px
+      lineHeight: '1.18', // 52px
+      letterSpacing: '0px',
     }),
     sup: {
       ...baseSupSubScripts,
@@ -33,14 +33,13 @@ const HeadingLevels = {
     },
   },
   h2: {
-    ...helveticaNeueLight45,
-    fontSize: '1.5rem',
-    lineHeight: '1.33', // 30px
-    letterSpacing: '-0.7px',
+    ...helveticaNowLight,
+    fontSize: '1.5rem', // 24px
+    lineHeight: '1.416', // 32px
+    letterSpacing: '-0.5px',
     ...media.from('md').css({
-      fontSize: '1.75rem',
-      lineHeight: '1.29',
-      letterSpacing: '-0.8px',
+      fontSize: '1.75rem', // 28px
+      lineHeight: '1.289', // 36px
     }),
     sup: {
       ...baseSupSubScripts,
@@ -50,10 +49,10 @@ const HeadingLevels = {
     },
   },
   h3: {
-    ...helveticaNeueMedium65,
-    fontSize: '1.25rem',
+    ...helveticaNowMedium,
+    fontSize: '1.25rem', // 20px
     lineHeight: '1.4', // 28px
-    letterSpacing: '-0.6px',
+    letterSpacing: '0px',
     sup: {
       ...baseSupSubScripts,
       fontSize: '0.875rem',
@@ -61,10 +60,10 @@ const HeadingLevels = {
     },
   },
   h4: {
-    ...helveticaNeueMedium65,
-    fontSize: '1rem',
-    lineHeight: '1.25', // 20px
-    letterSpacing: '-0.6px',
+    ...helveticaNowMedium,
+    fontSize: '1rem', // 16px
+    lineHeight: '1.5', // 24px
+    letterSpacing: '0px',
     sup: {
       ...baseSupSubScripts,
       fontSize: '0.875rem',
