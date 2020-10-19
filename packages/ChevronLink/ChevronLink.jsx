@@ -6,7 +6,7 @@ import { componentWithName, or, htmlElement } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
 import DecorativeIcon from '@tds/core-decorative-icon'
-import { medium, helveticaNeueRoman55 } from '@tds/shared-typography'
+import { medium, helveticaNowMedium } from '@tds/shared-typography'
 import { colorPrimary, colorSecondary, colorWhite } from '@tds/core-colours'
 import { safeRest } from '@tds/util-helpers'
 
@@ -19,7 +19,7 @@ const base = {
   verticalAlign: 'top',
 }
 
-const StyledChevronLink = styled.a(medium, helveticaNeueRoman55, base, ({ variant }) => {
+const StyledChevronLink = styled.a(medium, helveticaNowMedium, base, ({ variant }) => {
   let color
   if (variant === 'secondary') {
     color = colorSecondary
