@@ -13,8 +13,8 @@ import {
   medium,
   large,
   wordBreak,
-  helveticaNeueLight45,
-  helveticaNeueThin35,
+  helveticaNowRegular,
+  helveticaNowExtraLight,
 } from '@tds/shared-typography'
 import { spacing } from '@tds/shared-styles'
 
@@ -24,7 +24,7 @@ const FOOTNOTE_COUNT_LIMIT = 3
 const priceValue = {
   small: {
     fontSize: '1.5rem',
-    ...helveticaNeueLight45,
+    ...helveticaNowRegular,
     letterSpacing: '-0.7px',
     ...media.from('md').css({
       fontSize: '1.75rem',
@@ -37,9 +37,9 @@ const priceValue = {
   medium: {
     fontSize: '1.75rem',
     letterSpacing: '-1.6px',
-    ...helveticaNeueLight45,
+    ...helveticaNowRegular,
     ...media.from('md').css({
-      ...helveticaNeueThin35,
+      ...helveticaNowExtraLight,
       fontSize: '2.75rem',
       letterSpacing: 0,
     }),
@@ -49,7 +49,7 @@ const priceValue = {
   },
   large: {
     fontSize: '2.75rem',
-    ...helveticaNeueThin35,
+    ...helveticaNowExtraLight,
     ...media.from('md').css({
       fontSize: '4.5rem',
       letterSpacing: '0.2px',
@@ -86,12 +86,12 @@ const StyledDollarSign = styled.span(({ size }) => {
 
 const StyledLargeDollarSign = styled.span({
   color: colorText,
-  ...helveticaNeueLight45,
+  ...helveticaNowRegular,
   fontSize: '1.75rem',
   lineHeight: '1.3',
   letterSpacing: '-1.6px',
   ...media.from('md').css({
-    ...helveticaNeueThin35,
+    ...helveticaNowExtraLight,
     fontSize: '2.75rem',
     letterSpacing: '0',
   }),
