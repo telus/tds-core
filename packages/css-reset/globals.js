@@ -1,5 +1,5 @@
 import { colorWhite, colorText } from '@tds/core-colours'
-import { fontTelus, helveticaNeueLight45 } from '@tds/shared-typography'
+import { fontTelus, helveticaNowLight } from '@tds/shared-typography'
 
 const globals = {
   '*': {
@@ -14,7 +14,7 @@ const globals = {
     textRendering: 'optimizeLegibility',
 
     font: 'inherit',
-    letterSpacing: '-0.8px',
+    letterSpacing: '0px',
 
     '&::before, &::after': {
       boxSizing: 'border-box',
@@ -22,7 +22,7 @@ const globals = {
   },
 
   html: {
-    ...helveticaNeueLight45,
+    ...helveticaNowLight,
     fontFamily: fontTelus,
     fontSize: '100%',
     fontKerning: 'normal',
