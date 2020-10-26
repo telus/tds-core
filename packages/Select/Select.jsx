@@ -64,7 +64,6 @@ const StyledSelect = styled.select(
       appearance: 'none',
       margin: 0,
     },
-    '-moz-appearance': 'textfield',
     minHeight: forms.inputHeight.height,
     maxHeight: forms.inputHeight.height,
     padding: withFeedbackIcon ? '0.5rem 4rem 0.5rem 1rem' : '0.5rem 3rem 0.5rem 1rem',
