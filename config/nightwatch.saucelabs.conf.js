@@ -56,7 +56,7 @@ module.exports = {
     firefox: {
       desiredCapabilities: {
         browserName: 'firefox',
-        version: '70',
+        version: '80',
         platform: 'windows 10',
         screenResolution: '2560x1600',
       },
