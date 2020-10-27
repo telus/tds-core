@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.27](https://github.com/telus/tds/compare/@tds/core-select@3.2.26...@tds/core-select@3.2.27) (2020-10-27)
+
+
+### Bug Fixes
+
+* **core-select:** hide firefox duplicate dropdown arrow ([5c93756](https://github.com/telus/tds/commit/5c937568cb2474b5928ff486abaa1832e1ffd204))
+
+
+
+
+
 ## [3.2.26](https://github.com/telus/tds/compare/@tds/core-select@3.2.25...@tds/core-select@3.2.26) (2020-10-02)
 
 **Note:** Version bump only for package @tds/core-select
