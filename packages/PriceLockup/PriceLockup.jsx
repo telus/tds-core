@@ -60,6 +60,22 @@ const priceValue = {
   },
 }
 
+const hasStrikethrough = strikethroughValue => {
+  if (strikethroughValue) {
+    return {
+      '&::before': {
+        display: 'block',
+        width: '100%',
+        content: '""',
+        borderBottom: `2px solid ${colorGreyRaven}`,
+        position: 'absolute',
+        top: '50%',
+      },
+    }
+  }
+  return undefined
+}
+
 const StyledRateText = styled.span(({ size }) => {
   if (size === 'large') {
     return large
@@ -75,14 +91,7 @@ const StyledPriceValue = styled.span(wordBreak, spacing.noSpacing, ({ size, stri
     lineHeight: 1,
     ...priceValue[size],
     position: 'relative',
-    '&::before': {
-      display: strikethrough ? 'block' : 'none',
-      width: '100%',
-      content: '""',
-      borderBottom: `2px solid ${colorGreyRaven}`,
-      position: 'absolute',
-      top: '50%',
-    },
+    ...hasStrikethrough(strikethrough),
   }
 })
 
@@ -118,7 +127,7 @@ const StyledPriceWrapper = styled(Box)({
 const StyledRateTextWrapper = styled.div(({ strikethrough }) => {
   return {
     display: 'flex',
-    color: strikethrough ? colorGreyRaven : 'inherit',
+    color: strikethrough ? colorGreyRaven : undefined,
   }
 })
 
@@ -236,8 +245,13 @@ const PriceLockup = ({
     }
   }
 
+  if (strikethrough && !ariaLabel) {
+    warn('PriceLockup', 'Aria label must be provided with strikethrough pricing')
+    return undefined
+  }
+
   return (
-    <StyledWrapperAlignment between={wrapperSpacing} strikethrough={strikethrough}>
+    <StyledWrapperAlignment between={wrapperSpacing}>
       <Box between={size !== 'large' ? 1 : undefined}>
         {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
         <StyledRateTextWrapper ref={containerRef} strikethrough={strikethrough}>

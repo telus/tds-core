@@ -11,7 +11,7 @@
 - Use `rateText` prop to provide month or year
 - Use `topText` and `bottomText` props to provide additional information
 - Align the currency sign to the right when displaying prices in French
-- Use `strikethrough` option for price savings comparison.
+- Use `strikethrough` option for price savings comparison
   - If using `strikethrough` pricing, it must be accompanied by corresponding `ariaLabel` to be used by screen readers
 
 <img src="price-lockup_annotated.png" alt="price lockup annotated example" style="width: 100%; " />
