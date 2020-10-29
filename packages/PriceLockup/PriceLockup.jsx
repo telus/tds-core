@@ -7,7 +7,7 @@ import { componentWithName } from '@tds/util-prop-types'
 import Text, { StyledText } from '@tds/core-text'
 import HairlineDivider from '@tds/core-hairline-divider'
 import Box from '@tds/core-box'
-import { colorText } from '@tds/core-colours'
+import { colorText, colorGreyRaven } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
 import {
   medium,
@@ -70,10 +70,19 @@ const StyledRateText = styled.span(({ size }) => {
   return { ...medium, lineHeight: 1 }
 })
 
-const StyledPriceValue = styled.span(wordBreak, spacing.noSpacing, ({ size }) => {
+const StyledPriceValue = styled.span(wordBreak, spacing.noSpacing, ({ size, strikethrough }) => {
   return {
     lineHeight: 1,
     ...priceValue[size],
+    position: 'relative',
+    '&::before': {
+      display: strikethrough ? 'block' : 'none',
+      width: '100%',
+      content: '""',
+      borderBottom: `2px solid ${colorGreyRaven}`,
+      position: 'absolute',
+      top: '50%',
+    },
   }
 })
 
@@ -106,8 +115,11 @@ const StyledPriceWrapper = styled(Box)({
   alignSelf: 'flex-start',
 })
 
-const StyledRateTextWrapper = styled.div({
-  display: 'flex',
+const StyledRateTextWrapper = styled.div(({ strikethrough }) => {
+  return {
+    display: 'flex',
+    color: strikethrough ? colorGreyRaven : 'inherit',
+  }
 })
 
 const StyledFootnoteLinks = styled(StyledText)(({ inline }) => ({
@@ -162,6 +174,8 @@ const PriceLockup = ({
   rateText,
   bottomText,
   footnoteLinks,
+  strikethrough,
+  ariaLabel,
 }) => {
   const rateTextWrapperRef = useRef()
   const footnoteLinksRef = useRef()
@@ -223,19 +237,29 @@ const PriceLockup = ({
   }
 
   return (
-    <StyledWrapperAlignment between={wrapperSpacing}>
+    <StyledWrapperAlignment between={wrapperSpacing} strikethrough={strikethrough}>
       <Box between={size !== 'large' ? 1 : undefined}>
         {topText && <Text size={size === 'large' ? 'large' : 'small'}>{topText}</Text>}
-        <StyledRateTextWrapper ref={containerRef}>
+        <StyledRateTextWrapper ref={containerRef} strikethrough={strikethrough}>
           <StyledPriceWrapper ref={rateTextWrapperRef} between={size === 'small' ? 1 : 2} inline>
             <Box between={size === 'large' ? 2 : 1} inline>
               {signDirection === 'left' && renderDollarSign(size)}
-              <StyledPriceValue data-testid="priceValue" size={size}>
+              <StyledPriceValue
+                data-testid="priceValue"
+                size={size}
+                strikethrough={strikethrough}
+                aria-label={ariaLabel}
+              >
                 {price}
               </StyledPriceValue>
               {signDirection === 'right' && renderDollarSign(size)}
               {!bottomText && !rateText && footnoteLinksInline && (
-                <StyledPriceValue data-testid="priceValue" size={size}>
+                <StyledPriceValue
+                  data-testid="priceValue"
+                  size={size}
+                  strikethrough={strikethrough}
+                  aria-label={ariaLabel}
+                >
                   {renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
                 </StyledPriceValue>
               )}
@@ -297,6 +321,15 @@ PriceLockup.propTypes = {
    * See [FootnoteLink with PriceLockup](#/Typography?id=pricelockupWithFootnotelink) for more details.
    */
   footnoteLinks: componentWithName('FootnoteLink'),
+  /**
+   * Use to show price with strikethrough for savings comparison.
+   */
+  strikethrough: PropTypes.bool,
+  /**
+   * Aria Label for strikethrough pricing, as screen readers will not pick up strikethrough. *MUST be included if using
+   * strikethrough pricing.
+   */
+  ariaLabel: PropTypes.string,
 }
 
 PriceLockup.defaultProps = {
@@ -305,6 +338,8 @@ PriceLockup.defaultProps = {
   bottomText: undefined,
   rateText: undefined,
   footnoteLinks: undefined,
+  strikethrough: false,
+  ariaLabel: '',
 }
 
 export default PriceLockup

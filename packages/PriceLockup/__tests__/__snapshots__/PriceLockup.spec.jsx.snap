@@ -112,10 +112,20 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   -ms-letter-spacing: -1.6px;
   letter-spacing: -1.6px;
   font-weight: 400;
+  position: relative;
 }
 
 .c8.c8 sup {
   top: -1.5em;
+}
+
+.c8::before {
+  display: none;
+  width: 100%;
+  content: "";
+  border-bottom: 2px solid #71757b;
+  position: absolute;
+  top: 50%;
 }
 
 .c7 {
@@ -147,6 +157,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  color: inherit;
 }
 
 .c11 {
@@ -178,6 +189,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
 }
 
 <PriceLockup
+  ariaLabel=""
   footnoteLinks={
     <FootnoteLink
       copy="en"
@@ -189,10 +201,12 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   rateText="/month"
   signDirection="left"
   size="medium"
+  strikethrough={false}
 >
   <Styled(Box)
     between={3}
     inline={false}
+    strikethrough={false}
     tag="div"
   >
     <StyledComponent
@@ -267,18 +281,21 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
       }
       forwardedRef={null}
       inline={false}
+      strikethrough={false}
       tag="div"
     >
       <Box
         between={3}
         className="c0"
         inline={false}
+        strikethrough={false}
         tag="div"
       >
         <styled.div
           between={3}
           className="c0"
           inline={false}
+          strikethrough={false}
           tag="div"
         >
           <StyledComponent
@@ -314,6 +331,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
             }
             forwardedRef={null}
             inline={false}
+            strikethrough={false}
             tag="div"
           >
             <div
@@ -366,7 +384,9 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                     <div
                       className="c2"
                     >
-                      <PriceLockup__StyledRateTextWrapper>
+                      <PriceLockup__StyledRateTextWrapper
+                        strikethrough={false}
+                      >
                         <StyledComponent
                           forwardedComponent={
                             Object {
@@ -374,10 +394,10 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
                                 "componentId": "PriceLockup__StyledRateTextWrapper-crmhv4-4",
-                                "isStatic": true,
+                                "isStatic": false,
                                 "lastClassName": "c3",
                                 "rules": Array [
-                                  "display: flex;",
+                                  [Function],
                                 ],
                               },
                               "displayName": "PriceLockup__StyledRateTextWrapper",
@@ -441,10 +461,20 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   -ms-letter-spacing: -1.6px;
   letter-spacing: -1.6px;
   font-weight: 400;
+  position: relative;
 }
 
 .c5.c5 sup {
   top: -1.5em;
+}
+
+.c5::before {
+  display: none;
+  width: 100%;
+  content: "";
+  border-bottom: 2px solid #71757b;
+  position: absolute;
+  top: 50%;
 }
 
 .c4 {
@@ -472,6 +502,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  color: inherit;
 }
 
 @media (min-width:768px) {
@@ -501,6 +532,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                       $
                                     </span>
                                     <span
+                                      aria-label=""
                                       class="c5"
                                       data-testid="priceValue"
                                     >
@@ -517,6 +549,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                               </div>,
                             }
                           }
+                          strikethrough={false}
                         >
                           <div
                             className="c3"
@@ -612,6 +645,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                           $
                                         </span>
                                         <span
+                                          aria-label=""
                                           class="c8"
                                           data-testid="priceValue"
                                         >
@@ -688,6 +722,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                                 $
                                               </span>
                                               <span
+                                                aria-label=""
                                                 class="c8"
                                                 data-testid="priceValue"
                                               >
@@ -797,10 +832,13 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                                   </StyledComponent>
                                                 </PriceLockup__StyledDollarSign>
                                                 <PriceLockup__StyledPriceValue
+                                                  aria-label=""
                                                   data-testid="priceValue"
                                                   size="medium"
+                                                  strikethrough={false}
                                                 >
                                                   <StyledComponent
+                                                    aria-label=""
                                                     data-testid="priceValue"
                                                     forwardedComponent={
                                                       Object {
@@ -829,8 +867,10 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                                     }
                                                     forwardedRef={null}
                                                     size="medium"
+                                                    strikethrough={false}
                                                   >
                                                     <span
+                                                      aria-label=""
                                                       className="c8"
                                                       data-testid="priceValue"
                                                       size="medium"
@@ -1282,10 +1322,20 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   -ms-letter-spacing: -1.6px;
   letter-spacing: -1.6px;
   font-weight: 400;
+  position: relative;
 }
 
 .c8.c8 sup {
   top: -1.5em;
+}
+
+.c8::before {
+  display: none;
+  width: 100%;
+  content: "";
+  border-bottom: 2px solid #71757b;
+  position: absolute;
+  top: 50%;
 }
 
 .c7 {
@@ -1317,6 +1367,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  color: inherit;
 }
 
 .c11 {
@@ -1348,6 +1399,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
 }
 
 <PriceLockup
+  ariaLabel=""
   footnoteLinks={
     <FootnoteLink
       copy="en"
@@ -1359,10 +1411,12 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   rateText="/month"
   signDirection="left"
   size="medium"
+  strikethrough={false}
 >
   <Styled(Box)
     between={3}
     inline={false}
+    strikethrough={false}
     tag="div"
   >
     <StyledComponent
@@ -1437,18 +1491,21 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
       }
       forwardedRef={null}
       inline={false}
+      strikethrough={false}
       tag="div"
     >
       <Box
         between={3}
         className="c0"
         inline={false}
+        strikethrough={false}
         tag="div"
       >
         <styled.div
           between={3}
           className="c0"
           inline={false}
+          strikethrough={false}
           tag="div"
         >
           <StyledComponent
@@ -1484,6 +1541,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
             }
             forwardedRef={null}
             inline={false}
+            strikethrough={false}
             tag="div"
           >
             <div
@@ -1536,7 +1594,9 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                     <div
                       className="c2"
                     >
-                      <PriceLockup__StyledRateTextWrapper>
+                      <PriceLockup__StyledRateTextWrapper
+                        strikethrough={false}
+                      >
                         <StyledComponent
                           forwardedComponent={
                             Object {
@@ -1544,10 +1604,10 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
                                 "componentId": "PriceLockup__StyledRateTextWrapper-crmhv4-4",
-                                "isStatic": true,
+                                "isStatic": false,
                                 "lastClassName": "c3",
                                 "rules": Array [
-                                  "display: flex;",
+                                  [Function],
                                 ],
                               },
                               "displayName": "PriceLockup__StyledRateTextWrapper",
@@ -1611,10 +1671,20 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   -ms-letter-spacing: -1.6px;
   letter-spacing: -1.6px;
   font-weight: 400;
+  position: relative;
 }
 
 .c5.c5 sup {
   top: -1.5em;
+}
+
+.c5::before {
+  display: none;
+  width: 100%;
+  content: "";
+  border-bottom: 2px solid #71757b;
+  position: absolute;
+  top: 50%;
 }
 
 .c4 {
@@ -1642,6 +1712,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  color: inherit;
 }
 
 @media (min-width:768px) {
@@ -1671,6 +1742,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                       $
                                     </span>
                                     <span
+                                      aria-label=""
                                       class="c5"
                                       data-testid="priceValue"
                                     >
@@ -1687,6 +1759,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                               </div>,
                             }
                           }
+                          strikethrough={false}
                         >
                           <div
                             className="c3"
@@ -1782,6 +1855,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                           $
                                         </span>
                                         <span
+                                          aria-label=""
                                           class="c8"
                                           data-testid="priceValue"
                                         >
@@ -1858,6 +1932,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                                 $
                                               </span>
                                               <span
+                                                aria-label=""
                                                 class="c8"
                                                 data-testid="priceValue"
                                               >
@@ -1967,10 +2042,13 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                                   </StyledComponent>
                                                 </PriceLockup__StyledDollarSign>
                                                 <PriceLockup__StyledPriceValue
+                                                  aria-label=""
                                                   data-testid="priceValue"
                                                   size="medium"
+                                                  strikethrough={false}
                                                 >
                                                   <StyledComponent
+                                                    aria-label=""
                                                     data-testid="priceValue"
                                                     forwardedComponent={
                                                       Object {
@@ -1999,8 +2077,10 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                                     }
                                                     forwardedRef={null}
                                                     size="medium"
+                                                    strikethrough={false}
                                                   >
                                                     <span
+                                                      aria-label=""
                                                       className="c8"
                                                       data-testid="priceValue"
                                                       size="medium"
@@ -2404,10 +2484,20 @@ exports[`PriceLockup renders with default props 1`] = `
   -moz-letter-spacing: -0.7px;
   -ms-letter-spacing: -0.7px;
   letter-spacing: -0.7px;
+  position: relative;
 }
 
 .c7.c7 sup {
   top: -1em;
+}
+
+.c7::before {
+  display: none;
+  width: 100%;
+  content: "";
+  border-bottom: 2px solid #71757b;
+  position: absolute;
+  top: 50%;
 }
 
 .c6 {
@@ -2443,6 +2533,7 @@ exports[`PriceLockup renders with default props 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  color: inherit;
 }
 
 .c9 {
@@ -2493,6 +2584,7 @@ exports[`PriceLockup renders with default props 1`] = `
             $
           </span>
           <span
+            aria-label=""
             class="c7"
             data-testid="priceValue"
           >
@@ -2574,10 +2666,20 @@ exports[`PriceLockup size prop is large renders 1`] = `
   line-height: 1;
   font-size: 2.75rem;
   font-weight: 300;
+  position: relative;
 }
 
 .c8.c8 sup {
   top: -3em;
+}
+
+.c8::before {
+  display: none;
+  width: 100%;
+  content: "";
+  border-bottom: 2px solid #71757b;
+  position: absolute;
+  top: 50%;
 }
 
 .c7 {
@@ -2610,6 +2712,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  color: inherit;
 }
 
 .c10 {
@@ -2708,6 +2811,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
             $
           </span>
           <span
+            aria-label=""
             class="c8"
             data-testid="priceValue"
           >
@@ -2842,10 +2946,20 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   -ms-letter-spacing: -1.6px;
   letter-spacing: -1.6px;
   font-weight: 400;
+  position: relative;
 }
 
 .c9.c9 sup {
   top: -1.5em;
+}
+
+.c9::before {
+  display: none;
+  width: 100%;
+  content: "";
+  border-bottom: 2px solid #71757b;
+  position: absolute;
+  top: 50%;
 }
 
 .c8 {
@@ -2877,6 +2991,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  color: inherit;
 }
 
 .c13 {
@@ -2954,6 +3069,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
             $
           </span>
           <span
+            aria-label=""
             class="c9"
             data-testid="priceValue"
           >
@@ -3084,10 +3200,20 @@ exports[`PriceLockup size prop is small renders 1`] = `
   -moz-letter-spacing: -0.7px;
   -ms-letter-spacing: -0.7px;
   letter-spacing: -0.7px;
+  position: relative;
 }
 
 .c8.c8 sup {
   top: -1em;
+}
+
+.c8::before {
+  display: none;
+  width: 100%;
+  content: "";
+  border-bottom: 2px solid #71757b;
+  position: absolute;
+  top: 50%;
 }
 
 .c7 {
@@ -3123,6 +3249,7 @@ exports[`PriceLockup size prop is small renders 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  color: inherit;
 }
 
 .c12 {
@@ -3199,6 +3326,7 @@ exports[`PriceLockup size prop is small renders 1`] = `
             $
           </span>
           <span
+            aria-label=""
             class="c8"
             data-testid="priceValue"
           >
