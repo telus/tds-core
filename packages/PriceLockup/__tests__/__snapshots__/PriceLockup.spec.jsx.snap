@@ -119,15 +119,6 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   top: -1.5em;
 }
 
-.c8::before {
-  display: none;
-  width: 100%;
-  content: "";
-  border-bottom: 2px solid #71757b;
-  position: absolute;
-  top: 50%;
-}
-
 .c7 {
   word-wrap: break-word;
   font-size: 1.25rem;
@@ -157,7 +148,6 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: inherit;
 }
 
 .c11 {
@@ -206,7 +196,6 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   <Styled(Box)
     between={3}
     inline={false}
-    strikethrough={false}
     tag="div"
   >
     <StyledComponent
@@ -281,21 +270,18 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
       }
       forwardedRef={null}
       inline={false}
-      strikethrough={false}
       tag="div"
     >
       <Box
         between={3}
         className="c0"
         inline={false}
-        strikethrough={false}
         tag="div"
       >
         <styled.div
           between={3}
           className="c0"
           inline={false}
-          strikethrough={false}
           tag="div"
         >
           <StyledComponent
@@ -331,7 +317,6 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
             }
             forwardedRef={null}
             inline={false}
-            strikethrough={false}
             tag="div"
           >
             <div
@@ -468,15 +453,6 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   top: -1.5em;
 }
 
-.c5::before {
-  display: none;
-  width: 100%;
-  content: "";
-  border-bottom: 2px solid #71757b;
-  position: absolute;
-  top: 50%;
-}
-
 .c4 {
   word-wrap: break-word;
   font-size: 1.25rem;
@@ -502,7 +478,6 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: inherit;
 }
 
 @media (min-width:768px) {
@@ -1329,15 +1304,6 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   top: -1.5em;
 }
 
-.c8::before {
-  display: none;
-  width: 100%;
-  content: "";
-  border-bottom: 2px solid #71757b;
-  position: absolute;
-  top: 50%;
-}
-
 .c7 {
   word-wrap: break-word;
   font-size: 1.25rem;
@@ -1367,7 +1333,6 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: inherit;
 }
 
 .c11 {
@@ -1416,7 +1381,6 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   <Styled(Box)
     between={3}
     inline={false}
-    strikethrough={false}
     tag="div"
   >
     <StyledComponent
@@ -1491,21 +1455,18 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
       }
       forwardedRef={null}
       inline={false}
-      strikethrough={false}
       tag="div"
     >
       <Box
         between={3}
         className="c0"
         inline={false}
-        strikethrough={false}
         tag="div"
       >
         <styled.div
           between={3}
           className="c0"
           inline={false}
-          strikethrough={false}
           tag="div"
         >
           <StyledComponent
@@ -1541,7 +1502,6 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
             }
             forwardedRef={null}
             inline={false}
-            strikethrough={false}
             tag="div"
           >
             <div
@@ -1678,15 +1638,6 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   top: -1.5em;
 }
 
-.c5::before {
-  display: none;
-  width: 100%;
-  content: "";
-  border-bottom: 2px solid #71757b;
-  position: absolute;
-  top: 50%;
-}
-
 .c4 {
   word-wrap: break-word;
   font-size: 1.25rem;
@@ -1712,7 +1663,6 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: inherit;
 }
 
 @media (min-width:768px) {
@@ -2491,15 +2441,6 @@ exports[`PriceLockup renders with default props 1`] = `
   top: -1em;
 }
 
-.c7::before {
-  display: none;
-  width: 100%;
-  content: "";
-  border-bottom: 2px solid #71757b;
-  position: absolute;
-  top: 50%;
-}
-
 .c6 {
   line-height: 1.5;
 }
@@ -2533,7 +2474,6 @@ exports[`PriceLockup renders with default props 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: inherit;
 }
 
 .c9 {
@@ -2673,15 +2613,6 @@ exports[`PriceLockup size prop is large renders 1`] = `
   top: -3em;
 }
 
-.c8::before {
-  display: none;
-  width: 100%;
-  content: "";
-  border-bottom: 2px solid #71757b;
-  position: absolute;
-  top: 50%;
-}
-
 .c7 {
   color: #2a2c2e;
   font-weight: 400;
@@ -2712,7 +2643,6 @@ exports[`PriceLockup size prop is large renders 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: inherit;
 }
 
 .c10 {
@@ -2953,15 +2883,6 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   top: -1.5em;
 }
 
-.c9::before {
-  display: none;
-  width: 100%;
-  content: "";
-  border-bottom: 2px solid #71757b;
-  position: absolute;
-  top: 50%;
-}
-
 .c8 {
   word-wrap: break-word;
   font-size: 1.25rem;
@@ -2991,7 +2912,6 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: inherit;
 }
 
 .c13 {
@@ -3207,15 +3127,6 @@ exports[`PriceLockup size prop is small renders 1`] = `
   top: -1em;
 }
 
-.c8::before {
-  display: none;
-  width: 100%;
-  content: "";
-  border-bottom: 2px solid #71757b;
-  position: absolute;
-  top: 50%;
-}
-
 .c7 {
   line-height: 1.5;
 }
@@ -3249,7 +3160,6 @@ exports[`PriceLockup size prop is small renders 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: inherit;
 }
 
 .c12 {
