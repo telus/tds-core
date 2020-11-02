@@ -179,7 +179,6 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
 }
 
 <PriceLockup
-  ariaLabel=""
   footnoteLinks={
     <FootnoteLink
       copy="en"
@@ -507,7 +506,6 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                       $
                                     </span>
                                     <span
-                                      aria-label=""
                                       class="c5"
                                       data-testid="priceValue"
                                     >
@@ -620,7 +618,6 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                           $
                                         </span>
                                         <span
-                                          aria-label=""
                                           class="c8"
                                           data-testid="priceValue"
                                         >
@@ -697,7 +694,6 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                                 $
                                               </span>
                                               <span
-                                                aria-label=""
                                                 class="c8"
                                                 data-testid="priceValue"
                                               >
@@ -807,13 +803,11 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                                   </StyledComponent>
                                                 </PriceLockup__StyledDollarSign>
                                                 <PriceLockup__StyledPriceValue
-                                                  aria-label=""
                                                   data-testid="priceValue"
                                                   size="medium"
                                                   strikethrough={false}
                                                 >
                                                   <StyledComponent
-                                                    aria-label=""
                                                     data-testid="priceValue"
                                                     forwardedComponent={
                                                       Object {
@@ -845,7 +839,6 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                                     strikethrough={false}
                                                   >
                                                     <span
-                                                      aria-label=""
                                                       className="c8"
                                                       data-testid="priceValue"
                                                       size="medium"
@@ -1364,7 +1357,6 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
 }
 
 <PriceLockup
-  ariaLabel=""
   footnoteLinks={
     <FootnoteLink
       copy="en"
@@ -1692,7 +1684,6 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                       $
                                     </span>
                                     <span
-                                      aria-label=""
                                       class="c5"
                                       data-testid="priceValue"
                                     >
@@ -1805,7 +1796,6 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                           $
                                         </span>
                                         <span
-                                          aria-label=""
                                           class="c8"
                                           data-testid="priceValue"
                                         >
@@ -1882,7 +1872,6 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                                 $
                                               </span>
                                               <span
-                                                aria-label=""
                                                 class="c8"
                                                 data-testid="priceValue"
                                               >
@@ -1992,13 +1981,11 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                                   </StyledComponent>
                                                 </PriceLockup__StyledDollarSign>
                                                 <PriceLockup__StyledPriceValue
-                                                  aria-label=""
                                                   data-testid="priceValue"
                                                   size="medium"
                                                   strikethrough={false}
                                                 >
                                                   <StyledComponent
-                                                    aria-label=""
                                                     data-testid="priceValue"
                                                     forwardedComponent={
                                                       Object {
@@ -2030,7 +2017,6 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                                     strikethrough={false}
                                                   >
                                                     <span
-                                                      aria-label=""
                                                       className="c8"
                                                       data-testid="priceValue"
                                                       size="medium"
@@ -2524,7 +2510,6 @@ exports[`PriceLockup renders with default props 1`] = `
             $
           </span>
           <span
-            aria-label=""
             class="c7"
             data-testid="priceValue"
           >
@@ -2741,7 +2726,6 @@ exports[`PriceLockup size prop is large renders 1`] = `
             $
           </span>
           <span
-            aria-label=""
             class="c8"
             data-testid="priceValue"
           >
@@ -2989,7 +2973,6 @@ exports[`PriceLockup size prop is medium renders 1`] = `
             $
           </span>
           <span
-            aria-label=""
             class="c9"
             data-testid="priceValue"
           >
@@ -3236,7 +3219,6 @@ exports[`PriceLockup size prop is small renders 1`] = `
             $
           </span>
           <span
-            aria-label=""
             class="c8"
             data-testid="priceValue"
           >
