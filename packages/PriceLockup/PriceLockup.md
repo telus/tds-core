@@ -30,6 +30,17 @@
 
 ```jsx
 <PriceLockup
+  size="small"
+  strikethrough
+  ariaLabel="price without disctount"
+  price="50"
+  signDirection="left"
+  rateText="/month"
+/>
+```
+
+```jsx
+<PriceLockup
   size="medium"
   topText="Starting at"
   price="25"

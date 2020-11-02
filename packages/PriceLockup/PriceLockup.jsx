@@ -353,7 +353,7 @@ PriceLockup.defaultProps = {
   rateText: undefined,
   footnoteLinks: undefined,
   strikethrough: false,
-  ariaLabel: '',
+  ariaLabel: undefined,
 }
 
 export default PriceLockup
