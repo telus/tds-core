@@ -32,7 +32,7 @@
 <PriceLockup
   size="small"
   strikethrough
-  ariaLabel="price without disctount"
+  ariaLabel="price without discount"
   price="50"
   signDirection="left"
   rateText="/month"
