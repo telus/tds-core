@@ -15,6 +15,12 @@
   - If using `strikethrough` prop, it must be accompanied by corresponding `ariaLabel` to be used by screen readers
   - `strikethrough` price must be smaller than the discounted price
 
+### Strikethrough Usage Criteria
+
+- Usage: To visually show a discounted price next to a non-strikethrough price
+- Placement: Must be placed in close proximity to the product
+- If using `strikethrough` prop, it must be accompanied by corresponding `ariaLabel` to be used by screen readers
+
 <img src="price-lockup_annotated.png" alt="price lockup annotated example" style="width: 100%; " />
 
 ```jsx
@@ -40,7 +46,9 @@
 />
 ```
 
-### Example use case for strikethrough option
+### Example use case for `small` strikethrough option
+
+- to be used with `medium` discounted price
 
 ```jsx
 <FlexGrid>
@@ -81,6 +89,12 @@
   </FlexGrid.Row>
 </FlexGrid>
 ```
+
+### Example use case for `medium` strikethrough option
+
+- to be used with `large` discounted price
+- to be used in campaign banners
+- not for use in cards
 
 ```jsx
 <FlexGrid>
