@@ -43,19 +43,59 @@
 
 ```jsx
 <FlexGrid>
-  <FlexGrid.Row verticalAlign="bottom">
-    <FlexGrid.Col xs={2}>
+  <FlexGrid.Row>
+    <FlexGrid.Col xs={12} md={5}>
+      <Card variant="defaultWithBorder">
+        <Box between={3}>
+          <Heading level="h3">Internet 15 - Special Offer</Heading>
+          <FlexGrid>
+            <FlexGrid.Row verticalAlign="bottom" horizontalAlign="start">
+              <FlexGrid.Col xs={5}>
+                <PriceLockup
+                  topText="Starting at"
+                  size="medium"
+                  price="25"
+                  signDirection="left"
+                  rateText="/mo."
+                />
+              </FlexGrid.Col>
+              <FlexGrid.Col xs={5}>
+                <PriceLockup
+                  size="small"
+                  strikethrough
+                  ariaLabel="price without discount"
+                  price="50"
+                  signDirection="left"
+                  rateText="/mo."
+                />
+              </FlexGrid.Col>
+            </FlexGrid.Row>
+          </FlexGrid>
+          <Text size="medium">Good for basic browsing, and posting to social media.</Text>
+          <Button>Add to cart</Button>
+          <ChevronLink href="#">Learn more</ChevronLink>
+        </Box>
+      </Card>
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
+```
+
+```jsx
+<FlexGrid>
+  <FlexGrid.Row verticalAlign="bottom" horizontalAlign="start">
+    <FlexGrid.Col xs={3}>
       <PriceLockup
         topText="Starting at"
-        size="medium"
+        size="large"
         price="25"
         signDirection="left"
         rateText="/mo."
       />
     </FlexGrid.Col>
-    <FlexGrid.Col xs={1}>
+    <FlexGrid.Col xs={2}>
       <PriceLockup
-        size="small"
+        size="medium"
         strikethrough
         ariaLabel="price without discount"
         price="50"
