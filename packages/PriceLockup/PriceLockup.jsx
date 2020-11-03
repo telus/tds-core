@@ -76,6 +76,15 @@ const hasStrikethrough = strikethroughValue => {
   return undefined
 }
 
+const addStrikethroughPadding = strikethroughValue => {
+  if (strikethroughValue) {
+    return {
+      paddingBottom: '3px',
+    }
+  }
+  return undefined
+}
+
 const StyledRateText = styled.span(({ size }) => {
   if (size === 'large') {
     return large
@@ -128,6 +137,7 @@ const StyledRateTextWrapper = styled.div(({ strikethrough }) => {
   return {
     display: 'flex',
     color: strikethrough ? colorGreyRaven : undefined,
+    ...addStrikethroughPadding(strikethrough),
   }
 })
 
