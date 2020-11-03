@@ -79,7 +79,7 @@ const getVariant = ({ variant, rank }) => {
         color = colorAccessibleGreen
         border = `0.0625rem solid ${colorAccessibleGreen}`
         hover.boxShadow = `0 0 0 0.125rem ${colorAccessibleGreen}`
-        active.backgroundColor = '#F4F9F2 !important'
+        active.backgroundColor = '#F4F9F2'
         active.color = '#1F5C09'
         focus.border = '0.0625rem solid #509F33'
         focus.boxShadow = `0 0 0 0.125rem #509F33, 0 0 0 0.125rem ${colorWhite} inset, 0 0 0 0.1875rem ${colorAccessibleGreen} inset`
@@ -101,7 +101,7 @@ const getVariant = ({ variant, rank }) => {
         border = `0.0625rem solid ${colorTelusPurple}`
         hover.boxShadow = `0 0 0 0.125rem ${colorTelusPurple}`
         active.color = '#371E4F'
-        active.backgroundColor = `${colorLavenderBlush} !important`
+        active.backgroundColor = `${colorWhiteLilac}`
         focus.border = '0.0625rem solid #7C53A5'
         focus.boxShadow = `0 0 0 0.125rem #7C53A5, 0 0 0 0.125rem ${colorWhite} inset, 0 0 0 0.1875rem ${colorTelusPurple} inset`
       }
@@ -113,7 +113,7 @@ const getVariant = ({ variant, rank }) => {
       border = `0.0625rem solid ${colorCardinal}`
       hover.boxShadow = `0 0 0 0.125rem ${colorCardinal}`
       active.color = '#770F1B'
-      active.backgroundColor = `${colorWhiteLilac} !important`
+      active.backgroundColor = `${colorLavenderBlush}`
       focus.border = '0.0625rem solid #D7707B'
       focus.boxShadow = `0 0 0 0.125rem #D7707B, 0 0 0 0.125rem ${colorWhite} inset, 0 0 0 0.1875rem ${colorCardinal} inset`
       break
