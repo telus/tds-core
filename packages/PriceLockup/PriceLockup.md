@@ -13,6 +13,7 @@
 - Align the currency sign to the right when displaying prices in French
 - Use `strikethrough` prop for price savings comparison
   - If using `strikethrough` prop, it must be accompanied by corresponding `ariaLabel` to be used by screen readers
+  - `strikethrough` price must be smaller than the discounted price
 
 <img src="price-lockup_annotated.png" alt="price lockup annotated example" style="width: 100%; " />
 
@@ -44,13 +45,13 @@
 ```jsx
 <FlexGrid>
   <FlexGrid.Row>
-    <FlexGrid.Col xs={12} md={5}>
+    <FlexGrid.Col xs={12} md={9} xl={5}>
       <Card variant="defaultWithBorder">
         <Box between={3}>
           <Heading level="h3">Internet 15 - Special Offer</Heading>
           <FlexGrid>
             <FlexGrid.Row verticalAlign="bottom" horizontalAlign="start">
-              <FlexGrid.Col xs={5}>
+              <FlexGrid.Col xs={12} md={5}>
                 <PriceLockup
                   topText="Starting at"
                   size="medium"
@@ -59,7 +60,7 @@
                   rateText="/mo."
                 />
               </FlexGrid.Col>
-              <FlexGrid.Col xs={5}>
+              <FlexGrid.Col xs={12} md={5}>
                 <PriceLockup
                   size="small"
                   strikethrough
@@ -84,7 +85,7 @@
 ```jsx
 <FlexGrid>
   <FlexGrid.Row verticalAlign="bottom" horizontalAlign="start">
-    <FlexGrid.Col xs={3}>
+    <FlexGrid.Col xs={12} md={5} xl={3}>
       <PriceLockup
         topText="Starting at"
         size="large"
@@ -93,7 +94,7 @@
         rateText="/mo."
       />
     </FlexGrid.Col>
-    <FlexGrid.Col xs={2}>
+    <FlexGrid.Col xs={12} md={4} xl={2}>
       <PriceLockup
         size="medium"
         strikethrough
