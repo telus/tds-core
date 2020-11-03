@@ -30,17 +30,6 @@
 
 ```jsx
 <PriceLockup
-  size="small"
-  strikethrough
-  ariaLabel="price without discount"
-  price="50"
-  signDirection="left"
-  rateText="/month"
-/>
-```
-
-```jsx
-<PriceLockup
   size="medium"
   topText="Starting at"
   price="25"
@@ -48,6 +37,34 @@
   bottomText="$68 /month after 3 months"
   signDirection="left"
 />
+```
+
+### Example use case for strikethrough option
+
+```jsx
+<FlexGrid>
+  <FlexGrid.Row verticalAlign="bottom">
+    <FlexGrid.Col xs={2}>
+      <PriceLockup
+        topText="Starting at"
+        size="medium"
+        price="25"
+        signDirection="left"
+        rateText="/mo."
+      />
+    </FlexGrid.Col>
+    <FlexGrid.Col xs={1}>
+      <PriceLockup
+        size="small"
+        strikethrough
+        ariaLabel="price without discount"
+        price="50"
+        signDirection="left"
+        rateText="/mo."
+      />
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
 ```
 
 ### French and `signDirection`
