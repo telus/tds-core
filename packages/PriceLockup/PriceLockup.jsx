@@ -257,7 +257,6 @@ const PriceLockup = ({
 
   if (strikethrough && !ariaLabel) {
     warn('PriceLockup', 'ariaLabel must be provided with strikethrough pricing')
-    return undefined
   }
 
   return (
