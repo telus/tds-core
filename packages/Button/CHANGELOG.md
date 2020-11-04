@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/telusdigital/tds/compare/@tds/core-button@3.1.2...@tds/core-button@3.2.0) (2020-11-04)
+
+
+### Features
+
+* **core-button:** add new variants ([0ba3c31](https://github.com/telusdigital/tds/commit/0ba3c31616556d1b1b0a265f7cc0980f1e85a006))
+
+
+
+
+
 ## [3.1.2](https://github.com/telusdigital/tds/compare/@tds/core-button@3.1.1...@tds/core-button@3.1.2) (2020-09-11)
 
 **Note:** Version bump only for package @tds/core-button
