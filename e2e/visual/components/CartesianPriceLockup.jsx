@@ -52,7 +52,7 @@ const PriceLockupContainer = () => (
       </div>
     </div>
 
-    <div style={{ width: '55%' }}>
+    <div style={{ width: '25%' }}>
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         <Cartesian
           component={renderCartesianPriceLockup({ minWidth: '300px' })}
@@ -67,6 +67,29 @@ const PriceLockupContainer = () => (
             <FootnoteLink number={[1, 2]} copy="en" onClick={() => {}} />,
             <FootnoteLink number={[1, 2, 3, 4]} copy="en" onClick={() => {}} />,
           ]}
+        />
+      </div>
+    </div>
+
+    <div style={{ width: '30%' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+        <Cartesian
+          component={renderCartesianPriceLockup({ minWidth: '130px' })}
+          size="medium"
+          signDirection={['left', 'right']}
+          rateText={[undefined, 'per month']}
+          price="25"
+          strikethrough
+          ariaLabel="price without discount"
+        />
+        <Cartesian
+          component={renderCartesianPriceLockup({ minWidth: '130px' })}
+          size="small"
+          signDirection={['left', 'right']}
+          rateText={[undefined, 'per month']}
+          price="50"
+          strikethrough
+          ariaLabel="price without discount"
         />
       </div>
     </div>
