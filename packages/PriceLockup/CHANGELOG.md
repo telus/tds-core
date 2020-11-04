@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@2.1.6...@tds/core-price-lockup@2.2.0) (2020-11-04)
+
+
+### Bug Fixes
+
+* **core-price-lockup:** add padding to fix misalignment ([e535250](https://github.com/telusdigital/tds-core/commit/e535250e29877aad9e72542429b529e1886a6f19))
+
+
+### Features
+
+* **core-price-lockup:** add strikethrough option ([dbff375](https://github.com/telusdigital/tds-core/commit/dbff375debf61a038a11dd84de703c584d042a64))
+
+
+
+
+
 ## [2.1.6](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@2.1.5...@tds/core-price-lockup@2.1.6) (2020-09-11)
 
 **Note:** Version bump only for package @tds/core-price-lockup
