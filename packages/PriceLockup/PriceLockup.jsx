@@ -267,7 +267,7 @@ const PriceLockup = ({
         <StyledRateTextWrapper ref={containerRef} strikethrough={strikethrough}>
           <StyledPriceWrapper ref={rateTextWrapperRef} between={size === 'small' ? 1 : 2} inline>
             <Box between={size === 'large' ? 2 : 1} inline>
-              <A11yContent>{accessibilityText}</A11yContent>
+              {strikethrough && <A11yContent>{accessibilityText}</A11yContent>}
               {signDirection === 'left' && renderDollarSign(size)}
               <StyledPriceValue data-testid="priceValue" size={size} strikethrough={strikethrough}>
                 {price}
@@ -275,7 +275,7 @@ const PriceLockup = ({
               {signDirection === 'right' && renderDollarSign(size)}
               {!bottomText && !rateText && footnoteLinksInline && (
                 <>
-                  <A11yContent>{accessibilityText}</A11yContent>
+                  {strikethrough && <A11yContent>{accessibilityText}</A11yContent>}
                   <StyledPriceValue
                     data-testid="priceValue"
                     size={size}
