@@ -9,6 +9,7 @@ import HairlineDivider from '@tds/core-hairline-divider'
 import Box from '@tds/core-box'
 import { colorText, colorGreyRaven } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
+import A11yContent from '@tds/core-a11y-content'
 import {
   medium,
   large,
@@ -194,7 +195,7 @@ const PriceLockup = ({
   bottomText,
   footnoteLinks,
   strikethrough,
-  ariaLabel,
+  accessibilityText,
 }) => {
   const rateTextWrapperRef = useRef()
   const footnoteLinksRef = useRef()
@@ -255,8 +256,8 @@ const PriceLockup = ({
     }
   }
 
-  if (strikethrough && !ariaLabel) {
-    warn('PriceLockup', 'ariaLabel must be provided with strikethrough pricing')
+  if (strikethrough && !accessibilityText) {
+    warn('PriceLockup', 'accessibilityText must be provided with strikethrough pricing')
   }
 
   return (
@@ -266,25 +267,23 @@ const PriceLockup = ({
         <StyledRateTextWrapper ref={containerRef} strikethrough={strikethrough}>
           <StyledPriceWrapper ref={rateTextWrapperRef} between={size === 'small' ? 1 : 2} inline>
             <Box between={size === 'large' ? 2 : 1} inline>
+              <A11yContent>{accessibilityText}</A11yContent>
               {signDirection === 'left' && renderDollarSign(size)}
-              <StyledPriceValue
-                data-testid="priceValue"
-                size={size}
-                strikethrough={strikethrough}
-                aria-label={ariaLabel}
-              >
+              <StyledPriceValue data-testid="priceValue" size={size} strikethrough={strikethrough}>
                 {price}
               </StyledPriceValue>
               {signDirection === 'right' && renderDollarSign(size)}
               {!bottomText && !rateText && footnoteLinksInline && (
-                <StyledPriceValue
-                  data-testid="priceValue"
-                  size={size}
-                  strikethrough={strikethrough}
-                  aria-label={ariaLabel}
-                >
-                  {renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
-                </StyledPriceValue>
+                <>
+                  <A11yContent>{accessibilityText}</A11yContent>
+                  <StyledPriceValue
+                    data-testid="priceValue"
+                    size={size}
+                    strikethrough={strikethrough}
+                  >
+                    {renderFootnoteLinks(footnoteLinksRef, footnoteLinks, footnoteLinksInline)}
+                  </StyledPriceValue>
+                </>
               )}
             </Box>
             {rateText && (
@@ -352,7 +351,7 @@ PriceLockup.propTypes = {
    * Aria Label for strikethrough pricing, as screen readers will not pick up strikethrough. *MUST be included if using
    * strikethrough pricing.
    */
-  ariaLabel: PropTypes.string,
+  accessibilityText: PropTypes.string,
 }
 
 PriceLockup.defaultProps = {
@@ -362,7 +361,7 @@ PriceLockup.defaultProps = {
   rateText: undefined,
   footnoteLinks: undefined,
   strikethrough: false,
-  ariaLabel: undefined,
+  accessibilityText: undefined,
 }
 
 export default PriceLockup
