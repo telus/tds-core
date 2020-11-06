@@ -160,7 +160,6 @@
     "yargs": "^13.0.0"
   },
   "dependencies": {
-    "@tds/core-a11y-content": "^2.2.3",
     "prop-types": "^15.5.10"
   },
   "config": {
