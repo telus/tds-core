@@ -80,7 +80,7 @@ const PriceLockupContainer = () => (
           rateText={[undefined, 'per month']}
           price="25"
           strikethrough
-          accessibilityText="price without discount"
+          a11yText="price without discount"
         />
         <Cartesian
           component={renderCartesianPriceLockup({ minWidth: '130px' })}
@@ -89,7 +89,7 @@ const PriceLockupContainer = () => (
           rateText={[undefined, 'per month']}
           price="50"
           strikethrough
-          accessibilityText="price without discount"
+          a11yText="price without discount"
         />
       </div>
     </div>
