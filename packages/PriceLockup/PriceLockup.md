@@ -12,14 +12,14 @@
 - Use `topText` and `bottomText` props to provide additional information
 - Align the currency sign to the right when displaying prices in French
 - Use `strikethrough` prop for price savings comparison
-  - If using `strikethrough` prop, it must be accompanied by corresponding `accessibilityText` to be used by screen readers
+  - If using `strikethrough` prop, it must be accompanied by corresponding `a11yText` to be used by screen readers
   - `strikethrough` price must be smaller than the discounted price
 
 ### Strikethrough Usage Criteria
 
 - Usage: To visually show a discounted price next to a non-strikethrough price
 - Placement: Must be placed in close proximity to the product
-- If using `strikethrough` prop, it must be accompanied by corresponding `accessibilityText` to be used by screen readers
+- If using `strikethrough` prop, it must be accompanied by corresponding `a11yText` to be used by screen readers
 
 <img src="price-lockup_annotated.png" alt="price lockup annotated example" style="width: 100%; " />
 
@@ -72,7 +72,7 @@
                 <PriceLockup
                   size="small"
                   strikethrough
-                  accessibilityText="price without discount"
+                  a11yText="price without discount"
                   price="50"
                   signDirection="left"
                   rateText="/mo."
@@ -112,7 +112,7 @@
       <PriceLockup
         size="medium"
         strikethrough
-        accessibilityText="price without discount"
+        a11yText="price without discount"
         price="50"
         signDirection="left"
         rateText="/mo."
