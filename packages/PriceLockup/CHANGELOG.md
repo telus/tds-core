@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@2.2.0...@tds/core-price-lockup@2.2.1) (2020-11-09)
+
+
+### Bug Fixes
+
+* **core-price-lockup:** use a11ycontent instead of aria label ([44ef94c](https://github.com/telusdigital/tds-core/commit/44ef94cf8867a987637a7b06e4b2366be06518ec))
+* **core-price-lockup:** use s tag for sematic html ([cbda474](https://github.com/telusdigital/tds-core/commit/cbda474ce74021647acd41363c0a76c12c70c1b7))
+
+
+
+
+
 # [2.2.0](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@2.1.6...@tds/core-price-lockup@2.2.0) (2020-11-04)
 
 
