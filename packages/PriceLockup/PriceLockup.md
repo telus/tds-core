@@ -65,7 +65,7 @@
                   size="medium"
                   price="25"
                   signDirection="left"
-                  rateText="/mo."
+                  rateText="/month"
                 />
               </FlexGrid.Col>
               <FlexGrid.Col xs={12} md={5}>
@@ -75,7 +75,7 @@
                   a11yText="price without discount"
                   price="50"
                   signDirection="left"
-                  rateText="/mo."
+                  rateText="/month"
                 />
               </FlexGrid.Col>
             </FlexGrid.Row>
@@ -105,7 +105,7 @@
         size="large"
         price="25"
         signDirection="left"
-        rateText="/mo."
+        rateText="/month"
       />
     </FlexGrid.Col>
     <FlexGrid.Col xs={12} md={4} xl={2}>
@@ -115,7 +115,7 @@
         a11yText="price without discount"
         price="50"
         signDirection="left"
-        rateText="/mo."
+        rateText="/month"
       />
     </FlexGrid.Col>
   </FlexGrid.Row>
