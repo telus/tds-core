@@ -17,7 +17,7 @@ const StyledDisplayHeading = styled.h1(
     color: invert ? colorWhite : colorSecondary,
     fontSize: '2.75rem', // 44px
     lineHeight: '1.09', // 48px
-    letterSpacing: '0',
+    letterSpacing: '0px',
     ...media.from('md').css({
       fontSize: '4.5rem', // 72px
       lineHeight: '1.11', // 80px
