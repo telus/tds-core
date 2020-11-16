@@ -93,7 +93,7 @@ const StyledLargeDollarSign = styled.span({
   ...media.from('md').css({
     ...helveticaNowExtraLight,
     fontSize: '2.75rem',
-    letterSpacing: '0',
+    letterSpacing: '0px',
   }),
 })
 
