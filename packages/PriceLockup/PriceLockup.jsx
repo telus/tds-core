@@ -156,10 +156,14 @@ const StrikehroughText = styled.s({
 
 const renderDollarSign = size => {
   if (size === 'large') {
-    return <StyledLargeDollarSign data-testid="dollarSign">&#36;</StyledLargeDollarSign>
+    return (
+      <StyledLargeDollarSign aria-hidden="true" data-testid="dollarSign">
+        &#36;
+      </StyledLargeDollarSign>
+    )
   }
   return (
-    <StyledDollarSign data-testid="dollarSign" size={size}>
+    <StyledDollarSign aria-hidden="true" data-testid="dollarSign" size={size}>
       &#36;
     </StyledDollarSign>
   )
@@ -184,6 +188,8 @@ const renderBottomText = (size, bottomText, bottomTextRef) => {
   }
   return undefined
 }
+
+const formatA11yText = text => `, ${text} ,`
 
 /**
  * A component presenting TELUS product pricing information.
@@ -271,13 +277,14 @@ const PriceLockup = ({
         <StyledRateTextWrapper ref={containerRef} strikethrough={strikethrough}>
           <StyledPriceWrapper ref={rateTextWrapperRef} between={size === 'small' ? 1 : 2} inline>
             <Box between={size === 'large' ? 2 : 1} inline>
-              {strikethrough && <A11yContent>{a11yText}</A11yContent>}
+              {strikethrough && <A11yContent>{formatA11yText(a11yText)}</A11yContent>}
               {signDirection === 'left' && renderDollarSign(size)}
               {strikethrough && (
                 <StyledPriceValue
                   data-testid="priceValue"
                   size={size}
                   strikethrough={strikethrough}
+                  aria-hidden="true"
                 >
                   <StrikehroughText>{price}</StrikehroughText>
                 </StyledPriceValue>
