@@ -20,6 +20,7 @@
 - Usage: To visually show a discounted price next to a non-strikethrough price
 - Placement: Must be placed in close proximity to the product
 - If using `strikethrough` prop, it must be accompanied by corresponding `a11yText` to be used by screen readers
+- a11yText will override strikethrough price, so it must include price (ie. "was 50 dollars per month")
 
 <img src="price-lockup_annotated.png" alt="price lockup annotated example" style="width: 100%; " />
 
@@ -72,7 +73,7 @@
                 <PriceLockup
                   size="small"
                   strikethrough
-                  a11yText="price without discount"
+                  a11yText="was 50 dollars per month"
                   price="50"
                   signDirection="left"
                   rateText="/month"
