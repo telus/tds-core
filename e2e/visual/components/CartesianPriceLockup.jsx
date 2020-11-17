@@ -89,7 +89,7 @@ const PriceLockupContainer = () => (
           rateText={[undefined, 'per month']}
           price="50"
           strikethrough
-          a11yText="price without discount"
+          a11yText="was 50 dollars per month"
         />
       </div>
     </div>
