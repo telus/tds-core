@@ -500,6 +500,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                     class="c3"
                                   >
                                     <span
+                                      aria-hidden="true"
                                       class="c4"
                                       data-testid="dollarSign"
                                     >
@@ -612,6 +613,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                         class="c6"
                                       >
                                         <span
+                                          aria-hidden="true"
                                           class="c7"
                                           data-testid="dollarSign"
                                         >
@@ -688,6 +690,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                               class="c6"
                                             >
                                               <span
+                                                aria-hidden="true"
                                                 class="c7"
                                                 data-testid="dollarSign"
                                               >
@@ -763,10 +766,12 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                                 className="c6"
                                               >
                                                 <PriceLockup__StyledDollarSign
+                                                  aria-hidden="true"
                                                   data-testid="dollarSign"
                                                   size="medium"
                                                 >
                                                   <StyledComponent
+                                                    aria-hidden="true"
                                                     data-testid="dollarSign"
                                                     forwardedComponent={
                                                       Object {
@@ -794,6 +799,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                                     size="medium"
                                                   >
                                                     <span
+                                                      aria-hidden="true"
                                                       className="c7"
                                                       data-testid="dollarSign"
                                                       size="medium"
@@ -1678,6 +1684,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                     class="c3"
                                   >
                                     <span
+                                      aria-hidden="true"
                                       class="c4"
                                       data-testid="dollarSign"
                                     >
@@ -1790,6 +1797,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                         class="c6"
                                       >
                                         <span
+                                          aria-hidden="true"
                                           class="c7"
                                           data-testid="dollarSign"
                                         >
@@ -1866,6 +1874,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                               class="c6"
                                             >
                                               <span
+                                                aria-hidden="true"
                                                 class="c7"
                                                 data-testid="dollarSign"
                                               >
@@ -1941,10 +1950,12 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                                 className="c6"
                                               >
                                                 <PriceLockup__StyledDollarSign
+                                                  aria-hidden="true"
                                                   data-testid="dollarSign"
                                                   size="medium"
                                                 >
                                                   <StyledComponent
+                                                    aria-hidden="true"
                                                     data-testid="dollarSign"
                                                     forwardedComponent={
                                                       Object {
@@ -1972,6 +1983,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                                     size="medium"
                                                   >
                                                     <span
+                                                      aria-hidden="true"
                                                       className="c7"
                                                       data-testid="dollarSign"
                                                       size="medium"
@@ -2504,6 +2516,7 @@ exports[`PriceLockup renders with default props 1`] = `
           class="c5"
         >
           <span
+            aria-hidden="true"
             class="c6"
             data-testid="dollarSign"
           >
@@ -2720,6 +2733,7 @@ exports[`PriceLockup size prop is large renders 1`] = `
           class="c6"
         >
           <span
+            aria-hidden="true"
             class="c7"
             data-testid="dollarSign"
           >
@@ -2967,6 +2981,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
           class="c7"
         >
           <span
+            aria-hidden="true"
             class="c8"
             data-testid="dollarSign"
           >
@@ -3213,6 +3228,7 @@ exports[`PriceLockup size prop is small renders 1`] = `
           class="c6"
         >
           <span
+            aria-hidden="true"
             class="c7"
             data-testid="dollarSign"
           >
