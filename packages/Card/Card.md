@@ -113,6 +113,48 @@ Teams can use the `defaultWithBorder` variant to add a border to the `Card` for 
 </FlexGrid>
 ```
 
+#### Without shadows
+
+Cards with the `defaultOnlyBorder` variant are to be used to create less visual emphasis than other variants of cards with a border or shadow. It also matches the same z-index as other coloured variant cards without shadow. It should be used near forms, but not containing forms.
+
+```jsx
+<FlexGrid>
+  <FlexGrid.Row>
+    <FlexGrid.Col xs={12} md={7}>
+      <Card spacing="compact" variant="defaultOnlyBorder">
+        <FlexGrid gutter={false}>
+          <FlexGrid.Row verticalAlign="middle" horizontalAlign="center">
+            <FlexGrid.Col md={2} xs={0}>
+              <Bank size="48" />
+            </FlexGrid.Col>
+            <FlexGrid.Col md={6} xs={12} horizontalAlign="left">
+              <Box horizontal={2}>
+                <Text>Chequing account number</Text>
+                <Heading level="h3">**********1234</Heading>
+              </Box>
+            </FlexGrid.Col>
+            <FlexGrid.Col md={1} xs={12} horizontalAlign="left">
+              <Box inline between={1}>
+                <HairlineDivider vertical />
+                <Box vertical={4}>
+                  <div />
+                </Box>
+              </Box>
+            </FlexGrid.Col>
+            <FlexGrid.Col md={3} xs={12} horizontalAlign="left">
+              <Box between={2}>
+                <Link href="#">Update Card</Link>
+                <Link href="#">Delete Card</Link>
+              </Box>
+            </FlexGrid.Col>
+          </FlexGrid.Row>
+        </FlexGrid>
+      </Card>
+    </FlexGrid.Col>
+  </FlexGrid.Row>
+</FlexGrid>
+```
+
 ### Full Height Cards
 
 In some cases you want cards to match the height of their parent so that the bottom edge of the cards are aligned. This is usually needed when using cards in a `FlexGrid`. Use the `fullHeight` prop to achieve this.
