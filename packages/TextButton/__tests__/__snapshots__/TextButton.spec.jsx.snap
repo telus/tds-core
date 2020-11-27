@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextButton renders 1`] = `
+.c0 {
+  box-sizing: border-box;
+  padding: 0.25rem 0rem;
+  cursor: pointer;
+  background: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  border-radius: 0.1875rem;
+  color: #2a2c2e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  border-style: none;
+  word-wrap: break-word;
+  font-size: 1rem;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+}
+
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:active {
+  background: #d8d8d8;
+  box-shadow: 0 0 0 0.125rem #d8d8d8;
+}
+
+.c0:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.125rem #71757b;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c0 {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
+<button
+  class="c0"
+>
+  This is text
+</button>
+`;
