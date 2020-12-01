@@ -154,16 +154,20 @@ const StrikehroughText = styled.s({
   textDecoration: 'none',
 })
 
-const renderDollarSign = size => {
+const renderDollarSign = (size, a11yText) => {
   if (size === 'large') {
     return (
-      <StyledLargeDollarSign aria-hidden="true" data-testid="dollarSign">
+      <StyledLargeDollarSign aria-hidden={a11yText ? 'true' : 'false'} data-testid="dollarSign">
         &#36;
       </StyledLargeDollarSign>
     )
   }
   return (
-    <StyledDollarSign aria-hidden="true" data-testid="dollarSign" size={size}>
+    <StyledDollarSign
+      aria-hidden={a11yText ? 'true' : 'false'}
+      data-testid="dollarSign"
+      size={size}
+    >
       &#36;
     </StyledDollarSign>
   )
@@ -277,28 +281,17 @@ const PriceLockup = ({
         <StyledRateTextWrapper ref={containerRef} strikethrough={strikethrough}>
           <StyledPriceWrapper ref={rateTextWrapperRef} between={size === 'small' ? 1 : 2} inline>
             <Box between={size === 'large' ? 2 : 1} inline>
-              {strikethrough && <A11yContent>{formatA11yText(a11yText)}</A11yContent>}
-              {signDirection === 'left' && renderDollarSign(size)}
-              {strikethrough && (
-                <StyledPriceValue
-                  data-testid="priceValue"
-                  size={size}
-                  strikethrough={strikethrough}
-                  aria-hidden="true"
-                >
-                  <StrikehroughText>{price}</StrikehroughText>
-                </StyledPriceValue>
-              )}
-              {!strikethrough && (
-                <StyledPriceValue
-                  data-testid="priceValue"
-                  size={size}
-                  strikethrough={strikethrough}
-                >
-                  {price}
-                </StyledPriceValue>
-              )}
-              {signDirection === 'right' && renderDollarSign(size)}
+              {a11yText && <A11yContent>{formatA11yText(a11yText)}</A11yContent>}
+              {signDirection === 'left' && renderDollarSign(size, a11yText)}
+              <StyledPriceValue
+                data-testid="priceValue"
+                size={size}
+                strikethrough={strikethrough}
+                aria-hidden={a11yText ? 'true' : 'false'}
+              >
+                {strikethrough ? <StrikehroughText>{price}</StrikehroughText> : <>{price}</>}
+              </StyledPriceValue>
+              {signDirection === 'right' && renderDollarSign(size, a11yText)}
               {!bottomText && !rateText && footnoteLinksInline && (
                 <>
                   {strikethrough && <A11yContent>{a11yText}</A11yContent>}
@@ -313,7 +306,11 @@ const PriceLockup = ({
               )}
             </Box>
             {rateText && (
-              <StyledRateText data-testid="rateText" size={size}>
+              <StyledRateText
+                aria-hidden={a11yText ? 'true' : 'false'}
+                data-testid="rateText"
+                size={size}
+              >
                 {rateText}
                 {!bottomText &&
                   footnoteLinksInline &&
@@ -374,7 +371,7 @@ PriceLockup.propTypes = {
    */
   strikethrough: PropTypes.bool,
   /**
-   * Aria Label for strikethrough pricing, as screen readers will not pick up strikethrough. *MUST be included if using
+   * Accessibility label for strikethrough pricing, as screen readers will not pick up strikethrough. *MUST be included if using
    * strikethrough pricing.
    */
   a11yText: PropTypes.string,

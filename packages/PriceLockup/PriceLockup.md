@@ -14,6 +14,9 @@
 - Use `strikethrough` prop for price savings comparison
   - If using `strikethrough` prop, it must be accompanied by corresponding `a11yText` to be used by screen readers
   - `strikethrough` price must be smaller than the discounted price
+- Use `a11yText` prop to support screen reader when text is not reader-friendly
+  - Problem: if the component shows "\$25/mo.", screen reader will read: "dollar 25 slash mo"
+  - Solution: supply component with `a11yText="25 dollars per month"`. Screen reader will now read: "25 dollars per month" and ignore visual text
 
 ### Strikethrough Usage Criteria
 
@@ -67,6 +70,7 @@
                   price="25"
                   signDirection="left"
                   rateText="/month"
+                  a11yText="25 dollars per month"
                 />
               </FlexGrid.Col>
               <FlexGrid.Col xs={12} md={5}>
@@ -113,7 +117,7 @@
       <PriceLockup
         size="medium"
         strikethrough
-        a11yText="price without discount"
+        a11yText="was 50 dollars per month"
         price="50"
         signDirection="left"
         rateText="/month"
