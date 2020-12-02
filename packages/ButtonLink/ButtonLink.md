@@ -2,8 +2,6 @@
 
 A Button Link is a navigational element that styles itself as a button. Clicking one should navigate to a new "page".
 
-By default, Buttons will be displayed in the `primary` variant. Use primary Button Links for the main call to action on a page.
-
 ```jsx
 <ButtonLink href="#">Find out how</ButtonLink>
 ```
@@ -15,6 +13,12 @@ By default, Buttons will be displayed in the `primary` variant. Use primary Butt
 - Keep the text short and able to fit on a single line (our recommendation is 2-24 characters)
 - Make sure the button text describes an action
 - Buttons should not be disabled
+
+### OLD and NEW ButtonLink variants
+
+**Deprecated:** New ButtonLink variants have been introduced. Future projects should adopt the new variants, as the older variants will be deprecated. Avoid using both new and old variants together within the same experience.
+
+Please refer to the [Button](#/Forms?id=button) documentation for more details.
 
 ### Placing buttons on dark backgrounds
 
@@ -33,11 +37,11 @@ Use this variant with caution. There will be accessibility issues if the colour 
 Use the `A11yContent` component to create invisible text that is read out loud by screen readers.
 
 ```jsx
-<Button href="#">
+<ButtonLink href="#">
   <span>
     Shop <A11yContent>iPhone</A11yContent>Now
   </span>
-</Button>
+</ButtonLink>
 ```
 
 ### Full width option
