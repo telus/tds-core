@@ -5,12 +5,6 @@ import styled from 'styled-components'
 import { componentWithName, or, htmlElement } from '@tds/util-prop-types'
 import { StyledButton } from '@tds/core-button'
 import { links } from '@tds/shared-styles'
-import {
-  colorWhite as buttonTextColor,
-  colorPrimary as primaryBgColor,
-  colorSecondary as secondaryBgColor,
-  colorText,
-} from '@tds/core-colours'
 import { safeRest } from '@tds/util-helpers'
 
 import { warn } from '../../shared/utils/warn'
@@ -19,30 +13,6 @@ const StyledButtonLink = styled(StyledButton)(
   links.focusOutline,
   {
     textDecoration: 'none',
-  },
-  ({ variant }) => {
-    let color
-    let hoverColor
-
-    if (variant === 'primary') {
-      color = buttonTextColor
-      hoverColor = primaryBgColor
-    } else if (variant === 'secondary') {
-      color = buttonTextColor
-      hoverColor = secondaryBgColor
-    } else {
-      color = colorText
-      hoverColor = buttonTextColor
-    }
-
-    return {
-      '&:link,&:visited': {
-        color,
-      },
-      '&:hover': {
-        color: hoverColor,
-      },
-    }
   },
   ({ fullWidth }) => {
     const width = fullWidth ? '100%' : 'auto'
@@ -85,7 +55,11 @@ ButtonLink.propTypes = {
   /**
    * The style.
    */
-  variant: PropTypes.oneOf(['primary', 'secondary', 'inverted']),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'inverted', 'standard', 'brand', 'danger']),
+  /**
+   * More style.
+   */
+  rank: PropTypes.oneOf(['main', 'common']),
   /**
    * React Router Link component.
    */
@@ -111,6 +85,7 @@ ButtonLink.propTypes = {
 }
 ButtonLink.defaultProps = {
   variant: 'primary',
+  rank: 'common',
   reactRouterLinkComponent: null,
   to: null,
   href: null,
