@@ -115,7 +115,7 @@ Teams can use the `defaultWithBorder` variant to add a border to the `Card` for 
 
 ### Card with borders - no shadow
 
-Cards with border `no-shadow` variant is to be used to create less visual emphasis than other variants of cards with border or shadow. It also matches the same z-index as other coloured variant cards without shadow. It should be used near forms, but not containing forms.
+Cards with border `noShadow` variant is to be used to create less visual emphasis than other variants of cards with border or shadow. It also matches the same z-index as other coloured variant cards without shadow. It should be used near forms, but not containing forms.
 
 ```jsx
 <FlexGrid>
