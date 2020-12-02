@@ -11,8 +11,8 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
 .c0 {
   border-width: 0;
   border-radius: 4px;
-  background-color: #fff;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+  background-color: #fff;
 }
 
 @media (max-width:767px) {
@@ -45,14 +45,12 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
 
 <Card
   fullHeight={false}
-  shadow={true}
   spacing="default"
   variant="default"
 >
   <Styled(Component)
     fullHeight={false}
     horizontal={4}
-    shadow={true}
     variant="default"
     vertical={5}
   >
@@ -70,7 +68,6 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
               "border-radius: 4px;",
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "Styled(Component)",
@@ -86,7 +83,6 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
       forwardedRef={null}
       fullHeight={false}
       horizontal={4}
-      shadow={true}
       variant="default"
       vertical={5}
     >
@@ -94,7 +90,6 @@ exports[`<Card /> can be presented as one of the allowed variants 1`] = `
         className="c0"
         fullHeight={false}
         horizontal={4}
-        shadow={true}
         variant="default"
         vertical={5}
       >
@@ -176,8 +171,8 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
 .c0 {
   border-width: 0;
   border-radius: 4px;
-  background-color: #fff;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+  background-color: #fff;
 }
 
 @media (max-width:767px) {
@@ -210,14 +205,12 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
 
 <Card
   fullHeight={false}
-  shadow={true}
   spacing="default"
   variant="default"
 >
   <Styled(Component)
     fullHeight={false}
     horizontal={4}
-    shadow={true}
     variant="default"
     vertical={5}
   >
@@ -235,7 +228,6 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
               "border-radius: 4px;",
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "Styled(Component)",
@@ -251,7 +243,6 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
       forwardedRef={null}
       fullHeight={false}
       horizontal={4}
-      shadow={true}
       variant="default"
       vertical={5}
     >
@@ -259,7 +250,6 @@ exports[`<Card /> can be presented as one of the allowed variants 2`] = `
         className="c0"
         fullHeight={false}
         horizontal={4}
-        shadow={true}
         variant="default"
         vertical={5}
       >
@@ -342,7 +332,6 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
   border-width: 0;
   border-radius: 4px;
   background-color: #f2eff4;
-  box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
 }
 
 @media (max-width:767px) {
@@ -375,14 +364,12 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
 
 <Card
   fullHeight={false}
-  shadow={true}
   spacing="default"
   variant="branded"
 >
   <Styled(Component)
     fullHeight={false}
     horizontal={4}
-    shadow={true}
     variant="branded"
     vertical={5}
   >
@@ -400,7 +387,6 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
               "border-radius: 4px;",
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "Styled(Component)",
@@ -416,7 +402,6 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
       forwardedRef={null}
       fullHeight={false}
       horizontal={4}
-      shadow={true}
       variant="branded"
       vertical={5}
     >
@@ -424,7 +409,6 @@ exports[`<Card /> can be presented as one of the allowed variants 3`] = `
         className="c0"
         fullHeight={false}
         horizontal={4}
-        shadow={true}
         variant="branded"
         vertical={5}
       >
@@ -507,7 +491,6 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
   border-width: 0;
   border-radius: 4px;
   background-color: #f7f7f8;
-  box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
 }
 
 @media (max-width:767px) {
@@ -540,14 +523,12 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
 
 <Card
   fullHeight={false}
-  shadow={true}
   spacing="default"
   variant="alternative"
 >
   <Styled(Component)
     fullHeight={false}
     horizontal={4}
-    shadow={true}
     variant="alternative"
     vertical={5}
   >
@@ -565,7 +546,6 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
               "border-radius: 4px;",
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "Styled(Component)",
@@ -581,7 +561,6 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
       forwardedRef={null}
       fullHeight={false}
       horizontal={4}
-      shadow={true}
       variant="alternative"
       vertical={5}
     >
@@ -589,7 +568,6 @@ exports[`<Card /> can be presented as one of the allowed variants 4`] = `
         className="c0"
         fullHeight={false}
         horizontal={4}
-        shadow={true}
         variant="alternative"
         vertical={5}
       >
@@ -671,9 +649,9 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
 .c0 {
   border-width: 0;
   border-radius: 4px;
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
   background-color: #fff;
   border: 1px solid #d8d8d8;
-  box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
 }
 
 @media (max-width:767px) {
@@ -706,14 +684,12 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
 
 <Card
   fullHeight={false}
-  shadow={true}
   spacing="default"
   variant="defaultWithBorder"
 >
   <Styled(Component)
     fullHeight={false}
     horizontal={4}
-    shadow={true}
     variant="defaultWithBorder"
     vertical={5}
   >
@@ -731,7 +707,6 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
               "border-radius: 4px;",
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "Styled(Component)",
@@ -747,7 +722,6 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
       forwardedRef={null}
       fullHeight={false}
       horizontal={4}
-      shadow={true}
       variant="defaultWithBorder"
       vertical={5}
     >
@@ -755,7 +729,6 @@ exports[`<Card /> can be presented as one of the allowed variants 5`] = `
         className="c0"
         fullHeight={false}
         horizontal={4}
-        shadow={true}
         variant="defaultWithBorder"
         vertical={5}
       >
@@ -849,8 +822,8 @@ exports[`<Card /> full bleed image renders with an image 1`] = `
 .c0 {
   border-width: 0;
   border-radius: 4px;
-  background-color: #fff;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+  background-color: #fff;
 }
 
 .c2 {
@@ -911,13 +884,11 @@ exports[`<Card /> full bleed image renders with an image 1`] = `
     }
   }
   fullHeight={false}
-  shadow={true}
   spacing="default"
   variant="default"
 >
   <Styled(Component)
     fullHeight={false}
-    shadow={true}
     variant="default"
   >
     <StyledComponent
@@ -934,7 +905,6 @@ exports[`<Card /> full bleed image renders with an image 1`] = `
               "border-radius: 4px;",
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "Styled(Component)",
@@ -949,13 +919,11 @@ exports[`<Card /> full bleed image renders with an image 1`] = `
       }
       forwardedRef={null}
       fullHeight={false}
-      shadow={true}
       variant="default"
     >
       <Component
         className="c0"
         fullHeight={false}
-        shadow={true}
         variant="default"
       >
         <Box
@@ -1212,8 +1180,8 @@ exports[`<Card /> full bleed image renders with responsive image props 1`] = `
 .c0 {
   border-width: 0;
   border-radius: 4px;
-  background-color: #fff;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+  background-color: #fff;
 }
 
 @media (max-width:767px) {
@@ -1300,13 +1268,11 @@ exports[`<Card /> full bleed image renders with responsive image props 1`] = `
     }
   }
   fullHeight={false}
-  shadow={true}
   spacing="default"
   variant="default"
 >
   <Styled(Component)
     fullHeight={false}
-    shadow={true}
     variant="default"
   >
     <StyledComponent
@@ -1323,7 +1289,6 @@ exports[`<Card /> full bleed image renders with responsive image props 1`] = `
               "border-radius: 4px;",
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "Styled(Component)",
@@ -1338,13 +1303,11 @@ exports[`<Card /> full bleed image renders with responsive image props 1`] = `
       }
       forwardedRef={null}
       fullHeight={false}
-      shadow={true}
       variant="default"
     >
       <Component
         className="c0"
         fullHeight={false}
-        shadow={true}
         variant="default"
       >
         <Box
@@ -1598,8 +1561,8 @@ exports[`<Card /> full bleed image renders without an image 1`] = `
 .c0 {
   border-width: 0;
   border-radius: 4px;
-  background-color: #fff;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+  background-color: #fff;
 }
 
 @media (max-width:767px) {
@@ -1632,14 +1595,12 @@ exports[`<Card /> full bleed image renders without an image 1`] = `
 
 <Card
   fullHeight={false}
-  shadow={true}
   spacing="default"
   variant="default"
 >
   <Styled(Component)
     fullHeight={false}
     horizontal={4}
-    shadow={true}
     variant="default"
     vertical={5}
   >
@@ -1657,7 +1618,6 @@ exports[`<Card /> full bleed image renders without an image 1`] = `
               "border-radius: 4px;",
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "Styled(Component)",
@@ -1673,7 +1633,6 @@ exports[`<Card /> full bleed image renders without an image 1`] = `
       forwardedRef={null}
       fullHeight={false}
       horizontal={4}
-      shadow={true}
       variant="default"
       vertical={5}
     >
@@ -1681,7 +1640,6 @@ exports[`<Card /> full bleed image renders without an image 1`] = `
         className="c0"
         fullHeight={false}
         horizontal={4}
-        shadow={true}
         variant="default"
         vertical={5}
       >
@@ -1763,8 +1721,8 @@ exports[`<Card /> renders 1`] = `
 .c0 {
   border-width: 0;
   border-radius: 4px;
-  background-color: #fff;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+  background-color: #fff;
 }
 
 @media (max-width:767px) {
@@ -1817,20 +1775,18 @@ exports[`<Card /> spacing renders compact spacing 1`] = `
 .c0 {
   border-width: 0;
   border-radius: 4px;
-  background-color: #fff;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+  background-color: #fff;
 }
 
 <Card
   fullHeight={false}
-  shadow={true}
   spacing="compact"
   variant="default"
 >
   <Styled(Component)
     fullHeight={false}
     inset={3}
-    shadow={true}
     variant="default"
   >
     <StyledComponent
@@ -1845,7 +1801,6 @@ exports[`<Card /> spacing renders compact spacing 1`] = `
             "rules": Array [
               "border-width: 0;",
               "border-radius: 4px;",
-              [Function],
               [Function],
               [Function],
             ],
@@ -1863,14 +1818,12 @@ exports[`<Card /> spacing renders compact spacing 1`] = `
       forwardedRef={null}
       fullHeight={false}
       inset={3}
-      shadow={true}
       variant="default"
     >
       <Component
         className="c0"
         fullHeight={false}
         inset={3}
-        shadow={true}
         variant="default"
       >
         <Box
@@ -1948,8 +1901,8 @@ exports[`<Card /> spacing renders default spacing 1`] = `
 .c0 {
   border-width: 0;
   border-radius: 4px;
-  background-color: #fff;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+  background-color: #fff;
 }
 
 @media (max-width:767px) {
@@ -1982,14 +1935,12 @@ exports[`<Card /> spacing renders default spacing 1`] = `
 
 <Card
   fullHeight={false}
-  shadow={true}
   spacing="default"
   variant="default"
 >
   <Styled(Component)
     fullHeight={false}
     horizontal={4}
-    shadow={true}
     variant="default"
     vertical={5}
   >
@@ -2007,7 +1958,6 @@ exports[`<Card /> spacing renders default spacing 1`] = `
               "border-radius: 4px;",
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "Styled(Component)",
@@ -2023,7 +1973,6 @@ exports[`<Card /> spacing renders default spacing 1`] = `
       forwardedRef={null}
       fullHeight={false}
       horizontal={4}
-      shadow={true}
       variant="default"
       vertical={5}
     >
@@ -2031,7 +1980,6 @@ exports[`<Card /> spacing renders default spacing 1`] = `
         className="c0"
         fullHeight={false}
         horizontal={4}
-        shadow={true}
         variant="default"
         vertical={5}
       >
@@ -2113,8 +2061,8 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
 .c0 {
   border-width: 0;
   border-radius: 4px;
-  background-color: #fff;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+  background-color: #fff;
 }
 
 @media (max-width:767px) {
@@ -2137,14 +2085,12 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
 
 <Card
   fullHeight={false}
-  shadow={true}
   spacing="intermediate"
   variant="default"
 >
   <Styled(Component)
     fullHeight={false}
     inset={4}
-    shadow={true}
     variant="default"
   >
     <StyledComponent
@@ -2159,7 +2105,6 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
             "rules": Array [
               "border-width: 0;",
               "border-radius: 4px;",
-              [Function],
               [Function],
               [Function],
             ],
@@ -2177,14 +2122,12 @@ exports[`<Card /> spacing renders intermediate spacing 1`] = `
       forwardedRef={null}
       fullHeight={false}
       inset={4}
-      shadow={true}
       variant="default"
     >
       <Component
         className="c0"
         fullHeight={false}
         inset={4}
-        shadow={true}
         variant="default"
       >
         <Box
@@ -2264,8 +2207,8 @@ exports[`<Card /> spacing renders narrow spacing 1`] = `
 .c0 {
   border-width: 0;
   border-radius: 4px;
-  background-color: #fff;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+  background-color: #fff;
 }
 
 @media (max-width:767px) {
@@ -2284,14 +2227,12 @@ exports[`<Card /> spacing renders narrow spacing 1`] = `
 
 <Card
   fullHeight={false}
-  shadow={true}
   spacing="narrow"
   variant="default"
 >
   <Styled(Component)
     fullHeight={false}
     horizontal={3}
-    shadow={true}
     variant="default"
     vertical={4}
   >
@@ -2309,7 +2250,6 @@ exports[`<Card /> spacing renders narrow spacing 1`] = `
               "border-radius: 4px;",
               [Function],
               [Function],
-              [Function],
             ],
           },
           "displayName": "Styled(Component)",
@@ -2325,7 +2265,6 @@ exports[`<Card /> spacing renders narrow spacing 1`] = `
       forwardedRef={null}
       fullHeight={false}
       horizontal={3}
-      shadow={true}
       variant="default"
       vertical={4}
     >
@@ -2333,7 +2272,6 @@ exports[`<Card /> spacing renders narrow spacing 1`] = `
         className="c0"
         fullHeight={false}
         horizontal={3}
-        shadow={true}
         variant="default"
         vertical={4}
       >
