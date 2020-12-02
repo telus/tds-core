@@ -13,10 +13,14 @@ import { safeRest, handleResponsiveStyles } from '@tds/util-helpers'
 import { deprecate } from '../../shared/utils/warn'
 
 const getVariant = ({ variant }) => {
-  if (variant === 'white' || variant === 'default' || variant === 'defaultWithBorder') {
+  if (['white', 'default', 'defaultWithBorder', 'noShadow'].includes(variant)) {
     return {
+      boxShadow: variant === 'noShadow' ? undefined : '0 0 16px 0 rgba(0, 0, 0, 0.1)',
       backgroundColor: colorWhite,
-      border: variant === 'defaultWithBorder' ? `1px solid ${colorGreyGainsboro}` : undefined,
+      border:
+        variant === 'defaultWithBorder' || variant === 'noShadow'
+          ? `1px solid ${colorGreyGainsboro}`
+          : undefined,
     }
   }
   if (variant === 'lavender' || variant === 'branded') {
@@ -38,21 +42,13 @@ const deprecationWarning = deprecatedVariant => {
   }' variant.`
 }
 
-export const StyledCard = styled(({ fullHeight, shadow, ...props }) => <Box {...props} />)(
+export const StyledCard = styled(({ fullHeight, ...props }) => <Box {...props} />)(
   borders.none,
   borders.rounded,
   getVariant,
   ({ fullHeight }) => {
     if (fullHeight) {
       return { height: '100%' }
-    }
-    return {}
-  },
-  ({ shadow }) => {
-    if (shadow) {
-      return {
-        boxShadow: '0 0 16px 0 rgba(0, 0, 0, 0.1)',
-      }
     }
     return {}
   }
@@ -91,7 +87,7 @@ const StyledImageCard = styled(({ fullBleedImage, ...props }) => <div {...props}
  *
  * @version ./package.json
  */
-const Card = ({ variant, children, fullHeight, shadow, spacing, fullBleedImage, ...rest }) => {
+const Card = ({ variant, children, fullHeight, spacing, fullBleedImage, ...rest }) => {
   if (variant === 'white' || variant === 'lavendar' || variant === 'grey') {
     deprecate('@tds/core-card', deprecationWarning(variant))
   }
@@ -111,7 +107,7 @@ const Card = ({ variant, children, fullHeight, shadow, spacing, fullBleedImage, 
 
   if (fullBleedImage) {
     return (
-      <StyledCard {...safeRest(rest)} fullHeight={fullHeight} variant={variant} shadow={shadow}>
+      <StyledCard {...safeRest(rest)} fullHeight={fullHeight} variant={variant}>
         <StyledImageCard fullBleedImage={fullBleedImage}>
           <Image
             src={fullBleedImage.src}
@@ -126,13 +122,7 @@ const Card = ({ variant, children, fullHeight, shadow, spacing, fullBleedImage, 
   }
 
   return (
-    <StyledCard
-      {...safeRest(rest)}
-      fullHeight={fullHeight}
-      variant={variant}
-      shadow={shadow}
-      {...spacingProps}
-    >
+    <StyledCard {...safeRest(rest)} fullHeight={fullHeight} variant={variant} {...spacingProps}>
       {children}
     </StyledCard>
   )
@@ -142,7 +132,7 @@ Card.propTypes = {
   /**
    * The style.
    *
-   * @since 2.1.0  added `default`, `defaultWithBorder`, `branded`, `alternative`.
+   * @since 2.1.0  added `default`, `defaultWithBorder`, `branded`, `alternative`, `noShadow`.
    *
    * **Deprecated:** `white`, `lavendar`,`grey`
    */
@@ -172,10 +162,6 @@ Card.propTypes = {
     position: responsiveProps(PropTypes.oneOf(['left', 'right', 'top', 'bottom', 'none']))
       .isRequired,
   }),
-  /**
-   * Sets the `Card`'s `shadow` enabled by default.
-   */
-  shadow: PropTypes.bool,
 }
 
 Card.defaultProps = {
@@ -183,7 +169,6 @@ Card.defaultProps = {
   fullHeight: false,
   spacing: 'default',
   fullBleedImage: undefined,
-  shadow: true,
 }
 
 export default Card
