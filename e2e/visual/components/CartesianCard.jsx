@@ -23,6 +23,7 @@ const CartesianContainer = () => (
         'branded',
         'alternative',
         'defaultWithBorder',
+        'defaultOnlyBorder',
       ]}
       fullHeight={[true, false]}
       spacing={['default', 'narrow', 'compact', 'intermediate']}
