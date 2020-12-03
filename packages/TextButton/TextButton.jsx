@@ -23,6 +23,7 @@ const baseButton = {
   '&:active': {
     background: colorGreyGainsboro,
     boxShadow: `0 0 0 0.125rem ${colorGreyGainsboro}`,
+    textDecoration: 'underline',
   },
   '&:focus': {
     outline: 'none !important',
