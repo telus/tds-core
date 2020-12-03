@@ -7,7 +7,10 @@ import { StyledButton } from '@tds/core-button'
 import { links } from '@tds/shared-styles'
 import { safeRest } from '@tds/util-helpers'
 
-import { warn } from '../../shared/utils/warn'
+import { warn, deprecate } from '../../shared/utils/warn'
+
+const DEFAULT_VARIANT = 'primary'
+const VALID_VARIANTS = ['primary', 'secondary', 'inverted', 'standard', 'brand']
 
 const StyledButtonLink = styled(StyledButton)(
   links.focusOutline,
@@ -24,6 +27,17 @@ const StyledButtonLink = styled(StyledButton)(
   }
 )
 
+const isDeprecatedButtonVariant = variant => {
+  return ['primary', 'secondary'].indexOf(variant) !== -1
+}
+
+const validateVariant = variant => {
+  if (VALID_VARIANTS.indexOf(variant) === -1) {
+    return DEFAULT_VARIANT
+  }
+  return variant
+}
+
 /**
  * A link that is styled as a button.
  *
@@ -35,11 +49,18 @@ const ButtonLink = forwardRef(
       warn('Link Button', 'The props `reactRouterLinkComponent` and `to` must be used together.')
     }
 
+    if (isDeprecatedButtonVariant(variant)) {
+      deprecate(
+        '@tds/core-button-link',
+        "The 'primary' and 'secondary' variants have been deprecated. Please see https://tds.telus.com/components/index.html#/Links?id=buttonlink for more details."
+      )
+    }
+
     return (
       <StyledButtonLink
         {...safeRest(rest)}
         as={reactRouterLinkComponent || 'a'}
-        variant={variant}
+        variant={validateVariant(variant)}
         ref={ref}
         fullWidth={fullWidth}
       >
@@ -55,7 +76,7 @@ ButtonLink.propTypes = {
   /**
    * The style.
    */
-  variant: PropTypes.oneOf(['primary', 'secondary', 'inverted', 'standard', 'brand']),
+  variant: PropTypes.oneOf(VALID_VARIANTS),
   /**
    * More style.
    */
@@ -84,7 +105,7 @@ ButtonLink.propTypes = {
     .isRequired,
 }
 ButtonLink.defaultProps = {
-  variant: 'primary',
+  variant: DEFAULT_VARIANT,
   rank: 'common',
   reactRouterLinkComponent: null,
   to: null,
