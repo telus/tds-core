@@ -31,6 +31,8 @@ exports[`TextButton renders 1`] = `
 .c0:active {
   background: #d8d8d8;
   box-shadow: 0 0 0 0.125rem #d8d8d8;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c0:focus {
