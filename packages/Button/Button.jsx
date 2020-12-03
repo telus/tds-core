@@ -151,8 +151,8 @@ export const ButtonTextWrapper = styled.span(({ isOldButton }) => ({
   marginTop: !isOldButton && '-1px',
 }))
 
-const isOldButton = variant => {
-  return ['primary', 'secondary'].includes(variant)
+const isDeprecatedButtonVariant = variant => {
+  return ['primary', 'secondary'].indexOf(variant) !== -1
 }
 
 /**
@@ -161,7 +161,7 @@ const isOldButton = variant => {
 const Button = forwardRef(({ type, variant, rank, children, ...rest }, ref) => {
   const restNoDisabled = preventDisabling(rest)
 
-  if (isOldButton(variant)) {
+  if (isDeprecatedButtonVariant(variant)) {
     deprecate(
       '@tds/core-button',
       "The 'primary' and 'secondary' variants have been deprecated. Please see https://tds.telus.com/components/index.html#/Forms?id=button for more details."
@@ -170,7 +170,9 @@ const Button = forwardRef(({ type, variant, rank, children, ...rest }, ref) => {
 
   return (
     <StyledButton {...safeRest(restNoDisabled)} variant={variant} rank={rank} type={type} ref={ref}>
-      <ButtonTextWrapper isOldButton={isOldButton(variant)}>{children}</ButtonTextWrapper>
+      <ButtonTextWrapper isOldButton={isDeprecatedButtonVariant(variant)}>
+        {children}
+      </ButtonTextWrapper>
     </StyledButton>
   )
 })
