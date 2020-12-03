@@ -28,6 +28,9 @@ describe('<Card />', () => {
 
     card = doMount({ variant: 'defaultWithBorder' })
     expect(card).toMatchSnapshot()
+
+    card = doMount({ variant: 'defaultOnlyBorder' })
+    expect(card).toMatchSnapshot()
   })
 
   it('renders with full height', () => {
