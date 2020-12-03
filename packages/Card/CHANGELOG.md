@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/telusdigital/tds/compare/@tds/core-card@2.4.3...@tds/core-card@2.5.0) (2020-12-03)
+
+
+### Features
+
+* **core-card:** add variant to remove shadows ([ec1acaf](https://github.com/telusdigital/tds/commit/ec1acafa3a3521a1ea8a9b0009393286212a3a1b))
+
+
+
+
+
 ## [2.4.3](https://github.com/telusdigital/tds/compare/@tds/core-card@2.4.2...@tds/core-card@2.4.3) (2020-09-21)
 
 
