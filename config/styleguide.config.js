@@ -273,6 +273,7 @@ module.exports = {
       components() {
         return [
           path.resolve('packages/Button/Button.jsx'),
+          path.resolve('packages/TextButton/TextButton.jsx'),
           path.resolve('packages/Input/Input.jsx'),
           path.resolve('packages/Checkbox/Checkbox.jsx'),
           path.resolve('packages/Radio/Radio.jsx'),
@@ -282,7 +283,6 @@ module.exports = {
           path.resolve('packages/TextArea/TextArea.jsx'),
           path.resolve('packages/InputFeedback/InputFeedback.jsx'),
           path.resolve('packages/Tooltip/Tooltip.jsx'),
-          path.resolve('packages/TextButton/TextButton.jsx'),
         ]
       },
     },
