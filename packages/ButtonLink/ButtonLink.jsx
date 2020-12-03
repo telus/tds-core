@@ -55,7 +55,7 @@ ButtonLink.propTypes = {
   /**
    * The style.
    */
-  variant: PropTypes.oneOf(['primary', 'secondary', 'inverted', 'standard', 'brand', 'danger']),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'inverted', 'standard', 'brand']),
   /**
    * More style.
    */

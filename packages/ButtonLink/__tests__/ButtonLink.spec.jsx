@@ -66,7 +66,11 @@ describe('ButtonLink', () => {
   })
 
   it('can be presented as one of the allowed variants', () => {
-    const link = render(<ButtonLink variant="standard">Go home</ButtonLink>)
+    const link = render(
+      <ButtonLink variant="standard" rank="main">
+        Go home
+      </ButtonLink>
+    )
 
     expect(link).toMatchSnapshot()
   })
