@@ -209,9 +209,8 @@ exports[`ButtonLink can be presented as one of the allowed variants 2`] = `
   justify-content: center;
   text-align: center;
   min-height: 3.25rem;
-  background-color: #fff;
-  color: #2B8000;
-  border: 0.0625rem solid #2B8000;
+  background-color: #2B8000;
+  color: #fff;
   -webkit-transition: background 0.2s,color 0.2s,border 0.2s ease;
   transition: background 0.2s,color 0.2s,border 0.2s ease;
   -webkit-text-decoration: none;
@@ -225,18 +224,18 @@ exports[`ButtonLink can be presented as one of the allowed variants 2`] = `
 }
 
 .c0:hover {
-  box-shadow: 0 0 0 0.125rem #2B8000;
+  background-color: #1F5C09;
+  box-shadow: 0 0 0 0.125rem #1F5C09;
 }
 
 .c0:active {
-  background-color: #F4F9F2;
-  color: #1F5C09;
+  background-color: #163E06 !important;
 }
 
 .c0:focus {
   outline: none !important;
-  border: 0.0625rem solid #509F33;
-  box-shadow: 0 0 0 0.125rem #509F33,0 0 0 0.125rem #fff inset,0 0 0 0.1875rem #2B8000 inset;
+  background-color: #1F5C09;
+  box-shadow: 0 0 0 0.1875rem #509F33,0 0 0 0.125rem #fff inset;
 }
 
 .c0:focus {
