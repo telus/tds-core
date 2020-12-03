@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/telusdigital/tds/compare/@tds/core-button-link@3.1.3...@tds/core-button-link@3.2.0) (2020-12-03)
+
+
+### Features
+
+* **core-button-link:** add new variants and ranks ([6de5a22](https://github.com/telusdigital/tds/commit/6de5a22c8d26b68d38054dd978ce6374cdee9fe4))
+
+
+
+
+
 ## [3.1.3](https://github.com/telusdigital/tds/compare/@tds/core-button-link@3.1.2...@tds/core-button-link@3.1.3) (2020-11-04)
 
 **Note:** Version bump only for package @tds/core-button-link
