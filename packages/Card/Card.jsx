@@ -13,12 +13,12 @@ import { safeRest, handleResponsiveStyles } from '@tds/util-helpers'
 import { deprecate } from '../../shared/utils/warn'
 
 const getVariant = ({ variant }) => {
-  if (['white', 'default', 'defaultWithBorder', 'noShadow'].includes(variant)) {
+  if (['white', 'default', 'defaultWithBorder', 'defaultOnlyBorder'].indexOf(variant) >= 0) {
     return {
-      boxShadow: variant === 'noShadow' ? undefined : '0 0 16px 0 rgba(0, 0, 0, 0.1)',
+      boxShadow: variant === 'defaultOnlyBorder' ? undefined : '0 0 16px 0 rgba(0, 0, 0, 0.1)',
       backgroundColor: colorWhite,
       border:
-        variant === 'defaultWithBorder' || variant === 'noShadow'
+        variant === 'defaultWithBorder' || variant === 'defaultOnlyBorder'
           ? `1px solid ${colorGreyGainsboro}`
           : undefined,
     }
@@ -132,7 +132,7 @@ Card.propTypes = {
   /**
    * The style.
    *
-   * @since 2.1.0  added `default`, `defaultWithBorder`, `branded`, `alternative`, `noShadow`.
+   * @since 2.5.0  added `defaultOnlyBorder`.
    *
    * **Deprecated:** `white`, `lavendar`,`grey`
    */
@@ -144,6 +144,7 @@ Card.propTypes = {
     'branded',
     'alternative',
     'defaultWithBorder',
+    'defaultOnlyBorder',
   ]),
   /**
    * The content. Can be text, any HTML element, or any component.
