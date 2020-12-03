@@ -18,7 +18,7 @@ const CartesianButtonLink = props => (
     <Cartesian
       {...props}
       component={ButtonLink}
-      variant={['standard', 'brand', 'danger', 'inverted']}
+      variant={['standard', 'brand', 'inverted']}
       rank={['common', 'main']}
       href="http://tds.telus.com"
       children="NEW variants and ranks"
