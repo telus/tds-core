@@ -1,6 +1,5 @@
 import React from 'react'
 import { shallow, render } from 'enzyme'
-// import 'jest-styled-components'
 
 import A11yContent from '../../A11yContent'
 
