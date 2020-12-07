@@ -59,6 +59,15 @@ exports[`ButtonLink can be presented as one of the allowed fullwidth 1`] = `
 
 .c0:link,
 .c0:visited {
+  color: #fff;
+}
+
+.c0:hover {
+  color: #2B8000;
+}
+
+.c0:link,
+.c0:visited {
   width: 100%;
 }
 
@@ -142,6 +151,15 @@ exports[`ButtonLink can be presented as one of the allowed variants 1`] = `
 
 .c0:focus {
   outline: auto 5px -webkit-focus-ring-color;
+}
+
+.c0:link,
+.c0:visited {
+  color: #fff;
+}
+
+.c0:hover {
+  color: #4b286d;
 }
 
 .c0:link,
@@ -244,6 +262,15 @@ exports[`ButtonLink can be presented as one of the allowed variants 2`] = `
 
 .c0:link,
 .c0:visited {
+  color: #fff;
+}
+
+.c0:hover {
+  color: #fff;
+}
+
+.c0:link,
+.c0:visited {
   width: auto;
 }
 
@@ -327,6 +354,15 @@ exports[`ButtonLink renders 1`] = `
 
 .c0:focus {
   outline: auto 5px -webkit-focus-ring-color;
+}
+
+.c0:link,
+.c0:visited {
+  color: #fff;
+}
+
+.c0:hover {
+  color: #2B8000;
 }
 
 .c0:link,
