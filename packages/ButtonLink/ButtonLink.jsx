@@ -6,17 +6,75 @@ import { componentWithName, or, htmlElement } from '@tds/util-prop-types'
 import { StyledButton } from '@tds/core-button'
 import { links } from '@tds/shared-styles'
 import { safeRest } from '@tds/util-helpers'
+import {
+  colorWhite as buttonTextColor,
+  colorPrimary as primaryBgColor,
+  colorSecondary as secondaryBgColor,
+  colorText,
+} from '@tds/core-colours'
 
 import { warn, deprecate } from '../../shared/utils/warn'
 
-const DEFAULT_VARIANT = 'primary'
-const VALID_VARIANTS = ['primary', 'secondary', 'inverted', 'standard', 'brand']
+const VARIANT_PRIMARY = 'primary'
+const VARIANT_SECONDARY = 'secondary'
+const VARIANT_INVERTED = 'inverted'
+const VARIANT_STANDARD = 'standard'
+const VARIANT_BRAND = 'brand'
+
+const RANK_MAIN = 'main'
+const RANK_COMMON = 'common'
+
+const DEFAULT_VARIANT = VARIANT_PRIMARY
+const VALID_VARIANTS = [
+  VARIANT_PRIMARY,
+  VARIANT_SECONDARY,
+  VARIANT_INVERTED,
+  VARIANT_STANDARD,
+  VARIANT_BRAND,
+]
+
+const getColorByVariantAndRank = (variant, rank) => {
+  if (variant === VARIANT_PRIMARY || variant === VARIANT_SECONDARY) {
+    return buttonTextColor
+  }
+  if (variant === VARIANT_STANDARD) {
+    return rank === RANK_MAIN ? buttonTextColor : primaryBgColor
+  }
+  if (variant === VARIANT_BRAND) {
+    return rank === RANK_MAIN ? buttonTextColor : secondaryBgColor
+  }
+  return colorText
+}
+const getHoverColorByVariantAndRank = (variant, rank) => {
+  if (variant === VARIANT_PRIMARY || (variant === VARIANT_STANDARD && rank === RANK_COMMON)) {
+    return primaryBgColor
+  }
+  if (variant === VARIANT_SECONDARY || (variant === VARIANT_BRAND && rank === RANK_COMMON)) {
+    return secondaryBgColor
+  }
+  return buttonTextColor
+}
+
+const setColorsForHoverVisitedAndLink = ({ variant, rank }) => {
+  const color = getColorByVariantAndRank(variant, rank)
+  const hoverColor = getHoverColorByVariantAndRank(variant, rank)
+
+  return {
+    '&:link,&:visited': {
+      color,
+    },
+    '&:hover': {
+      color: hoverColor,
+    },
+  }
+}
 
 const StyledButtonLink = styled(StyledButton)(
   links.focusOutline,
   {
     textDecoration: 'none',
   },
+  setColorsForHoverVisitedAndLink,
   ({ fullWidth }) => {
     const width = fullWidth ? '100%' : 'auto'
     return {
