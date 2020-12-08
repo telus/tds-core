@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.1](https://github.com/telusdigital/tds/compare/@tds/core-button-link@3.2.0...@tds/core-button-link@3.2.1) (2020-12-08)
+
+
+### Bug Fixes
+
+* **core-button-link:** update design to set visited and link behavior ([b8b0a63](https://github.com/telusdigital/tds/commit/b8b0a630f83c95bdd23733556c69ee2a70373a87))
+
+
+
+
+
 # [3.2.0](https://github.com/telusdigital/tds/compare/@tds/core-button-link@3.1.3...@tds/core-button-link@3.2.0) (2020-12-03)
 
 
