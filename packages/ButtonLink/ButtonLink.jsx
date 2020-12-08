@@ -33,7 +33,7 @@ const VALID_VARIANTS = [
   VARIANT_BRAND,
 ]
 
-const getColorByVariantAndRank = (variant, rank) => {
+const getVisitedColor = (variant, rank) => {
   if (variant === VARIANT_PRIMARY || variant === VARIANT_SECONDARY) {
     return buttonTextColor
   }
@@ -45,7 +45,8 @@ const getColorByVariantAndRank = (variant, rank) => {
   }
   return colorText
 }
-const getHoverColorByVariantAndRank = (variant, rank) => {
+
+const getHoverColor = (variant, rank) => {
   if (variant === VARIANT_PRIMARY || (variant === VARIANT_STANDARD && rank === RANK_COMMON)) {
     return primaryBgColor
   }
@@ -55,16 +56,20 @@ const getHoverColorByVariantAndRank = (variant, rank) => {
   return buttonTextColor
 }
 
-const setColorsForHoverVisitedAndLink = ({ variant, rank }) => {
-  const color = getColorByVariantAndRank(variant, rank)
-  const hoverColor = getHoverColorByVariantAndRank(variant, rank)
+const hoverStyles = ({ variant, rank }) => {
+  const hoverColor = getHoverColor(variant, rank)
+  return {
+    '&:hover': {
+      color: hoverColor,
+    },
+  }
+}
 
+const visitedStyles = ({ variant, rank }) => {
+  const color = getVisitedColor(variant, rank)
   return {
     '&:link,&:visited': {
       color,
-    },
-    '&:hover': {
-      color: hoverColor,
     },
   }
 }
@@ -74,7 +79,8 @@ const StyledButtonLink = styled(StyledButton)(
   {
     textDecoration: 'none',
   },
-  setColorsForHoverVisitedAndLink,
+  visitedStyles,
+  hoverStyles,
   ({ fullWidth }) => {
     const width = fullWidth ? '100%' : 'auto'
     return {
