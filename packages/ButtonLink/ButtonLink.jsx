@@ -142,7 +142,7 @@ ButtonLink.propTypes = {
    */
   variant: PropTypes.oneOf(VALID_VARIANTS),
   /**
-   * More style.
+   * Used to specify emphasis. Use 'common' for low-medium emphasis, and use 'main' for the most emphasis
    */
   rank: PropTypes.oneOf(['main', 'common']),
   /**
