@@ -189,7 +189,7 @@ Button.propTypes = {
    */
   variant: PropTypes.oneOf(['primary', 'secondary', 'inverted', 'standard', 'brand', 'danger']),
   /**
-   * More style.
+   * Used to specify emphasis. Use 'common' for low-medium emphasis, and use 'main' for the most emphasis
    */
   rank: PropTypes.oneOf(['main', 'common']),
   /**
