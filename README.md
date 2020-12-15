@@ -32,12 +32,11 @@ TDS is intended for use by TELUS employees and approved vendors.
 
 The following group are the active maintainers of this project, and have merge rights accordingly. Please reach out to them if you have questions or need support for your contribution to the TELUS Design System.
 
-| Member           | Role          | Slack           | GitHub        |
-| ---------------- | ------------- | --------------- | ------------- |
-| Varun Jain       | Product Owner | @varunjain      | @varunj90     |
-| Jordan Raffoul   | Developer     | @Jordan Raffoul | @jraff        |
-| Christina Lo     | Design Lead   | @Christina L.   | @Christina-Lo |
-| Donna Vitan      | Design        | @donnavitan     | @donnavitan   |
+| Member         | Role        | Slack           | GitHub        |
+| -------------- | ----------- | --------------- | ------------- |
+| Jordan Raffoul | Developer   | @Jordan Raffoul | @jraff        |
+| Christina Lo   | Design Lead | @Christina L.   | @Christina-Lo |
+| Donna Vitan    | Design      | @donnavitan     | @donnavitan   |
 
 ## Contributors
 
@@ -130,6 +129,7 @@ The following group are the active maintainers of this project, and have merge r
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [circle-url]: https://circleci.com/gh/telus/tds-core
