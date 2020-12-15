@@ -1,79 +1,67 @@
-version: 2.0
-
-id: tds-core
-
+version: '4.0'
+uid: 66407038
 about:
   title: tds-core
   description: TELUS Design System core components
-
+  alias: tds-core
+  type: module
+  target: npm
 contacts:
   - type: Product Owner
     name: Varun Jain
     slack: varunjain
     github: varunj90
     email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
-
-  - type: Developer
-    name: Enrico Sacchetti
-    slack: enrico
-    github: theetrain
-    email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
-
-  - type: Developer
-    name: Marco Donnici
-    slack: marcod
-    github: marcod1419
-    email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
-
   - type: Developer
     name: Jordan Raffoul
     slack: Jordan Raffoul
     github: jraff
     email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
-
   - type: Designer
     name: Christina Lo
     slack: Christina L.
     github: Christina-Lo
     email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
-
   - type: Designer
     name: Donna Vitan
     slack: donnavitan
     github: donnavitan
     email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
-
   - type: Development Team
     name: TDS Core Team
     email: n6k7q6p0r9m4c1l4@telusdigital.slack.com
-
-  - type: Tribe
-    name: Digital Platform & Services
-    slackChannel: dps-all
-    email: not.applicable.see.slack.channel@telus.com
-
-schedule:
-  launch: 2016-09-06T00:00:00.000Z
-  v0.x-sunset: 2019-07-01T00:00:00.000Z
-  v1.0-sunset: 2019-09-01T00:00:00.000Z
-  v2.0-sunset: 2020-02-01T00:00:00.000Z
-
+references:
+  - title: Github Issue Tracker
+    description: >-
+      TDS Core Issue Tracker board. Post bug reports or feature suggestions
+      here!
+    uri: 'https://github.com/telus/tds-core/issues'
+  - type: git
+    title: Source Code
+    uri: 'https://github.com/telus/tds-core'
 environments:
   - type: git
     title: Source Code
-    uri: https://github.com/telus/tds-core
-
+    uri: 'https://github.com/telus/tds-core'
   - type: production
     title: TDS Homepage
-    description: TDS Homepage, featuring documentation on contributing to TDS or interacting with TDS
-    uri: https://tds.telus.com/
-
+    description: >-
+      TDS Homepage, featuring documentation on contributing to TDS or
+      interacting with TDS
+    uri: 'https://tds.telus.com/'
   - type: production
     title: TDS Core Components
     description: TDS Core Components documentation
-    uri: https://tds.telus.com/components/index.html
-
-references:
-  - title: Github Issue Tracker
-    description: TDS Core Issue Tracker board. Post bug reports or feature suggestions here!
-    uri: https://github.com/telus/tds-core/issues
+    uri: 'https://tds.telus.com/components/index.html'
+  - type: home
+    title: Homepage
+    uri: 'https://tds.telus.com/'
+schedule:
+  - type: launch
+    timestamp: 2016-09-06T00:00:00.000Z
+  - type: v0.x-sunset
+    timestamp: 2019-07-01T00:00:00.000Z
+  - type: v1.0-sunset
+    timestamp: 2019-09-01T00:00:00.000Z
+  - type: v2.0-sunset
+    timestamp: 2020-02-01T00:00:00.000Z
