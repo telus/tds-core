@@ -193,8 +193,6 @@ const renderBottomText = (size, bottomText, bottomTextRef) => {
   return undefined
 }
 
-const formatA11yText = text => `, ${text} ,`
-
 /**
  * A component presenting TELUS product pricing information.
  * @version ./package.json
@@ -281,7 +279,7 @@ const PriceLockup = ({
         <StyledRateTextWrapper ref={containerRef} strikethrough={strikethrough}>
           <StyledPriceWrapper ref={rateTextWrapperRef} between={size === 'small' ? 1 : 2} inline>
             <Box between={size === 'large' ? 2 : 1} inline>
-              {a11yText && <A11yContent>{formatA11yText(a11yText)}</A11yContent>}
+              {a11yText && <A11yContent>{a11yText}</A11yContent>}
               {signDirection === 'left' && renderDollarSign(size, a11yText)}
               <StyledPriceValue
                 data-testid="priceValue"
