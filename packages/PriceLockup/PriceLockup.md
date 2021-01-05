@@ -35,6 +35,7 @@
   signDirection="left"
   rateText="/month"
   bottomText="On a 2-year Easy Share Premium Plus Plan"
+  a11yText="25 dollars per month"
   footnoteLinks={<FootnoteLink number={[7, 8]} onClick={(number, ref) => {}} copy="en" />}
 />
 ```
