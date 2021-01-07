@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@2.2.1...@tds/core-price-lockup@2.3.0) (2021-01-07)
+
+
+### Bug Fixes
+
+* **core-price-lockup:** update screen reader support ([958b390](https://github.com/telusdigital/tds-core/commit/958b390bb32b7c3a3882c7ba2debef1680a69753))
+
+
+### Features
+
+* **core-price-lockup:** add a11y support to non strikethrough ([098d594](https://github.com/telusdigital/tds-core/commit/098d594ae56477aa6ea4193d601795982a6067d1))
+
+
+
+
+
 ## [2.2.1](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@2.2.0...@tds/core-price-lockup@2.2.1) (2020-11-09)
 
 
