@@ -8,28 +8,18 @@ import { warn } from '../../../shared/utils/warn'
 jest.mock('../../../shared/utils/warn')
 
 describe('FeedbackIcon', () => {
-  const defaultProps = { copy: { a11yText: 'Hello' } }
+  const defaultProps = { copy: { a11yText: 'Hello' }, width: 20, height: 20 }
 
   const doShallow = props => shallow(<FeedbackIcon {...defaultProps} {...props} />)
 
   it('renders', () => {
     const feedbackIcon = render(
-      <FeedbackIcon copy={{ a11yText: 'Hello' }}>
+      <FeedbackIcon copy={{ a11yText: 'Hello' }} width={20} height={20}>
         <svg />
       </FeedbackIcon>
     )
 
     expect(feedbackIcon).toMatchSnapshot()
-  })
-
-  it('to render an svg tag', () => {
-    const feedbackIcon = doShallow({
-      children: <path />,
-      id: 'the-id',
-      'data-some-attr': 'some value',
-    })
-
-    expect(feedbackIcon.type()).toEqual('svg')
   })
 
   it('has an img="role" attribute', () => {

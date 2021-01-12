@@ -1,13 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+
 import { getCopy, safeRest } from '@tds/util-helpers'
 
 import { warn } from '../../shared/utils/warn'
 
+const StyledSVG = styled.svg(({ width, height }) => ({
+  width: `${width}rem`,
+  height: `${height}rem`,
+}))
 /**
  * @version ./package.json
  */
-const FeedbackIcon = ({ copy, copyDictionary, optionalText, children, ...rest }) => {
+const FeedbackIcon = ({ width, height, copy, copyDictionary, optionalText, children, ...rest }) => {
   if (rest.onClick) {
     warn(
       'FeedbackIcon',
@@ -25,10 +31,16 @@ const FeedbackIcon = ({ copy, copyDictionary, optionalText, children, ...rest })
   }
 
   return (
-    <svg {...safeRest(rest)} role="img" aria-hidden={a11yText === '' ? true : undefined}>
+    <StyledSVG
+      {...safeRest(rest)}
+      role="img"
+      aria-hidden={a11yText === '' ? true : undefined}
+      width={`${width / 16}rem`}
+      height={`${height / 16}rem`}
+    >
       {a11yText && <title>{a11yText}</title>}
       {children}
-    </svg>
+    </StyledSVG>
   )
 }
 
@@ -51,6 +63,10 @@ FeedbackIcon.propTypes = {
   optionalText: PropTypes.bool,
   /** @ignore */
   children: PropTypes.node.isRequired,
+  /** @ignore */
+  width: PropTypes.number.isRequired,
+  /** @ignore */
+  height: PropTypes.number.isRequired,
 }
 
 FeedbackIcon.defaultProps = {
