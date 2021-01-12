@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { ThemeProvider } from 'styled-components'
+
 import { responsiveProps } from '@tds/util-prop-types'
 import { handleResponsiveStyles } from '@tds/util-helpers'
+import A11yContent from '@tds/core-a11y-content'
 
 import { colorShark, colorTelusPurple, colorWhite, colorAccessibleGreen } from '@tds/core-colours'
 
@@ -11,8 +13,8 @@ import StyledInteractiveIconSVG from './shared/StyledInteractiveIconSVG'
 
 const iconSize = props =>
   handleResponsiveStyles({ size: props.size }, ({ size }) => ({
-    width: size === 20 ? '20px' : '24px',
-    height: size === 20 ? '20px' : '24px',
+    width: size === 20 ? '1.25rem' : '1.5rem',
+    height: size === 20 ? '1.25rem' : '1.5rem',
   }))
 
 export const StyledLimitedInteractiveIconSVG = styled(StyledInteractiveIconSVG)(
@@ -61,7 +63,10 @@ const getTheme = variant => {
  */
 const Limited = ({ variant, children, size }) => (
   <ThemeProvider theme={getTheme(variant)} size={size}>
-    {children}
+    <>
+      <A11yContent>Test</A11yContent>
+      {children}
+    </>
   </ThemeProvider>
 )
 

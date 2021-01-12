@@ -28,8 +28,8 @@ export const StyledDependentSVG = styled.svg.attrs({
 })(
   positionStyles,
   ({ paragraphSize }) => ({
-    width: paragraphSize === 'small' ? 20 : 24,
-    height: paragraphSize === 'small' ? 20 : 24,
+    width: paragraphSize === 'small' ? '1.25rem' : '1.5rem',
+    height: paragraphSize === 'small' ? '1.25rem' : '1.5rem',
   }),
   ({ color }) => {
     let fill
