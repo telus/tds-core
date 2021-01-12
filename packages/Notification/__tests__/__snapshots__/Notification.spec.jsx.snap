@@ -948,6 +948,11 @@ exports[`<Notification /> can have a variant 1`] = `
 `;
 
 exports[`<Notification /> can have a variant 2`] = `
+.c9 {
+  width: 1.25remrem;
+  height: 1.25remrem;
+}
+
 .c4 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -1013,7 +1018,7 @@ exports[`<Notification /> can have a variant 2`] = `
   width: 100%;
 }
 
-.c9 {
+.c10 {
   color: #2a2c2e;
   word-wrap: break-word;
   padding: 0;
@@ -1029,7 +1034,7 @@ exports[`<Notification /> can have a variant 2`] = `
   text-align: left;
 }
 
-.c9 sup {
+.c10 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -1904,21 +1909,59 @@ exports[`<Notification /> can have a variant 2`] = `
                                                                                                   viewBox="0 0 20 20"
                                                                                                   width="20"
                                                                                                 >
-                                                                                                  <svg
-                                                                                                    height="20"
+                                                                                                  <FeedbackIcon__StyledSVG
+                                                                                                    height="1.25rem"
                                                                                                     role="img"
                                                                                                     viewBox="0 0 20 20"
-                                                                                                    width="20"
+                                                                                                    width="1.25rem"
                                                                                                   >
-                                                                                                    <title>
-                                                                                                      Success
-                                                                                                    </title>
-                                                                                                    <path
-                                                                                                      d="M0 10C0 4.48 4.48 0 10 0s10 4.48 10 10-4.48 10-10 10S0 15.52 0 10zm8.127 4.673a.633.633 0 0 0 .092-.105l7.734-8.572a.693.693 0 0 0-.009-.925.595.595 0 0 0-.882-.001l-7.514 8.055-2.612-2.8a.596.596 0 0 0-.88 0 .706.706 0 0 0-.014.928l3.038 3.51a.623.623 0 0 0 .486.219.587.587 0 0 0 .46-.2l.087-.097.014-.012z"
-                                                                                                      fill="#2B8000"
-                                                                                                      fillRule="evenodd"
-                                                                                                    />
-                                                                                                  </svg>
+                                                                                                    <StyledComponent
+                                                                                                      forwardedComponent={
+                                                                                                        Object {
+                                                                                                          "$$typeof": Symbol(react.forward_ref),
+                                                                                                          "attrs": Array [],
+                                                                                                          "componentStyle": ComponentStyle {
+                                                                                                            "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                                                                                                            "isStatic": false,
+                                                                                                            "lastClassName": "c9",
+                                                                                                            "rules": Array [
+                                                                                                              [Function],
+                                                                                                            ],
+                                                                                                          },
+                                                                                                          "displayName": "FeedbackIcon__StyledSVG",
+                                                                                                          "foldedComponentIds": Array [],
+                                                                                                          "render": [Function],
+                                                                                                          "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                                                                                                          "target": "svg",
+                                                                                                          "toString": [Function],
+                                                                                                          "warnTooManyClasses": [Function],
+                                                                                                          "withComponent": [Function],
+                                                                                                        }
+                                                                                                      }
+                                                                                                      forwardedRef={null}
+                                                                                                      height="1.25rem"
+                                                                                                      role="img"
+                                                                                                      viewBox="0 0 20 20"
+                                                                                                      width="1.25rem"
+                                                                                                    >
+                                                                                                      <svg
+                                                                                                        className="c9"
+                                                                                                        height="1.25rem"
+                                                                                                        role="img"
+                                                                                                        viewBox="0 0 20 20"
+                                                                                                        width="1.25rem"
+                                                                                                      >
+                                                                                                        <title>
+                                                                                                          Success
+                                                                                                        </title>
+                                                                                                        <path
+                                                                                                          d="M0 10C0 4.48 4.48 0 10 0s10 4.48 10 10-4.48 10-10 10S0 15.52 0 10zm8.127 4.673a.633.633 0 0 0 .092-.105l7.734-8.572a.693.693 0 0 0-.009-.925.595.595 0 0 0-.882-.001l-7.514 8.055-2.612-2.8a.596.596 0 0 0-.88 0 .706.706 0 0 0-.014.928l3.038 3.51a.623.623 0 0 0 .486.219.587.587 0 0 0 .46-.2l.087-.097.014-.012z"
+                                                                                                          fill="#2B8000"
+                                                                                                          fillRule="evenodd"
+                                                                                                        />
+                                                                                                      </svg>
+                                                                                                    </StyledComponent>
+                                                                                                  </FeedbackIcon__StyledSVG>
                                                                                                 </FeedbackIcon>
                                                                                               </NotificationSuccess>
                                                                                             </div>
@@ -1950,7 +1993,7 @@ exports[`<Notification /> can have a variant 2`] = `
                                                                                           "componentStyle": ComponentStyle {
                                                                                             "componentId": "Paragraph__StyledParagraph-efl81j-0",
                                                                                             "isStatic": false,
-                                                                                            "lastClassName": "c9",
+                                                                                            "lastClassName": "c10",
                                                                                             "rules": Array [
                                                                                               [Function],
                                                                                               "word-wrap: break-word;",
@@ -1984,7 +2027,7 @@ exports[`<Notification /> can have a variant 2`] = `
                                                                                       size="medium"
                                                                                     >
                                                                                       <p
-                                                                                        className="c9"
+                                                                                        className="c10"
                                                                                         size="medium"
                                                                                       >
                                                                                         Some content
