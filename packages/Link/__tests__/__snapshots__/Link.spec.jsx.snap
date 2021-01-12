@@ -482,8 +482,8 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 1`] =
 .c1 {
   position: relative;
   top: 0;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   fill: #2a2c2e;
 }
 
@@ -655,8 +655,8 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 2`] =
 .c1 {
   position: relative;
   top: 0;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   fill: #2a2c2e;
 }
 
