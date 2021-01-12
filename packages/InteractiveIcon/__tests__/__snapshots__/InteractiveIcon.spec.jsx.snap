@@ -89,8 +89,8 @@ exports[`InteractiveIcon renders 1`] = `
 .c4 {
   position: relative;
   top: 0;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   fill: #2a2c2e;
 }
 
@@ -350,8 +350,8 @@ exports[`InteractiveIcon renders Dependent icon with Link 1`] = `
 .c1 {
   position: relative;
   top: 0;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   fill: #2a2c2e;
 }
 
