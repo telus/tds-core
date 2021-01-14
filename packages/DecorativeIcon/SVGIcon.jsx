@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import styled from 'styled-components'
 import { colorTelusPurple, colorGreyShark, colorWhite } from '@tds/core-colours'
-import { safeRest } from '@tds/util-helpers'
+import { safeRest, pixelToRem } from '@tds/util-helpers'
 
 import { warn } from '../../shared/utils/warn'
 
@@ -21,7 +21,7 @@ const getColour = variant => {
 
 const svgVariant = ({ variant }) => ({ '& > svg': { fill: getColour(variant) } })
 const svgSize = ({ size }) => ({
-  '& > svg': { width: `${size / 16}rem`, height: `${size / 16}rem` },
+  '& > svg': { width: pixelToRem(size), height: pixelToRem(size) },
 })
 
 const StyledSVGIcon = styled.i(
