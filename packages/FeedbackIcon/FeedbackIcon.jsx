@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { getCopy, safeRest } from '@tds/util-helpers'
+import { getCopy, safeRest, pixelToRem } from '@tds/util-helpers'
 
 import { warn } from '../../shared/utils/warn'
 
@@ -35,8 +35,8 @@ const FeedbackIcon = ({ width, height, copy, copyDictionary, optionalText, child
       {...safeRest(rest)}
       role="img"
       aria-hidden={a11yText === '' ? true : undefined}
-      width={`${width / 16}rem`}
-      height={`${height / 16}rem`}
+      width={pixelToRem(width)}
+      height={pixelToRem(height)}
     >
       {a11yText && <title>{a11yText}</title>}
       {children}
