@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { colorIconPrimary, colorIconSecondary, colorCardinal, colorWhite } from '@tds/core-colours'
-import { safeRest } from '@tds/util-helpers'
+import { safeRest, pixelToRem } from '@tds/util-helpers'
 
 import icons from './icons'
 
@@ -23,7 +23,7 @@ const getColour = variant => {
 }
 const iconSymbol = ({ symbol }) => ({ ...icons.default, ...icons[symbol] })
 const iconVariant = ({ variant }) => ({ color: getColour(variant) })
-const iconSize = ({ iSize }) => ({ fontSize: `${iSize / 16}rem` })
+const iconSize = ({ iSize }) => ({ fontSize: pixelToRem(iSize) })
 
 export const StyledIcon = styled.i(iconSymbol, iconVariant, iconSize)
 
