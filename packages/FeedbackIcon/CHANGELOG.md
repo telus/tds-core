@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.11](https://github.com/telus/tds-core/compare/@tds/core-feedback-icon@1.0.10...@tds/core-feedback-icon@1.0.11) (2021-01-15)
+
+
+### Bug Fixes
+
+* **core-feedback-icon:** scale icon size with browser font size ([2ae9a9e](https://github.com/telus/tds-core/commit/2ae9a9ef3ae963bfdfdd0e8c3e2dc980cb763c43))
+
+
+
+
+
 ## [1.0.10](https://github.com/telus/tds-core/compare/@tds/core-feedback-icon@1.0.9...@tds/core-feedback-icon@1.0.10) (2020-09-11)
 
 **Note:** Version bump only for package @tds/core-feedback-icon

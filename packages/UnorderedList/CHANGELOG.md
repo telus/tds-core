@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.30](https://github.com/telusdigital/tds/compare/@tds/core-unordered-list@3.0.29...@tds/core-unordered-list@3.0.30) (2021-01-15)
+
+**Note:** Version bump only for package @tds/core-unordered-list
+
+
+
+
+
 ## [3.0.29](https://github.com/telusdigital/tds/compare/@tds/core-unordered-list@3.0.28...@tds/core-unordered-list@3.0.29) (2020-09-11)
 
 **Note:** Version bump only for package @tds/core-unordered-list

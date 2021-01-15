@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.13](https://github.com/telusdigital/tds/compare/@tds/core-wave-divider@2.0.12...@tds/core-wave-divider@2.0.13) (2021-01-15)
+
+**Note:** Version bump only for package @tds/core-wave-divider
+
+
+
+
+
 ## [2.0.12](https://github.com/telusdigital/tds/compare/@tds/core-wave-divider@2.0.11...@tds/core-wave-divider@2.0.12) (2020-09-11)
 
 **Note:** Version bump only for package @tds/core-wave-divider

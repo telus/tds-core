@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/telus/tds-core/compare/@tds/util-helpers@1.5.1...@tds/util-helpers@1.6.0) (2021-01-15)
+
+
+### Features
+
+* **util-helpers:** add pixelToRem() ([39b8594](https://github.com/telus/tds-core/commit/39b8594c365a62c75bb3e27d65687b75c35945fe))
+
+
+
+
+
 ## [1.5.1](https://github.com/telus/tds-core/compare/@tds/util-helpers@1.5.0...@tds/util-helpers@1.5.1) (2020-09-11)
 
 **Note:** Version bump only for package @tds/util-helpers

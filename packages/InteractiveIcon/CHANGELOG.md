@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.2](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@2.1.1...@tds/core-interactive-icon@2.1.2) (2021-01-15)
+
+
+### Bug Fixes
+
+* **core-interactive-icon:** scale icon size with browser font size ([9ce882d](https://github.com/telus/tds-core/commit/9ce882df24db8b51011080c69d944e9cf6313144))
+
+
+
+
+
 ## [2.1.1](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@2.1.0...@tds/core-interactive-icon@2.1.1) (2020-09-11)
 
 **Note:** Version bump only for package @tds/core-interactive-icon

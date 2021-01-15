@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.18](https://github.com/telusdigital/tds/compare/@tds/core-hairline-divider@2.0.17...@tds/core-hairline-divider@2.0.18) (2021-01-15)
+
+**Note:** Version bump only for package @tds/core-hairline-divider
+
+
+
+
+
 ## [2.0.17](https://github.com/telusdigital/tds/compare/@tds/core-hairline-divider@2.0.16...@tds/core-hairline-divider@2.0.17) (2020-09-11)
 
 **Note:** Version bump only for package @tds/core-hairline-divider
