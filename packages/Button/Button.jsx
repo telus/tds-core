@@ -128,6 +128,13 @@ const getVariant = ({ variant, rank }) => {
     border,
     transition,
     '&:hover': hover,
+    '@media (hover: none)': {
+      '&:hover': {
+        boxShadow: 'none',
+        backgroundColor,
+        color,
+      },
+    },
     '&:active': active,
     '&:focus': focus,
     '@media (prefers-reduced-motion: reduce)': {
