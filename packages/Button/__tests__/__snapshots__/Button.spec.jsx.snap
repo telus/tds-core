@@ -66,6 +66,14 @@ exports[`Button can be presented as one of the allowed variants 1`] = `
   }
 }
 
+@media (hover:none) {
+  .c0:hover {
+    box-shadow: none;
+    background-color: #4b286d;
+    color: #fff;
+  }
+}
+
 @media (prefers-reduced-motion:reduce) {
   .c0 {
     -webkit-transition: none !important;
@@ -164,6 +172,14 @@ exports[`Button can be presented as one of the new allowed variants 1`] = `
   }
 }
 
+@media (hover:none) {
+  .c0:hover {
+    box-shadow: none;
+    background-color: #fff;
+    color: #2B8000;
+  }
+}
+
 @media (prefers-reduced-motion:reduce) {
   .c0 {
     -webkit-transition: none !important;
@@ -246,6 +262,14 @@ exports[`Button renders 1`] = `
     display: inline-flex;
     width: auto;
     min-width: 180px;
+  }
+}
+
+@media (hover:none) {
+  .c0:hover {
+    box-shadow: none;
+    background-color: #2B8000;
+    color: #fff;
   }
 }
 
