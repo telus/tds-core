@@ -196,6 +196,10 @@ exports[`WebVideo renders 1`] = `
   display: block;
 }
 
+.c12 {
+  padding-top: 2px;
+}
+
 .c2 {
   background-image: url(https://img.youtube.com/vi/ppF-fn37SDs/maxresdefault.jpg);
   background-size: cover;
@@ -217,10 +221,6 @@ exports[`WebVideo renders 1`] = `
   padding-top: 56.25%;
   position: relative;
   background-image: url(16:9);
-}
-
-.c12 {
-  padding-top: 2px;
 }
 
 @media (min-width:768px) {
