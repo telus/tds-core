@@ -79,9 +79,9 @@ const LittleWatchTextContainer = styled.span({
   ...media.from('md').css({ display: 'none' }),
 })
 
-const BigVideoButton = ({ icon, label, videoLength, ...rest }) => {
-  const IconAdjust = styled.span({ paddingTop: 2 })
+const IconAdjust = styled.span({ paddingTop: 2 })
 
+const BigVideoButton = ({ icon, label, videoLength, ...rest }) => {
   const timestamp = getTimestamp(videoLength)
 
   // TODO: After Box moves to Styled Components, use one Box with the between prop for spacing
