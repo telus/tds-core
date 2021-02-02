@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.41](https://github.com/telus/tds-core/compare/@tds/shared-video-splash@1.1.40...@tds/shared-video-splash@1.1.41) (2021-02-02)
+
+
+### Bug Fixes
+
+* **shared-video-splash:** move styled-component outside of render ([2abbe00](https://github.com/telus/tds-core/commit/2abbe0031a7a43b0ab4bf2617b5f4d0abc2d1eeb))
+
+
+
+
+
 ## [1.1.40](https://github.com/telus/tds-core/compare/@tds/shared-video-splash@1.1.39...@tds/shared-video-splash@1.1.40) (2021-01-15)
 
 **Note:** Version bump only for package @tds/shared-video-splash

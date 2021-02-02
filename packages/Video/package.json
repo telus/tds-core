@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-video",
-  "version": "1.3.13",
+  "version": "1.3.14",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -38,6 +38,6 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/shared-video-splash": "^1.1.40"
+    "@tds/shared-video-splash": "^1.1.41"
   }
 }
