@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.3](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@2.1.2...@tds/core-interactive-icon@2.1.3) (2021-02-05)
+
+
+### Bug Fixes
+
+* **core-interactive-icon:** remove unused a11yContent ([bc7064b](https://github.com/telus/tds-core/commit/bc7064bee4df249d3062d686eafd31d296613965))
+
+
+
+
+
 ## [2.1.2](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@2.1.1...@tds/core-interactive-icon@2.1.2) (2021-01-15)
 
 
