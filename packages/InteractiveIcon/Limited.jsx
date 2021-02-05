@@ -4,7 +4,6 @@ import styled, { ThemeProvider } from 'styled-components'
 
 import { responsiveProps } from '@tds/util-prop-types'
 import { handleResponsiveStyles } from '@tds/util-helpers'
-import A11yContent from '@tds/core-a11y-content'
 
 import { colorShark, colorTelusPurple, colorWhite, colorAccessibleGreen } from '@tds/core-colours'
 
@@ -63,10 +62,7 @@ const getTheme = variant => {
  */
 const Limited = ({ variant, children, size }) => (
   <ThemeProvider theme={getTheme(variant)} size={size}>
-    <>
-      <A11yContent>Test</A11yContent>
-      {children}
-    </>
+    {children}
   </ThemeProvider>
 )
 
