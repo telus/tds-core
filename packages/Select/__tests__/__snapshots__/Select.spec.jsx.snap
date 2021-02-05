@@ -110,25 +110,21 @@ exports[`Select can have an error message 1`] = `
 }
 
 .c15 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #c12335;
-  font-size: 1rem;
+  fill: #2B8000;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
-.c15::before {
-  content: '\\f105';
+.c15:hover,
+.c15:focus,
+.c15:active {
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 .c12 {
@@ -255,6 +251,34 @@ exports[`Select can have an error message 1`] = `
 
 .c7 {
   position: relative;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c15 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c15 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (max-width:767px) {
+  .c15 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 <Select
@@ -389,7 +413,7 @@ exports[`Select can have an error message 1`] = `
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-bZQynM",
+                                "componentId": "sc-gZMcBi",
                                 "isStatic": true,
                                 "lastClassName": "c2",
                                 "rules": Array [
@@ -420,7 +444,7 @@ exports[`Select can have an error message 1`] = `
                                 "vertical": [Function],
                               },
                               "render": [Function],
-                              "styledComponentId": "sc-bZQynM",
+                              "styledComponentId": "sc-gZMcBi",
                               "target": Object {
                                 "$$typeof": Symbol(react.forward_ref),
                                 "defaultProps": Object {
@@ -504,7 +528,7 @@ exports[`Select can have an error message 1`] = `
                                 tag="span"
                               >
                                 <span
-                                  className="c2 sc-bZQynM c2 c1"
+                                  className="c2 sc-gZMcBi c2 c1"
                                 >
                                   <Text
                                     block={false}
@@ -777,7 +801,7 @@ exports[`Select can have an error message 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-gzVnrw",
+                    "componentId": "sc-gqjmRU",
                     "isStatic": false,
                     "lastClassName": "c7",
                     "rules": Array [
@@ -787,7 +811,7 @@ exports[`Select can have an error message 1`] = `
                   "displayName": "styled.div",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-gzVnrw",
+                  "styledComponentId": "sc-gqjmRU",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -941,7 +965,7 @@ exports[`Select can have an error message 1`] = `
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-EHOje",
+                                "componentId": "sc-iwsKbI",
                                 "isStatic": true,
                                 "lastClassName": "c10",
                                 "rules": Array [
@@ -976,7 +1000,7 @@ exports[`Select can have an error message 1`] = `
                                 "vertical": [Function],
                               },
                               "render": [Function],
-                              "styledComponentId": "sc-EHOje",
+                              "styledComponentId": "sc-iwsKbI",
                               "target": Object {
                                 "$$typeof": Symbol(react.forward_ref),
                                 "defaultProps": Object {
@@ -1060,7 +1084,7 @@ exports[`Select can have an error message 1`] = `
                                 tag="div"
                               >
                                 <div
-                                  className="c10 sc-EHOje c10 c11"
+                                  className="c10 sc-iwsKbI c10 c11"
                                 >
                                   <FeedbackIcon
                                     feedback="error"
@@ -1243,62 +1267,82 @@ exports[`Select can have an error message 1`] = `
                                       <div
                                         className="c14"
                                       >
-                                        <DecorativeIcon
+                                        <CaretDown
                                           size={16}
-                                          symbol="caretDown"
                                           variant="error"
                                         >
-                                          <Icon
-                                            aria-hidden="true"
+                                          <Limited
                                             size={16}
-                                            symbol="caretDown"
                                             variant="error"
                                           >
-                                            <Icon__StyledIcon
-                                              aria-hidden="true"
-                                              iSize={16}
-                                              symbol="caretDown"
-                                              variant="error"
-                                            >
-                                              <StyledComponent
-                                                aria-hidden="true"
-                                                forwardedComponent={
-                                                  Object {
-                                                    "$$typeof": Symbol(react.forward_ref),
-                                                    "attrs": Array [],
-                                                    "componentStyle": ComponentStyle {
-                                                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                      "isStatic": false,
-                                                      "lastClassName": "c15",
-                                                      "rules": Array [
-                                                        [Function],
-                                                        [Function],
-                                                        [Function],
-                                                      ],
-                                                    },
-                                                    "displayName": "Icon__StyledIcon",
-                                                    "foldedComponentIds": Array [],
-                                                    "render": [Function],
-                                                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                    "target": "i",
-                                                    "toString": [Function],
-                                                    "warnTooManyClasses": [Function],
-                                                    "withComponent": [Function],
-                                                  }
+                                            <ThemeProvider
+                                              size={16}
+                                              theme={
+                                                Object {
+                                                  "backgroundColor": "transparent",
+                                                  "iconColor": "#2B8000",
                                                 }
-                                                forwardedRef={null}
-                                                iSize={16}
-                                                symbol="caretDown"
+                                              }
+                                            >
+                                              <Styled(StyledInteractiveIconSVG)
+                                                animationDirection="down"
+                                                size={16}
                                                 variant="error"
+                                                viewBox="0 0 24 24"
                                               >
-                                                <i
-                                                  aria-hidden="true"
-                                                  className="c15"
-                                                />
-                                              </StyledComponent>
-                                            </Icon__StyledIcon>
-                                          </Icon>
-                                        </DecorativeIcon>
+                                                <StyledComponent
+                                                  animationDirection="down"
+                                                  forwardedComponent={
+                                                    Object {
+                                                      "$$typeof": Symbol(react.forward_ref),
+                                                      "attrs": Array [],
+                                                      "componentStyle": ComponentStyle {
+                                                        "componentId": "sc-bxivhb",
+                                                        "isStatic": false,
+                                                        "lastClassName": "c15",
+                                                        "rules": Array [
+                                                          [Function],
+                                                          "width: 1.5rem;",
+                                                          "height: 1.5rem;",
+                                                          "z-index: 2;",
+                                                          [Function],
+                                                          "@media (prefers-reduced-motion: reduce) {",
+                                                          "transition: none;",
+                                                          "}",
+                                                          [Function],
+                                                        ],
+                                                      },
+                                                      "displayName": "Styled(StyledInteractiveIconSVG)",
+                                                      "foldedComponentIds": Array [
+                                                        "StyledInteractiveIconSVG-ix2erv-0",
+                                                      ],
+                                                      "render": [Function],
+                                                      "styledComponentId": "sc-bxivhb",
+                                                      "target": "svg",
+                                                      "toString": [Function],
+                                                      "warnTooManyClasses": [Function],
+                                                      "withComponent": [Function],
+                                                    }
+                                                  }
+                                                  forwardedRef={null}
+                                                  size={16}
+                                                  variant="error"
+                                                  viewBox="0 0 24 24"
+                                                >
+                                                  <svg
+                                                    className="c15"
+                                                    size={16}
+                                                    viewBox="0 0 24 24"
+                                                  >
+                                                    <path
+                                                      d="M17.7940812,9.18323023 C17.4424627,8.8825106 17.0896181,9.04504427 16.8868854,9.24527574 L11.9968161,13.740553 L7.11722187,9.24527573 C6.93839231,9.08145209 6.49053328,8.81996721 6.16524043,9.18323023 C5.83994757,9.54649326 6.06520964,9.91610528 6.24327169,10.0799289 L11.6348225,15.8766027 C11.8136521,16.0411324 12.1060729,16.0411324 12.2849025,15.8766027 C12.2849025,15.8758965 17.7940809,10.079929 17.7940809,10.079929 C17.9792355,9.93504267 18.1456996,9.48394985 17.7940812,9.18323023 Z"
+                                                    />
+                                                  </svg>
+                                                </StyledComponent>
+                                              </Styled(StyledInteractiveIconSVG)>
+                                            </ThemeProvider>
+                                          </Limited>
+                                        </CaretDown>
                                       </div>
                                     </StyledComponent>
                                   </Select__IconLineFix>
@@ -1387,7 +1431,7 @@ exports[`Select label can have a hint below 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bZQynM",
+            "componentId": "sc-gZMcBi",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -1418,7 +1462,7 @@ exports[`Select label can have a hint below 1`] = `
             "vertical": [Function],
           },
           "render": [Function],
-          "styledComponentId": "sc-bZQynM",
+          "styledComponentId": "sc-gZMcBi",
           "target": Object {
             "$$typeof": Symbol(react.forward_ref),
             "defaultProps": Object {
@@ -1502,7 +1546,7 @@ exports[`Select label can have a hint below 1`] = `
             tag="span"
           >
             <span
-              className="c0 sc-bZQynM c0 c1"
+              className="c0 sc-gZMcBi c0 c1"
             >
               <Text
                 block={false}
@@ -1656,7 +1700,7 @@ exports[`Select label can have a short hint 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bZQynM",
+            "componentId": "sc-gZMcBi",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -1687,7 +1731,7 @@ exports[`Select label can have a short hint 1`] = `
             "vertical": [Function],
           },
           "render": [Function],
-          "styledComponentId": "sc-bZQynM",
+          "styledComponentId": "sc-gZMcBi",
           "target": Object {
             "$$typeof": Symbol(react.forward_ref),
             "defaultProps": Object {
@@ -1771,7 +1815,7 @@ exports[`Select label can have a short hint 1`] = `
             tag="span"
           >
             <span
-              className="c0 sc-bZQynM c0 c1"
+              className="c0 sc-gZMcBi c0 c1"
             >
               <Text
                 block={false}
@@ -1970,7 +2014,7 @@ exports[`Select label must have a label 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bZQynM",
+            "componentId": "sc-gZMcBi",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -2001,7 +2045,7 @@ exports[`Select label must have a label 1`] = `
             "vertical": [Function],
           },
           "render": [Function],
-          "styledComponentId": "sc-bZQynM",
+          "styledComponentId": "sc-gZMcBi",
           "target": Object {
             "$$typeof": Symbol(react.forward_ref),
             "defaultProps": Object {
@@ -2085,7 +2129,7 @@ exports[`Select label must have a label 1`] = `
             tag="span"
           >
             <span
-              className="c0 sc-bZQynM c0 c1"
+              className="c0 sc-gZMcBi c0 c1"
             >
               <Text
                 block={false}
@@ -2230,25 +2274,21 @@ exports[`Select renders 1`] = `
 }
 
 .c10 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #2B8000;
-  font-size: 1rem;
+  fill: #2B8000;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
-.c10::before {
-  content: '\\f105';
+.c10:hover,
+.c10:focus,
+.c10:active {
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 .c5 {
@@ -2369,6 +2409,34 @@ exports[`Select renders 1`] = `
   position: relative;
 }
 
+@media (prefers-reduced-motion:reduce) {
+  .c10 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c10 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (max-width:767px) {
+  .c10 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
 <div
   class="c0"
 >
@@ -2380,7 +2448,7 @@ exports[`Select renders 1`] = `
         for="the-select"
       >
         <span
-          class="c2 sc-bZQynM c2 c1"
+          class="c2 sc-gZMcBi c2 c1"
         >
           <span
             class="c3"
@@ -2415,15 +2483,20 @@ exports[`Select renders 1`] = `
         </option>
       </select>
       <div
-        class="c7 sc-EHOje c7 c8"
+        class="c7 sc-iwsKbI c7 c8"
       >
         <div
           class="c9"
         >
-          <i
-            aria-hidden="true"
+          <svg
             class="c10"
-          />
+            size="16"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17.7940812,9.18323023 C17.4424627,8.8825106 17.0896181,9.04504427 16.8868854,9.24527574 L11.9968161,13.740553 L7.11722187,9.24527573 C6.93839231,9.08145209 6.49053328,8.81996721 6.16524043,9.18323023 C5.83994757,9.54649326 6.06520964,9.91610528 6.24327169,10.0799289 L11.6348225,15.8766027 C11.8136521,16.0411324 12.1060729,16.0411324 12.2849025,15.8766027 C12.2849025,15.8758965 17.7940809,10.079929 17.7940809,10.079929 C17.9792355,9.93504267 18.1456996,9.48394985 17.7940812,9.18323023 Z"
+            />
+          </svg>
         </div>
       </div>
     </div>
@@ -2501,25 +2574,21 @@ exports[`Select renders with a feedback state and icon 1`] = `
 }
 
 .c12 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #c12335;
-  font-size: 1rem;
+  fill: #2B8000;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
-.c12::before {
-  content: '\\f105';
+.c12:hover,
+.c12:focus,
+.c12:active {
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 .c9 {
@@ -2648,6 +2717,34 @@ exports[`Select renders with a feedback state and icon 1`] = `
   position: relative;
 }
 
+@media (prefers-reduced-motion:reduce) {
+  .c12 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c12 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (max-width:767px) {
+  .c12 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
 <div
   class="c0"
 >
@@ -2659,7 +2756,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
         for="the-select"
       >
         <span
-          class="c2 sc-bZQynM c2 c1"
+          class="c2 sc-gZMcBi c2 c1"
         >
           <span
             class="c3"
@@ -2694,7 +2791,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
         </option>
       </select>
       <div
-        class="c7 sc-EHOje c7 c8"
+        class="c7 sc-iwsKbI c7 c8"
       >
         <div
           style="transition:opacity 100ms ease-in-out;opacity:1"
@@ -2723,10 +2820,15 @@ exports[`Select renders with a feedback state and icon 1`] = `
         <div
           class="c11"
         >
-          <i
-            aria-hidden="true"
+          <svg
             class="c12"
-          />
+            size="16"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17.7940812,9.18323023 C17.4424627,8.8825106 17.0896181,9.04504427 16.8868854,9.24527574 L11.9968161,13.740553 L7.11722187,9.24527573 C6.93839231,9.08145209 6.49053328,8.81996721 6.16524043,9.18323023 C5.83994757,9.54649326 6.06520964,9.91610528 6.24327169,10.0799289 L11.6348225,15.8766027 C11.8136521,16.0411324 12.1060729,16.0411324 12.2849025,15.8766027 C12.2849025,15.8758965 17.7940809,10.079929 17.7940809,10.079929 C17.9792355,9.93504267 18.1456996,9.48394985 17.7940812,9.18323023 Z"
+            />
+          </svg>
         </div>
       </div>
     </div>
