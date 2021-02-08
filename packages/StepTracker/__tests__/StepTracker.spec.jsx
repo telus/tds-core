@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, mount } from 'enzyme'
 
-import Icon from '@tds/core-decorative-icon'
+import { Checkmark } from '@tds/core-feedback-icon'
 
 import StepTracker from '../StepTracker'
 
@@ -36,7 +36,7 @@ describe('<StepTracker />', () => {
     const stepTracker = doMount({ current: 2 })
 
     expect(stepTracker.find('[data-testid="step-0"]')).toContainReact(
-      <Icon symbol="checkmark" size={16} variant="inverted" />
+      <Checkmark width={16} height={16} />
     )
     expect(stepTracker.find('[data-testid="singleStepContainer-0"]').first()).toHaveProp(
       'data-isactive',
@@ -44,7 +44,7 @@ describe('<StepTracker />', () => {
     )
 
     expect(stepTracker.find('[data-testid="step-1"]')).toContainReact(
-      <Icon symbol="checkmark" size={16} variant="inverted" />
+      <Checkmark width={16} height={16} />
     )
     expect(stepTracker.find('[data-testid="singleStepContainer-1"]').first()).toHaveProp(
       'data-isactive',
@@ -52,7 +52,7 @@ describe('<StepTracker />', () => {
     )
 
     expect(stepTracker.find('[data-testid="step-2"]')).not.toContainReact(
-      <Icon symbol="checkmark" size={16} variant="inverted" />
+      <Checkmark width={16} height={16} />
     )
     expect(stepTracker.find('[data-testid="singleStepContainer-2"]').first()).toHaveProp(
       'data-isactive',

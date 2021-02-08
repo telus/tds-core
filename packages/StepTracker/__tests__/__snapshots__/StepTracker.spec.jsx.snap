@@ -2,25 +2,8 @@
 
 exports[`<StepTracker /> renders 1`] = `
 .c7 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c7::before {
-  content: '\\f101';
+  width: 1rem;
+  height: 1rem;
 }
 
 .c9 {
@@ -143,7 +126,18 @@ exports[`<StepTracker /> renders 1`] = `
 }
 
 .c6 {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: 0.1rem solid #2B8000;
   border-radius: 50%;
   line-height: 1.7rem;
@@ -154,14 +148,33 @@ exports[`<StepTracker /> renders 1`] = `
   text-align: center;
 }
 
+.c6 svg > path {
+  fill: #fff;
+}
+
 .c11 {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: 0.1rem solid #54595f;
   border-radius: 50%;
   line-height: 1.7rem;
   width: 35px;
   height: 35px;
   margin-bottom: 1rem;
+}
+
+.c11 svg > path {
+  fill: #fff;
 }
 
 .c8 {
@@ -384,10 +397,20 @@ exports[`<StepTracker /> renders 1`] = `
             <span
               class="c6"
             >
-              <i
+              <svg
                 aria-hidden="true"
                 class="c7"
-              />
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <path
+                  d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                  fill="#2B8000"
+                  fill-rule="evenodd"
+                />
+              </svg>
             </span>
             <div
               class="c8"

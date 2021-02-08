@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { colorGreyShuttle, colorPrimary } from '@tds/core-colours'
-import Icon from '@tds/core-decorative-icon'
+import { colorGreyShuttle, colorPrimary, colorWhite } from '@tds/core-colours'
+import { Checkmark } from '@tds/core-feedback-icon'
 import { media } from '@tds/core-responsive'
 import Text from '@tds/core-text'
 
@@ -42,7 +42,9 @@ const StyledStep = styled.div({
 })
 
 const StyledIcon = styled.span(({ isStepActive }) => ({
-  display: 'inline-block',
+  display: 'inline-flex',
+  justifyContent: 'center',
+  alignItems: 'center',
   border: `0.1rem solid ${colorGreyShuttle}`,
   borderRadius: '50%',
   lineHeight: '1.7rem',
@@ -54,6 +56,10 @@ const StyledIcon = styled.span(({ isStepActive }) => ({
     textAlign: 'center',
     border: `0.1rem solid ${colorPrimary}`,
   }),
+
+  'svg > path': {
+    fill: colorWhite,
+  },
 }))
 
 const StyledLabel = styled.div({
@@ -80,7 +86,7 @@ const Step = ({ label, status, stepNumber, stepIndex }) => {
       data-isactive={isStepActive()}
     >
       <StyledIcon isStepActive={isStepActive()}>
-        {status > stepIndex ? <Icon symbol="checkmark" size={16} variant="inverted" /> : <br />}
+        {status > stepIndex ? <Checkmark width={16} height={16} /> : <br />}
       </StyledIcon>
       <StyledLabel>
         <Text bold={status === stepIndex}>
