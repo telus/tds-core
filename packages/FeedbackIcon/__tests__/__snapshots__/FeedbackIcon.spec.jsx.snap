@@ -2,8 +2,8 @@
 
 exports[`FeedbackIcon renders 1`] = `
 .c0 {
-  width: 1.25remrem;
-  height: 1.25remrem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 <svg

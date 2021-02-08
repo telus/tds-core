@@ -7,8 +7,8 @@ import { getCopy, safeRest, pixelToRem } from '@tds/util-helpers'
 import { warn } from '../../shared/utils/warn'
 
 const StyledSVG = styled.svg(({ width, height }) => ({
-  width: `${width}rem`,
-  height: `${height}rem`,
+  width,
+  height,
 }))
 /**
  * @version ./package.json
