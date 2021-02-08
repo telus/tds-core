@@ -949,8 +949,8 @@ exports[`<Notification /> can have a variant 1`] = `
 
 exports[`<Notification /> can have a variant 2`] = `
 .c9 {
-  width: 1.25remrem;
-  height: 1.25remrem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .c4 {

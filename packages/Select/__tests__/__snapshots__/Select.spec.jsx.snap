@@ -2,8 +2,8 @@
 
 exports[`Select can have an error message 1`] = `
 .c13 {
-  width: 1.25remrem;
-  height: 1.25remrem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .c3 {
@@ -2506,8 +2506,8 @@ exports[`Select renders 1`] = `
 
 exports[`Select renders with a feedback state and icon 1`] = `
 .c10 {
-  width: 1.25remrem;
-  height: 1.25remrem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .c3 {
