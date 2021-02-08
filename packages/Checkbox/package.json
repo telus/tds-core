@@ -28,6 +28,7 @@
     "@tds/core-box": "^2.3.4",
     "@tds/core-colours": "^2.2.1",
     "@tds/core-decorative-icon": "^2.7.1",
+    "@tds/core-feedback-icon": "^1.0.11",
     "@tds/core-input-feedback": "^2.0.24",
     "@tds/core-paragraph": "^2.0.18",
     "@tds/core-text": "^3.1.5",
