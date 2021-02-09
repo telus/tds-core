@@ -17,6 +17,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
 
 .c3 {
   position: relative;
+  display: block;
   line-height: 1.5;
   word-wrap: break-word;
   font-size: 1rem;
@@ -31,7 +32,6 @@ exports[`<UnorderedList /> can have a list style 1`] = `
   display: block;
   position: absolute;
   left: -2rem;
-  font-family: TELUS Core Icons;
   line-height: 1.6;
   content: '';
   background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIiBmaWxsPSIjNGIyODZkIiAvPjwvc3ZnPg==);
@@ -41,6 +41,10 @@ exports[`<UnorderedList /> can have a list style 1`] = `
   width: 0.32rem;
   height: 0.32rem;
   top: 0.65rem;
+}
+
+.c1 {
+  display: block;
 }
 
 .c1 {
@@ -86,6 +90,7 @@ exports[`<UnorderedList /> can have a list style 1`] = `
               "& :last-child & {",
               "margin-bottom: 0;",
               "}",
+              "display: block;",
             ],
           },
           "defaultProps": Object {
@@ -312,8 +317,14 @@ exports[`<UnorderedList /> can have a list style 2`] = `
   margin-bottom: 0.5rem;
 }
 
+.c5 {
+  width: 1rem;
+  height: 1rem;
+}
+
 .c3 {
   position: relative;
+  display: block;
   line-height: 1.5;
   word-wrap: break-word;
   font-size: 1rem;
@@ -328,12 +339,21 @@ exports[`<UnorderedList /> can have a list style 2`] = `
   display: block;
   position: absolute;
   left: -2rem;
-  font-family: TELUS Core Icons;
   line-height: 1.6;
-  content: '\\f104';
-  font-size: 1rem;
-  width: 0.75rem;
-  color: #c12335;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: -2.125rem;
+  margin-top: 0.25rem;
+}
+
+.c1 {
+  display: block;
 }
 
 .c1 {
@@ -379,6 +399,7 @@ exports[`<UnorderedList /> can have a list style 2`] = `
               "& :last-child & {",
               "margin-bottom: 0;",
               "}",
+              "display: block;",
             ],
           },
           "defaultProps": Object {
@@ -531,6 +552,109 @@ exports[`<UnorderedList /> can have a list style 2`] = `
                       className="c3"
                       size="medium"
                     >
+                      <UnorderedItem__StyledIcon>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "UnorderedItem__StyledIcon-sc-1sy38gy-1",
+                                "isStatic": true,
+                                "lastClassName": "c4",
+                                "rules": Array [
+                                  "display: flex;",
+                                  "position: absolute;",
+                                  "left: -2.125rem;",
+                                  "margin-top: 0.25rem;",
+                                ],
+                              },
+                              "displayName": "UnorderedItem__StyledIcon",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "UnorderedItem__StyledIcon-sc-1sy38gy-1",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <span
+                            className="c4"
+                          >
+                            <Times>
+                              <FeedbackIcon
+                                copy={
+                                  Object {
+                                    "a11yText": "",
+                                  }
+                                }
+                                copyDictionary={Object {}}
+                                height="16"
+                                optionalText={true}
+                                viewBox="0 0 16 16"
+                                width="16"
+                              >
+                                <FeedbackIcon__StyledSVG
+                                  aria-hidden={true}
+                                  height="1rem"
+                                  role="img"
+                                  viewBox="0 0 16 16"
+                                  width="1rem"
+                                >
+                                  <StyledComponent
+                                    aria-hidden={true}
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                                          "isStatic": false,
+                                          "lastClassName": "c5",
+                                          "rules": Array [
+                                            [Function],
+                                          ],
+                                        },
+                                        "displayName": "FeedbackIcon__StyledSVG",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                                        "target": "svg",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                    height="1rem"
+                                    role="img"
+                                    viewBox="0 0 16 16"
+                                    width="1rem"
+                                  >
+                                    <svg
+                                      aria-hidden={true}
+                                      className="c5"
+                                      height="1rem"
+                                      role="img"
+                                      viewBox="0 0 16 16"
+                                      width="1rem"
+                                    >
+                                      <path
+                                        d="M8 9.17l-4.931 4.637a.756.756 0 0 1-1.034-.021l.176.175a.718.718 0 0 1-.003-1.012l4.781-4.782a40.59 40.59 0 0 1-.083-.085l-4.72-5.017a.753.753 0 0 1 .03-1.03l-.176.177a.714.714 0 0 1 1.012-.003L8 7.157l4.948-4.948a.714.714 0 0 1 1.012.003l-.176-.176a.753.753 0 0 1 .03 1.029l-4.72 5.017a40.59 40.59 0 0 1-.083.085l4.781 4.782a.718.718 0 0 1-.003 1.012l.176-.175a.756.756 0 0 1-1.034.021L8 9.17z"
+                                        fill="#c12335"
+                                        fillRule="evenodd"
+                                      />
+                                    </svg>
+                                  </StyledComponent>
+                                </FeedbackIcon__StyledSVG>
+                              </FeedbackIcon>
+                            </Times>
+                          </span>
+                        </StyledComponent>
+                      </UnorderedItem__StyledIcon>
                       Lorem ipsum
                     </li>
                   </StyledComponent>
@@ -576,6 +700,109 @@ exports[`<UnorderedList /> can have a list style 2`] = `
                       className="c3"
                       size="medium"
                     >
+                      <UnorderedItem__StyledIcon>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "UnorderedItem__StyledIcon-sc-1sy38gy-1",
+                                "isStatic": true,
+                                "lastClassName": "c4",
+                                "rules": Array [
+                                  "display: flex;",
+                                  "position: absolute;",
+                                  "left: -2.125rem;",
+                                  "margin-top: 0.25rem;",
+                                ],
+                              },
+                              "displayName": "UnorderedItem__StyledIcon",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "UnorderedItem__StyledIcon-sc-1sy38gy-1",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <span
+                            className="c4"
+                          >
+                            <Times>
+                              <FeedbackIcon
+                                copy={
+                                  Object {
+                                    "a11yText": "",
+                                  }
+                                }
+                                copyDictionary={Object {}}
+                                height="16"
+                                optionalText={true}
+                                viewBox="0 0 16 16"
+                                width="16"
+                              >
+                                <FeedbackIcon__StyledSVG
+                                  aria-hidden={true}
+                                  height="1rem"
+                                  role="img"
+                                  viewBox="0 0 16 16"
+                                  width="1rem"
+                                >
+                                  <StyledComponent
+                                    aria-hidden={true}
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                                          "isStatic": false,
+                                          "lastClassName": "c5",
+                                          "rules": Array [
+                                            [Function],
+                                          ],
+                                        },
+                                        "displayName": "FeedbackIcon__StyledSVG",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                                        "target": "svg",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                    height="1rem"
+                                    role="img"
+                                    viewBox="0 0 16 16"
+                                    width="1rem"
+                                  >
+                                    <svg
+                                      aria-hidden={true}
+                                      className="c5"
+                                      height="1rem"
+                                      role="img"
+                                      viewBox="0 0 16 16"
+                                      width="1rem"
+                                    >
+                                      <path
+                                        d="M8 9.17l-4.931 4.637a.756.756 0 0 1-1.034-.021l.176.175a.718.718 0 0 1-.003-1.012l4.781-4.782a40.59 40.59 0 0 1-.083-.085l-4.72-5.017a.753.753 0 0 1 .03-1.03l-.176.177a.714.714 0 0 1 1.012-.003L8 7.157l4.948-4.948a.714.714 0 0 1 1.012.003l-.176-.176a.753.753 0 0 1 .03 1.029l-4.72 5.017a40.59 40.59 0 0 1-.083.085l4.781 4.782a.718.718 0 0 1-.003 1.012l.176-.175a.756.756 0 0 1-1.034.021L8 9.17z"
+                                        fill="#c12335"
+                                        fillRule="evenodd"
+                                      />
+                                    </svg>
+                                  </StyledComponent>
+                                </FeedbackIcon__StyledSVG>
+                              </FeedbackIcon>
+                            </Times>
+                          </span>
+                        </StyledComponent>
+                      </UnorderedItem__StyledIcon>
                       Dolor sit amet
                     </li>
                   </StyledComponent>
@@ -607,6 +834,7 @@ exports[`<UnorderedList /> renders 1`] = `
 
 .c3 {
   position: relative;
+  display: block;
   line-height: 1.5;
   word-wrap: break-word;
   font-size: 1rem;
@@ -621,7 +849,6 @@ exports[`<UnorderedList /> renders 1`] = `
   display: block;
   position: absolute;
   left: -2rem;
-  font-family: TELUS Core Icons;
   line-height: 1.6;
   content: '';
   background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIiBmaWxsPSIjNGIyODZkIiAvPjwvc3ZnPg==);
@@ -631,6 +858,10 @@ exports[`<UnorderedList /> renders 1`] = `
   width: 0.32rem;
   height: 0.32rem;
   top: 0.65rem;
+}
+
+.c1 {
+  display: block;
 }
 
 .c1 {

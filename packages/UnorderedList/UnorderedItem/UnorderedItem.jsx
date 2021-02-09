@@ -2,13 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { colorTelusPurple, colorPrimary, colorCardinal } from '@tds/core-colours'
-
+import { colorTelusPurple } from '@tds/core-colours'
 import { small, medium, large, smallFont, mediumFont, largeFont } from '@tds/shared-typography'
+import { Checkmark, Times } from '@tds/core-feedback-icon'
 import { safeRest } from '@tds/util-helpers'
 
 const StyledUnorderedItem = styled.li(({ iconStyle, size }) => ({
   position: 'relative',
+  display: 'block',
   lineHeight: 1,
   ...(size === 'small' && { ...small, ...smallFont }),
   ...(size === 'medium' && { ...medium, ...mediumFont }),
@@ -18,7 +19,6 @@ const StyledUnorderedItem = styled.li(({ iconStyle, size }) => ({
     display: 'block',
     position: 'absolute',
     left: '-2rem',
-    fontFamily: 'TELUS Core Icons',
     ...(size === 'small' && { lineHeight: 1.25 }),
     ...(size === 'medium' && { lineHeight: 1.6 }),
     ...(size === 'large' && { lineHeight: 2.1 }),
@@ -49,29 +49,39 @@ const StyledUnorderedItem = styled.li(({ iconStyle, size }) => ({
         top: '0.87rem',
       }),
     }),
-
-    ...(iconStyle === 'checkmark' && {
-      content: `'\f101'`,
-      fontSize: '1rem',
-      width: '0.75rem',
-      color: colorPrimary,
-    }),
-
-    ...(iconStyle === 'x' && {
-      content: `'\f104'`,
-      fontSize: '1rem',
-      width: '0.75rem',
-      color: colorCardinal,
-
-      ...(size === 'small' && {
-        lineHeight: 1.32,
-      }),
-    }),
   },
 }))
 
+const StyledIcon = styled.span({
+  display: 'flex',
+  position: 'absolute',
+  left: '-2.125rem',
+  marginTop: '0.25rem',
+})
+
+const getIcon = style => {
+  if (style === 'checkmark') {
+    return (
+      <StyledIcon>
+        <Checkmark />
+      </StyledIcon>
+    )
+  }
+
+  if (style === 'x') {
+    return (
+      <StyledIcon>
+        <Times />
+      </StyledIcon>
+    )
+  }
+
+  return ''
+}
+
 const UnorderedItem = ({ listStyle, itemStyle, size, children, ...rest }) => (
   <StyledUnorderedItem {...safeRest(rest)} iconStyle={itemStyle || listStyle} size={size}>
+    {getIcon(itemStyle || listStyle)}
     {children}
   </StyledUnorderedItem>
 )
