@@ -2,10 +2,10 @@ import React from 'react'
 import { mount } from 'enzyme'
 import 'jest-styled-components'
 
-import StandaloneIcon from '@tds/core-standalone-icon'
 import Text from '@tds/core-text'
 
 import Tooltip from '../Tooltip'
+import TooltipIcon from '../TooltipIcon'
 
 const mockMath = Object.create(global.Math)
 mockMath.random = () => 0.5
@@ -22,7 +22,7 @@ describe('Tooltip', () => {
       options
     )
 
-    const findTrigger = () => tooltip.find(StandaloneIcon)
+    const findTrigger = () => tooltip.find(TooltipIcon)
 
     return {
       tooltip,
@@ -41,7 +41,6 @@ describe('Tooltip', () => {
   it('has a trigger', () => {
     const { findTrigger } = doMount()
 
-    expect(findTrigger()).toHaveProp('symbol', 'questionMarkCircle')
     expect(findTrigger()).toHaveProp('a11yText', 'Reveal additional information.')
   })
 
@@ -164,7 +163,7 @@ describe('Tooltip', () => {
   it('has a default when not connected to any form field', () => {
     const { tooltip } = doMount()
 
-    expect(tooltip.find(StandaloneIcon)).toHaveProp('a11yText', 'Reveal additional information.')
+    expect(tooltip.find(TooltipIcon)).toHaveProp('a11yText', 'Reveal additional information.')
   })
 
   it('forwards refs', () => {

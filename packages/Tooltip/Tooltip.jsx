@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import StandaloneIcon from '@tds/core-standalone-icon'
-
 import { iconWrapper } from '@tds/shared-styles'
 import { getCopy, uniqueId, safeRest } from '@tds/util-helpers'
 import { withForwardedRef } from '@tds/shared-hocs'
+
+import TooltipIcon from './TooltipIcon'
 
 import generateId from '../../shared/utils/generateId/generateId'
 import closest from './element-closest'
@@ -17,8 +17,8 @@ import copyDictionary from './tooltipText'
 const StyledTooltip = styled.div({
   ...iconWrapper.fixLineHeight,
   position: 'relative',
-  width: '1rem',
-  height: '1.3rem',
+  width: '1.5rem',
+  height: '1.5rem',
 })
 
 const TooltipContainer = styled.div({
@@ -146,9 +146,7 @@ class T extends React.Component {
           <Bubble id={bubbleId} direction={trueDirection} open={this.state.open} width={width}>
             {children}
           </Bubble>
-          <StandaloneIcon
-            type="button"
-            symbol="questionMarkCircle"
+          <TooltipIcon
             a11yText={this.getTriggerA11yText(this.props.connectedFieldLabel, this.props.copy)}
             onClick={this.toggleBubble}
             id={triggerId}
