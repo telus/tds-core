@@ -343,11 +343,11 @@ PriceLockup.propTypes = {
   /**
    * Statement above Price Value.
    */
-  topText: PropTypes.string,
+  topText: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   /**
    * Statement below Price Value.
    */
-  bottomText: PropTypes.string,
+  bottomText: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   /**
    * Statement right of Price Value.
    */
@@ -355,7 +355,7 @@ PriceLockup.propTypes = {
   /**
    * Price value of component.
    */
-  price: PropTypes.string.isRequired,
+  price: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
   /**
    * A [FootnoteLink](/#/Terms%20and%20Conditions?id=footnotelink) component, which may include multiple footnotes.
    *
