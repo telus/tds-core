@@ -314,6 +314,7 @@ module.exports = {
         return [
           path.resolve('packages/Card/Card.jsx'),
           path.resolve('packages/Image/Image.jsx'),
+          path.resolve('packages/ResponsiveImage/ResponsiveImage.jsx'),
           path.resolve('packages/Video/Video.jsx'),
           path.resolve('packages/WebVideo/WebVideo.jsx'),
           path.resolve('packages/A11yContent/A11yContent.jsx'),
@@ -552,6 +553,7 @@ module.exports = {
     PriceLockup: path.resolve('packages/PriceLockup'),
     Radio: path.resolve('packages/Radio'),
     Responsive: path.resolve('packages/Responsive'),
+    ResponsiveImage: path.resolve('packages/ResponsiveImage'),
     Select: path.resolve('packages/Select'),
     Small: path.resolve('packages/Small'),
     Spinner: path.resolve('packages/Spinner'),
