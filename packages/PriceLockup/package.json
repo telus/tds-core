@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-price-lockup",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.2](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@2.3.1...@tds/core-price-lockup@2.3.2) (2021-02-23)
+
+
+### Bug Fixes
+
+* **core-price-lockup:** update proptypes ([d198616](https://github.com/telusdigital/tds-core/commit/d19861668d7c64ba41b0b83cc16ea2012cf406bf))
+
+
+
+
+
 ## [2.3.1](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@2.3.0...@tds/core-price-lockup@2.3.1) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-price-lockup
