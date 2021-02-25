@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResponsiveImage renders 1`] = `
+<picture>
+  <source
+    media="(min-width: 1200px)"
+    srcset="responsive-image/mountains_desktop.jpg"
+  />
+  <source
+    media="(min-width: 992px)"
+    srcset="responsive-image/mountains_desktop.jpg"
+  />
+  <source
+    media="(min-width: 768px)"
+    srcset="responsive-image/mountains_tablet.jpg"
+  />
+  <source
+    media="(min-width: 576px)"
+    srcset="responsive-image/mountains_mobile.jpg"
+  />
+  <source
+    media="(max-width: 575px)"
+    srcset="responsive-image/mountains_mobile.jpg"
+  />
+  <img
+    alt="mountain background"
+    src="responsive-image/mountains_desktop.jpg"
+    style="width:100%"
+  />
+</picture>
+`;
