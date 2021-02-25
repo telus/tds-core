@@ -1,0 +1,32 @@
+{
+  "name": "@tds/core-responsive-image",
+  "version": "1.0.0-0",
+  "description": "",
+  "main": "index.cjs.js",
+  "module": "index.es.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telus/tds-core.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "TELUS digital",
+  "engines": {
+    "node": ">=8"
+  },
+  "bugs": {
+    "url": "https://github.com/telus/tds-core/issues"
+  },
+  "homepage": "http://tds.telus.com",
+  "peerDependencies": {
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "styled-components": "^4.1.3 || ^5.1.0"
+  },
+  "dependencies": {
+    "@tds/util-helpers": "^1.4.0",
+    "prop-types": "^15.5.10"
+  }
+}
