@@ -3,7 +3,10 @@ import commonjs from 'rollup-plugin-commonjs'
 
 import babel from 'rollup-plugin-babel'
 
+import svg from 'rollup-plugin-react-svg'
+
 import postcss from 'rollup-plugin-postcss'
+
 import autoprefixer from 'autoprefixer'
 
 import cleaner from './rollup/rollup-plugin-cleaner'
@@ -33,6 +36,7 @@ export default opts => {
       cleaner({
         targets: ['./dist/'],
       }),
+      svg(),
       nodeResolve({
         extensions: ['.js', '.jsx'],
         browser: true,

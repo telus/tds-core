@@ -511,7 +511,11 @@ module.exports = {
           use: ['style-loader', 'css-loader'],
         },
         {
-          test: /\.(png|jpg|svg)$/,
+          test: /\.svg$/,
+          use: ['@svgr/webpack', 'url-loader'],
+        },
+        {
+          test: /\.(png|jpg)$/,
           use: 'url-loader',
         },
       ],
