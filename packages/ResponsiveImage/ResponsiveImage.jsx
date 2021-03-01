@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import { breakpoints } from '@tds/core-responsive'
 import { safeRest } from '@tds/util-helpers'
 
 /**
@@ -10,11 +10,11 @@ import { safeRest } from '@tds/util-helpers'
  */
 const ResponsiveImage = ({ xsSrc, smSrc, mdSrc, lgSrc, xlSrc, fallbackSrc, alt, ...rest }) => (
   <picture {...safeRest(rest)}>
-    <source srcSet={xlSrc} media="(min-width: 1200px)" />
-    <source srcSet={lgSrc} media="(min-width: 992px)" />
-    <source srcSet={mdSrc} media="(min-width: 768px)" />
-    <source srcSet={smSrc} media="(min-width: 576px)" />
-    <source srcSet={xsSrc} media="(max-width: 575px)" />
+    <source srcSet={xlSrc} media={`(min-width: ${breakpoints.xl}px)`} />
+    <source srcSet={lgSrc} media={`(min-width: ${breakpoints.lg}px)`} />
+    <source srcSet={mdSrc} media={`(min-width: ${breakpoints.md}px)`} />
+    <source srcSet={smSrc} media={`(min-width: ${breakpoints.sm}px)`} />
+    <source srcSet={xsSrc} media={`(max-width: ${breakpoints.sm - 1}px)`} />
     <img src={fallbackSrc} alt={alt} style={{ width: '100%' }} />
   </picture>
 )
