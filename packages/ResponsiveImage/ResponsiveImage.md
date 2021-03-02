@@ -4,7 +4,7 @@ The `ResponsiveImage` component allows variation in "art direction" when wanting
 suit different screen sizes. This can also be used to provide compressed files or alternate formats based on device to help reduce
 download size.
 
-Similarily to the Image component:
+Similarly to the Image component:
 
 - We recommend not to resize or crop images in the browser
 - Image optimization should be done BEFORE rendering
