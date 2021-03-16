@@ -74,14 +74,12 @@ class Notification extends React.Component {
 
   componentDidMount() {
     if (this.props.dismissible) {
-      this.adjustContentHeight()
+      window.addEventListener('resize', this.adjustContentHeight)
     }
   }
 
-  componentDidUpdate() {
-    if (this.props.dismissible) {
-      this.adjustContentHeight()
-    }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.adjustContentHeight)
   }
 
   adjustContentHeight = () => {
