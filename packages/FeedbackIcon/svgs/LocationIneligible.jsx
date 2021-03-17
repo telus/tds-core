@@ -18,8 +18,8 @@ const LocationIneligible = props => {
     <FeedbackIcon
       {...props}
       copyDictionary={copyDictionary}
-      width="24"
-      height="24"
+      width={24}
+      height={24}
       viewBox="0 0 24 24"
     >
       <path

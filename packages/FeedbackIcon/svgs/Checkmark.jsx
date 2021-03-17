@@ -10,8 +10,8 @@ const Checkmark = props => {
       copy={{ a11yText: '' }}
       {...props}
       optionalText
-      width="16"
-      height="16"
+      width={16}
+      height={16}
       viewBox="0 0 16 16"
     >
       <path

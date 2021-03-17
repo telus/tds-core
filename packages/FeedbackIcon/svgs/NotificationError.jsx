@@ -17,8 +17,8 @@ const NotificationError = props => (
   <FeedbackIcon
     {...props}
     copyDictionary={copyDictionary}
-    width="20"
-    height="20"
+    width={20}
+    height={20}
     viewBox="0 0 20 20"
   >
     <path
