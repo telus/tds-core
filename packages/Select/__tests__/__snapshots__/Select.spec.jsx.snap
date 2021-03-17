@@ -1147,10 +1147,10 @@ exports[`Select can have an error message 1`] = `
                                                         },
                                                       }
                                                     }
-                                                    height="20"
+                                                    height={20}
                                                     optionalText={false}
                                                     viewBox="0 0 20 20"
-                                                    width="20"
+                                                    width={20}
                                                   >
                                                     <FeedbackIcon__StyledSVG
                                                       height="1.25rem"
