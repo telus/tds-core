@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-text-area",
-  "version": "3.0.48",
+  "version": "3.0.49",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "license": "MIT",
@@ -27,7 +27,7 @@
   "dependencies": {
     "@tds/core-box": "^2.3.4",
     "@tds/core-colours": "^2.2.1",
-    "@tds/core-input": "^3.0.49",
+    "@tds/core-input": "^3.0.50",
     "@tds/core-input-feedback": "^2.0.24",
     "@tds/core-paragraph": "^2.0.18",
     "@tds/core-text": "^3.1.5",
@@ -39,7 +39,7 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-feedback-icon": "^1.0.11",
+    "@tds/core-feedback-icon": "^1.0.12",
     "@tds/util-generate-id": "^1.0.4"
   }
 }

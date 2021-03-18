@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.12](https://github.com/telus/tds-core/compare/@tds/core-feedback-icon@1.0.11...@tds/core-feedback-icon@1.0.12) (2021-03-18)
+
+
+### Bug Fixes
+
+* **core-feedback-icon:** change width from string to number ([4092d48](https://github.com/telus/tds-core/commit/4092d48370d33c84f2d8b368f4a5d7dd15daa1ff))
+
+
+
+
+
 ## [1.0.11](https://github.com/telus/tds-core/compare/@tds/core-feedback-icon@1.0.10...@tds/core-feedback-icon@1.0.11) (2021-01-15)
 
 
