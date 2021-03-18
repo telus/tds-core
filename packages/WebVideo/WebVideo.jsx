@@ -31,7 +31,6 @@ const aspectRatios = {
 const AspectLimiter = styled.div(props => ({
   ...aspectRatios[props.aspectRatio],
   position: 'relative',
-  backgroundImage: `url(${props.aspectRatio})`,
 }))
 
 /**

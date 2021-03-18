@@ -220,7 +220,6 @@ exports[`WebVideo renders 1`] = `
 .c1 {
   padding-top: 56.25%;
   position: relative;
-  background-image: url(16:9);
 }
 
 @media (min-width:768px) {
