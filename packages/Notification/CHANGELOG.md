@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.9](https://github.com/telusdigital/tds/compare/@tds/core-notification@3.1.8...@tds/core-notification@3.1.9) (2021-03-19)
+
+
+### Bug Fixes
+
+* **core-notification:** fix component resizing ([85e1b00](https://github.com/telusdigital/tds/commit/85e1b00313cdbb1323c1de0966fe697357c92ff2))
+
+
+
+
+
 ## [3.1.8](https://github.com/telusdigital/tds/compare/@tds/core-notification@3.1.7...@tds/core-notification@3.1.8) (2021-03-18)
 
 **Note:** Version bump only for package @tds/core-notification
