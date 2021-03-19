@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.21](https://github.com/telus/tds-core/compare/@tds/core-web-video@1.1.20...@tds/core-web-video@1.1.21) (2021-03-19)
+
+
+### Bug Fixes
+
+* **core-web-video:** remove broken css background declaration ([0463e52](https://github.com/telus/tds-core/commit/0463e527f6a418c7064cfb8eaa5f8d686648c4f0))
+
+
+
+
+
 ## [1.1.20](https://github.com/telus/tds-core/compare/@tds/core-web-video@1.1.19...@tds/core-web-video@1.1.20) (2021-02-02)
 
 **Note:** Version bump only for package @tds/core-web-video
