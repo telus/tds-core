@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.4](https://github.com/telusdigital/tds/compare/@tds/core-button@3.2.3...@tds/core-button@3.2.4) (2021-03-22)
+
+
+### Bug Fixes
+
+* **core-button:** no hover on touch screens ([be8cb85](https://github.com/telusdigital/tds/commit/be8cb8566bdee071006ff7b2ee4b2900b0a74832))
+
+
+
+
+
 ## [3.2.3](https://github.com/telusdigital/tds/compare/@tds/core-button@3.2.2...@tds/core-button@3.2.3) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-button
