@@ -1,3 +1,4 @@
-import Link from './dist/index.es'
+import Link, { StyledLink } from './dist/index.es'
 
+export { StyledLink }
 export default Link

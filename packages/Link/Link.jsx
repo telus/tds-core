@@ -42,7 +42,7 @@ const states = ({ invert }) => {
     },
   }
 }
-const StyledLink = styled.a(
+export const StyledLink = styled.a(
   base,
   {
     '& svg': {
@@ -56,7 +56,7 @@ const StyledLink = styled.a(
     },
   },
   ({ invert, context }) => {
-    if (context.inheritColor) {
+    if (context && context.inheritColor) {
       return {
         '&:link,&:visited': {
           color: 'inherit',
