@@ -121,8 +121,9 @@ const TermsAndConditions = forwardRef(
                         <FlexGrid.Row>
                           <FlexGrid.Col xs={12} mdOffset={1} md={10}>
                             <List size="small" below={4} type="indexed">
-                              {indexedContent.map(c => (
-                                <List.Item key={c}>{renderContent(c)}</List.Item>
+                              {indexedContent.map((c, idx) => (
+                                // eslint-disable-next-line react/no-array-index-key
+                                <List.Item key={idx}>{renderContent(c)}</List.Item>
                               ))}
                             </List>
                           </FlexGrid.Col>
@@ -142,8 +143,9 @@ const TermsAndConditions = forwardRef(
                                 </div>
                               )}
                               <List size="small" below={4} type="nonIndexed">
-                                {nonIndexedContent.map(c => (
-                                  <List.Item key={c}>{renderContent(c)}</List.Item>
+                                {nonIndexedContent.map((c, idx) => (
+                                  // eslint-disable-next-line react/no-array-index-key
+                                  <List.Item key={idx}>{renderContent(c)}</List.Item>
                                 ))}
                               </List>
                             </Box>
