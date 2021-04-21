@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.2](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.4.1...@tds/core-terms-and-conditions@1.4.2) (2021-04-21)
+
+
+### Bug Fixes
+
+* **core-terms-and-conditions:** use index as key when mapping ([dbcfcc2](https://github.com/telus/tds-core/commit/dbcfcc2612cfe58fa94e3a7adab920be608e786b))
+
+
+
+
+
 ## [1.4.1](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.4.0...@tds/core-terms-and-conditions@1.4.1) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-terms-and-conditions
