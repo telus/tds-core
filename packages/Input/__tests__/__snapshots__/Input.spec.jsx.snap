@@ -2,8 +2,8 @@
 
 exports[`Input feedback states ensures that the contents do not overlap the icons 1`] = `
 .c8 {
-  width: 1.25remrem;
-  height: 1.25remrem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .c3 {
@@ -1471,8 +1471,8 @@ exports[`Input renders 1`] = `
 
 exports[`Input renders with a feedback state and icon 1`] = `
 .c8 {
-  width: 1.25remrem;
-  height: 1.25remrem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .c3 {

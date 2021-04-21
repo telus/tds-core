@@ -16,6 +16,7 @@ module.exports = {
   testPathIgnorePatterns: [path.resolve('scripts/scaffolding')],
   moduleNameMapper: {
     '^.+\\.css$': path.resolve('config/jest/__mocks__/styleMock.js'),
+    '^.+\\.svg$': path.resolve('config/jest/__mocks__/svgMock.js'),
   },
   setupFiles: [
     path.resolve('config/jest/setupEnzyme.js'),

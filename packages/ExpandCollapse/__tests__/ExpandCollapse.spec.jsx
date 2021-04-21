@@ -2,7 +2,7 @@ import React from 'react'
 import { shallow, mount } from 'enzyme'
 
 import Text from '@tds/core-text'
-import DecorativeIcon from '@tds/core-decorative-icon'
+import { CaretUp, CaretDown } from '@tds/core-interactive-icon'
 import HairlineDivider from '@tds/core-hairline-divider'
 import { FadeAndReveal, Translate } from '@tds/shared-animation'
 
@@ -168,11 +168,11 @@ describe('ExpandCollapse', () => {
       )
 
       expect(findPanelHeader('panel-1').find(Translate)).toHaveProp('distance', '0.25rem')
-      expect(findPanelHeader('panel-1').find(DecorativeIcon)).toHaveProp('symbol', 'caretDown')
+      expect(findPanelHeader('panel-1')).toContainReact(<CaretDown variant="primary" size={16} />)
 
       clickPanel('panel-1')
       expect(findPanelHeader('panel-1').find(Translate)).toHaveProp('distance', '-0.25rem')
-      expect(findPanelHeader('panel-1').find(DecorativeIcon)).toHaveProp('symbol', 'caretUp')
+      expect(findPanelHeader('panel-1')).toContainReact(<CaretUp variant="primary" size={16} />)
     })
   })
 

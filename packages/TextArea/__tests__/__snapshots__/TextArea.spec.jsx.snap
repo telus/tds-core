@@ -708,8 +708,8 @@ exports[`TextArea renders 1`] = `
 
 exports[`TextArea renders with a feedback state and icon 1`] = `
 .c8 {
-  width: 1.25remrem;
-  height: 1.25remrem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .c3 {

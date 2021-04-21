@@ -7,10 +7,14 @@
         "**/*.spec.jsx",
         "**/*.snap",
         "@tds/core-selector-counter",
+        "@tds/core-standalone-icon",
         "**/package-lock.json"
       ],
       "message": "chore(publish): update packages"
     }
   },
-  "packages": ["packages/*", "shared/**"]
+  "packages": [
+    "packages/*",
+    "shared/**"
+  ]
 }

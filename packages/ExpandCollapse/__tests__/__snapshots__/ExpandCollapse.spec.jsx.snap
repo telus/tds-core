@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1`] = `
-.c4 {
+.c9 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1.25rem;
@@ -14,7 +14,7 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
   font-weight: 400;
 }
 
-.c4 sup {
+.c9 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -23,25 +23,21 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
 }
 
 .c5 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #2B8000;
-  font-size: 1rem;
+  fill: #2B8000;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
-.c5::before {
-  content: '\\f105';
+.c5:hover,
+.c5:focus,
+.c5:active {
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 .c1 {
@@ -81,6 +77,13 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
   cursor: pointer;
   width: 100%;
   text-align: left;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c6 {
@@ -124,7 +127,35 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .c3 {
+  .c5 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c5 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (max-width:767px) {
+  .c5 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c4 {
     -webkit-transition: none !important;
     transition: none !important;
   }
@@ -207,9 +238,9 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
                   [Function],
                 ],
                 "componentStyle": ComponentStyle {
-                  "componentId": "sc-bdVaJa",
+                  "componentId": "sc-EHOje",
                   "isStatic": false,
-                  "lastClassName": "dBqVkr",
+                  "lastClassName": "ggDDiM",
                   "rules": Array [
                     [Function],
                     [Function],
@@ -221,7 +252,7 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
                 "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "sc-bdVaJa",
+                "styledComponentId": "sc-EHOje",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -255,9 +286,9 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
                           [Function],
                         ],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-bdVaJa",
+                          "componentId": "sc-EHOje",
                           "isStatic": false,
-                          "lastClassName": "dBqVkr",
+                          "lastClassName": "ggDDiM",
                           "rules": Array [
                             [Function],
                             [Function],
@@ -269,7 +300,7 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
                         "displayName": "styled.div",
                         "foldedComponentIds": Array [],
                         "render": [Function],
-                        "styledComponentId": "sc-bdVaJa",
+                        "styledComponentId": "sc-EHOje",
                         "target": "div",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -294,7 +325,7 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
                               "componentStyle": ComponentStyle {
                                 "componentId": "PanelWrapper__CaretContainer-doiyjm-1",
                                 "isStatic": false,
-                                "lastClassName": "lkXOVg",
+                                "lastClassName": "c3",
                                 "rules": Array [
                                   [Function],
                                 ],
@@ -313,12 +344,18 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
                           isDisabled={false}
                         >
                           <div
-                            className=""
+                            className="c3"
                           >
                             <Translate
                               direction="y"
                               distance="0.25rem"
                               in={false}
+                              initialStyle={
+                                Object {
+                                  "alignItems": "center",
+                                  "display": "flex",
+                                }
+                              }
                               timeout={300}
                             >
                               <Transition
@@ -339,6 +376,8 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
                                 <Translate__StyledContainer
                                   style={
                                     Object {
+                                      "alignItems": "center",
+                                      "display": "flex",
                                       "transition": "transform 300ms",
                                     }
                                   }
@@ -351,7 +390,7 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
                                         "componentStyle": ComponentStyle {
                                           "componentId": "Translate__StyledContainer-lgiaqm-0",
                                           "isStatic": true,
-                                          "lastClassName": "c3",
+                                          "lastClassName": "c4",
                                           "rules": Array [
                                             "@media (prefers-reduced-motion: reduce) {",
                                             "transition: none !important;",
@@ -371,134 +410,98 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
                                     forwardedRef={null}
                                     style={
                                       Object {
+                                        "alignItems": "center",
+                                        "display": "flex",
                                         "transition": "transform 300ms",
                                       }
                                     }
                                   >
                                     <div
-                                      className="c3"
+                                      className="c4"
                                       style={
                                         Object {
+                                          "alignItems": "center",
+                                          "display": "flex",
                                           "transition": "transform 300ms",
                                         }
                                       }
                                     >
-                                      <Text
-                                        block={false}
-                                        bold={false}
-                                        invert={false}
-                                        size="large"
+                                      <CaretDown
+                                        size={16}
+                                        variant="primary"
                                       >
-                                        <Text__StyledText
-                                          block={false}
-                                          bold={false}
-                                          invert={false}
-                                          size="large"
+                                        <Limited
+                                          size={16}
+                                          variant="primary"
                                         >
-                                          <StyledComponent
-                                            block={false}
-                                            bold={false}
-                                            forwardedComponent={
+                                          <ThemeProvider
+                                            size={16}
+                                            theme={
                                               Object {
-                                                "$$typeof": Symbol(react.forward_ref),
-                                                "attrs": Array [],
-                                                "componentStyle": ComponentStyle {
-                                                  "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                  "isStatic": false,
-                                                  "lastClassName": "dWdjsD",
-                                                  "rules": Array [
-                                                    [Function],
-                                                    [Function],
-                                                    [Function],
-                                                    [Function],
-                                                    [Function],
-                                                    "sup {",
-                                                    "top: -0.5em;",
-                                                    "font-size: 0.875rem;",
-                                                    "position: relative;",
-                                                    "vertical-align: baseline;",
-                                                    "padding-left: 0.1em;",
-                                                    "}",
-                                                  ],
-                                                },
-                                                "displayName": "Text__StyledText",
-                                                "foldedComponentIds": Array [],
-                                                "render": [Function],
-                                                "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                "target": "span",
-                                                "toString": [Function],
-                                                "warnTooManyClasses": [Function],
-                                                "withComponent": [Function],
+                                                "backgroundColor": "transparent",
+                                                "iconColor": "#2B8000",
                                               }
                                             }
-                                            forwardedRef={null}
-                                            invert={false}
-                                            size="large"
                                           >
-                                            <span
-                                              className="c4"
-                                              size="large"
+                                            <Styled(StyledInteractiveIconSVG)
+                                              animationDirection="down"
+                                              size={16}
+                                              variant="primary"
+                                              viewBox="0 0 24 24"
                                             >
-                                              <DecorativeIcon
+                                              <StyledComponent
+                                                animationDirection="down"
+                                                forwardedComponent={
+                                                  Object {
+                                                    "$$typeof": Symbol(react.forward_ref),
+                                                    "attrs": Array [],
+                                                    "componentStyle": ComponentStyle {
+                                                      "componentId": "sc-bdVaJa",
+                                                      "isStatic": false,
+                                                      "lastClassName": "c5",
+                                                      "rules": Array [
+                                                        [Function],
+                                                        "width: 1.5rem;",
+                                                        "height: 1.5rem;",
+                                                        "z-index: 2;",
+                                                        [Function],
+                                                        "@media (prefers-reduced-motion: reduce) {",
+                                                        "transition: none;",
+                                                        "}",
+                                                        [Function],
+                                                      ],
+                                                    },
+                                                    "displayName": "Styled(StyledInteractiveIconSVG)",
+                                                    "foldedComponentIds": Array [
+                                                      "StyledInteractiveIconSVG-ix2erv-0",
+                                                    ],
+                                                    "render": [Function],
+                                                    "styledComponentId": "sc-bdVaJa",
+                                                    "target": "svg",
+                                                    "toString": [Function],
+                                                    "warnTooManyClasses": [Function],
+                                                    "withComponent": [Function],
+                                                  }
+                                                }
+                                                forwardedRef={null}
                                                 size={16}
-                                                symbol="caretDown"
                                                 variant="primary"
+                                                viewBox="0 0 24 24"
                                               >
-                                                <Icon
-                                                  aria-hidden="true"
+                                                <svg
+                                                  className="c5"
                                                   size={16}
-                                                  symbol="caretDown"
-                                                  variant="primary"
+                                                  viewBox="0 0 24 24"
                                                 >
-                                                  <Icon__StyledIcon
-                                                    aria-hidden="true"
-                                                    iSize={16}
-                                                    symbol="caretDown"
-                                                    variant="primary"
-                                                  >
-                                                    <StyledComponent
-                                                      aria-hidden="true"
-                                                      forwardedComponent={
-                                                        Object {
-                                                          "$$typeof": Symbol(react.forward_ref),
-                                                          "attrs": Array [],
-                                                          "componentStyle": ComponentStyle {
-                                                            "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                            "isStatic": false,
-                                                            "lastClassName": "c5",
-                                                            "rules": Array [
-                                                              [Function],
-                                                              [Function],
-                                                              [Function],
-                                                            ],
-                                                          },
-                                                          "displayName": "Icon__StyledIcon",
-                                                          "foldedComponentIds": Array [],
-                                                          "render": [Function],
-                                                          "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                          "target": "i",
-                                                          "toString": [Function],
-                                                          "warnTooManyClasses": [Function],
-                                                          "withComponent": [Function],
-                                                        }
-                                                      }
-                                                      forwardedRef={null}
-                                                      iSize={16}
-                                                      symbol="caretDown"
-                                                      variant="primary"
-                                                    >
-                                                      <i
-                                                        aria-hidden="true"
-                                                        className="c5"
-                                                      />
-                                                    </StyledComponent>
-                                                  </Icon__StyledIcon>
-                                                </Icon>
-                                              </DecorativeIcon>
-                                            </span>
-                                          </StyledComponent>
-                                        </Text__StyledText>
-                                      </Text>
+                                                  <path
+                                                    d="M17.7940812,9.18323023 C17.4424627,8.8825106 17.0896181,9.04504427 16.8868854,9.24527574 L11.9968161,13.740553 L7.11722187,9.24527573 C6.93839231,9.08145209 6.49053328,8.81996721 6.16524043,9.18323023 C5.83994757,9.54649326 6.06520964,9.91610528 6.24327169,10.0799289 L11.6348225,15.8766027 C11.8136521,16.0411324 12.1060729,16.0411324 12.2849025,15.8766027 C12.2849025,15.8758965 17.7940809,10.079929 17.7940809,10.079929 C17.9792355,9.93504267 18.1456996,9.48394985 17.7940812,9.18323023 Z"
+                                                  />
+                                                </svg>
+                                              </StyledComponent>
+                                            </Styled(StyledInteractiveIconSVG)>
+                                          </ThemeProvider>
+                                        </Limited>
+                                      </CaretDown>
                                     </div>
                                   </StyledComponent>
                                 </Translate__StyledContainer>
@@ -655,7 +658,7 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
                                               size="large"
                                             >
                                               <span
-                                                className="c4"
+                                                className="c9"
                                                 size="large"
                                               >
                                                 Panel title
@@ -686,7 +689,7 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
 `;
 
 exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`] = `
-.c5 {
+.c9 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1.25rem;
@@ -699,7 +702,7 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
   font-weight: 400;
 }
 
-.c5 sup {
+.c9 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -707,26 +710,22 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
   padding-left: 0.1em;
 }
 
-.c6 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #2B8000;
-  font-size: 1rem;
+.c5 {
+  fill: #2B8000;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
-.c6::before {
-  content: '\\f105';
+.c5:hover,
+.c5:focus,
+.c5:active {
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 .c1 {
@@ -772,9 +771,13 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
 
 .c3 {
   visibility: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.c7 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -792,7 +795,7 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
   align-items: flex-start;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -810,8 +813,36 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
   align-items: flex-start;
 }
 
-.c9 {
+.c8 {
   width: 100%;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c5 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c5 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (max-width:767px) {
+  .c5 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -848,9 +879,9 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
               [Function],
             ],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bdVaJa",
+              "componentId": "sc-EHOje",
               "isStatic": false,
-              "lastClassName": "dBqVkr",
+              "lastClassName": "ggDDiM",
               "rules": Array [
                 [Function],
                 [Function],
@@ -862,7 +893,7 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
             "displayName": "styled.div",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "sc-bdVaJa",
+            "styledComponentId": "sc-EHOje",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -896,9 +927,9 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
                       [Function],
                     ],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-bdVaJa",
+                      "componentId": "sc-EHOje",
                       "isStatic": false,
-                      "lastClassName": "dBqVkr",
+                      "lastClassName": "ggDDiM",
                       "rules": Array [
                         [Function],
                         [Function],
@@ -910,7 +941,7 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-bdVaJa",
+                    "styledComponentId": "sc-EHOje",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -960,6 +991,12 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
                           direction="y"
                           distance="0.25rem"
                           in={false}
+                          initialStyle={
+                            Object {
+                              "alignItems": "center",
+                              "display": "flex",
+                            }
+                          }
                           timeout={300}
                         >
                           <Transition
@@ -980,6 +1017,8 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
                             <Translate__StyledContainer
                               style={
                                 Object {
+                                  "alignItems": "center",
+                                  "display": "flex",
                                   "transition": "transform 300ms",
                                 }
                               }
@@ -1012,6 +1051,8 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
                                 forwardedRef={null}
                                 style={
                                   Object {
+                                    "alignItems": "center",
+                                    "display": "flex",
                                     "transition": "transform 300ms",
                                   }
                                 }
@@ -1020,126 +1061,88 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
                                   className="c4"
                                   style={
                                     Object {
+                                      "alignItems": "center",
+                                      "display": "flex",
                                       "transition": "transform 300ms",
                                     }
                                   }
                                 >
-                                  <Text
-                                    block={false}
-                                    bold={false}
-                                    invert={false}
-                                    size="large"
+                                  <CaretDown
+                                    size={16}
+                                    variant="primary"
                                   >
-                                    <Text__StyledText
-                                      block={false}
-                                      bold={false}
-                                      invert={false}
-                                      size="large"
+                                    <Limited
+                                      size={16}
+                                      variant="primary"
                                     >
-                                      <StyledComponent
-                                        block={false}
-                                        bold={false}
-                                        forwardedComponent={
+                                      <ThemeProvider
+                                        size={16}
+                                        theme={
                                           Object {
-                                            "$$typeof": Symbol(react.forward_ref),
-                                            "attrs": Array [],
-                                            "componentStyle": ComponentStyle {
-                                              "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                              "isStatic": false,
-                                              "lastClassName": "dWdjsD",
-                                              "rules": Array [
-                                                [Function],
-                                                [Function],
-                                                [Function],
-                                                [Function],
-                                                [Function],
-                                                "sup {",
-                                                "top: -0.5em;",
-                                                "font-size: 0.875rem;",
-                                                "position: relative;",
-                                                "vertical-align: baseline;",
-                                                "padding-left: 0.1em;",
-                                                "}",
-                                              ],
-                                            },
-                                            "displayName": "Text__StyledText",
-                                            "foldedComponentIds": Array [],
-                                            "render": [Function],
-                                            "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                            "target": "span",
-                                            "toString": [Function],
-                                            "warnTooManyClasses": [Function],
-                                            "withComponent": [Function],
+                                            "backgroundColor": "transparent",
+                                            "iconColor": "#2B8000",
                                           }
                                         }
-                                        forwardedRef={null}
-                                        invert={false}
-                                        size="large"
                                       >
-                                        <span
-                                          className="c5"
-                                          size="large"
+                                        <Styled(StyledInteractiveIconSVG)
+                                          animationDirection="down"
+                                          size={16}
+                                          variant="primary"
+                                          viewBox="0 0 24 24"
                                         >
-                                          <DecorativeIcon
+                                          <StyledComponent
+                                            animationDirection="down"
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "sc-bdVaJa",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c5",
+                                                  "rules": Array [
+                                                    [Function],
+                                                    "width: 1.5rem;",
+                                                    "height: 1.5rem;",
+                                                    "z-index: 2;",
+                                                    [Function],
+                                                    "@media (prefers-reduced-motion: reduce) {",
+                                                    "transition: none;",
+                                                    "}",
+                                                    [Function],
+                                                  ],
+                                                },
+                                                "displayName": "Styled(StyledInteractiveIconSVG)",
+                                                "foldedComponentIds": Array [
+                                                  "StyledInteractiveIconSVG-ix2erv-0",
+                                                ],
+                                                "render": [Function],
+                                                "styledComponentId": "sc-bdVaJa",
+                                                "target": "svg",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
                                             size={16}
-                                            symbol="caretDown"
                                             variant="primary"
+                                            viewBox="0 0 24 24"
                                           >
-                                            <Icon
-                                              aria-hidden="true"
+                                            <svg
+                                              className="c5"
                                               size={16}
-                                              symbol="caretDown"
-                                              variant="primary"
+                                              viewBox="0 0 24 24"
                                             >
-                                              <Icon__StyledIcon
-                                                aria-hidden="true"
-                                                iSize={16}
-                                                symbol="caretDown"
-                                                variant="primary"
-                                              >
-                                                <StyledComponent
-                                                  aria-hidden="true"
-                                                  forwardedComponent={
-                                                    Object {
-                                                      "$$typeof": Symbol(react.forward_ref),
-                                                      "attrs": Array [],
-                                                      "componentStyle": ComponentStyle {
-                                                        "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                        "isStatic": false,
-                                                        "lastClassName": "c6",
-                                                        "rules": Array [
-                                                          [Function],
-                                                          [Function],
-                                                          [Function],
-                                                        ],
-                                                      },
-                                                      "displayName": "Icon__StyledIcon",
-                                                      "foldedComponentIds": Array [],
-                                                      "render": [Function],
-                                                      "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                      "target": "i",
-                                                      "toString": [Function],
-                                                      "warnTooManyClasses": [Function],
-                                                      "withComponent": [Function],
-                                                    }
-                                                  }
-                                                  forwardedRef={null}
-                                                  iSize={16}
-                                                  symbol="caretDown"
-                                                  variant="primary"
-                                                >
-                                                  <i
-                                                    aria-hidden="true"
-                                                    className="c6"
-                                                  />
-                                                </StyledComponent>
-                                              </Icon__StyledIcon>
-                                            </Icon>
-                                          </DecorativeIcon>
-                                        </span>
-                                      </StyledComponent>
-                                    </Text__StyledText>
-                                  </Text>
+                                              <path
+                                                d="M17.7940812,9.18323023 C17.4424627,8.8825106 17.0896181,9.04504427 16.8868854,9.24527574 L11.9968161,13.740553 L7.11722187,9.24527573 C6.93839231,9.08145209 6.49053328,8.81996721 6.16524043,9.18323023 C5.83994757,9.54649326 6.06520964,9.91610528 6.24327169,10.0799289 L11.6348225,15.8766027 C11.8136521,16.0411324 12.1060729,16.0411324 12.2849025,15.8766027 C12.2849025,15.8758965 17.7940809,10.079929 17.7940809,10.079929 C17.9792355,9.93504267 18.1456996,9.48394985 17.7940812,9.18323023 Z"
+                                              />
+                                            </svg>
+                                          </StyledComponent>
+                                        </Styled(StyledInteractiveIconSVG)>
+                                      </ThemeProvider>
+                                    </Limited>
+                                  </CaretDown>
                                 </div>
                               </StyledComponent>
                             </Translate__StyledContainer>
@@ -1160,7 +1163,7 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
                           "componentStyle": ComponentStyle {
                             "componentId": "PanelWrapper__HeaderContainer-doiyjm-2",
                             "isStatic": false,
-                            "lastClassName": "c8",
+                            "lastClassName": "c7",
                             "rules": Array [
                               [Function],
                             ],
@@ -1178,7 +1181,7 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
                       forwardedRef={null}
                     >
                       <div
-                        className="c7"
+                        className="c6"
                         direction="row"
                       >
                         <PanelWrapper__HeaderContainer
@@ -1193,7 +1196,7 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
                                 "componentStyle": ComponentStyle {
                                   "componentId": "PanelWrapper__HeaderContainer-doiyjm-2",
                                   "isStatic": false,
-                                  "lastClassName": "c8",
+                                  "lastClassName": "c7",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -1211,7 +1214,7 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
                             forwardedRef={null}
                           >
                             <div
-                              className="c8"
+                              className="c7"
                               direction="column"
                             >
                               <PanelWrapper__HeaderTitleContainer>
@@ -1223,7 +1226,7 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
                                       "componentStyle": ComponentStyle {
                                         "componentId": "PanelWrapper__HeaderTitleContainer-doiyjm-3",
                                         "isStatic": true,
-                                        "lastClassName": "c9",
+                                        "lastClassName": "c8",
                                         "rules": Array [
                                           "width: 100%;",
                                         ],
@@ -1241,7 +1244,7 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
                                   forwardedRef={null}
                                 >
                                   <div
-                                    className="c9"
+                                    className="c8"
                                   >
                                     <Text
                                       block={false}
@@ -1296,7 +1299,7 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
                                           size="large"
                                         >
                                           <span
-                                            className="c5"
+                                            className="c9"
                                             size="large"
                                           >
                                             Panel title
@@ -1547,7 +1550,7 @@ exports[`ExpandCollapse empty panels renders 1`] = `
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "sc-bwzfXH",
+                        "componentId": "sc-bZQynM",
                         "isStatic": true,
                         "lastClassName": "c2",
                         "rules": Array [
@@ -1578,7 +1581,7 @@ exports[`ExpandCollapse empty panels renders 1`] = `
                         "vertical": [Function],
                       },
                       "render": [Function],
-                      "styledComponentId": "sc-bwzfXH",
+                      "styledComponentId": "sc-bZQynM",
                       "target": Object {
                         "$$typeof": Symbol(react.forward_ref),
                         "defaultProps": Object {
@@ -1651,7 +1654,7 @@ exports[`ExpandCollapse empty panels renders 1`] = `
                               [Function],
                             ],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-bdVaJa",
+                              "componentId": "sc-EHOje",
                               "isStatic": false,
                               "lastClassName": "c4",
                               "rules": Array [
@@ -1665,7 +1668,7 @@ exports[`ExpandCollapse empty panels renders 1`] = `
                             "displayName": "styled.div",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-bdVaJa",
+                            "styledComponentId": "sc-EHOje",
                             "target": "div",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1683,7 +1686,7 @@ exports[`ExpandCollapse empty panels renders 1`] = `
                         vertical={3}
                       >
                         <div
-                          className="c2 sc-bwzfXH c2 c3"
+                          className="c2 sc-bZQynM c2 c3"
                           style={
                             Object {
                               "marginLeft": "1.5rem",
@@ -1709,7 +1712,7 @@ exports[`ExpandCollapse empty panels renders 1`] = `
                                       [Function],
                                     ],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bdVaJa",
+                                      "componentId": "sc-EHOje",
                                       "isStatic": false,
                                       "lastClassName": "c4",
                                       "rules": Array [
@@ -1723,7 +1726,7 @@ exports[`ExpandCollapse empty panels renders 1`] = `
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-bdVaJa",
+                                    "styledComponentId": "sc-EHOje",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -1966,7 +1969,7 @@ exports[`ExpandCollapse empty panels renders 1`] = `
 `;
 
 exports[`ExpandCollapse renders a closed panel 1`] = `
-.c6 {
+.c11 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1.25rem;
@@ -1979,7 +1982,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
   font-weight: 400;
 }
 
-.c6 sup {
+.c11 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -1987,7 +1990,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
   padding-left: 0.1em;
 }
 
-.c14 {
+.c15 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: inherit;
@@ -1995,7 +1998,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
   display: block;
 }
 
-.c14 sup {
+.c15 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -2004,25 +2007,21 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
 }
 
 .c7 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #2B8000;
-  font-size: 1rem;
+  fill: #2B8000;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
-.c7::before {
-  content: '\\f105';
+.c7:hover,
+.c7:focus,
+.c7:active {
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 .c1 {
@@ -2063,14 +2062,14 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
   margin-right: 1rem;
 }
 
-.c13 {
+.c14 {
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 
-.c12 {
+.c13 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -2092,6 +2091,13 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
   cursor: pointer;
   width: 100%;
   text-align: left;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c8 {
@@ -2139,21 +2145,49 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .c5 {
+  .c7 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c7 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (max-width:767px) {
+  .c7 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c6 {
     -webkit-transition: none !important;
     transition: none !important;
   }
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .c11 {
+  .c12 {
     -webkit-transition: none !important;
     transition: none !important;
   }
 }
 
 @media (max-width:767px) {
-  .c13 {
+  .c14 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 1.5rem;
@@ -2162,7 +2196,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
 }
 
 @media (min-width:768px) {
-  .c13 {
+  .c14 {
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
@@ -2347,9 +2381,9 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                   [Function],
                                 ],
                                 "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bdVaJa",
+                                  "componentId": "sc-EHOje",
                                   "isStatic": false,
-                                  "lastClassName": "c13",
+                                  "lastClassName": "c14",
                                   "rules": Array [
                                     [Function],
                                     [Function],
@@ -2361,7 +2395,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                 "displayName": "styled.div",
                                 "foldedComponentIds": Array [],
                                 "render": [Function],
-                                "styledComponentId": "sc-bdVaJa",
+                                "styledComponentId": "sc-EHOje",
                                 "target": "div",
                                 "toString": [Function],
                                 "warnTooManyClasses": [Function],
@@ -2395,9 +2429,9 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                           [Function],
                                         ],
                                         "componentStyle": ComponentStyle {
-                                          "componentId": "sc-bdVaJa",
+                                          "componentId": "sc-EHOje",
                                           "isStatic": false,
-                                          "lastClassName": "c13",
+                                          "lastClassName": "c14",
                                           "rules": Array [
                                             [Function],
                                             [Function],
@@ -2409,7 +2443,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                         "displayName": "styled.div",
                                         "foldedComponentIds": Array [],
                                         "render": [Function],
-                                        "styledComponentId": "sc-bdVaJa",
+                                        "styledComponentId": "sc-EHOje",
                                         "target": "div",
                                         "toString": [Function],
                                         "warnTooManyClasses": [Function],
@@ -2434,7 +2468,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "PanelWrapper__CaretContainer-doiyjm-1",
                                                 "isStatic": false,
-                                                "lastClassName": "lkXOVg",
+                                                "lastClassName": "c5",
                                                 "rules": Array [
                                                   [Function],
                                                 ],
@@ -2453,12 +2487,18 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                           isDisabled={false}
                                         >
                                           <div
-                                            className=""
+                                            className="c5"
                                           >
                                             <Translate
                                               direction="y"
                                               distance="0.25rem"
                                               in={false}
+                                              initialStyle={
+                                                Object {
+                                                  "alignItems": "center",
+                                                  "display": "flex",
+                                                }
+                                              }
                                               timeout={300}
                                             >
                                               <Transition
@@ -2479,6 +2519,8 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                                 <Translate__StyledContainer
                                                   style={
                                                     Object {
+                                                      "alignItems": "center",
+                                                      "display": "flex",
                                                       "transition": "transform 300ms",
                                                     }
                                                   }
@@ -2491,7 +2533,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "Translate__StyledContainer-lgiaqm-0",
                                                           "isStatic": true,
-                                                          "lastClassName": "c5",
+                                                          "lastClassName": "c6",
                                                           "rules": Array [
                                                             "@media (prefers-reduced-motion: reduce) {",
                                                             "transition: none !important;",
@@ -2511,134 +2553,98 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                                     forwardedRef={null}
                                                     style={
                                                       Object {
+                                                        "alignItems": "center",
+                                                        "display": "flex",
                                                         "transition": "transform 300ms",
                                                       }
                                                     }
                                                   >
                                                     <div
-                                                      className="c5"
+                                                      className="c6"
                                                       style={
                                                         Object {
+                                                          "alignItems": "center",
+                                                          "display": "flex",
                                                           "transition": "transform 300ms",
                                                         }
                                                       }
                                                     >
-                                                      <Text
-                                                        block={false}
-                                                        bold={false}
-                                                        invert={false}
-                                                        size="large"
+                                                      <CaretDown
+                                                        size={16}
+                                                        variant="primary"
                                                       >
-                                                        <Text__StyledText
-                                                          block={false}
-                                                          bold={false}
-                                                          invert={false}
-                                                          size="large"
+                                                        <Limited
+                                                          size={16}
+                                                          variant="primary"
                                                         >
-                                                          <StyledComponent
-                                                            block={false}
-                                                            bold={false}
-                                                            forwardedComponent={
+                                                          <ThemeProvider
+                                                            size={16}
+                                                            theme={
                                                               Object {
-                                                                "$$typeof": Symbol(react.forward_ref),
-                                                                "attrs": Array [],
-                                                                "componentStyle": ComponentStyle {
-                                                                  "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                  "isStatic": false,
-                                                                  "lastClassName": "c14",
-                                                                  "rules": Array [
-                                                                    [Function],
-                                                                    [Function],
-                                                                    [Function],
-                                                                    [Function],
-                                                                    [Function],
-                                                                    "sup {",
-                                                                    "top: -0.5em;",
-                                                                    "font-size: 0.875rem;",
-                                                                    "position: relative;",
-                                                                    "vertical-align: baseline;",
-                                                                    "padding-left: 0.1em;",
-                                                                    "}",
-                                                                  ],
-                                                                },
-                                                                "displayName": "Text__StyledText",
-                                                                "foldedComponentIds": Array [],
-                                                                "render": [Function],
-                                                                "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                "target": "span",
-                                                                "toString": [Function],
-                                                                "warnTooManyClasses": [Function],
-                                                                "withComponent": [Function],
+                                                                "backgroundColor": "transparent",
+                                                                "iconColor": "#2B8000",
                                                               }
                                                             }
-                                                            forwardedRef={null}
-                                                            invert={false}
-                                                            size="large"
                                                           >
-                                                            <span
-                                                              className="c6"
-                                                              size="large"
+                                                            <Styled(StyledInteractiveIconSVG)
+                                                              animationDirection="down"
+                                                              size={16}
+                                                              variant="primary"
+                                                              viewBox="0 0 24 24"
                                                             >
-                                                              <DecorativeIcon
+                                                              <StyledComponent
+                                                                animationDirection="down"
+                                                                forwardedComponent={
+                                                                  Object {
+                                                                    "$$typeof": Symbol(react.forward_ref),
+                                                                    "attrs": Array [],
+                                                                    "componentStyle": ComponentStyle {
+                                                                      "componentId": "sc-bdVaJa",
+                                                                      "isStatic": false,
+                                                                      "lastClassName": "c7",
+                                                                      "rules": Array [
+                                                                        [Function],
+                                                                        "width: 1.5rem;",
+                                                                        "height: 1.5rem;",
+                                                                        "z-index: 2;",
+                                                                        [Function],
+                                                                        "@media (prefers-reduced-motion: reduce) {",
+                                                                        "transition: none;",
+                                                                        "}",
+                                                                        [Function],
+                                                                      ],
+                                                                    },
+                                                                    "displayName": "Styled(StyledInteractiveIconSVG)",
+                                                                    "foldedComponentIds": Array [
+                                                                      "StyledInteractiveIconSVG-ix2erv-0",
+                                                                    ],
+                                                                    "render": [Function],
+                                                                    "styledComponentId": "sc-bdVaJa",
+                                                                    "target": "svg",
+                                                                    "toString": [Function],
+                                                                    "warnTooManyClasses": [Function],
+                                                                    "withComponent": [Function],
+                                                                  }
+                                                                }
+                                                                forwardedRef={null}
                                                                 size={16}
-                                                                symbol="caretDown"
                                                                 variant="primary"
+                                                                viewBox="0 0 24 24"
                                                               >
-                                                                <Icon
-                                                                  aria-hidden="true"
+                                                                <svg
+                                                                  className="c7"
                                                                   size={16}
-                                                                  symbol="caretDown"
-                                                                  variant="primary"
+                                                                  viewBox="0 0 24 24"
                                                                 >
-                                                                  <Icon__StyledIcon
-                                                                    aria-hidden="true"
-                                                                    iSize={16}
-                                                                    symbol="caretDown"
-                                                                    variant="primary"
-                                                                  >
-                                                                    <StyledComponent
-                                                                      aria-hidden="true"
-                                                                      forwardedComponent={
-                                                                        Object {
-                                                                          "$$typeof": Symbol(react.forward_ref),
-                                                                          "attrs": Array [],
-                                                                          "componentStyle": ComponentStyle {
-                                                                            "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                                            "isStatic": false,
-                                                                            "lastClassName": "c7",
-                                                                            "rules": Array [
-                                                                              [Function],
-                                                                              [Function],
-                                                                              [Function],
-                                                                            ],
-                                                                          },
-                                                                          "displayName": "Icon__StyledIcon",
-                                                                          "foldedComponentIds": Array [],
-                                                                          "render": [Function],
-                                                                          "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                                          "target": "i",
-                                                                          "toString": [Function],
-                                                                          "warnTooManyClasses": [Function],
-                                                                          "withComponent": [Function],
-                                                                        }
-                                                                      }
-                                                                      forwardedRef={null}
-                                                                      iSize={16}
-                                                                      symbol="caretDown"
-                                                                      variant="primary"
-                                                                    >
-                                                                      <i
-                                                                        aria-hidden="true"
-                                                                        className="c7"
-                                                                      />
-                                                                    </StyledComponent>
-                                                                  </Icon__StyledIcon>
-                                                                </Icon>
-                                                              </DecorativeIcon>
-                                                            </span>
-                                                          </StyledComponent>
-                                                        </Text__StyledText>
-                                                      </Text>
+                                                                  <path
+                                                                    d="M17.7940812,9.18323023 C17.4424627,8.8825106 17.0896181,9.04504427 16.8868854,9.24527574 L11.9968161,13.740553 L7.11722187,9.24527573 C6.93839231,9.08145209 6.49053328,8.81996721 6.16524043,9.18323023 C5.83994757,9.54649326 6.06520964,9.91610528 6.24327169,10.0799289 L11.6348225,15.8766027 C11.8136521,16.0411324 12.1060729,16.0411324 12.2849025,15.8766027 C12.2849025,15.8758965 17.7940809,10.079929 17.7940809,10.079929 C17.9792355,9.93504267 18.1456996,9.48394985 17.7940812,9.18323023 Z"
+                                                                  />
+                                                                </svg>
+                                                              </StyledComponent>
+                                                            </Styled(StyledInteractiveIconSVG)>
+                                                          </ThemeProvider>
+                                                        </Limited>
+                                                      </CaretDown>
                                                     </div>
                                                   </StyledComponent>
                                                 </Translate__StyledContainer>
@@ -2764,7 +2770,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                                                   "componentStyle": ComponentStyle {
                                                                     "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                     "isStatic": false,
-                                                                    "lastClassName": "c14",
+                                                                    "lastClassName": "c15",
                                                                     "rules": Array [
                                                                       [Function],
                                                                       [Function],
@@ -2795,7 +2801,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                                               size="large"
                                                             >
                                                               <span
-                                                                className="c6"
+                                                                className="c11"
                                                                 size="large"
                                                               >
                                                                 Panel title
@@ -2881,7 +2887,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "FadeAndReveal__StyledContainer-sc-1drkfnv-0",
                                 "isStatic": true,
-                                "lastClassName": "c11",
+                                "lastClassName": "c12",
                                 "rules": Array [
                                   "@media (prefers-reduced-motion: reduce) {",
                                   "transition: none !important;",
@@ -2911,7 +2917,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                         >
                           <div
                             aria-hidden={true}
-                            className="c11"
+                            className="c12"
                             style={
                               Object {
                                 "height": "0px",
@@ -2935,7 +2941,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
                                           "isStatic": true,
-                                          "lastClassName": "c12",
+                                          "lastClassName": "c13",
                                           "rules": Array [
                                             "padding: 0;",
                                             "margin: 0;",
@@ -2957,7 +2963,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                     forwardedRef={null}
                                   >
                                     <hr
-                                      className="c12"
+                                      className="c13"
                                     />
                                   </StyledComponent>
                                 </DimpleDivider__StyledDimpleDivider>
@@ -2980,9 +2986,9 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                           [Function],
                                         ],
                                         "componentStyle": ComponentStyle {
-                                          "componentId": "sc-bdVaJa",
+                                          "componentId": "sc-EHOje",
                                           "isStatic": false,
-                                          "lastClassName": "c13",
+                                          "lastClassName": "c14",
                                           "rules": Array [
                                             [Function],
                                             [Function],
@@ -2994,7 +3000,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                         "displayName": "styled.div",
                                         "foldedComponentIds": Array [],
                                         "render": [Function],
-                                        "styledComponentId": "sc-bdVaJa",
+                                        "styledComponentId": "sc-EHOje",
                                         "target": "div",
                                         "toString": [Function],
                                         "warnTooManyClasses": [Function],
@@ -3007,7 +3013,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                     tag="div"
                                   >
                                     <div
-                                      className="c13"
+                                      className="c14"
                                     >
                                       <Text
                                         block={true}
@@ -3031,7 +3037,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                   "isStatic": false,
-                                                  "lastClassName": "c14",
+                                                  "lastClassName": "c15",
                                                   "rules": Array [
                                                     [Function],
                                                     [Function],
@@ -3062,7 +3068,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                             size="base"
                                           >
                                             <span
-                                              className="c14"
+                                              className="c15"
                                               size="base"
                                             >
                                               <Panel
@@ -3145,7 +3151,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
 `;
 
 exports[`ExpandCollapse renders an open panel 1`] = `
-.c6 {
+.c11 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: 1.25rem;
@@ -3158,7 +3164,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
   font-weight: 400;
 }
 
-.c6 sup {
+.c11 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -3166,7 +3172,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
   padding-left: 0.1em;
 }
 
-.c14 {
+.c15 {
   color: #2a2c2e;
   word-wrap: break-word;
   font-size: inherit;
@@ -3174,7 +3180,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
   display: block;
 }
 
-.c14 sup {
+.c15 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
@@ -3183,25 +3189,21 @@ exports[`ExpandCollapse renders an open panel 1`] = `
 }
 
 .c7 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #2B8000;
-  font-size: 1rem;
+  fill: #2B8000;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
-.c7::before {
-  content: '\\f106';
+.c7:hover,
+.c7:focus,
+.c7:active {
+  -webkit-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .c1 {
@@ -3242,14 +3244,14 @@ exports[`ExpandCollapse renders an open panel 1`] = `
   margin-right: 1rem;
 }
 
-.c13 {
+.c14 {
   display: block;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 
-.c12 {
+.c13 {
   padding: 0;
   margin: 0;
   border-width: 0;
@@ -3271,6 +3273,13 @@ exports[`ExpandCollapse renders an open panel 1`] = `
   cursor: pointer;
   width: 100%;
   text-align: left;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c8 {
@@ -3318,21 +3327,49 @@ exports[`ExpandCollapse renders an open panel 1`] = `
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .c5 {
+  .c7 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c7 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (max-width:767px) {
+  .c7 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c6 {
     -webkit-transition: none !important;
     transition: none !important;
   }
 }
 
 @media (prefers-reduced-motion:reduce) {
-  .c11 {
+  .c12 {
     -webkit-transition: none !important;
     transition: none !important;
   }
 }
 
 @media (max-width:767px) {
-  .c13 {
+  .c14 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 1.5rem;
@@ -3341,7 +3378,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
 }
 
 @media (min-width:768px) {
-  .c13 {
+  .c14 {
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
@@ -3546,9 +3583,9 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                   [Function],
                                 ],
                                 "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bdVaJa",
+                                  "componentId": "sc-EHOje",
                                   "isStatic": false,
-                                  "lastClassName": "c13",
+                                  "lastClassName": "c14",
                                   "rules": Array [
                                     [Function],
                                     [Function],
@@ -3560,7 +3597,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                 "displayName": "styled.div",
                                 "foldedComponentIds": Array [],
                                 "render": [Function],
-                                "styledComponentId": "sc-bdVaJa",
+                                "styledComponentId": "sc-EHOje",
                                 "target": "div",
                                 "toString": [Function],
                                 "warnTooManyClasses": [Function],
@@ -3594,9 +3631,9 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                           [Function],
                                         ],
                                         "componentStyle": ComponentStyle {
-                                          "componentId": "sc-bdVaJa",
+                                          "componentId": "sc-EHOje",
                                           "isStatic": false,
-                                          "lastClassName": "c13",
+                                          "lastClassName": "c14",
                                           "rules": Array [
                                             [Function],
                                             [Function],
@@ -3608,7 +3645,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                         "displayName": "styled.div",
                                         "foldedComponentIds": Array [],
                                         "render": [Function],
-                                        "styledComponentId": "sc-bdVaJa",
+                                        "styledComponentId": "sc-EHOje",
                                         "target": "div",
                                         "toString": [Function],
                                         "warnTooManyClasses": [Function],
@@ -3633,7 +3670,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "PanelWrapper__CaretContainer-doiyjm-1",
                                                 "isStatic": false,
-                                                "lastClassName": "lkXOVg",
+                                                "lastClassName": "c5",
                                                 "rules": Array [
                                                   [Function],
                                                 ],
@@ -3652,12 +3689,18 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                           isDisabled={false}
                                         >
                                           <div
-                                            className=""
+                                            className="c5"
                                           >
                                             <Translate
                                               direction="y"
                                               distance="-0.25rem"
                                               in={false}
+                                              initialStyle={
+                                                Object {
+                                                  "alignItems": "center",
+                                                  "display": "flex",
+                                                }
+                                              }
                                               timeout={300}
                                             >
                                               <Transition
@@ -3678,6 +3721,8 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                                 <Translate__StyledContainer
                                                   style={
                                                     Object {
+                                                      "alignItems": "center",
+                                                      "display": "flex",
                                                       "transition": "transform 300ms",
                                                     }
                                                   }
@@ -3690,7 +3735,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                                         "componentStyle": ComponentStyle {
                                                           "componentId": "Translate__StyledContainer-lgiaqm-0",
                                                           "isStatic": true,
-                                                          "lastClassName": "c5",
+                                                          "lastClassName": "c6",
                                                           "rules": Array [
                                                             "@media (prefers-reduced-motion: reduce) {",
                                                             "transition: none !important;",
@@ -3710,134 +3755,99 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                                     forwardedRef={null}
                                                     style={
                                                       Object {
+                                                        "alignItems": "center",
+                                                        "display": "flex",
                                                         "transition": "transform 300ms",
                                                       }
                                                     }
                                                   >
                                                     <div
-                                                      className="c5"
+                                                      className="c6"
                                                       style={
                                                         Object {
+                                                          "alignItems": "center",
+                                                          "display": "flex",
                                                           "transition": "transform 300ms",
                                                         }
                                                       }
                                                     >
-                                                      <Text
-                                                        block={false}
-                                                        bold={false}
-                                                        invert={false}
-                                                        size="large"
+                                                      <CaretUp
+                                                        size={16}
+                                                        variant="primary"
                                                       >
-                                                        <Text__StyledText
-                                                          block={false}
-                                                          bold={false}
-                                                          invert={false}
-                                                          size="large"
+                                                        <Limited
+                                                          animationDirection="up"
+                                                          size={16}
+                                                          variant="primary"
                                                         >
-                                                          <StyledComponent
-                                                            block={false}
-                                                            bold={false}
-                                                            forwardedComponent={
+                                                          <ThemeProvider
+                                                            size={16}
+                                                            theme={
                                                               Object {
-                                                                "$$typeof": Symbol(react.forward_ref),
-                                                                "attrs": Array [],
-                                                                "componentStyle": ComponentStyle {
-                                                                  "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                  "isStatic": false,
-                                                                  "lastClassName": "c14",
-                                                                  "rules": Array [
-                                                                    [Function],
-                                                                    [Function],
-                                                                    [Function],
-                                                                    [Function],
-                                                                    [Function],
-                                                                    "sup {",
-                                                                    "top: -0.5em;",
-                                                                    "font-size: 0.875rem;",
-                                                                    "position: relative;",
-                                                                    "vertical-align: baseline;",
-                                                                    "padding-left: 0.1em;",
-                                                                    "}",
-                                                                  ],
-                                                                },
-                                                                "displayName": "Text__StyledText",
-                                                                "foldedComponentIds": Array [],
-                                                                "render": [Function],
-                                                                "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                                                "target": "span",
-                                                                "toString": [Function],
-                                                                "warnTooManyClasses": [Function],
-                                                                "withComponent": [Function],
+                                                                "backgroundColor": "transparent",
+                                                                "iconColor": "#2B8000",
                                                               }
                                                             }
-                                                            forwardedRef={null}
-                                                            invert={false}
-                                                            size="large"
                                                           >
-                                                            <span
-                                                              className="c6"
-                                                              size="large"
+                                                            <Styled(StyledInteractiveIconSVG)
+                                                              animationDirection="up"
+                                                              size={16}
+                                                              variant="primary"
+                                                              viewBox="0 0 24 24"
                                                             >
-                                                              <DecorativeIcon
+                                                              <StyledComponent
+                                                                animationDirection="up"
+                                                                forwardedComponent={
+                                                                  Object {
+                                                                    "$$typeof": Symbol(react.forward_ref),
+                                                                    "attrs": Array [],
+                                                                    "componentStyle": ComponentStyle {
+                                                                      "componentId": "sc-bdVaJa",
+                                                                      "isStatic": false,
+                                                                      "lastClassName": "c7",
+                                                                      "rules": Array [
+                                                                        [Function],
+                                                                        "width: 1.5rem;",
+                                                                        "height: 1.5rem;",
+                                                                        "z-index: 2;",
+                                                                        [Function],
+                                                                        "@media (prefers-reduced-motion: reduce) {",
+                                                                        "transition: none;",
+                                                                        "}",
+                                                                        [Function],
+                                                                      ],
+                                                                    },
+                                                                    "displayName": "Styled(StyledInteractiveIconSVG)",
+                                                                    "foldedComponentIds": Array [
+                                                                      "StyledInteractiveIconSVG-ix2erv-0",
+                                                                    ],
+                                                                    "render": [Function],
+                                                                    "styledComponentId": "sc-bdVaJa",
+                                                                    "target": "svg",
+                                                                    "toString": [Function],
+                                                                    "warnTooManyClasses": [Function],
+                                                                    "withComponent": [Function],
+                                                                  }
+                                                                }
+                                                                forwardedRef={null}
                                                                 size={16}
-                                                                symbol="caretUp"
                                                                 variant="primary"
+                                                                viewBox="0 0 24 24"
                                                               >
-                                                                <Icon
-                                                                  aria-hidden="true"
+                                                                <svg
+                                                                  className="c7"
                                                                   size={16}
-                                                                  symbol="caretUp"
-                                                                  variant="primary"
+                                                                  viewBox="0 0 24 24"
                                                                 >
-                                                                  <Icon__StyledIcon
-                                                                    aria-hidden="true"
-                                                                    iSize={16}
-                                                                    symbol="caretUp"
-                                                                    variant="primary"
-                                                                  >
-                                                                    <StyledComponent
-                                                                      aria-hidden="true"
-                                                                      forwardedComponent={
-                                                                        Object {
-                                                                          "$$typeof": Symbol(react.forward_ref),
-                                                                          "attrs": Array [],
-                                                                          "componentStyle": ComponentStyle {
-                                                                            "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                                            "isStatic": false,
-                                                                            "lastClassName": "c7",
-                                                                            "rules": Array [
-                                                                              [Function],
-                                                                              [Function],
-                                                                              [Function],
-                                                                            ],
-                                                                          },
-                                                                          "displayName": "Icon__StyledIcon",
-                                                                          "foldedComponentIds": Array [],
-                                                                          "render": [Function],
-                                                                          "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                                                          "target": "i",
-                                                                          "toString": [Function],
-                                                                          "warnTooManyClasses": [Function],
-                                                                          "withComponent": [Function],
-                                                                        }
-                                                                      }
-                                                                      forwardedRef={null}
-                                                                      iSize={16}
-                                                                      symbol="caretUp"
-                                                                      variant="primary"
-                                                                    >
-                                                                      <i
-                                                                        aria-hidden="true"
-                                                                        className="c7"
-                                                                      />
-                                                                    </StyledComponent>
-                                                                  </Icon__StyledIcon>
-                                                                </Icon>
-                                                              </DecorativeIcon>
-                                                            </span>
-                                                          </StyledComponent>
-                                                        </Text__StyledText>
-                                                      </Text>
+                                                                  <path
+                                                                    d="M17.7940812,14.8167698 C17.4424627,15.1174894 17.0896181,14.9549557 16.8868854,14.7547243 L11.9968161,10.259447 L7.11722187,14.7547243 C6.93839231,14.9185479 6.49053328,15.1800328 6.16524043,14.8167698 C5.83994757,14.4535067 6.06520964,14.0838947 6.24327169,13.9200711 L11.6348225,8.12339734 C11.8136521,7.95886755 12.1060729,7.95886755 12.2849025,8.12339734 C12.2849025,8.12410347 17.7940809,13.920071 17.7940809,13.920071 C17.9792355,14.0649573 18.1456996,14.5160501 17.7940812,14.8167698 Z"
+                                                                  />
+                                                                </svg>
+                                                              </StyledComponent>
+                                                            </Styled(StyledInteractiveIconSVG)>
+                                                          </ThemeProvider>
+                                                        </Limited>
+                                                      </CaretUp>
                                                     </div>
                                                   </StyledComponent>
                                                 </Translate__StyledContainer>
@@ -3963,7 +3973,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                                                   "componentStyle": ComponentStyle {
                                                                     "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                                     "isStatic": false,
-                                                                    "lastClassName": "c14",
+                                                                    "lastClassName": "c15",
                                                                     "rules": Array [
                                                                       [Function],
                                                                       [Function],
@@ -3994,7 +4004,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                                               size="large"
                                                             >
                                                               <span
-                                                                className="c6"
+                                                                className="c11"
                                                                 size="large"
                                                               >
                                                                 Panel title
@@ -4080,7 +4090,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "FadeAndReveal__StyledContainer-sc-1drkfnv-0",
                                 "isStatic": true,
-                                "lastClassName": "c11",
+                                "lastClassName": "c12",
                                 "rules": Array [
                                   "@media (prefers-reduced-motion: reduce) {",
                                   "transition: none !important;",
@@ -4110,7 +4120,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                         >
                           <div
                             aria-hidden={false}
-                            className="c11"
+                            className="c12"
                             style={
                               Object {
                                 "height": "auto",
@@ -4134,7 +4144,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                         "componentStyle": ComponentStyle {
                                           "componentId": "DimpleDivider__StyledDimpleDivider-quxnvh-0",
                                           "isStatic": true,
-                                          "lastClassName": "c12",
+                                          "lastClassName": "c13",
                                           "rules": Array [
                                             "padding: 0;",
                                             "margin: 0;",
@@ -4156,7 +4166,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                     forwardedRef={null}
                                   >
                                     <hr
-                                      className="c12"
+                                      className="c13"
                                     />
                                   </StyledComponent>
                                 </DimpleDivider__StyledDimpleDivider>
@@ -4179,9 +4189,9 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                           [Function],
                                         ],
                                         "componentStyle": ComponentStyle {
-                                          "componentId": "sc-bdVaJa",
+                                          "componentId": "sc-EHOje",
                                           "isStatic": false,
-                                          "lastClassName": "c13",
+                                          "lastClassName": "c14",
                                           "rules": Array [
                                             [Function],
                                             [Function],
@@ -4193,7 +4203,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                         "displayName": "styled.div",
                                         "foldedComponentIds": Array [],
                                         "render": [Function],
-                                        "styledComponentId": "sc-bdVaJa",
+                                        "styledComponentId": "sc-EHOje",
                                         "target": "div",
                                         "toString": [Function],
                                         "warnTooManyClasses": [Function],
@@ -4206,7 +4216,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                     tag="div"
                                   >
                                     <div
-                                      className="c13"
+                                      className="c14"
                                     >
                                       <Text
                                         block={true}
@@ -4230,7 +4240,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                                 "componentStyle": ComponentStyle {
                                                   "componentId": "Text__StyledText-sc-1m0rr67-0",
                                                   "isStatic": false,
-                                                  "lastClassName": "c14",
+                                                  "lastClassName": "c15",
                                                   "rules": Array [
                                                     [Function],
                                                     [Function],
@@ -4261,7 +4271,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                             size="base"
                                           >
                                             <span
-                                              className="c14"
+                                              className="c15"
                                               size="base"
                                             >
                                               <Panel

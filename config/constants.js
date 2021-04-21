@@ -1,6 +1,6 @@
 // Lists of TDS components to ignore during builds, tests, and publishes
 
-exports.ignoredPackages = ['@tds/core-selector-counter']
+exports.ignoredPackages = ['@tds/core-selector-counter', '@tds/core-standalone-icon']
 
 exports.ignoredPackagesE2E = [
   '@tds/shared-animation',

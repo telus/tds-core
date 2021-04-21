@@ -5,7 +5,6 @@ import { NotificationSuccess, NotificationError } from '@tds/core-feedback-icon'
 import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
 import InputFeedback from '@tds/core-input-feedback'
-import DecorativeIcon from '@tds/core-decorative-icon'
 import { Fade } from '@tds/shared-animation'
 import Tooltip from '../../Tooltip'
 
@@ -207,7 +206,6 @@ describe('Select', () => {
 
       expect(select.find(NotificationSuccess)).not.toExist()
       expect(select.find(NotificationError)).not.toExist()
-      expect(select.find(DecorativeIcon)).not.toExist()
     })
   })
 

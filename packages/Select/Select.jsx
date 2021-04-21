@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Box from '@tds/core-box'
-import DecorativeIcon from '@tds/core-decorative-icon'
+import { CaretDown } from '@tds/core-interactive-icon'
 import { FeedbackIcon } from '@tds/core-input'
 import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
@@ -255,11 +255,7 @@ const Select = React.forwardRef(
                   feedback={feedback}
                 />
                 <IconLineFix>
-                  <DecorativeIcon
-                    symbol="caretDown"
-                    variant={feedback === 'error' ? 'error' : 'primary'}
-                    size={16}
-                  />
+                  <CaretDown variant={feedback === 'error' ? 'error' : 'primary'} size={16} />
                 </IconLineFix>
               </IconWrapper>
             )}

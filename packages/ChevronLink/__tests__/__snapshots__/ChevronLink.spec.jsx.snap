@@ -1,28 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ChevronLink can have specific variants 1`] = `
-.c4 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  font-size: 1rem;
-}
-
-.c4::before {
-  content: '\\f107';
-}
-
 .c2 {
+  fill: #2B8000;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c2:hover,
+.c2:focus,
+.c2:active {
+  -webkit-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -32,11 +29,11 @@ exports[`ChevronLink can have specific variants 1`] = `
   flex-direction: row;
 }
 
-.c2 > *:not(:last-child) {
-  margin-right: 0.5rem;
+.c1 > *:not(:last-child) {
+  margin-right: 0rem;
 }
 
-.c1 {
+.c0 {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -52,71 +49,68 @@ exports[`ChevronLink can have specific variants 1`] = `
   vertical-align: top;
 }
 
-.c1:link,
-.c1:visited {
+.c0:link,
+.c0:visited {
   color: #2B8000;
 }
 
-.c3 {
-  display: inline-block;
-  -webkit-transition: -webkit-transform 300ms;
-  -webkit-transition: transform 300ms;
-  transition: transform 300ms;
+@media (prefers-reduced-motion:reduce) {
+  .c2 {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
-.c0:hover .c3 {
-  -webkit-transform: translateX(0.25rem);
-  -ms-transform: translateX(0.25rem);
-  transform: translateX(0.25rem);
+@media (prefers-reduced-motion:reduce) {
+  .c2 {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 <a
-  class="c0 c1"
+  class="c0"
   direction="right"
   href="https://telus.com"
 >
   <span
-    class="c2"
+    class="c1"
   >
     <span>
       Go home
     </span>
-    <span
-      class="c3"
-      direction="right"
+    <svg
+      class="c2"
+      viewBox="0 0 24 24"
     >
-      <i
-        aria-hidden="true"
-        class="c4"
+      <path
+        d="M9.18323023,17.7940812 C8.8825106,17.4424627 9.04504427,17.0896181 9.24527574,16.8868854 L13.740553,11.9968161 L9.24527573,7.11722187 C9.08145209,6.93839231 8.81996721,6.49053328 9.18323023,6.16524043 C9.54649326,5.83994757 9.91610528,6.06520964 10.0799289,6.24327169 L15.8766027,11.6348225 C16.0411324,11.8136521 16.0411324,12.1060729 15.8766027,12.2849025 C15.8758965,12.2849025 10.079929,17.7940809 10.079929,17.7940809 C9.93504267,17.9792355 9.48394985,18.1456996 9.18323023,17.7940812 Z"
       />
-    </span>
+    </svg>
   </span>
 </a>
 `;
 
 exports[`ChevronLink can have specific variants 2`] = `
-.c4 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  font-size: 1rem;
-}
-
-.c4::before {
-  content: '\\f107';
-}
-
 .c2 {
+  fill: #4b286d;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c2:hover,
+.c2:focus,
+.c2:active {
+  -webkit-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -126,11 +120,11 @@ exports[`ChevronLink can have specific variants 2`] = `
   flex-direction: row;
 }
 
-.c2 > *:not(:last-child) {
-  margin-right: 0.5rem;
+.c1 > *:not(:last-child) {
+  margin-right: 0rem;
 }
 
-.c1 {
+.c0 {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -146,71 +140,68 @@ exports[`ChevronLink can have specific variants 2`] = `
   vertical-align: top;
 }
 
-.c1:link,
-.c1:visited {
+.c0:link,
+.c0:visited {
   color: #4b286d;
 }
 
-.c3 {
-  display: inline-block;
-  -webkit-transition: -webkit-transform 300ms;
-  -webkit-transition: transform 300ms;
-  transition: transform 300ms;
+@media (prefers-reduced-motion:reduce) {
+  .c2 {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
-.c0:hover .c3 {
-  -webkit-transform: translateX(0.25rem);
-  -ms-transform: translateX(0.25rem);
-  transform: translateX(0.25rem);
+@media (prefers-reduced-motion:reduce) {
+  .c2 {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 <a
-  class="c0 c1"
+  class="c0"
   direction="right"
   href="https://telus.com"
 >
   <span
-    class="c2"
+    class="c1"
   >
     <span>
       Go home
     </span>
-    <span
-      class="c3"
-      direction="right"
+    <svg
+      class="c2"
+      viewBox="0 0 24 24"
     >
-      <i
-        aria-hidden="true"
-        class="c4"
+      <path
+        d="M9.18323023,17.7940812 C8.8825106,17.4424627 9.04504427,17.0896181 9.24527574,16.8868854 L13.740553,11.9968161 L9.24527573,7.11722187 C9.08145209,6.93839231 8.81996721,6.49053328 9.18323023,6.16524043 C9.54649326,5.83994757 9.91610528,6.06520964 10.0799289,6.24327169 L15.8766027,11.6348225 C16.0411324,11.8136521 16.0411324,12.1060729 15.8766027,12.2849025 C15.8758965,12.2849025 10.079929,17.7940809 10.079929,17.7940809 C9.93504267,17.9792355 9.48394985,18.1456996 9.18323023,17.7940812 Z"
       />
-    </span>
+    </svg>
   </span>
 </a>
 `;
 
 exports[`ChevronLink can have specific variants 3`] = `
-.c4 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  font-size: 1rem;
-}
-
-.c4::before {
-  content: '\\f107';
-}
-
 .c2 {
+  fill: #2B8000;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c2:hover,
+.c2:focus,
+.c2:active {
+  -webkit-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -220,11 +211,11 @@ exports[`ChevronLink can have specific variants 3`] = `
   flex-direction: row;
 }
 
-.c2 > *:not(:last-child) {
-  margin-right: 0.5rem;
+.c1 > *:not(:last-child) {
+  margin-right: 0rem;
 }
 
-.c1 {
+.c0 {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -240,71 +231,68 @@ exports[`ChevronLink can have specific variants 3`] = `
   vertical-align: top;
 }
 
-.c1:link,
-.c1:visited {
+.c0:link,
+.c0:visited {
   color: #2B8000;
 }
 
-.c3 {
-  display: inline-block;
-  -webkit-transition: -webkit-transform 300ms;
-  -webkit-transition: transform 300ms;
-  transition: transform 300ms;
+@media (prefers-reduced-motion:reduce) {
+  .c2 {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
-.c0:hover .c3 {
-  -webkit-transform: translateX(0.25rem);
-  -ms-transform: translateX(0.25rem);
-  transform: translateX(0.25rem);
+@media (prefers-reduced-motion:reduce) {
+  .c2 {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 <a
-  class="c0 c1"
+  class="c0"
   direction="right"
   href="https://telus.com"
 >
   <span
-    class="c2"
+    class="c1"
   >
     <span>
       Go home
     </span>
-    <span
-      class="c3"
-      direction="right"
+    <svg
+      class="c2"
+      viewBox="0 0 24 24"
     >
-      <i
-        aria-hidden="true"
-        class="c4"
+      <path
+        d="M9.18323023,17.7940812 C8.8825106,17.4424627 9.04504427,17.0896181 9.24527574,16.8868854 L13.740553,11.9968161 L9.24527573,7.11722187 C9.08145209,6.93839231 8.81996721,6.49053328 9.18323023,6.16524043 C9.54649326,5.83994757 9.91610528,6.06520964 10.0799289,6.24327169 L15.8766027,11.6348225 C16.0411324,11.8136521 16.0411324,12.1060729 15.8766027,12.2849025 C15.8758965,12.2849025 10.079929,17.7940809 10.079929,17.7940809 C9.93504267,17.9792355 9.48394985,18.1456996 9.18323023,17.7940812 Z"
       />
-    </span>
+    </svg>
   </span>
 </a>
 `;
 
 exports[`ChevronLink can have specific variants 4`] = `
-.c4 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  font-size: 1rem;
-}
-
-.c4::before {
-  content: '\\f107';
-}
-
 .c2 {
+  fill: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c2:hover,
+.c2:focus,
+.c2:active {
+  -webkit-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -314,11 +302,11 @@ exports[`ChevronLink can have specific variants 4`] = `
   flex-direction: row;
 }
 
-.c2 > *:not(:last-child) {
-  margin-right: 0.5rem;
+.c1 > *:not(:last-child) {
+  margin-right: 0rem;
 }
 
-.c1 {
+.c0 {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -334,71 +322,68 @@ exports[`ChevronLink can have specific variants 4`] = `
   vertical-align: top;
 }
 
-.c1:link,
-.c1:visited {
+.c0:link,
+.c0:visited {
   color: #fff;
 }
 
-.c3 {
-  display: inline-block;
-  -webkit-transition: -webkit-transform 300ms;
-  -webkit-transition: transform 300ms;
-  transition: transform 300ms;
+@media (prefers-reduced-motion:reduce) {
+  .c2 {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
-.c0:hover .c3 {
-  -webkit-transform: translateX(0.25rem);
-  -ms-transform: translateX(0.25rem);
-  transform: translateX(0.25rem);
+@media (prefers-reduced-motion:reduce) {
+  .c2 {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 <a
-  class="c0 c1"
+  class="c0"
   direction="right"
   href="https://telus.com"
 >
   <span
-    class="c2"
+    class="c1"
   >
     <span>
       Go home
     </span>
-    <span
-      class="c3"
-      direction="right"
+    <svg
+      class="c2"
+      viewBox="0 0 24 24"
     >
-      <i
-        aria-hidden="true"
-        class="c4"
+      <path
+        d="M9.18323023,17.7940812 C8.8825106,17.4424627 9.04504427,17.0896181 9.24527574,16.8868854 L13.740553,11.9968161 L9.24527573,7.11722187 C9.08145209,6.93839231 8.81996721,6.49053328 9.18323023,6.16524043 C9.54649326,5.83994757 9.91610528,6.06520964 10.0799289,6.24327169 L15.8766027,11.6348225 C16.0411324,11.8136521 16.0411324,12.1060729 15.8766027,12.2849025 C15.8758965,12.2849025 10.079929,17.7940809 10.079929,17.7940809 C9.93504267,17.9792355 9.48394985,18.1456996 9.18323023,17.7940812 Z"
       />
-    </span>
+    </svg>
   </span>
 </a>
 `;
 
 exports[`ChevronLink renders 1`] = `
-.c4 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  font-size: 1rem;
-}
-
-.c4::before {
-  content: '\\f107';
-}
-
 .c2 {
+  fill: #2B8000;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c2:hover,
+.c2:focus,
+.c2:active {
+  -webkit-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -408,11 +393,11 @@ exports[`ChevronLink renders 1`] = `
   flex-direction: row;
 }
 
-.c2 > *:not(:last-child) {
-  margin-right: 0.5rem;
+.c1 > *:not(:last-child) {
+  margin-right: 0rem;
 }
 
-.c1 {
+.c0 {
   word-wrap: break-word;
   font-size: 1rem;
   -webkit-letter-spacing: -0.8px;
@@ -428,44 +413,44 @@ exports[`ChevronLink renders 1`] = `
   vertical-align: top;
 }
 
-.c1:link,
-.c1:visited {
+.c0:link,
+.c0:visited {
   color: #2B8000;
 }
 
-.c3 {
-  display: inline-block;
-  -webkit-transition: -webkit-transform 300ms;
-  -webkit-transition: transform 300ms;
-  transition: transform 300ms;
+@media (prefers-reduced-motion:reduce) {
+  .c2 {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
-.c0:hover .c3 {
-  -webkit-transform: translateX(0.25rem);
-  -ms-transform: translateX(0.25rem);
-  transform: translateX(0.25rem);
+@media (prefers-reduced-motion:reduce) {
+  .c2 {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 <a
-  class="c0 c1"
+  class="c0"
   direction="right"
   href="test.com"
 >
   <span
-    class="c2"
+    class="c1"
   >
     <span>
       Go home
     </span>
-    <span
-      class="c3"
-      direction="right"
+    <svg
+      class="c2"
+      viewBox="0 0 24 24"
     >
-      <i
-        aria-hidden="true"
-        class="c4"
+      <path
+        d="M9.18323023,17.7940812 C8.8825106,17.4424627 9.04504427,17.0896181 9.24527574,16.8868854 L13.740553,11.9968161 L9.24527573,7.11722187 C9.08145209,6.93839231 8.81996721,6.49053328 9.18323023,6.16524043 C9.54649326,5.83994757 9.91610528,6.06520964 10.0799289,6.24327169 L15.8766027,11.6348225 C16.0411324,11.8136521 16.0411324,12.1060729 15.8766027,12.2849025 C15.8758965,12.2849025 10.079929,17.7940809 10.079929,17.7940809 C9.93504267,17.9792355 9.48394985,18.1456996 9.18323023,17.7940812 Z"
       />
-    </span>
+    </svg>
   </span>
 </a>
 `;

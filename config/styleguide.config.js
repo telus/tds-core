@@ -254,7 +254,6 @@ module.exports = {
         return [
           path.resolve('packages/DecorativeIcon/DecorativeIcon.jsx'),
           path.resolve('packages/DecorativeIcon/SVGIcon.jsx'),
-          path.resolve('packages/StandaloneIcon/StandaloneIcon.jsx'),
           path.resolve('packages/FeedbackIcon/FeedbackIcon.jsx'),
         ]
       },
@@ -513,7 +512,11 @@ module.exports = {
           use: ['style-loader', 'css-loader'],
         },
         {
-          test: /\.(png|jpg|svg)$/,
+          test: /\.svg$/,
+          use: ['@svgr/webpack', 'url-loader'],
+        },
+        {
+          test: /\.(png|jpg)$/,
           use: 'url-loader',
         },
       ],
@@ -557,7 +560,6 @@ module.exports = {
     Select: path.resolve('packages/Select'),
     Small: path.resolve('packages/Small'),
     Spinner: path.resolve('packages/Spinner'),
-    StandaloneIcon: path.resolve('packages/StandaloneIcon'),
     StepTracker: path.resolve('packages/StepTracker'),
     Strong: path.resolve('packages/Strong'),
     TermsAndConditions: path.resolve('packages/TermsAndConditions'),

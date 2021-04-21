@@ -11,6 +11,7 @@ import UnorderedItem from './UnorderedItem/UnorderedItem'
 
 const StyledListContainer = styled(Box)({
   ...list.nestedListSpacing,
+  display: 'block',
   '&': {
     paddingLeft: 'calc(2rem + 1px)',
   },

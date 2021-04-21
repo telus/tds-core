@@ -5,7 +5,7 @@ import { componentWithName } from '@tds/util-prop-types'
 
 import Box from '@tds/core-box'
 import { colorGreyAthens } from '@tds/core-colours'
-import DecorativeIcon from '@tds/core-decorative-icon'
+import { CaretUp, CaretDown } from '@tds/core-interactive-icon'
 import { media } from '@tds/core-responsive'
 import Text from '@tds/core-text'
 import HairlineDivider from '@tds/core-hairline-divider'
@@ -38,6 +38,7 @@ const HeaderButtonClickable = styled.button(buttons.noStyle, ({ panelDisabled })
 
 const CaretContainer = styled.div(({ isDisabled }) => ({
   ...(isDisabled && { visibility: 'hidden' }),
+  display: 'flex',
 }))
 
 const HeaderContainer = styled.div(({ direction }) => ({
@@ -127,14 +128,18 @@ class PanelWrapper extends React.Component {
   }
 
   renderCaret = (disabled, hover, open) => {
+    const Icon = open ? CaretUp : CaretDown
+
     return (
       <CaretContainer isDisabled={disabled}>
-        <Translate timeout={300} in={hover} direction="y" distance={open ? '-0.25rem' : '0.25rem'}>
-          {() => (
-            <Text size="large">
-              <DecorativeIcon symbol={open ? 'caretUp' : 'caretDown'} variant="primary" size={16} />
-            </Text>
-          )}
+        <Translate
+          timeout={300}
+          in={hover}
+          direction="y"
+          distance={open ? '-0.25rem' : '0.25rem'}
+          initialStyle={{ display: 'flex', alignItems: 'center' }}
+        >
+          {() => <Icon variant="primary" size={16} />}
         </Translate>
       </CaretContainer>
     )
