@@ -2520,7 +2520,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                                   type="indexed"
                                                                 >
                                                                   <Item
-                                                                    key=".$One"
+                                                                    key=".$0"
                                                                     styledComponent={
                                                                       Object {
                                                                         "$$typeof": Symbol(react.forward_ref),
@@ -2585,7 +2585,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                                     </List__StyledListItem>
                                                                   </Item>
                                                                   <Item
-                                                                    key=".$Two"
+                                                                    key=".$1"
                                                                     styledComponent={
                                                                       Object {
                                                                         "$$typeof": Symbol(react.forward_ref),
@@ -2650,7 +2650,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                                     </List__StyledListItem>
                                                                   </Item>
                                                                   <Item
-                                                                    key=".$Three"
+                                                                    key=".$2"
                                                                     styledComponent={
                                                                       Object {
                                                                         "$$typeof": Symbol(react.forward_ref),
@@ -4747,7 +4747,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                                   type="indexed"
                                                                 >
                                                                   <Item
-                                                                    key=".$One"
+                                                                    key=".$0"
                                                                     styledComponent={
                                                                       Object {
                                                                         "$$typeof": Symbol(react.forward_ref),
@@ -4812,7 +4812,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                                     </List__StyledListItem>
                                                                   </Item>
                                                                   <Item
-                                                                    key=".$Two"
+                                                                    key=".$1"
                                                                     styledComponent={
                                                                       Object {
                                                                         "$$typeof": Symbol(react.forward_ref),
@@ -4877,7 +4877,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                                     </List__StyledListItem>
                                                                   </Item>
                                                                   <Item
-                                                                    key=".$Three"
+                                                                    key=".$2"
                                                                     styledComponent={
                                                                       Object {
                                                                         "$$typeof": Symbol(react.forward_ref),
@@ -5528,7 +5528,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                                           type="nonIndexed"
                                                                         >
                                                                           <Item
-                                                                            key=".$Four"
+                                                                            key=".$0"
                                                                             styledComponent={
                                                                               Object {
                                                                                 "$$typeof": Symbol(react.forward_ref),
@@ -5593,7 +5593,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                                             </List__StyledListItem>
                                                                           </Item>
                                                                           <Item
-                                                                            key=".$Five"
+                                                                            key=".$1"
                                                                             styledComponent={
                                                                               Object {
                                                                                 "$$typeof": Symbol(react.forward_ref),
@@ -7712,7 +7712,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                                           type="nonIndexed"
                                                                         >
                                                                           <Item
-                                                                            key=".$Four"
+                                                                            key=".$0"
                                                                             styledComponent={
                                                                               Object {
                                                                                 "$$typeof": Symbol(react.forward_ref),
@@ -7777,7 +7777,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                                             </List__StyledListItem>
                                                                           </Item>
                                                                           <Item
-                                                                            key=".$Five"
+                                                                            key=".$1"
                                                                             styledComponent={
                                                                               Object {
                                                                                 "$$typeof": Symbol(react.forward_ref),
