@@ -76,6 +76,12 @@ const ShowUntilMd = styled.div({
 
 const StyledPanellessWrapper = styled(Box)({ marginLeft: '1.5rem' })
 
+const ContentContainer = styled.div(({ compact }) => ({
+  padding: compact ? '0.5rem 0' : '2rem',
+}))
+
+ContentContainer.displayName = 'ContentContainer'
+
 class PanelWrapper extends React.Component {
   constructor(props) {
     super(props)
@@ -180,6 +186,7 @@ class PanelWrapper extends React.Component {
       panelDisabled,
       tag,
       children,
+      compact,
     } = this.props
 
     if (!children.props.children) {
@@ -205,7 +212,7 @@ class PanelWrapper extends React.Component {
         disabled={panelDisabled}
         aria-expanded={this.state.open}
       >
-        <Box vertical={3}>
+        <Box vertical={compact ? 2 : 3}>
           <Box inline between={3}>
             {this.renderCaret(panelDisabled, this.state.hover, this.state.open)}
             {this.renderHeader(panelHeader, panelSubtext, panelTertiaryText)}
@@ -229,10 +236,9 @@ class PanelWrapper extends React.Component {
               data-testid="content"
             >
               <DimpleDivider />
-
-              <Box inset={4}>
+              <ContentContainer compact={compact}>
                 <Text block>{children}</Text>
-              </Box>
+              </ContentContainer>
             </div>
           )}
         </FadeAndReveal>
@@ -264,6 +270,7 @@ PanelWrapper.propTypes = {
   tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']),
   onClick: PropTypes.func.isRequired,
   children: componentWithName('Panel').isRequired,
+  compact: PropTypes.bool,
 }
 
 PanelWrapper.defaultProps = {
@@ -273,6 +280,7 @@ PanelWrapper.defaultProps = {
   panelOnToggle: undefined,
   open: false,
   tag: undefined,
+  compact: false,
 }
 
 export default PanelWrapper

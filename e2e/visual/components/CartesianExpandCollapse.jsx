@@ -23,6 +23,7 @@ const CartesianAll = () => (
       component={CartesianExpandCollapse}
       open={[[], ['features'], ['features', 'specs']]}
       topDivider={[true, false]}
+      compact={[true, false]}
       children={[
         [
           <ExpandCollapse.Panel id="features" header="Features">
