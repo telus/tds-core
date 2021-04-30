@@ -59,10 +59,16 @@ class ExpandCollapse extends React.Component {
   }
 
   render() {
-    const { tag, children, ...rest } = this.props
+    const { tag, children, compact, ...rest } = this.props
 
     return (
-      <Panels {...rest} isPanelOpen={this.isPanelOpen} togglePanel={this.togglePanel} tag={tag}>
+      <Panels
+        {...rest}
+        isPanelOpen={this.isPanelOpen}
+        togglePanel={this.togglePanel}
+        tag={tag}
+        compact={compact}
+      >
         {children}
       </Panels>
     )
@@ -96,6 +102,10 @@ ExpandCollapse.propTypes = {
    * @since 2.1.0
    */
   children: componentWithName('Panel'),
+  /**
+   * If selected, reduces margins for header and content.
+   */
+  compact: PropTypes.bool,
 }
 
 ExpandCollapse.defaultProps = {
@@ -104,6 +114,7 @@ ExpandCollapse.defaultProps = {
   onToggle: undefined,
   tag: undefined,
   children: undefined,
+  compact: false,
 }
 
 ExpandCollapse.Panel = Panel

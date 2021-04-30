@@ -14,7 +14,7 @@ import PanelWrapper from './PanelWrapper/PanelWrapper'
 
 const PanelBase = styled.div({ backgroundColor: colorWhite })
 
-const Panels = ({ topDivider, isPanelOpen, togglePanel, tag, children, ...rest }) => (
+const Panels = ({ topDivider, isPanelOpen, togglePanel, tag, children, compact, ...rest }) => (
   <PanelBase {...safeRest(rest)}>
     {topDivider && <HairlineDivider />}
 
@@ -35,6 +35,7 @@ const Panels = ({ topDivider, isPanelOpen, togglePanel, tag, children, ...rest }
             tag={tag}
             open={isPanelOpen(id)}
             onClick={() => togglePanel(id)}
+            compact={compact}
           >
             {panel}
           </PanelWrapper>
@@ -49,10 +50,12 @@ Panels.propTypes = {
   togglePanel: PropTypes.func.isRequired,
   children: componentWithName('Panel').isRequired,
   tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4']),
+  compact: PropTypes.bool,
 }
 
 Panels.defaultProps = {
   tag: undefined,
+  compact: false,
 }
 
 export default Panels

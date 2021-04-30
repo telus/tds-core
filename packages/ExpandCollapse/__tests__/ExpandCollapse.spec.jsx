@@ -341,4 +341,18 @@ describe('ExpandCollapse', () => {
     expect(expandCollapse).not.toHaveProp('className', 'my-custom-class')
     expect(expandCollapse).not.toHaveProp('style')
   })
+
+  describe('compact prop', () => {
+    it('renders reduced padding when compact prop is passed', () => {
+      const { expandCollapse } = doMount(
+        <ExpandCollapse compact open={['panel-1']}>
+          <ExpandCollapse.Panel id="panel-1" header="Panel title">
+            Panel content
+          </ExpandCollapse.Panel>
+        </ExpandCollapse>
+      )
+      const ContentContainer = expandCollapse.find('ContentContainer')
+      expect(ContentContainer).toHaveStyleRule('padding', '0.5rem 0')
+    })
+  })
 })

@@ -43,6 +43,40 @@ The `ExpandCollapse` and `Accordion` component allows nesting of content inside 
 </ExpandCollapse>
 ```
 
+Example using `compact` prop.
+
+```jsx
+<ExpandCollapse compact tag="h2">
+  <ExpandCollapse.Panel id="features" header="Features">
+    <Box between={3}>
+      <Box between={2}>
+        <Heading level="h4">Connected GPS</Heading>
+        <Paragraph size="medium">Connect to your phone's GPS to see real-time run stats.</Paragraph>
+      </Box>
+
+      <Box between={2}>
+        <Heading level="h4">Notifications</Heading>
+        <Paragraph size="medium">See call, text and calendar alerts on your wrist.</Paragraph>
+      </Box>
+    </Box>
+  </ExpandCollapse.Panel>
+
+  <ExpandCollapse.Panel id="specs" header="Specifications">
+    <Box between={3}>
+      <Box between={2}>
+        <Heading level="h4">Display</Heading>
+        <Paragraph size="medium">OLED</Paragraph>
+      </Box>
+
+      <Box between={2}>
+        <Heading level="h4">Battery Life</Heading>
+        <Paragraph size="medium">Up to 5 days</Paragraph>
+      </Box>
+    </Box>
+  </ExpandCollapse.Panel>
+</ExpandCollapse>
+```
+
 ```jsx
 <div>
   <Heading level="h2">Charges on this new bill</Heading>
