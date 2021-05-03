@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/telus/tds-core/compare/@tds/core-expand-collapse@2.2.8...@tds/core-expand-collapse@2.3.0) (2021-05-03)
+
+
+### Features
+
+* **core-expand-collapse:** add compact prop ([c5a5152](https://github.com/telus/tds-core/commit/c5a51522a3fc07c7d029bc9806a9ad50d6a99c11))
+
+
+
+
+
 ## [2.2.8](https://github.com/telus/tds-core/compare/@tds/core-expand-collapse@2.2.7...@tds/core-expand-collapse@2.2.8) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-expand-collapse
