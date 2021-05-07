@@ -1,6 +1,7 @@
 export { default as Accessible } from './Accessible'
 export { default as AddUser } from './AddUser'
 export { default as AlarmClock } from './AlarmClock'
+export { default as Ambulance } from './Ambulance'
 export { default as ArrowDown } from './ArrowDown'
 export { default as ArrowUp } from './ArrowUp'
 export { default as ArtificialIntelligence } from './ArtificialIntelligence'
