@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.8.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.7.1...@tds/core-decorative-icon@2.8.0) (2021-05-07)
+
+
+### Features
+
+* **core-decorative-icon:** add ambulance icon ([983047b](https://github.com/telusdigital/tds/commit/983047b052c401ae4c4bbb747a98f467cb7900d4))
+
+
+
+
+
 ## [2.7.1](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.7.0...@tds/core-decorative-icon@2.7.1) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-decorative-icon
