@@ -292,6 +292,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: Medical,
         usageCriteria: 'health, medical',
       },
+      {
+        name: 'Ambulance',
+        Component: Ambulance,
+        usageCriteria: 'health, ambulance',
+      },
     ]}
   />
 
