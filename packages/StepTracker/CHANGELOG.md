@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.44](https://github.com/telusdigital/tds/compare/@tds/core-step-tracker@4.0.43...@tds/core-step-tracker@4.0.44) (2021-05-10)
+
+**Note:** Version bump only for package @tds/core-step-tracker
+
+
+
+
+
 ## [4.0.43](https://github.com/telusdigital/tds/compare/@tds/core-step-tracker@4.0.42...@tds/core-step-tracker@4.0.43) (2021-05-07)
 
 **Note:** Version bump only for package @tds/core-step-tracker
