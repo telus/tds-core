@@ -4,8 +4,6 @@ will indicate both the active step and the completed steps.
 `StepTracker` adjusts to accommodate smaller screens by hiding the labels, displaying only a summary. Resize your browser
 window to see this behavior.
 
-While a grey background is preferred, a white background is available through the use of the `backgroundColour` prop.
-
 **Note** this component is not interactive, so the user cannot use it to navigate through the steps. The application will
 need to provide its own navigation mechanism and state control. `StepTracker` also does not prevent the current step
 from reaching integers beyond the number of steps provided; the application must prevent negative or exceeding

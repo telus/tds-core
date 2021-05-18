@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { colorGreyAthens, colorWhite } from '@tds/core-colours'
+import { colorWhite } from '@tds/core-colours'
 import Text from '@tds/core-text'
 import FlexGrid from '@tds/core-flex-grid'
 import { getCopy, safeRest } from '@tds/util-helpers'
@@ -13,10 +13,10 @@ import copyDictionary from './stepTrackerText'
 
 import Step from './Step/Step'
 
-const StyledStepBg = styled.div(({ backgroundColour }) => ({
+const StyledStepBg = styled.div({
   padding: '1rem 0',
-  backgroundColor: backgroundColour === 'grey' ? colorGreyAthens : colorWhite,
-}))
+  backgroundColor: colorWhite,
+})
 
 const StyledStepContainer = styled.div({
   display: 'flex',
@@ -48,14 +48,7 @@ const getStepLabel = (current, steps) => {
  * @version ./package.json
  */
 
-const StepTracker = ({
-  current,
-  steps,
-  copy,
-  mobileStepLabelTemplate,
-  backgroundColour,
-  ...rest
-}) => {
+const StepTracker = ({ current, steps, copy, mobileStepLabelTemplate, ...rest }) => {
   if (mobileStepLabelTemplate && copy === undefined) {
     deprecate(
       'core-step-tracker',
@@ -70,11 +63,7 @@ const StepTracker = ({
   )
   const stepLabel = getStepLabel(current, steps)
   return (
-    <StyledStepBg
-      {...safeRest(rest)}
-      data-testid="stepTrackerContainer"
-      backgroundColour={backgroundColour}
-    >
+    <StyledStepBg {...safeRest(rest)} data-testid="stepTrackerContainer">
       <FlexGrid>
         <FlexGrid.Row>
           <FlexGrid.Col xs={12}>
@@ -141,16 +130,11 @@ StepTracker.propTypes = {
    * Use %current to place the current step and use %total to place the total amount of steps.
    */
   mobileStepLabelTemplate: PropTypes.string,
-  /**
-   * The background colour of the StepTracker.
-   */
-  backgroundColour: PropTypes.oneOf(['grey', 'white']),
 }
 
 StepTracker.defaultProps = {
   copy: undefined,
   mobileStepLabelTemplate: 'Step %{current} of %{total}:',
-  backgroundColour: 'grey',
 }
 
 export default StepTracker
