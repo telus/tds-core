@@ -171,7 +171,7 @@ exports[`<StepTracker /> renders 1`] = `
 
 .c0 {
   padding: 1rem 0;
-  background-color: #f7f7f8;
+  background-color: #fff;
 }
 
 .c4 {
