@@ -860,6 +860,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: NoContract,
         usageCriteria: 'For use in value prop statements',
       },
+      {
+        name: 'CssActivations',
+        Component: CssActivations,
+        usageCriteria: 'Custom icon for the Mobility CSS team',
+      },
     ]}
   />
 </Box>
