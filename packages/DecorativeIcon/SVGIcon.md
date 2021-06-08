@@ -870,6 +870,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: Escalations,
         usageCriteria: 'Custom icon for the Escalation Management teams',
       },
+      {
+        name: 'Helpdesk',
+        Component: Helpdesk,
+        usageCriteria: 'Custom icon for the Helpdesk teams',
+      },
     ]}
   />
 </Box>
