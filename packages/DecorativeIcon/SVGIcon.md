@@ -884,6 +884,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: CartTeam,
         usageCriteria: 'Custom icon for the Mobility CART team',
       },
+      {
+        name: 'ProactiveAssurance',
+        Component: ProactiveAssurance,
+        usageCriteria: 'Custom icon for the Home Solutions Proactive Assurance team',
+      },
     ]}
   />
 </Box>
