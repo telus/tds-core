@@ -865,6 +865,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: CssActivations,
         usageCriteria: 'Custom icon for the Mobility CSS team',
       },
+      {
+        name: 'Escalations',
+        Component: Escalations,
+        usageCriteria: 'Custom icon for the Escalation Management teams',
+      },
     ]}
   />
 </Box>
