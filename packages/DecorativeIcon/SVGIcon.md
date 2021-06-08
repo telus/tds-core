@@ -875,6 +875,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: Helpdesk,
         usageCriteria: 'Custom icon for the Helpdesk teams',
       },
+      {
+        name: 'WebstoreTeam',
+        Component: WebstoreTeam,
+        usageCriteria: 'Custom icon for the Webstore/KANA teams',
+      },
     ]}
   />
 </Box>
