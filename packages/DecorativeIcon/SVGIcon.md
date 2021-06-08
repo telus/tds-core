@@ -875,6 +875,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: Helpdesk,
         usageCriteria: 'Custom icon for the Helpdesk teams',
       },
+      {
+        name: 'Sales',
+        Component: Sales,
+        usageCriteria: 'Custom icon for the Home Solutions Sales team',
+      },
     ]}
   />
 </Box>
