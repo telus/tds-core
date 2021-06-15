@@ -40,7 +40,7 @@ items:
       source:
         type: Git
         git:
-          uri: git@github.com:telusdigital/tds-core.git
+          uri: git@github.com:telus/tds-core.git
           ref: ${BRANCH}
         sourceSecret:
           name: github-secret
@@ -51,7 +51,7 @@ items:
       resources:
         requests:
           cpu: 500m
-          memory: 512Mi
+          memory: 1Gi
         limits:
           cpu: '1'
           memory: 4Gi
@@ -73,7 +73,7 @@ items:
       source:
         type: Git
         git:
-          uri: git@github.com:telusdigital/tds-core.git
+          uri: git@github.com:telus/tds-core.git
           ref: ${BRANCH}
         sourceSecret:
           name: github-secret
@@ -84,7 +84,7 @@ items:
       resources:
         requests:
           cpu: 500m
-          memory: 512Mi
+          memory: 1Gi
         limits:
           cpu: '1'
           memory: 4Gi
