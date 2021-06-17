@@ -133,6 +133,16 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
       },
     ]}
   />
+  <IconTable
+    heading="Icon for use with Tooltip"
+    icons={[
+      {
+        name: 'QuestionMarkCircle',
+        Component: QuestionMarkCircle,
+        usageCriteria: 'To be used in the TDS Tooltip component ',
+      },
+    ]}
+  />
 </Box>
 ```
 
