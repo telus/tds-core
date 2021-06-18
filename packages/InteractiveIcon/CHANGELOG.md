@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@2.1.3...@tds/core-interactive-icon@2.2.0) (2021-06-18)
+
+
+### Features
+
+* **core-interactive-icon:** add new tooltip icon ([726c62a](https://github.com/telus/tds-core/commit/726c62a23de31dda03ca4352db5cd1377e269c26))
+
+
+
+
+
 ## [2.1.3](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@2.1.2...@tds/core-interactive-icon@2.1.3) (2021-02-05)
 
 
