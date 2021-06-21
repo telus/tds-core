@@ -2,8 +2,9 @@ import React from 'react'
 import { mount } from 'enzyme'
 import 'jest-styled-components'
 
-import StandaloneIcon from '@tds/core-standalone-icon'
+import { QuestionMarkCircle } from '@tds/core-interactive-icon'
 import Text from '@tds/core-text'
+import TooltipButton from '../TooltipButton'
 
 import Tooltip from '../Tooltip'
 
@@ -22,7 +23,7 @@ describe('Tooltip', () => {
       options
     )
 
-    const findTrigger = () => tooltip.find(StandaloneIcon)
+    const findTrigger = () => tooltip.find(TooltipButton)
 
     return {
       tooltip,
@@ -41,7 +42,7 @@ describe('Tooltip', () => {
   it('has a trigger', () => {
     const { findTrigger } = doMount()
 
-    expect(findTrigger()).toHaveProp('symbol', 'questionMarkCircle')
+    expect(findTrigger()).toHaveProp('icon', QuestionMarkCircle)
     expect(findTrigger()).toHaveProp('a11yText', 'Reveal additional information.')
   })
 
@@ -164,7 +165,7 @@ describe('Tooltip', () => {
   it('has a default when not connected to any form field', () => {
     const { tooltip } = doMount()
 
-    expect(tooltip.find(StandaloneIcon)).toHaveProp('a11yText', 'Reveal additional information.')
+    expect(tooltip.find(TooltipButton)).toHaveProp('a11yText', 'Reveal additional information.')
   })
 
   it('forwards refs', () => {

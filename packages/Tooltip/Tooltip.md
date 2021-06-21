@@ -31,6 +31,19 @@ You can also place Tooltips anywhere you like as a standalone element.
 </div>
 ```
 
+You can also invert the colour to be used on a purple background.
+
+```jsx
+<div>
+  <Box between={2} inline style={{ background: '#4b286d' }}>
+    <Text invert>Here is the all-new quadcopter </Text>
+    <Tooltip copy="en" inverted>
+      A quadcoptor is a flying drone with 4 propellors.
+    </Tooltip>
+  </Box>
+</div>
+```
+
 ### Accessible copy
 
 To indicate to assistive devices the purpose of the `Tooltip`, invisible copy is placed within the component. Passing `"en"` or `"fn"` to the `copy` prop will use the component's English and French text respectively. If the provided text is not sufficient, an object containing custom text may be provided.

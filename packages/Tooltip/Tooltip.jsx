@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import StandaloneIcon from '@tds/core-standalone-icon'
+import { QuestionMarkCircle } from '@tds/core-interactive-icon'
 
 import { iconWrapper } from '@tds/shared-styles'
 import { getCopy, uniqueId, safeRest } from '@tds/util-helpers'
@@ -12,6 +12,7 @@ import generateId from '../../shared/utils/generateId/generateId'
 import closest from './element-closest'
 
 import Bubble from './Bubble'
+import TooltipButton from './TooltipButton'
 import copyDictionary from './tooltipText'
 
 const StyledTooltip = styled.div({
@@ -146,9 +147,9 @@ class T extends React.Component {
           <Bubble id={bubbleId} direction={trueDirection} open={this.state.open} width={width}>
             {children}
           </Bubble>
-          <StandaloneIcon
-            type="button"
-            symbol="questionMarkCircle"
+          <TooltipButton
+            icon={QuestionMarkCircle}
+            inverted={this.props.inverted}
             a11yText={this.getTriggerA11yText(this.props.connectedFieldLabel, this.props.copy)}
             onClick={this.toggleBubble}
             id={triggerId}
@@ -198,6 +199,10 @@ const propTypes = {
   tooltipId: PropTypes.string,
   /* @ignore */
   forwardedRef: PropTypes.object,
+  /**
+   * If true, icon will render white.
+   */
+  inverted: PropTypes.bool,
 }
 
 const defaultProps = {
@@ -205,6 +210,7 @@ const defaultProps = {
   connectedFieldLabel: undefined,
   tooltipId: undefined,
   forwardedRef: undefined,
+  inverted: false,
 }
 
 const RefForwardedTooltip = withForwardedRef(T)
