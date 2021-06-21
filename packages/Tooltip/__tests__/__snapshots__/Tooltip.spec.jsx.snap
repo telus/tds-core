@@ -1,50 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip accessibility accepts custom copy 1`] = `
-.c8 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c7 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  font-size: 1.5rem;
-}
-
-.c7::before {
-  content: '\\f102';
-}
-
-.c6 {
-  padding: 0;
-  margin: 0;
-  border-width: 0;
-  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #2a2c2e;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: none;
-  box-shadow: none;
-  cursor: pointer;
-}
-
 .c5 {
   color: #2a2c2e;
   word-wrap: break-word;
@@ -63,6 +19,30 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
+}
+
+.c7 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c8 {
+  position: relative;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #2a2c2e;
+}
+
+.c6 {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
 
 .c3 {
@@ -143,6 +123,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
     }
   }
   direction="auto"
+  inverted={false}
 >
   <WithForwardedRef(T)
     copy={
@@ -151,6 +132,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
       }
     }
     direction="auto"
+    inverted={false}
   >
     <T
       copy={
@@ -160,8 +142,11 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
       }
       direction="auto"
       forwardedRef={null}
+      inverted={false}
     >
-      <Tooltip__StyledTooltip>
+      <Tooltip__StyledTooltip
+        inverted={false}
+      >
         <StyledComponent
           forwardedComponent={
             Object {
@@ -189,6 +174,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
             }
           }
           forwardedRef={[Function]}
+          inverted={false}
         >
           <div
             className="c0"
@@ -275,7 +261,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                               [Function],
                             ],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-bwzfXH",
+                              "componentId": "sc-bZQynM",
                               "isStatic": false,
                               "lastClassName": "c2",
                               "rules": Array [
@@ -286,7 +272,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                             "displayName": "Styled(Component)",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-bwzfXH",
+                            "styledComponentId": "sc-bZQynM",
                             "target": [Function],
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -357,7 +343,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                                       [Function],
                                     ],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bdVaJa",
+                                      "componentId": "sc-EHOje",
                                       "isStatic": false,
                                       "lastClassName": "c3",
                                       "rules": Array [
@@ -371,7 +357,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-bdVaJa",
+                                    "styledComponentId": "sc-EHOje",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -389,7 +375,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                                 <div
                                   aria-hidden="true"
                                   aria-live="assertive"
-                                  className="c2 sc-bwzfXH c2 c3"
+                                  className="c2 sc-bZQynM c2 c3"
                                   data-testid="bubble"
                                   id="standalone-tooltip-tooltip9_tooltip"
                                   role="tooltip"
@@ -506,59 +492,36 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                       </StyledComponent>
                     </Styled(Component)>
                   </Bubble>
-                  <StandaloneIcon
+                  <TooltipButton
                     a11yText="This is custom copy."
                     aria-controls="standalone-tooltip-tooltip9_tooltip"
                     aria-expanded="false"
                     aria-haspopup="true"
+                    icon={[Function]}
                     id="standalone-tooltip-tooltip9_trigger"
+                    inverted={false}
                     onClick={[Function]}
-                    size={24}
-                    symbol="questionMarkCircle"
-                    type="button"
                   >
-                    <StandaloneIcon__StandaloneIconClickable
-                      aria-controls="standalone-tooltip-tooltip9_tooltip"
-                      aria-expanded="false"
-                      aria-haspopup="true"
-                      id="standalone-tooltip-tooltip9_trigger"
+                    <TooltipButton__StyledIconButton
                       onClick={[Function]}
-                      style={
-                        Object {
-                          "margin": "-4px",
-                          "padding": "4px",
-                        }
-                      }
-                      type="button"
                     >
                       <StyledComponent
-                        aria-controls="standalone-tooltip-tooltip9_tooltip"
-                        aria-expanded="false"
-                        aria-haspopup="true"
                         forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "StandaloneIcon__StandaloneIconClickable-ukibfn-0",
+                              "componentId": "TooltipButton__StyledIconButton-sc-1cfd6xf-0",
                               "isStatic": true,
                               "lastClassName": "c6",
                               "rules": Array [
-                                "padding: 0;",
-                                "margin: 0;",
-                                "border-width: 0;",
-                                "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
-                                "color: #2a2c2e;",
-                                "appearance: none;",
-                                "background: none;",
-                                "box-shadow: none;",
-                                "cursor: pointer;",
+                                "border:none;background-color:transparent;padding:0;margin:0;",
                               ],
                             },
-                            "displayName": "StandaloneIcon__StandaloneIconClickable",
+                            "displayName": "TooltipButton__StyledIconButton",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "StandaloneIcon__StandaloneIconClickable-ukibfn-0",
+                            "styledComponentId": "TooltipButton__StyledIconButton-sc-1cfd6xf-0",
                             "target": "button",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -566,118 +529,125 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                           }
                         }
                         forwardedRef={null}
-                        id="standalone-tooltip-tooltip9_trigger"
                         onClick={[Function]}
-                        style={
-                          Object {
-                            "margin": "-4px",
-                            "padding": "4px",
-                          }
-                        }
-                        type="button"
                       >
                         <button
-                          aria-controls="standalone-tooltip-tooltip9_tooltip"
-                          aria-expanded="false"
-                          aria-haspopup="true"
                           className="c6"
-                          id="standalone-tooltip-tooltip9_trigger"
                           onClick={[Function]}
-                          style={
-                            Object {
-                              "margin": "-4px",
-                              "padding": "4px",
-                            }
-                          }
-                          type="button"
                         >
-                          <Icon
-                            size={24}
-                            symbol="questionMarkCircle"
-                          >
-                            <Icon__StyledIcon
-                              iSize={24}
-                              symbol="questionMarkCircle"
-                            >
+                          <A11yContent>
+                            <A11yContent__StyledA11yContent>
                               <StyledComponent
                                 forwardedComponent={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                      "isStatic": false,
+                                      "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                      "isStatic": true,
                                       "lastClassName": "c7",
                                       "rules": Array [
-                                        [Function],
-                                        [Function],
-                                        [Function],
+                                        "position: absolute;",
+                                        "height: 1px;",
+                                        "width: 1px;",
+                                        "overflow: hidden;",
+                                        "clip: rect(1px, 1px, 1px, 1px);",
                                       ],
                                     },
-                                    "displayName": "Icon__StyledIcon",
+                                    "displayName": "A11yContent__StyledA11yContent",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                    "target": "i",
+                                    "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                    "target": "span",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
                                   }
                                 }
                                 forwardedRef={null}
-                                iSize={24}
-                                symbol="questionMarkCircle"
                               >
-                                <i
+                                <span
                                   className="c7"
                                 >
-                                  <A11yContent>
-                                    <A11yContent__StyledA11yContent>
-                                      <StyledComponent
-                                        forwardedComponent={
-                                          Object {
-                                            "$$typeof": Symbol(react.forward_ref),
-                                            "attrs": Array [],
-                                            "componentStyle": ComponentStyle {
-                                              "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                              "isStatic": true,
-                                              "lastClassName": "c8",
-                                              "rules": Array [
-                                                "position: absolute;",
-                                                "height: 1px;",
-                                                "width: 1px;",
-                                                "overflow: hidden;",
-                                                "clip: rect(1px, 1px, 1px, 1px);",
-                                              ],
-                                            },
-                                            "displayName": "A11yContent__StyledA11yContent",
-                                            "foldedComponentIds": Array [],
-                                            "render": [Function],
-                                            "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                            "target": "span",
-                                            "toString": [Function],
-                                            "warnTooManyClasses": [Function],
-                                            "withComponent": [Function],
-                                          }
-                                        }
-                                        forwardedRef={null}
-                                      >
-                                        <span
-                                          className="c8"
-                                        >
-                                          This is custom copy.
-                                        </span>
-                                      </StyledComponent>
-                                    </A11yContent__StyledA11yContent>
-                                  </A11yContent>
-                                </i>
+                                  This is custom copy.
+                                </span>
                               </StyledComponent>
-                            </Icon__StyledIcon>
-                          </Icon>
+                            </A11yContent__StyledA11yContent>
+                          </A11yContent>
+                          <Dependent
+                            color="greyShark"
+                          >
+                            <Dependent
+                              color="greyShark"
+                            >
+                              <styled.svg
+                                color="greyShark"
+                                data-testid="dependentSvg"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                width="24"
+                              >
+                                <StyledComponent
+                                  color="greyShark"
+                                  data-testid="dependentSvg"
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [
+                                        Object {
+                                          "aria-hidden": true,
+                                          "focusable": false,
+                                        },
+                                      ],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-bxivhb",
+                                        "isStatic": false,
+                                        "lastClassName": "c8",
+                                        "rules": Array [
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "styled.svg",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-bxivhb",
+                                      "target": "svg",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  width="24"
+                                >
+                                  <svg
+                                    aria-hidden={true}
+                                    className="c8"
+                                    color="greyShark"
+                                    data-testid="dependentSvg"
+                                    focusable={false}
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                  >
+                                    <path
+                                      clipRule="evenodd"
+                                      d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2V2ZM13.0001 19H11.0001V17H13.0001V19V19ZM14.1699 12.17C13.4499 12.9 12.9999 13.5 12.9999 15H10.9999V14.5C10.9999 13.4 11.4499 12.4 12.1699 11.67L13.4099 10.41C13.7799 10.05 13.9999 9.55001 13.9999 9.00001C13.9999 7.90001 13.0999 7.00001 11.9999 7.00001C10.8999 7.00001 9.99989 7.90001 9.99989 9.00001H7.99989C7.99989 6.79001 9.78989 5.00001 11.9999 5.00001C14.2099 5.00001 15.9999 6.79001 15.9999 9.00001C15.9999 9.88001 15.6399 10.68 15.0699 11.25L14.1699 12.17Z"
+                                      fillRule="evenodd"
+                                    />
+                                  </svg>
+                                </StyledComponent>
+                              </styled.svg>
+                            </Dependent>
+                          </Dependent>
                         </button>
                       </StyledComponent>
-                    </StandaloneIcon__StandaloneIconClickable>
-                  </StandaloneIcon>
+                    </TooltipButton__StyledIconButton>
+                  </TooltipButton>
                 </div>
               </StyledComponent>
             </Tooltip__TooltipContainer>
@@ -690,50 +660,6 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
 `;
 
 exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] = `
-.c8 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c7 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  font-size: 1.5rem;
-}
-
-.c7::before {
-  content: '\\f102';
-}
-
-.c6 {
-  padding: 0;
-  margin: 0;
-  border-width: 0;
-  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #2a2c2e;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: none;
-  box-shadow: none;
-  cursor: pointer;
-}
-
 .c5 {
   color: #2a2c2e;
   word-wrap: break-word;
@@ -752,6 +678,30 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
+}
+
+.c7 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c8 {
+  position: relative;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #2a2c2e;
+}
+
+.c6 {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
 
 .c3 {
@@ -827,17 +777,22 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
 <Tooltip
   copy="en"
   direction="auto"
+  inverted={false}
 >
   <WithForwardedRef(T)
     copy="en"
     direction="auto"
+    inverted={false}
   >
     <T
       copy="en"
       direction="auto"
       forwardedRef={null}
+      inverted={false}
     >
-      <Tooltip__StyledTooltip>
+      <Tooltip__StyledTooltip
+        inverted={false}
+      >
         <StyledComponent
           forwardedComponent={
             Object {
@@ -865,6 +820,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
             }
           }
           forwardedRef={[Function]}
+          inverted={false}
         >
           <div
             className="c0"
@@ -951,9 +907,9 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                               [Function],
                             ],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-bwzfXH",
+                              "componentId": "sc-bZQynM",
                               "isStatic": false,
-                              "lastClassName": "eqAxCt",
+                              "lastClassName": "hNpdov",
                               "rules": Array [
                                 "border-radius: 4px;",
                                 [Function],
@@ -962,7 +918,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                             "displayName": "Styled(Component)",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-bwzfXH",
+                            "styledComponentId": "sc-bZQynM",
                             "target": [Function],
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1033,7 +989,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                                       [Function],
                                     ],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bdVaJa",
+                                      "componentId": "sc-EHOje",
                                       "isStatic": false,
                                       "lastClassName": "c3",
                                       "rules": Array [
@@ -1047,7 +1003,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-bdVaJa",
+                                    "styledComponentId": "sc-EHOje",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -1065,7 +1021,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                                 <div
                                   aria-hidden="false"
                                   aria-live="assertive"
-                                  className="c2 sc-bwzfXH c2 c3"
+                                  className="c2 sc-bZQynM c2 c3"
                                   data-testid="bubble"
                                   id="standalone-tooltip-tooltip5_tooltip"
                                   role="tooltip"
@@ -1182,59 +1138,36 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                       </StyledComponent>
                     </Styled(Component)>
                   </Bubble>
-                  <StandaloneIcon
+                  <TooltipButton
                     a11yText="Reveal additional information."
                     aria-controls="standalone-tooltip-tooltip5_tooltip"
                     aria-expanded="true"
                     aria-haspopup="true"
+                    icon={[Function]}
                     id="standalone-tooltip-tooltip5_trigger"
+                    inverted={false}
                     onClick={[Function]}
-                    size={24}
-                    symbol="questionMarkCircle"
-                    type="button"
                   >
-                    <StandaloneIcon__StandaloneIconClickable
-                      aria-controls="standalone-tooltip-tooltip5_tooltip"
-                      aria-expanded="true"
-                      aria-haspopup="true"
-                      id="standalone-tooltip-tooltip5_trigger"
+                    <TooltipButton__StyledIconButton
                       onClick={[Function]}
-                      style={
-                        Object {
-                          "margin": "-4px",
-                          "padding": "4px",
-                        }
-                      }
-                      type="button"
                     >
                       <StyledComponent
-                        aria-controls="standalone-tooltip-tooltip5_tooltip"
-                        aria-expanded="true"
-                        aria-haspopup="true"
                         forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "StandaloneIcon__StandaloneIconClickable-ukibfn-0",
+                              "componentId": "TooltipButton__StyledIconButton-sc-1cfd6xf-0",
                               "isStatic": true,
                               "lastClassName": "c6",
                               "rules": Array [
-                                "padding: 0;",
-                                "margin: 0;",
-                                "border-width: 0;",
-                                "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
-                                "color: #2a2c2e;",
-                                "appearance: none;",
-                                "background: none;",
-                                "box-shadow: none;",
-                                "cursor: pointer;",
+                                "border:none;background-color:transparent;padding:0;margin:0;",
                               ],
                             },
-                            "displayName": "StandaloneIcon__StandaloneIconClickable",
+                            "displayName": "TooltipButton__StyledIconButton",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "StandaloneIcon__StandaloneIconClickable-ukibfn-0",
+                            "styledComponentId": "TooltipButton__StyledIconButton-sc-1cfd6xf-0",
                             "target": "button",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1242,118 +1175,125 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                           }
                         }
                         forwardedRef={null}
-                        id="standalone-tooltip-tooltip5_trigger"
                         onClick={[Function]}
-                        style={
-                          Object {
-                            "margin": "-4px",
-                            "padding": "4px",
-                          }
-                        }
-                        type="button"
                       >
                         <button
-                          aria-controls="standalone-tooltip-tooltip5_tooltip"
-                          aria-expanded="true"
-                          aria-haspopup="true"
                           className="c6"
-                          id="standalone-tooltip-tooltip5_trigger"
                           onClick={[Function]}
-                          style={
-                            Object {
-                              "margin": "-4px",
-                              "padding": "4px",
-                            }
-                          }
-                          type="button"
                         >
-                          <Icon
-                            size={24}
-                            symbol="questionMarkCircle"
-                          >
-                            <Icon__StyledIcon
-                              iSize={24}
-                              symbol="questionMarkCircle"
-                            >
+                          <A11yContent>
+                            <A11yContent__StyledA11yContent>
                               <StyledComponent
                                 forwardedComponent={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                      "isStatic": false,
+                                      "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                      "isStatic": true,
                                       "lastClassName": "c7",
                                       "rules": Array [
-                                        [Function],
-                                        [Function],
-                                        [Function],
+                                        "position: absolute;",
+                                        "height: 1px;",
+                                        "width: 1px;",
+                                        "overflow: hidden;",
+                                        "clip: rect(1px, 1px, 1px, 1px);",
                                       ],
                                     },
-                                    "displayName": "Icon__StyledIcon",
+                                    "displayName": "A11yContent__StyledA11yContent",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                    "target": "i",
+                                    "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                    "target": "span",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
                                   }
                                 }
                                 forwardedRef={null}
-                                iSize={24}
-                                symbol="questionMarkCircle"
                               >
-                                <i
+                                <span
                                   className="c7"
                                 >
-                                  <A11yContent>
-                                    <A11yContent__StyledA11yContent>
-                                      <StyledComponent
-                                        forwardedComponent={
-                                          Object {
-                                            "$$typeof": Symbol(react.forward_ref),
-                                            "attrs": Array [],
-                                            "componentStyle": ComponentStyle {
-                                              "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                              "isStatic": true,
-                                              "lastClassName": "c8",
-                                              "rules": Array [
-                                                "position: absolute;",
-                                                "height: 1px;",
-                                                "width: 1px;",
-                                                "overflow: hidden;",
-                                                "clip: rect(1px, 1px, 1px, 1px);",
-                                              ],
-                                            },
-                                            "displayName": "A11yContent__StyledA11yContent",
-                                            "foldedComponentIds": Array [],
-                                            "render": [Function],
-                                            "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                            "target": "span",
-                                            "toString": [Function],
-                                            "warnTooManyClasses": [Function],
-                                            "withComponent": [Function],
-                                          }
-                                        }
-                                        forwardedRef={null}
-                                      >
-                                        <span
-                                          className="c8"
-                                        >
-                                          Reveal additional information.
-                                        </span>
-                                      </StyledComponent>
-                                    </A11yContent__StyledA11yContent>
-                                  </A11yContent>
-                                </i>
+                                  Reveal additional information.
+                                </span>
                               </StyledComponent>
-                            </Icon__StyledIcon>
-                          </Icon>
+                            </A11yContent__StyledA11yContent>
+                          </A11yContent>
+                          <Dependent
+                            color="greyShark"
+                          >
+                            <Dependent
+                              color="greyShark"
+                            >
+                              <styled.svg
+                                color="greyShark"
+                                data-testid="dependentSvg"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                width="24"
+                              >
+                                <StyledComponent
+                                  color="greyShark"
+                                  data-testid="dependentSvg"
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [
+                                        Object {
+                                          "aria-hidden": true,
+                                          "focusable": false,
+                                        },
+                                      ],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-bxivhb",
+                                        "isStatic": false,
+                                        "lastClassName": "c8",
+                                        "rules": Array [
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "styled.svg",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-bxivhb",
+                                      "target": "svg",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  width="24"
+                                >
+                                  <svg
+                                    aria-hidden={true}
+                                    className="c8"
+                                    color="greyShark"
+                                    data-testid="dependentSvg"
+                                    focusable={false}
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                  >
+                                    <path
+                                      clipRule="evenodd"
+                                      d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2V2ZM13.0001 19H11.0001V17H13.0001V19V19ZM14.1699 12.17C13.4499 12.9 12.9999 13.5 12.9999 15H10.9999V14.5C10.9999 13.4 11.4499 12.4 12.1699 11.67L13.4099 10.41C13.7799 10.05 13.9999 9.55001 13.9999 9.00001C13.9999 7.90001 13.0999 7.00001 11.9999 7.00001C10.8999 7.00001 9.99989 7.90001 9.99989 9.00001H7.99989C7.99989 6.79001 9.78989 5.00001 11.9999 5.00001C14.2099 5.00001 15.9999 6.79001 15.9999 9.00001C15.9999 9.88001 15.6399 10.68 15.0699 11.25L14.1699 12.17Z"
+                                      fillRule="evenodd"
+                                    />
+                                  </svg>
+                                </StyledComponent>
+                              </styled.svg>
+                            </Dependent>
+                          </Dependent>
                         </button>
                       </StyledComponent>
-                    </StandaloneIcon__StandaloneIconClickable>
-                  </StandaloneIcon>
+                    </TooltipButton__StyledIconButton>
+                  </TooltipButton>
                 </div>
               </StyledComponent>
             </Tooltip__TooltipContainer>
@@ -1366,50 +1306,6 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
 `;
 
 exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] = `
-.c8 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c7 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  font-size: 1.5rem;
-}
-
-.c7::before {
-  content: '\\f102';
-}
-
-.c6 {
-  padding: 0;
-  margin: 0;
-  border-width: 0;
-  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #2a2c2e;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: none;
-  box-shadow: none;
-  cursor: pointer;
-}
-
 .c5 {
   color: #2a2c2e;
   word-wrap: break-word;
@@ -1428,6 +1324,30 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
+}
+
+.c7 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c8 {
+  position: relative;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #2a2c2e;
+}
+
+.c6 {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
 
 .c3 {
@@ -1503,17 +1423,22 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
 <Tooltip
   copy="en"
   direction="auto"
+  inverted={false}
 >
   <WithForwardedRef(T)
     copy="en"
     direction="auto"
+    inverted={false}
   >
     <T
       copy="en"
       direction="auto"
       forwardedRef={null}
+      inverted={false}
     >
-      <Tooltip__StyledTooltip>
+      <Tooltip__StyledTooltip
+        inverted={false}
+      >
         <StyledComponent
           forwardedComponent={
             Object {
@@ -1541,6 +1466,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
             }
           }
           forwardedRef={[Function]}
+          inverted={false}
         >
           <div
             className="c0"
@@ -1627,9 +1553,9 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                               [Function],
                             ],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-bwzfXH",
+                              "componentId": "sc-bZQynM",
                               "isStatic": false,
-                              "lastClassName": "eqAxCt",
+                              "lastClassName": "hNpdov",
                               "rules": Array [
                                 "border-radius: 4px;",
                                 [Function],
@@ -1638,7 +1564,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                             "displayName": "Styled(Component)",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-bwzfXH",
+                            "styledComponentId": "sc-bZQynM",
                             "target": [Function],
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1709,7 +1635,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                                       [Function],
                                     ],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bdVaJa",
+                                      "componentId": "sc-EHOje",
                                       "isStatic": false,
                                       "lastClassName": "c3",
                                       "rules": Array [
@@ -1723,7 +1649,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-bdVaJa",
+                                    "styledComponentId": "sc-EHOje",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -1741,7 +1667,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                                 <div
                                   aria-hidden="false"
                                   aria-live="assertive"
-                                  className="c2 sc-bwzfXH c2 c3"
+                                  className="c2 sc-bZQynM c2 c3"
                                   data-testid="bubble"
                                   id="standalone-tooltip-tooltip5_tooltip"
                                   role="tooltip"
@@ -1858,59 +1784,36 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                       </StyledComponent>
                     </Styled(Component)>
                   </Bubble>
-                  <StandaloneIcon
+                  <TooltipButton
                     a11yText="Reveal additional information."
                     aria-controls="standalone-tooltip-tooltip5_tooltip"
                     aria-expanded="true"
                     aria-haspopup="true"
+                    icon={[Function]}
                     id="standalone-tooltip-tooltip5_trigger"
+                    inverted={false}
                     onClick={[Function]}
-                    size={24}
-                    symbol="questionMarkCircle"
-                    type="button"
                   >
-                    <StandaloneIcon__StandaloneIconClickable
-                      aria-controls="standalone-tooltip-tooltip5_tooltip"
-                      aria-expanded="true"
-                      aria-haspopup="true"
-                      id="standalone-tooltip-tooltip5_trigger"
+                    <TooltipButton__StyledIconButton
                       onClick={[Function]}
-                      style={
-                        Object {
-                          "margin": "-4px",
-                          "padding": "4px",
-                        }
-                      }
-                      type="button"
                     >
                       <StyledComponent
-                        aria-controls="standalone-tooltip-tooltip5_tooltip"
-                        aria-expanded="true"
-                        aria-haspopup="true"
                         forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "StandaloneIcon__StandaloneIconClickable-ukibfn-0",
+                              "componentId": "TooltipButton__StyledIconButton-sc-1cfd6xf-0",
                               "isStatic": true,
                               "lastClassName": "c6",
                               "rules": Array [
-                                "padding: 0;",
-                                "margin: 0;",
-                                "border-width: 0;",
-                                "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
-                                "color: #2a2c2e;",
-                                "appearance: none;",
-                                "background: none;",
-                                "box-shadow: none;",
-                                "cursor: pointer;",
+                                "border:none;background-color:transparent;padding:0;margin:0;",
                               ],
                             },
-                            "displayName": "StandaloneIcon__StandaloneIconClickable",
+                            "displayName": "TooltipButton__StyledIconButton",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "StandaloneIcon__StandaloneIconClickable-ukibfn-0",
+                            "styledComponentId": "TooltipButton__StyledIconButton-sc-1cfd6xf-0",
                             "target": "button",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -1918,118 +1821,125 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                           }
                         }
                         forwardedRef={null}
-                        id="standalone-tooltip-tooltip5_trigger"
                         onClick={[Function]}
-                        style={
-                          Object {
-                            "margin": "-4px",
-                            "padding": "4px",
-                          }
-                        }
-                        type="button"
                       >
                         <button
-                          aria-controls="standalone-tooltip-tooltip5_tooltip"
-                          aria-expanded="true"
-                          aria-haspopup="true"
                           className="c6"
-                          id="standalone-tooltip-tooltip5_trigger"
                           onClick={[Function]}
-                          style={
-                            Object {
-                              "margin": "-4px",
-                              "padding": "4px",
-                            }
-                          }
-                          type="button"
                         >
-                          <Icon
-                            size={24}
-                            symbol="questionMarkCircle"
-                          >
-                            <Icon__StyledIcon
-                              iSize={24}
-                              symbol="questionMarkCircle"
-                            >
+                          <A11yContent>
+                            <A11yContent__StyledA11yContent>
                               <StyledComponent
                                 forwardedComponent={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                      "isStatic": false,
+                                      "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                      "isStatic": true,
                                       "lastClassName": "c7",
                                       "rules": Array [
-                                        [Function],
-                                        [Function],
-                                        [Function],
+                                        "position: absolute;",
+                                        "height: 1px;",
+                                        "width: 1px;",
+                                        "overflow: hidden;",
+                                        "clip: rect(1px, 1px, 1px, 1px);",
                                       ],
                                     },
-                                    "displayName": "Icon__StyledIcon",
+                                    "displayName": "A11yContent__StyledA11yContent",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                    "target": "i",
+                                    "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                    "target": "span",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
                                   }
                                 }
                                 forwardedRef={null}
-                                iSize={24}
-                                symbol="questionMarkCircle"
                               >
-                                <i
+                                <span
                                   className="c7"
                                 >
-                                  <A11yContent>
-                                    <A11yContent__StyledA11yContent>
-                                      <StyledComponent
-                                        forwardedComponent={
-                                          Object {
-                                            "$$typeof": Symbol(react.forward_ref),
-                                            "attrs": Array [],
-                                            "componentStyle": ComponentStyle {
-                                              "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                              "isStatic": true,
-                                              "lastClassName": "c8",
-                                              "rules": Array [
-                                                "position: absolute;",
-                                                "height: 1px;",
-                                                "width: 1px;",
-                                                "overflow: hidden;",
-                                                "clip: rect(1px, 1px, 1px, 1px);",
-                                              ],
-                                            },
-                                            "displayName": "A11yContent__StyledA11yContent",
-                                            "foldedComponentIds": Array [],
-                                            "render": [Function],
-                                            "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                            "target": "span",
-                                            "toString": [Function],
-                                            "warnTooManyClasses": [Function],
-                                            "withComponent": [Function],
-                                          }
-                                        }
-                                        forwardedRef={null}
-                                      >
-                                        <span
-                                          className="c8"
-                                        >
-                                          Reveal additional information.
-                                        </span>
-                                      </StyledComponent>
-                                    </A11yContent__StyledA11yContent>
-                                  </A11yContent>
-                                </i>
+                                  Reveal additional information.
+                                </span>
                               </StyledComponent>
-                            </Icon__StyledIcon>
-                          </Icon>
+                            </A11yContent__StyledA11yContent>
+                          </A11yContent>
+                          <Dependent
+                            color="greyShark"
+                          >
+                            <Dependent
+                              color="greyShark"
+                            >
+                              <styled.svg
+                                color="greyShark"
+                                data-testid="dependentSvg"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                width="24"
+                              >
+                                <StyledComponent
+                                  color="greyShark"
+                                  data-testid="dependentSvg"
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [
+                                        Object {
+                                          "aria-hidden": true,
+                                          "focusable": false,
+                                        },
+                                      ],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-bxivhb",
+                                        "isStatic": false,
+                                        "lastClassName": "c8",
+                                        "rules": Array [
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "styled.svg",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-bxivhb",
+                                      "target": "svg",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  width="24"
+                                >
+                                  <svg
+                                    aria-hidden={true}
+                                    className="c8"
+                                    color="greyShark"
+                                    data-testid="dependentSvg"
+                                    focusable={false}
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                  >
+                                    <path
+                                      clipRule="evenodd"
+                                      d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2V2ZM13.0001 19H11.0001V17H13.0001V19V19ZM14.1699 12.17C13.4499 12.9 12.9999 13.5 12.9999 15H10.9999V14.5C10.9999 13.4 11.4499 12.4 12.1699 11.67L13.4099 10.41C13.7799 10.05 13.9999 9.55001 13.9999 9.00001C13.9999 7.90001 13.0999 7.00001 11.9999 7.00001C10.8999 7.00001 9.99989 7.90001 9.99989 9.00001H7.99989C7.99989 6.79001 9.78989 5.00001 11.9999 5.00001C14.2099 5.00001 15.9999 6.79001 15.9999 9.00001C15.9999 9.88001 15.6399 10.68 15.0699 11.25L14.1699 12.17Z"
+                                      fillRule="evenodd"
+                                    />
+                                  </svg>
+                                </StyledComponent>
+                              </styled.svg>
+                            </Dependent>
+                          </Dependent>
                         </button>
                       </StyledComponent>
-                    </StandaloneIcon__StandaloneIconClickable>
-                  </StandaloneIcon>
+                    </TooltipButton__StyledIconButton>
+                  </TooltipButton>
                 </div>
               </StyledComponent>
             </Tooltip__TooltipContainer>
@@ -2125,7 +2035,7 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
 <div
   aria-hidden="true"
   aria-live="assertive"
-  className="c0 sc-bwzfXH c0 c1"
+  className="c0 sc-bZQynM c0 c1"
   data-testid="bubble"
   id="standalone-tooltip-tooltip4_tooltip"
   role="tooltip"
@@ -2320,7 +2230,7 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
 <div
   aria-hidden="false"
   aria-live="assertive"
-  className="c0 sc-bwzfXH c0 c1"
+  className="c0 sc-bZQynM c0 c1"
   data-testid="bubble"
   id="standalone-tooltip-tooltip4_tooltip"
   role="tooltip"
@@ -2516,7 +2426,7 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
 <div
   aria-hidden="true"
   aria-live="assertive"
-  className="c0 sc-bwzfXH c0 c1"
+  className="c0 sc-bZQynM c0 c1"
   data-testid="bubble"
   id="standalone-tooltip-tooltip4_tooltip"
   role="tooltip"
@@ -2629,50 +2539,6 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
 `;
 
 exports[`Tooltip renders 1`] = `
-.c8 {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-}
-
-.c7 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  font-size: 1.5rem;
-}
-
-.c7::before {
-  content: '\\f102';
-}
-
-.c6 {
-  padding: 0;
-  margin: 0;
-  border-width: 0;
-  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #2a2c2e;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: none;
-  box-shadow: none;
-  cursor: pointer;
-}
-
 .c5 {
   color: #2a2c2e;
   word-wrap: break-word;
@@ -2691,6 +2557,30 @@ exports[`Tooltip renders 1`] = `
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
+}
+
+.c7 {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.c8 {
+  position: relative;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #2a2c2e;
+}
+
+.c6 {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
 
 .c3 {
@@ -2767,17 +2657,22 @@ exports[`Tooltip renders 1`] = `
 <Tooltip
   copy="en"
   direction="auto"
+  inverted={false}
 >
   <WithForwardedRef(T)
     copy="en"
     direction="auto"
+    inverted={false}
   >
     <T
       copy="en"
       direction="auto"
       forwardedRef={null}
+      inverted={false}
     >
-      <Tooltip__StyledTooltip>
+      <Tooltip__StyledTooltip
+        inverted={false}
+      >
         <StyledComponent
           forwardedComponent={
             Object {
@@ -2805,6 +2700,7 @@ exports[`Tooltip renders 1`] = `
             }
           }
           forwardedRef={[Function]}
+          inverted={false}
         >
           <div
             className="c0"
@@ -2891,7 +2787,7 @@ exports[`Tooltip renders 1`] = `
                               [Function],
                             ],
                             "componentStyle": ComponentStyle {
-                              "componentId": "sc-bwzfXH",
+                              "componentId": "sc-bZQynM",
                               "isStatic": false,
                               "lastClassName": "c2",
                               "rules": Array [
@@ -2902,7 +2798,7 @@ exports[`Tooltip renders 1`] = `
                             "displayName": "Styled(Component)",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "sc-bwzfXH",
+                            "styledComponentId": "sc-bZQynM",
                             "target": [Function],
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -2973,7 +2869,7 @@ exports[`Tooltip renders 1`] = `
                                       [Function],
                                     ],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-bdVaJa",
+                                      "componentId": "sc-EHOje",
                                       "isStatic": false,
                                       "lastClassName": "c3",
                                       "rules": Array [
@@ -2987,7 +2883,7 @@ exports[`Tooltip renders 1`] = `
                                     "displayName": "styled.div",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "sc-bdVaJa",
+                                    "styledComponentId": "sc-EHOje",
                                     "target": "div",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -3005,7 +2901,7 @@ exports[`Tooltip renders 1`] = `
                                 <div
                                   aria-hidden="true"
                                   aria-live="assertive"
-                                  className="c2 sc-bwzfXH c2 c3"
+                                  className="c2 sc-bZQynM c2 c3"
                                   data-testid="bubble"
                                   id="standalone-tooltip-tooltip1_tooltip"
                                   role="tooltip"
@@ -3122,59 +3018,36 @@ exports[`Tooltip renders 1`] = `
                       </StyledComponent>
                     </Styled(Component)>
                   </Bubble>
-                  <StandaloneIcon
+                  <TooltipButton
                     a11yText="Reveal additional information."
                     aria-controls="standalone-tooltip-tooltip1_tooltip"
                     aria-expanded="false"
                     aria-haspopup="true"
+                    icon={[Function]}
                     id="standalone-tooltip-tooltip1_trigger"
+                    inverted={false}
                     onClick={[Function]}
-                    size={24}
-                    symbol="questionMarkCircle"
-                    type="button"
                   >
-                    <StandaloneIcon__StandaloneIconClickable
-                      aria-controls="standalone-tooltip-tooltip1_tooltip"
-                      aria-expanded="false"
-                      aria-haspopup="true"
-                      id="standalone-tooltip-tooltip1_trigger"
+                    <TooltipButton__StyledIconButton
                       onClick={[Function]}
-                      style={
-                        Object {
-                          "margin": "-4px",
-                          "padding": "4px",
-                        }
-                      }
-                      type="button"
                     >
                       <StyledComponent
-                        aria-controls="standalone-tooltip-tooltip1_tooltip"
-                        aria-expanded="false"
-                        aria-haspopup="true"
                         forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
                             "attrs": Array [],
                             "componentStyle": ComponentStyle {
-                              "componentId": "StandaloneIcon__StandaloneIconClickable-ukibfn-0",
+                              "componentId": "TooltipButton__StyledIconButton-sc-1cfd6xf-0",
                               "isStatic": true,
                               "lastClassName": "c6",
                               "rules": Array [
-                                "padding: 0;",
-                                "margin: 0;",
-                                "border-width: 0;",
-                                "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
-                                "color: #2a2c2e;",
-                                "appearance: none;",
-                                "background: none;",
-                                "box-shadow: none;",
-                                "cursor: pointer;",
+                                "border:none;background-color:transparent;padding:0;margin:0;",
                               ],
                             },
-                            "displayName": "StandaloneIcon__StandaloneIconClickable",
+                            "displayName": "TooltipButton__StyledIconButton",
                             "foldedComponentIds": Array [],
                             "render": [Function],
-                            "styledComponentId": "StandaloneIcon__StandaloneIconClickable-ukibfn-0",
+                            "styledComponentId": "TooltipButton__StyledIconButton-sc-1cfd6xf-0",
                             "target": "button",
                             "toString": [Function],
                             "warnTooManyClasses": [Function],
@@ -3182,118 +3055,125 @@ exports[`Tooltip renders 1`] = `
                           }
                         }
                         forwardedRef={null}
-                        id="standalone-tooltip-tooltip1_trigger"
                         onClick={[Function]}
-                        style={
-                          Object {
-                            "margin": "-4px",
-                            "padding": "4px",
-                          }
-                        }
-                        type="button"
                       >
                         <button
-                          aria-controls="standalone-tooltip-tooltip1_tooltip"
-                          aria-expanded="false"
-                          aria-haspopup="true"
                           className="c6"
-                          id="standalone-tooltip-tooltip1_trigger"
                           onClick={[Function]}
-                          style={
-                            Object {
-                              "margin": "-4px",
-                              "padding": "4px",
-                            }
-                          }
-                          type="button"
                         >
-                          <Icon
-                            size={24}
-                            symbol="questionMarkCircle"
-                          >
-                            <Icon__StyledIcon
-                              iSize={24}
-                              symbol="questionMarkCircle"
-                            >
+                          <A11yContent>
+                            <A11yContent__StyledA11yContent>
                               <StyledComponent
                                 forwardedComponent={
                                   Object {
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                      "isStatic": false,
+                                      "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                      "isStatic": true,
                                       "lastClassName": "c7",
                                       "rules": Array [
-                                        [Function],
-                                        [Function],
-                                        [Function],
+                                        "position: absolute;",
+                                        "height: 1px;",
+                                        "width: 1px;",
+                                        "overflow: hidden;",
+                                        "clip: rect(1px, 1px, 1px, 1px);",
                                       ],
                                     },
-                                    "displayName": "Icon__StyledIcon",
+                                    "displayName": "A11yContent__StyledA11yContent",
                                     "foldedComponentIds": Array [],
                                     "render": [Function],
-                                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                                    "target": "i",
+                                    "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
+                                    "target": "span",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
                                     "withComponent": [Function],
                                   }
                                 }
                                 forwardedRef={null}
-                                iSize={24}
-                                symbol="questionMarkCircle"
                               >
-                                <i
+                                <span
                                   className="c7"
                                 >
-                                  <A11yContent>
-                                    <A11yContent__StyledA11yContent>
-                                      <StyledComponent
-                                        forwardedComponent={
-                                          Object {
-                                            "$$typeof": Symbol(react.forward_ref),
-                                            "attrs": Array [],
-                                            "componentStyle": ComponentStyle {
-                                              "componentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                              "isStatic": true,
-                                              "lastClassName": "c8",
-                                              "rules": Array [
-                                                "position: absolute;",
-                                                "height: 1px;",
-                                                "width: 1px;",
-                                                "overflow: hidden;",
-                                                "clip: rect(1px, 1px, 1px, 1px);",
-                                              ],
-                                            },
-                                            "displayName": "A11yContent__StyledA11yContent",
-                                            "foldedComponentIds": Array [],
-                                            "render": [Function],
-                                            "styledComponentId": "A11yContent__StyledA11yContent-sc-15wexwk-0",
-                                            "target": "span",
-                                            "toString": [Function],
-                                            "warnTooManyClasses": [Function],
-                                            "withComponent": [Function],
-                                          }
-                                        }
-                                        forwardedRef={null}
-                                      >
-                                        <span
-                                          className="c8"
-                                        >
-                                          Reveal additional information.
-                                        </span>
-                                      </StyledComponent>
-                                    </A11yContent__StyledA11yContent>
-                                  </A11yContent>
-                                </i>
+                                  Reveal additional information.
+                                </span>
                               </StyledComponent>
-                            </Icon__StyledIcon>
-                          </Icon>
+                            </A11yContent__StyledA11yContent>
+                          </A11yContent>
+                          <Dependent
+                            color="greyShark"
+                          >
+                            <Dependent
+                              color="greyShark"
+                            >
+                              <styled.svg
+                                color="greyShark"
+                                data-testid="dependentSvg"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                width="24"
+                              >
+                                <StyledComponent
+                                  color="greyShark"
+                                  data-testid="dependentSvg"
+                                  forwardedComponent={
+                                    Object {
+                                      "$$typeof": Symbol(react.forward_ref),
+                                      "attrs": Array [
+                                        Object {
+                                          "aria-hidden": true,
+                                          "focusable": false,
+                                        },
+                                      ],
+                                      "componentStyle": ComponentStyle {
+                                        "componentId": "sc-bxivhb",
+                                        "isStatic": false,
+                                        "lastClassName": "c8",
+                                        "rules": Array [
+                                          [Function],
+                                          [Function],
+                                          [Function],
+                                        ],
+                                      },
+                                      "displayName": "styled.svg",
+                                      "foldedComponentIds": Array [],
+                                      "render": [Function],
+                                      "styledComponentId": "sc-bxivhb",
+                                      "target": "svg",
+                                      "toString": [Function],
+                                      "warnTooManyClasses": [Function],
+                                      "withComponent": [Function],
+                                    }
+                                  }
+                                  forwardedRef={null}
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  width="24"
+                                >
+                                  <svg
+                                    aria-hidden={true}
+                                    className="c8"
+                                    color="greyShark"
+                                    data-testid="dependentSvg"
+                                    focusable={false}
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                  >
+                                    <path
+                                      clipRule="evenodd"
+                                      d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2V2ZM13.0001 19H11.0001V17H13.0001V19V19ZM14.1699 12.17C13.4499 12.9 12.9999 13.5 12.9999 15H10.9999V14.5C10.9999 13.4 11.4499 12.4 12.1699 11.67L13.4099 10.41C13.7799 10.05 13.9999 9.55001 13.9999 9.00001C13.9999 7.90001 13.0999 7.00001 11.9999 7.00001C10.8999 7.00001 9.99989 7.90001 9.99989 9.00001H7.99989C7.99989 6.79001 9.78989 5.00001 11.9999 5.00001C14.2099 5.00001 15.9999 6.79001 15.9999 9.00001C15.9999 9.88001 15.6399 10.68 15.0699 11.25L14.1699 12.17Z"
+                                      fillRule="evenodd"
+                                    />
+                                  </svg>
+                                </StyledComponent>
+                              </styled.svg>
+                            </Dependent>
+                          </Dependent>
                         </button>
                       </StyledComponent>
-                    </StandaloneIcon__StandaloneIconClickable>
-                  </StandaloneIcon>
+                    </TooltipButton__StyledIconButton>
+                  </TooltipButton>
                 </div>
               </StyledComponent>
             </Tooltip__TooltipContainer>
