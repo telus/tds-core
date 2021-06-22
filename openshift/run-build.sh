@@ -14,6 +14,6 @@ then
   exit 0
 fi
 
-oc start-build ${NAME} --follow --commit=${COMMIT}
+oc start-build ${NAME} --follow --commit=${COMMIT} --wait=true
 
 oc tag ${NAME}:latest ${NAME}:${VERSION}
