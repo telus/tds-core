@@ -39,10 +39,17 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
 }
 
 .c6 {
-  border: none;
-  background-color: transparent;
   padding: 0;
   margin: 0;
+  border-width: 0;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2a2c2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
 }
 
 .c3 {
@@ -214,7 +221,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                 >
                   <Bubble
                     direction="right"
-                    id="standalone-tooltip-tooltip9_tooltip"
+                    id="standalone-tooltip-tooltip10_tooltip"
                     open={false}
                     width={
                       Object {
@@ -236,7 +243,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                       }
                       direction="right"
                       horizontal={3}
-                      id="standalone-tooltip-tooltip9_tooltip"
+                      id="standalone-tooltip-tooltip10_tooltip"
                       open={false}
                       role="tooltip"
                       vertical={2}
@@ -281,7 +288,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                         }
                         forwardedRef={null}
                         horizontal={3}
-                        id="standalone-tooltip-tooltip9_tooltip"
+                        id="standalone-tooltip-tooltip10_tooltip"
                         open={false}
                         role="tooltip"
                         vertical={2}
@@ -302,7 +309,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                           data-testid="bubble"
                           direction="right"
                           horizontal={3}
-                          id="standalone-tooltip-tooltip9_tooltip"
+                          id="standalone-tooltip-tooltip10_tooltip"
                           open={false}
                           role="tooltip"
                           vertical={2}
@@ -313,7 +320,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                             className="c2"
                             data-testid="bubble"
                             horizontal={3}
-                            id="standalone-tooltip-tooltip9_tooltip"
+                            id="standalone-tooltip-tooltip10_tooltip"
                             inline={false}
                             role="tooltip"
                             tag="div"
@@ -325,7 +332,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                               className="c2"
                               data-testid="bubble"
                               horizontal={3}
-                              id="standalone-tooltip-tooltip9_tooltip"
+                              id="standalone-tooltip-tooltip10_tooltip"
                               inline={false}
                               role="tooltip"
                               tag="div"
@@ -366,7 +373,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                                 }
                                 forwardedRef={null}
                                 horizontal={3}
-                                id="standalone-tooltip-tooltip9_tooltip"
+                                id="standalone-tooltip-tooltip10_tooltip"
                                 inline={false}
                                 role="tooltip"
                                 tag="div"
@@ -377,7 +384,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                                   aria-live="assertive"
                                   className="c2 sc-bZQynM c2 c3"
                                   data-testid="bubble"
-                                  id="standalone-tooltip-tooltip9_tooltip"
+                                  id="standalone-tooltip-tooltip10_tooltip"
                                   role="tooltip"
                                 >
                                   <Bubble__InnerBubbleStyle
@@ -494,11 +501,11 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                   </Bubble>
                   <TooltipButton
                     a11yText="This is custom copy."
-                    aria-controls="standalone-tooltip-tooltip9_tooltip"
+                    aria-controls="standalone-tooltip-tooltip10_tooltip"
                     aria-expanded="false"
                     aria-haspopup="true"
                     icon={[Function]}
-                    id="standalone-tooltip-tooltip9_trigger"
+                    id="standalone-tooltip-tooltip10_trigger"
                     inverted={false}
                     onClick={[Function]}
                   >
@@ -515,7 +522,15 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                               "isStatic": true,
                               "lastClassName": "c6",
                               "rules": Array [
-                                "border:none;background-color:transparent;padding:0;margin:0;",
+                                "padding: 0;",
+                                "margin: 0;",
+                                "border-width: 0;",
+                                "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
+                                "color: #2a2c2e;",
+                                "appearance: none;",
+                                "background: none;",
+                                "box-shadow: none;",
+                                "cursor: pointer;",
                               ],
                             },
                             "displayName": "TooltipButton__StyledIconButton",
@@ -698,10 +713,17 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
 }
 
 .c6 {
-  border: none;
-  background-color: transparent;
   padding: 0;
   margin: 0;
+  border-width: 0;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2a2c2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
 }
 
 .c3 {
@@ -860,7 +882,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                 >
                   <Bubble
                     direction="right"
-                    id="standalone-tooltip-tooltip5_tooltip"
+                    id="standalone-tooltip-tooltip6_tooltip"
                     open={true}
                     width={
                       Object {
@@ -882,7 +904,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                       }
                       direction="right"
                       horizontal={3}
-                      id="standalone-tooltip-tooltip5_tooltip"
+                      id="standalone-tooltip-tooltip6_tooltip"
                       open={true}
                       role="tooltip"
                       vertical={2}
@@ -927,7 +949,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                         }
                         forwardedRef={null}
                         horizontal={3}
-                        id="standalone-tooltip-tooltip5_tooltip"
+                        id="standalone-tooltip-tooltip6_tooltip"
                         open={true}
                         role="tooltip"
                         vertical={2}
@@ -948,7 +970,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                           data-testid="bubble"
                           direction="right"
                           horizontal={3}
-                          id="standalone-tooltip-tooltip5_tooltip"
+                          id="standalone-tooltip-tooltip6_tooltip"
                           open={true}
                           role="tooltip"
                           vertical={2}
@@ -959,7 +981,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                             className="c2"
                             data-testid="bubble"
                             horizontal={3}
-                            id="standalone-tooltip-tooltip5_tooltip"
+                            id="standalone-tooltip-tooltip6_tooltip"
                             inline={false}
                             role="tooltip"
                             tag="div"
@@ -971,7 +993,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                               className="c2"
                               data-testid="bubble"
                               horizontal={3}
-                              id="standalone-tooltip-tooltip5_tooltip"
+                              id="standalone-tooltip-tooltip6_tooltip"
                               inline={false}
                               role="tooltip"
                               tag="div"
@@ -1012,7 +1034,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                                 }
                                 forwardedRef={null}
                                 horizontal={3}
-                                id="standalone-tooltip-tooltip5_tooltip"
+                                id="standalone-tooltip-tooltip6_tooltip"
                                 inline={false}
                                 role="tooltip"
                                 tag="div"
@@ -1023,7 +1045,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                                   aria-live="assertive"
                                   className="c2 sc-bZQynM c2 c3"
                                   data-testid="bubble"
-                                  id="standalone-tooltip-tooltip5_tooltip"
+                                  id="standalone-tooltip-tooltip6_tooltip"
                                   role="tooltip"
                                 >
                                   <Bubble__InnerBubbleStyle
@@ -1140,11 +1162,11 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                   </Bubble>
                   <TooltipButton
                     a11yText="Reveal additional information."
-                    aria-controls="standalone-tooltip-tooltip5_tooltip"
+                    aria-controls="standalone-tooltip-tooltip6_tooltip"
                     aria-expanded="true"
                     aria-haspopup="true"
                     icon={[Function]}
-                    id="standalone-tooltip-tooltip5_trigger"
+                    id="standalone-tooltip-tooltip6_trigger"
                     inverted={false}
                     onClick={[Function]}
                   >
@@ -1161,7 +1183,15 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                               "isStatic": true,
                               "lastClassName": "c6",
                               "rules": Array [
-                                "border:none;background-color:transparent;padding:0;margin:0;",
+                                "padding: 0;",
+                                "margin: 0;",
+                                "border-width: 0;",
+                                "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
+                                "color: #2a2c2e;",
+                                "appearance: none;",
+                                "background: none;",
+                                "box-shadow: none;",
+                                "cursor: pointer;",
                               ],
                             },
                             "displayName": "TooltipButton__StyledIconButton",
@@ -1344,10 +1374,17 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
 }
 
 .c6 {
-  border: none;
-  background-color: transparent;
   padding: 0;
   margin: 0;
+  border-width: 0;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2a2c2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
 }
 
 .c3 {
@@ -1506,7 +1543,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                 >
                   <Bubble
                     direction="right"
-                    id="standalone-tooltip-tooltip5_tooltip"
+                    id="standalone-tooltip-tooltip6_tooltip"
                     open={true}
                     width={
                       Object {
@@ -1528,7 +1565,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                       }
                       direction="right"
                       horizontal={3}
-                      id="standalone-tooltip-tooltip5_tooltip"
+                      id="standalone-tooltip-tooltip6_tooltip"
                       open={true}
                       role="tooltip"
                       vertical={2}
@@ -1573,7 +1610,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                         }
                         forwardedRef={null}
                         horizontal={3}
-                        id="standalone-tooltip-tooltip5_tooltip"
+                        id="standalone-tooltip-tooltip6_tooltip"
                         open={true}
                         role="tooltip"
                         vertical={2}
@@ -1594,7 +1631,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                           data-testid="bubble"
                           direction="right"
                           horizontal={3}
-                          id="standalone-tooltip-tooltip5_tooltip"
+                          id="standalone-tooltip-tooltip6_tooltip"
                           open={true}
                           role="tooltip"
                           vertical={2}
@@ -1605,7 +1642,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                             className="c2"
                             data-testid="bubble"
                             horizontal={3}
-                            id="standalone-tooltip-tooltip5_tooltip"
+                            id="standalone-tooltip-tooltip6_tooltip"
                             inline={false}
                             role="tooltip"
                             tag="div"
@@ -1617,7 +1654,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                               className="c2"
                               data-testid="bubble"
                               horizontal={3}
-                              id="standalone-tooltip-tooltip5_tooltip"
+                              id="standalone-tooltip-tooltip6_tooltip"
                               inline={false}
                               role="tooltip"
                               tag="div"
@@ -1658,7 +1695,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                                 }
                                 forwardedRef={null}
                                 horizontal={3}
-                                id="standalone-tooltip-tooltip5_tooltip"
+                                id="standalone-tooltip-tooltip6_tooltip"
                                 inline={false}
                                 role="tooltip"
                                 tag="div"
@@ -1669,7 +1706,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                                   aria-live="assertive"
                                   className="c2 sc-bZQynM c2 c3"
                                   data-testid="bubble"
-                                  id="standalone-tooltip-tooltip5_tooltip"
+                                  id="standalone-tooltip-tooltip6_tooltip"
                                   role="tooltip"
                                 >
                                   <Bubble__InnerBubbleStyle
@@ -1786,11 +1823,11 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                   </Bubble>
                   <TooltipButton
                     a11yText="Reveal additional information."
-                    aria-controls="standalone-tooltip-tooltip5_tooltip"
+                    aria-controls="standalone-tooltip-tooltip6_tooltip"
                     aria-expanded="true"
                     aria-haspopup="true"
                     icon={[Function]}
-                    id="standalone-tooltip-tooltip5_trigger"
+                    id="standalone-tooltip-tooltip6_trigger"
                     inverted={false}
                     onClick={[Function]}
                   >
@@ -1807,7 +1844,15 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                               "isStatic": true,
                               "lastClassName": "c6",
                               "rules": Array [
-                                "border:none;background-color:transparent;padding:0;margin:0;",
+                                "padding: 0;",
+                                "margin: 0;",
+                                "border-width: 0;",
+                                "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
+                                "color: #2a2c2e;",
+                                "appearance: none;",
+                                "background: none;",
+                                "box-shadow: none;",
+                                "cursor: pointer;",
                               ],
                             },
                             "displayName": "TooltipButton__StyledIconButton",
@@ -2037,7 +2082,7 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
   aria-live="assertive"
   className="c0 sc-bZQynM c0 c1"
   data-testid="bubble"
-  id="standalone-tooltip-tooltip4_tooltip"
+  id="standalone-tooltip-tooltip5_tooltip"
   role="tooltip"
 >
   <Bubble__InnerBubbleStyle
@@ -2232,7 +2277,7 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
   aria-live="assertive"
   className="c0 sc-bZQynM c0 c1"
   data-testid="bubble"
-  id="standalone-tooltip-tooltip4_tooltip"
+  id="standalone-tooltip-tooltip5_tooltip"
   role="tooltip"
 >
   <Bubble__InnerBubbleStyle
@@ -2428,7 +2473,7 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
   aria-live="assertive"
   className="c0 sc-bZQynM c0 c1"
   data-testid="bubble"
-  id="standalone-tooltip-tooltip4_tooltip"
+  id="standalone-tooltip-tooltip5_tooltip"
   role="tooltip"
 >
   <Bubble__InnerBubbleStyle
@@ -2577,10 +2622,17 @@ exports[`Tooltip renders 1`] = `
 }
 
 .c6 {
-  border: none;
-  background-color: transparent;
   padding: 0;
   margin: 0;
+  border-width: 0;
+  font-family: "TELUS-Web","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2a2c2e;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
 }
 
 .c3 {
@@ -3041,7 +3093,15 @@ exports[`Tooltip renders 1`] = `
                               "isStatic": true,
                               "lastClassName": "c6",
                               "rules": Array [
-                                "border:none;background-color:transparent;padding:0;margin:0;",
+                                "padding: 0;",
+                                "margin: 0;",
+                                "border-width: 0;",
+                                "font-family: \\"TELUS-Web\\", \\"Helvetica Neue\\", Helvetica, Arial, sans-serif;",
+                                "color: #2a2c2e;",
+                                "appearance: none;",
+                                "background: none;",
+                                "box-shadow: none;",
+                                "cursor: pointer;",
                               ],
                             },
                             "displayName": "TooltipButton__StyledIconButton",
