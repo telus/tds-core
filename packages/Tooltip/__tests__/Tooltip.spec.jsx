@@ -53,6 +53,16 @@ describe('Tooltip', () => {
     expect(findBubble()).toContainReact(<Text size="small">Some content</Text>)
   })
 
+  it('shows up white with inverted prop', () => {
+    const invertedTooltip = mount(
+      <Tooltip copy="en" inverted>
+        Some content
+      </Tooltip>
+    )
+
+    expect(invertedTooltip.find(QuestionMarkCircle)).toHaveProp('color', 'white')
+  })
+
   describe('interactivity', () => {
     const createRootElement = () => {
       const root = document.createElement('div')
