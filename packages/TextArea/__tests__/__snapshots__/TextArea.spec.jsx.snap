@@ -266,7 +266,7 @@ exports[`TextArea label can have a short hint 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-EHOje",
+            "componentId": "sc-iwsKbI",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -297,7 +297,7 @@ exports[`TextArea label can have a short hint 1`] = `
             "vertical": [Function],
           },
           "render": [Function],
-          "styledComponentId": "sc-EHOje",
+          "styledComponentId": "sc-iwsKbI",
           "target": Object {
             "$$typeof": Symbol(react.forward_ref),
             "defaultProps": Object {
@@ -381,7 +381,7 @@ exports[`TextArea label can have a short hint 1`] = `
             tag="span"
           >
             <span
-              className="c0 sc-EHOje c0 c1"
+              className="c0 sc-iwsKbI c0 c1"
             >
               <Text
                 block={false}
@@ -681,7 +681,7 @@ exports[`TextArea renders 1`] = `
       for="the-textarea"
     >
       <span
-        class="c2 sc-EHOje c2 c1"
+        class="c2 sc-iwsKbI c2 c1"
       >
         <span
           class="c3"
@@ -882,7 +882,7 @@ exports[`TextArea renders with a feedback state and icon 1`] = `
       for="the-textarea"
     >
       <span
-        class="c2 sc-EHOje c2 c1"
+        class="c2 sc-iwsKbI c2 c1"
       >
         <span
           class="c3"

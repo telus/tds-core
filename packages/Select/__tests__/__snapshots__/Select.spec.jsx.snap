@@ -389,7 +389,7 @@ exports[`Select can have an error message 1`] = `
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-bZQynM",
+                                "componentId": "sc-gZMcBi",
                                 "isStatic": true,
                                 "lastClassName": "c2",
                                 "rules": Array [
@@ -420,7 +420,7 @@ exports[`Select can have an error message 1`] = `
                                 "vertical": [Function],
                               },
                               "render": [Function],
-                              "styledComponentId": "sc-bZQynM",
+                              "styledComponentId": "sc-gZMcBi",
                               "target": Object {
                                 "$$typeof": Symbol(react.forward_ref),
                                 "defaultProps": Object {
@@ -504,7 +504,7 @@ exports[`Select can have an error message 1`] = `
                                 tag="span"
                               >
                                 <span
-                                  className="c2 sc-bZQynM c2 c1"
+                                  className="c2 sc-gZMcBi c2 c1"
                                 >
                                   <Text
                                     block={false}
@@ -777,7 +777,7 @@ exports[`Select can have an error message 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "attrs": Array [],
                   "componentStyle": ComponentStyle {
-                    "componentId": "sc-gzVnrw",
+                    "componentId": "sc-gqjmRU",
                     "isStatic": false,
                     "lastClassName": "c7",
                     "rules": Array [
@@ -787,7 +787,7 @@ exports[`Select can have an error message 1`] = `
                   "displayName": "styled.div",
                   "foldedComponentIds": Array [],
                   "render": [Function],
-                  "styledComponentId": "sc-gzVnrw",
+                  "styledComponentId": "sc-gqjmRU",
                   "target": "div",
                   "toString": [Function],
                   "warnTooManyClasses": [Function],
@@ -941,7 +941,7 @@ exports[`Select can have an error message 1`] = `
                               "$$typeof": Symbol(react.forward_ref),
                               "attrs": Array [],
                               "componentStyle": ComponentStyle {
-                                "componentId": "sc-EHOje",
+                                "componentId": "sc-iwsKbI",
                                 "isStatic": true,
                                 "lastClassName": "c10",
                                 "rules": Array [
@@ -976,7 +976,7 @@ exports[`Select can have an error message 1`] = `
                                 "vertical": [Function],
                               },
                               "render": [Function],
-                              "styledComponentId": "sc-EHOje",
+                              "styledComponentId": "sc-iwsKbI",
                               "target": Object {
                                 "$$typeof": Symbol(react.forward_ref),
                                 "defaultProps": Object {
@@ -1060,7 +1060,7 @@ exports[`Select can have an error message 1`] = `
                                 tag="div"
                               >
                                 <div
-                                  className="c10 sc-EHOje c10 c11"
+                                  className="c10 sc-iwsKbI c10 c11"
                                 >
                                   <FeedbackIcon
                                     feedback="error"
@@ -1387,7 +1387,7 @@ exports[`Select label can have a hint below 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bZQynM",
+            "componentId": "sc-gZMcBi",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -1418,7 +1418,7 @@ exports[`Select label can have a hint below 1`] = `
             "vertical": [Function],
           },
           "render": [Function],
-          "styledComponentId": "sc-bZQynM",
+          "styledComponentId": "sc-gZMcBi",
           "target": Object {
             "$$typeof": Symbol(react.forward_ref),
             "defaultProps": Object {
@@ -1502,7 +1502,7 @@ exports[`Select label can have a hint below 1`] = `
             tag="span"
           >
             <span
-              className="c0 sc-bZQynM c0 c1"
+              className="c0 sc-gZMcBi c0 c1"
             >
               <Text
                 block={false}
@@ -1656,7 +1656,7 @@ exports[`Select label can have a short hint 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bZQynM",
+            "componentId": "sc-gZMcBi",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -1687,7 +1687,7 @@ exports[`Select label can have a short hint 1`] = `
             "vertical": [Function],
           },
           "render": [Function],
-          "styledComponentId": "sc-bZQynM",
+          "styledComponentId": "sc-gZMcBi",
           "target": Object {
             "$$typeof": Symbol(react.forward_ref),
             "defaultProps": Object {
@@ -1771,7 +1771,7 @@ exports[`Select label can have a short hint 1`] = `
             tag="span"
           >
             <span
-              className="c0 sc-bZQynM c0 c1"
+              className="c0 sc-gZMcBi c0 c1"
             >
               <Text
                 block={false}
@@ -1970,7 +1970,7 @@ exports[`Select label must have a label 1`] = `
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "sc-bZQynM",
+            "componentId": "sc-gZMcBi",
             "isStatic": true,
             "lastClassName": "c0",
             "rules": Array [
@@ -2001,7 +2001,7 @@ exports[`Select label must have a label 1`] = `
             "vertical": [Function],
           },
           "render": [Function],
-          "styledComponentId": "sc-bZQynM",
+          "styledComponentId": "sc-gZMcBi",
           "target": Object {
             "$$typeof": Symbol(react.forward_ref),
             "defaultProps": Object {
@@ -2085,7 +2085,7 @@ exports[`Select label must have a label 1`] = `
             tag="span"
           >
             <span
-              className="c0 sc-bZQynM c0 c1"
+              className="c0 sc-gZMcBi c0 c1"
             >
               <Text
                 block={false}
@@ -2380,7 +2380,7 @@ exports[`Select renders 1`] = `
         for="the-select"
       >
         <span
-          class="c2 sc-bZQynM c2 c1"
+          class="c2 sc-gZMcBi c2 c1"
         >
           <span
             class="c3"
@@ -2415,7 +2415,7 @@ exports[`Select renders 1`] = `
         </option>
       </select>
       <div
-        class="c7 sc-EHOje c7 c8"
+        class="c7 sc-iwsKbI c7 c8"
       >
         <div
           class="c9"
@@ -2659,7 +2659,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
         for="the-select"
       >
         <span
-          class="c2 sc-bZQynM c2 c1"
+          class="c2 sc-gZMcBi c2 c1"
         >
           <span
             class="c3"
@@ -2694,7 +2694,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
         </option>
       </select>
       <div
-        class="c7 sc-EHOje c7 c8"
+        class="c7 sc-iwsKbI c7 c8"
       >
         <div
           style="transition:opacity 100ms ease-in-out;opacity:1"

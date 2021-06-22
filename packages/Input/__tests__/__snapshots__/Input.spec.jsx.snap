@@ -173,7 +173,7 @@ exports[`Input feedback states ensures that the contents do not overlap the icon
         for="the-input"
       >
         <span
-          class="c2 sc-bxivhb c2 c1"
+          class="c2 sc-htoDjs c2 c1"
         >
           <span
             class="c3"
@@ -518,7 +518,7 @@ Object {
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bxivhb",
+                                  "componentId": "sc-htoDjs",
                                   "isStatic": true,
                                   "lastClassName": "c2",
                                   "rules": Array [
@@ -549,7 +549,7 @@ Object {
                                   "vertical": [Function],
                                 },
                                 "render": [Function],
-                                "styledComponentId": "sc-bxivhb",
+                                "styledComponentId": "sc-htoDjs",
                                 "target": Object {
                                   "$$typeof": Symbol(react.forward_ref),
                                   "defaultProps": Object {
@@ -633,7 +633,7 @@ Object {
                                   tag="span"
                                 >
                                   <span
-                                    className="c2 sc-bxivhb c2 c1"
+                                    className="c2 sc-htoDjs c2 c1"
                                   >
                                     <Text
                                       block={false}
@@ -787,7 +787,7 @@ Object {
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-ifAKCX",
+                      "componentId": "sc-dnqmqq",
                       "isStatic": false,
                       "lastClassName": "c5",
                       "rules": Array [
@@ -797,7 +797,7 @@ Object {
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-ifAKCX",
+                    "styledComponentId": "sc-dnqmqq",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -1033,7 +1033,7 @@ Object {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "sc-bxivhb",
+              "componentId": "sc-htoDjs",
               "isStatic": true,
               "lastClassName": "c0",
               "rules": Array [
@@ -1064,7 +1064,7 @@ Object {
               "vertical": [Function],
             },
             "render": [Function],
-            "styledComponentId": "sc-bxivhb",
+            "styledComponentId": "sc-htoDjs",
             "target": Object {
               "$$typeof": Symbol(react.forward_ref),
               "defaultProps": Object {
@@ -1148,7 +1148,7 @@ Object {
               tag="span"
             >
               <span
-                className="c0 sc-bxivhb c0 c1"
+                className="c0 sc-htoDjs c0 c1"
               >
                 <Text
                   block={false}
@@ -1442,7 +1442,7 @@ exports[`Input renders 1`] = `
         for="the-input"
       >
         <span
-          class="c2 sc-bxivhb c2 c1"
+          class="c2 sc-htoDjs c2 c1"
         >
           <span
             class="c3"
@@ -1642,7 +1642,7 @@ exports[`Input renders with a feedback state and icon 1`] = `
         for="the-input"
       >
         <span
-          class="c2 sc-bxivhb c2 c1"
+          class="c2 sc-htoDjs c2 c1"
         >
           <span
             class="c3"
