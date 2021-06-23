@@ -4,8 +4,8 @@
 # We also have a docker-compose.yml file, which is used to build and run this Docker image.
 
 
-# Start from the official Node 6 alpine image. https://hub.docker.com/_/node/
-FROM node:8
+# Start from the official Node 12 alpine image. https://hub.docker.com/_/node/
+FROM node:12-alpine
 
 # Disable update check
 ENV NO_UPDATE_NOTIFIER=true
