@@ -83,11 +83,11 @@ items:
         runPolicy: Parallel
       resources:
         requests:
-          cpu: 4
-          memory: 8Gi
+          cpu: 6
+          memory: 5Gi
         limits:
-          cpu: 8
-          memory: 16Gi
+          cpu: 7
+          memory: 6Gi
       strategy:
         type: Docker
         dockerStrategy:
