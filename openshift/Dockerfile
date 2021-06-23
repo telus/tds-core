@@ -26,8 +26,8 @@ RUN set -ex && \
 COPY .npmrc package.json package-lock.json lerna.json ./
 
 # Install git, which is necessary for the install process.
-RUN apt-get update && \
-  apt-get install git
+RUN apt-get -y update && \
+  apt-get -y install git
 
 # Install dependencies.
 # `npm run gitbook:install` will happen in the "prepare" hook, right after `npm ci`
