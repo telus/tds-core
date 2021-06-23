@@ -10,7 +10,7 @@ items:
 # Configure our Docker image repository
 # https://docs.openshift.com/enterprise/3.2/dev_guide/managing_images.html
 - kind: ImageStream
-  apiVersion: v1
+  apiVersion: image.openshift.io/v1
   metadata:
     name: tds
     labels:
@@ -18,7 +18,7 @@ items:
 
 # Configure our build pipeline template
 # https://docs.openshift.com/enterprise/3.2/dev_guide/templates.html
-- apiVersion: v1
+- apiVersion: template.openshift.io/v1
   kind: Template
   metadata:
     name: tds-pipeline
@@ -30,7 +30,7 @@ items:
 
   # Configures the OpenShift/Jenkins build pipeline
   # https://docs.openshift.com/enterprise/3.2/dev_guide/builds.html#defining-a-buildconfig
-  - apiVersion: v1
+  - apiVersion: build.openshift.io/v1
     kind: BuildConfig
     metadata:
       name: tds-pipeline
@@ -64,7 +64,7 @@ items:
   # Configure our Docker container build
   # https://docs.openshift.com/enterprise/3.2/architecture/core_concepts/builds_and_image_streams.html#docker-build
   - kind: BuildConfig
-    apiVersion: v1
+    apiVersion: build.openshift.io/v1
     metadata:
       name: tds
       labels:
