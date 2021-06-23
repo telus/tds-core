@@ -4,8 +4,8 @@
 # We also have a docker-compose.yml file, which is used to build and run this Docker image.
 
 
-# Start from the official Node 12 alpine image. https://hub.docker.com/_/node/
-FROM node:12-slim
+# Start from the official Node 6 alpine image. https://hub.docker.com/_/node/
+FROM node:8
 
 # Disable update check
 ENV NO_UPDATE_NOTIFIER=true
@@ -26,8 +26,8 @@ RUN set -ex && \
 COPY .npmrc package.json package-lock.json lerna.json ./
 
 # Install git, which is necessary for the install process.
-RUN apt-get -y update && \
-  apt-get -y install git
+RUN apt-get update && \
+  apt-get install git
 
 # Install dependencies.
 # `npm run gitbook:install` will happen in the "prepare" hook, right after `npm ci`
@@ -39,9 +39,7 @@ npm ci
 COPY . /app
 
 # Build the app.
-# https://stackoverflow.com/questions/64211386/gitbook-cli-install-error-typeerror-cb-apply-is-not-a-function-inside-graceful
-RUN npm install graceful-fs@latest && \
-  npm run gitbook:install && \
+RUN npm run gitbook:install && \
   npx lerna bootstrap --hoist && \
   npm run build -- --all && \
   ./scripts/ci-build-docs.sh \
