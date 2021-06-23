@@ -97,5 +97,5 @@ items:
         to:
           kind: ImageStreamTag
           name: tds:latest
-#      postCommit:
-#        args: ["test"]
+      postCommit:
+        args: ["test"]
