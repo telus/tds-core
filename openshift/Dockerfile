@@ -39,7 +39,9 @@ npm ci
 COPY . /app
 
 # Build the app.
-RUN npm run gitbook:install && \
+# https://stackoverflow.com/questions/64211386/gitbook-cli-install-error-typeerror-cb-apply-is-not-a-function-inside-graceful
+RUN npm install graceful-fs@latest && \
+  npm run gitbook:install && \
   npx lerna bootstrap --hoist && \
   npm run build -- --all && \
   ./scripts/ci-build-docs.sh \
