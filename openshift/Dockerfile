@@ -5,7 +5,7 @@
 
 
 # Start from the official Node 12 alpine image. https://hub.docker.com/_/node/
-FROM node:12-alpine
+FROM node:12-slim
 
 # Disable update check
 ENV NO_UPDATE_NOTIFIER=true
