@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@4.2.23...@tds/core-tooltip@4.3.0) (2021-06-23)
+
+
+### Bug Fixes
+
+* **core-tooltip:** update tooltip props ([b85e10d](https://github.com/telusdigital/tds/commit/b85e10dab9892ab0c1572f55c736cfa2660f23db))
+
+
+### Features
+
+* **core-tooltip:** creating invertible tooltip icon ([7a311c2](https://github.com/telusdigital/tds/commit/7a311c2522450aeda69b59b5a835e029ef63c0e9))
+
+
+
+
+
 ## [4.2.23](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@4.2.22...@tds/core-tooltip@4.2.23) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-tooltip
