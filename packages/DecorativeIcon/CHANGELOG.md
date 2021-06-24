@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.9.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.8.1...@tds/core-decorative-icon@2.9.0) (2021-06-24)
+
+
+### Features
+
+* **core-decorative-icon:** add css activations icon ([24a4b31](https://github.com/telusdigital/tds/commit/24a4b3133ae1cf4540924e0867064b7be376356c))
+
+
+
+
+
 ## [2.8.1](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.8.0...@tds/core-decorative-icon@2.8.1) (2021-05-10)
 
 
