@@ -12,7 +12,6 @@ const CartesianStepTracker = props => (
     current={[0, 2]}
     steps={[['Plans & Addons', 'Account Creation', 'Phone Information', 'Payment Setup', 'Submit']]}
     copy={['en', 'fr']}
-    backgroundColour={['grey', 'white']}
   />
 )
 
