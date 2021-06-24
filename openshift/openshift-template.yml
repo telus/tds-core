@@ -98,4 +98,5 @@ items:
           kind: ImageStreamTag
           name: tds:latest
       postCommit:
+        command: ["npm", "run"]
         args: ["test"]
