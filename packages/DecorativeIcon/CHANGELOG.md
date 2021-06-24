@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.10.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.9.0...@tds/core-decorative-icon@2.10.0) (2021-06-24)
+
+
+### Features
+
+* **core-decorative-icon:** add escalations icon ([5c066c1](https://github.com/telusdigital/tds/commit/5c066c1b8872132519d7d536c8fbc776001173fd))
+
+
+
+
+
 # [2.9.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.8.1...@tds/core-decorative-icon@2.9.0) (2021-06-24)
 
 
