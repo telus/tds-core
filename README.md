@@ -6,7 +6,7 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge)](http://commitizen.github.io/cz-cli/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
 
-> TELUS Design System (TDS) core components
+> TELUS Design System core components (TDS)
 
 <strong>As of April 2020, the TELUS Design System will be maintained with reduced capacity until further notice.</strong>
 Full details are available on the <a href="https://telusdigital.slack.com/archives/C02B5E4AC/p1587147916343700">TELUS Slack</a>.
