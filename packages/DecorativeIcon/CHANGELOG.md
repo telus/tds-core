@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.11.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.10.0...@tds/core-decorative-icon@2.11.0) (2021-06-25)
+
+
+### Features
+
+* **core-decorative-icon:** add helpdesk icon ([f498aef](https://github.com/telusdigital/tds/commit/f498aef3e2ee902ffa1b5da841c3883b361b8ec7))
+
+
+
+
+
 # [2.10.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.9.0...@tds/core-decorative-icon@2.10.0) (2021-06-24)
 
 
