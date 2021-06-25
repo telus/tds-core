@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-step-tracker",
-  "version": "4.0.47",
+  "version": "5.0.0",
   "description": "Show the current position in a sequence of steps",
   "main": "index.cjs.js",
   "module": "index.es.js",

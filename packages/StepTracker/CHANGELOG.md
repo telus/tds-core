@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/telusdigital/tds/compare/@tds/core-step-tracker@4.0.47...@tds/core-step-tracker@5.0.0) (2021-06-25)
+
+
+### Features
+
+* **core-step-tracker:** remove grey backgroud prop ([41cdd53](https://github.com/telusdigital/tds/commit/41cdd53b832ce25da93dc7d504ee4f7946ac41bd))
+
+
+### BREAKING CHANGES
+
+* **core-step-tracker:** remove grey background prop
+
+
+
+
+
 ## [4.0.47](https://github.com/telusdigital/tds/compare/@tds/core-step-tracker@4.0.46...@tds/core-step-tracker@4.0.47) (2021-06-25)
 
 **Note:** Version bump only for package @tds/core-step-tracker
