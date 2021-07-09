@@ -12,14 +12,13 @@
   </div>
   <div>
     <p>
-      <strong>As of April 2020, the TELUS Design System will be maintained with reduced capacity until further notice.</strong>
-      Full details are available on the <a href="https://telusdigital.slack.com/archives/C02B5E4AC/p1587147916343700">TELUS Slack</a>.
+      The TELUS Design System is undergoing changes to better reflect the evolution of the TELUS Brand. We’re making improvements to our visual language and technologies to support the growing needs of our team members. We appreciate your patience during this transition and share your excitement for what’s to come!
     </p>
     <p>
-      Please see our <a href="/contact.html">contact us</a> page for more information on how to get support.
+      In the mean time, keep creating awesome and cohesive digital customer experiences with the available TDS components, as well as sharing and collaborating UI patterns with the community.
     </p>
     <p style="margin-bottom: 0;">
-      At this time, we highly encourage teams to use existing TDS components, and continue sharing UI patterns to drive consistent digital customer experiences.
+  <a href="/contact.html">Contact us</a> for more information on how to get support. And <a href="https://telusdigital.slack.com/archives/C2WK9TP5F">join our TELUS Slack channel</a> for updates.
     </p>
   </div>
 </div>
