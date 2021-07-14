@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.11.1](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.11.0...@tds/core-decorative-icon@2.11.1) (2021-07-14)
+
+
+### Bug Fixes
+
+* **core-decorative-icon:** fixed bill svg icon ([f46fed3](https://github.com/telusdigital/tds/commit/f46fed3c736163c871b2d5c9c4e4f7ea39c89472))
+
+
+
+
+
 # [2.11.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.10.0...@tds/core-decorative-icon@2.11.0) (2021-06-25)
 
 

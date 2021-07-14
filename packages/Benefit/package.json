@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-benefit",
-  "version": "1.0.53",
+  "version": "1.0.54",
   "description": "",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -34,6 +34,6 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@tds/core-decorative-icon": "^2.11.0"
+    "@tds/core-decorative-icon": "^2.11.1"
   }
 }
