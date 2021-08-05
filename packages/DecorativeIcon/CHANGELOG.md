@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.13.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.12.0...@tds/core-decorative-icon@2.13.0) (2021-08-05)
+
+
+### Features
+
+* **core-decorative-icon:** add cart team icon ([b90c8c9](https://github.com/telusdigital/tds/commit/b90c8c948d94aeba234e53c0cf99fdd54e115caf))
+
+
+
+
+
 # [2.12.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.11.1...@tds/core-decorative-icon@2.12.0) (2021-08-05)
 
 
