@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.12.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.11.1...@tds/core-decorative-icon@2.12.0) (2021-08-05)
+
+
+### Features
+
+* **core-decorative-icon:** add webstore team icon ([2733e1b](https://github.com/telusdigital/tds/commit/2733e1b991e24311df319c7ee4b7d6468192c82f))
+
+
+
+
+
 ## [2.11.1](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.11.0...@tds/core-decorative-icon@2.11.1) (2021-07-14)
 
 
