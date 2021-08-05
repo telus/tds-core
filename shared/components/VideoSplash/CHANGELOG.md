@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.50](https://github.com/telus/tds-core/compare/@tds/shared-video-splash@1.1.49...@tds/shared-video-splash@1.1.50) (2021-08-05)
+
+**Note:** Version bump only for package @tds/shared-video-splash
+
+
+
+
+
 ## [1.1.49](https://github.com/telus/tds-core/compare/@tds/shared-video-splash@1.1.48...@tds/shared-video-splash@1.1.49) (2021-08-05)
 
 **Note:** Version bump only for package @tds/shared-video-splash

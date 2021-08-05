@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.57](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@2.0.56...@tds/core-checkbox@2.0.57) (2021-08-05)
+
+**Note:** Version bump only for package @tds/core-checkbox
+
+
+
+
+
 ## [2.0.56](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@2.0.55...@tds/core-checkbox@2.0.56) (2021-08-05)
 
 **Note:** Version bump only for package @tds/core-checkbox
