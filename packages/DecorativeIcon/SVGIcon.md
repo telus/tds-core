@@ -890,6 +890,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: ProactiveAssurance,
         usageCriteria: 'Custom icon for the Home Solutions Proactive Assurance team',
       },
+      {
+        name: 'Sales',
+        Component: Sales,
+        usageCriteria: 'Custom icon for the Home Solutions Sales team',
+      },
     ]}
   />
 </Box>
