@@ -880,7 +880,8 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: WebstoreTeam,
         usageCriteria: 'Custom icon for the Webstore/KANA teams',
       },
-      { name: 'CartTeam'
+      {
+        name: 'CartTeam',
         Component: CartTeam,
         usageCriteria: 'Custom icon for the Mobility CART team',
       },
