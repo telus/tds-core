@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.15.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.14.0...@tds/core-decorative-icon@2.15.0) (2021-08-13)
+
+
+### Features
+
+* **core-decorative-icon:** updated sales svg icon ([ed21746](https://github.com/telusdigital/tds/commit/ed21746273b353fc2a40bec6eaf0507a61f7947f))
+
+
+
+
+
 # [2.14.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.13.0...@tds/core-decorative-icon@2.14.0) (2021-08-05)
 
 
