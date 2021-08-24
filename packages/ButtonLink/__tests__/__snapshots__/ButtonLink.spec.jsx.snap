@@ -62,10 +62,6 @@ exports[`ButtonLink can be presented as one of the allowed fullwidth 1`] = `
   color: #fff;
 }
 
-.c0:hover {
-  color: #2B8000;
-}
-
 .c0:link,
 .c0:visited {
   width: 100%;
@@ -94,6 +90,12 @@ exports[`ButtonLink can be presented as one of the allowed fullwidth 1`] = `
   .c0 {
     -webkit-transition: none !important;
     transition: none !important;
+  }
+}
+
+@media (hover:hover) {
+  .c0:hover {
+    color: #2B8000;
   }
 }
 
@@ -166,10 +168,6 @@ exports[`ButtonLink can be presented as one of the allowed variants 1`] = `
   color: #fff;
 }
 
-.c0:hover {
-  color: #4b286d;
-}
-
 .c0:link,
 .c0:visited {
   width: auto;
@@ -198,6 +196,12 @@ exports[`ButtonLink can be presented as one of the allowed variants 1`] = `
   .c0 {
     -webkit-transition: none !important;
     transition: none !important;
+  }
+}
+
+@media (hover:hover) {
+  .c0:hover {
+    color: #4b286d;
   }
 }
 
@@ -281,10 +285,6 @@ exports[`ButtonLink can be presented as one of the allowed variants 2`] = `
   color: #fff;
 }
 
-.c0:hover {
-  color: #fff;
-}
-
 .c0:link,
 .c0:visited {
   width: auto;
@@ -313,6 +313,12 @@ exports[`ButtonLink can be presented as one of the allowed variants 2`] = `
   .c0 {
     -webkit-transition: none !important;
     transition: none !important;
+  }
+}
+
+@media (hover:hover) {
+  .c0:hover {
+    color: #fff;
   }
 }
 
@@ -385,10 +391,6 @@ exports[`ButtonLink renders 1`] = `
   color: #fff;
 }
 
-.c0:hover {
-  color: #2B8000;
-}
-
 .c0:link,
 .c0:visited {
   width: auto;
@@ -417,6 +419,12 @@ exports[`ButtonLink renders 1`] = `
   .c0 {
     -webkit-transition: none !important;
     transition: none !important;
+  }
+}
+
+@media (hover:hover) {
+  .c0:hover {
+    color: #2B8000;
   }
 }
 
