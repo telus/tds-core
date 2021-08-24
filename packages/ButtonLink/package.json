@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-button-link",
-  "version": "3.2.4",
+  "version": "3.2.5",
   "description": "A link that is styled as a button",
   "main": "index.cjs.js",
   "module": "index.es.js",

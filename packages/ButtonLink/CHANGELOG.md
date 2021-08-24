@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.5](https://github.com/telusdigital/tds/compare/@tds/core-button-link@3.2.4...@tds/core-button-link@3.2.5) (2021-08-24)
+
+
+### Bug Fixes
+
+* **core-button-link:** use media hover to apply hover color ([9a4e383](https://github.com/telusdigital/tds/commit/9a4e383b1c0740e5bd07dbab6880323b37840563))
+
+
+
+
+
 ## [3.2.4](https://github.com/telusdigital/tds/compare/@tds/core-button-link@3.2.3...@tds/core-button-link@3.2.4) (2021-03-22)
 
 **Note:** Version bump only for package @tds/core-button-link
