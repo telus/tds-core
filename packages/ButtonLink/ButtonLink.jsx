@@ -59,8 +59,10 @@ const getHoverColor = (variant, rank) => {
 const hoverStyles = ({ variant, rank }) => {
   const hoverColor = getHoverColor(variant, rank)
   return {
-    '&:hover': {
-      color: hoverColor,
+    '@media(hover: hover)': {
+      '&:hover': {
+        color: hoverColor,
+      },
     },
   }
 }
