@@ -30,8 +30,8 @@ Note, most TDS components require some `peerDependencies` including `react`, `re
 // Example from @tds/core-text/package.json
 ...
 "peerDependencies": {
-  "react": "^16.8.2",
-  "react-dom": "^16.8.2",
+  "react": "^16.8.2 || ^17.0.0",
+  "react-dom": "^16.8.2 || ^17.0.0",
   "styled-components": "^4.1.3 || ^5.1.0"
 },
 ```
