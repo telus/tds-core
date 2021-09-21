@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/telusdigital/tds-core/compare/@tds/core-breadcrumbs@2.2.10...@tds/core-breadcrumbs@2.3.0) (2021-09-21)
+
+
+### Features
+
+* **core-breadcrumbs:** add react 17 to peer deps ([445f5a9](https://github.com/telusdigital/tds-core/commit/445f5a99b728103bcc81a5b804998f8aa9fdde4d))
+
+
+
+
+
 ## [2.2.10](https://github.com/telusdigital/tds-core/compare/@tds/core-breadcrumbs@2.2.9...@tds/core-breadcrumbs@2.2.10) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-breadcrumbs

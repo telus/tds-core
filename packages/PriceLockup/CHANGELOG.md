@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@2.3.2...@tds/core-price-lockup@2.4.0) (2021-09-21)
+
+
+### Features
+
+* **core-price-lockup:** add react 17 to peer deps ([d6c9f24](https://github.com/telusdigital/tds-core/commit/d6c9f242c4be6e584bb74d321741aa8cccbeba9d))
+
+
+
+
+
 ## [2.3.2](https://github.com/telusdigital/tds-core/compare/@tds/core-price-lockup@2.3.1...@tds/core-price-lockup@2.3.2) (2021-02-23)
 
 

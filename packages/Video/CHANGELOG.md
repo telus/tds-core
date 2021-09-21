@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/telus/tds-core/compare/@tds/core-video@1.3.24...@tds/core-video@1.4.0) (2021-09-21)
+
+
+### Features
+
+* **core-video:** add react 17 to peer deps ([87a8314](https://github.com/telus/tds-core/commit/87a8314a53500ab937f6f3fd77237f7f65a4a84c))
+
+
+
+
+
 ## [1.3.24](https://github.com/telus/tds-core/compare/@tds/core-video@1.3.23...@tds/core-video@1.3.24) (2021-08-13)
 
 **Note:** Version bump only for package @tds/core-video

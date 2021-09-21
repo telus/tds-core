@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/telusdigital/tds/compare/@tds/core-box@2.3.4...@tds/core-box@2.4.0) (2021-09-21)
+
+
+### Features
+
+* **core-box:** add react 17 to peer deps ([c89a6a2](https://github.com/telusdigital/tds/commit/c89a6a2c3469bacd481c9cd454734233b979b3f4))
+
+
+
+
+
 ## [2.3.4](https://github.com/telusdigital/tds/compare/@tds/core-box@2.3.3...@tds/core-box@2.3.4) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-box

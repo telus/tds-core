@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telus/tds-core/compare/@tds/shared-icon@2.1.13...@tds/shared-icon@2.2.0) (2021-09-21)
+
+
+### Features
+
+* **core-icon:** add react 17 to peer deps ([38d7865](https://github.com/telus/tds-core/commit/38d78658bdc6004e41e51b890902330290305f81))
+
+
+
+
+
 ## [2.1.13](https://github.com/telus/tds-core/compare/@tds/shared-icon@2.1.12...@tds/shared-icon@2.1.13) (2021-01-15)
 
 **Note:** Version bump only for package @tds/shared-icon

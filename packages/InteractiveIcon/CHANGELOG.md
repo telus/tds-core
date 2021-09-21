@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@2.2.0...@tds/core-interactive-icon@2.3.0) (2021-09-21)
+
+
+### Features
+
+* **core-interactive-icon:** add react 17 to peer deps ([82c2ec7](https://github.com/telus/tds-core/commit/82c2ec7b870fd963b9e1e74a43f5c48d79f4c16d))
+
+
+
+
+
 # [2.2.0](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@2.1.3...@tds/core-interactive-icon@2.2.0) (2021-06-18)
 
 

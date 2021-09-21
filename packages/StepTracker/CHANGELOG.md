@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/telusdigital/tds/compare/@tds/core-step-tracker@5.0.5...@tds/core-step-tracker@5.1.0) (2021-09-21)
+
+
+### Features
+
+* **core-step-tracker:** add react 17 to peer deps ([e3ce406](https://github.com/telusdigital/tds/commit/e3ce406a5c05bf295f375588a592bd5f5469f926))
+
+
+
+
+
 ## [5.0.5](https://github.com/telusdigital/tds/compare/@tds/core-step-tracker@5.0.4...@tds/core-step-tracker@5.0.5) (2021-08-13)
 
 **Note:** Version bump only for package @tds/core-step-tracker

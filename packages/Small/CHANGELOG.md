@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telusdigital/tds/compare/@tds/core-small@2.1.14...@tds/core-small@2.2.0) (2021-09-21)
+
+
+### Features
+
+* **core-small:** add react 17 to peer deps ([2b5338d](https://github.com/telusdigital/tds/commit/2b5338dd79999586cd773cc32b51fa0493704729))
+
+
+
+
+
 ## [2.1.14](https://github.com/telusdigital/tds/compare/@tds/core-small@2.1.13...@tds/core-small@2.1.14) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-small

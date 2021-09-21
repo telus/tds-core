@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-a11y-content",
-  "version": "2.2.4",
+  "version": "2.3.0",
   "description": "Hide content that should only be seen by screen readers",
   "main": "index.cjs.js",
   "module": "index.es.js",

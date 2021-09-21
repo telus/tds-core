@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-dimple-divider@2.0.17...@tds/core-dimple-divider@2.1.0) (2021-09-21)
+
+
+### Features
+
+* **core-dimple-divider:** add react 17 to peer deps ([810d35f](https://github.com/telusdigital/tds/commit/810d35fe837be805b8fc02a6d180739c0e5ee3a2))
+
+
+
+
+
 ## [2.0.17](https://github.com/telusdigital/tds/compare/@tds/core-dimple-divider@2.0.16...@tds/core-dimple-divider@2.0.17) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-dimple-divider

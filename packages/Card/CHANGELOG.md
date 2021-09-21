@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.6.0](https://github.com/telusdigital/tds/compare/@tds/core-card@2.5.1...@tds/core-card@2.6.0) (2021-09-21)
+
+
+### Features
+
+* **core-card:** add react 17 to peer deps ([2f8e1c9](https://github.com/telusdigital/tds/commit/2f8e1c9edbf313c69c76a9c0d671f5e19f1622d8))
+
+
+
+
+
 ## [2.5.1](https://github.com/telusdigital/tds/compare/@tds/core-card@2.5.0...@tds/core-card@2.5.1) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-card

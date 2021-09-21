@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/telusdigital/tds/compare/@tds/core-a11y-content@2.2.4...@tds/core-a11y-content@2.3.0) (2021-09-21)
+
+
+### Features
+
+* **core-a11y-content:** add react 17 to peer deps ([6ddb23f](https://github.com/telusdigital/tds/commit/6ddb23fed7cb003761d70844fac3f40865731fa0))
+
+
+
+
+
 ## [2.2.4](https://github.com/telusdigital/tds/compare/@tds/core-a11y-content@2.2.3...@tds/core-a11y-content@2.2.4) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-a11y-content

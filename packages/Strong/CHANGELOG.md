@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telusdigital/tds/compare/@tds/core-strong@2.1.14...@tds/core-strong@2.2.0) (2021-09-21)
+
+
+### Features
+
+* **core-strong:** add react 17 to peer deps ([03f9b9b](https://github.com/telusdigital/tds/commit/03f9b9beb3336eb6dffbc7747b3df571397754d3))
+
+
+
+
+
 ## [2.1.14](https://github.com/telusdigital/tds/compare/@tds/core-strong@2.1.13...@tds/core-strong@2.1.14) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-strong

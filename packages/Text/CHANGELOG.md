@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/telusdigital/tds/compare/@tds/core-text@3.1.5...@tds/core-text@3.2.0) (2021-09-21)
+
+
+### Features
+
+* **core-text:** add react 17 to peer deps ([f421994](https://github.com/telusdigital/tds/commit/f4219940e34704cd5e161ebf4aef4f6460c446e7))
+
+
+
+
+
 ## [3.1.5](https://github.com/telusdigital/tds/compare/@tds/core-text@3.1.4...@tds/core-text@3.1.5) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-text

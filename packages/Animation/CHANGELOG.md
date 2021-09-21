@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/telus/tds/compare/@tds/shared-animation@3.0.1...@tds/shared-animation@3.1.0) (2021-09-21)
+
+
+### Features
+
+* **core-animation:** add react 17 to peer deps ([a4888d1](https://github.com/telus/tds/commit/a4888d17ab1e00487180caf98fabed05af98b893))
+
+
+
+
+
 ## [3.0.1](https://github.com/telus/tds/compare/@tds/shared-animation@3.0.0...@tds/shared-animation@3.0.1) (2020-09-08)
 
 

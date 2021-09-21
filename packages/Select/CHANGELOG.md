@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/telus/tds/compare/@tds/core-select@3.2.39...@tds/core-select@3.3.0) (2021-09-21)
+
+
+### Features
+
+* **core-select:** add react 17 to peer deps ([ce21d90](https://github.com/telus/tds/commit/ce21d901109dcd77aad5036252e2f03b97f94a37))
+
+
+
+
+
 ## [3.2.39](https://github.com/telus/tds/compare/@tds/core-select@3.2.38...@tds/core-select@3.2.39) (2021-08-13)
 
 **Note:** Version bump only for package @tds/core-select

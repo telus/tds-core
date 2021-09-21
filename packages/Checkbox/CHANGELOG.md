@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@2.0.58...@tds/core-checkbox@2.1.0) (2021-09-21)
+
+
+### Features
+
+* **core-checkbox:** add react 17 to peer deps ([c889c15](https://github.com/telusdigital/tds/commit/c889c15d537c4163b8b1b22ec37a662171d3e55f))
+
+
+
+
+
 ## [2.0.58](https://github.com/telusdigital/tds/compare/@tds/core-checkbox@2.0.57...@tds/core-checkbox@2.0.58) (2021-08-13)
 
 **Note:** Version bump only for package @tds/core-checkbox

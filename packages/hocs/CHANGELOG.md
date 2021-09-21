@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/telus/tds-core/compare/@tds/shared-hocs@1.2.0...@tds/shared-hocs@1.3.0) (2021-09-21)
+
+
+### Features
+
+* **core-hocs:** add react 17 to peer deps ([2c45c6a](https://github.com/telus/tds-core/commit/2c45c6a0a728eeef2b3cdb8be0455f2fc6753706))
+
+
+
+
+
 # [1.2.0](https://github.com/telus/tds-core/compare/@tds/shared-hocs@1.1.0...@tds/shared-hocs@1.2.0) (2019-09-18)
 
 

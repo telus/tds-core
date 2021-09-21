@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/telusdigital/tds/compare/@tds/core-heading@3.0.8...@tds/core-heading@3.1.0) (2021-09-21)
+
+
+### Features
+
+* **core-heading:** add react 17 to peer deps ([4d591ad](https://github.com/telusdigital/tds/commit/4d591add9c82555186c2060b7b5b1566b215bfe4))
+
+
+
+
+
 ## [3.0.8](https://github.com/telusdigital/tds/compare/@tds/core-heading@3.0.7...@tds/core-heading@3.0.8) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-heading

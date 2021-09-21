@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-hairline-divider@2.0.18...@tds/core-hairline-divider@2.1.0) (2021-09-21)
+
+
+### Features
+
+* **core-hairline-divider:** add react 17 to peer deps ([090bd50](https://github.com/telusdigital/tds/commit/090bd509b14dfbd3e28dcc126edccc61663c6d94))
+
+
+
+
+
 ## [2.0.18](https://github.com/telusdigital/tds/compare/@tds/core-hairline-divider@2.0.17...@tds/core-hairline-divider@2.0.18) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-hairline-divider

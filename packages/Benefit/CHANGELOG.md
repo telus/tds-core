@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/telus/tds-core/compare/@tds/core-benefit@1.0.58...@tds/core-benefit@1.1.0) (2021-09-21)
+
+
+### Features
+
+* **core-benefit:** add react 17 to peer deps ([08c00a7](https://github.com/telus/tds-core/commit/08c00a7f44dab3f2f941b510e7884f48bc0469da))
+
+
+
+
+
 ## [1.0.58](https://github.com/telus/tds-core/compare/@tds/core-benefit@1.0.57...@tds/core-benefit@1.0.58) (2021-08-13)
 
 **Note:** Version bump only for package @tds/core-benefit

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-wave-divider@2.0.13...@tds/core-wave-divider@2.1.0) (2021-09-21)
+
+
+### Features
+
+* **core-wave-divider:** add react 17 to peer deps ([699ebe2](https://github.com/telusdigital/tds/commit/699ebe20fdfb1912b944ab713c5e72986e6aa403))
+
+
+
+
+
 ## [2.0.13](https://github.com/telusdigital/tds/compare/@tds/core-wave-divider@2.0.12...@tds/core-wave-divider@2.0.13) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-wave-divider

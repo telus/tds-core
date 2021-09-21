@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@4.0.2...@tds/core-flex-grid@4.1.0) (2021-09-21)
+
+
+### Features
+
+* **core-flex-grid:** add react 17 to peer deps ([9c72079](https://github.com/telusdigital/tds/commit/9c72079f757ef12a2632438d07883678fe07a9aa))
+
+
+
+
+
 ## [4.0.2](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@4.0.1...@tds/core-flex-grid@4.0.2) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-flex-grid

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-paragraph@2.0.18...@tds/core-paragraph@2.1.0) (2021-09-21)
+
+
+### Features
+
+* **core-paragraph:** add react 17 to peer deps ([a6b2942](https://github.com/telusdigital/tds/commit/a6b2942435a513ba9776208d47472826e3303b4b))
+
+
+
+
+
 ## [2.0.18](https://github.com/telusdigital/tds/compare/@tds/core-paragraph@2.0.17...@tds/core-paragraph@2.0.18) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-paragraph

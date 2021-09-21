@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/telusdigital/tds/compare/@tds/core-standalone-icon@2.1.19...@tds/core-standalone-icon@2.2.0) (2021-09-21)
+
+
+### Features
+
+* **core-standalone-icon:** add react 17 to peer deps ([a2442b1](https://github.com/telusdigital/tds/commit/a2442b1d871057225de8037cc3d6be6f22fd4b1e))
+
+
+
+
+
 ## [2.1.19](https://github.com/telusdigital/tds/compare/@tds/core-standalone-icon@2.1.18...@tds/core-standalone-icon@2.1.19) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-standalone-icon

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.4.2...@tds/core-terms-and-conditions@1.5.0) (2021-09-21)
+
+
+### Features
+
+* **core-terms-and-conditions:** add react 17 to peer deps ([6d73db9](https://github.com/telus/tds-core/commit/6d73db913949b5c434d64bea49ce985055a35da4))
+
+
+
+
+
 ## [1.4.2](https://github.com/telus/tds-core/compare/@tds/core-terms-and-conditions@1.4.1...@tds/core-terms-and-conditions@1.4.2) (2021-04-21)
 
 

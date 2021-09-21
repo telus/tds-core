@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-image@2.0.25...@tds/core-image@2.1.0) (2021-09-21)
+
+
+### Features
+
+* **core-image:** add react 17 to peer deps ([0386d63](https://github.com/telusdigital/tds/commit/0386d637dfbcc0f68aa0e17930db2f18eebf55ec))
+
+
+
+
+
 ## [2.0.25](https://github.com/telusdigital/tds/compare/@tds/core-image@2.0.24...@tds/core-image@2.0.25) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-image

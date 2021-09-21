@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/telus/tds-core/compare/@tds/core-feedback-icon@1.0.12...@tds/core-feedback-icon@1.1.0) (2021-09-21)
+
+
+### Features
+
+* **core-feedback-icon:** add react 17 to peer deps ([953fd89](https://github.com/telus/tds-core/commit/953fd89c79cc749a591fb64ac8c5a0d5d1a459b7))
+
+
+
+
+
 ## [1.0.12](https://github.com/telus/tds-core/compare/@tds/core-feedback-icon@1.0.11...@tds/core-feedback-icon@1.0.12) (2021-03-18)
 
 

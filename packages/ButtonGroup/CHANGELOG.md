@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/telusdigital/tds-core/compare/@tds/core-button-group@3.1.4...@tds/core-button-group@3.2.0) (2021-09-21)
+
+
+### Features
+
+* **core-button-group:** add react 17 to peer deps ([b1b0358](https://github.com/telusdigital/tds-core/commit/b1b0358312de7af82cff742cfd8566eedc198e48))
+
+
+
+
+
 ## [3.1.4](https://github.com/telusdigital/tds-core/compare/@tds/core-button-group@3.1.3...@tds/core-button-group@3.1.4) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-button-group

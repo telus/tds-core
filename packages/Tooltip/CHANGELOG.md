@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.4.0](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@4.3.0...@tds/core-tooltip@4.4.0) (2021-09-21)
+
+
+### Features
+
+* **core-tooltip:** add react 17 to peer deps ([7f9e062](https://github.com/telusdigital/tds/commit/7f9e062d537119739c73ade89acb8c552bff5c31))
+
+
+
+
+
 # [4.3.0](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@4.2.23...@tds/core-tooltip@4.3.0) (2021-06-23)
 
 

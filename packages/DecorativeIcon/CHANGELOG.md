@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.16.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.15.0...@tds/core-decorative-icon@2.16.0) (2021-09-21)
+
+
+### Features
+
+* **core-decorative-icon:** add react 17 to peer deps ([0117b91](https://github.com/telusdigital/tds/commit/0117b91128518a1fffd4316f0390cd0f297d4cc7))
+
+
+
+
+
 # [2.15.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.14.0...@tds/core-decorative-icon@2.15.0) (2021-08-13)
 
 

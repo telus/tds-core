@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/telusdigital/tds/compare/@tds/core-unordered-list@3.0.30...@tds/core-unordered-list@3.1.0) (2021-09-21)
+
+
+### Features
+
+* **core-unordered-list:** add react 17 to peer deps ([6fe94bf](https://github.com/telusdigital/tds/commit/6fe94bf49d7a5ea3e7123305fa214a71261bd063))
+
+
+
+
+
 ## [3.0.30](https://github.com/telusdigital/tds/compare/@tds/core-unordered-list@3.0.29...@tds/core-unordered-list@3.0.30) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-unordered-list

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/telusdigital/tds/compare/@tds/core-input-feedback@2.0.24...@tds/core-input-feedback@2.1.0) (2021-09-21)
+
+
+### Features
+
+* **core-input-feedback:** add react 17 to peer deps ([66d68c8](https://github.com/telusdigital/tds/commit/66d68c82f2258b698871068188688fe7ccdc358a))
+
+
+
+
+
 ## [2.0.24](https://github.com/telusdigital/tds/compare/@tds/core-input-feedback@2.0.23...@tds/core-input-feedback@2.0.24) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-input-feedback

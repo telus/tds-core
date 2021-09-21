@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/telusdigital/tds/compare/@tds/core-notification@3.1.10...@tds/core-notification@3.2.0) (2021-09-21)
+
+
+### Features
+
+* **core-notification:** add react 17 to peer deps ([79d1ac1](https://github.com/telusdigital/tds/commit/79d1ac1225dc9325e7f916321e3fd78132adebaa))
+
+
+
+
+
 ## [3.1.10](https://github.com/telusdigital/tds/compare/@tds/core-notification@3.1.9...@tds/core-notification@3.1.10) (2021-06-18)
 
 **Note:** Version bump only for package @tds/core-notification

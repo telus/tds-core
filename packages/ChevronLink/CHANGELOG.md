@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.2.16...@tds/core-chevron-link@2.3.0) (2021-09-21)
+
+
+### Features
+
+* **core-chevron-link:** add react 17 to peer deps ([b5fcb6c](https://github.com/telusdigital/tds/commit/b5fcb6c3310cd4eb756dee580a6b2bf4b5029287))
+
+
+
+
+
 ## [2.2.16](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.2.15...@tds/core-chevron-link@2.2.16) (2021-08-13)
 
 **Note:** Version bump only for package @tds/core-chevron-link

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/telusdigital/tds/compare/@tds/core-display-heading@3.0.9...@tds/core-display-heading@3.1.0) (2021-09-21)
+
+
+### Features
+
+* **core-display-heading:** add react 17 to peer deps ([d576c9d](https://github.com/telusdigital/tds/commit/d576c9d12e2195366b991d9503f6c8dbaa617682))
+
+
+
+
+
 ## [3.0.9](https://github.com/telusdigital/tds/compare/@tds/core-display-heading@3.0.8...@tds/core-display-heading@3.0.9) (2021-01-15)
 
 **Note:** Version bump only for package @tds/core-display-heading
