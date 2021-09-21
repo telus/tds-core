@@ -1,6 +1,6 @@
 # OpenShift
 
-*NOTE*: These manual installation instructions are not necessary if you are using Shippy to install your pipeline.
+_NOTE_: These manual installation instructions are not necessary if you are using Shippy to install your pipeline.
 
 ## Configuration
 
@@ -21,6 +21,7 @@ Projects, users, squads and access control is manged by [shippy][shippy].
 ### Install Jenkins
 
 Any new project will need a Jenkins server. We can clone and deploy the [Jenkins starter kit][jenkins-starter-kit]:
+
 ```bash
 git clone git@github.com:telus/openshift-jenkins-starter-kit.git
 openshift-jenkins-starter-kit/openshift/install.sh
@@ -29,6 +30,7 @@ openshift-jenkins-starter-kit/openshift/install.sh
 ### Install pipeline
 
 Once your Jenkins is running, we can launch our pipeline on the project:
+
 ```bash
 telus-isomorphic-starter-kit/openshift/install.sh <branchname:optional>
 ```
@@ -38,6 +40,7 @@ telus-isomorphic-starter-kit/openshift/install.sh <branchname:optional>
 The OpenShift webhook triggers the pipeline to build for each commit to GitHub.
 
 To get the webhook URL:
+
 ```bash
 oc describe bc telus-isomorphic-starter-kit-pipeline
 ```
@@ -47,11 +50,12 @@ Under GitHub settings for your repository, click `Webhooks`, and add an `applica
 ### Cleanup
 
 If you are testing on sandbox, you may want to delete your project and all of its assets. This can be done in one command:
+
 ```bash
 oc delete all -l=app=telus-isomorphic-starter-kit
 ```
 
-*NOTE*: With great power, comes great responsibility...
+_NOTE_: With great power, comes great responsibility...
 
 [openshift-template]: ./openshift-template.yml
 [shippy]: https://www.npmjs.com/package/@telus/shippy-cli

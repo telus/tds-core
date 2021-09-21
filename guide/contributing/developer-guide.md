@@ -387,8 +387,8 @@ Being a component library shipped to npm, proper configuration to the file **pac
 - `peerDependencies` includes key value pairs for the following dependencies (if using styled components)
   ```json
   "peerDependencies": {
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
+    "react": "^16.8.2 || ^17.0.0",
+    "react-dom": "^16.8.2 || ^17.0.0",
     "styled-components": "^4.1.3 || ^5.1.0"
   }
   ```
