@@ -229,6 +229,7 @@ const Select = React.forwardRef(
         <div css={{ position: 'relative' }}>
           <SelectWrapper>
             <StyledSelect
+              {...safeRest(rest)}
               ref={ref}
               id={fieldId.identity()}
               value={value}
@@ -238,7 +239,6 @@ const Select = React.forwardRef(
               onFocus={handleFocus}
               onBlur={handleBlur}
               defaultValue={value !== undefined ? undefined : defaultValue}
-              {...safeRest(rest)}
             >
               {placeholder && (
                 <option value="" disabled>
