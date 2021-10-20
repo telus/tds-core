@@ -183,6 +183,16 @@ describe('Select', () => {
 
       expect(findSelectElement).toMatchSnapshot()
     })
+
+    it('should show feedback icon with custom onBlur', () => {
+      const { select } = doMount({
+        feedback: 'error',
+        onBlur: jest.fn(),
+        error: 'Oh no a terrible error!',
+      })
+
+      expect(select.find(NotificationError)).toExist()
+    })
   })
 
   describe('disabling', () => {
