@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.17.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.16.0...@tds/core-decorative-icon@2.17.0) (2021-10-21)
+
+
+### Features
+
+* **core-decorative-icon:** add paperless icon ([#1619](https://github.com/telusdigital/tds/issues/1619)) ([1e047bc](https://github.com/telusdigital/tds/commit/1e047bc575f12ba31b804442ad57e5cfabab5390)), closes [#1613](https://github.com/telusdigital/tds/issues/1613)
+
+
+
+
+
 # [2.16.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.15.0...@tds/core-decorative-icon@2.16.0) (2021-09-21)
 
 
