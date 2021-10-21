@@ -895,6 +895,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: Sales,
         usageCriteria: 'Custom icon for the Home Solutions Sales team',
       },
+      {
+        name: 'Paperless',
+        Component: Paperless,
+        usageCriteria: 'Thanks for going `Paperless` Icon',
+      },
     ]}
   />
 </Box>
