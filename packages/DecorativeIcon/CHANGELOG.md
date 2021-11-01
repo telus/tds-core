@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.18.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.17.0...@tds/core-decorative-icon@2.18.0) (2021-11-01)
+
+
+### Features
+
+* **core-decorative-icon:** add online security svg icon ([ec6e627](https://github.com/telusdigital/tds/commit/ec6e6279d17d8e7b839dc6bea818bf6f464503c2))
+
+
+
+
+
 # [2.17.0](https://github.com/telusdigital/tds/compare/@tds/core-decorative-icon@2.16.0...@tds/core-decorative-icon@2.17.0) (2021-10-21)
 
 
