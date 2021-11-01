@@ -164,6 +164,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         Component: SecurityHouse,
         usageCriteria: 'Secure house',
       },
+      {
+        name: 'OnlineSecurity',
+        Component: OnlineSecurity,
+        usageCriteria: 'Online security',
+      },
     ]}
   />
 
