@@ -511,6 +511,7 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                   >
                     <TooltipButton__StyledIconButton
                       onClick={[Function]}
+                      type="button"
                     >
                       <StyledComponent
                         forwardedComponent={
@@ -545,10 +546,12 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                         }
                         forwardedRef={null}
                         onClick={[Function]}
+                        type="button"
                       >
                         <button
                           className="c6"
                           onClick={[Function]}
+                          type="button"
                         >
                           <A11yContent>
                             <A11yContent__StyledA11yContent>
@@ -1172,6 +1175,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                   >
                     <TooltipButton__StyledIconButton
                       onClick={[Function]}
+                      type="button"
                     >
                       <StyledComponent
                         forwardedComponent={
@@ -1206,10 +1210,12 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                         }
                         forwardedRef={null}
                         onClick={[Function]}
+                        type="button"
                       >
                         <button
                           className="c6"
                           onClick={[Function]}
+                          type="button"
                         >
                           <A11yContent>
                             <A11yContent__StyledA11yContent>
@@ -1833,6 +1839,7 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                   >
                     <TooltipButton__StyledIconButton
                       onClick={[Function]}
+                      type="button"
                     >
                       <StyledComponent
                         forwardedComponent={
@@ -1867,10 +1874,12 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                         }
                         forwardedRef={null}
                         onClick={[Function]}
+                        type="button"
                       >
                         <button
                           className="c6"
                           onClick={[Function]}
+                          type="button"
                         >
                           <A11yContent>
                             <A11yContent__StyledA11yContent>
@@ -3082,6 +3091,7 @@ exports[`Tooltip renders 1`] = `
                   >
                     <TooltipButton__StyledIconButton
                       onClick={[Function]}
+                      type="button"
                     >
                       <StyledComponent
                         forwardedComponent={
@@ -3116,10 +3126,12 @@ exports[`Tooltip renders 1`] = `
                         }
                         forwardedRef={null}
                         onClick={[Function]}
+                        type="button"
                       >
                         <button
                           className="c6"
                           onClick={[Function]}
+                          type="button"
                         >
                           <A11yContent>
                             <A11yContent__StyledA11yContent>
