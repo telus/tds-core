@@ -10,7 +10,7 @@ export const StyledIconButton = styled.button(buttons.noStyle)
 
 const TooltipButton = forwardRef(({ a11yText, inverted, onClick, icon: Icon }, ref) => {
   return (
-    <StyledIconButton onClick={onClick} ref={ref}>
+    <StyledIconButton onClick={onClick} ref={ref} type="button">
       <A11yContent>{a11yText}</A11yContent>
       <Icon color={inverted ? 'white' : 'greyShark'} />
     </StyledIconButton>
