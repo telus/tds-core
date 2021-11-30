@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Box from '@tds/core-box'
-import DecorativeIcon from '@tds/core-decorative-icon'
+// import DecorativeIcon from '@tds/core-decorative-icon'
 import { FeedbackIcon } from '@tds/core-input'
 import Text from '@tds/core-text'
 import Paragraph from '@tds/core-paragraph'
@@ -22,6 +22,7 @@ import { medium, mediumFont, color } from '@tds/shared-typography'
 import { safeRest } from '@tds/util-helpers'
 
 import generateId from '../../shared/utils/generateId/generateId'
+import { CaretDown } from '@tds/core-interactive-icon'
 
 const SelectWrapper = styled.div({
   backgroundColor: colorWhite,
@@ -255,11 +256,17 @@ const Select = React.forwardRef(
                   feedback={feedback}
                 />
                 <IconLineFix>
+                  <CaretDown
+                    variant={feedback === 'error' ? 'error' : 'primary'}
+                    size={16}
+                  />
+                  {/* 
+
                   <DecorativeIcon
                     symbol="caretDown"
                     variant={feedback === 'error' ? 'error' : 'primary'}
                     size={16}
-                  />
+                  /> */}
                 </IconLineFix>
               </IconWrapper>
             )}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -9,6 +9,7 @@ import { componentWithName } from '@tds/util-prop-types'
 import { safeRest } from '@tds/util-helpers'
 
 import Item from './Item/Item'
+import { ColoredTextContext } from '../../shared/components/ColoredTextProvider/ColoredTextProvider'
 
 const StyledList = styled.ol({ display: 'flex', flexWrap: 'wrap' })
 
@@ -21,6 +22,7 @@ const omitProps = ({
   component,
   ...props
 }) => props
+
 const getBreadcrumbName = (item, params) => {
   if (!item.breadcrumbName) {
     return null
@@ -103,9 +105,15 @@ const Breadcrumbs = ({
     items = routes.filter(route => route.path && route.breadcrumbName)
   }
   items = getItems(items, params, !children)
+
   const structuredData = getStructuredData(items, baseUrl)
 
+  const context = useContext(ColoredTextContext)
+
+  console.log(context)
+
   return (
+    // <ColoredTextContext.Consumer>
     <nav {...safeRest(rest)}>
       <StyledList>
         {items.map(
@@ -140,6 +148,7 @@ const Breadcrumbs = ({
         </script>
       </Helmet>
     </nav>
+    // </ColoredTextContext.Consumer>
   )
 }
 

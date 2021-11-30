@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import * as typography from '@tds/shared-typography'
 import { spacing } from '@tds/shared-styles'
 import { safeRest, DependentIconSizeContext } from '@tds/util-helpers'
+import { ColoredTextContext } from '../../shared/components/ColoredTextProvider/ColoredTextProvider'
 
 const paragraphColor = ({ invert }) => (invert ? typography.invertedColor : typography.color)
 const paragraphInheritColor = ({ inheritColor }) =>
@@ -32,14 +33,16 @@ export const StyledParagraph = styled.p(
  *
  * @version ./package.json
  */
-const Paragraph = ({ size, invert, children, ...rest }, context) => {
+const Paragraph = ({ size, invert, children, ...rest }) => {
+  const { inheritColor } = useContext(ColoredTextContext)
+
   return (
     <DependentIconSizeContext.Provider value={{ paragraphSize: size, invert }}>
       <StyledParagraph
         {...safeRest(rest)}
         size={size}
         invert={invert}
-        inheritColor={context.inheritColor}
+        inheritColor={inheritColor}
       >
         {children}
       </StyledParagraph>
@@ -75,10 +78,6 @@ Paragraph.defaultProps = {
   size: 'medium',
   align: 'left',
   invert: false,
-}
-
-Paragraph.contextTypes = {
-  inheritColor: PropTypes.bool,
 }
 
 export default Paragraph

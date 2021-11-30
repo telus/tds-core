@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "@tds/core-feedback-icon": "^1.1.0",
+    "@tds/core-interactive-icon": "^2.3.0",
     "@tds/shared-animation": "^3.1.0"
   }
 }

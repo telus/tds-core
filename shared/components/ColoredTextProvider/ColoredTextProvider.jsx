@@ -1,18 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-class ColoredTextProvider extends React.Component {
-  getChildContext() {
-    return {
-      inheritColor: true,
-    }
-  }
+export const ColoredTextContext = React.createContext({
+  inheritColor: false,
+})
 
-  render() {
-    const { colorClassName, className, tag, children } = this.props
-
-    return React.createElement(tag, { className: colorClassName || className }, children)
-  }
+const ColoredTextProvider = ({ colorClassName, className, tag, children }) => {
+  return (
+    <ColoredTextContext.Provider value={true}>
+      {React.createElement(tag, { className: colorClassName || className }, children)}
+    </ColoredTextContext.Provider>
+  )
 }
 
 ColoredTextProvider.propTypes = {
@@ -26,10 +24,6 @@ ColoredTextProvider.defaultProps = {
   colorClassName: undefined,
   className: undefined,
   tag: 'div',
-}
-
-ColoredTextProvider.childContextTypes = {
-  inheritColor: PropTypes.bool,
 }
 
 export default ColoredTextProvider

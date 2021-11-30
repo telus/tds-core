@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useContext } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -10,6 +10,7 @@ import { componentWithName } from '@tds/util-prop-types'
 import { withForwardedRef } from '@tds/shared-hocs'
 
 import { warn } from '../../shared/utils/warn'
+import { ColoredTextContext } from '../../shared/components/ColoredTextProvider/ColoredTextProvider'
 
 const base = {
   ...links.focusOutline,
@@ -90,8 +91,7 @@ const StyledLink = styled.a(
  * @version ./package.json
  */
 const Link = (
-  { reactRouterLinkComponent, invert, children, forwardedRef, icon: Icon, iconPosition, ...rest },
-  context
+  { reactRouterLinkComponent, invert, children, forwardedRef, icon: Icon, iconPosition, ...rest }, context
 ) => {
   if (!(reactRouterLinkComponent && rest.to) && (reactRouterLinkComponent || rest.to)) {
     warn('Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
@@ -114,12 +114,14 @@ const Link = (
     return children
   }, [children, Icon, iconPosition, invert])
 
+  const { inheritColor } = useContext(ColoredTextContext)
+
   return (
     <StyledLink
       {...safeRest(rest)}
       as={reactRouterLinkComponent || 'a'}
       invert={invert}
-      context={context}
+      context={{ inheritColor }}
       ref={forwardedRef}
       hasIcon={!!Icon}
     >
@@ -163,6 +165,7 @@ Link.propTypes = {
    */
   iconPosition: PropTypes.oneOf(['left', 'right']),
 }
+
 Link.defaultProps = {
   reactRouterLinkComponent: null,
   to: null,
@@ -171,10 +174,6 @@ Link.defaultProps = {
   forwardedRef: undefined,
   icon: undefined,
   iconPosition: 'left',
-}
-
-Link.contextTypes = {
-  inheritColor: PropTypes.bool,
 }
 
 export default withForwardedRef(Link)

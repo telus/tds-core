@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import * as typography from '@tds/shared-typography'
 import { safeRest, DependentIconSizeContext } from '@tds/util-helpers'
+import { ColoredTextContext } from '../../shared/components/ColoredTextProvider/ColoredTextProvider'
 
 const textColor = ({ invert }) => (invert ? typography.invertedColor : typography.color)
 const textInheritColor = ({ inheritColor }) => (inheritColor ? { color: 'inherit' } : undefined)
@@ -21,13 +22,16 @@ export const StyledText = styled.span(textColor, textInheritColor, textSize, tex
  *
  * @version ./package.json
  */
-const Text = ({ children, size, invert, ...rest }, context) => (
-  <DependentIconSizeContext.Provider value={{ paragraphSize: size, invert }}>
-    <StyledText {...safeRest(rest)} size={size} invert={invert} inheritColor={context.inheritColor}>
-      {children}
-    </StyledText>
-  </DependentIconSizeContext.Provider>
-)
+const Text = ({ children, size, invert, ...rest }) => {
+  const { inheritColor } = useContext(ColoredTextContext)
+  return (
+    <DependentIconSizeContext.Provider value={{ paragraphSize: size, invert }}>
+      <StyledText {...safeRest(rest)} size={size} invert={invert} inheritColor={inheritColor}>
+        {children}
+      </StyledText>
+    </DependentIconSizeContext.Provider>
+  )
+}
 
 Text.propTypes = {
   /**
@@ -58,10 +62,6 @@ Text.defaultProps = {
   bold: false,
   size: 'base',
   invert: false,
-}
-
-Text.contextTypes = {
-  inheritColor: PropTypes.bool,
 }
 
 export default Text

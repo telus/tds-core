@@ -42,6 +42,8 @@ describe('Breadcrumbs', () => {
     it('renders', () => {
       const breadcrumbs = doMount()
 
+      console.log('breadcrumbs', breadcrumbs)
+
       expect(breadcrumbs).toMatchSnapshot()
     })
 
