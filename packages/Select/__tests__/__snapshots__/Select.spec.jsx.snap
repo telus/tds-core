@@ -110,7 +110,7 @@ exports[`Select can have an error message 1`] = `
 }
 
 .c15 {
-  fill: #2B8000;
+  fill: #c12335;
   width: 1.5rem;
   height: 1.5rem;
   z-index: 2;
@@ -1280,7 +1280,7 @@ exports[`Select can have an error message 1`] = `
                                               theme={
                                                 Object {
                                                   "backgroundColor": "transparent",
-                                                  "iconColor": "#2B8000",
+                                                  "iconColor": "#c12335",
                                                 }
                                               }
                                             >
@@ -2574,7 +2574,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
 }
 
 .c12 {
-  fill: #2B8000;
+  fill: #c12335;
   width: 1.5rem;
   height: 1.5rem;
   z-index: 2;
