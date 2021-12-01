@@ -5,7 +5,13 @@ import styled, { ThemeProvider } from 'styled-components'
 import { responsiveProps } from '@tds/util-prop-types'
 import { handleResponsiveStyles } from '@tds/util-helpers'
 
-import { colorShark, colorTelusPurple, colorWhite, colorAccessibleGreen } from '@tds/core-colours'
+import {
+  colorShark,
+  colorTelusPurple,
+  colorWhite,
+  colorAccessibleGreen,
+  colorCardinal,
+} from '@tds/core-colours'
 
 import animations from './shared/animations'
 import StyledInteractiveIconSVG from './shared/StyledInteractiveIconSVG'
@@ -51,6 +57,12 @@ const getTheme = variant => {
       iconColor: colorWhite,
     }
   }
+  if (variant === 'error') {
+    return {
+      backgroundColor: 'transparent',
+      iconColor: colorCardinal,
+    }
+  }
   return {
     backgroundColor: 'transparent',
     iconColor: colorAccessibleGreen,
@@ -72,11 +84,11 @@ Limited.propTypes = {
   /**
    * The style.
    */
-  variant: PropTypes.oneOf(['default', 'basic', 'alternative', 'inverted']),
+  variant: PropTypes.oneOf(['default', 'basic', 'alternative', 'inverted', 'error']),
   /**
    * The icon size in pixels as a [**responsive prop**](#responsiveProps).
    */
-  size: responsiveProps(PropTypes.oneOf([20, 24])),
+  size: responsiveProps(PropTypes.oneOf([16, 24])),
   /**
    * @ignore
    */
