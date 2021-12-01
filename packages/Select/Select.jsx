@@ -255,7 +255,7 @@ const Select = React.forwardRef(
                   feedback={feedback}
                 />
                 <IconLineFix>
-                  <CaretDown variant={feedback === 'error' ? 'error' : 'primary'} size={16} />
+                  <CaretDown variant={feedback === 'error' ? 'error' : undefined} size={16} />
                 </IconLineFix>
               </IconWrapper>
             )}
