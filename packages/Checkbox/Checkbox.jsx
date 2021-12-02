@@ -10,10 +10,10 @@ import {
   colorGreyGainsboro,
   colorAccessibleGreen,
 } from '@tds/core-colours'
-import DecorativeIcon from '@tds/core-decorative-icon'
 import InputFeedback from '@tds/core-input-feedback'
 import Paragraph from '@tds/core-paragraph'
 import Text from '@tds/core-text'
+import { Checkmark } from '@tds/core-feedback-icon'
 
 import { borders } from '@tds/shared-styles'
 import { safeRest } from '@tds/util-helpers'
@@ -51,6 +51,7 @@ const FakeCheckbox = styled.span({
     display: 'none',
   },
 })
+
 const HiddenInput = styled.input({
   position: 'absolute',
   width: '1.2rem',
@@ -87,6 +88,14 @@ const StyledLabel = styled.label(({ isError }) => ({
     color: colorGreyGainsboro,
   },
 }))
+
+const CheckmarkContainer = styled.span({
+  '& > svg': {
+    '& > path': {
+      fill: colorWhite,
+    },
+  },
+})
 
 const renderError = (error, errorId) => (
   <InputFeedback id={errorId} feedback="error">
@@ -125,7 +134,9 @@ const Checkbox = React.forwardRef(({ id, name, value, label, feedback, error, ..
     >
       <Box between={3} inline>
         <FakeCheckbox data-testid="fake-input">
-          <DecorativeIcon symbol="checkmark" size={16} variant="inverted" />
+          <CheckmarkContainer id="checkmark">
+            <Checkmark />
+          </CheckmarkContainer>
         </FakeCheckbox>
         <ErrorText isError={feedback === 'error'}>
           <Text>{label}</Text>

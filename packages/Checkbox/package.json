@@ -33,6 +33,7 @@
     "@tds/core-text": "^3.2.0",
     "@tds/shared-styles": "^2.0.1",
     "@tds/util-helpers": "^1.6.0",
+    "@tds/core-feedback-icon": "^1.1.0",
     "prop-types": "^15.5.10"
   }
 }
