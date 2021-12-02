@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@2.3.0...@tds/core-interactive-icon@2.4.0) (2021-12-02)
+
+
+### Features
+
+* **core-interactive-icon:** add error color and update size interval ([40f0c76](https://github.com/telus/tds-core/commit/40f0c7646ec8a3aa81169aaebbd0a5d00ded6e88))
+
+
+
+
+
 # [2.3.0](https://github.com/telus/tds-core/compare/@tds/core-interactive-icon@2.2.0...@tds/core-interactive-icon@2.3.0) (2021-09-21)
 
 

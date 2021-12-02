@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.5](https://github.com/telus/tds/compare/@tds/core-select@3.3.4...@tds/core-select@3.3.5) (2021-12-02)
+
+
+### Bug Fixes
+
+* **core-select:** align icon and chevron vertically ([984766d](https://github.com/telus/tds/commit/984766d184b53181acfde2d15273e9a4b1132cc8))
+* **core-select:** use error color for interactive icon ([ed69710](https://github.com/telus/tds/commit/ed69710a189460792061dc94b2fa6f70b544634d))
+
+
+
+
+
 ## [3.3.4](https://github.com/telus/tds/compare/@tds/core-select@3.3.3...@tds/core-select@3.3.4) (2021-11-30)
 
 **Note:** Version bump only for package @tds/core-select
