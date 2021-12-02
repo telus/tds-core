@@ -90,7 +90,7 @@ exports[`Select can have an error message 1`] = `
 }
 
 .c11 > *:not(:last-child) {
-  margin-right: 1rem;
+  margin-right: 0.25rem;
 }
 
 .c5 {
@@ -236,6 +236,15 @@ exports[`Select can have an error message 1`] = `
   transform: translateY(-50%);
   right: 1rem;
   pointer-events: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-color: red;
 }
 
 .c14 {
@@ -954,12 +963,12 @@ exports[`Select can have an error message 1`] = `
                         </StyledComponent>
                       </Select__StyledSelect>
                       <Styled(Box)
-                        between={3}
+                        between={1}
                         inline={true}
                         tag="div"
                       >
                         <StyledComponent
-                          between={3}
+                          between={1}
                           forwardedComponent={
                             Object {
                               "$$typeof": Symbol(react.forward_ref),
@@ -974,6 +983,9 @@ exports[`Select can have an error message 1`] = `
                                   "transform: translateY(-50%);",
                                   "right: 1rem;",
                                   "pointer-events: none;",
+                                  "display: flex;",
+                                  "align-items: center;",
+                                  "border-color: red;",
                                 ],
                               },
                               "defaultProps": Object {
@@ -1037,19 +1049,19 @@ exports[`Select can have an error message 1`] = `
                           tag="div"
                         >
                           <Box
-                            between={3}
+                            between={1}
                             className="c10"
                             inline={true}
                             tag="div"
                           >
                             <styled.div
-                              between={3}
+                              between={1}
                               className="c10"
                               inline={true}
                               tag="div"
                             >
                               <StyledComponent
-                                between={3}
+                                between={1}
                                 className="c10"
                                 forwardedComponent={
                                   Object {
@@ -1522,7 +1534,7 @@ exports[`Select label can have a hint below 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-bdVaJa",
                   "isStatic": false,
-                  "lastClassName": "LKvBy",
+                  "lastClassName": "bGJYlu",
                   "rules": Array [
                     [Function],
                     [Function],
@@ -1791,7 +1803,7 @@ exports[`Select label can have a short hint 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-bdVaJa",
                   "isStatic": false,
-                  "lastClassName": "LKvBy",
+                  "lastClassName": "bGJYlu",
                   "rules": Array [
                     [Function],
                     [Function],
@@ -2105,7 +2117,7 @@ exports[`Select label must have a label 1`] = `
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-bdVaJa",
                   "isStatic": false,
-                  "lastClassName": "LKvBy",
+                  "lastClassName": "bGJYlu",
                   "rules": Array [
                     [Function],
                     [Function],
@@ -2270,7 +2282,7 @@ exports[`Select renders 1`] = `
 }
 
 .c8 > *:not(:last-child) {
-  margin-right: 1rem;
+  margin-right: 0.25rem;
 }
 
 .c10 {
@@ -2392,6 +2404,15 @@ exports[`Select renders 1`] = `
   transform: translateY(-50%);
   right: 1rem;
   pointer-events: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-color: red;
 }
 
 .c9 {
@@ -2570,7 +2591,7 @@ exports[`Select renders with a feedback state and icon 1`] = `
 }
 
 .c8 > *:not(:last-child) {
-  margin-right: 1rem;
+  margin-right: 0.25rem;
 }
 
 .c12 {
@@ -2700,6 +2721,15 @@ exports[`Select renders with a feedback state and icon 1`] = `
   transform: translateY(-50%);
   right: 1rem;
   pointer-events: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-color: red;
 }
 
 .c11 {
