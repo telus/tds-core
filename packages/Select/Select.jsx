@@ -108,6 +108,9 @@ const IconWrapper = styled(Box)({
   transform: 'translateY(-50%)',
   right: '1rem',
   pointerEvents: 'none',
+  display: 'flex',
+  alignItems: 'center',
+  borderColor: 'red',
 })
 
 const IconLineFix = styled.div({
@@ -249,7 +252,7 @@ const Select = React.forwardRef(
             </StyledSelect>
 
             {!rest.disabled && (
-              <IconWrapper inline between={3}>
+              <IconWrapper inline between={1}>
                 <FeedbackIcon
                   showIcon={showFeedbackIcon(feedback) && !isFocused}
                   feedback={feedback}
