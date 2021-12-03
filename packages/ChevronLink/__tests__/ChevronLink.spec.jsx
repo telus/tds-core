@@ -1,12 +1,12 @@
 import React from 'react'
 import { shallow, render, mount } from 'enzyme'
 
-import DecorativeIcon from '@tds/core-decorative-icon'
 import A11yContent from '../../A11yContent'
 
 import { warn } from '../../../shared/utils/warn'
 
 import ChevronLink from '../ChevronLink'
+import { ChevronLeft, ChevronRight } from '../../InteractiveIcon/index.cjs'
 
 jest.mock('../../../shared/utils/warn')
 
@@ -54,10 +54,10 @@ describe('ChevronLink', () => {
 
   it('has a chevron icon', () => {
     let link = doShallow({ href: 'https://telus.com' })
-    expect(link).toContainReact(<DecorativeIcon symbol="chevron" size={16} />)
+    expect(link).toContainReact(<ChevronRight size={16} />)
 
     link = doShallow({ href: 'https://telus.com', direction: 'left' })
-    expect(link).toContainReact(<DecorativeIcon symbol="leftChevron" size={16} />)
+    expect(link).toContainReact(<ChevronLeft size={16} />)
   })
 
   it('can have specific variants', () => {
