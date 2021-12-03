@@ -2,24 +2,21 @@
 
 exports[`ChevronLink can have specific variants 1`] = `
 .c4 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  font-size: 1rem;
+  fill: #2B8000;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
-.c4::before {
-  content: '\\f107';
+.c4:hover,
+.c4:focus,
+.c4:active {
+  -webkit-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  transform: translateX(4px);
 }
 
 .c2 {
@@ -70,6 +67,34 @@ exports[`ChevronLink can have specific variants 1`] = `
   transform: translateX(0.25rem);
 }
 
+@media (prefers-reduced-motion:reduce) {
+  .c4 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c4 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (max-width:767px) {
+  .c4 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
 <a
   class="c0 c1"
   direction="right"
@@ -85,10 +110,15 @@ exports[`ChevronLink can have specific variants 1`] = `
       class="c3"
       direction="right"
     >
-      <i
-        aria-hidden="true"
+      <svg
         class="c4"
-      />
+        size="16"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M9.18323023,17.7940812 C8.8825106,17.4424627 9.04504427,17.0896181 9.24527574,16.8868854 L13.740553,11.9968161 L9.24527573,7.11722187 C9.08145209,6.93839231 8.81996721,6.49053328 9.18323023,6.16524043 C9.54649326,5.83994757 9.91610528,6.06520964 10.0799289,6.24327169 L15.8766027,11.6348225 C16.0411324,11.8136521 16.0411324,12.1060729 15.8766027,12.2849025 C15.8758965,12.2849025 10.079929,17.7940809 10.079929,17.7940809 C9.93504267,17.9792355 9.48394985,18.1456996 9.18323023,17.7940812 Z"
+        />
+      </svg>
     </span>
   </span>
 </a>
@@ -96,24 +126,21 @@ exports[`ChevronLink can have specific variants 1`] = `
 
 exports[`ChevronLink can have specific variants 2`] = `
 .c4 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  font-size: 1rem;
+  fill: #4b286d;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
-.c4::before {
-  content: '\\f107';
+.c4:hover,
+.c4:focus,
+.c4:active {
+  -webkit-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  transform: translateX(4px);
 }
 
 .c2 {
@@ -164,6 +191,34 @@ exports[`ChevronLink can have specific variants 2`] = `
   transform: translateX(0.25rem);
 }
 
+@media (prefers-reduced-motion:reduce) {
+  .c4 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c4 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (max-width:767px) {
+  .c4 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
 <a
   class="c0 c1"
   direction="right"
@@ -179,10 +234,15 @@ exports[`ChevronLink can have specific variants 2`] = `
       class="c3"
       direction="right"
     >
-      <i
-        aria-hidden="true"
+      <svg
         class="c4"
-      />
+        size="16"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M9.18323023,17.7940812 C8.8825106,17.4424627 9.04504427,17.0896181 9.24527574,16.8868854 L13.740553,11.9968161 L9.24527573,7.11722187 C9.08145209,6.93839231 8.81996721,6.49053328 9.18323023,6.16524043 C9.54649326,5.83994757 9.91610528,6.06520964 10.0799289,6.24327169 L15.8766027,11.6348225 C16.0411324,11.8136521 16.0411324,12.1060729 15.8766027,12.2849025 C15.8758965,12.2849025 10.079929,17.7940809 10.079929,17.7940809 C9.93504267,17.9792355 9.48394985,18.1456996 9.18323023,17.7940812 Z"
+        />
+      </svg>
     </span>
   </span>
 </a>
@@ -190,24 +250,21 @@ exports[`ChevronLink can have specific variants 2`] = `
 
 exports[`ChevronLink can have specific variants 3`] = `
 .c4 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  font-size: 1rem;
+  fill: #2B8000;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
-.c4::before {
-  content: '\\f107';
+.c4:hover,
+.c4:focus,
+.c4:active {
+  -webkit-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  transform: translateX(4px);
 }
 
 .c2 {
@@ -258,6 +315,34 @@ exports[`ChevronLink can have specific variants 3`] = `
   transform: translateX(0.25rem);
 }
 
+@media (prefers-reduced-motion:reduce) {
+  .c4 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c4 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (max-width:767px) {
+  .c4 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
 <a
   class="c0 c1"
   direction="right"
@@ -273,10 +358,15 @@ exports[`ChevronLink can have specific variants 3`] = `
       class="c3"
       direction="right"
     >
-      <i
-        aria-hidden="true"
+      <svg
         class="c4"
-      />
+        size="16"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M9.18323023,17.7940812 C8.8825106,17.4424627 9.04504427,17.0896181 9.24527574,16.8868854 L13.740553,11.9968161 L9.24527573,7.11722187 C9.08145209,6.93839231 8.81996721,6.49053328 9.18323023,6.16524043 C9.54649326,5.83994757 9.91610528,6.06520964 10.0799289,6.24327169 L15.8766027,11.6348225 C16.0411324,11.8136521 16.0411324,12.1060729 15.8766027,12.2849025 C15.8758965,12.2849025 10.079929,17.7940809 10.079929,17.7940809 C9.93504267,17.9792355 9.48394985,18.1456996 9.18323023,17.7940812 Z"
+        />
+      </svg>
     </span>
   </span>
 </a>
@@ -284,24 +374,21 @@ exports[`ChevronLink can have specific variants 3`] = `
 
 exports[`ChevronLink can have specific variants 4`] = `
 .c4 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  font-size: 1rem;
+  fill: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
-.c4::before {
-  content: '\\f107';
+.c4:hover,
+.c4:focus,
+.c4:active {
+  -webkit-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  transform: translateX(4px);
 }
 
 .c2 {
@@ -352,6 +439,34 @@ exports[`ChevronLink can have specific variants 4`] = `
   transform: translateX(0.25rem);
 }
 
+@media (prefers-reduced-motion:reduce) {
+  .c4 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c4 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (max-width:767px) {
+  .c4 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
 <a
   class="c0 c1"
   direction="right"
@@ -367,10 +482,15 @@ exports[`ChevronLink can have specific variants 4`] = `
       class="c3"
       direction="right"
     >
-      <i
-        aria-hidden="true"
+      <svg
         class="c4"
-      />
+        size="16"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M9.18323023,17.7940812 C8.8825106,17.4424627 9.04504427,17.0896181 9.24527574,16.8868854 L13.740553,11.9968161 L9.24527573,7.11722187 C9.08145209,6.93839231 8.81996721,6.49053328 9.18323023,6.16524043 C9.54649326,5.83994757 9.91610528,6.06520964 10.0799289,6.24327169 L15.8766027,11.6348225 C16.0411324,11.8136521 16.0411324,12.1060729 15.8766027,12.2849025 C15.8758965,12.2849025 10.079929,17.7940809 10.079929,17.7940809 C9.93504267,17.9792355 9.48394985,18.1456996 9.18323023,17.7940812 Z"
+        />
+      </svg>
     </span>
   </span>
 </a>
@@ -378,24 +498,21 @@ exports[`ChevronLink can have specific variants 4`] = `
 
 exports[`ChevronLink renders 1`] = `
 .c4 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  font-size: 1rem;
+  fill: #2B8000;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
 }
 
-.c4::before {
-  content: '\\f107';
+.c4:hover,
+.c4:focus,
+.c4:active {
+  -webkit-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  transform: translateX(4px);
 }
 
 .c2 {
@@ -446,6 +563,34 @@ exports[`ChevronLink renders 1`] = `
   transform: translateX(0.25rem);
 }
 
+@media (prefers-reduced-motion:reduce) {
+  .c4 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c4 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (max-width:767px) {
+  .c4 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
 <a
   class="c0 c1"
   direction="right"
@@ -461,10 +606,15 @@ exports[`ChevronLink renders 1`] = `
       class="c3"
       direction="right"
     >
-      <i
-        aria-hidden="true"
+      <svg
         class="c4"
-      />
+        size="16"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M9.18323023,17.7940812 C8.8825106,17.4424627 9.04504427,17.0896181 9.24527574,16.8868854 L13.740553,11.9968161 L9.24527573,7.11722187 C9.08145209,6.93839231 8.81996721,6.49053328 9.18323023,6.16524043 C9.54649326,5.83994757 9.91610528,6.06520964 10.0799289,6.24327169 L15.8766027,11.6348225 C16.0411324,11.8136521 16.0411324,12.1060729 15.8766027,12.2849025 C15.8758965,12.2849025 10.079929,17.7940809 10.079929,17.7940809 C9.93504267,17.9792355 9.48394985,18.1456996 9.18323023,17.7940812 Z"
+        />
+      </svg>
     </span>
   </span>
 </a>
