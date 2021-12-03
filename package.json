@@ -192,7 +192,7 @@
       "**/node_modules/**",
       "**/package-lock.json",
       "**/dist/**",
-      "**/**.{svg,log,png,mp4,tgz,vtt}",
+      "**/**.{svg,log,png,mp4,tgz,vtt,fig}",
       "**/__snapshots__/**",
       "guide/components/**",
       "guide/_book/**",
