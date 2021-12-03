@@ -3,9 +3,8 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { componentWithName, or, htmlElement } from '@tds/util-prop-types'
-
+import { ChevronRight, ChevronLeft } from '@tds/core-interactive-icon'
 import Box from '@tds/core-box'
-import DecorativeIcon from '@tds/core-decorative-icon'
 import { medium, helveticaNeueRoman55 } from '@tds/shared-typography'
 import { colorPrimary, colorSecondary, colorWhite } from '@tds/core-colours'
 import { safeRest } from '@tds/util-helpers'
@@ -17,6 +16,12 @@ const base = {
   textDecoration: 'none',
   maxWidth: '100%',
   verticalAlign: 'top',
+}
+
+const variantDict = {
+  primary: 'default',
+  secondary: 'alternative',
+  inverted: 'inverted',
 }
 
 const StyledChevronLink = styled.a(medium, helveticaNeueRoman55, base, ({ variant }) => {
@@ -44,9 +49,10 @@ const StyledChevron = styled.span(({ direction }) => ({
   },
 }))
 
-const getIcon = (symbol, direction) => (
+const getIcon = (direction, variant) => (
   <StyledChevron direction={direction}>
-    <DecorativeIcon symbol={symbol} size={16} />
+    {direction === 'left' && <ChevronLeft size={16} variant={variant} />}
+    {direction === 'right' && <ChevronRight size={16} variant={variant} />}
   </StyledChevron>
 )
 
@@ -61,11 +67,13 @@ const ChevronLink = forwardRef(
       warn('Chevron Link', 'The props `reactRouterLinkComponent` and `to` must be used together.')
     }
 
+    const iconVariant = variantDict[variant]
+
     const innerLink = (
       <Box tag="span" inline between={2}>
-        {direction === 'left' ? getIcon('leftChevron', direction) : undefined}
+        {direction === 'left' ? getIcon(direction, iconVariant) : undefined}
         <span>{children}</span>
-        {direction === 'right' ? getIcon('chevron', direction) : undefined}
+        {direction === 'right' ? getIcon(direction, iconVariant) : undefined}
       </Box>
     )
 
