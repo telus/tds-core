@@ -54,10 +54,10 @@ describe('ChevronLink', () => {
 
   it('has a chevron icon', () => {
     let link = doShallow({ href: 'https://telus.com' })
-    expect(link).toContainReact(<ChevronRight size={16} />)
+    expect(link).toContainReact(<ChevronRight size={16} variant="default" />)
 
     link = doShallow({ href: 'https://telus.com', direction: 'left' })
-    expect(link).toContainReact(<ChevronLeft size={16} />)
+    expect(link).toContainReact(<ChevronLeft size={16} variant="default" />)
   })
 
   it('can have specific variants', () => {
