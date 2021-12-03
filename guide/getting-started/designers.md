@@ -29,14 +29,14 @@ You can access Figma directly in your browser by visiting and logging into [Figm
 
 ### TDS libraries in Figma
 The TELUS Design System are available as three Figma libraries:
-- [TDS Core Styles](https://www.figma.com/file/yNTPe3uZ6b7uNPDzOwZIVa/%E2%8F%B3-TDS-Styles) - ([Download the local .fig file](url))
-- [TDS Core Components](https://www.figma.com/file/flEzyiqw23nzT1ZMo7kurv/%E2%8F%B3-TDS-Components) - {[Download the local .fig file](url))
-- [TDS Core Icons](https://www.figma.com/file/2S4MsqHCJOZ8UGwu9nYrV7/%E2%8F%B3-TDS-Icons) - ([Download the local .fig file](url))
+- [TDS Core Styles](https://www.figma.com/file/yNTPe3uZ6b7uNPDzOwZIVa/%E2%8F%B3-TDS-Styles) - ([Download the local .fig file](https://telus-design-system-docs.s3.amazonaws.com/latest/components/figma-files/tds-styles.fig))
+- [TDS Core Components](https://www.figma.com/file/flEzyiqw23nzT1ZMo7kurv/%E2%8F%B3-TDS-Components) - {[Download the local .fig file](https://telus-design-system-docs.s3.amazonaws.com/latest/components/figma-files/tds-components.fig))
+- [TDS Core Icons](https://www.figma.com/file/2S4MsqHCJOZ8UGwu9nYrV7/%E2%8F%B3-TDS-Icons) - ([Download the local .fig file](https://telus-design-system-docs.s3.amazonaws.com/latest/components/figma-files/tds-icons.fig))
 
 Once you have access to your team space, you'll be able to access the TDS libraries using the Asset's panel on the left sidebar. You can pull in components and icons, and apply typography and colour styles. Check out the [guide to libraries in Figma](https://help.figma.com/hc/en-us/articles/360041051154-Guide-to-libraries-in-Figma) for more information and detailed instructions on using libraries.
 
 ### TDS UI Sticker Sheet
-The [TDS UI Sticker Sheet](https://www.figma.com/file/VWoC6aqL5B2IUUuTQGHo3O/TDS-UI-Sticker-Sheet) provides a consolidated view of the available TDS Core components as well as a guide to using the TDS Core styles.
+The [TDS UI Sticker Sheet](https://www.figma.com/file/VWoC6aqL5B2IUUuTQGHo3O/TDS-UI-Sticker-Sheet) provides a consolidated view of the available TDS Core components as well as a guide to using the TDS Core styles. ([Download the local .fig file](https://telus-design-system-docs.s3.amazonaws.com/latest/components/figma-files/tds-ui-sticker-sheet.fig))
 
 ### Fonts
 TELUS' primary typeface is Helvetica Neue which is available as a system font on Mac OS X 10.7 Lion and later. No other fonts are needed to use the TDS libraries in Figma or TDS UI sticker sheet.
