@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.3](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.3.2...@tds/core-chevron-link@2.3.3) (2021-12-03)
+
+
+### Bug Fixes
+
+* **core-chevron-link:** deplace deprecated dependency ([d6a3d70](https://github.com/telusdigital/tds/commit/d6a3d7056b914d105488c48af38a0a7cfeb71f0e))
+
+
+
+
+
 ## [2.3.2](https://github.com/telusdigital/tds/compare/@tds/core-chevron-link@2.3.1...@tds/core-chevron-link@2.3.2) (2021-11-01)
 
 **Note:** Version bump only for package @tds/core-chevron-link
