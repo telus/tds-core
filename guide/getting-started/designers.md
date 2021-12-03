@@ -1,151 +1,47 @@
 # Getting started - designer guide
 
-## Tools
+<div style="display: flex; flex-direction: row; wrap: nowrap; padding: 1rem; background-color: rgb(255, 249, 238); margin-bottom: 1rem;">
+  <div style="margin-right: 1rem; height: 100%;">
+    <svg style="display: inline-block; vertical-align: middle;" width="20" height="20">
+      <path
+        fill="#8C5415"
+        fill-rule="evenodd"
+        d="M10.878 1.61l8.315 15.244a1 1 0 0 1-.878 1.48H1.685a1 1 0 0 1-.878-1.48L9.122 1.61a1 1 0 0 1 1.756 0zM10 16.794c.46 0 .833-.402.833-.898 0-.495-.373-.897-.833-.897-.46 0-.833.402-.833.897 0 .496.373.898.833.898zm-.022-2.885c.347 0 .63-.297.64-.67l.179-6.698c.01-.388-.28-.709-.64-.709h-.35c-.361 0-.65.32-.64.708l.171 6.699c.01.373.294.67.64.67z"
+      />
+    </svg>
+  </div>
+  <div>
+    <p>TELUS Digital transitioned to using Figma as the primary design tool in order to provide a more collaborative experience when it comes to designing, sharing, and contributing within the design community, partners, and vendors. We appreciate your patience as our design system continues to evolve, both in visual language and technologies. <a href="/contact.html">Contact us</a> for more information on how to get support. And <a href="https://telusdigital.slack.com/archives/C0206FZ6U8Y">join our Figma support Slack channel</a> for dedicated Figma news and updates.
+    </p>
+  </div>
+</div>
 
-### Setting up Sketch
+## Getting started with Figma
+[Figma](https://www.figma.com/) is the new primary tool to use to design, collaborate, and share designs. It's a cloud-based design tool that is available on web browsers and desktop applications for macOS and Windows. Figma offers helpful [tutorials](https://help.figma.com/hc/en-us/categories/360002051613-Getting-Started) to get to know the tool and start using it.
 
-[Sketch](https://www.sketchapp.com/) is the primary tool used by the TELUS Design team to mock up designs. It’s an application tool that is only available on Mac OS and is fairly easy to pick up. Sketch offers quite a few [tutorials](https://medium.com/sketch-app-sources/helpful-guide-to-getting-started-with-sketch-ecab4b5738bb) to help you get started.
+You can access Figma directly in your browser by visiting and logging into [Figma.com](https://www.figma.com/), or [download the desktop app](https://www.figma.com/downloads/)
 
-You will need Sketch set up on your computer before starting any project. Please be sure to keep your Sketch app up to date with the [latest Sketch release](https://www.sketchapp.com/updates/).
+- For TELUS Digital designers and content practitioners, contact your team's Design Lead to be invited to your respective Team Space
+- For vendors or designers outside of TELUS Digital, we will provide exported Figma files for your use in your own design tools
 
-**For TELUS designers**:
 
-You should have been given a Sketch license during your onboarding. If not, you can [download a trial version](https://www.sketchapp.com/) of the latest Sketch app and then ask in the #i-need-access-to channel on Slack for a license.
+## TDS Assets
 
-For vendors or designers outside of TELUS Digital, you can purchase and [download Sketch](https://www.sketchapp.com/pricing/) for $99/year.
+### TDS libraries in Figma
+The TELUS Design System are available as three Figma libraries:
+- [TDS Core Styles](https://www.figma.com/file/yNTPe3uZ6b7uNPDzOwZIVa/%E2%8F%B3-TDS-Styles) - ([Download the local .fig file](https://telus-design-system-docs.s3.amazonaws.com/latest/components/figma-files/tds-styles.fig))
+- [TDS Core Components](https://www.figma.com/file/flEzyiqw23nzT1ZMo7kurv/%E2%8F%B3-TDS-Components) - {[Download the local .fig file](https://telus-design-system-docs.s3.amazonaws.com/latest/components/figma-files/tds-components.fig))
+- [TDS Core Icons](https://www.figma.com/file/2S4MsqHCJOZ8UGwu9nYrV7/%E2%8F%B3-TDS-Icons) - ([Download the local .fig file](https://telus-design-system-docs.s3.amazonaws.com/latest/components/figma-files/tds-icons.fig))
 
-### Sketch Plugins
+Once you have access to your team space, you'll be able to access the TDS libraries using the Asset's panel on the left sidebar. You can pull in components and icons, and apply typography and colour styles. Check out the [guide to libraries in Figma](https://help.figma.com/hc/en-us/articles/360041051154-Guide-to-libraries-in-Figma) for more information and detailed instructions on using libraries.
 
-There are a variety of plugins available for Sketch. Here is a short list of plugins that will be useful when setting up your Sketch file and using the Design System Manager (DSM) component library:
+### TDS UI Sticker Sheet
+The [TDS UI Sticker Sheet](https://www.figma.com/file/VWoC6aqL5B2IUUuTQGHo3O/TDS-UI-Sticker-Sheet) provides a consolidated view of the available TDS Core components as well as a guide to using the TDS Core styles. ([Download the local .fig file](https://telus-design-system-docs.s3.amazonaws.com/latest/components/figma-files/tds-ui-sticker-sheet.fig))
 
-#### Required
+### Fonts
+TELUS' primary typeface is Helvetica Neue which is available as a system font on Mac OS X 10.7 Lion and later. No other fonts are needed to use the TDS libraries in Figma or TDS UI sticker sheet.
 
-- [Craft Manager](https://www.invisionapp.com/craft): Suite of plugins by Invision to help streamline your workflow. (**Note:** This is required to use the DSM Component library)
-
-- [Launchpad by Anima](https://animaapp.github.io/): Customize designs with responsive settings (**Note**: Without this plugin, some of the responsive components will not work properly)
-
-- [Paddy](https://github.com/DWilliames/paddy-sketch-plugin): Create components with fixed padding (**Note**: Used for automatic resizing of our button component)
-
-#### Recommended
-
-- [Sketch Toolbox](http://sketchtoolbox.com/): Manage and install your Sketch plugins
-
-- [Shared Text Styles](http://www.textstyl.es/): Import/export text styles within your Sketch files
-
-- [Nudge Push Shove](http://nudgepushshove.com/): Set up custom nudge settings
-
-- [Dynamic Button](https://github.com/fuggfuggfugg/sketch-dynamic-button-3.5): Create components with fixed padding
-
-## Setting up Invision
-
-From design to prototyping, the TELUS Design team uses Invision suite of apps to help with our design workflow and to assist with collaboration. You can use InVision to share your prototypes and Craft Sync to sync up your designs.
-
-During your initial onboarding to the design team, you should have gotten an invitation sent to your TELUS email to set up a [TELUS Invision Enterprise](https://projects.invisionapp.com/d/login) account. If you haven’t please contact your design lead, or inquire in #i-need-access-to on Slack to get added to the project.
-
-TDS has two projects set up on Invision:
-
-1. [TDS_blocks](https://telus.invisionapp.com/share/PCEVXUFT9) (not yet coded): Inspirational blocks that use TDS components/symbols that can be used in your Sketch file. These blocks live in the master Sketch file as designs and some of the blocks have been coded and can be found in SiteBuilder.
-
-2. [TDS_components](https://telus.invisionapp.com/d/main#/projects/prototypes/13491097): Library of all the components that can be found in TDS.
-
-These are both working projects that continue to get updated, and improved on as we add components and blocks to the system.
-
-## Assets
-
-## TDS component library
-
-There are two component libraries available in TDS to help you with your designs, TDS components and TDS Blocks (as mentioned in the previous section). These libraries are part of DSM (Design Systems Manager) and is accessilble through Craft Manager. Follow the below instructions to get set up with the component libraries.
-
-### What you’ll need
-
-1. **Invision DSM** (Design Systems Manager): You should have access to DSM if you have access to TELUS Invision Enterprise. If not, please inquire in the #i-need-access-to Slack channel, or ask your design lead so they can add you to DSM and Invision Enterprise.
-
-2. **Craft Manager** is a suite of Sketch tools by Invision that helps with your workflow. [Download and install the plugin](https://www.invisionapp.com/craft) before continuing to the next section.
-
-### Sync up to the DSM library
-
-<table>
-  <tr>
-    <td><img src="craftmanager1.png" /></td>
-    <td>
-      <ol>
-        <li>Once you’ve gotten access to Invision DSM and have installed the Craft Manager, you should see the Craft logo at the top of your taskbar on your computer. (Make sure you’re on the latest version of Craft Manager)</li>
-        <li>Once selected, you should see a dropdown window with a list of all your Craft Sketch tools.</li>
-        <li>Install the Craft Tools for Sketch 3+</li>
-      </ol>
-    </td>
-  </tr>
-  <tr>
-    <td><img src="craftmanager2.png" /></td>
-    <td>
-      <ol>
-        <li>Once installed, you should see all the other Sketch tools along with Design System Manager</li>
-        <li>Restart Sketch to see the Design System Manager tool in Sketch</li>
-      </ol>
-    </td>
-  </tr>
-  <tr>
-    <td><img src="craftmanager3.png" /></td>
-    <td>
-      <ol>
-        <li>Select the DSM icon in the middle of your Craft Manager icon tool kit</li>
-      </ol>
-  </tr>
-  <tr>
-    <td><img src="craftmanager4.png" /></td>
-    <td>
-      <ol>
-        <li>You will see a window asking you to log into your InVision account</li>
-        <li>Select ‘Sign in with your domain’ and sign into your Invision account</li>
-      </ol>
-
-<br><strong>Note</strong>: It’s important that you sign in using the ‘Enterprise sign in’ link. Otherwise you will be creating your own library on your personal account.</td>
-
-  </tr>
-  <tr>
-    <td><img src="craftmanager5.png" /></td>
-    <td>Enter "telus.invisionapp.com" as the enterprise domain and hit ‘Continue’</td>
-  </tr>
-  <tr>
-    <td><img src="craftmanager6.png" /></td>
-    <td>Sign into your InVision account.</td>
-  </tr>
-  <tr>
-    <td><img src="craftmanager7.png" /></td>
-    <td>The TDS Core, TDS Community, and Global Elements libraries (and any other libraries you belong to) should now appear in the DSM window.</td>
-  </tr>
-    <tr>
-    <td><img src="craftmanager8.png" /></td>
-    <td>To switch between versions, go to the TELUS Design System dropdown on the top left of the DSM window and select TELUS Design System>Switch Version.
-      <br>
-      <strong>Note:</strong> Please make sure you are the latest version of DSM.</td>
-  </tr>
-</table>
-
-You can use the TDS component library by dragging and dropping the assets onto your artboard. For more information or detailed instructions on how to use DSM, please visit the [Invision DSM Support Centre](https://support.invisionapp.com/hc/en-us/articles/115005685166).
-
-## TDS Component Documentation
-
-To view the code and usage of the components please visit the [TDS components documentation site](ref://../components/index.html).
-
-## Master Sketch file
-
-The TDS Master Sketch file was used prior to the DSM library. If for any reason you need access to these legacy versions, you can download them from the _assets > source files_ in the TDS project on [Invision Enterprise](https://telus.invisionapp.com/d/main#/projects/prototypes/13491097/assets).
-
-![InVision Asset Source Files](invision_assets_sourcefiles.png)
-
-Here you can also find the [**TDS_Grid.sketch**](https://telus.invisionapp.com/d/main#/projects/prototypes/13491097/assets) file that may be used to kick start your project.
-
-## Fonts
-
-TELUS' primary typeface is Helvetica Neue which is available as a system font on Mac OS X 10.7 Lion and later. No other fonts are needed to use the TDS component library, or the Master Sketch file.
-
-## Icons
-
-Currently [Utility icons](ref://../components/index.html#icons) are available to use as components in the TELUS Design System. Decorative icon usage is currently being reviewed by the TELUS Brand team. Stay tuned for more updates. In the meantime, you can continue to use the Brand approved icons available on the [TELUS BrandHub](https://brand.telus.com/library/all?media_type%5B0%5D=media_icons).
-
-## Images
-
+### Images
 For nature, TELUS critters and devices images, please visit the [TELUS BrandHub](https://brand.telus.com/library/all?media_type%5B0%5D=media_images&imgcat=All&search_terms=&sort_by=created&sort_order=DESC) for a library of brand-approved images to use with your project. You will need your TELUS ID to log in or you can follow the instructions to sign up for a an account. There is an approval process to sign up for an account so make sure you allot time to it.
 
 The brand team is working towards creating a library of lifestyle photography. Until then, use your preferred stock photography site to source lifestyle images if your project requires lifestyle photography. Where possible, please consider using images from the TELUS BrandHub before trying to source lifestyle photography.
@@ -153,15 +49,9 @@ The brand team is working towards creating a library of lifestyle photography. U
 Please follow the [TELUS Brand Photography Guidelines](https://drive.google.com/a/telus.com/file/d/0BzlWahrSc56DenY4YzBndm1mWkk/view?usp=sharing) for detailed information on usage and implementation of the images.
 
 ## Releases
+The TELUS Design System team often makes design improvements to the TDS libraries and TDS UI sticker sheet. You can [access the version history](https://help.figma.com/hc/en-us/articles/360038006754-View-a-file-s-version-history#Access_version_history) of each library and design file as long as you have view access to the file.
 
-The TELUS Design System team often makes design improvements to the TDS component library and Master Sketch file. We track all release updates in our version page in the Master Sketch file and on the [DSM release page](https://telus.invisionapp.com/dsm/telus/telus-design-system/releases) on Invision.
-
-When TDS makes releases you will get notified the next time you are on Sketch and signed into DSM.
-
-<img alt="" src="craftmanager9.png" style="max-width: 500px; width: 100%;" />
-
-Releases updates to the system can be found on the [release notes on Github](https://github.com/telusdigital/tds-core/releases), so check back frequently for updates to the system.
+When TDS makes releases you will get notified the next time you open Figma. You'll get a notification letting you know that there are updates available within your file.
 
 ## Support
-
 Please take the time to join our [#TDS-Guild Slack channel](https://telusdigital.slack.com/messages/C2WK9TP5F). It's the perfect place for general discussions, announcements, and design questions related to TDS. For further help please see our [Support Page](../contact.html)
