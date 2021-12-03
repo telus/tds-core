@@ -29,29 +29,7 @@ exports[`Checkbox allows numbers as value 1`] = `
   margin-right: 1rem;
 }
 
-.c7 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c7::before {
-  content: '\\f101';
-}
-
-.c8 {
+.c9 {
   color: #2a2c2e;
   color: inherit;
   word-wrap: break-word;
@@ -59,12 +37,17 @@ exports[`Checkbox allows numbers as value 1`] = `
   font-weight: inherit;
 }
 
-.c8 sup {
+.c9 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
+}
+
+.c8 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c6 {
@@ -141,6 +124,10 @@ exports[`Checkbox allows numbers as value 1`] = `
   color: #d8d8d8;
 }
 
+.c7 > svg > path {
+  fill: #fff;
+}
+
 <div
   class="c0"
 >
@@ -165,16 +152,31 @@ exports[`Checkbox allows numbers as value 1`] = `
         class="c5 c6"
         data-testid="fake-input"
       >
-        <i
-          aria-hidden="true"
+        <span
           class="c7"
-        />
+          id="checkmark"
+        >
+          <svg
+            aria-hidden="true"
+            class="c8"
+            height="1rem"
+            role="img"
+            viewBox="0 0 16 16"
+            width="1rem"
+          >
+            <path
+              d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+              fill="#2B8000"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </span>
       </span>
       <div
         class=""
       >
         <span
-          class="c8"
+          class="c9"
         >
           A label
         </span>
@@ -278,26 +280,9 @@ exports[`Checkbox disabled can be disabled 1`] = `
 
 exports[`Checkbox disabled can be disabled 2`] = `
 Array [
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -334,46 +319,50 @@ Array [
   display: none;
 }
 
-.c5:focus ~ .c3 > div > .c0 {
+.c6:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c5:checked ~ .c3 > div > .c0 {
+.c6:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c3 > div > .c0 > i {
+.c6:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c3 > div > .c0 {
+.c6:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c4 div > .c0 {
+.c5 div > .c0 {
   border-color: #c12335;
 }
 
-.c5:focus ~ .c4 > div > .c0 {
+.c6:focus ~ .c5 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c5:checked ~ .c4 > div > .c0 {
+.c6:checked ~ .c5 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c4 > div > .c0 > i {
+.c6:checked ~ .c5 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c4 > div > .c0 {
+.c6:disabled ~ .c5 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <Checkbox__FakeCheckbox
@@ -428,85 +417,120 @@ Array [
         className="c0 c1"
         data-testid="fake-input"
       >
-        <DecorativeIcon
-          size={16}
-          symbol="checkmark"
-          variant="inverted"
+        <Checkbox__CheckmarkContainer
+          id="checkmark"
         >
-          <Icon
-            aria-hidden="true"
-            size={16}
-            symbol="checkmark"
-            variant="inverted"
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                  "isStatic": true,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "& > svg {",
+                    "& > path {",
+                    "fill: #fff;",
+                    "}",
+                    "}",
+                  ],
+                },
+                "displayName": "Checkbox__CheckmarkContainer",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            id="checkmark"
           >
-            <Icon__StyledIcon
-              aria-hidden="true"
-              iSize={16}
-              symbol="checkmark"
-              variant="inverted"
+            <span
+              className="c2"
+              id="checkmark"
             >
-              <StyledComponent
-                aria-hidden="true"
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                      "isStatic": false,
-                      "lastClassName": "c2",
-                      "rules": Array [
-                        [Function],
-                        [Function],
-                        [Function],
-                      ],
-                    },
-                    "displayName": "Icon__StyledIcon",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                    "target": "i",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
+              <Checkmark>
+                <FeedbackIcon
+                  copy={
+                    Object {
+                      "a11yText": "",
+                    }
                   }
-                }
-                forwardedRef={null}
-                iSize={16}
-                symbol="checkmark"
-                variant="inverted"
-              >
-                <i
-                  aria-hidden="true"
-                  className="c2"
-                />
-              </StyledComponent>
-            </Icon__StyledIcon>
-          </Icon>
-        </DecorativeIcon>
+                  copyDictionary={Object {}}
+                  height={16}
+                  optionalText={true}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <FeedbackIcon__StyledSVG
+                    aria-hidden={true}
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <StyledComponent
+                      aria-hidden={true}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "FeedbackIcon__StyledSVG",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                          "target": "svg",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      height="1rem"
+                      role="img"
+                      viewBox="0 0 16 16"
+                      width="1rem"
+                    >
+                      <svg
+                        aria-hidden={true}
+                        className="c3"
+                        height="1rem"
+                        role="img"
+                        viewBox="0 0 16 16"
+                        width="1rem"
+                      >
+                        <path
+                          d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                          fill="#2B8000"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </StyledComponent>
+                  </FeedbackIcon__StyledSVG>
+                </FeedbackIcon>
+              </Checkmark>
+            </span>
+          </StyledComponent>
+        </Checkbox__CheckmarkContainer>
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -543,46 +567,50 @@ Array [
   display: none;
 }
 
-.c5:focus ~ .c3 > div > .c0 {
+.c6:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c5:checked ~ .c3 > div > .c0 {
+.c6:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c3 > div > .c0 > i {
+.c6:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c3 > div > .c0 {
+.c6:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c4 div > .c0 {
+.c5 div > .c0 {
   border-color: #c12335;
 }
 
-.c5:focus ~ .c4 > div > .c0 {
+.c6:focus ~ .c5 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c5:checked ~ .c4 > div > .c0 {
+.c6:checked ~ .c5 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c4 > div > .c0 > i {
+.c6:checked ~ .c5 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c4 > div > .c0 {
+.c6:disabled ~ .c5 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <StyledComponent
@@ -634,84 +662,119 @@ Array [
       className="c0 c1"
       data-testid="fake-input"
     >
-      <DecorativeIcon
-        size={16}
-        symbol="checkmark"
-        variant="inverted"
+      <Checkbox__CheckmarkContainer
+        id="checkmark"
       >
-        <Icon
-          aria-hidden="true"
-          size={16}
-          symbol="checkmark"
-          variant="inverted"
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                "isStatic": true,
+                "lastClassName": "c2",
+                "rules": Array [
+                  "& > svg {",
+                  "& > path {",
+                  "fill: #fff;",
+                  "}",
+                  "}",
+                ],
+              },
+              "displayName": "Checkbox__CheckmarkContainer",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          id="checkmark"
         >
-          <Icon__StyledIcon
-            aria-hidden="true"
-            iSize={16}
-            symbol="checkmark"
-            variant="inverted"
+          <span
+            className="c2"
+            id="checkmark"
           >
-            <StyledComponent
-              aria-hidden="true"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      [Function],
-                      [Function],
-                    ],
-                  },
-                  "displayName": "Icon__StyledIcon",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                  "target": "i",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
+            <Checkmark>
+              <FeedbackIcon
+                copy={
+                  Object {
+                    "a11yText": "",
+                  }
                 }
-              }
-              forwardedRef={null}
-              iSize={16}
-              symbol="checkmark"
-              variant="inverted"
-            >
-              <i
-                aria-hidden="true"
-                className="c2"
-              />
-            </StyledComponent>
-          </Icon__StyledIcon>
-        </Icon>
-      </DecorativeIcon>
+                copyDictionary={Object {}}
+                height={16}
+                optionalText={true}
+                viewBox="0 0 16 16"
+                width={16}
+              >
+                <FeedbackIcon__StyledSVG
+                  aria-hidden={true}
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <StyledComponent
+                    aria-hidden={true}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                          "isStatic": false,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            [Function],
+                          ],
+                        },
+                        "displayName": "FeedbackIcon__StyledSVG",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                        "target": "svg",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <svg
+                      aria-hidden={true}
+                      className="c3"
+                      height="1rem"
+                      role="img"
+                      viewBox="0 0 16 16"
+                      width="1rem"
+                    >
+                      <path
+                        d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                        fill="#2B8000"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                  </StyledComponent>
+                </FeedbackIcon__StyledSVG>
+              </FeedbackIcon>
+            </Checkmark>
+          </span>
+        </StyledComponent>
+      </Checkbox__CheckmarkContainer>
     </span>
   </StyledComponent>,
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -748,108 +811,164 @@ Array [
   display: none;
 }
 
-.c5:focus ~ .c3 > div > .c0 {
+.c6:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c5:checked ~ .c3 > div > .c0 {
+.c6:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c3 > div > .c0 > i {
+.c6:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c3 > div > .c0 {
+.c6:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c4 div > .c0 {
+.c5 div > .c0 {
   border-color: #c12335;
 }
 
-.c5:focus ~ .c4 > div > .c0 {
+.c6:focus ~ .c5 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c5:checked ~ .c4 > div > .c0 {
+.c6:checked ~ .c5 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c4 > div > .c0 > i {
+.c6:checked ~ .c5 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c4 > div > .c0 {
+.c6:disabled ~ .c5 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <span
     className="c0 c1"
     data-testid="fake-input"
   >
-    <DecorativeIcon
-      size={16}
-      symbol="checkmark"
-      variant="inverted"
+    <Checkbox__CheckmarkContainer
+      id="checkmark"
     >
-      <Icon
-        aria-hidden="true"
-        size={16}
-        symbol="checkmark"
-        variant="inverted"
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+              "isStatic": true,
+              "lastClassName": "c2",
+              "rules": Array [
+                "& > svg {",
+                "& > path {",
+                "fill: #fff;",
+                "}",
+                "}",
+              ],
+            },
+            "displayName": "Checkbox__CheckmarkContainer",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        id="checkmark"
       >
-        <Icon__StyledIcon
-          aria-hidden="true"
-          iSize={16}
-          symbol="checkmark"
-          variant="inverted"
+        <span
+          className="c2"
+          id="checkmark"
         >
-          <StyledComponent
-            aria-hidden="true"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    [Function],
-                    [Function],
-                    [Function],
-                  ],
-                },
-                "displayName": "Icon__StyledIcon",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                "target": "i",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+          <Checkmark>
+            <FeedbackIcon
+              copy={
+                Object {
+                  "a11yText": "",
+                }
               }
-            }
-            forwardedRef={null}
-            iSize={16}
-            symbol="checkmark"
-            variant="inverted"
-          >
-            <i
-              aria-hidden="true"
-              className="c2"
-            />
-          </StyledComponent>
-        </Icon__StyledIcon>
-      </Icon>
-    </DecorativeIcon>
+              copyDictionary={Object {}}
+              height={16}
+              optionalText={true}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <FeedbackIcon__StyledSVG
+                aria-hidden={true}
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <StyledComponent
+                  aria-hidden={true}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                        "isStatic": false,
+                        "lastClassName": "c3",
+                        "rules": Array [
+                          [Function],
+                        ],
+                      },
+                      "displayName": "FeedbackIcon__StyledSVG",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                      "target": "svg",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <svg
+                    aria-hidden={true}
+                    className="c3"
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <path
+                      d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                      fill="#2B8000"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </StyledComponent>
+              </FeedbackIcon__StyledSVG>
+            </FeedbackIcon>
+          </Checkmark>
+        </span>
+      </StyledComponent>
+    </Checkbox__CheckmarkContainer>
   </span>,
 ]
 `;
@@ -948,26 +1067,9 @@ exports[`Checkbox disabled can be disabled and checked 1`] = `
 
 exports[`Checkbox disabled can be disabled and checked 2`] = `
 Array [
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -1004,46 +1106,50 @@ Array [
   display: none;
 }
 
-.c5:focus ~ .c3 > div > .c0 {
+.c6:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c5:checked ~ .c3 > div > .c0 {
+.c6:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c3 > div > .c0 > i {
+.c6:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c3 > div > .c0 {
+.c6:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c4 div > .c0 {
+.c5 div > .c0 {
   border-color: #c12335;
 }
 
-.c5:focus ~ .c4 > div > .c0 {
+.c6:focus ~ .c5 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c5:checked ~ .c4 > div > .c0 {
+.c6:checked ~ .c5 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c4 > div > .c0 > i {
+.c6:checked ~ .c5 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c4 > div > .c0 {
+.c6:disabled ~ .c5 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <Checkbox__FakeCheckbox
@@ -1098,85 +1204,120 @@ Array [
         className="c0 c1"
         data-testid="fake-input"
       >
-        <DecorativeIcon
-          size={16}
-          symbol="checkmark"
-          variant="inverted"
+        <Checkbox__CheckmarkContainer
+          id="checkmark"
         >
-          <Icon
-            aria-hidden="true"
-            size={16}
-            symbol="checkmark"
-            variant="inverted"
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                  "isStatic": true,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "& > svg {",
+                    "& > path {",
+                    "fill: #fff;",
+                    "}",
+                    "}",
+                  ],
+                },
+                "displayName": "Checkbox__CheckmarkContainer",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            id="checkmark"
           >
-            <Icon__StyledIcon
-              aria-hidden="true"
-              iSize={16}
-              symbol="checkmark"
-              variant="inverted"
+            <span
+              className="c2"
+              id="checkmark"
             >
-              <StyledComponent
-                aria-hidden="true"
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                      "isStatic": false,
-                      "lastClassName": "c2",
-                      "rules": Array [
-                        [Function],
-                        [Function],
-                        [Function],
-                      ],
-                    },
-                    "displayName": "Icon__StyledIcon",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                    "target": "i",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
+              <Checkmark>
+                <FeedbackIcon
+                  copy={
+                    Object {
+                      "a11yText": "",
+                    }
                   }
-                }
-                forwardedRef={null}
-                iSize={16}
-                symbol="checkmark"
-                variant="inverted"
-              >
-                <i
-                  aria-hidden="true"
-                  className="c2"
-                />
-              </StyledComponent>
-            </Icon__StyledIcon>
-          </Icon>
-        </DecorativeIcon>
+                  copyDictionary={Object {}}
+                  height={16}
+                  optionalText={true}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <FeedbackIcon__StyledSVG
+                    aria-hidden={true}
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <StyledComponent
+                      aria-hidden={true}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "FeedbackIcon__StyledSVG",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                          "target": "svg",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      height="1rem"
+                      role="img"
+                      viewBox="0 0 16 16"
+                      width="1rem"
+                    >
+                      <svg
+                        aria-hidden={true}
+                        className="c3"
+                        height="1rem"
+                        role="img"
+                        viewBox="0 0 16 16"
+                        width="1rem"
+                      >
+                        <path
+                          d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                          fill="#2B8000"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </StyledComponent>
+                  </FeedbackIcon__StyledSVG>
+                </FeedbackIcon>
+              </Checkmark>
+            </span>
+          </StyledComponent>
+        </Checkbox__CheckmarkContainer>
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -1213,46 +1354,50 @@ Array [
   display: none;
 }
 
-.c5:focus ~ .c3 > div > .c0 {
+.c6:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c5:checked ~ .c3 > div > .c0 {
+.c6:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c3 > div > .c0 > i {
+.c6:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c3 > div > .c0 {
+.c6:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c4 div > .c0 {
+.c5 div > .c0 {
   border-color: #c12335;
 }
 
-.c5:focus ~ .c4 > div > .c0 {
+.c6:focus ~ .c5 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c5:checked ~ .c4 > div > .c0 {
+.c6:checked ~ .c5 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c4 > div > .c0 > i {
+.c6:checked ~ .c5 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c4 > div > .c0 {
+.c6:disabled ~ .c5 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <StyledComponent
@@ -1304,84 +1449,119 @@ Array [
       className="c0 c1"
       data-testid="fake-input"
     >
-      <DecorativeIcon
-        size={16}
-        symbol="checkmark"
-        variant="inverted"
+      <Checkbox__CheckmarkContainer
+        id="checkmark"
       >
-        <Icon
-          aria-hidden="true"
-          size={16}
-          symbol="checkmark"
-          variant="inverted"
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                "isStatic": true,
+                "lastClassName": "c2",
+                "rules": Array [
+                  "& > svg {",
+                  "& > path {",
+                  "fill: #fff;",
+                  "}",
+                  "}",
+                ],
+              },
+              "displayName": "Checkbox__CheckmarkContainer",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          id="checkmark"
         >
-          <Icon__StyledIcon
-            aria-hidden="true"
-            iSize={16}
-            symbol="checkmark"
-            variant="inverted"
+          <span
+            className="c2"
+            id="checkmark"
           >
-            <StyledComponent
-              aria-hidden="true"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      [Function],
-                      [Function],
-                    ],
-                  },
-                  "displayName": "Icon__StyledIcon",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                  "target": "i",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
+            <Checkmark>
+              <FeedbackIcon
+                copy={
+                  Object {
+                    "a11yText": "",
+                  }
                 }
-              }
-              forwardedRef={null}
-              iSize={16}
-              symbol="checkmark"
-              variant="inverted"
-            >
-              <i
-                aria-hidden="true"
-                className="c2"
-              />
-            </StyledComponent>
-          </Icon__StyledIcon>
-        </Icon>
-      </DecorativeIcon>
+                copyDictionary={Object {}}
+                height={16}
+                optionalText={true}
+                viewBox="0 0 16 16"
+                width={16}
+              >
+                <FeedbackIcon__StyledSVG
+                  aria-hidden={true}
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <StyledComponent
+                    aria-hidden={true}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                          "isStatic": false,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            [Function],
+                          ],
+                        },
+                        "displayName": "FeedbackIcon__StyledSVG",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                        "target": "svg",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <svg
+                      aria-hidden={true}
+                      className="c3"
+                      height="1rem"
+                      role="img"
+                      viewBox="0 0 16 16"
+                      width="1rem"
+                    >
+                      <path
+                        d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                        fill="#2B8000"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                  </StyledComponent>
+                </FeedbackIcon__StyledSVG>
+              </FeedbackIcon>
+            </Checkmark>
+          </span>
+        </StyledComponent>
+      </Checkbox__CheckmarkContainer>
     </span>
   </StyledComponent>,
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -1418,108 +1598,164 @@ Array [
   display: none;
 }
 
-.c5:focus ~ .c3 > div > .c0 {
+.c6:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c5:checked ~ .c3 > div > .c0 {
+.c6:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c3 > div > .c0 > i {
+.c6:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c3 > div > .c0 {
+.c6:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c4 div > .c0 {
+.c5 div > .c0 {
   border-color: #c12335;
 }
 
-.c5:focus ~ .c4 > div > .c0 {
+.c6:focus ~ .c5 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c5:checked ~ .c4 > div > .c0 {
+.c6:checked ~ .c5 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c4 > div > .c0 > i {
+.c6:checked ~ .c5 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c4 > div > .c0 {
+.c6:disabled ~ .c5 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <span
     className="c0 c1"
     data-testid="fake-input"
   >
-    <DecorativeIcon
-      size={16}
-      symbol="checkmark"
-      variant="inverted"
+    <Checkbox__CheckmarkContainer
+      id="checkmark"
     >
-      <Icon
-        aria-hidden="true"
-        size={16}
-        symbol="checkmark"
-        variant="inverted"
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+              "isStatic": true,
+              "lastClassName": "c2",
+              "rules": Array [
+                "& > svg {",
+                "& > path {",
+                "fill: #fff;",
+                "}",
+                "}",
+              ],
+            },
+            "displayName": "Checkbox__CheckmarkContainer",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        id="checkmark"
       >
-        <Icon__StyledIcon
-          aria-hidden="true"
-          iSize={16}
-          symbol="checkmark"
-          variant="inverted"
+        <span
+          className="c2"
+          id="checkmark"
         >
-          <StyledComponent
-            aria-hidden="true"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    [Function],
-                    [Function],
-                    [Function],
-                  ],
-                },
-                "displayName": "Icon__StyledIcon",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                "target": "i",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+          <Checkmark>
+            <FeedbackIcon
+              copy={
+                Object {
+                  "a11yText": "",
+                }
               }
-            }
-            forwardedRef={null}
-            iSize={16}
-            symbol="checkmark"
-            variant="inverted"
-          >
-            <i
-              aria-hidden="true"
-              className="c2"
-            />
-          </StyledComponent>
-        </Icon__StyledIcon>
-      </Icon>
-    </DecorativeIcon>
+              copyDictionary={Object {}}
+              height={16}
+              optionalText={true}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <FeedbackIcon__StyledSVG
+                aria-hidden={true}
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <StyledComponent
+                  aria-hidden={true}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                        "isStatic": false,
+                        "lastClassName": "c3",
+                        "rules": Array [
+                          [Function],
+                        ],
+                      },
+                      "displayName": "FeedbackIcon__StyledSVG",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                      "target": "svg",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <svg
+                    aria-hidden={true}
+                    className="c3"
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <path
+                      d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                      fill="#2B8000"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </StyledComponent>
+              </FeedbackIcon__StyledSVG>
+            </FeedbackIcon>
+          </Checkmark>
+        </span>
+      </StyledComponent>
+    </Checkbox__CheckmarkContainer>
   </span>,
 ]
 `;
@@ -1622,26 +1858,9 @@ exports[`Checkbox error can have an error feedback state 1`] = `
 
 exports[`Checkbox error can have an error feedback state 2`] = `
 Array [
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -1678,46 +1897,50 @@ Array [
   display: none;
 }
 
-.c5:focus ~ .c3 > div > .c0 {
+.c6:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c5:checked ~ .c3 > div > .c0 {
+.c6:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c3 > div > .c0 > i {
+.c6:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c3 > div > .c0 {
+.c6:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c4 div > .c0 {
+.c5 div > .c0 {
   border-color: #c12335;
 }
 
-.c5:focus ~ .c4 > div > .c0 {
+.c6:focus ~ .c5 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c5:checked ~ .c4 > div > .c0 {
+.c6:checked ~ .c5 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c4 > div > .c0 > i {
+.c6:checked ~ .c5 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c4 > div > .c0 {
+.c6:disabled ~ .c5 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <Checkbox__FakeCheckbox
@@ -1772,85 +1995,120 @@ Array [
         className="c0 c1"
         data-testid="fake-input"
       >
-        <DecorativeIcon
-          size={16}
-          symbol="checkmark"
-          variant="inverted"
+        <Checkbox__CheckmarkContainer
+          id="checkmark"
         >
-          <Icon
-            aria-hidden="true"
-            size={16}
-            symbol="checkmark"
-            variant="inverted"
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                  "isStatic": true,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "& > svg {",
+                    "& > path {",
+                    "fill: #fff;",
+                    "}",
+                    "}",
+                  ],
+                },
+                "displayName": "Checkbox__CheckmarkContainer",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            id="checkmark"
           >
-            <Icon__StyledIcon
-              aria-hidden="true"
-              iSize={16}
-              symbol="checkmark"
-              variant="inverted"
+            <span
+              className="c2"
+              id="checkmark"
             >
-              <StyledComponent
-                aria-hidden="true"
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                      "isStatic": false,
-                      "lastClassName": "c2",
-                      "rules": Array [
-                        [Function],
-                        [Function],
-                        [Function],
-                      ],
-                    },
-                    "displayName": "Icon__StyledIcon",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                    "target": "i",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
+              <Checkmark>
+                <FeedbackIcon
+                  copy={
+                    Object {
+                      "a11yText": "",
+                    }
                   }
-                }
-                forwardedRef={null}
-                iSize={16}
-                symbol="checkmark"
-                variant="inverted"
-              >
-                <i
-                  aria-hidden="true"
-                  className="c2"
-                />
-              </StyledComponent>
-            </Icon__StyledIcon>
-          </Icon>
-        </DecorativeIcon>
+                  copyDictionary={Object {}}
+                  height={16}
+                  optionalText={true}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <FeedbackIcon__StyledSVG
+                    aria-hidden={true}
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <StyledComponent
+                      aria-hidden={true}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "FeedbackIcon__StyledSVG",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                          "target": "svg",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      height="1rem"
+                      role="img"
+                      viewBox="0 0 16 16"
+                      width="1rem"
+                    >
+                      <svg
+                        aria-hidden={true}
+                        className="c3"
+                        height="1rem"
+                        role="img"
+                        viewBox="0 0 16 16"
+                        width="1rem"
+                      >
+                        <path
+                          d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                          fill="#2B8000"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </StyledComponent>
+                  </FeedbackIcon__StyledSVG>
+                </FeedbackIcon>
+              </Checkmark>
+            </span>
+          </StyledComponent>
+        </Checkbox__CheckmarkContainer>
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -1887,46 +2145,50 @@ Array [
   display: none;
 }
 
-.c5:focus ~ .c3 > div > .c0 {
+.c6:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c5:checked ~ .c3 > div > .c0 {
+.c6:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c3 > div > .c0 > i {
+.c6:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c3 > div > .c0 {
+.c6:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c4 div > .c0 {
+.c5 div > .c0 {
   border-color: #c12335;
 }
 
-.c5:focus ~ .c4 > div > .c0 {
+.c6:focus ~ .c5 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c5:checked ~ .c4 > div > .c0 {
+.c6:checked ~ .c5 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c4 > div > .c0 > i {
+.c6:checked ~ .c5 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c4 > div > .c0 {
+.c6:disabled ~ .c5 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <StyledComponent
@@ -1978,84 +2240,119 @@ Array [
       className="c0 c1"
       data-testid="fake-input"
     >
-      <DecorativeIcon
-        size={16}
-        symbol="checkmark"
-        variant="inverted"
+      <Checkbox__CheckmarkContainer
+        id="checkmark"
       >
-        <Icon
-          aria-hidden="true"
-          size={16}
-          symbol="checkmark"
-          variant="inverted"
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                "isStatic": true,
+                "lastClassName": "c2",
+                "rules": Array [
+                  "& > svg {",
+                  "& > path {",
+                  "fill: #fff;",
+                  "}",
+                  "}",
+                ],
+              },
+              "displayName": "Checkbox__CheckmarkContainer",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          id="checkmark"
         >
-          <Icon__StyledIcon
-            aria-hidden="true"
-            iSize={16}
-            symbol="checkmark"
-            variant="inverted"
+          <span
+            className="c2"
+            id="checkmark"
           >
-            <StyledComponent
-              aria-hidden="true"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      [Function],
-                      [Function],
-                    ],
-                  },
-                  "displayName": "Icon__StyledIcon",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                  "target": "i",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
+            <Checkmark>
+              <FeedbackIcon
+                copy={
+                  Object {
+                    "a11yText": "",
+                  }
                 }
-              }
-              forwardedRef={null}
-              iSize={16}
-              symbol="checkmark"
-              variant="inverted"
-            >
-              <i
-                aria-hidden="true"
-                className="c2"
-              />
-            </StyledComponent>
-          </Icon__StyledIcon>
-        </Icon>
-      </DecorativeIcon>
+                copyDictionary={Object {}}
+                height={16}
+                optionalText={true}
+                viewBox="0 0 16 16"
+                width={16}
+              >
+                <FeedbackIcon__StyledSVG
+                  aria-hidden={true}
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <StyledComponent
+                    aria-hidden={true}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                          "isStatic": false,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            [Function],
+                          ],
+                        },
+                        "displayName": "FeedbackIcon__StyledSVG",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                        "target": "svg",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <svg
+                      aria-hidden={true}
+                      className="c3"
+                      height="1rem"
+                      role="img"
+                      viewBox="0 0 16 16"
+                      width="1rem"
+                    >
+                      <path
+                        d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                        fill="#2B8000"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                  </StyledComponent>
+                </FeedbackIcon__StyledSVG>
+              </FeedbackIcon>
+            </Checkmark>
+          </span>
+        </StyledComponent>
+      </Checkbox__CheckmarkContainer>
     </span>
   </StyledComponent>,
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -2092,108 +2389,164 @@ Array [
   display: none;
 }
 
-.c5:focus ~ .c3 > div > .c0 {
+.c6:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c5:checked ~ .c3 > div > .c0 {
+.c6:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c3 > div > .c0 > i {
+.c6:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c3 > div > .c0 {
+.c6:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c4 div > .c0 {
+.c5 div > .c0 {
   border-color: #c12335;
 }
 
-.c5:focus ~ .c4 > div > .c0 {
+.c6:focus ~ .c5 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c5:checked ~ .c4 > div > .c0 {
+.c6:checked ~ .c5 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c4 > div > .c0 > i {
+.c6:checked ~ .c5 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c4 > div > .c0 {
+.c6:disabled ~ .c5 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <span
     className="c0 c1"
     data-testid="fake-input"
   >
-    <DecorativeIcon
-      size={16}
-      symbol="checkmark"
-      variant="inverted"
+    <Checkbox__CheckmarkContainer
+      id="checkmark"
     >
-      <Icon
-        aria-hidden="true"
-        size={16}
-        symbol="checkmark"
-        variant="inverted"
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+              "isStatic": true,
+              "lastClassName": "c2",
+              "rules": Array [
+                "& > svg {",
+                "& > path {",
+                "fill: #fff;",
+                "}",
+                "}",
+              ],
+            },
+            "displayName": "Checkbox__CheckmarkContainer",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        id="checkmark"
       >
-        <Icon__StyledIcon
-          aria-hidden="true"
-          iSize={16}
-          symbol="checkmark"
-          variant="inverted"
+        <span
+          className="c2"
+          id="checkmark"
         >
-          <StyledComponent
-            aria-hidden="true"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    [Function],
-                    [Function],
-                    [Function],
-                  ],
-                },
-                "displayName": "Icon__StyledIcon",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                "target": "i",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+          <Checkmark>
+            <FeedbackIcon
+              copy={
+                Object {
+                  "a11yText": "",
+                }
               }
-            }
-            forwardedRef={null}
-            iSize={16}
-            symbol="checkmark"
-            variant="inverted"
-          >
-            <i
-              aria-hidden="true"
-              className="c2"
-            />
-          </StyledComponent>
-        </Icon__StyledIcon>
-      </Icon>
-    </DecorativeIcon>
+              copyDictionary={Object {}}
+              height={16}
+              optionalText={true}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <FeedbackIcon__StyledSVG
+                aria-hidden={true}
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <StyledComponent
+                  aria-hidden={true}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                        "isStatic": false,
+                        "lastClassName": "c3",
+                        "rules": Array [
+                          [Function],
+                        ],
+                      },
+                      "displayName": "FeedbackIcon__StyledSVG",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                      "target": "svg",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <svg
+                    aria-hidden={true}
+                    className="c3"
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <path
+                      d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                      fill="#2B8000"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </StyledComponent>
+              </FeedbackIcon__StyledSVG>
+            </FeedbackIcon>
+          </Checkmark>
+        </span>
+      </StyledComponent>
+    </Checkbox__CheckmarkContainer>
   </span>,
 ]
 `;
@@ -2296,26 +2649,9 @@ exports[`Checkbox error can have an error message 1`] = `
 
 exports[`Checkbox error can have an error message 2`] = `
 Array [
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -2352,46 +2688,50 @@ Array [
   display: none;
 }
 
-.c5:focus ~ .c3 > div > .c0 {
+.c6:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c5:checked ~ .c3 > div > .c0 {
+.c6:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c3 > div > .c0 > i {
+.c6:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c3 > div > .c0 {
+.c6:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c4 div > .c0 {
+.c5 div > .c0 {
   border-color: #c12335;
 }
 
-.c5:focus ~ .c4 > div > .c0 {
+.c6:focus ~ .c5 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c5:checked ~ .c4 > div > .c0 {
+.c6:checked ~ .c5 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c4 > div > .c0 > i {
+.c6:checked ~ .c5 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c4 > div > .c0 {
+.c6:disabled ~ .c5 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <Checkbox__FakeCheckbox
@@ -2446,85 +2786,120 @@ Array [
         className="c0 c1"
         data-testid="fake-input"
       >
-        <DecorativeIcon
-          size={16}
-          symbol="checkmark"
-          variant="inverted"
+        <Checkbox__CheckmarkContainer
+          id="checkmark"
         >
-          <Icon
-            aria-hidden="true"
-            size={16}
-            symbol="checkmark"
-            variant="inverted"
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                  "isStatic": true,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "& > svg {",
+                    "& > path {",
+                    "fill: #fff;",
+                    "}",
+                    "}",
+                  ],
+                },
+                "displayName": "Checkbox__CheckmarkContainer",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            id="checkmark"
           >
-            <Icon__StyledIcon
-              aria-hidden="true"
-              iSize={16}
-              symbol="checkmark"
-              variant="inverted"
+            <span
+              className="c2"
+              id="checkmark"
             >
-              <StyledComponent
-                aria-hidden="true"
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                      "isStatic": false,
-                      "lastClassName": "c2",
-                      "rules": Array [
-                        [Function],
-                        [Function],
-                        [Function],
-                      ],
-                    },
-                    "displayName": "Icon__StyledIcon",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                    "target": "i",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
+              <Checkmark>
+                <FeedbackIcon
+                  copy={
+                    Object {
+                      "a11yText": "",
+                    }
                   }
-                }
-                forwardedRef={null}
-                iSize={16}
-                symbol="checkmark"
-                variant="inverted"
-              >
-                <i
-                  aria-hidden="true"
-                  className="c2"
-                />
-              </StyledComponent>
-            </Icon__StyledIcon>
-          </Icon>
-        </DecorativeIcon>
+                  copyDictionary={Object {}}
+                  height={16}
+                  optionalText={true}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <FeedbackIcon__StyledSVG
+                    aria-hidden={true}
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <StyledComponent
+                      aria-hidden={true}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "FeedbackIcon__StyledSVG",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                          "target": "svg",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      height="1rem"
+                      role="img"
+                      viewBox="0 0 16 16"
+                      width="1rem"
+                    >
+                      <svg
+                        aria-hidden={true}
+                        className="c3"
+                        height="1rem"
+                        role="img"
+                        viewBox="0 0 16 16"
+                        width="1rem"
+                      >
+                        <path
+                          d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                          fill="#2B8000"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </StyledComponent>
+                  </FeedbackIcon__StyledSVG>
+                </FeedbackIcon>
+              </Checkmark>
+            </span>
+          </StyledComponent>
+        </Checkbox__CheckmarkContainer>
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -2561,46 +2936,50 @@ Array [
   display: none;
 }
 
-.c5:focus ~ .c3 > div > .c0 {
+.c6:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c5:checked ~ .c3 > div > .c0 {
+.c6:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c3 > div > .c0 > i {
+.c6:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c3 > div > .c0 {
+.c6:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c4 div > .c0 {
+.c5 div > .c0 {
   border-color: #c12335;
 }
 
-.c5:focus ~ .c4 > div > .c0 {
+.c6:focus ~ .c5 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c5:checked ~ .c4 > div > .c0 {
+.c6:checked ~ .c5 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c4 > div > .c0 > i {
+.c6:checked ~ .c5 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c4 > div > .c0 {
+.c6:disabled ~ .c5 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <StyledComponent
@@ -2652,84 +3031,119 @@ Array [
       className="c0 c1"
       data-testid="fake-input"
     >
-      <DecorativeIcon
-        size={16}
-        symbol="checkmark"
-        variant="inverted"
+      <Checkbox__CheckmarkContainer
+        id="checkmark"
       >
-        <Icon
-          aria-hidden="true"
-          size={16}
-          symbol="checkmark"
-          variant="inverted"
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                "isStatic": true,
+                "lastClassName": "c2",
+                "rules": Array [
+                  "& > svg {",
+                  "& > path {",
+                  "fill: #fff;",
+                  "}",
+                  "}",
+                ],
+              },
+              "displayName": "Checkbox__CheckmarkContainer",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          id="checkmark"
         >
-          <Icon__StyledIcon
-            aria-hidden="true"
-            iSize={16}
-            symbol="checkmark"
-            variant="inverted"
+          <span
+            className="c2"
+            id="checkmark"
           >
-            <StyledComponent
-              aria-hidden="true"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      [Function],
-                      [Function],
-                    ],
-                  },
-                  "displayName": "Icon__StyledIcon",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                  "target": "i",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
+            <Checkmark>
+              <FeedbackIcon
+                copy={
+                  Object {
+                    "a11yText": "",
+                  }
                 }
-              }
-              forwardedRef={null}
-              iSize={16}
-              symbol="checkmark"
-              variant="inverted"
-            >
-              <i
-                aria-hidden="true"
-                className="c2"
-              />
-            </StyledComponent>
-          </Icon__StyledIcon>
-        </Icon>
-      </DecorativeIcon>
+                copyDictionary={Object {}}
+                height={16}
+                optionalText={true}
+                viewBox="0 0 16 16"
+                width={16}
+              >
+                <FeedbackIcon__StyledSVG
+                  aria-hidden={true}
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <StyledComponent
+                    aria-hidden={true}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                          "isStatic": false,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            [Function],
+                          ],
+                        },
+                        "displayName": "FeedbackIcon__StyledSVG",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                        "target": "svg",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <svg
+                      aria-hidden={true}
+                      className="c3"
+                      height="1rem"
+                      role="img"
+                      viewBox="0 0 16 16"
+                      width="1rem"
+                    >
+                      <path
+                        d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                        fill="#2B8000"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                  </StyledComponent>
+                </FeedbackIcon__StyledSVG>
+              </FeedbackIcon>
+            </Checkmark>
+          </span>
+        </StyledComponent>
+      </Checkbox__CheckmarkContainer>
     </span>
   </StyledComponent>,
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -2766,108 +3180,164 @@ Array [
   display: none;
 }
 
-.c5:focus ~ .c3 > div > .c0 {
+.c6:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c5:checked ~ .c3 > div > .c0 {
+.c6:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c3 > div > .c0 > i {
+.c6:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c3 > div > .c0 {
+.c6:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c4 div > .c0 {
+.c5 div > .c0 {
   border-color: #c12335;
 }
 
-.c5:focus ~ .c4 > div > .c0 {
+.c6:focus ~ .c5 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c5:checked ~ .c4 > div > .c0 {
+.c6:checked ~ .c5 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c4 > div > .c0 > i {
+.c6:checked ~ .c5 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c4 > div > .c0 {
+.c6:disabled ~ .c5 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <span
     className="c0 c1"
     data-testid="fake-input"
   >
-    <DecorativeIcon
-      size={16}
-      symbol="checkmark"
-      variant="inverted"
+    <Checkbox__CheckmarkContainer
+      id="checkmark"
     >
-      <Icon
-        aria-hidden="true"
-        size={16}
-        symbol="checkmark"
-        variant="inverted"
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+              "isStatic": true,
+              "lastClassName": "c2",
+              "rules": Array [
+                "& > svg {",
+                "& > path {",
+                "fill: #fff;",
+                "}",
+                "}",
+              ],
+            },
+            "displayName": "Checkbox__CheckmarkContainer",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        id="checkmark"
       >
-        <Icon__StyledIcon
-          aria-hidden="true"
-          iSize={16}
-          symbol="checkmark"
-          variant="inverted"
+        <span
+          className="c2"
+          id="checkmark"
         >
-          <StyledComponent
-            aria-hidden="true"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    [Function],
-                    [Function],
-                    [Function],
-                  ],
-                },
-                "displayName": "Icon__StyledIcon",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                "target": "i",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+          <Checkmark>
+            <FeedbackIcon
+              copy={
+                Object {
+                  "a11yText": "",
+                }
               }
-            }
-            forwardedRef={null}
-            iSize={16}
-            symbol="checkmark"
-            variant="inverted"
-          >
-            <i
-              aria-hidden="true"
-              className="c2"
-            />
-          </StyledComponent>
-        </Icon__StyledIcon>
-      </Icon>
-    </DecorativeIcon>
+              copyDictionary={Object {}}
+              height={16}
+              optionalText={true}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <FeedbackIcon__StyledSVG
+                aria-hidden={true}
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <StyledComponent
+                  aria-hidden={true}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                        "isStatic": false,
+                        "lastClassName": "c3",
+                        "rules": Array [
+                          [Function],
+                        ],
+                      },
+                      "displayName": "FeedbackIcon__StyledSVG",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                      "target": "svg",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <svg
+                    aria-hidden={true}
+                    className="c3"
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <path
+                      d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                      fill="#2B8000"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </StyledComponent>
+              </FeedbackIcon__StyledSVG>
+            </FeedbackIcon>
+          </Checkmark>
+        </span>
+      </StyledComponent>
+    </Checkbox__CheckmarkContainer>
   </span>,
 ]
 `;
@@ -3093,26 +3563,9 @@ exports[`Checkbox error can have an error message 3`] = `
 
 exports[`Checkbox error does not appear as an error when it is checked 1`] = `
 Array [
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -3149,46 +3602,50 @@ Array [
   display: none;
 }
 
-.c5:focus ~ .c3 > div > .c0 {
+.c6:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c5:checked ~ .c3 > div > .c0 {
+.c6:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c3 > div > .c0 > i {
+.c6:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c3 > div > .c0 {
+.c6:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c4 div > .c0 {
+.c5 div > .c0 {
   border-color: #c12335;
 }
 
-.c5:focus ~ .c4 > div > .c0 {
+.c6:focus ~ .c5 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c5:checked ~ .c4 > div > .c0 {
+.c6:checked ~ .c5 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c4 > div > .c0 > i {
+.c6:checked ~ .c5 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c4 > div > .c0 {
+.c6:disabled ~ .c5 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <Checkbox__FakeCheckbox
@@ -3243,85 +3700,120 @@ Array [
         className="c0 c1"
         data-testid="fake-input"
       >
-        <DecorativeIcon
-          size={16}
-          symbol="checkmark"
-          variant="inverted"
+        <Checkbox__CheckmarkContainer
+          id="checkmark"
         >
-          <Icon
-            aria-hidden="true"
-            size={16}
-            symbol="checkmark"
-            variant="inverted"
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                  "isStatic": true,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "& > svg {",
+                    "& > path {",
+                    "fill: #fff;",
+                    "}",
+                    "}",
+                  ],
+                },
+                "displayName": "Checkbox__CheckmarkContainer",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            id="checkmark"
           >
-            <Icon__StyledIcon
-              aria-hidden="true"
-              iSize={16}
-              symbol="checkmark"
-              variant="inverted"
+            <span
+              className="c2"
+              id="checkmark"
             >
-              <StyledComponent
-                aria-hidden="true"
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                      "isStatic": false,
-                      "lastClassName": "c2",
-                      "rules": Array [
-                        [Function],
-                        [Function],
-                        [Function],
-                      ],
-                    },
-                    "displayName": "Icon__StyledIcon",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                    "target": "i",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
+              <Checkmark>
+                <FeedbackIcon
+                  copy={
+                    Object {
+                      "a11yText": "",
+                    }
                   }
-                }
-                forwardedRef={null}
-                iSize={16}
-                symbol="checkmark"
-                variant="inverted"
-              >
-                <i
-                  aria-hidden="true"
-                  className="c2"
-                />
-              </StyledComponent>
-            </Icon__StyledIcon>
-          </Icon>
-        </DecorativeIcon>
+                  copyDictionary={Object {}}
+                  height={16}
+                  optionalText={true}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <FeedbackIcon__StyledSVG
+                    aria-hidden={true}
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <StyledComponent
+                      aria-hidden={true}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "FeedbackIcon__StyledSVG",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                          "target": "svg",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      height="1rem"
+                      role="img"
+                      viewBox="0 0 16 16"
+                      width="1rem"
+                    >
+                      <svg
+                        aria-hidden={true}
+                        className="c3"
+                        height="1rem"
+                        role="img"
+                        viewBox="0 0 16 16"
+                        width="1rem"
+                      >
+                        <path
+                          d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                          fill="#2B8000"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </StyledComponent>
+                  </FeedbackIcon__StyledSVG>
+                </FeedbackIcon>
+              </Checkmark>
+            </span>
+          </StyledComponent>
+        </Checkbox__CheckmarkContainer>
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -3358,46 +3850,50 @@ Array [
   display: none;
 }
 
-.c5:focus ~ .c3 > div > .c0 {
+.c6:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c5:checked ~ .c3 > div > .c0 {
+.c6:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c3 > div > .c0 > i {
+.c6:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c3 > div > .c0 {
+.c6:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c4 div > .c0 {
+.c5 div > .c0 {
   border-color: #c12335;
 }
 
-.c5:focus ~ .c4 > div > .c0 {
+.c6:focus ~ .c5 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c5:checked ~ .c4 > div > .c0 {
+.c6:checked ~ .c5 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c4 > div > .c0 > i {
+.c6:checked ~ .c5 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c4 > div > .c0 {
+.c6:disabled ~ .c5 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <StyledComponent
@@ -3449,84 +3945,119 @@ Array [
       className="c0 c1"
       data-testid="fake-input"
     >
-      <DecorativeIcon
-        size={16}
-        symbol="checkmark"
-        variant="inverted"
+      <Checkbox__CheckmarkContainer
+        id="checkmark"
       >
-        <Icon
-          aria-hidden="true"
-          size={16}
-          symbol="checkmark"
-          variant="inverted"
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                "isStatic": true,
+                "lastClassName": "c2",
+                "rules": Array [
+                  "& > svg {",
+                  "& > path {",
+                  "fill: #fff;",
+                  "}",
+                  "}",
+                ],
+              },
+              "displayName": "Checkbox__CheckmarkContainer",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          id="checkmark"
         >
-          <Icon__StyledIcon
-            aria-hidden="true"
-            iSize={16}
-            symbol="checkmark"
-            variant="inverted"
+          <span
+            className="c2"
+            id="checkmark"
           >
-            <StyledComponent
-              aria-hidden="true"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      [Function],
-                      [Function],
-                    ],
-                  },
-                  "displayName": "Icon__StyledIcon",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                  "target": "i",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
+            <Checkmark>
+              <FeedbackIcon
+                copy={
+                  Object {
+                    "a11yText": "",
+                  }
                 }
-              }
-              forwardedRef={null}
-              iSize={16}
-              symbol="checkmark"
-              variant="inverted"
-            >
-              <i
-                aria-hidden="true"
-                className="c2"
-              />
-            </StyledComponent>
-          </Icon__StyledIcon>
-        </Icon>
-      </DecorativeIcon>
+                copyDictionary={Object {}}
+                height={16}
+                optionalText={true}
+                viewBox="0 0 16 16"
+                width={16}
+              >
+                <FeedbackIcon__StyledSVG
+                  aria-hidden={true}
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <StyledComponent
+                    aria-hidden={true}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                          "isStatic": false,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            [Function],
+                          ],
+                        },
+                        "displayName": "FeedbackIcon__StyledSVG",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                        "target": "svg",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <svg
+                      aria-hidden={true}
+                      className="c3"
+                      height="1rem"
+                      role="img"
+                      viewBox="0 0 16 16"
+                      width="1rem"
+                    >
+                      <path
+                        d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                        fill="#2B8000"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                  </StyledComponent>
+                </FeedbackIcon__StyledSVG>
+              </FeedbackIcon>
+            </Checkmark>
+          </span>
+        </StyledComponent>
+      </Checkbox__CheckmarkContainer>
     </span>
   </StyledComponent>,
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -3563,134 +4094,173 @@ Array [
   display: none;
 }
 
-.c5:focus ~ .c3 > div > .c0 {
+.c6:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c5:checked ~ .c3 > div > .c0 {
+.c6:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c3 > div > .c0 > i {
+.c6:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c3 > div > .c0 {
+.c6:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
 }
 
-.c4 div > .c0 {
+.c5 div > .c0 {
   border-color: #c12335;
 }
 
-.c5:focus ~ .c4 > div > .c0 {
+.c6:focus ~ .c5 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #c12335;
 }
 
-.c5:checked ~ .c4 > div > .c0 {
+.c6:checked ~ .c5 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c5:checked ~ .c4 > div > .c0 > i {
+.c6:checked ~ .c5 > div > .c0 > i {
   display: block;
 }
 
-.c5:disabled ~ .c4 > div > .c0 {
+.c6:disabled ~ .c5 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <span
     className="c0 c1"
     data-testid="fake-input"
   >
-    <DecorativeIcon
-      size={16}
-      symbol="checkmark"
-      variant="inverted"
+    <Checkbox__CheckmarkContainer
+      id="checkmark"
     >
-      <Icon
-        aria-hidden="true"
-        size={16}
-        symbol="checkmark"
-        variant="inverted"
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+              "isStatic": true,
+              "lastClassName": "c2",
+              "rules": Array [
+                "& > svg {",
+                "& > path {",
+                "fill: #fff;",
+                "}",
+                "}",
+              ],
+            },
+            "displayName": "Checkbox__CheckmarkContainer",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        id="checkmark"
       >
-        <Icon__StyledIcon
-          aria-hidden="true"
-          iSize={16}
-          symbol="checkmark"
-          variant="inverted"
+        <span
+          className="c2"
+          id="checkmark"
         >
-          <StyledComponent
-            aria-hidden="true"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    [Function],
-                    [Function],
-                    [Function],
-                  ],
-                },
-                "displayName": "Icon__StyledIcon",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                "target": "i",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+          <Checkmark>
+            <FeedbackIcon
+              copy={
+                Object {
+                  "a11yText": "",
+                }
               }
-            }
-            forwardedRef={null}
-            iSize={16}
-            symbol="checkmark"
-            variant="inverted"
-          >
-            <i
-              aria-hidden="true"
-              className="c2"
-            />
-          </StyledComponent>
-        </Icon__StyledIcon>
-      </Icon>
-    </DecorativeIcon>
+              copyDictionary={Object {}}
+              height={16}
+              optionalText={true}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <FeedbackIcon__StyledSVG
+                aria-hidden={true}
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <StyledComponent
+                  aria-hidden={true}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                        "isStatic": false,
+                        "lastClassName": "c3",
+                        "rules": Array [
+                          [Function],
+                        ],
+                      },
+                      "displayName": "FeedbackIcon__StyledSVG",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                      "target": "svg",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <svg
+                    aria-hidden={true}
+                    className="c3"
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <path
+                      d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                      fill="#2B8000"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </StyledComponent>
+              </FeedbackIcon__StyledSVG>
+            </FeedbackIcon>
+          </Checkmark>
+        </span>
+      </StyledComponent>
+    </Checkbox__CheckmarkContainer>
   </span>,
 ]
 `;
 
 exports[`Checkbox focusing can be focused and unfocused 1`] = `
 Array [
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -3727,23 +4297,27 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <Checkbox__FakeCheckbox
@@ -3798,85 +4372,120 @@ Array [
         className="c0 c1"
         data-testid="fake-input"
       >
-        <DecorativeIcon
-          size={16}
-          symbol="checkmark"
-          variant="inverted"
+        <Checkbox__CheckmarkContainer
+          id="checkmark"
         >
-          <Icon
-            aria-hidden="true"
-            size={16}
-            symbol="checkmark"
-            variant="inverted"
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                  "isStatic": true,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "& > svg {",
+                    "& > path {",
+                    "fill: #fff;",
+                    "}",
+                    "}",
+                  ],
+                },
+                "displayName": "Checkbox__CheckmarkContainer",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            id="checkmark"
           >
-            <Icon__StyledIcon
-              aria-hidden="true"
-              iSize={16}
-              symbol="checkmark"
-              variant="inverted"
+            <span
+              className="c2"
+              id="checkmark"
             >
-              <StyledComponent
-                aria-hidden="true"
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                      "isStatic": false,
-                      "lastClassName": "c2",
-                      "rules": Array [
-                        [Function],
-                        [Function],
-                        [Function],
-                      ],
-                    },
-                    "displayName": "Icon__StyledIcon",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                    "target": "i",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
+              <Checkmark>
+                <FeedbackIcon
+                  copy={
+                    Object {
+                      "a11yText": "",
+                    }
                   }
-                }
-                forwardedRef={null}
-                iSize={16}
-                symbol="checkmark"
-                variant="inverted"
-              >
-                <i
-                  aria-hidden="true"
-                  className="c2"
-                />
-              </StyledComponent>
-            </Icon__StyledIcon>
-          </Icon>
-        </DecorativeIcon>
+                  copyDictionary={Object {}}
+                  height={16}
+                  optionalText={true}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <FeedbackIcon__StyledSVG
+                    aria-hidden={true}
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <StyledComponent
+                      aria-hidden={true}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "FeedbackIcon__StyledSVG",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                          "target": "svg",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      height="1rem"
+                      role="img"
+                      viewBox="0 0 16 16"
+                      width="1rem"
+                    >
+                      <svg
+                        aria-hidden={true}
+                        className="c3"
+                        height="1rem"
+                        role="img"
+                        viewBox="0 0 16 16"
+                        width="1rem"
+                      >
+                        <path
+                          d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                          fill="#2B8000"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </StyledComponent>
+                  </FeedbackIcon__StyledSVG>
+                </FeedbackIcon>
+              </Checkmark>
+            </span>
+          </StyledComponent>
+        </Checkbox__CheckmarkContainer>
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -3913,23 +4522,27 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <StyledComponent
@@ -3981,84 +4594,119 @@ Array [
       className="c0 c1"
       data-testid="fake-input"
     >
-      <DecorativeIcon
-        size={16}
-        symbol="checkmark"
-        variant="inverted"
+      <Checkbox__CheckmarkContainer
+        id="checkmark"
       >
-        <Icon
-          aria-hidden="true"
-          size={16}
-          symbol="checkmark"
-          variant="inverted"
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                "isStatic": true,
+                "lastClassName": "c2",
+                "rules": Array [
+                  "& > svg {",
+                  "& > path {",
+                  "fill: #fff;",
+                  "}",
+                  "}",
+                ],
+              },
+              "displayName": "Checkbox__CheckmarkContainer",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          id="checkmark"
         >
-          <Icon__StyledIcon
-            aria-hidden="true"
-            iSize={16}
-            symbol="checkmark"
-            variant="inverted"
+          <span
+            className="c2"
+            id="checkmark"
           >
-            <StyledComponent
-              aria-hidden="true"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      [Function],
-                      [Function],
-                    ],
-                  },
-                  "displayName": "Icon__StyledIcon",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                  "target": "i",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
+            <Checkmark>
+              <FeedbackIcon
+                copy={
+                  Object {
+                    "a11yText": "",
+                  }
                 }
-              }
-              forwardedRef={null}
-              iSize={16}
-              symbol="checkmark"
-              variant="inverted"
-            >
-              <i
-                aria-hidden="true"
-                className="c2"
-              />
-            </StyledComponent>
-          </Icon__StyledIcon>
-        </Icon>
-      </DecorativeIcon>
+                copyDictionary={Object {}}
+                height={16}
+                optionalText={true}
+                viewBox="0 0 16 16"
+                width={16}
+              >
+                <FeedbackIcon__StyledSVG
+                  aria-hidden={true}
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <StyledComponent
+                    aria-hidden={true}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                          "isStatic": false,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            [Function],
+                          ],
+                        },
+                        "displayName": "FeedbackIcon__StyledSVG",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                        "target": "svg",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <svg
+                      aria-hidden={true}
+                      className="c3"
+                      height="1rem"
+                      role="img"
+                      viewBox="0 0 16 16"
+                      width="1rem"
+                    >
+                      <path
+                        d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                        fill="#2B8000"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                  </StyledComponent>
+                </FeedbackIcon__StyledSVG>
+              </FeedbackIcon>
+            </Checkmark>
+          </span>
+        </StyledComponent>
+      </Checkbox__CheckmarkContainer>
     </span>
   </StyledComponent>,
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -4095,111 +4743,150 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <span
     className="c0 c1"
     data-testid="fake-input"
   >
-    <DecorativeIcon
-      size={16}
-      symbol="checkmark"
-      variant="inverted"
+    <Checkbox__CheckmarkContainer
+      id="checkmark"
     >
-      <Icon
-        aria-hidden="true"
-        size={16}
-        symbol="checkmark"
-        variant="inverted"
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+              "isStatic": true,
+              "lastClassName": "c2",
+              "rules": Array [
+                "& > svg {",
+                "& > path {",
+                "fill: #fff;",
+                "}",
+                "}",
+              ],
+            },
+            "displayName": "Checkbox__CheckmarkContainer",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        id="checkmark"
       >
-        <Icon__StyledIcon
-          aria-hidden="true"
-          iSize={16}
-          symbol="checkmark"
-          variant="inverted"
+        <span
+          className="c2"
+          id="checkmark"
         >
-          <StyledComponent
-            aria-hidden="true"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    [Function],
-                    [Function],
-                    [Function],
-                  ],
-                },
-                "displayName": "Icon__StyledIcon",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                "target": "i",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+          <Checkmark>
+            <FeedbackIcon
+              copy={
+                Object {
+                  "a11yText": "",
+                }
               }
-            }
-            forwardedRef={null}
-            iSize={16}
-            symbol="checkmark"
-            variant="inverted"
-          >
-            <i
-              aria-hidden="true"
-              className="c2"
-            />
-          </StyledComponent>
-        </Icon__StyledIcon>
-      </Icon>
-    </DecorativeIcon>
+              copyDictionary={Object {}}
+              height={16}
+              optionalText={true}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <FeedbackIcon__StyledSVG
+                aria-hidden={true}
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <StyledComponent
+                  aria-hidden={true}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                        "isStatic": false,
+                        "lastClassName": "c3",
+                        "rules": Array [
+                          [Function],
+                        ],
+                      },
+                      "displayName": "FeedbackIcon__StyledSVG",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                      "target": "svg",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <svg
+                    aria-hidden={true}
+                    className="c3"
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <path
+                      d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                      fill="#2B8000"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </StyledComponent>
+              </FeedbackIcon__StyledSVG>
+            </FeedbackIcon>
+          </Checkmark>
+        </span>
+      </StyledComponent>
+    </Checkbox__CheckmarkContainer>
   </span>,
 ]
 `;
 
 exports[`Checkbox focusing can be focused and unfocused 2`] = `
 Array [
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -4236,23 +4923,27 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <Checkbox__FakeCheckbox
@@ -4307,85 +4998,120 @@ Array [
         className="c0 c1"
         data-testid="fake-input"
       >
-        <DecorativeIcon
-          size={16}
-          symbol="checkmark"
-          variant="inverted"
+        <Checkbox__CheckmarkContainer
+          id="checkmark"
         >
-          <Icon
-            aria-hidden="true"
-            size={16}
-            symbol="checkmark"
-            variant="inverted"
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                  "isStatic": true,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "& > svg {",
+                    "& > path {",
+                    "fill: #fff;",
+                    "}",
+                    "}",
+                  ],
+                },
+                "displayName": "Checkbox__CheckmarkContainer",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            id="checkmark"
           >
-            <Icon__StyledIcon
-              aria-hidden="true"
-              iSize={16}
-              symbol="checkmark"
-              variant="inverted"
+            <span
+              className="c2"
+              id="checkmark"
             >
-              <StyledComponent
-                aria-hidden="true"
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                      "isStatic": false,
-                      "lastClassName": "c2",
-                      "rules": Array [
-                        [Function],
-                        [Function],
-                        [Function],
-                      ],
-                    },
-                    "displayName": "Icon__StyledIcon",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                    "target": "i",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
+              <Checkmark>
+                <FeedbackIcon
+                  copy={
+                    Object {
+                      "a11yText": "",
+                    }
                   }
-                }
-                forwardedRef={null}
-                iSize={16}
-                symbol="checkmark"
-                variant="inverted"
-              >
-                <i
-                  aria-hidden="true"
-                  className="c2"
-                />
-              </StyledComponent>
-            </Icon__StyledIcon>
-          </Icon>
-        </DecorativeIcon>
+                  copyDictionary={Object {}}
+                  height={16}
+                  optionalText={true}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <FeedbackIcon__StyledSVG
+                    aria-hidden={true}
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <StyledComponent
+                      aria-hidden={true}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "FeedbackIcon__StyledSVG",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                          "target": "svg",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      height="1rem"
+                      role="img"
+                      viewBox="0 0 16 16"
+                      width="1rem"
+                    >
+                      <svg
+                        aria-hidden={true}
+                        className="c3"
+                        height="1rem"
+                        role="img"
+                        viewBox="0 0 16 16"
+                        width="1rem"
+                      >
+                        <path
+                          d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                          fill="#2B8000"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </StyledComponent>
+                  </FeedbackIcon__StyledSVG>
+                </FeedbackIcon>
+              </Checkmark>
+            </span>
+          </StyledComponent>
+        </Checkbox__CheckmarkContainer>
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -4422,23 +5148,27 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <StyledComponent
@@ -4490,84 +5220,119 @@ Array [
       className="c0 c1"
       data-testid="fake-input"
     >
-      <DecorativeIcon
-        size={16}
-        symbol="checkmark"
-        variant="inverted"
+      <Checkbox__CheckmarkContainer
+        id="checkmark"
       >
-        <Icon
-          aria-hidden="true"
-          size={16}
-          symbol="checkmark"
-          variant="inverted"
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                "isStatic": true,
+                "lastClassName": "c2",
+                "rules": Array [
+                  "& > svg {",
+                  "& > path {",
+                  "fill: #fff;",
+                  "}",
+                  "}",
+                ],
+              },
+              "displayName": "Checkbox__CheckmarkContainer",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          id="checkmark"
         >
-          <Icon__StyledIcon
-            aria-hidden="true"
-            iSize={16}
-            symbol="checkmark"
-            variant="inverted"
+          <span
+            className="c2"
+            id="checkmark"
           >
-            <StyledComponent
-              aria-hidden="true"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      [Function],
-                      [Function],
-                    ],
-                  },
-                  "displayName": "Icon__StyledIcon",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                  "target": "i",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
+            <Checkmark>
+              <FeedbackIcon
+                copy={
+                  Object {
+                    "a11yText": "",
+                  }
                 }
-              }
-              forwardedRef={null}
-              iSize={16}
-              symbol="checkmark"
-              variant="inverted"
-            >
-              <i
-                aria-hidden="true"
-                className="c2"
-              />
-            </StyledComponent>
-          </Icon__StyledIcon>
-        </Icon>
-      </DecorativeIcon>
+                copyDictionary={Object {}}
+                height={16}
+                optionalText={true}
+                viewBox="0 0 16 16"
+                width={16}
+              >
+                <FeedbackIcon__StyledSVG
+                  aria-hidden={true}
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <StyledComponent
+                    aria-hidden={true}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                          "isStatic": false,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            [Function],
+                          ],
+                        },
+                        "displayName": "FeedbackIcon__StyledSVG",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                        "target": "svg",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <svg
+                      aria-hidden={true}
+                      className="c3"
+                      height="1rem"
+                      role="img"
+                      viewBox="0 0 16 16"
+                      width="1rem"
+                    >
+                      <path
+                        d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                        fill="#2B8000"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                  </StyledComponent>
+                </FeedbackIcon__StyledSVG>
+              </FeedbackIcon>
+            </Checkmark>
+          </span>
+        </StyledComponent>
+      </Checkbox__CheckmarkContainer>
     </span>
   </StyledComponent>,
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -4604,111 +5369,150 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <span
     className="c0 c1"
     data-testid="fake-input"
   >
-    <DecorativeIcon
-      size={16}
-      symbol="checkmark"
-      variant="inverted"
+    <Checkbox__CheckmarkContainer
+      id="checkmark"
     >
-      <Icon
-        aria-hidden="true"
-        size={16}
-        symbol="checkmark"
-        variant="inverted"
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+              "isStatic": true,
+              "lastClassName": "c2",
+              "rules": Array [
+                "& > svg {",
+                "& > path {",
+                "fill: #fff;",
+                "}",
+                "}",
+              ],
+            },
+            "displayName": "Checkbox__CheckmarkContainer",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        id="checkmark"
       >
-        <Icon__StyledIcon
-          aria-hidden="true"
-          iSize={16}
-          symbol="checkmark"
-          variant="inverted"
+        <span
+          className="c2"
+          id="checkmark"
         >
-          <StyledComponent
-            aria-hidden="true"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    [Function],
-                    [Function],
-                    [Function],
-                  ],
-                },
-                "displayName": "Icon__StyledIcon",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                "target": "i",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+          <Checkmark>
+            <FeedbackIcon
+              copy={
+                Object {
+                  "a11yText": "",
+                }
               }
-            }
-            forwardedRef={null}
-            iSize={16}
-            symbol="checkmark"
-            variant="inverted"
-          >
-            <i
-              aria-hidden="true"
-              className="c2"
-            />
-          </StyledComponent>
-        </Icon__StyledIcon>
-      </Icon>
-    </DecorativeIcon>
+              copyDictionary={Object {}}
+              height={16}
+              optionalText={true}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <FeedbackIcon__StyledSVG
+                aria-hidden={true}
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <StyledComponent
+                  aria-hidden={true}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                        "isStatic": false,
+                        "lastClassName": "c3",
+                        "rules": Array [
+                          [Function],
+                        ],
+                      },
+                      "displayName": "FeedbackIcon__StyledSVG",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                      "target": "svg",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <svg
+                    aria-hidden={true}
+                    className="c3"
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <path
+                      d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                      fill="#2B8000"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </StyledComponent>
+              </FeedbackIcon__StyledSVG>
+            </FeedbackIcon>
+          </Checkmark>
+        </span>
+      </StyledComponent>
+    </Checkbox__CheckmarkContainer>
   </span>,
 ]
 `;
 
 exports[`Checkbox has a fake checkbox 1`] = `
 Array [
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -4745,23 +5549,27 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <Checkbox__FakeCheckbox
@@ -4816,85 +5624,120 @@ Array [
         className="c0 c1"
         data-testid="fake-input"
       >
-        <DecorativeIcon
-          size={16}
-          symbol="checkmark"
-          variant="inverted"
+        <Checkbox__CheckmarkContainer
+          id="checkmark"
         >
-          <Icon
-            aria-hidden="true"
-            size={16}
-            symbol="checkmark"
-            variant="inverted"
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                  "isStatic": true,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "& > svg {",
+                    "& > path {",
+                    "fill: #fff;",
+                    "}",
+                    "}",
+                  ],
+                },
+                "displayName": "Checkbox__CheckmarkContainer",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            id="checkmark"
           >
-            <Icon__StyledIcon
-              aria-hidden="true"
-              iSize={16}
-              symbol="checkmark"
-              variant="inverted"
+            <span
+              className="c2"
+              id="checkmark"
             >
-              <StyledComponent
-                aria-hidden="true"
-                forwardedComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "attrs": Array [],
-                    "componentStyle": ComponentStyle {
-                      "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                      "isStatic": false,
-                      "lastClassName": "c2",
-                      "rules": Array [
-                        [Function],
-                        [Function],
-                        [Function],
-                      ],
-                    },
-                    "displayName": "Icon__StyledIcon",
-                    "foldedComponentIds": Array [],
-                    "render": [Function],
-                    "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                    "target": "i",
-                    "toString": [Function],
-                    "warnTooManyClasses": [Function],
-                    "withComponent": [Function],
+              <Checkmark>
+                <FeedbackIcon
+                  copy={
+                    Object {
+                      "a11yText": "",
+                    }
                   }
-                }
-                forwardedRef={null}
-                iSize={16}
-                symbol="checkmark"
-                variant="inverted"
-              >
-                <i
-                  aria-hidden="true"
-                  className="c2"
-                />
-              </StyledComponent>
-            </Icon__StyledIcon>
-          </Icon>
-        </DecorativeIcon>
+                  copyDictionary={Object {}}
+                  height={16}
+                  optionalText={true}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <FeedbackIcon__StyledSVG
+                    aria-hidden={true}
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <StyledComponent
+                      aria-hidden={true}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                            "isStatic": false,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              [Function],
+                            ],
+                          },
+                          "displayName": "FeedbackIcon__StyledSVG",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                          "target": "svg",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      height="1rem"
+                      role="img"
+                      viewBox="0 0 16 16"
+                      width="1rem"
+                    >
+                      <svg
+                        aria-hidden={true}
+                        className="c3"
+                        height="1rem"
+                        role="img"
+                        viewBox="0 0 16 16"
+                        width="1rem"
+                      >
+                        <path
+                          d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                          fill="#2B8000"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </StyledComponent>
+                  </FeedbackIcon__StyledSVG>
+                </FeedbackIcon>
+              </Checkmark>
+            </span>
+          </StyledComponent>
+        </Checkbox__CheckmarkContainer>
       </span>
     </StyledComponent>
   </Checkbox__FakeCheckbox>,
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -4931,23 +5774,27 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <StyledComponent
@@ -4999,84 +5846,119 @@ Array [
       className="c0 c1"
       data-testid="fake-input"
     >
-      <DecorativeIcon
-        size={16}
-        symbol="checkmark"
-        variant="inverted"
+      <Checkbox__CheckmarkContainer
+        id="checkmark"
       >
-        <Icon
-          aria-hidden="true"
-          size={16}
-          symbol="checkmark"
-          variant="inverted"
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                "isStatic": true,
+                "lastClassName": "c2",
+                "rules": Array [
+                  "& > svg {",
+                  "& > path {",
+                  "fill: #fff;",
+                  "}",
+                  "}",
+                ],
+              },
+              "displayName": "Checkbox__CheckmarkContainer",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+              "target": "span",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          id="checkmark"
         >
-          <Icon__StyledIcon
-            aria-hidden="true"
-            iSize={16}
-            symbol="checkmark"
-            variant="inverted"
+          <span
+            className="c2"
+            id="checkmark"
           >
-            <StyledComponent
-              aria-hidden="true"
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                    "isStatic": false,
-                    "lastClassName": "c2",
-                    "rules": Array [
-                      [Function],
-                      [Function],
-                      [Function],
-                    ],
-                  },
-                  "displayName": "Icon__StyledIcon",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                  "target": "i",
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
+            <Checkmark>
+              <FeedbackIcon
+                copy={
+                  Object {
+                    "a11yText": "",
+                  }
                 }
-              }
-              forwardedRef={null}
-              iSize={16}
-              symbol="checkmark"
-              variant="inverted"
-            >
-              <i
-                aria-hidden="true"
-                className="c2"
-              />
-            </StyledComponent>
-          </Icon__StyledIcon>
-        </Icon>
-      </DecorativeIcon>
+                copyDictionary={Object {}}
+                height={16}
+                optionalText={true}
+                viewBox="0 0 16 16"
+                width={16}
+              >
+                <FeedbackIcon__StyledSVG
+                  aria-hidden={true}
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <StyledComponent
+                    aria-hidden={true}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                          "isStatic": false,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            [Function],
+                          ],
+                        },
+                        "displayName": "FeedbackIcon__StyledSVG",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                        "target": "svg",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <svg
+                      aria-hidden={true}
+                      className="c3"
+                      height="1rem"
+                      role="img"
+                      viewBox="0 0 16 16"
+                      width="1rem"
+                    >
+                      <path
+                        d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                        fill="#2B8000"
+                        fillRule="evenodd"
+                      />
+                    </svg>
+                  </StyledComponent>
+                </FeedbackIcon__StyledSVG>
+              </FeedbackIcon>
+            </Checkmark>
+          </span>
+        </StyledComponent>
+      </Checkbox__CheckmarkContainer>
     </span>
   </StyledComponent>,
-  .c2 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c2::before {
-  content: '\\f101';
+  .c3 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c1 {
@@ -5113,85 +5995,141 @@ Array [
   display: none;
 }
 
-.c4:focus ~ .c3 > div > .c0 {
+.c5:focus ~ .c4 > div > .c0 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c4:checked ~ .c3 > div > .c0 {
+.c5:checked ~ .c4 > div > .c0 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c4:checked ~ .c3 > div > .c0 > i {
+.c5:checked ~ .c4 > div > .c0 > i {
   display: block;
 }
 
-.c4:disabled ~ .c3 > div > .c0 {
+.c5:disabled ~ .c4 > div > .c0 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c2 > svg > path {
+  fill: #fff;
 }
 
 <span
     className="c0 c1"
     data-testid="fake-input"
   >
-    <DecorativeIcon
-      size={16}
-      symbol="checkmark"
-      variant="inverted"
+    <Checkbox__CheckmarkContainer
+      id="checkmark"
     >
-      <Icon
-        aria-hidden="true"
-        size={16}
-        symbol="checkmark"
-        variant="inverted"
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+              "isStatic": true,
+              "lastClassName": "c2",
+              "rules": Array [
+                "& > svg {",
+                "& > path {",
+                "fill: #fff;",
+                "}",
+                "}",
+              ],
+            },
+            "displayName": "Checkbox__CheckmarkContainer",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+            "target": "span",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        id="checkmark"
       >
-        <Icon__StyledIcon
-          aria-hidden="true"
-          iSize={16}
-          symbol="checkmark"
-          variant="inverted"
+        <span
+          className="c2"
+          id="checkmark"
         >
-          <StyledComponent
-            aria-hidden="true"
-            forwardedComponent={
-              Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "attrs": Array [],
-                "componentStyle": ComponentStyle {
-                  "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                  "isStatic": false,
-                  "lastClassName": "c2",
-                  "rules": Array [
-                    [Function],
-                    [Function],
-                    [Function],
-                  ],
-                },
-                "displayName": "Icon__StyledIcon",
-                "foldedComponentIds": Array [],
-                "render": [Function],
-                "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                "target": "i",
-                "toString": [Function],
-                "warnTooManyClasses": [Function],
-                "withComponent": [Function],
+          <Checkmark>
+            <FeedbackIcon
+              copy={
+                Object {
+                  "a11yText": "",
+                }
               }
-            }
-            forwardedRef={null}
-            iSize={16}
-            symbol="checkmark"
-            variant="inverted"
-          >
-            <i
-              aria-hidden="true"
-              className="c2"
-            />
-          </StyledComponent>
-        </Icon__StyledIcon>
-      </Icon>
-    </DecorativeIcon>
+              copyDictionary={Object {}}
+              height={16}
+              optionalText={true}
+              viewBox="0 0 16 16"
+              width={16}
+            >
+              <FeedbackIcon__StyledSVG
+                aria-hidden={true}
+                height="1rem"
+                role="img"
+                viewBox="0 0 16 16"
+                width="1rem"
+              >
+                <StyledComponent
+                  aria-hidden={true}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                        "isStatic": false,
+                        "lastClassName": "c3",
+                        "rules": Array [
+                          [Function],
+                        ],
+                      },
+                      "displayName": "FeedbackIcon__StyledSVG",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                      "target": "svg",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  height="1rem"
+                  role="img"
+                  viewBox="0 0 16 16"
+                  width="1rem"
+                >
+                  <svg
+                    aria-hidden={true}
+                    className="c3"
+                    height="1rem"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    width="1rem"
+                  >
+                    <path
+                      d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                      fill="#2B8000"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </StyledComponent>
+              </FeedbackIcon__StyledSVG>
+            </FeedbackIcon>
+          </Checkmark>
+        </span>
+      </StyledComponent>
+    </Checkbox__CheckmarkContainer>
   </span>,
 ]
 `;
@@ -5212,29 +6150,7 @@ Array [
   margin-right: 1rem;
 }
 
-.c3 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c3::before {
-  content: '\\f101';
-}
-
-.c4 {
+.c5 {
   color: #2a2c2e;
   color: inherit;
   word-wrap: break-word;
@@ -5242,12 +6158,17 @@ Array [
   font-weight: inherit;
 }
 
-.c4 sup {
+.c5 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
+}
+
+.c4 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c2 {
@@ -5284,23 +6205,27 @@ Array [
   display: none;
 }
 
-.c6:focus ~ .c5 > div > .c1 {
+.c7:focus ~ .c6 > div > .c1 {
   box-shadow: 0 0 4px 1px #54595f;
   border-color: #fff;
 }
 
-.c6:checked ~ .c5 > div > .c1 {
+.c7:checked ~ .c6 > div > .c1 {
   background-color: #2B8000;
   border-color: #2B8000;
 }
 
-.c6:checked ~ .c5 > div > .c1 > i {
+.c7:checked ~ .c6 > div > .c1 > i {
   display: block;
 }
 
-.c6:disabled ~ .c5 > div > .c1 {
+.c7:disabled ~ .c6 > div > .c1 {
   background-color: #d8d8d8;
   border-color: #d8d8d8;
+}
+
+.c3 > svg > path {
+  fill: #fff;
 }
 
 <div
@@ -5358,62 +6283,114 @@ Array [
           className="c1 c2"
           data-testid="fake-input"
         >
-          <DecorativeIcon
-            size={16}
-            symbol="checkmark"
-            variant="inverted"
+          <Checkbox__CheckmarkContainer
+            id="checkmark"
           >
-            <Icon
-              aria-hidden="true"
-              size={16}
-              symbol="checkmark"
-              variant="inverted"
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                    "isStatic": true,
+                    "lastClassName": "c3",
+                    "rules": Array [
+                      "& > svg {",
+                      "& > path {",
+                      "fill: #fff;",
+                      "}",
+                      "}",
+                    ],
+                  },
+                  "displayName": "Checkbox__CheckmarkContainer",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Checkbox__CheckmarkContainer-jt362p-3",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              id="checkmark"
             >
-              <Icon__StyledIcon
-                aria-hidden="true"
-                iSize={16}
-                symbol="checkmark"
-                variant="inverted"
+              <span
+                className="c3"
+                id="checkmark"
               >
-                <StyledComponent
-                  aria-hidden="true"
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                        "isStatic": false,
-                        "lastClassName": "c3",
-                        "rules": Array [
-                          [Function],
-                          [Function],
-                          [Function],
-                        ],
-                      },
-                      "displayName": "Icon__StyledIcon",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "Icon__StyledIcon-sc-1g20dn8-0",
-                      "target": "i",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
+                <Checkmark>
+                  <FeedbackIcon
+                    copy={
+                      Object {
+                        "a11yText": "",
+                      }
                     }
-                  }
-                  forwardedRef={null}
-                  iSize={16}
-                  symbol="checkmark"
-                  variant="inverted"
-                >
-                  <i
-                    aria-hidden="true"
-                    className="c3"
-                  />
-                </StyledComponent>
-              </Icon__StyledIcon>
-            </Icon>
-          </DecorativeIcon>
+                    copyDictionary={Object {}}
+                    height={16}
+                    optionalText={true}
+                    viewBox="0 0 16 16"
+                    width={16}
+                  >
+                    <FeedbackIcon__StyledSVG
+                      aria-hidden={true}
+                      height="1rem"
+                      role="img"
+                      viewBox="0 0 16 16"
+                      width="1rem"
+                    >
+                      <StyledComponent
+                        aria-hidden={true}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                              "isStatic": false,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                [Function],
+                              ],
+                            },
+                            "displayName": "FeedbackIcon__StyledSVG",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "FeedbackIcon__StyledSVG-sc-1swr281-0",
+                            "target": "svg",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        height="1rem"
+                        role="img"
+                        viewBox="0 0 16 16"
+                        width="1rem"
+                      >
+                        <svg
+                          aria-hidden={true}
+                          className="c4"
+                          height="1rem"
+                          role="img"
+                          viewBox="0 0 16 16"
+                          width="1rem"
+                        >
+                          <path
+                            d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+                            fill="#2B8000"
+                            fillRule="evenodd"
+                          />
+                        </svg>
+                      </StyledComponent>
+                    </FeedbackIcon__StyledSVG>
+                  </FeedbackIcon>
+                </Checkmark>
+              </span>
+            </StyledComponent>
+          </Checkbox__CheckmarkContainer>
         </span>
       </StyledComponent>
     </Checkbox__FakeCheckbox>
@@ -5477,7 +6454,7 @@ Array [
                       "componentStyle": ComponentStyle {
                         "componentId": "Text__StyledText-sc-1m0rr67-0",
                         "isStatic": false,
-                        "lastClassName": "c4",
+                        "lastClassName": "c5",
                         "rules": Array [
                           [Function],
                           [Function],
@@ -5509,7 +6486,7 @@ Array [
                   size="base"
                 >
                   <span
-                    className="c4"
+                    className="c5"
                     size="base"
                   >
                     Some label
@@ -5637,29 +6614,7 @@ exports[`Checkbox renders 1`] = `
   margin-right: 1rem;
 }
 
-.c7 {
-  font-family: 'TELUS Core Icons';
-  display: inline-block;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.c7::before {
-  content: '\\f101';
-}
-
-.c8 {
+.c9 {
   color: #2a2c2e;
   color: inherit;
   word-wrap: break-word;
@@ -5667,12 +6622,17 @@ exports[`Checkbox renders 1`] = `
   font-weight: inherit;
 }
 
-.c8 sup {
+.c9 sup {
   top: -0.5em;
   font-size: 0.875rem;
   position: relative;
   vertical-align: baseline;
   padding-left: 0.1em;
+}
+
+.c8 {
+  width: 1remrem;
+  height: 1remrem;
 }
 
 .c6 {
@@ -5749,6 +6709,10 @@ exports[`Checkbox renders 1`] = `
   color: #d8d8d8;
 }
 
+.c7 > svg > path {
+  fill: #fff;
+}
+
 <div
   class="c0"
 >
@@ -5773,16 +6737,31 @@ exports[`Checkbox renders 1`] = `
         class="c5 c6"
         data-testid="fake-input"
       >
-        <i
-          aria-hidden="true"
+        <span
           class="c7"
-        />
+          id="checkmark"
+        >
+          <svg
+            aria-hidden="true"
+            class="c8"
+            height="1rem"
+            role="img"
+            viewBox="0 0 16 16"
+            width="1rem"
+          >
+            <path
+              d="M5.807 13.072a.592.592 0 0 1-.091.106l-.026.024-.1.112a.545.545 0 0 1-.433.185.581.581 0 0 1-.453-.204L1.159 9.2a.677.677 0 0 1 .014-.888.55.55 0 0 1 .812 0l3.155 3.382 8.872-9.512a.548.548 0 0 1 .816.002c.226.242.23.636.009.881l-9.03 10.008z"
+              fill="#2B8000"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </span>
       </span>
       <div
         class=""
       >
         <span
-          class="c8"
+          class="c9"
         >
           A label
         </span>
