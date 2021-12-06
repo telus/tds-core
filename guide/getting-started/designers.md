@@ -18,7 +18,7 @@
 
 ## Getting started with Figma
 
-[Figma](https://www.figma.com/) is the new primary tool to use to design, collaborate, and share designs. It's a cloud-based design tool that is available on web browsers and desktop applications for macOS and Windows. Figma offers helpful [tutorials](https://help.figma.com/hc/en-us/categories/360002051613-Getting-Started) to get to know the tool and start using it.
+[Figma](https://www.figma.com/) is the new primary tool to design, collaborate, and share designs. It's a cloud-based design tool that is available on web browsers and desktop applications for macOS and Windows. Figma offers helpful [tutorials](https://help.figma.com/hc/en-us/categories/360002051613-Getting-Started) to get to know the tool and start using it.
 
 You can access Figma directly in your browser by visiting and logging into [Figma.com](https://www.figma.com/), or [download the desktop app](https://www.figma.com/downloads/)
 
