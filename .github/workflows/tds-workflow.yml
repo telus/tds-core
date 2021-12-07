@@ -64,7 +64,7 @@ jobs:
           SAUCELABS_ACCESS_KEY: ${{ secrets.SAUCELABS_ACCESS_KEY }}
         run: npm run test:e2e -- -n ${{steps.get_branch.outputs.branch}}
       - name: Upload E2E Output
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         if: failure()
         with:
           name: output
