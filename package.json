@@ -167,9 +167,6 @@
       "path": "@commitlint/prompt"
     }
   },
-  "resolutions": {
-    "graceful-fs": "^4.2.4"
-  },
   "prettier": {
     "printWidth": 100,
     "semi": false,

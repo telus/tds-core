@@ -31,7 +31,7 @@ jobs:
 
       - name: Bootstrap
         if: ${{ steps.cache-node-modules.outputs.cache-hit != 'true' }}
-        run: npm run bootstrap:ci
+        run: npm ci && npx lerna bootstrap --hoist && npm run build -- --all
 
   lint:
     name: Lint Tests
