@@ -2,7 +2,7 @@ name: TDS Workflow
 on: push
 
 env:
-  NODE_VERSION: "12"
+  NODE_VERSION: "12.14.x"
   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
