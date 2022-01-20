@@ -1,5 +1,10 @@
 name: TDS Workflow
 on: push
+# on:
+#   push:
+#     branches: [ master, main ]
+#   pull_request:
+#     branches: [ master, main ]
 
 env:
   NODE_VERSION: "12.14.x"
@@ -91,7 +96,6 @@ jobs:
 
   docs:
     name: Documentation
-    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     needs: [lint, unit, e2e]
     steps:
