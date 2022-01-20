@@ -42,52 +42,52 @@ jobs:
       - name: Run Unit Tests
         run: npm run test
 
-  # e2e:
-  #   name: E2E Tests
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout Branch
-  #       uses: actions/checkout@v1
+  e2e:
+    name: E2E Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@v1
 
-  #     - name: Setup Node
-  #       uses: actions/setup-node@v1
-  #       with:
-  #         node-version: ${{ env.NODE_VERSION }}
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.NODE_VERSION }}
 
-  #     - name: Bootstrap
-  #       run: npm ci && npx lerna bootstrap --hoist && npm run build -- --all
+      - name: Bootstrap
+        run: npm ci && npx lerna bootstrap --hoist && npm run build -- --all
 
-  #     - name: Build Cartesian Components
-  #       run: npm run build:e2e
+      - name: Build Cartesian Components
+        run: npm run build:e2e
 
-  #     - name: Get Branch Name
-  #       shell: bash
-  #       run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-  #       id: get_branch
+      - name: Get Branch Name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: get_branch
 
-  #     - name: Upload Cartesian Components To S3 Bucket
-  #       uses: jakejarvis/s3-sync-action@v0.5.0
-  #       with:
-  #         args: --acl public-read --follow-symlinks --delete
-  #       env:
-  #         AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-  #         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  #         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  #         SOURCE_DIR: "e2e/visual/dist"
-  #         DEST_DIR: "pr/${{steps.get_branch.outputs.branch}}/e2e"
+      - name: Upload Cartesian Components To S3 Bucket
+        uses: jakejarvis/s3-sync-action@v0.5.0
+        with:
+          args: --acl public-read --follow-symlinks --delete
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          SOURCE_DIR: "e2e/visual/dist"
+          DEST_DIR: "pr/${{steps.get_branch.outputs.branch}}/e2e"
 
-  #     - name: Run E2E Tests
-  #       env:
-  #         SAUCELABS_USERNAME: ${{ secrets.SAUCELABS_USERNAME }}
-  #         SAUCELABS_ACCESS_KEY: ${{ secrets.SAUCELABS_ACCESS_KEY }}
-  #       run: npm run test:e2e -- -n ${{steps.get_branch.outputs.branch}}
+      - name: Run E2E Tests
+        env:
+          SAUCELABS_USERNAME: ${{ secrets.SAUCELABS_USERNAME }}
+          SAUCELABS_ACCESS_KEY: ${{ secrets.SAUCELABS_ACCESS_KEY }}
+        run: npm run test:e2e -- -n ${{steps.get_branch.outputs.branch}}
 
-  #     - name: Upload E2E Output
-  #       uses: actions/upload-artifact@v1
-  #       if: failure()
-  #       with:
-  #         name: output
-  #         path: e2e/output/components
+      - name: Upload E2E Output
+        uses: actions/upload-artifact@v1
+        if: failure()
+        with:
+          name: output
+          path: e2e/output/components
 
   # docs:
   #   name: Documentation
