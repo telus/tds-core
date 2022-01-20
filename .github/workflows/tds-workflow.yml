@@ -97,7 +97,6 @@ jobs:
   docs:
     name: Documentation
     runs-on: ubuntu-latest
-    needs: [lint, unit, e2e]
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v1
@@ -106,6 +105,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ env.NODE_VERSION }}
+
+      - name: Bootstrap
+        run: npm ci && npx lerna bootstrap --hoist && npm run build -- --all
 
       - name: GitBook install
         run: npm run gitbook:install
