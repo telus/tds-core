@@ -24,10 +24,10 @@ jobs:
         env:
           cache-name: cache-node-modules
         with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+          path: "**/node_modules"
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+            ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
       - name: Bootstrap
         if: ${{ steps.cache-node-modules.outputs.cache-hit != 'true' }}
@@ -52,10 +52,10 @@ jobs:
         env:
           cache-name: cache-node-modules
         with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+          path: "**/node_modules"
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+            ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
       - name: Run Lint Tests
         run: npm run lint
@@ -79,10 +79,10 @@ jobs:
         env:
           cache-name: cache-node-modules
         with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+          path: "**/node_modules"
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+            ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
       - name: Run Unit Tests
         run: npm run test
@@ -106,10 +106,10 @@ jobs:
   #       env:
   #         cache-name: cache-node-modules
   #       with:
-  #         path: node_modules
-  #         key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+  #         path: '**/node_modules'
+  #         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
   #         restore-keys: |
-  #           ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+  #           ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
   #     - name: Build Cartesian Components
   #       run: npm run build:e2e
@@ -162,10 +162,10 @@ jobs:
   #       env:
   #         cache-name: cache-node-modules
   #       with:
-  #         path: node_modules
-  #         key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+  #         path: '**/node_modules'
+  #         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
   #         restore-keys: |
-  #           ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+  #           ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
   #     - name: GitBook install
   #       run: npm run gitbook:install
