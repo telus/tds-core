@@ -80,7 +80,7 @@ jobs:
             ${{ runner.os }}-node-${{ hashFiles('*/*/package.json') }}
 
       - name: Sanity check
-        run: ls -R
+        run: ls -R ./packages
 
       - name: Run Lint Tests
         run: npm run lint
