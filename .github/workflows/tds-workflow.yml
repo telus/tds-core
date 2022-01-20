@@ -91,8 +91,9 @@ jobs:
 
   docs:
     name: Documentation
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    needs: build
+    needs: [lint, unit, e2e]
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v1
@@ -127,27 +128,31 @@ jobs:
           SOURCE_DIR: "build/staging"
           DEST_DIR: "pr/${{steps.get_branch.outputs.branch}}/docs"
 
-  # prepr:
-  #   if: github.event_name == 'pull_request'
-  #   name: Pre PR logs
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout Branch
-  #       uses: actions/checkout@v1
+  prepr:
+    if: github.event_name == 'pull_request'
+    name: Pre PR logs
+    runs-on: ubuntu-latest
+    needs: [lint, unit, e2e, docs]
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@v1
 
-  #     - name: Setup Node
-  #       uses: actions/setup-node@v1
-  #       with:
-  #         node-version: ${{ env.NODE_VERSION }}
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.NODE_VERSION }}
 
-  #     - name: Pre PR output
-  #       run: npx lerna version --conventional-commits --amend
+      - name: Bootstrap
+        run: npm ci && npx lerna bootstrap --hoist && npm run build -- --all
+
+      - name: Pre PR output
+        run: npx lerna version --conventional-commits --amend
 
   # release:
   #   if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
   #   name: Cut a release
   #   runs-on: ubuntu-latest
-  #   needs: [lint, unit, e2e, docs]
+  #   needs: [lint, unit, e2e, docs, prepr]
   #   steps:
   #     - name: Configure Git Config & Branch
   #       run: |
