@@ -41,7 +41,7 @@ jobs:
             ${{ runner.os }}-node-${{ hashFiles('*/*/package.json') }}
 
       - name: Bootstrap
-        if: ${{ steps.cache-node-modules.outputs.cache-hit != 'true' }}
+        if: ${{ steps.cache-node-modules.outputs.cache-hit != 'true' || steps.cache-node-sub-modules.outputs.cache-hit != 'true' }}
         run: npm ci && npx lerna bootstrap --hoist && npm run build -- --all
 
   lint:
@@ -80,7 +80,7 @@ jobs:
             ${{ runner.os }}-node-${{ hashFiles('*/*/package.json') }}
 
       - name: Sanity check
-        run: ls -la ./packages/A11yContent/node_modules
+        run: ls -la ./packages/A11yContent
 
       - name: Run Lint Tests
         run: npm run lint
