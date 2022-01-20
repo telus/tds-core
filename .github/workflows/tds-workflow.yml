@@ -79,6 +79,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-${{ hashFiles('*/*/package.json') }}
 
+      - name: Sanity check
+        run: ls -la ./packages/A11yContent/node_modules
+
       - name: Run Lint Tests
         run: npm run lint
 
