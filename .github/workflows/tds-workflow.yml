@@ -85,7 +85,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Run Unit Tests
-        run: npm run test:lowmemory
+        run: npm run test
 
   # e2e:
   #   name: E2E Tests
