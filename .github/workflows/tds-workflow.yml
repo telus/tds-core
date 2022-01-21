@@ -58,15 +58,6 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
-      - name: Cache node modules
-        uses: actions/cache@v2
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
-
       - name: Cache packages node modules
         uses: actions/cache@v2
         id: cache-packages-node-modules
@@ -75,6 +66,15 @@ jobs:
           key: ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
           restore-keys: |
             ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        id: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
 
       - name: Sanity check
         run: ls -R ./packages
@@ -95,15 +95,6 @@ jobs:
         with:
           node-version: "12.14.x"
 
-      - name: Cache node modules
-        uses: actions/cache@v2
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
-
       - name: Cache packages node modules
         uses: actions/cache@v2
         id: cache-packages-node-modules
@@ -112,6 +103,15 @@ jobs:
           key: ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
           restore-keys: |
             ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        id: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
 
       - name: Run Unit Tests
         run: npm run test
@@ -129,15 +129,6 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
-      - name: Cache node modules
-        uses: actions/cache@v2
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
-
       - name: Cache packages node modules
         uses: actions/cache@v2
         id: cache-packages-node-modules
@@ -146,6 +137,15 @@ jobs:
           key: ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
           restore-keys: |
             ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        id: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
 
       - name: Build Cartesian Components
         run: npm run build:e2e
@@ -192,15 +192,6 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
-      - name: Cache node modules
-        uses: actions/cache@v2
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
-
       - name: Cache packages node modules
         uses: actions/cache@v2
         id: cache-packages-node-modules
@@ -209,6 +200,15 @@ jobs:
           key: ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
           restore-keys: |
             ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        id: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
 
       - name: GitBook install
         run: npm run gitbook:install
@@ -249,8 +249,23 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
-      - name: Bootstrap
-        run: npm ci && npx lerna bootstrap --hoist && npm run build -- --all
+      - name: Cache packages node modules
+        uses: actions/cache@v2
+        id: cache-packages-node-modules
+        with:
+          path: "*/*/node_modules"
+          key: ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        id: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ github.action}}-${{ hashFiles('package-lock.json') }}
 
       - name: Pre PR output
         run: npx lerna version --conventional-commits --amend
