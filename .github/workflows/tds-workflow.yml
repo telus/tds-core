@@ -11,8 +11,8 @@ env:
   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
-  lint:
-    name: Lint Tests
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Branch
@@ -23,8 +23,61 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
+      - name: Cache node modules
+        uses: actions/cache@v2
+        id: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('package-lock.json') }}
+
+      - name: Cache packages node modules
+        uses: actions/cache@v2
+        id: cache-packages-node-modules
+        with:
+          path: "*/*/node_modules"
+          key: ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('*/*/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('*/*/package.json') }}
+
       - name: Bootstrap
+        if: ${{ steps.cache-node-modules.outputs.cache-hit != 'true' || steps.cache-packages-node-modules.outputs.cache-hit != 'true' }}
         run: npm ci && npx lerna bootstrap --hoist && npm run build -- --all
+
+  lint:
+    name: Lint Tests
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@v1
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        id: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('package-lock.json') }}
+
+      - name: Cache packages node modules
+        uses: actions/cache@v2
+        id: cache-packages-node-modules
+        with:
+          path: "*/*/node_modules"
+          key: ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('*/*/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('*/*/package.json') }}
+
+      - name: Sanity check
+        run: ls -R ./packages
 
       - name: Run Lint Tests
         run: npm run lint
@@ -32,6 +85,7 @@ jobs:
   unit:
     name: Unit Tests
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v1
@@ -41,8 +95,23 @@ jobs:
         with:
           node-version: "12.14.x"
 
-      - name: Bootstrap
-        run: npm ci && npx lerna bootstrap --hoist && npm run build -- --all
+      - name: Cache node modules
+        uses: actions/cache@v2
+        id: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('package-lock.json') }}
+
+      - name: Cache packages node modules
+        uses: actions/cache@v2
+        id: cache-packages-node-modules
+        with:
+          path: "*/*/node_modules"
+          key: ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('*/*/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Run Unit Tests
         run: npm run test
@@ -50,6 +119,7 @@ jobs:
   e2e:
     name: E2E Tests
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v1
@@ -59,8 +129,23 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
-      - name: Bootstrap
-        run: npm ci && npx lerna bootstrap --hoist && npm run build -- --all
+      - name: Cache node modules
+        uses: actions/cache@v2
+        id: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('package-lock.json') }}
+
+      - name: Cache packages node modules
+        uses: actions/cache@v2
+        id: cache-packages-node-modules
+        with:
+          path: "*/*/node_modules"
+          key: ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('*/*/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Build Cartesian Components
         run: npm run build:e2e
@@ -97,6 +182,7 @@ jobs:
   docs:
     name: Documentation
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v1
@@ -106,8 +192,23 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
-      - name: Bootstrap
-        run: npm ci && npx lerna bootstrap --hoist && npm run build -- --all
+      - name: Cache node modules
+        uses: actions/cache@v2
+        id: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('package-lock.json') }}
+
+      - name: Cache packages node modules
+        uses: actions/cache@v2
+        id: cache-packages-node-modules
+        with:
+          path: "*/*/node_modules"
+          key: ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('*/*/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ github.job}}-${{ hashFiles('*/*/package.json') }}
 
       - name: GitBook install
         run: npm run gitbook:install
