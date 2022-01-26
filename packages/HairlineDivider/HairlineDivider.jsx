@@ -28,7 +28,7 @@ const StyledHairlineDivider = styled.hr(spacing.noSpacing, borders.none, props =
         linear-gradient(0deg, rgba(216, 216, 216, 0) 0%,
         ${colorGreyGainsboro} 12%,
         ${colorGreyGainsboro} 88%,
-        rgba(216, 216, 216, 0) 100%) 
+        rgba(216, 216, 216, 0) 100%)
         1
       `,
     }
@@ -42,11 +42,11 @@ const StyledHairlineDivider = styled.hr(spacing.noSpacing, borders.none, props =
   if (!props.vertical && props.gradient) {
     return {
       ...horizontalStyle,
-      'border-image': `linear-gradient(90deg, 
-        rgba(216,216,216,0) 0%, 
-        ${colorGreyGainsboro} 7%, 
-        ${colorGreyGainsboro} 93%, 
-        rgba(216,216,216,0) 100%) 
+      'border-image': `linear-gradient(90deg,
+        rgba(216,216,216,0) 0%,
+        ${colorGreyGainsboro} 7%,
+        ${colorGreyGainsboro} 93%,
+        rgba(216,216,216,0) 100%)
         1
       `,
     }
