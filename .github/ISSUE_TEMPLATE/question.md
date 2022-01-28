@@ -1,6 +1,10 @@
 ---
 name: Question
 about: Ask a question about the design system, components, or documentation
+title: ''
+labels: ''
+assignees: ''
+
 ---
 
 <!--

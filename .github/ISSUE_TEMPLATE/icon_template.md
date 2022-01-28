@@ -1,7 +1,16 @@
 ---
-name: Icon request 💎
+name: "Icon request \U0001F48E"
 about: Request a new icon
+title: ''
+labels: ''
+assignees: ''
+
 ---
+
+> We're sunsetting the maintenance of TDS
+> Make sure to verify if your bug has [not been fixed](https://github.com/telus/universal-design-system) yet in [UDS / Allium](https://sites.google.com/telus.com/thinkcontentxdesign/about-us-our-products/allium)
+> We encourage everyone to switch to UDS / Allium
+Either way, feel free to fix the issue if you can't switch / pick the corresponding component from Allium.
 
 <!--
   ### IMPORTANT SECURITY NOTE ###
