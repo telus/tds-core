@@ -25,31 +25,41 @@ jobs:
 
       - name: Cache shared node modules
         uses: actions/cache@v2
-        id: tds-cache-shared-node-modules
+        id: cache-test1-shared-node-modules
         with:
-          path: |
-            "*/*/*/node_modules"
-            "*/*/*/dist"
+          path: "*/*/*/node_modules"
+          key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
+
+      - name: Cache shared dist
+        uses: actions/cache@v2
+        id: cache-test1-shared-dist
+        with:
+          path: "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
         uses: actions/cache@v2
-        id: tds-cache-packages-node-modules
+        id: cache-test1-packages-node-modules
         with:
-          path: |
-            "*/*/node_modules"
-            "*/*/dist"
+          path: "*/*/node_modules"
+          key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
+
+      - name: Cache packages dist
+        uses: actions/cache@v2
+        id: cache-test1-packages-dist
+        with:
+          path: "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
         uses: actions/cache@v2
-        id: tds-cache-node-modules
+        id: cache-test1-node-modules
         with:
           path: node_modules
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('package-lock.json') }}
 
       - name: Bootstrap
-        if: ${{ steps.tds-cache-node-modules.outputs.cache-hit != 'true' || steps.tds-cache-packages-node-modules.outputs.cache-hit != 'true' || steps.tds-cache-shared-node-modules.outputs.cache-hit != 'true' }}
+        if: ${{ steps.cache-test1-shared-node-modules.outputs.cache-hit != 'true' || steps.cache-test1-shared-dist.outputs.cache-hit != 'true' || steps.cache-test1-packages-node-modules.outputs.cache-hit != 'true' || steps.cache-test1-packages-dist.outputs.cache-hit != 'true' || steps.cache-test1-node-modules.outputs.cache-hit != 'true' }}
         run: npm run bootstrap
 
       - name: Run Lint Tests
@@ -70,25 +80,35 @@ jobs:
 
       - name: Cache shared node modules
         uses: actions/cache@v2
-        id: tds-cache-shared-node-modules
+        id: cache-test1-shared-node-modules
         with:
-          path: |
-            "*/*/*/node_modules"
-            "*/*/*/dist"
+          path: "*/*/*/node_modules"
+          key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
+
+      - name: Cache shared dist
+        uses: actions/cache@v2
+        id: cache-test1-shared-dist
+        with:
+          path: "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
         uses: actions/cache@v2
-        id: tds-cache-packages-node-modules
+        id: cache-test1-packages-node-modules
         with:
-          path: |
-            "*/*/node_modules"
-            "*/*/dist"
+          path: "*/*/node_modules"
+          key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
+
+      - name: Cache packages dist
+        uses: actions/cache@v2
+        id: cache-test1-packages-dist
+        with:
+          path: "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
         uses: actions/cache@v2
-        id: tds-cache-node-modules
+        id: cache-test1-node-modules
         with:
           path: node_modules
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('package-lock.json') }}
@@ -120,25 +140,35 @@ jobs:
 
       - name: Cache shared node modules
         uses: actions/cache@v2
-        id: tds-cache-shared-node-modules
+        id: cache-test1-shared-node-modules
         with:
-          path: |
-            "*/*/*/node_modules"
-            "*/*/*/dist"
+          path: "*/*/*/node_modules"
+          key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
+
+      - name: Cache shared dist
+        uses: actions/cache@v2
+        id: cache-test1-shared-dist
+        with:
+          path: "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
         uses: actions/cache@v2
-        id: tds-cache-packages-node-modules
+        id: cache-test1-packages-node-modules
         with:
-          path: |
-            "*/*/node_modules"
-            "*/*/dist"
+          path: "*/*/node_modules"
+          key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
+
+      - name: Cache packages dist
+        uses: actions/cache@v2
+        id: cache-test1-packages-dist
+        with:
+          path: "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
         uses: actions/cache@v2
-        id: tds-cache-node-modules
+        id: cache-test1-node-modules
         with:
           path: node_modules
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('package-lock.json') }}
@@ -161,25 +191,35 @@ jobs:
 
       - name: Cache shared node modules
         uses: actions/cache@v2
-        id: tds-cache-shared-node-modules
+        id: cache-test1-shared-node-modules
         with:
-          path: |
-            "*/*/*/node_modules"
-            "*/*/*/dist"
+          path: "*/*/*/node_modules"
+          key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
+
+      - name: Cache shared dist
+        uses: actions/cache@v2
+        id: cache-test1-shared-dist
+        with:
+          path: "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
         uses: actions/cache@v2
-        id: tds-cache-packages-node-modules
+        id: cache-test1-packages-node-modules
         with:
-          path: |
-            "*/*/node_modules"
-            "*/*/dist"
+          path: "*/*/node_modules"
+          key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
+
+      - name: Cache packages dist
+        uses: actions/cache@v2
+        id: cache-test1-packages-dist
+        with:
+          path: "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
         uses: actions/cache@v2
-        id: tds-cache-node-modules
+        id: cache-test1-node-modules
         with:
           path: node_modules
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('package-lock.json') }}
@@ -231,25 +271,35 @@ jobs:
 
       - name: Cache shared node modules
         uses: actions/cache@v2
-        id: tds-cache-shared-node-modules
+        id: cache-test1-shared-node-modules
         with:
-          path: |
-            "*/*/*/node_modules"
-            "*/*/*/dist"
+          path: "*/*/*/node_modules"
+          key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
+
+      - name: Cache shared dist
+        uses: actions/cache@v2
+        id: cache-test1-shared-dist
+        with:
+          path: "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
         uses: actions/cache@v2
-        id: tds-cache-packages-node-modules
+        id: cache-test1-packages-node-modules
         with:
-          path: |
-            "*/*/node_modules"
-            "*/*/dist"
+          path: "*/*/node_modules"
+          key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
+
+      - name: Cache packages dist
+        uses: actions/cache@v2
+        id: cache-test1-packages-dist
+        with:
+          path: "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
         uses: actions/cache@v2
-        id: tds-cache-node-modules
+        id: cache-test1-node-modules
         with:
           path: node_modules
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('package-lock.json') }}
@@ -295,25 +345,35 @@ jobs:
 
       - name: Cache shared node modules
         uses: actions/cache@v2
-        id: tds-cache-shared-node-modules
+        id: cache-test1-shared-node-modules
         with:
-          path: |
-            "*/*/*/node_modules"
-            "*/*/*/dist"
+          path: "*/*/*/node_modules"
+          key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
+
+      - name: Cache shared dist
+        uses: actions/cache@v2
+        id: cache-test1-shared-dist
+        with:
+          path: "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
         uses: actions/cache@v2
-        id: tds-cache-packages-node-modules
+        id: cache-test1-packages-node-modules
         with:
-          path: |
-            "*/*/node_modules"
-            "*/*/dist"
+          path: "*/*/node_modules"
+          key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
+
+      - name: Cache packages dist
+        uses: actions/cache@v2
+        id: cache-test1-packages-dist
+        with:
+          path: "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
         uses: actions/cache@v2
-        id: tds-cache-node-modules
+        id: cache-test1-node-modules
         with:
           path: node_modules
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('package-lock.json') }}
