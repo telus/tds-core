@@ -62,9 +62,6 @@ jobs:
         if: ${{ steps.cache-tds-files-shared-node-modules.outputs.cache-hit != 'true' || steps.cache-tds-files-shared-dist.outputs.cache-hit != 'true' || steps.cache-tds-files-packages-node-modules.outputs.cache-hit != 'true' || steps.cache-tds-files-packages-dist.outputs.cache-hit != 'true' || steps.cache-tds-files-node-modules.outputs.cache-hit != 'true' }}
         run: npm run bootstrap
 
-      - name: Run Lint Tests
-        run: npm run lint
-
   lint:
     name: Lint Tests
     runs-on: ubuntu-latest
