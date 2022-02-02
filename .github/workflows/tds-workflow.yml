@@ -91,6 +91,9 @@ jobs:
       - name: Sanity check 2
         run: ls -R ./packages/A11yContent/node_modules/@tds/util-prop-types
 
+      - name: Bootstrap lerna
+        run: npx lerna bootstrap --hoist
+
       - name: Run Lint Tests
         run: npm run lint
 
