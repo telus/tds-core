@@ -27,14 +27,18 @@ jobs:
         uses: actions/cache@v2
         id: cache-shared-node-modules
         with:
-          path: "*/*/*/node_modules"
+          path: |
+            "*/*/*/node_modules"
+            "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
         uses: actions/cache@v2
         id: cache-packages-node-modules
         with:
-          path: "*/*/node_modules"
+          path: |
+            "*/*/node_modules"
+            "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
@@ -71,14 +75,18 @@ jobs:
         uses: actions/cache@v2
         id: cache-shared-node-modules
         with:
-          path: "*/*/*/node_modules"
+          path: |
+            "*/*/*/node_modules"
+            "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
         uses: actions/cache@v2
         id: cache-packages-node-modules
         with:
-          path: "*/*/node_modules"
+          path: |
+            "*/*/node_modules"
+            "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
@@ -117,14 +125,18 @@ jobs:
         uses: actions/cache@v2
         id: cache-shared-node-modules
         with:
-          path: "*/*/*/node_modules"
+          path: |
+            "*/*/*/node_modules"
+            "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
         uses: actions/cache@v2
         id: cache-packages-node-modules
         with:
-          path: "*/*/node_modules"
+          path: |
+            "*/*/node_modules"
+            "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
@@ -154,14 +166,18 @@ jobs:
         uses: actions/cache@v2
         id: cache-shared-node-modules
         with:
-          path: "*/*/*/node_modules"
+          path: |
+            "*/*/*/node_modules"
+            "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
         uses: actions/cache@v2
         id: cache-packages-node-modules
         with:
-          path: "*/*/node_modules"
+          path: |
+            "*/*/node_modules"
+            "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
@@ -220,14 +236,18 @@ jobs:
         uses: actions/cache@v2
         id: cache-shared-node-modules
         with:
-          path: "*/*/*/node_modules"
+          path: |
+            "*/*/*/node_modules"
+            "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
         uses: actions/cache@v2
         id: cache-packages-node-modules
         with:
-          path: "*/*/node_modules"
+          path: |
+            "*/*/node_modules"
+            "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
@@ -280,14 +300,18 @@ jobs:
         uses: actions/cache@v2
         id: cache-shared-node-modules
         with:
-          path: "*/*/*/node_modules"
+          path: |
+            "*/*/*/node_modules"
+            "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
         uses: actions/cache@v2
         id: cache-packages-node-modules
         with:
-          path: "*/*/node_modules"
+          path: |
+            "*/*/node_modules"
+            "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
