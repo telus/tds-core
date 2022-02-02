@@ -48,6 +48,9 @@ jobs:
         if: ${{ steps.cache-node-modules.outputs.cache-hit != 'true' || steps.cache-packages-node-modules.outputs.cache-hit != 'true' || steps.cache-shared-node-modules.outputs.cache-hit != 'true' }}
         run: npm run bootstrap
 
+      - name: Bootstrap lerna
+        run: npx lerna bootstrap --hoist
+
       - name: Run Lint Tests
         run: npm run lint
 
