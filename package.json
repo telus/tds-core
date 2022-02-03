@@ -1,11 +1,11 @@
 {
   "version": "3.1.0",
-  "name": "@telus/tds-core",
+  "name": "@telus/tds-core-test",
   "description": "TELUS Design System core components",
-  "homepage": "https://github.com/telus/tds-core",
+  "homepage": "https://github.com/telus/tds-core-test",
   "repository": {
     "type": "git",
-    "url": "https://github.com/telus/tds-core.git"
+    "url": "https://github.com/telus/tds-core-test.git"
   },
   "license": "MIT",
   "private": true,
@@ -61,7 +61,7 @@
     "node": ">=12"
   },
   "bugs": {
-    "url": "https://github.com/telus/tds-core/issues"
+    "url": "https://github.com/telus/tds-core-test/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.8.3",

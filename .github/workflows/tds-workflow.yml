@@ -400,43 +400,43 @@ jobs:
       - name: TDS Bot output
         run: node ./scripts/gha/github-pr.js
 
-  # release:
-  #   if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
-  #   name: Cut a release
-  #   runs-on: ubuntu-latest
-  #   needs: prepr-bot
-  #   environment:
-  #     name: npm
-  #     url: ${{ steps.get_url.outputs.url }}
-  #   steps:
-  #     - name: Configure Git Config & Branch
-  #       run: |
-  #         git status
-  #         git config --global user.email "tds.github.bot@gmail.com"
-  #         git config --global user.name "TDSBot"
-  #         git fetch origin --tags
+  release:
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
+    name: Cut a release
+    runs-on: ubuntu-latest
+    needs: prepr-bot
+    environment:
+      name: npm
+      url: ${{ steps.get_url.outputs.url }}
+    steps:
+      - name: Configure Git Config & Branch
+        run: |
+          git status
+          git config --global user.email "tds.github.bot@gmail.com"
+          git config --global user.name "TDSBot"
+          git fetch origin --tags
 
-  #     - name: Setup .npmrc
-  #       run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+      - name: Setup .npmrc
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
-  #     - name: Set environment url output
-  #       id: get_url
-  #       shell: bash
-  #       run: echo "::set-output name=url::https://www.npmjs.com/package/@telus/tds-core/"
+      - name: Set environment url output
+        id: get_url
+        shell: bash
+        run: echo "::set-output name=url::https://www.npmjs.com/package/@telus/tds-core-test/"
 
-  #     - name: Lerna Publish
-  #       run: npm run lerna:cipublish
+      - name: Lerna Publish
+        run: npm run lerna:cipublish
 
-  #     - name: Update contributors
-  #       run: npm run contributors:update
+      - name: Update contributors
+        run: npm run contributors:update
 
-  #     - name: Commit updated contributors
-  #       run: |
-  #         if [[ $(git diff --name-only) ]]
-  #         then
-  #           git add .all-contributorsrc README.md
-  #           git commit -m "chore(other): update contributors"
-  #           git push
-  #         else
-  #           echo 'No contributor changes.'
-  #         fi
+      - name: Commit updated contributors
+        run: |
+          if [[ $(git diff --name-only) ]]
+          then
+            git add .all-contributorsrc README.md
+            git commit -m "chore(other): update contributors"
+            git push
+          else
+            echo 'No contributor changes.'
+          fi

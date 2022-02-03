@@ -6,97 +6,95 @@ kind: List
 metadata:
   name: tds-pipeline
 items:
-
-# Configure our Docker image repository
-# https://docs.openshift.com/enterprise/3.2/dev_guide/managing_images.html
-- kind: ImageStream
-  apiVersion: image.openshift.io/v1
-  metadata:
-    name: tds
-    labels:
-      app: tds
-
-# Configure our build pipeline template
-# https://docs.openshift.com/enterprise/3.2/dev_guide/templates.html
-- apiVersion: template.openshift.io/v1
-  kind: Template
-  metadata:
-    name: tds-pipeline
-  parameters:
-  - name: BRANCH
-    description: Branch to build from
-    value: master
-  objects:
-
-  # Configures the OpenShift/Jenkins build pipeline
-  # https://docs.openshift.com/enterprise/3.2/dev_guide/builds.html#defining-a-buildconfig
-  - apiVersion: build.openshift.io/v1
-    kind: BuildConfig
-    metadata:
-      name: tds-pipeline
-      labels:
-        app: tds
-    spec:
-      source:
-        type: Git
-        git:
-          uri: git@github.com:telus/tds-core.git
-          ref: ${BRANCH}
-        sourceSecret:
-          name: github-secret
-      triggers:
-        - type: GitHub
-          github:
-            secret: tisk
-      resources:
-        requests:
-          cpu: 500m
-          memory: 1Gi
-        limits:
-          cpu: '1'
-          memory: 4Gi
-      runPolicy: SerialLatestOnly
-      strategy:
-        type: JenkinsPipeline
-        jenkinsPipelineStrategy:
-          jenkinsfilePath: Jenkinsfile
-
-  # Configure our Docker container build
-  # https://docs.openshift.com/enterprise/3.2/architecture/core_concepts/builds_and_image_streams.html#docker-build
-  - kind: BuildConfig
-    apiVersion: build.openshift.io/v1
+  # Configure our Docker image repository
+  # https://docs.openshift.com/enterprise/3.2/dev_guide/managing_images.html
+  - kind: ImageStream
+    apiVersion: image.openshift.io/v1
     metadata:
       name: tds
       labels:
         app: tds
-    spec:
-      source:
-        type: Git
-        git:
-          uri: git@github.com:telus/tds-core.git
-          ref: ${BRANCH}
-        sourceSecret:
-          name: github-secret
-        secrets:
-          - secret:
-              name: npmrc-secret
-        runPolicy: Parallel
-      resources:
-        requests:
-          cpu: 6
-          memory: 5Gi
-        limits:
-          cpu: 7
-          memory: 6Gi
-      strategy:
-        type: Docker
-        dockerStrategy:
-          dockerfilePath: openshift/Dockerfile
-          forcePull: true
-      output:
-        to:
-          kind: ImageStreamTag
-          name: tds:latest
-      postCommit:
-        command: ["npm", "run"]
-        args: ["test"]
+
+  # Configure our build pipeline template
+  # https://docs.openshift.com/enterprise/3.2/dev_guide/templates.html
+  - apiVersion: template.openshift.io/v1
+    kind: Template
+    metadata:
+      name: tds-pipeline
+    parameters:
+      - name: BRANCH
+        description: Branch to build from
+        value: master
+    objects:
+      # Configures the OpenShift/Jenkins build pipeline
+      # https://docs.openshift.com/enterprise/3.2/dev_guide/builds.html#defining-a-buildconfig
+      - apiVersion: build.openshift.io/v1
+        kind: BuildConfig
+        metadata:
+          name: tds-pipeline
+          labels:
+            app: tds
+        spec:
+          source:
+            type: Git
+            git:
+              uri: git@github.com:telus/tds-core-test.git
+              ref: ${BRANCH}
+            sourceSecret:
+              name: github-secret
+          triggers:
+            - type: GitHub
+              github:
+                secret: tisk
+          resources:
+            requests:
+              cpu: 500m
+              memory: 1Gi
+            limits:
+              cpu: "1"
+              memory: 4Gi
+          runPolicy: SerialLatestOnly
+          strategy:
+            type: JenkinsPipeline
+            jenkinsPipelineStrategy:
+              jenkinsfilePath: Jenkinsfile
+
+      # Configure our Docker container build
+      # https://docs.openshift.com/enterprise/3.2/architecture/core_concepts/builds_and_image_streams.html#docker-build
+      - kind: BuildConfig
+        apiVersion: build.openshift.io/v1
+        metadata:
+          name: tds
+          labels:
+            app: tds
+        spec:
+          source:
+            type: Git
+            git:
+              uri: git@github.com:telus/tds-core-test.git
+              ref: ${BRANCH}
+            sourceSecret:
+              name: github-secret
+            secrets:
+              - secret:
+                  name: npmrc-secret
+            runPolicy: Parallel
+          resources:
+            requests:
+              cpu: 6
+              memory: 5Gi
+            limits:
+              cpu: 7
+              memory: 6Gi
+          strategy:
+            type: Docker
+            dockerStrategy:
+              dockerfilePath: openshift/Dockerfile
+              forcePull: true
+          output:
+            to:
+              kind: ImageStreamTag
+              name: tds:latest
+          postCommit:
+            command: ["npm", "run"]
+            args: ["test"]
