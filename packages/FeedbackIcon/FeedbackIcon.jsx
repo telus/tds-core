@@ -21,7 +21,7 @@ const FeedbackIcon = ({ width, height, copy, copyDictionary, optionalText, child
     )
   }
 
-  const a11yText = getCopy(copyDictionary, copy).a11yText
+  const a11yText = getCopy(copyDictionary, !optionalText ? copy || 'en' : copy).a11yText
 
   if (!optionalText && a11yText === '') {
     warn(
