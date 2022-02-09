@@ -12,10 +12,10 @@
   </div>
   <div>
     <p>
-      The TELUS Design System is undergoing changes to better reflect the evolution of the TELUS Brand. We’re making improvements to our visual language and technologies to support the growing needs of our team members. We appreciate your patience during this transition and share your excitement for what’s to come!
-    </p>
-    <p>
-      In the mean time, keep creating awesome and cohesive digital customer experiences with the available TDS components, as well as sharing and collaborating UI patterns with the community.
+      Telus Digital is switching to a brand new design system call Allium (#mettre le lien vers la doc de Allium). We’re sunsetting tds (core and community) and we’ll no longer accept new feature requests. We encourage everyone to gradually adopt our new components from Allium and at least play with it’s super cool documentation.
+      While diving into this documentation, you’ll notice some new updates:
+      We’ll provide direct links to corresponding allium component from either tds-core / tds-community
+      We’ll provide notice about deprecated components (that may not be implemented on Allium in the near future).
     </p>
     <p style="margin-bottom: 0;">
   <a href="/contact.html">Contact us</a> for more information on how to get support. And <a href="https://telusdigital.slack.com/archives/C2WK9TP5F">join our TELUS Slack channel</a> for updates.
