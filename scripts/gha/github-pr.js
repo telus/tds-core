@@ -22,7 +22,7 @@ if (
   process.exit(1)
 }
 
-const { output } = spawnSync('scripts/gha/prePr.sh')
+const { output } = spawnSync('scripts/prePr.sh')
 
 const formattedVersions = (output[1].toString('utf8').match(/(\s-.*)*/g) || [])
   .join('')

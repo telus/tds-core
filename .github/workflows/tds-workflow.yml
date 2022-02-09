@@ -422,7 +422,7 @@ jobs:
       - name: Set environment url output
         id: get_url
         shell: bash
-        run: echo "::set-output name=url::https://www.npmjs.com/package/@telus/tds-core-test/"
+        run: echo "::set-output name=url::https://www.npmjs.com/package/@telus/tds-core/"
 
       - name: Lerna Publish
         run: npm run lerna:cipublish
