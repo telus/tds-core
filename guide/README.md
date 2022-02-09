@@ -12,7 +12,7 @@
   </div>
   <div>
     <p>
-      The evolution of the TELUS brand continues! The brand new <a href="https://telus.github.io/universal-design-system/@telus-uds/ds-allium/">Allium Design System</a> (#mettre le lien vers la doc de Allium) is now available and all teams are encouraged to transition their applications to Allium components in order to better reflect the latest vision of the TELUS brand.
+      The evolution of the TELUS brand continues! The brand new <a href="https://telus.github.io/universal-design-system/@telus-uds/ds-allium/">Allium Design System</a> is now available and all teams are encouraged to transition their applications to Allium components in order to better reflect the latest vision of the TELUS brand.
     </p>
     <p>TDS Core and TDS Community will continue with limited support and restrict new feature requests.</p>
     <p>While diving into this documentation, you’ll notice some new updates:</p>
