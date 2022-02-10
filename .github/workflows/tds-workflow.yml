@@ -9,7 +9,7 @@ jobs:
       - name: Checkout Branch
         uses: actions/checkout@v1
       - name: Setup Node 12
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: '12.14.x'
       - name: Bootstrap
@@ -23,7 +23,7 @@ jobs:
       - name: Checkout Branch
         uses: actions/checkout@v1
       - name: Setup Node 12
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: '12.14.x'
       - name: Bootstrap
@@ -37,7 +37,7 @@ jobs:
       - name: Checkout Branch
         uses: actions/checkout@v1
       - name: Setup Node 12
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: '12.14.x'
       - name: Bootstrap
@@ -76,7 +76,7 @@ jobs:
       - name: Checkout Branch
         uses: actions/checkout@v1
       - name: Setup Node 12
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: '12.14.x'
       - name: Bootstrap
