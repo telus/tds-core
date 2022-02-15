@@ -404,7 +404,7 @@ jobs:
     if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
     name: Cut a release
     runs-on: ubuntu-latest
-    needs: prepr-bot
+    needs: [lint, unit, e2e, docs]
     environment:
       name: npm
       url: ${{ steps.get_url.outputs.url }}
