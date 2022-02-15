@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.5 (2022-02-15)
+
+
+### Bug Fixes
+
+* gha release job git config ([1ab603d](https://github.com/telus/tds-core-test/commit/1ab603d68c36219b0711fc353bc2515b64712ca9))
+
+
+
+
+
 ## [1.0.4](https://github.com/telus/tds-core/compare/@tds/util-generate-id@1.0.2...@tds/util-generate-id@1.0.4) (2019-05-01)
 
 **Note:** Version bump only for package @tds/util-generate-id

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 4.4.3 (2022-02-15)
+
+
+### Bug Fixes
+
+* gha release job git config ([1ab603d](https://github.com/telusdigital/tds/commit/1ab603d68c36219b0711fc353bc2515b64712ca9))
+
+
+
+
+
 ## [4.4.2](https://github.com/telusdigital/tds/compare/@tds/core-tooltip@4.4.1...@tds/core-tooltip@4.4.2) (2021-12-02)
 
 **Note:** Version bump only for package @tds/core-tooltip

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.3.1 (2022-02-15)
+
+
+### Bug Fixes
+
+* gha release job git config ([1ab603d](https://github.com/telusdigital/tds-core/commit/1ab603d68c36219b0711fc353bc2515b64712ca9))
+
+
+
+
+
 # [2.3.0](https://github.com/telusdigital/tds-core/compare/@tds/core-breadcrumbs@2.2.10...@tds/core-breadcrumbs@2.3.0) (2021-09-21)
 
 

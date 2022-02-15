@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 4.1.1 (2022-02-15)
+
+
+### Bug Fixes
+
+* gha release job git config ([1ab603d](https://github.com/telusdigital/tds/commit/1ab603d68c36219b0711fc353bc2515b64712ca9))
+
+
+
+
+
 # [4.1.0](https://github.com/telusdigital/tds/compare/@tds/core-flex-grid@4.0.2...@tds/core-flex-grid@4.1.0) (2021-09-21)
 
 

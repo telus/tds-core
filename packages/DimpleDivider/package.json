@@ -1,6 +1,6 @@
 {
   "name": "@tds/core-dimple-divider",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Separate modules",
   "main": "index.cjs.js",
   "module": "index.es.js",
@@ -26,8 +26,8 @@
     "styled-components": "^4.1.3 || ^5.1.0"
   },
   "dependencies": {
-    "@tds/shared-styles": "^2.0.1",
-    "@tds/util-helpers": "^1.6.0",
+    "@tds/shared-styles": "^2.0.2",
+    "@tds/util-helpers": "^1.6.1",
     "prop-types": "^15.5.10"
   }
 }

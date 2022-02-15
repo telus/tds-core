@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.3.7 (2022-02-15)
+
+
+### Bug Fixes
+
+* gha release job git config ([1ab603d](https://github.com/telus/tds/commit/1ab603d68c36219b0711fc353bc2515b64712ca9))
+
+
+
+
+
 ## [3.3.6](https://github.com/telus/tds/compare/@tds/core-select@3.3.5...@tds/core-select@3.3.6) (2022-02-09)
 
 **Note:** Version bump only for package @tds/core-select
