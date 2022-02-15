@@ -1,9 +1,9 @@
 version: "4.0"
 uid: 66407038
 about:
-  title: tds-core-test
+  title: tds-core
   description: TELUS Design System core components
-  alias: tds-core-test
+  alias: tds-core
   type: module
   target: npm
 contacts:
@@ -35,14 +35,14 @@ references:
     description: >-
       TDS Core Issue Tracker board. Post bug reports or feature suggestions
       here!
-    uri: "https://github.com/telus/tds-core-test/issues"
+    uri: "https://github.com/telus/tds-core/issues"
   - type: git
     title: Source Code
-    uri: "https://github.com/telus/tds-core-test"
+    uri: "https://github.com/telus/tds-core"
 environments:
   - type: git
     title: Source Code
-    uri: "https://github.com/telus/tds-core-test"
+    uri: "https://github.com/telus/tds-core"
   - type: production
     title: TDS Homepage
     description: >-
