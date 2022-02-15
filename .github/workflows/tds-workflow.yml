@@ -321,7 +321,7 @@ jobs:
     if: github.event_name == 'pull_request'
     name: Pre PR logs
     runs-on: ubuntu-latest
-    needs: [lint, unit, e2e, docs]
+    needs: [lint, unit, docs]
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v1
@@ -404,7 +404,7 @@ jobs:
     if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
     name: Cut a release
     runs-on: ubuntu-latest
-    needs: [lint, unit, e2e, docs]
+    needs: [lint, unit, docs]
     environment:
       name: npm
       url: ${{ steps.get_url.outputs.url }}
