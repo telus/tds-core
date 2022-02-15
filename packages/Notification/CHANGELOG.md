@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.2.4 (2022-02-15)
+
+
+### Bug Fixes
+
+* gha release job git config ([276ebb6](https://github.com/telusdigital/tds/commit/276ebb6968a0b56c9b87c178f6895a60ae108e71))
+
+
+
+
+
 ## 3.2.3 (2022-02-15)
 
 

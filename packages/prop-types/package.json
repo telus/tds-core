@@ -1,6 +1,6 @@
 {
   "name": "@tds/util-prop-types",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "TDS proptypes",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
