@@ -10,7 +10,7 @@
   </div>
   <div>
     <p>
-      We encourage you tu use our new component <a href="https://telus.github.io/universal-design-system/@telus-uds/ds-allium/components/palette/colour">Colour</a> from Allium 
+      We encourage you to use our new component <a href="https://telus.github.io/universal-design-system/@telus-uds/ds-allium/components/palette/colour">Colour</a> from Allium.
     </p>
   </div>
 </div>
