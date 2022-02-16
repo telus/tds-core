@@ -396,10 +396,12 @@ jobs:
       - name: Rebase branch
         run: git rebase origin/master
 
-      - name: Set pull request number environment variable
-        run: echo "GITHUB_PULL_REQUEST=$(echo '${{ github.event.pull_request.number }}')" >> $GITHUB_ENV
-
       - name: TDS Bot output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_PULL_REQUEST: ${{ github.event.pull_request.number }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
         run: |
           cd ./scripts/gha
           npm ci
