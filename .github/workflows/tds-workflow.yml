@@ -365,6 +365,9 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('package-lock.json') }}
 
+      - name: Install expect
+        run: apk add expect
+
       - name: Pre PR log output
         run: ./scripts/prePr.sh
 
