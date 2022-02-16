@@ -1,0 +1,10 @@
+{
+  "name": "gha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "github-pr.js",
+  "scripts": {},
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}

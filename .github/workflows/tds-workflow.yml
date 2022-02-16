@@ -400,7 +400,10 @@ jobs:
         run: echo "GITHUB_PULL_REQUEST=$(echo '${{ github.event.pull_request.number }}')" >> $GITHUB_ENV
 
       - name: TDS Bot output
-        run: node ./scripts/gha/github-pr.js
+        run: |
+          cd ./scripts/gha
+          npm ci
+          node github-pr.js
 
   release:
     if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
