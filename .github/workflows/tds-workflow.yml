@@ -393,8 +393,8 @@ jobs:
 
       - name: Rebase branch
         run: |
-          git checkout master
-          git pull --rebase
+          git fetch origin/master
+          git rebase master
 
       - name: Set pull request number environment variable
         run: echo "GITHUB_PULL_REQUEST=$(echo '${{ github.event.pull_request.number }}')" >> $GITHUB_ENV
