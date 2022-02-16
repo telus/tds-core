@@ -394,7 +394,7 @@ jobs:
           git config --global user.name "TDSBot"
 
       - name: Rebase branch
-        run: git rebase master
+        run: git rebase origin/master
 
       - name: Set pull request number environment variable
         run: echo "GITHUB_PULL_REQUEST=$(echo '${{ github.event.pull_request.number }}')" >> $GITHUB_ENV
