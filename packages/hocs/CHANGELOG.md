@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.3.3 (2022-02-16)
+
+
+### Bug Fixes
+
+* gha release job npm publish token ([ce7aacd](https://github.com/telus/tds-core/commit/ce7aacdd77e54c4f8e48eb31d0c05dc804530324))
+
+
+
+
+
+## 1.3.2 (2022-02-15)
+
+
+### Bug Fixes
+
+* gha release job git config ([276ebb6](https://github.com/telus/tds-core/commit/276ebb6968a0b56c9b87c178f6895a60ae108e71))
+
+
+
+
+
+## 1.3.1 (2022-02-15)
+
+
+### Bug Fixes
+
+* gha release job git config ([1ab603d](https://github.com/telus/tds-core/commit/1ab603d68c36219b0711fc353bc2515b64712ca9))
+
+
+
+
+
 # [1.3.0](https://github.com/telus/tds-core/compare/@tds/shared-hocs@1.2.0...@tds/shared-hocs@1.3.0) (2021-09-21)
 
 

@@ -3,21 +3,21 @@
 
 // Environment: These variables must be available in the environment.
 // GITHUB_TOKEN
-// CIRCLE_PROJECT_REPONAME
-// CIRCLE_PULL_REQUEST
-// CIRCLE_BRANCH
+// GITHUB_REPOSITORY
+// GITHUB_PULL_REQUEST
+// GITHUB_REF_NAME
 
 const request = require('request')
 const { spawnSync } = require('child_process')
 
 if (
   !process.env.GITHUB_TOKEN ||
-  !process.env.CIRCLE_PROJECT_REPONAME ||
-  !process.env.CIRCLE_PULL_REQUEST ||
-  !process.env.CIRCLE_BRANCH
+  !process.env.GITHUB_REPOSITORY ||
+  !process.env.GITHUB_PULL_REQUEST ||
+  !process.env.GITHUB_REF_NAME
 ) {
   console.error(
-    "'GITHUB_TOKEN', 'CIRCLE_PROJECT_REPONAME', 'CIRCLE_PULL_REQUEST', and 'CIRCLE_BRANCH' must be available in the environment."
+    "'GITHUB_TOKEN', 'GITHUB_REPOSITORY', 'GITHUB_PULL_REQUEST', and 'GITHUB_REF_NAME' must be available in the environment."
   )
   process.exit(1)
 }
@@ -31,10 +31,8 @@ const formattedVersions = (output[1].toString('utf8').match(/(\s-.*)*/g) || [])
 const links = `
 Links:
 
-- [Cartesian Components](http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/pr/${process.env.CIRCLE_BRANCH
-  }/e2e/)
-- [Documentation](http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/pr/${process.env.CIRCLE_BRANCH
-  }/docs/)
+- [Cartesian Components](http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/pr/${process.env.GITHUB_REF_NAME}/e2e/)
+- [Documentation](http://telus-design-system-docs.s3-website-us-east-1.amazonaws.com/pr/${process.env.GITHUB_REF_NAME}/docs/)
 `
 
 const changes = `
@@ -50,7 +48,7 @@ ${changes.trim()}
 `
 
 request.post({
-  url: `https://api.github.com/repos/telus/${process.env.CIRCLE_PROJECT_REPONAME}/issues/${/[^/]*$/.exec(process.env.CIRCLE_PULL_REQUEST)[0]
+  url: `https://api.github.com/repos/${process.env.GITHUB_REPOSITORY}/issues/${/[^/]*$/.exec(process.env.GITHUB_PULL_REQUEST)[0]
     }/comments`,
   headers: {
     'User-Agent': 'TDS',

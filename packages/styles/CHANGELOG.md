@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.0.4 (2022-02-16)
+
+
+### Bug Fixes
+
+* gha release job npm publish token ([ce7aacd](https://github.com/telusdigital/tds/commit/ce7aacdd77e54c4f8e48eb31d0c05dc804530324))
+
+
+
+
+
+## 2.0.3 (2022-02-15)
+
+
+### Bug Fixes
+
+* gha release job git config ([276ebb6](https://github.com/telusdigital/tds/commit/276ebb6968a0b56c9b87c178f6895a60ae108e71))
+
+
+
+
+
+## 2.0.2 (2022-02-15)
+
+
+### Bug Fixes
+
+* gha release job git config ([1ab603d](https://github.com/telusdigital/tds/commit/1ab603d68c36219b0711fc353bc2515b64712ca9))
+
+
+
+
+
 ## [2.0.1](https://github.com/telusdigital/tds/compare/@tds/shared-styles@2.0.0...@tds/shared-styles@2.0.1) (2020-09-11)
 
 **Note:** Version bump only for package @tds/shared-styles

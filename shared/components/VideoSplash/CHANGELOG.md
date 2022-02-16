@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.57 (2022-02-16)
+
+
+### Bug Fixes
+
+* gha release job npm publish token ([ce7aacd](https://github.com/telus/tds-core-test/commit/ce7aacdd77e54c4f8e48eb31d0c05dc804530324))
+
+
+
+
+
+## 1.1.56 (2022-02-15)
+
+
+### Bug Fixes
+
+* gha release job git config ([276ebb6](https://github.com/telus/tds-core-test/commit/276ebb6968a0b56c9b87c178f6895a60ae108e71))
+
+
+
+
+
+## 1.1.55 (2022-02-15)
+
+
+### Bug Fixes
+
+* gha release job git config ([1ab603d](https://github.com/telus/tds-core-test/commit/1ab603d68c36219b0711fc353bc2515b64712ca9))
+
+
+
+
+
 ## [1.1.54](https://github.com/telus/tds-core/compare/@tds/shared-video-splash@1.1.53...@tds/shared-video-splash@1.1.54) (2021-11-01)
 
 **Note:** Version bump only for package @tds/shared-video-splash

@@ -1,6 +1,6 @@
 {
   "name": "@tds/shared-hocs",
-  "version": "1.3.0",
+  "version": "1.3.3",
   "description": "TDS higher order components",
   "main": "index.cjs.js",
   "module": "index.es.js",

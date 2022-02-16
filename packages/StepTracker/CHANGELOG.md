@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 5.1.5 (2022-02-16)
+
+
+### Bug Fixes
+
+* gha release job npm publish token ([ce7aacd](https://github.com/telusdigital/tds/commit/ce7aacdd77e54c4f8e48eb31d0c05dc804530324))
+
+
+
+
+
+## 5.1.4 (2022-02-15)
+
+
+### Bug Fixes
+
+* gha release job git config ([276ebb6](https://github.com/telusdigital/tds/commit/276ebb6968a0b56c9b87c178f6895a60ae108e71))
+
+
+
+
+
+## 5.1.3 (2022-02-15)
+
+
+### Bug Fixes
+
+* gha release job git config ([1ab603d](https://github.com/telusdigital/tds/commit/1ab603d68c36219b0711fc353bc2515b64712ca9))
+
+
+
+
+
 ## [5.1.2](https://github.com/telusdigital/tds/compare/@tds/core-step-tracker@5.1.1...@tds/core-step-tracker@5.1.2) (2021-11-01)
 
 **Note:** Version bump only for package @tds/core-step-tracker
