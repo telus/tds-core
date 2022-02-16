@@ -366,7 +366,7 @@ jobs:
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('package-lock.json') }}
 
       - name: Pre PR log output
-        run: scripts/prePr.sh
+        run: ./scripts/prePr.sh
 
   prepr-bot:
     if: github.event_name == 'pull_request'
