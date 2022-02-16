@@ -379,6 +379,8 @@ jobs:
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -392,9 +394,7 @@ jobs:
           git config --global user.name "TDSBot"
 
       - name: Rebase branch
-        run: |
-          git fetch origin/master
-          git rebase master
+        run: git rebase master
 
       - name: Set pull request number environment variable
         run: echo "GITHUB_PULL_REQUEST=$(echo '${{ github.event.pull_request.number }}')" >> $GITHUB_ENV
