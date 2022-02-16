@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.4.5 (2022-02-16)
+
+
+### Bug Fixes
+
+* gha release job npm publish token ([ce7aacd](https://github.com/telus/tds-core/commit/ce7aacdd77e54c4f8e48eb31d0c05dc804530324))
+
+
+
+
+
 ## 1.4.4 (2022-02-15)
 
 

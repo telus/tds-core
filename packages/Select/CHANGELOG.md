@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.3.9 (2022-02-16)
+
+
+### Bug Fixes
+
+* gha release job npm publish token ([ce7aacd](https://github.com/telus/tds/commit/ce7aacdd77e54c4f8e48eb31d0c05dc804530324))
+
+
+
+
+
 ## 3.3.8 (2022-02-15)
 
 
