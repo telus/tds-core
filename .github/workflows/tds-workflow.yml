@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Branch
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -68,7 +68,7 @@ jobs:
     needs: build
     steps:
       - name: Checkout Branch
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -119,7 +119,7 @@ jobs:
     needs: build
     steps:
       - name: Checkout Branch
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -170,7 +170,7 @@ jobs:
   #   needs: build
   #   steps:
   #     - name: Checkout Branch
-  #       uses: actions/checkout@v1
+  #       uses: actions/checkout@v2
 
   #     - name: Setup Node
   #       uses: actions/setup-node@v1
@@ -250,7 +250,7 @@ jobs:
     needs: build
     steps:
       - name: Checkout Branch
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -324,7 +324,7 @@ jobs:
     needs: [lint, unit, docs]
     steps:
       - name: Checkout Branch
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -376,7 +376,7 @@ jobs:
     needs: prepr-log
     steps:
       - name: Checkout Branch
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -407,17 +407,61 @@ jobs:
     needs: [lint, unit, docs]
     environment:
       name: npm
-      url: https://www.npmjs.com/package/@telus/tds-core/
+      url: https://www.npmjs.com/settings/tds/packages
     steps:
+      - name: Checkout Branch
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref_name }}
+
       - name: Configure Git Config & Branch
         run: |
-          git status
-          git config --global user.email "tds.github.bot@gmail.com"
-          git config --global user.name "TDSBot"
+          git config user.name "TDSBot"
+          git config user.email "tds.github.bot@gmail.com"
           git fetch origin --tags
 
       - name: Setup .npmrc
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Cache shared node modules
+        uses: actions/cache@v2
+        id: cache-tds-files-shared-node-modules
+        with:
+          path: "*/*/*/node_modules"
+          key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
+
+      - name: Cache shared dist
+        uses: actions/cache@v2
+        id: cache-tds-files-shared-dist
+        with:
+          path: "*/*/*/dist"
+          key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
+
+      - name: Cache packages node modules
+        uses: actions/cache@v2
+        id: cache-tds-files-packages-node-modules
+        with:
+          path: "*/*/node_modules"
+          key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
+
+      - name: Cache packages dist
+        uses: actions/cache@v2
+        id: cache-tds-files-packages-dist
+        with:
+          path: "*/*/dist"
+          key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        id: cache-tds-files-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('package-lock.json') }}
 
       - name: Lerna Publish
         run: npm run lerna:cipublish
