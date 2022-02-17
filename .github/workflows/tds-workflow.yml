@@ -327,6 +327,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Reattach HEAD
+        run: git checkout "${GITHUB_REF_NAME}"
+
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
@@ -383,6 +386,9 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+
+      - name: Reattach HEAD
+        run: git checkout "${GITHUB_REF_NAME}"
 
       - name: Setup Node
         uses: actions/setup-node@v1
