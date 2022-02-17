@@ -372,7 +372,7 @@ jobs:
         run: sudo apt-get install -y expect
 
       - name: Pre PR log output
-        run: ./scripts/prePr.sh
+        run: npx lerna version --conventional-commits --amend
 
   prepr-bot:
     if: github.event_name == 'pull_request'
