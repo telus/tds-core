@@ -328,7 +328,7 @@ jobs:
           fetch-depth: 0
 
       - name: Reattach HEAD
-        run: git checkout "${GITHUB_REF_NAME}"
+        run: git checkout "${GITHUB_REF:11}"
 
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -388,7 +388,7 @@ jobs:
           fetch-depth: 0
 
       - name: Reattach HEAD
-        run: git checkout "${GITHUB_REF_NAME}"
+        run: git checkout "${GITHUB_REF:11}"
 
       - name: Setup Node
         uses: actions/setup-node@v1
