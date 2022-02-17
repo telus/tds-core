@@ -22,6 +22,7 @@ if (
 }
 
 const { output } = spawnSync('scripts/prePr.sh')
+console.info('OUTPUT:', output)
 
 const formattedVersions = (output[1].toString('utf8').match(/(\s-.*)*/g) || [])
   .join('')
