@@ -5,7 +5,6 @@
 // GITHUB_TOKEN
 // GITHUB_REPOSITORY
 // GITHUB_PULL_REQUEST
-// GITHUB_REF_NAME
 
 const request = require('request')
 const { spawnSync } = require('child_process')
@@ -22,7 +21,6 @@ if (
 }
 
 const { output } = spawnSync('../prePr.sh')
-console.info('OUTPUT:', output)
 
 const formattedVersions = (output[1].toString('utf8').match(/(\s-.*)*/g) || [])
   .join('')
