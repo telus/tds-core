@@ -325,10 +325,7 @@ jobs:
       - name: Checkout Branch
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
-
-      - name: Reattach HEAD
-        run: git checkout "${GITHUB_REF:11}"
+          ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -385,10 +382,7 @@ jobs:
       - name: Checkout Branch
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
-
-      - name: Reattach HEAD
-        run: git checkout "${GITHUB_REF:11}"
+          ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Setup Node
         uses: actions/setup-node@v1
