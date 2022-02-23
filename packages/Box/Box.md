@@ -1,3 +1,20 @@
+```jsx noeditor
+<Notification>
+  <Box between={2}>
+    <Paragraph bold>
+      New! The TDS documentation experience has been updated to be more performant!
+    </Paragraph>
+    <Paragraph>
+      We encourage you tu use our new component{' '}
+      <Link href="https://telus.github.io/universal-design-system/@telus-uds/ds-allium/components/components/box">
+        Box
+      </Link>{' '}
+      from Allium
+    </Paragraph>
+  </Box>
+</Notification>
+```
+
 <div style="text-align: center;">
   <img src="box_inset.png" alt="box inset example"/>
   <img src="box_between.png" alt="box between example" />
