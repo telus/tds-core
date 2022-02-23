@@ -1,19 +1,19 @@
-<div style="display: flex; flex-direction: row; wrap: nowrap; padding: 1rem; background-color: rgb(255, 249, 238); margin-bottom: 1rem;">
-  <div style="margin-right: 1rem; height: 100%;">
-    <svg style="display: inline-block; vertical-align: middle;" width="20" height="20">
-      <path
-        fill="#8C5415"
-        fill-rule="evenodd"
-        d="M10.878 1.61l8.315 15.244a1 1 0 0 1-.878 1.48H1.685a1 1 0 0 1-.878-1.48L9.122 1.61a1 1 0 0 1 1.756 0zM10 16.794c.46 0 .833-.402.833-.898 0-.495-.373-.897-.833-.897-.46 0-.833.402-.833.897 0 .496.373.898.833.898zm-.022-2.885c.347 0 .63-.297.64-.67l.179-6.698c.01-.388-.28-.709-.64-.709h-.35c-.361 0-.65.32-.64.708l.171 6.699c.01.373.294.67.64.67z"
-      />
-    </svg>
-  </div>
-  <div>
-    <p>
-      We encourage you to use our new component <a href="https://telus.github.io/universal-design-system/@telus-uds/ds-allium/components/palette/colour">Colour</a> from Allium.
-    </p>
-  </div>
-</div>
+```jsx noeditor
+<Notification>
+  <Box between={2}>
+    <Paragraph bold>
+      New! The TDS documentation experience has been updated to be more performant!
+    </Paragraph>
+    <Paragraph>
+      We encourage you tu use our new component{' '}
+      <Link href="https://telus.github.io/universal-design-system/@telus-uds/ds-allium/components/palette/colour">
+        Colour
+      </Link>{' '}
+      from Allium
+    </Paragraph>
+  </Box>
+</Notification>
+```
 
 ```js static
 import { colorAccessibleGreen, colorGreyAthens } from '@tds/core-colours'
