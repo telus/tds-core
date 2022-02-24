@@ -118,7 +118,9 @@ const renderLabel = (id, label, hint, hintPosition, hintId, tooltip) => (
           <Text size="medium" bold>
             {label}
           </Text>
-          {hint && hintPosition === 'inline' && renderHint(hint, Text, hintId)}
+          {hint && hintPosition === 'inline' && (
+            <span style={{ alignSelf: 'baseline' }}>{renderHint(hint, Text, hintId)}</span>
+          )}
         </StyledLabelContainer>
       </label>
       {tooltip && React.cloneElement(tooltip, { connectedFieldLabel: label })}
