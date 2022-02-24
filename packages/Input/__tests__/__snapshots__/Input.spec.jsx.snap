@@ -696,67 +696,75 @@ Object {
                                         </StyledComponent>
                                       </Text__StyledText>
                                     </Text>
-                                    <Text
-                                      block={false}
-                                      bold={false}
-                                      invert={false}
-                                      size="small"
+                                    <span
+                                      style={
+                                        Object {
+                                          "alignSelf": "baseline",
+                                        }
+                                      }
                                     >
-                                      <Text__StyledText
+                                      <Text
                                         block={false}
                                         bold={false}
                                         invert={false}
                                         size="small"
                                       >
-                                        <StyledComponent
+                                        <Text__StyledText
                                           block={false}
                                           bold={false}
-                                          forwardedComponent={
-                                            Object {
-                                              "$$typeof": Symbol(react.forward_ref),
-                                              "attrs": Array [],
-                                              "componentStyle": ComponentStyle {
-                                                "componentId": "Text__StyledText-sc-1m0rr67-0",
-                                                "isStatic": false,
-                                                "lastClassName": "c4",
-                                                "rules": Array [
-                                                  [Function],
-                                                  [Function],
-                                                  [Function],
-                                                  [Function],
-                                                  [Function],
-                                                  "sup {",
-                                                  "top: -0.5em;",
-                                                  "font-size: 0.875rem;",
-                                                  "position: relative;",
-                                                  "vertical-align: baseline;",
-                                                  "padding-left: 0.1em;",
-                                                  "}",
-                                                ],
-                                              },
-                                              "displayName": "Text__StyledText",
-                                              "foldedComponentIds": Array [],
-                                              "render": [Function],
-                                              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                                              "target": "span",
-                                              "toString": [Function],
-                                              "warnTooManyClasses": [Function],
-                                              "withComponent": [Function],
-                                            }
-                                          }
-                                          forwardedRef={null}
                                           invert={false}
                                           size="small"
                                         >
-                                          <span
-                                            className="c4"
+                                          <StyledComponent
+                                            block={false}
+                                            bold={false}
+                                            forwardedComponent={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "attrs": Array [],
+                                                "componentStyle": ComponentStyle {
+                                                  "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                                  "isStatic": false,
+                                                  "lastClassName": "c4",
+                                                  "rules": Array [
+                                                    [Function],
+                                                    [Function],
+                                                    [Function],
+                                                    [Function],
+                                                    [Function],
+                                                    "sup {",
+                                                    "top: -0.5em;",
+                                                    "font-size: 0.875rem;",
+                                                    "position: relative;",
+                                                    "vertical-align: baseline;",
+                                                    "padding-left: 0.1em;",
+                                                    "}",
+                                                  ],
+                                                },
+                                                "displayName": "Text__StyledText",
+                                                "foldedComponentIds": Array [],
+                                                "render": [Function],
+                                                "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                                                "target": "span",
+                                                "toString": [Function],
+                                                "warnTooManyClasses": [Function],
+                                                "withComponent": [Function],
+                                              }
+                                            }
+                                            forwardedRef={null}
+                                            invert={false}
                                             size="small"
                                           >
-                                            The short hint
-                                          </span>
-                                        </StyledComponent>
-                                      </Text__StyledText>
-                                    </Text>
+                                            <span
+                                              className="c4"
+                                              size="small"
+                                            >
+                                              The short hint
+                                            </span>
+                                          </StyledComponent>
+                                        </Text__StyledText>
+                                      </Text>
+                                    </span>
                                   </span>
                                 </StyledComponent>
                               </styled.div>
@@ -1211,67 +1219,75 @@ Object {
                     </StyledComponent>
                   </Text__StyledText>
                 </Text>
-                <Text
-                  block={false}
-                  bold={false}
-                  invert={false}
-                  size="small"
+                <span
+                  style={
+                    Object {
+                      "alignSelf": "baseline",
+                    }
+                  }
                 >
-                  <Text__StyledText
+                  <Text
                     block={false}
                     bold={false}
                     invert={false}
                     size="small"
                   >
-                    <StyledComponent
+                    <Text__StyledText
                       block={false}
                       bold={false}
-                      forwardedComponent={
-                        Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "attrs": Array [],
-                          "componentStyle": ComponentStyle {
-                            "componentId": "Text__StyledText-sc-1m0rr67-0",
-                            "isStatic": false,
-                            "lastClassName": "c3",
-                            "rules": Array [
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                              [Function],
-                              "sup {",
-                              "top: -0.5em;",
-                              "font-size: 0.875rem;",
-                              "position: relative;",
-                              "vertical-align: baseline;",
-                              "padding-left: 0.1em;",
-                              "}",
-                            ],
-                          },
-                          "displayName": "Text__StyledText",
-                          "foldedComponentIds": Array [],
-                          "render": [Function],
-                          "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
-                          "target": "span",
-                          "toString": [Function],
-                          "warnTooManyClasses": [Function],
-                          "withComponent": [Function],
-                        }
-                      }
-                      forwardedRef={null}
                       invert={false}
                       size="small"
                     >
-                      <span
-                        className="c3"
+                      <StyledComponent
+                        block={false}
+                        bold={false}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "Text__StyledText-sc-1m0rr67-0",
+                              "isStatic": false,
+                              "lastClassName": "c3",
+                              "rules": Array [
+                                [Function],
+                                [Function],
+                                [Function],
+                                [Function],
+                                [Function],
+                                "sup {",
+                                "top: -0.5em;",
+                                "font-size: 0.875rem;",
+                                "position: relative;",
+                                "vertical-align: baseline;",
+                                "padding-left: 0.1em;",
+                                "}",
+                              ],
+                            },
+                            "displayName": "Text__StyledText",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                            "target": "span",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        invert={false}
                         size="small"
                       >
-                        The short hint
-                      </span>
-                    </StyledComponent>
-                  </Text__StyledText>
-                </Text>
+                        <span
+                          className="c3"
+                          size="small"
+                        >
+                          The short hint
+                        </span>
+                      </StyledComponent>
+                    </Text__StyledText>
+                  </Text>
+                </span>
               </span>
             </StyledComponent>
           </styled.div>
