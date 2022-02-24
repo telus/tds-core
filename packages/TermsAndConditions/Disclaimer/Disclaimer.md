@@ -1,3 +1,20 @@
+```jsx noeditor
+<Notification>
+  <Box between={2}>
+    <Paragraph bold>
+      New! The TDS documentation experience has been updated to be more performant!
+    </Paragraph>
+    <Paragraph>
+      We encourage you tu use our new component{' '}
+      <Link href="https://telus.github.io/universal-design-system/@telus-uds/ds-allium/components/components/disclaimer">
+        Disclaimer
+      </Link>{' '}
+      from Allium
+    </Paragraph>
+  </Box>
+</Notification>
+```
+
 ### Usage criteria
 
 - Use in place of `FootnoteLink`
@@ -23,10 +40,11 @@
     <Disclaimer>
       We will use your email address to send you information about promotions, special offers and
       news about TELUS events and services. All communications will be coming from TELUS, Marketing
-      Preferences, 30 Floor, 25 York Street, Toronto ON M5J 2V5, <Link href="http://www.telus.com">www.telus.com</Link>. We assure you that
-      your email address will not be shared with any third party. You can withdraw your consent to
-      receive electronic messages from TELUS at any time. Your personal information will be used in
-      accordance with our Privacy Policy.
+      Preferences, 30 Floor, 25 York Street, Toronto ON M5J 2V5,{' '}
+      <Link href="http://www.telus.com">www.telus.com</Link>. We assure you that your email address
+      will not be shared with any third party. You can withdraw your consent to receive electronic
+      messages from TELUS at any time. Your personal information will be used in accordance with our
+      Privacy Policy.
     </Disclaimer>
   </Box>
   <div>
