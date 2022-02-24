@@ -1,3 +1,20 @@
+```jsx noeditor
+<Notification>
+  <Box between={2}>
+    <Paragraph bold>
+      New! The TDS documentation experience has been updated to be more performant!
+    </Paragraph>
+    <Paragraph>
+      We encourage you tu use our new component{' '}
+      <Link href="https://telus.github.io/universal-design-system/@telus-uds/ds-allium/components/components/tooltip">
+        Tooltip
+      </Link>{' '}
+      from Allium
+    </Paragraph>
+  </Box>
+</Notification>
+```
+
 Tooltips provide a descriptive and detailed explanation or instructions to help the user fill in the form field. You may
 use one when the information is useful only to a small percentage of users (ie. tech savvy people wouldn't need this info).
 Tooltips may also be useful when vertical space is an issue.
