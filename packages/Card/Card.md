@@ -1,3 +1,20 @@
+```jsx noeditor
+<Notification>
+  <Box between={2}>
+    <Paragraph bold>
+      New! The TDS documentation experience has been updated to be more performant!
+    </Paragraph>
+    <Paragraph>
+      We encourage you tu use our new component{' '}
+      <Link href="https://telus.github.io/universal-design-system/@telus-uds/ds-allium/components/components/card">
+        Card
+      </Link>{' '}
+      from Allium
+    </Paragraph>
+  </Box>
+</Notification>
+```
+
 Cards will stretch to fill the width of their container. Wrap the card in another element to apply size.
 
 ```jsx
