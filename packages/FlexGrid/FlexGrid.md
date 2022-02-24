@@ -1,3 +1,20 @@
+```jsx noeditor
+<Notification>
+  <Box between={2}>
+    <Paragraph bold>
+      New! The TDS documentation experience has been updated to be more performant!
+    </Paragraph>
+    <Paragraph>
+      We encourage you tu use our new component{' '}
+      <Link href="https://telus.github.io/universal-design-system/@telus-uds/ds-allium/components/components/flex-grid">
+        FlexGrid
+      </Link>{' '}
+      from Allium
+    </Paragraph>
+  </Box>
+</Notification>
+```
+
 **Use the "Open isolated" button above to view this component in full-width mode.**
 
 The `FlexGrid` system is a thin wrapper over [react-flexbox-grid](https://github.com/roylee0704/react-flexbox-grid),
