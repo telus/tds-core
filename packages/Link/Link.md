@@ -1,3 +1,20 @@
+```jsx noeditor
+<Notification>
+  <Box between={2}>
+    <Paragraph bold>
+      New! The TDS documentation experience has been updated to be more performant!
+    </Paragraph>
+    <Paragraph>
+      We encourage you tu use our new component{' '}
+      <Link href="https://telus.github.io/universal-design-system/@telus-uds/ds-allium/components/components/link">
+        Link
+      </Link>{' '}
+      from Allium
+    </Paragraph>
+  </Box>
+</Notification>
+```
+
 ### Usage criteria
 
 - Inherit the font size of surrounding text
