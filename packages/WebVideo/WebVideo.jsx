@@ -10,7 +10,6 @@ import VideoSplash from '../../shared/components/VideoSplash/VideoSplash'
 
 const StyledPlayerContainer = styled.div({
   width: '100%',
-  minWidth: 288,
   outline: 'none',
 })
 
