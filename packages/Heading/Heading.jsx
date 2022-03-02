@@ -9,7 +9,7 @@ import {
   wordBreak,
   baseSupSubScripts,
 } from '@tds/shared-typography'
-import { colorWhite, colorText, colorSecondary } from '@tds/core-colours'
+import { colorWhite, colorText, colorSecondary, colorGreyRaven } from '@tds/core-colours'
 import { media } from '@tds/core-responsive'
 import { safeRest } from '@tds/util-helpers'
 
@@ -50,7 +50,6 @@ const HeadingLevels = {
     },
   },
   h3: {
-    ...helveticaNeueMedium65,
     fontSize: '1.25rem',
     lineHeight: '1.4', // 28px
     letterSpacing: '-0.6px',
@@ -72,11 +71,21 @@ const HeadingLevels = {
     },
   },
 }
-export const StyledHeading = styled.h1(wordBreak, ({ level, invert }) => {
+export const StyledHeading = styled.h1(wordBreak, ({ level, tag, invert, light }) => {
   const baseColor = level === 'h1' || level === 'h2' ? colorSecondary : colorText
-  const color = invert ? colorWhite : baseColor
+  // eslint-disable-next-line no-nested-ternary
+  const color = invert
+    ? colorWhite
+    : level === 'h3' && light && tag === 'h3'
+    ? colorGreyRaven
+    : baseColor
+  const fontWeight =
+    level === 'h3' && light && tag === 'h3'
+      ? helveticaNeueLight45.fontWeight
+      : helveticaNeueMedium65.fontWeight
   return {
     color,
+    fontWeight,
     ...HeadingLevels[`${level}`],
     '& > span': {
       letterSpacing: 'inherit',
@@ -89,7 +98,7 @@ export const StyledHeading = styled.h1(wordBreak, ({ level, invert }) => {
  *
  * @version ./package.json
  */
-const Heading = forwardRef(({ level, tag = level, invert, children, ...rest }, ref) => {
+const Heading = forwardRef(({ level, tag = level, invert, light, children, ...rest }, ref) => {
   return (
     <StyledHeading
       {...safeRest(rest)}
@@ -97,6 +106,8 @@ const Heading = forwardRef(({ level, tag = level, invert, children, ...rest }, r
       as={tag}
       level={level}
       invert={invert}
+      light={light}
+      tag={tag}
       data-testid="heading"
     >
       {children}
@@ -120,6 +131,10 @@ Heading.propTypes = {
    */
   invert: PropTypes.bool,
   /**
+   * Apply a light text color on the h3 tags.
+   */
+  light: PropTypes.bool,
+  /**
    * The content. Can be text, other components, or HTML elements.
    */
   children: PropTypes.node.isRequired,
@@ -127,6 +142,7 @@ Heading.propTypes = {
 Heading.defaultProps = {
   invert: false,
   tag: undefined,
+  light: false,
 }
 
 export default Heading
