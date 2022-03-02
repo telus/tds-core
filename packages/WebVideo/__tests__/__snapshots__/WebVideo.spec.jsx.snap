@@ -213,7 +213,6 @@ exports[`WebVideo renders 1`] = `
 
 .c0 {
   width: 100%;
-  min-width: 288px;
   outline: none;
 }
 
@@ -266,7 +265,6 @@ exports[`WebVideo renders 1`] = `
             "lastClassName": "c0",
             "rules": Array [
               "width: 100%;",
-              "min-width: 288px;",
               "outline: none;",
             ],
           },
