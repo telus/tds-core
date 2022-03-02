@@ -9,6 +9,7 @@ exports[`MarkdownHeading renders 1`] = `
   <Heading
     invert={false}
     level="h1"
+    light={false}
   >
     Some heading
   </Heading>

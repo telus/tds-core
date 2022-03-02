@@ -16,6 +16,7 @@ exports[`SectionHeadingRenderer renders 1`] = `
     id="a-section"
     invert={false}
     level="h2"
+    light={false}
   >
     A Section
   </Heading>
