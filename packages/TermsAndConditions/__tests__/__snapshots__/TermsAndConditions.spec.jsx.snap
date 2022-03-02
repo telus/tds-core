@@ -1620,6 +1620,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                               <Heading
                                                 invert={false}
                                                 level="h4"
+                                                light={false}
                                                 tag="h2"
                                               >
                                                 <Heading__StyledHeading
@@ -1627,6 +1628,8 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                   data-testid="heading"
                                                   invert={false}
                                                   level="h4"
+                                                  light={false}
+                                                  tag="h2"
                                                 >
                                                   <StyledComponent
                                                     as="h2"
@@ -1657,6 +1660,8 @@ exports[`TermsAndConditions renders expanded 1`] = `
                                                     forwardedRef={null}
                                                     invert={false}
                                                     level="h4"
+                                                    light={false}
+                                                    tag="h2"
                                                   >
                                                     <h2
                                                       className="c10"
@@ -3847,6 +3852,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                               <Heading
                                                 invert={false}
                                                 level="h4"
+                                                light={false}
                                                 tag="h2"
                                               >
                                                 <Heading__StyledHeading
@@ -3854,6 +3860,8 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                   data-testid="heading"
                                                   invert={false}
                                                   level="h4"
+                                                  light={false}
+                                                  tag="h2"
                                                 >
                                                   <StyledComponent
                                                     as="h2"
@@ -3884,6 +3892,8 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                     forwardedRef={null}
                                                     invert={false}
                                                     level="h4"
+                                                    light={false}
+                                                    tag="h2"
                                                   >
                                                     <h2
                                                       className="c10"
@@ -5240,6 +5250,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                                   <Heading
                                                                     invert={false}
                                                                     level="h4"
+                                                                    light={false}
                                                                     tag="span"
                                                                   >
                                                                     <Heading__StyledHeading
@@ -5247,6 +5258,8 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                                       data-testid="heading"
                                                                       invert={false}
                                                                       level="h4"
+                                                                      light={false}
+                                                                      tag="span"
                                                                     >
                                                                       <StyledComponent
                                                                         as="span"
@@ -5277,6 +5290,8 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
                                                                         forwardedRef={null}
                                                                         invert={false}
                                                                         level="h4"
+                                                                        light={false}
+                                                                        tag="span"
                                                                       >
                                                                         <span
                                                                           className="c10"
@@ -6765,6 +6780,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                               <Heading
                                                 invert={false}
                                                 level="h4"
+                                                light={false}
                                                 tag="h2"
                                               >
                                                 <Heading__StyledHeading
@@ -6772,6 +6788,8 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                   data-testid="heading"
                                                   invert={false}
                                                   level="h4"
+                                                  light={false}
+                                                  tag="h2"
                                                 >
                                                   <StyledComponent
                                                     as="h2"
@@ -6802,6 +6820,8 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
                                                     forwardedRef={null}
                                                     invert={false}
                                                     level="h4"
+                                                    light={false}
+                                                    tag="h2"
                                                   >
                                                     <h2
                                                       className="c10"
