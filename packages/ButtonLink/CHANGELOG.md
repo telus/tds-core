@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 3.3.4 (2022-03-03)
+
+
+### Bug Fixes
+
+* gha ([130eb2c](https://github.com/telusdigital/tds/commit/130eb2c26bedb447c7d3e2d0c1727ffd0ea41a41))
+
+
+
+
+
 ## 3.3.3 (2022-02-16)
 
 
