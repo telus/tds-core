@@ -324,6 +324,9 @@ jobs:
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Setup Node
         uses: actions/setup-node@v1
@@ -365,6 +368,9 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('package-lock.json') }}
 
+      - name: Install expect
+        run: sudo apt-get install -y expect
+
       - name: Pre PR log output
         run: ./scripts/prePr.sh
 
@@ -376,11 +382,17 @@ jobs:
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
           node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install expect
+        run: sudo apt-get install -y expect
 
       - name: Configure Git Config & Branch
         run: |
@@ -389,15 +401,17 @@ jobs:
           git config --global user.name "TDSBot"
 
       - name: Rebase branch
-        run: |
-          git checkout master
-          git pull --rebase
-
-      - name: Set pull request number environment variable
-        run: echo "GITHUB_PULL_REQUEST=$(echo '${{ github.event.pull_request.number }}')" >> $GITHUB_ENV
+        run: git rebase origin/master
 
       - name: TDS Bot output
-        run: node ./scripts/gha/github-pr.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_PULL_REQUEST: ${{ github.event.pull_request.number }}
+        run: |
+          cd ./scripts/gha
+          npm ci
+          node github-pr.js
 
   release:
     if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
