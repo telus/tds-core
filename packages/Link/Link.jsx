@@ -37,6 +37,7 @@ const states = ({ invert }) => {
       border: `0.125rem solid ${invert ? colorWhite : colorGreyRaven}`,
       padding: '0.125rem',
       margin: '-0.25rem', // (border + padding) * -1
+      '-moz-margin-end': '0 !important', // Firefox only
       borderRadius: '0.25rem',
       outline: 'none',
     },
