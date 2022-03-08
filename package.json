@@ -33,7 +33,7 @@
     "gitbook": "gitbook serve guide",
     "gitbook:install": "gitbook install guide",
     "lerna:publish": "node scripts/publish.js",
-    "lerna:cipublish": "npx lerna publish --conventional-commits --yes",
+    "lerna:cipublish": "npx lerna publish from-package --conventional-commits --yes",
     "lint:js": "eslint packages shared config docs e2e scripts/*.js --ext '.js,.jsx' --config config/eslint.config.js --max-warnings 0 --fix",
     "lint:css": "stylelint '{packages,shared}/**/*.jsx' --config config/stylelint.config.js",
     "lint:ec": "echint",
