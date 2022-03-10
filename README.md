@@ -126,6 +126,33 @@ The following group are the active maintainers of this project, and have merge r
     <td align="center"><a href="http://www.canrozanes.com"><img src="https://avatars1.githubusercontent.com/u/37912128?v=4" width="100px;" alt="Can Rozanes"/><br /><sub><b>Can Rozanes</b></sub></a><br /><a href="#tds-canrozanes" title=""></a></td>
     <td align="center"><a href="https://github.com/sudhirraivns0103"><img src="https://avatars2.githubusercontent.com/u/66358422?v=4" width="100px;" alt="sudhirraivns0103"/><br /><sub><b>sudhirraivns0103</b></sub></a><br /><a href="#tds-sudhirraivns0103" title=""></a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/kyletsang"><img src="https://avatars.githubusercontent.com/u/6854874?v=4" width="100px;" alt="Kyle Tsang"/><br /><sub><b>Kyle Tsang</b></sub></a><br /><a href="#tds-kyletsang" title=""></a></td>
+    <td align="center"><a href="https://github.com/elissa-matsushita"><img src="https://avatars.githubusercontent.com/u/66031253?v=4" width="100px;" alt="elissa-matsushita"/><br /><sub><b>elissa-matsushita</b></sub></a><br /><a href="#tds-elissa-matsushita" title=""></a></td>
+    <td align="center"><a href="https://github.com/billtelus"><img src="https://avatars.githubusercontent.com/u/91989904?v=4" width="100px;" alt="Bill Somen"/><br /><sub><b>Bill Somen</b></sub></a><br /><a href="#tds-billtelus" title=""></a></td>
+    <td align="center"><a href="https://github.com/laynegeck"><img src="https://avatars.githubusercontent.com/u/3925411?v=4" width="100px;" alt="Layne Geck"/><br /><sub><b>Layne Geck</b></sub></a><br /><a href="#tds-laynegeck" title=""></a></td>
+    <td align="center"><a href="https://github.com/meeschka"><img src="https://avatars.githubusercontent.com/u/9220735?v=4" width="100px;" alt="Michelle Linley"/><br /><sub><b>Michelle Linley</b></sub></a><br /><a href="#tds-meeschka" title=""></a></td>
+    <td align="center"><a href="https://github.com/jacqlau"><img src="https://avatars.githubusercontent.com/u/66847770?v=4" width="100px;" alt="jacqlau"/><br /><sub><b>jacqlau</b></sub></a><br /><a href="#tds-jacqlau" title=""></a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/katherine-szelag/"><img src="https://avatars.githubusercontent.com/u/55095713?v=4" width="100px;" alt="Katherine Szelag"/><br /><sub><b>Katherine Szelag</b></sub></a><br /><a href="#tds-janeszelag" title=""></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://www.telus.com/en/digital"><img src="https://avatars.githubusercontent.com/u/4172830?v=4" width="100px;" alt="Paul Saumets"/><br /><sub><b>Paul Saumets</b></sub></a><br /><a href="#tds-skalfyfan" title=""></a></td>
+    <td align="center"><a href="https://github.com/kiesha-telus"><img src="https://avatars.githubusercontent.com/u/73547634?v=4" width="100px;" alt="kiesha-telus"/><br /><sub><b>kiesha-telus</b></sub></a><br /><a href="#tds-kiesha-telus" title=""></a></td>
+    <td align="center"><a href="https://github.com/mmoreiratw"><img src="https://avatars.githubusercontent.com/u/39416022?v=4" width="100px;" alt="Mauricio Moreira"/><br /><sub><b>Mauricio Moreira</b></sub></a><br /><a href="#tds-mmoreiratw" title=""></a></td>
+    <td align="center"><a href="https://github.com/NColusso"><img src="https://avatars.githubusercontent.com/u/70232675?v=4" width="100px;" alt="Natasha Colusso"/><br /><sub><b>Natasha Colusso</b></sub></a><br /><a href="#tds-NColusso" title=""></a></td>
+    <td align="center"><a href="https://github.com/rdk823"><img src="https://avatars.githubusercontent.com/u/8725314?v=4" width="100px;" alt="Roger D."/><br /><sub><b>Roger D.</b></sub></a><br /><a href="#tds-rdk823" title=""></a></td>
+    <td align="center"><a href="https://github.com/vivianedias"><img src="https://avatars.githubusercontent.com/u/9057801?v=4" width="100px;" alt="Viviane Dias"/><br /><sub><b>Viviane Dias</b></sub></a><br /><a href="#tds-vivianedias" title=""></a></td>
+    <td align="center"><a href="https://www.nearform.com"><img src="https://avatars.githubusercontent.com/u/36038467?v=4" width="100px;" alt="Cian Foley"/><br /><sub><b>Cian Foley</b></sub></a><br /><a href="#tds-cianfoley-nearform" title=""></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/crathor"><img src="https://avatars.githubusercontent.com/u/27904802?v=4" width="100px;" alt="Cody Rathor"/><br /><sub><b>Cody Rathor</b></sub></a><br /><a href="#tds-crathor" title=""></a></td>
+    <td align="center"><a href="https://github.com/mukeshkumarshahi"><img src="https://avatars.githubusercontent.com/u/66362909?v=4" width="100px;" alt="mukeshkumarshahi"/><br /><sub><b>mukeshkumarshahi</b></sub></a><br /><a href="#tds-mukeshkumarshahi" title=""></a></td>
+    <td align="center"><a href="http://rodrigomaia.me"><img src="https://avatars.githubusercontent.com/u/2081077?v=4" width="100px;" alt="Rodrigo Maia"/><br /><sub><b>Rodrigo Maia</b></sub></a><br /><a href="#tds-rodrimaia" title=""></a></td>
+    <td align="center"><a href="https://github.com/spuente"><img src="https://avatars.githubusercontent.com/u/4050997?v=4" width="100px;" alt="Sebastian Puente"/><br /><sub><b>Sebastian Puente</b></sub></a><br /><a href="#tds-spuente" title=""></a></td>
+    <td align="center"><a href="https://github.com/tuliooassistw"><img src="https://avatars.githubusercontent.com/u/86791573?v=4" width="100px;" alt="Túlio Assis"/><br /><sub><b>Túlio Assis</b></sub></a><br /><a href="#tds-tuliooassistw" title=""></a></td>
+    <td align="center"><a href="https://valentinprugnaud.dev"><img src="https://avatars.githubusercontent.com/u/1385160?v=4" width="100px;" alt="Valentin Prugnaud"/><br /><sub><b>Valentin Prugnaud</b></sub></a><br /><a href="#tds-foxted" title=""></a></td>
+    <td align="center"><a href="https://github.com/swatiTelus"><img src="https://avatars.githubusercontent.com/u/47171926?v=4" width="100px;" alt="swatiTelus"/><br /><sub><b>swatiTelus</b></sub></a><br /><a href="#tds-swatiTelus" title=""></a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
