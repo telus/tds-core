@@ -5,7 +5,7 @@
       New! The TDS documentation experience has been updated to be more performant!
     </Paragraph>
     <Paragraph>
-      We encourage you tu use our new component{' '}
+      We encourage you to use our new component{' '}
       <Link href="https://telus.github.io/allium-design-system/components/components/box">Box</Link>{' '}
       from Allium
     </Paragraph>
