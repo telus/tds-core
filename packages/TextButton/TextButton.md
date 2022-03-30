@@ -6,7 +6,7 @@
     </Paragraph>
     <Paragraph>
       We encourage you to use our new component{' '}
-      <Link href="https://telus.github.io/universal-design-system/@telus-uds/ds-allium/components/components/text-button">
+      <Link href="https://telus.github.io/allium-design-system/components/components/text-button">
         TextButton
       </Link>{' '}
       from Allium
