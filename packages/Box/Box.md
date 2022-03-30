@@ -6,9 +6,7 @@
     </Paragraph>
     <Paragraph>
       We encourage you tu use our new component{' '}
-      <Link href="https://telus.github.io/universal-design-system/@telus-uds/ds-allium/components/components/box">
-        Box
-      </Link>{' '}
+      <Link href="https://telus.github.io/allium-design-system/components/components/box">Box</Link>{' '}
       from Allium
     </Paragraph>
   </Box>
