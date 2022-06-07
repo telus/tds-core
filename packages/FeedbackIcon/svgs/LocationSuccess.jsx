@@ -6,10 +6,10 @@ import FeedbackIcon from '../FeedbackIcon'
 
 const copyDictionary = {
   en: {
-    a11yText: 'Location eligible',
+    a11yText: 'Available location',
   },
   fr: {
-    a11yText: 'Emplacement admissible',
+    a11yText: 'Emplacement disponible',
   },
 }
 
