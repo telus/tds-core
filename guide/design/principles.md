@@ -52,7 +52,7 @@ must meet these principles. They are used to assess whether an experience is goo
 
 ## Align with TELUS Standards
 
-- [Accessibility](https://digitalstandards.telus.com/accessibility)
+- [Accessibility](https://www.telus.com/en/brand-resources/standards/accessibility-in-technology)
 - [Privacy & Security](https://digitalstandards.telus.com/security)
 - Performance
 - [Brand](https://brand.telus.com)
