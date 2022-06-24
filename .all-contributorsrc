@@ -771,6 +771,24 @@
       "contributions": [
         "tds"
       ]
+    },
+    {
+      "login": "saumets",
+      "name": "Paul Saumets",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4172830?v=4",
+      "profile": "https://www.telus.com/en/digital",
+      "contributions": [
+        "tds"
+      ]
+    },
+    {
+      "login": "owestinTelus",
+      "name": "Oskar Westin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30598018?v=4",
+      "profile": "https://github.com/owestinTelus",
+      "contributions": [
+        "tds"
+      ]
     }
   ],
   "contributorsPerLine": 7

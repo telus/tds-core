@@ -153,10 +153,15 @@ The following group are the active maintainers of this project, and have merge r
     <td align="center"><a href="https://valentinprugnaud.dev"><img src="https://avatars.githubusercontent.com/u/1385160?v=4" width="100px;" alt="Valentin Prugnaud"/><br /><sub><b>Valentin Prugnaud</b></sub></a><br /><a href="#tds-foxted" title=""></a></td>
     <td align="center"><a href="https://github.com/swatiTelus"><img src="https://avatars.githubusercontent.com/u/47171926?v=4" width="100px;" alt="swatiTelus"/><br /><sub><b>swatiTelus</b></sub></a><br /><a href="#tds-swatiTelus" title=""></a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://www.telus.com/en/digital"><img src="https://avatars.githubusercontent.com/u/4172830?v=4" width="100px;" alt="Paul Saumets"/><br /><sub><b>Paul Saumets</b></sub></a><br /><a href="#tds-saumets" title=""></a></td>
+    <td align="center"><a href="https://github.com/owestinTelus"><img src="https://avatars.githubusercontent.com/u/30598018?v=4" width="100px;" alt="Oskar Westin"/><br /><sub><b>Oskar Westin</b></sub></a><br /><a href="#tds-owestinTelus" title=""></a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [circle-url]: https://circleci.com/gh/telus/tds-core
