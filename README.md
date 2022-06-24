@@ -161,7 +161,6 @@ The following group are the active maintainers of this project, and have merge r
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [circle-url]: https://circleci.com/gh/telus/tds-core
