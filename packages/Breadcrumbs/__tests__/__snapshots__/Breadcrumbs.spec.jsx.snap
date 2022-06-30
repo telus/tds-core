@@ -1,0 +1,2950 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumbs with children renders 1`] = `
+.c2:focus {
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.c2:link,
+.c2:visited {
+  color: #2a2c2e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c2:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 svg {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c2:hover svg {
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c2:active svg {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c2:link,
+.c2:visited {
+  color: inherit;
+}
+
+.c2:active {
+  background-color: #d8d8d8;
+  border-radius: 0.25rem;
+  padding: 0.125rem;
+  margin: -0.125rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c2:focus {
+  border: 0.125rem solid #71757b;
+  padding: 0.125rem;
+  margin: -0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.c5 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  color: #54595f;
+}
+
+.c4 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  color: #4b286d;
+  font-weight: 700;
+}
+
+.c4:after {
+  content: '';
+  border-right: 0;
+  margin: 0;
+}
+
+.c3 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  margin: 0 0.5rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+<Breadcrumbs
+  baseUrl="http://localhost:6060/en"
+  params={Object {}}
+>
+  <nav>
+    <Breadcrumbs__StyledList>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Breadcrumbs__StyledList-sc-1wkmsz5-0",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "display: flex;",
+                "flex-wrap: wrap;",
+              ],
+            },
+            "displayName": "Breadcrumbs__StyledList",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Breadcrumbs__StyledList-sc-1wkmsz5-0",
+            "target": "ol",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <ol
+          className="c0"
+        >
+          <Item
+            current={false}
+            href="/"
+            key="/"
+          >
+            <Styled(ColoredTextProvider)
+              isCurrent={false}
+              tag="li"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c4",
+                      "rules": Array [
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Styled(ColoredTextProvider)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                isCurrent={false}
+                tag="li"
+              >
+                <ColoredTextProvider
+                  className="c1"
+                  isCurrent={false}
+                  tag="li"
+                >
+                  <li
+                    className="c1"
+                  >
+                    <span>
+                      <WithForwardedRef(Link)
+                        href="/"
+                      >
+                        <Link
+                          forwardedRef={null}
+                          href="/"
+                          iconPosition="left"
+                          reactRouterLinkComponent={null}
+                          to={null}
+                        >
+                          <Link__StyledLink
+                            as="a"
+                            context={
+                              Object {
+                                "inheritColor": true,
+                              }
+                            }
+                            hasIcon={false}
+                            href="/"
+                            to={null}
+                          >
+                            <StyledComponent
+                              as="a"
+                              context={
+                                Object {
+                                  "inheritColor": true,
+                                }
+                              }
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "Link__StyledLink-sc-1bokult-0",
+                                    "isStatic": false,
+                                    "lastClassName": "c2",
+                                    "rules": Array [
+                                      ":focus {",
+                                      "outline: auto 5px -webkit-focus-ring-color;",
+                                      "}",
+                                      "&:link,&:visited {",
+                                      "color: #2a2c2e;",
+                                      "text-decoration: underline;",
+                                      "}",
+                                      "&:hover {",
+                                      "text-decoration: none;",
+                                      "}",
+                                      "& svg {",
+                                      "}",
+                                      "& svg {",
+                                      "transition: transform 150ms ease-in-out;",
+                                      "}",
+                                      "&:hover svg {",
+                                      "transform: scale(1.1, 1.1);",
+                                      "}",
+                                      "&:active svg {",
+                                      "transform: scale(1, 1);",
+                                      "}",
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "Link__StyledLink",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "Link__StyledLink-sc-1bokult-0",
+                                  "target": "a",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              hasIcon={false}
+                              href="/"
+                              to={null}
+                            >
+                              <a
+                                className="c2"
+                                href="/"
+                                to={null}
+                              >
+                                Home
+                              </a>
+                            </StyledComponent>
+                          </Link__StyledLink>
+                        </Link>
+                      </WithForwardedRef(Link)>
+                      <Item__StyledSlash
+                        aria-hidden="true"
+                      >
+                        <StyledComponent
+                          aria-hidden="true"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Item__StyledSlash-sc-16xtipq-0",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "display: inline;",
+                                  "font-size: 0.875rem;",
+                                  "letter-spacing: -0.6px;",
+                                  "line-height: 1.42857;",
+                                  "@media (min-width: 768px) {",
+                                  "font-size: 1rem;",
+                                  "letter-spacing: -0.8px;",
+                                  "line-height: 1.5;",
+                                  "}",
+                                  "margin: 0 0.5rem;",
+                                ],
+                              },
+                              "displayName": "Item__StyledSlash",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Item__StyledSlash-sc-16xtipq-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <span
+                            aria-hidden="true"
+                            className="c3"
+                          >
+                            /
+                          </span>
+                        </StyledComponent>
+                      </Item__StyledSlash>
+                    </span>
+                  </li>
+                </ColoredTextProvider>
+              </StyledComponent>
+            </Styled(ColoredTextProvider)>
+          </Item>
+          <Item
+            current={false}
+            href="/mobility"
+            key="/mobility"
+          >
+            <Styled(ColoredTextProvider)
+              isCurrent={false}
+              tag="li"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c4",
+                      "rules": Array [
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Styled(ColoredTextProvider)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                isCurrent={false}
+                tag="li"
+              >
+                <ColoredTextProvider
+                  className="c1"
+                  isCurrent={false}
+                  tag="li"
+                >
+                  <li
+                    className="c1"
+                  >
+                    <span>
+                      <WithForwardedRef(Link)
+                        href="/mobility"
+                      >
+                        <Link
+                          forwardedRef={null}
+                          href="/mobility"
+                          iconPosition="left"
+                          reactRouterLinkComponent={null}
+                          to={null}
+                        >
+                          <Link__StyledLink
+                            as="a"
+                            context={
+                              Object {
+                                "inheritColor": true,
+                              }
+                            }
+                            hasIcon={false}
+                            href="/mobility"
+                            to={null}
+                          >
+                            <StyledComponent
+                              as="a"
+                              context={
+                                Object {
+                                  "inheritColor": true,
+                                }
+                              }
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "Link__StyledLink-sc-1bokult-0",
+                                    "isStatic": false,
+                                    "lastClassName": "c2",
+                                    "rules": Array [
+                                      ":focus {",
+                                      "outline: auto 5px -webkit-focus-ring-color;",
+                                      "}",
+                                      "&:link,&:visited {",
+                                      "color: #2a2c2e;",
+                                      "text-decoration: underline;",
+                                      "}",
+                                      "&:hover {",
+                                      "text-decoration: none;",
+                                      "}",
+                                      "& svg {",
+                                      "}",
+                                      "& svg {",
+                                      "transition: transform 150ms ease-in-out;",
+                                      "}",
+                                      "&:hover svg {",
+                                      "transform: scale(1.1, 1.1);",
+                                      "}",
+                                      "&:active svg {",
+                                      "transform: scale(1, 1);",
+                                      "}",
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "Link__StyledLink",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "Link__StyledLink-sc-1bokult-0",
+                                  "target": "a",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              hasIcon={false}
+                              href="/mobility"
+                              to={null}
+                            >
+                              <a
+                                className="c2"
+                                href="/mobility"
+                                to={null}
+                              >
+                                Mobility
+                              </a>
+                            </StyledComponent>
+                          </Link__StyledLink>
+                        </Link>
+                      </WithForwardedRef(Link)>
+                      <Item__StyledSlash
+                        aria-hidden="true"
+                      >
+                        <StyledComponent
+                          aria-hidden="true"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Item__StyledSlash-sc-16xtipq-0",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "display: inline;",
+                                  "font-size: 0.875rem;",
+                                  "letter-spacing: -0.6px;",
+                                  "line-height: 1.42857;",
+                                  "@media (min-width: 768px) {",
+                                  "font-size: 1rem;",
+                                  "letter-spacing: -0.8px;",
+                                  "line-height: 1.5;",
+                                  "}",
+                                  "margin: 0 0.5rem;",
+                                ],
+                              },
+                              "displayName": "Item__StyledSlash",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Item__StyledSlash-sc-16xtipq-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <span
+                            aria-hidden="true"
+                            className="c3"
+                          >
+                            /
+                          </span>
+                        </StyledComponent>
+                      </Item__StyledSlash>
+                    </span>
+                  </li>
+                </ColoredTextProvider>
+              </StyledComponent>
+            </Styled(ColoredTextProvider)>
+          </Item>
+          <Item
+            current={true}
+            href="/mobility/accessories"
+            key="/mobility/accessories"
+          >
+            <Styled(ColoredTextProvider)
+              isCurrent={true}
+              tag="li"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c4",
+                      "rules": Array [
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Styled(ColoredTextProvider)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                isCurrent={true}
+                tag="li"
+              >
+                <ColoredTextProvider
+                  className="c4"
+                  isCurrent={true}
+                  tag="li"
+                >
+                  <li
+                    className="c4"
+                  >
+                    <Text
+                      block={false}
+                      bold={false}
+                      invert={false}
+                      size="base"
+                    >
+                      <Text__StyledText
+                        block={false}
+                        bold={false}
+                        inheritColor={true}
+                        invert={false}
+                        size="base"
+                      >
+                        <StyledComponent
+                          block={false}
+                          bold={false}
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  "sup {",
+                                  "top: -0.5em;",
+                                  "font-size: 0.875rem;",
+                                  "position: relative;",
+                                  "vertical-align: baseline;",
+                                  "padding-left: 0.1em;",
+                                  "}",
+                                ],
+                              },
+                              "displayName": "Text__StyledText",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          inheritColor={true}
+                          invert={false}
+                          size="base"
+                        >
+                          <span
+                            className="c5"
+                            size="base"
+                          >
+                            Accessories
+                          </span>
+                        </StyledComponent>
+                      </Text__StyledText>
+                    </Text>
+                  </li>
+                </ColoredTextProvider>
+              </StyledComponent>
+            </Styled(ColoredTextProvider)>
+          </Item>
+        </ol>
+      </StyledComponent>
+    </Breadcrumbs__StyledList>
+    <HelmetWrapper
+      defer={true}
+      encodeSpecialCharacters={true}
+    >
+      <SideEffect(NullComponent)
+        defer={true}
+        encodeSpecialCharacters={true}
+        script={
+          Array [
+            Object {
+              "innerHTML": "
+{
+  \\"@context\\": \\"http://schema.org\\",
+  \\"@type\\": \\"BreadcrumbList\\",
+  \\"itemListElement\\": [{\\"@type\\":\\"ListItem\\",\\"position\\":1,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/\\",\\"name\\":\\"Home\\"}},{\\"@type\\":\\"ListItem\\",\\"position\\":2,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/mobility\\",\\"name\\":\\"Mobility\\"}},{\\"@type\\":\\"ListItem\\",\\"position\\":3,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/mobility/accessories\\",\\"name\\":\\"Accessories\\"}}]
+}
+",
+              "type": "application/ld+json",
+            },
+          ]
+        }
+      >
+        <NullComponent
+          defer={true}
+          encodeSpecialCharacters={true}
+          script={
+            Array [
+              Object {
+                "innerHTML": "
+{
+  \\"@context\\": \\"http://schema.org\\",
+  \\"@type\\": \\"BreadcrumbList\\",
+  \\"itemListElement\\": [{\\"@type\\":\\"ListItem\\",\\"position\\":1,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/\\",\\"name\\":\\"Home\\"}},{\\"@type\\":\\"ListItem\\",\\"position\\":2,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/mobility\\",\\"name\\":\\"Mobility\\"}},{\\"@type\\":\\"ListItem\\",\\"position\\":3,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/mobility/accessories\\",\\"name\\":\\"Accessories\\"}}]
+}
+",
+                "type": "application/ld+json",
+              },
+            ]
+          }
+        />
+      </SideEffect(NullComponent)>
+    </HelmetWrapper>
+  </nav>
+</Breadcrumbs>
+`;
+
+exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
+.c2:focus {
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.c2:link,
+.c2:visited {
+  color: #2a2c2e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c2:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 svg {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c2:hover svg {
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c2:active svg {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c2:link,
+.c2:visited {
+  color: inherit;
+}
+
+.c2:active {
+  background-color: #d8d8d8;
+  border-radius: 0.25rem;
+  padding: 0.125rem;
+  margin: -0.125rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c2:focus {
+  border: 0.125rem solid #71757b;
+  padding: 0.125rem;
+  margin: -0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.c5 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  color: #54595f;
+}
+
+.c4 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  color: #4b286d;
+  font-weight: 700;
+}
+
+.c4:after {
+  content: '';
+  border-right: 0;
+  margin: 0;
+}
+
+.c3 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  margin: 0 0.5rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+<Breadcrumbs
+  baseUrl="http://localhost:6060/en"
+  params={Object {}}
+  reactRouterLinkComponent={[Function]}
+>
+  <nav>
+    <Breadcrumbs__StyledList>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Breadcrumbs__StyledList-sc-1wkmsz5-0",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "display: flex;",
+                "flex-wrap: wrap;",
+              ],
+            },
+            "displayName": "Breadcrumbs__StyledList",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Breadcrumbs__StyledList-sc-1wkmsz5-0",
+            "target": "ol",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <ol
+          className="c0"
+        >
+          <Item
+            current={false}
+            href="/"
+            key="/"
+            reactRouterLinkComponent={[Function]}
+          >
+            <Styled(ColoredTextProvider)
+              isCurrent={false}
+              tag="li"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c4",
+                      "rules": Array [
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Styled(ColoredTextProvider)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                isCurrent={false}
+                tag="li"
+              >
+                <ColoredTextProvider
+                  className="c1"
+                  isCurrent={false}
+                  tag="li"
+                >
+                  <li
+                    className="c1"
+                  >
+                    <span>
+                      <WithForwardedRef(Link)
+                        reactRouterLinkComponent={[Function]}
+                        to="/"
+                      >
+                        <Link
+                          forwardedRef={null}
+                          href={null}
+                          iconPosition="left"
+                          reactRouterLinkComponent={[Function]}
+                          to="/"
+                        >
+                          <Link__StyledLink
+                            as={[Function]}
+                            context={
+                              Object {
+                                "inheritColor": true,
+                              }
+                            }
+                            hasIcon={false}
+                            href={null}
+                            to="/"
+                          >
+                            <StyledComponent
+                              as={[Function]}
+                              context={
+                                Object {
+                                  "inheritColor": true,
+                                }
+                              }
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "Link__StyledLink-sc-1bokult-0",
+                                    "isStatic": false,
+                                    "lastClassName": "c2",
+                                    "rules": Array [
+                                      ":focus {",
+                                      "outline: auto 5px -webkit-focus-ring-color;",
+                                      "}",
+                                      "&:link,&:visited {",
+                                      "color: #2a2c2e;",
+                                      "text-decoration: underline;",
+                                      "}",
+                                      "&:hover {",
+                                      "text-decoration: none;",
+                                      "}",
+                                      "& svg {",
+                                      "}",
+                                      "& svg {",
+                                      "transition: transform 150ms ease-in-out;",
+                                      "}",
+                                      "&:hover svg {",
+                                      "transform: scale(1.1, 1.1);",
+                                      "}",
+                                      "&:active svg {",
+                                      "transform: scale(1, 1);",
+                                      "}",
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "Link__StyledLink",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "Link__StyledLink-sc-1bokult-0",
+                                  "target": "a",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              hasIcon={false}
+                              href={null}
+                              to="/"
+                            >
+                              <LinkComponent
+                                className="c2"
+                                context={
+                                  Object {
+                                    "inheritColor": true,
+                                  }
+                                }
+                                hasIcon={false}
+                                href={null}
+                                to="/"
+                              >
+                                <a
+                                  href="#react-router-link"
+                                >
+                                  TDS
+                                </a>
+                              </LinkComponent>
+                            </StyledComponent>
+                          </Link__StyledLink>
+                        </Link>
+                      </WithForwardedRef(Link)>
+                      <Item__StyledSlash
+                        aria-hidden="true"
+                      >
+                        <StyledComponent
+                          aria-hidden="true"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Item__StyledSlash-sc-16xtipq-0",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "display: inline;",
+                                  "font-size: 0.875rem;",
+                                  "letter-spacing: -0.6px;",
+                                  "line-height: 1.42857;",
+                                  "@media (min-width: 768px) {",
+                                  "font-size: 1rem;",
+                                  "letter-spacing: -0.8px;",
+                                  "line-height: 1.5;",
+                                  "}",
+                                  "margin: 0 0.5rem;",
+                                ],
+                              },
+                              "displayName": "Item__StyledSlash",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Item__StyledSlash-sc-16xtipq-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <span
+                            aria-hidden="true"
+                            className="c3"
+                          >
+                            /
+                          </span>
+                        </StyledComponent>
+                      </Item__StyledSlash>
+                    </span>
+                  </li>
+                </ColoredTextProvider>
+              </StyledComponent>
+            </Styled(ColoredTextProvider)>
+          </Item>
+          <Item
+            current={false}
+            href="/mobility"
+            key="/mobility"
+            reactRouterLinkComponent={[Function]}
+          >
+            <Styled(ColoredTextProvider)
+              isCurrent={false}
+              tag="li"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c4",
+                      "rules": Array [
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Styled(ColoredTextProvider)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                isCurrent={false}
+                tag="li"
+              >
+                <ColoredTextProvider
+                  className="c1"
+                  isCurrent={false}
+                  tag="li"
+                >
+                  <li
+                    className="c1"
+                  >
+                    <span>
+                      <WithForwardedRef(Link)
+                        reactRouterLinkComponent={[Function]}
+                        to="/mobility"
+                      >
+                        <Link
+                          forwardedRef={null}
+                          href={null}
+                          iconPosition="left"
+                          reactRouterLinkComponent={[Function]}
+                          to="/mobility"
+                        >
+                          <Link__StyledLink
+                            as={[Function]}
+                            context={
+                              Object {
+                                "inheritColor": true,
+                              }
+                            }
+                            hasIcon={false}
+                            href={null}
+                            to="/mobility"
+                          >
+                            <StyledComponent
+                              as={[Function]}
+                              context={
+                                Object {
+                                  "inheritColor": true,
+                                }
+                              }
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "Link__StyledLink-sc-1bokult-0",
+                                    "isStatic": false,
+                                    "lastClassName": "c2",
+                                    "rules": Array [
+                                      ":focus {",
+                                      "outline: auto 5px -webkit-focus-ring-color;",
+                                      "}",
+                                      "&:link,&:visited {",
+                                      "color: #2a2c2e;",
+                                      "text-decoration: underline;",
+                                      "}",
+                                      "&:hover {",
+                                      "text-decoration: none;",
+                                      "}",
+                                      "& svg {",
+                                      "}",
+                                      "& svg {",
+                                      "transition: transform 150ms ease-in-out;",
+                                      "}",
+                                      "&:hover svg {",
+                                      "transform: scale(1.1, 1.1);",
+                                      "}",
+                                      "&:active svg {",
+                                      "transform: scale(1, 1);",
+                                      "}",
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "Link__StyledLink",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "Link__StyledLink-sc-1bokult-0",
+                                  "target": "a",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              hasIcon={false}
+                              href={null}
+                              to="/mobility"
+                            >
+                              <LinkComponent
+                                className="c2"
+                                context={
+                                  Object {
+                                    "inheritColor": true,
+                                  }
+                                }
+                                hasIcon={false}
+                                href={null}
+                                to="/mobility"
+                              >
+                                <a
+                                  href="#react-router-link"
+                                >
+                                  TDS
+                                </a>
+                              </LinkComponent>
+                            </StyledComponent>
+                          </Link__StyledLink>
+                        </Link>
+                      </WithForwardedRef(Link)>
+                      <Item__StyledSlash
+                        aria-hidden="true"
+                      >
+                        <StyledComponent
+                          aria-hidden="true"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Item__StyledSlash-sc-16xtipq-0",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "display: inline;",
+                                  "font-size: 0.875rem;",
+                                  "letter-spacing: -0.6px;",
+                                  "line-height: 1.42857;",
+                                  "@media (min-width: 768px) {",
+                                  "font-size: 1rem;",
+                                  "letter-spacing: -0.8px;",
+                                  "line-height: 1.5;",
+                                  "}",
+                                  "margin: 0 0.5rem;",
+                                ],
+                              },
+                              "displayName": "Item__StyledSlash",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Item__StyledSlash-sc-16xtipq-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <span
+                            aria-hidden="true"
+                            className="c3"
+                          >
+                            /
+                          </span>
+                        </StyledComponent>
+                      </Item__StyledSlash>
+                    </span>
+                  </li>
+                </ColoredTextProvider>
+              </StyledComponent>
+            </Styled(ColoredTextProvider)>
+          </Item>
+          <Item
+            current={true}
+            href="/mobility/accessories"
+            key="/mobility/accessories"
+            reactRouterLinkComponent={[Function]}
+          >
+            <Styled(ColoredTextProvider)
+              isCurrent={true}
+              tag="li"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c4",
+                      "rules": Array [
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Styled(ColoredTextProvider)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                isCurrent={true}
+                tag="li"
+              >
+                <ColoredTextProvider
+                  className="c4"
+                  isCurrent={true}
+                  tag="li"
+                >
+                  <li
+                    className="c4"
+                  >
+                    <Text
+                      block={false}
+                      bold={false}
+                      invert={false}
+                      size="base"
+                    >
+                      <Text__StyledText
+                        block={false}
+                        bold={false}
+                        inheritColor={true}
+                        invert={false}
+                        size="base"
+                      >
+                        <StyledComponent
+                          block={false}
+                          bold={false}
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  "sup {",
+                                  "top: -0.5em;",
+                                  "font-size: 0.875rem;",
+                                  "position: relative;",
+                                  "vertical-align: baseline;",
+                                  "padding-left: 0.1em;",
+                                  "}",
+                                ],
+                              },
+                              "displayName": "Text__StyledText",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          inheritColor={true}
+                          invert={false}
+                          size="base"
+                        >
+                          <span
+                            className="c5"
+                            size="base"
+                          >
+                            Accessories
+                          </span>
+                        </StyledComponent>
+                      </Text__StyledText>
+                    </Text>
+                  </li>
+                </ColoredTextProvider>
+              </StyledComponent>
+            </Styled(ColoredTextProvider)>
+          </Item>
+        </ol>
+      </StyledComponent>
+    </Breadcrumbs__StyledList>
+    <HelmetWrapper
+      defer={true}
+      encodeSpecialCharacters={true}
+    >
+      <SideEffect(NullComponent)
+        defer={true}
+        encodeSpecialCharacters={true}
+        script={
+          Array [
+            Object {
+              "innerHTML": "
+{
+  \\"@context\\": \\"http://schema.org\\",
+  \\"@type\\": \\"BreadcrumbList\\",
+  \\"itemListElement\\": [{\\"@type\\":\\"ListItem\\",\\"position\\":1,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/\\",\\"name\\":\\"Home\\"}},{\\"@type\\":\\"ListItem\\",\\"position\\":2,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/mobility\\",\\"name\\":\\"Mobility\\"}},{\\"@type\\":\\"ListItem\\",\\"position\\":3,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/mobility/accessories\\",\\"name\\":\\"Accessories\\"}}]
+}
+",
+              "type": "application/ld+json",
+            },
+          ]
+        }
+      >
+        <NullComponent
+          defer={true}
+          encodeSpecialCharacters={true}
+          script={
+            Array [
+              Object {
+                "innerHTML": "
+{
+  \\"@context\\": \\"http://schema.org\\",
+  \\"@type\\": \\"BreadcrumbList\\",
+  \\"itemListElement\\": [{\\"@type\\":\\"ListItem\\",\\"position\\":1,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/\\",\\"name\\":\\"Home\\"}},{\\"@type\\":\\"ListItem\\",\\"position\\":2,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/mobility\\",\\"name\\":\\"Mobility\\"}},{\\"@type\\":\\"ListItem\\",\\"position\\":3,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/mobility/accessories\\",\\"name\\":\\"Accessories\\"}}]
+}
+",
+                "type": "application/ld+json",
+              },
+            ]
+          }
+        />
+      </SideEffect(NullComponent)>
+    </HelmetWrapper>
+  </nav>
+</Breadcrumbs>
+`;
+
+exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item 1`] = `
+.c2:focus {
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.c2:link,
+.c2:visited {
+  color: #2a2c2e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c2:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 svg {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c2:hover svg {
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c2:active svg {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c2:link,
+.c2:visited {
+  color: inherit;
+}
+
+.c2:active {
+  background-color: #d8d8d8;
+  border-radius: 0.25rem;
+  padding: 0.125rem;
+  margin: -0.125rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c2:focus {
+  border: 0.125rem solid #71757b;
+  padding: 0.125rem;
+  margin: -0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.c5 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  color: #54595f;
+}
+
+.c4 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  color: #4b286d;
+  font-weight: 700;
+}
+
+.c4:after {
+  content: '';
+  border-right: 0;
+  margin: 0;
+}
+
+.c3 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  margin: 0 0.5rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+<Breadcrumbs
+  baseUrl="http://localhost:6060/en"
+  params={Object {}}
+>
+  <nav>
+    <Breadcrumbs__StyledList>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Breadcrumbs__StyledList-sc-1wkmsz5-0",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "display: flex;",
+                "flex-wrap: wrap;",
+              ],
+            },
+            "displayName": "Breadcrumbs__StyledList",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Breadcrumbs__StyledList-sc-1wkmsz5-0",
+            "target": "ol",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <ol
+          className="c0"
+        >
+          <Item
+            current={false}
+            href="/"
+            key="/"
+          >
+            <Styled(ColoredTextProvider)
+              isCurrent={false}
+              tag="li"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c4",
+                      "rules": Array [
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Styled(ColoredTextProvider)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                isCurrent={false}
+                tag="li"
+              >
+                <ColoredTextProvider
+                  className="c1"
+                  isCurrent={false}
+                  tag="li"
+                >
+                  <li
+                    className="c1"
+                  >
+                    <span>
+                      <WithForwardedRef(Link)
+                        href="/"
+                      >
+                        <Link
+                          forwardedRef={null}
+                          href="/"
+                          iconPosition="left"
+                          reactRouterLinkComponent={null}
+                          to={null}
+                        >
+                          <Link__StyledLink
+                            as="a"
+                            context={
+                              Object {
+                                "inheritColor": true,
+                              }
+                            }
+                            hasIcon={false}
+                            href="/"
+                            to={null}
+                          >
+                            <StyledComponent
+                              as="a"
+                              context={
+                                Object {
+                                  "inheritColor": true,
+                                }
+                              }
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "Link__StyledLink-sc-1bokult-0",
+                                    "isStatic": false,
+                                    "lastClassName": "c2",
+                                    "rules": Array [
+                                      ":focus {",
+                                      "outline: auto 5px -webkit-focus-ring-color;",
+                                      "}",
+                                      "&:link,&:visited {",
+                                      "color: #2a2c2e;",
+                                      "text-decoration: underline;",
+                                      "}",
+                                      "&:hover {",
+                                      "text-decoration: none;",
+                                      "}",
+                                      "& svg {",
+                                      "}",
+                                      "& svg {",
+                                      "transition: transform 150ms ease-in-out;",
+                                      "}",
+                                      "&:hover svg {",
+                                      "transform: scale(1.1, 1.1);",
+                                      "}",
+                                      "&:active svg {",
+                                      "transform: scale(1, 1);",
+                                      "}",
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "Link__StyledLink",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "Link__StyledLink-sc-1bokult-0",
+                                  "target": "a",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              hasIcon={false}
+                              href="/"
+                              to={null}
+                            >
+                              <a
+                                className="c2"
+                                href="/"
+                                to={null}
+                              >
+                                Home
+                              </a>
+                            </StyledComponent>
+                          </Link__StyledLink>
+                        </Link>
+                      </WithForwardedRef(Link)>
+                      <Item__StyledSlash
+                        aria-hidden="true"
+                      >
+                        <StyledComponent
+                          aria-hidden="true"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Item__StyledSlash-sc-16xtipq-0",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "display: inline;",
+                                  "font-size: 0.875rem;",
+                                  "letter-spacing: -0.6px;",
+                                  "line-height: 1.42857;",
+                                  "@media (min-width: 768px) {",
+                                  "font-size: 1rem;",
+                                  "letter-spacing: -0.8px;",
+                                  "line-height: 1.5;",
+                                  "}",
+                                  "margin: 0 0.5rem;",
+                                ],
+                              },
+                              "displayName": "Item__StyledSlash",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Item__StyledSlash-sc-16xtipq-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <span
+                            aria-hidden="true"
+                            className="c3"
+                          >
+                            /
+                          </span>
+                        </StyledComponent>
+                      </Item__StyledSlash>
+                    </span>
+                  </li>
+                </ColoredTextProvider>
+              </StyledComponent>
+            </Styled(ColoredTextProvider)>
+          </Item>
+          <Item
+            current={false}
+            href="/mobility"
+            key="/mobility"
+            reactRouterLinkComponent={[Function]}
+          >
+            <Styled(ColoredTextProvider)
+              isCurrent={false}
+              tag="li"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c4",
+                      "rules": Array [
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Styled(ColoredTextProvider)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                isCurrent={false}
+                tag="li"
+              >
+                <ColoredTextProvider
+                  className="c1"
+                  isCurrent={false}
+                  tag="li"
+                >
+                  <li
+                    className="c1"
+                  >
+                    <span>
+                      <WithForwardedRef(Link)
+                        reactRouterLinkComponent={[Function]}
+                        to="/mobility"
+                      >
+                        <Link
+                          forwardedRef={null}
+                          href={null}
+                          iconPosition="left"
+                          reactRouterLinkComponent={[Function]}
+                          to="/mobility"
+                        >
+                          <Link__StyledLink
+                            as={[Function]}
+                            context={
+                              Object {
+                                "inheritColor": true,
+                              }
+                            }
+                            hasIcon={false}
+                            href={null}
+                            to="/mobility"
+                          >
+                            <StyledComponent
+                              as={[Function]}
+                              context={
+                                Object {
+                                  "inheritColor": true,
+                                }
+                              }
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "Link__StyledLink-sc-1bokult-0",
+                                    "isStatic": false,
+                                    "lastClassName": "c2",
+                                    "rules": Array [
+                                      ":focus {",
+                                      "outline: auto 5px -webkit-focus-ring-color;",
+                                      "}",
+                                      "&:link,&:visited {",
+                                      "color: #2a2c2e;",
+                                      "text-decoration: underline;",
+                                      "}",
+                                      "&:hover {",
+                                      "text-decoration: none;",
+                                      "}",
+                                      "& svg {",
+                                      "}",
+                                      "& svg {",
+                                      "transition: transform 150ms ease-in-out;",
+                                      "}",
+                                      "&:hover svg {",
+                                      "transform: scale(1.1, 1.1);",
+                                      "}",
+                                      "&:active svg {",
+                                      "transform: scale(1, 1);",
+                                      "}",
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "Link__StyledLink",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "Link__StyledLink-sc-1bokult-0",
+                                  "target": "a",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              hasIcon={false}
+                              href={null}
+                              to="/mobility"
+                            >
+                              <LinkComponent
+                                className="c2"
+                                context={
+                                  Object {
+                                    "inheritColor": true,
+                                  }
+                                }
+                                hasIcon={false}
+                                href={null}
+                                to="/mobility"
+                              >
+                                <a
+                                  href="#react-router-link"
+                                >
+                                  TDS
+                                </a>
+                              </LinkComponent>
+                            </StyledComponent>
+                          </Link__StyledLink>
+                        </Link>
+                      </WithForwardedRef(Link)>
+                      <Item__StyledSlash
+                        aria-hidden="true"
+                      >
+                        <StyledComponent
+                          aria-hidden="true"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Item__StyledSlash-sc-16xtipq-0",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "display: inline;",
+                                  "font-size: 0.875rem;",
+                                  "letter-spacing: -0.6px;",
+                                  "line-height: 1.42857;",
+                                  "@media (min-width: 768px) {",
+                                  "font-size: 1rem;",
+                                  "letter-spacing: -0.8px;",
+                                  "line-height: 1.5;",
+                                  "}",
+                                  "margin: 0 0.5rem;",
+                                ],
+                              },
+                              "displayName": "Item__StyledSlash",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Item__StyledSlash-sc-16xtipq-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <span
+                            aria-hidden="true"
+                            className="c3"
+                          >
+                            /
+                          </span>
+                        </StyledComponent>
+                      </Item__StyledSlash>
+                    </span>
+                  </li>
+                </ColoredTextProvider>
+              </StyledComponent>
+            </Styled(ColoredTextProvider)>
+          </Item>
+          <Item
+            current={true}
+            href="/mobility/accessories"
+            key="/mobility/accessories"
+          >
+            <Styled(ColoredTextProvider)
+              isCurrent={true}
+              tag="li"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c4",
+                      "rules": Array [
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Styled(ColoredTextProvider)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                isCurrent={true}
+                tag="li"
+              >
+                <ColoredTextProvider
+                  className="c4"
+                  isCurrent={true}
+                  tag="li"
+                >
+                  <li
+                    className="c4"
+                  >
+                    <Text
+                      block={false}
+                      bold={false}
+                      invert={false}
+                      size="base"
+                    >
+                      <Text__StyledText
+                        block={false}
+                        bold={false}
+                        inheritColor={true}
+                        invert={false}
+                        size="base"
+                      >
+                        <StyledComponent
+                          block={false}
+                          bold={false}
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  "sup {",
+                                  "top: -0.5em;",
+                                  "font-size: 0.875rem;",
+                                  "position: relative;",
+                                  "vertical-align: baseline;",
+                                  "padding-left: 0.1em;",
+                                  "}",
+                                ],
+                              },
+                              "displayName": "Text__StyledText",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          inheritColor={true}
+                          invert={false}
+                          size="base"
+                        >
+                          <span
+                            className="c5"
+                            size="base"
+                          >
+                            Accessories
+                          </span>
+                        </StyledComponent>
+                      </Text__StyledText>
+                    </Text>
+                  </li>
+                </ColoredTextProvider>
+              </StyledComponent>
+            </Styled(ColoredTextProvider)>
+          </Item>
+        </ol>
+      </StyledComponent>
+    </Breadcrumbs__StyledList>
+    <HelmetWrapper
+      defer={true}
+      encodeSpecialCharacters={true}
+    >
+      <SideEffect(NullComponent)
+        defer={true}
+        encodeSpecialCharacters={true}
+        script={
+          Array [
+            Object {
+              "innerHTML": "
+{
+  \\"@context\\": \\"http://schema.org\\",
+  \\"@type\\": \\"BreadcrumbList\\",
+  \\"itemListElement\\": [{\\"@type\\":\\"ListItem\\",\\"position\\":1,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/\\",\\"name\\":\\"Home\\"}},{\\"@type\\":\\"ListItem\\",\\"position\\":2,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/mobility\\",\\"name\\":\\"Mobility\\"}},{\\"@type\\":\\"ListItem\\",\\"position\\":3,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/mobility/accessories\\",\\"name\\":\\"Accessories\\"}}]
+}
+",
+              "type": "application/ld+json",
+            },
+          ]
+        }
+      >
+        <NullComponent
+          defer={true}
+          encodeSpecialCharacters={true}
+          script={
+            Array [
+              Object {
+                "innerHTML": "
+{
+  \\"@context\\": \\"http://schema.org\\",
+  \\"@type\\": \\"BreadcrumbList\\",
+  \\"itemListElement\\": [{\\"@type\\":\\"ListItem\\",\\"position\\":1,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/\\",\\"name\\":\\"Home\\"}},{\\"@type\\":\\"ListItem\\",\\"position\\":2,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/mobility\\",\\"name\\":\\"Mobility\\"}},{\\"@type\\":\\"ListItem\\",\\"position\\":3,\\"item\\":{\\"@id\\":\\"http://localhost:6060/en/mobility/accessories\\",\\"name\\":\\"Accessories\\"}}]
+}
+",
+                "type": "application/ld+json",
+              },
+            ]
+          }
+        />
+      </SideEffect(NullComponent)>
+    </HelmetWrapper>
+  </nav>
+</Breadcrumbs>
+`;
+
+exports[`Breadcrumbs with routes renders 1`] = `
+.c2:focus {
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.c2:link,
+.c2:visited {
+  color: #2a2c2e;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c2:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 svg {
+  -webkit-transition: -webkit-transform 150ms ease-in-out;
+  -webkit-transition: transform 150ms ease-in-out;
+  transition: transform 150ms ease-in-out;
+}
+
+.c2:hover svg {
+  -webkit-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.c2:active svg {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c2:link,
+.c2:visited {
+  color: inherit;
+}
+
+.c2:active {
+  background-color: #d8d8d8;
+  border-radius: 0.25rem;
+  padding: 0.125rem;
+  margin: -0.125rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c2:focus {
+  border: 0.125rem solid #71757b;
+  padding: 0.125rem;
+  margin: -0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.c5 {
+  color: #2a2c2e;
+  color: inherit;
+  word-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.c5 sup {
+  top: -0.5em;
+  font-size: 0.875rem;
+  position: relative;
+  vertical-align: baseline;
+  padding-left: 0.1em;
+}
+
+.c1 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  color: #54595f;
+}
+
+.c4 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  color: #4b286d;
+  font-weight: 700;
+}
+
+.c4:after {
+  content: '';
+  border-right: 0;
+  margin: 0;
+}
+
+.c3 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  margin: 0 0.5rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+<Breadcrumbs
+  params={Object {}}
+  routes={
+    Array [
+      Object {
+        "breadcrumbName": "Home",
+        "path": "/",
+      },
+      Object {
+        "breadcrumbName": "Mobility",
+        "path": "/mobility",
+      },
+      Object {
+        "breadcrumbName": "Accessories",
+        "path": "/accessories",
+      },
+    ]
+  }
+>
+  <nav>
+    <Breadcrumbs__StyledList>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "Breadcrumbs__StyledList-sc-1wkmsz5-0",
+              "isStatic": true,
+              "lastClassName": "c0",
+              "rules": Array [
+                "display: flex;",
+                "flex-wrap: wrap;",
+              ],
+            },
+            "displayName": "Breadcrumbs__StyledList",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "Breadcrumbs__StyledList-sc-1wkmsz5-0",
+            "target": "ol",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <ol
+          className="c0"
+        >
+          <Item
+            current={false}
+            href="/"
+            key="/"
+          >
+            <Styled(ColoredTextProvider)
+              isCurrent={false}
+              tag="li"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c4",
+                      "rules": Array [
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Styled(ColoredTextProvider)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                isCurrent={false}
+                tag="li"
+              >
+                <ColoredTextProvider
+                  className="c1"
+                  isCurrent={false}
+                  tag="li"
+                >
+                  <li
+                    className="c1"
+                  >
+                    <span>
+                      <WithForwardedRef(Link)
+                        href="/"
+                      >
+                        <Link
+                          forwardedRef={null}
+                          href="/"
+                          iconPosition="left"
+                          reactRouterLinkComponent={null}
+                          to={null}
+                        >
+                          <Link__StyledLink
+                            as="a"
+                            context={
+                              Object {
+                                "inheritColor": true,
+                              }
+                            }
+                            hasIcon={false}
+                            href="/"
+                            to={null}
+                          >
+                            <StyledComponent
+                              as="a"
+                              context={
+                                Object {
+                                  "inheritColor": true,
+                                }
+                              }
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "Link__StyledLink-sc-1bokult-0",
+                                    "isStatic": false,
+                                    "lastClassName": "c2",
+                                    "rules": Array [
+                                      ":focus {",
+                                      "outline: auto 5px -webkit-focus-ring-color;",
+                                      "}",
+                                      "&:link,&:visited {",
+                                      "color: #2a2c2e;",
+                                      "text-decoration: underline;",
+                                      "}",
+                                      "&:hover {",
+                                      "text-decoration: none;",
+                                      "}",
+                                      "& svg {",
+                                      "}",
+                                      "& svg {",
+                                      "transition: transform 150ms ease-in-out;",
+                                      "}",
+                                      "&:hover svg {",
+                                      "transform: scale(1.1, 1.1);",
+                                      "}",
+                                      "&:active svg {",
+                                      "transform: scale(1, 1);",
+                                      "}",
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "Link__StyledLink",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "Link__StyledLink-sc-1bokult-0",
+                                  "target": "a",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              hasIcon={false}
+                              href="/"
+                              to={null}
+                            >
+                              <a
+                                className="c2"
+                                href="/"
+                                to={null}
+                              >
+                                Home
+                              </a>
+                            </StyledComponent>
+                          </Link__StyledLink>
+                        </Link>
+                      </WithForwardedRef(Link)>
+                      <Item__StyledSlash
+                        aria-hidden="true"
+                      >
+                        <StyledComponent
+                          aria-hidden="true"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Item__StyledSlash-sc-16xtipq-0",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "display: inline;",
+                                  "font-size: 0.875rem;",
+                                  "letter-spacing: -0.6px;",
+                                  "line-height: 1.42857;",
+                                  "@media (min-width: 768px) {",
+                                  "font-size: 1rem;",
+                                  "letter-spacing: -0.8px;",
+                                  "line-height: 1.5;",
+                                  "}",
+                                  "margin: 0 0.5rem;",
+                                ],
+                              },
+                              "displayName": "Item__StyledSlash",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Item__StyledSlash-sc-16xtipq-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <span
+                            aria-hidden="true"
+                            className="c3"
+                          >
+                            /
+                          </span>
+                        </StyledComponent>
+                      </Item__StyledSlash>
+                    </span>
+                  </li>
+                </ColoredTextProvider>
+              </StyledComponent>
+            </Styled(ColoredTextProvider)>
+          </Item>
+          <Item
+            current={false}
+            href="/mobility"
+            key="/mobility"
+          >
+            <Styled(ColoredTextProvider)
+              isCurrent={false}
+              tag="li"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c4",
+                      "rules": Array [
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Styled(ColoredTextProvider)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                isCurrent={false}
+                tag="li"
+              >
+                <ColoredTextProvider
+                  className="c1"
+                  isCurrent={false}
+                  tag="li"
+                >
+                  <li
+                    className="c1"
+                  >
+                    <span>
+                      <WithForwardedRef(Link)
+                        href="/mobility"
+                      >
+                        <Link
+                          forwardedRef={null}
+                          href="/mobility"
+                          iconPosition="left"
+                          reactRouterLinkComponent={null}
+                          to={null}
+                        >
+                          <Link__StyledLink
+                            as="a"
+                            context={
+                              Object {
+                                "inheritColor": true,
+                              }
+                            }
+                            hasIcon={false}
+                            href="/mobility"
+                            to={null}
+                          >
+                            <StyledComponent
+                              as="a"
+                              context={
+                                Object {
+                                  "inheritColor": true,
+                                }
+                              }
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "Link__StyledLink-sc-1bokult-0",
+                                    "isStatic": false,
+                                    "lastClassName": "c2",
+                                    "rules": Array [
+                                      ":focus {",
+                                      "outline: auto 5px -webkit-focus-ring-color;",
+                                      "}",
+                                      "&:link,&:visited {",
+                                      "color: #2a2c2e;",
+                                      "text-decoration: underline;",
+                                      "}",
+                                      "&:hover {",
+                                      "text-decoration: none;",
+                                      "}",
+                                      "& svg {",
+                                      "}",
+                                      "& svg {",
+                                      "transition: transform 150ms ease-in-out;",
+                                      "}",
+                                      "&:hover svg {",
+                                      "transform: scale(1.1, 1.1);",
+                                      "}",
+                                      "&:active svg {",
+                                      "transform: scale(1, 1);",
+                                      "}",
+                                      [Function],
+                                      [Function],
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "Link__StyledLink",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "Link__StyledLink-sc-1bokult-0",
+                                  "target": "a",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              hasIcon={false}
+                              href="/mobility"
+                              to={null}
+                            >
+                              <a
+                                className="c2"
+                                href="/mobility"
+                                to={null}
+                              >
+                                Mobility
+                              </a>
+                            </StyledComponent>
+                          </Link__StyledLink>
+                        </Link>
+                      </WithForwardedRef(Link)>
+                      <Item__StyledSlash
+                        aria-hidden="true"
+                      >
+                        <StyledComponent
+                          aria-hidden="true"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Item__StyledSlash-sc-16xtipq-0",
+                                "isStatic": true,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "display: inline;",
+                                  "font-size: 0.875rem;",
+                                  "letter-spacing: -0.6px;",
+                                  "line-height: 1.42857;",
+                                  "@media (min-width: 768px) {",
+                                  "font-size: 1rem;",
+                                  "letter-spacing: -0.8px;",
+                                  "line-height: 1.5;",
+                                  "}",
+                                  "margin: 0 0.5rem;",
+                                ],
+                              },
+                              "displayName": "Item__StyledSlash",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Item__StyledSlash-sc-16xtipq-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <span
+                            aria-hidden="true"
+                            className="c3"
+                          >
+                            /
+                          </span>
+                        </StyledComponent>
+                      </Item__StyledSlash>
+                    </span>
+                  </li>
+                </ColoredTextProvider>
+              </StyledComponent>
+            </Styled(ColoredTextProvider)>
+          </Item>
+          <Item
+            current={true}
+            href="/mobility/accessories"
+            key="/mobility/accessories"
+          >
+            <Styled(ColoredTextProvider)
+              isCurrent={true}
+              tag="li"
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": false,
+                      "lastClassName": "c4",
+                      "rules": Array [
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Styled(ColoredTextProvider)",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": [Function],
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                isCurrent={true}
+                tag="li"
+              >
+                <ColoredTextProvider
+                  className="c4"
+                  isCurrent={true}
+                  tag="li"
+                >
+                  <li
+                    className="c4"
+                  >
+                    <Text
+                      block={false}
+                      bold={false}
+                      invert={false}
+                      size="base"
+                    >
+                      <Text__StyledText
+                        block={false}
+                        bold={false}
+                        inheritColor={true}
+                        invert={false}
+                        size="base"
+                      >
+                        <StyledComponent
+                          block={false}
+                          bold={false}
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Text__StyledText-sc-1m0rr67-0",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  [Function],
+                                  "sup {",
+                                  "top: -0.5em;",
+                                  "font-size: 0.875rem;",
+                                  "position: relative;",
+                                  "vertical-align: baseline;",
+                                  "padding-left: 0.1em;",
+                                  "}",
+                                ],
+                              },
+                              "displayName": "Text__StyledText",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Text__StyledText-sc-1m0rr67-0",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          inheritColor={true}
+                          invert={false}
+                          size="base"
+                        >
+                          <span
+                            className="c5"
+                            size="base"
+                          >
+                            Accessories
+                          </span>
+                        </StyledComponent>
+                      </Text__StyledText>
+                    </Text>
+                  </li>
+                </ColoredTextProvider>
+              </StyledComponent>
+            </Styled(ColoredTextProvider)>
+          </Item>
+        </ol>
+      </StyledComponent>
+    </Breadcrumbs__StyledList>
+    <HelmetWrapper
+      defer={true}
+      encodeSpecialCharacters={true}
+    >
+      <SideEffect(NullComponent)
+        defer={true}
+        encodeSpecialCharacters={true}
+        script={
+          Array [
+            Object {
+              "innerHTML": "
+{
+  \\"@context\\": \\"http://schema.org\\",
+  \\"@type\\": \\"BreadcrumbList\\",
+  \\"itemListElement\\": [{\\"@type\\":\\"ListItem\\",\\"position\\":1,\\"item\\":{\\"@id\\":\\"/\\",\\"name\\":\\"Home\\"}},{\\"@type\\":\\"ListItem\\",\\"position\\":2,\\"item\\":{\\"@id\\":\\"/mobility\\",\\"name\\":\\"Mobility\\"}},{\\"@type\\":\\"ListItem\\",\\"position\\":3,\\"item\\":{\\"@id\\":\\"/mobility/accessories\\",\\"name\\":\\"Accessories\\"}}]
+}
+",
+              "type": "application/ld+json",
+            },
+          ]
+        }
+      >
+        <NullComponent
+          defer={true}
+          encodeSpecialCharacters={true}
+          script={
+            Array [
+              Object {
+                "innerHTML": "
+{
+  \\"@context\\": \\"http://schema.org\\",
+  \\"@type\\": \\"BreadcrumbList\\",
+  \\"itemListElement\\": [{\\"@type\\":\\"ListItem\\",\\"position\\":1,\\"item\\":{\\"@id\\":\\"/\\",\\"name\\":\\"Home\\"}},{\\"@type\\":\\"ListItem\\",\\"position\\":2,\\"item\\":{\\"@id\\":\\"/mobility\\",\\"name\\":\\"Mobility\\"}},{\\"@type\\":\\"ListItem\\",\\"position\\":3,\\"item\\":{\\"@id\\":\\"/mobility/accessories\\",\\"name\\":\\"Accessories\\"}}]
+}
+",
+                "type": "application/ld+json",
+              },
+            ]
+          }
+        />
+      </SideEffect(NullComponent)>
+    </HelmetWrapper>
+  </nav>
+</Breadcrumbs>
+`;
