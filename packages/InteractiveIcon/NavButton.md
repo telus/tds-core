@@ -37,6 +37,7 @@ When using `CartFilledBold` you must also supply a `numItems` prop and use the `
   <CartEmptyBold copy="en" />
   <CartFilledBold copy="en" numItems={2} />
   <NotifyBold copy="en" />
+  <UnreadNotification copy="en" />
   <ProfileBold copy="en" />
   <SearchBold copy="en" />
   <SettingsBold copy="en" />
@@ -54,6 +55,7 @@ The NavButton (inverted) is optimized to be accessible as it achieves acceptable
   <CartEmptyBold variant="inverted" copy="en" />
   <CartFilledBold variant="inverted" copy="en" numItems={1} />
   <NotifyBold variant="inverted" copy="en" />
+  <UnreadNotification variant="inverted" copy="en" />
   <ProfileBold variant="inverted" copy="en" />
   <SearchBold variant="inverted" copy="en" />
   <SettingsBold variant="inverted" copy="en" />
@@ -87,6 +89,14 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
     {
       name: 'NotifyBold',
       Component: NotifyBold,
+      usageCriteria: 'Direct to notification center',
+      props: {
+        copy: 'en',
+      },
+    },
+    {
+      name: 'UnreadNotification',
+      Component: UnreadNotification,
       usageCriteria: 'Direct to notification center',
       props: {
         copy: 'en',
