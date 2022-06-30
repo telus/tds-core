@@ -49,7 +49,6 @@ Object {
   border: 0.125rem solid #71757b;
   padding: 0.125rem;
   margin: -0.25rem;
-  -moz-margin-end: 0 !important;
   border-radius: 0.25rem;
   outline: none;
 }
@@ -108,7 +107,6 @@ Object {
   border: 0.125rem solid #71757b;
   padding: 0.125rem;
   margin: -0.25rem;
-  -moz-margin-end: 0 !important;
   border-radius: 0.25rem;
   outline: none;
 }
@@ -258,7 +256,6 @@ Object {
   border: 0.125rem solid #fff;
   padding: 0.125rem;
   margin: -0.25rem;
-  -moz-margin-end: 0 !important;
   border-radius: 0.25rem;
   outline: none;
 }
@@ -323,7 +320,6 @@ Object {
   border: 0.125rem solid #fff;
   padding: 0.125rem;
   margin: -0.25rem;
-  -moz-margin-end: 0 !important;
   border-radius: 0.25rem;
   outline: none;
 }
@@ -475,7 +471,6 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 1`] =
   border: 0.125rem solid #71757b;
   padding: 0.125rem;
   margin: -0.25rem;
-  -moz-margin-end: 0 !important;
   border-radius: 0.25rem;
   outline: none;
 }
@@ -649,7 +644,6 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 2`] =
   border: 0.125rem solid #71757b;
   padding: 0.125rem;
   margin: -0.25rem;
-  -moz-margin-end: 0 !important;
   border-radius: 0.25rem;
   outline: none;
 }
