@@ -486,6 +486,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         usageCriteria: 'map, travel, gps',
       },
       {
+        name: 'Microphone',
+        Component: Microphone,
+        usageCriteria: 'For representing voice assistants',
+      },
+      {
         name: 'Play',
         Component: Play,
         usageCriteria: 'play, video alternative',
