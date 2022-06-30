@@ -524,6 +524,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         usageCriteria: 'electricity, transmitter tower',
       },
       {
+        name: 'Login',
+        Component: Login,
+        usageCriteria: 'Login',
+      },
+      {
         name: 'LoginForm',
         Component: LoginForm,
         usageCriteria: 'Login form',
