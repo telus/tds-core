@@ -31,6 +31,15 @@ export const notifyBoldCopyDictionary = {
   },
 }
 
+export const newNotifyBoldCopyDictionary = {
+  en: {
+    a11yText: 'New Notification(s)',
+  },
+  fr: {
+    a11yText: 'Nouvel Avis',
+  },
+}
+
 export const profileBoldCopyDictionary = {
   en: {
     a11yText: 'Profile',
