@@ -21,6 +21,12 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         usageCriteria:
           'Indicate a reference to an external source; will direct away from the TELUS experience or the primary flow ',
       },
+      {
+        name: 'QuickLink',
+        Component: QuickLink,
+        usageCriteria:
+          'Indicate a collection of unstructured links that have been placed prominently on a page.',
+      },
     ]}
   />
   <IconTable
