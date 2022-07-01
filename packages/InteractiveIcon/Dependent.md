@@ -112,6 +112,16 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
           'Indicate ability to edit. Use for authenticated or internal applications. Don’t use on marketing pages',
       },
       {
+        name: 'DownLoadZipFile',
+        Component: DownloadZipFile,
+        usageCriteria: 'Indicate download of a single zip file.',
+      },
+      {
+        name: 'DownLoadZipFolder',
+        Component: DownloadZipFolder,
+        usageCriteria: 'Indicate download of a single zip folder.',
+      },
+      {
         name: 'Print',
         Component: Print,
         usageCriteria: 'Prompt native print module',
