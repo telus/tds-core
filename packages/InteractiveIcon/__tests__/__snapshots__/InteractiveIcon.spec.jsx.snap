@@ -406,6 +406,7 @@ exports[`InteractiveIcon renders Dependent icon with Link 1`] = `
   border: 0.125rem solid #71757b;
   padding: 0.125rem;
   margin: -0.25rem;
+  -moz-margin-end: 0 !important;
   border-radius: 0.25rem;
   outline: none;
 }
