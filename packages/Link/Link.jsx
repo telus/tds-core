@@ -13,6 +13,7 @@ import { warn } from '../../shared/utils/warn'
 
 const base = {
   ...links.focusOutline,
+  display: 'inline-block',
   '&:link,&:visited': {
     color: colorGreyShark,
     textDecoration: 'underline',
@@ -39,7 +40,6 @@ const states = ({ invert }) => {
       margin: '-0.25rem', // (border + padding) * -1
       borderRadius: '0.25rem',
       outline: 'none',
-      '-moz-margin-end': '0 !important',
     },
   }
 }

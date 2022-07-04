@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Breadcrumbs with children renders 1`] = `
+.c2 {
+  display: inline-block;
+}
+
 .c2:focus {
   outline: auto 5px -webkit-focus-ring-color;
 }
@@ -55,7 +59,6 @@ exports[`Breadcrumbs with children renders 1`] = `
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
-  -moz-margin-end: 0 !important;
 }
 
 .c5 {
@@ -277,6 +280,7 @@ exports[`Breadcrumbs with children renders 1`] = `
                                       ":focus {",
                                       "outline: auto 5px -webkit-focus-ring-color;",
                                       "}",
+                                      "display: inline-block;",
                                       "&:link,&:visited {",
                                       "color: #2a2c2e;",
                                       "text-decoration: underline;",
@@ -463,6 +467,7 @@ exports[`Breadcrumbs with children renders 1`] = `
                                       ":focus {",
                                       "outline: auto 5px -webkit-focus-ring-color;",
                                       "}",
+                                      "display: inline-block;",
                                       "&:link,&:visited {",
                                       "color: #2a2c2e;",
                                       "text-decoration: underline;",
@@ -726,6 +731,10 @@ exports[`Breadcrumbs with children renders 1`] = `
 `;
 
 exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
+.c2 {
+  display: inline-block;
+}
+
 .c2:focus {
   outline: auto 5px -webkit-focus-ring-color;
 }
@@ -780,7 +789,6 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
-  -moz-margin-end: 0 !important;
 }
 
 .c5 {
@@ -1005,6 +1013,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
                                       ":focus {",
                                       "outline: auto 5px -webkit-focus-ring-color;",
                                       "}",
+                                      "display: inline-block;",
                                       "&:link,&:visited {",
                                       "color: #2a2c2e;",
                                       "text-decoration: underline;",
@@ -1203,6 +1212,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
                                       ":focus {",
                                       "outline: auto 5px -webkit-focus-ring-color;",
                                       "}",
+                                      "display: inline-block;",
                                       "&:link,&:visited {",
                                       "color: #2a2c2e;",
                                       "text-decoration: underline;",
@@ -1477,6 +1487,10 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
 `;
 
 exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item 1`] = `
+.c2 {
+  display: inline-block;
+}
+
 .c2:focus {
   outline: auto 5px -webkit-focus-ring-color;
 }
@@ -1531,7 +1545,6 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
-  -moz-margin-end: 0 !important;
 }
 
 .c5 {
@@ -1753,6 +1766,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
                                       ":focus {",
                                       "outline: auto 5px -webkit-focus-ring-color;",
                                       "}",
+                                      "display: inline-block;",
                                       "&:link,&:visited {",
                                       "color: #2a2c2e;",
                                       "text-decoration: underline;",
@@ -1941,6 +1955,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
                                       ":focus {",
                                       "outline: auto 5px -webkit-focus-ring-color;",
                                       "}",
+                                      "display: inline-block;",
                                       "&:link,&:visited {",
                                       "color: #2a2c2e;",
                                       "text-decoration: underline;",
@@ -2214,6 +2229,10 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
 `;
 
 exports[`Breadcrumbs with routes renders 1`] = `
+.c2 {
+  display: inline-block;
+}
+
 .c2:focus {
   outline: auto 5px -webkit-focus-ring-color;
 }
@@ -2268,7 +2287,6 @@ exports[`Breadcrumbs with routes renders 1`] = `
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
-  -moz-margin-end: 0 !important;
 }
 
 .c5 {
@@ -2505,6 +2523,7 @@ exports[`Breadcrumbs with routes renders 1`] = `
                                       ":focus {",
                                       "outline: auto 5px -webkit-focus-ring-color;",
                                       "}",
+                                      "display: inline-block;",
                                       "&:link,&:visited {",
                                       "color: #2a2c2e;",
                                       "text-decoration: underline;",
@@ -2691,6 +2710,7 @@ exports[`Breadcrumbs with routes renders 1`] = `
                                       ":focus {",
                                       "outline: auto 5px -webkit-focus-ring-color;",
                                       "}",
+                                      "display: inline-block;",
                                       "&:link,&:visited {",
                                       "color: #2a2c2e;",
                                       "text-decoration: underline;",

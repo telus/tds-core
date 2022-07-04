@@ -357,6 +357,7 @@ exports[`InteractiveIcon renders Dependent icon with Link 1`] = `
 
 .c0 {
   display: inline-block;
+  display: inline-block;
 }
 
 .c0:focus {
@@ -408,7 +409,6 @@ exports[`InteractiveIcon renders Dependent icon with Link 1`] = `
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
-  -moz-margin-end: 0 !important;
 }
 
 .c0 > svg {
@@ -458,6 +458,7 @@ exports[`InteractiveIcon renders Dependent icon with Link 1`] = `
                 ":focus {",
                 "outline: auto 5px -webkit-focus-ring-color;",
                 "}",
+                "display: inline-block;",
                 "&:link,&:visited {",
                 "color: #2a2c2e;",
                 "text-decoration: underline;",

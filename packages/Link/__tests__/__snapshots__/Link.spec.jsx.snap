@@ -2,7 +2,11 @@
 
 exports[`Link can be displayed with the default styles 1`] = `
 Object {
-  "link": .c0:focus {
+  "link": .c0 {
+  display: inline-block;
+}
+
+.c0:focus {
   outline: auto 5px -webkit-focus-ring-color;
 }
 
@@ -51,7 +55,6 @@ Object {
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
-  -moz-margin-end: 0 !important;
 }
 
 <a
@@ -61,7 +64,11 @@ Object {
   >
     Some content
   </a>,
-  "wrapper": .c0:focus {
+  "wrapper": .c0 {
+  display: inline-block;
+}
+
+.c0:focus {
   outline: auto 5px -webkit-focus-ring-color;
 }
 
@@ -110,7 +117,6 @@ Object {
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
-  -moz-margin-end: 0 !important;
 }
 
 <WithForwardedRef(Link)>
@@ -151,6 +157,7 @@ Object {
                   ":focus {",
                   "outline: auto 5px -webkit-focus-ring-color;",
                   "}",
+                  "display: inline-block;",
                   "&:link,&:visited {",
                   "color: #2a2c2e;",
                   "text-decoration: underline;",
@@ -205,7 +212,11 @@ Object {
 
 exports[`Link can be inverted 1`] = `
 Object {
-  "link": .c0:focus {
+  "link": .c0 {
+  display: inline-block;
+}
+
+.c0:focus {
   outline: auto 5px -webkit-focus-ring-color;
 }
 
@@ -260,7 +271,6 @@ Object {
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
-  -moz-margin-end: 0 !important;
 }
 
 <a
@@ -270,7 +280,11 @@ Object {
   >
     Some content
   </a>,
-  "wrapper": .c0:focus {
+  "wrapper": .c0 {
+  display: inline-block;
+}
+
+.c0:focus {
   outline: auto 5px -webkit-focus-ring-color;
 }
 
@@ -325,7 +339,6 @@ Object {
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
-  -moz-margin-end: 0 !important;
 }
 
 <WithForwardedRef(Link)
@@ -370,6 +383,7 @@ Object {
                   ":focus {",
                   "outline: auto 5px -webkit-focus-ring-color;",
                   "}",
+                  "display: inline-block;",
                   "&:link,&:visited {",
                   "color: #2a2c2e;",
                   "text-decoration: underline;",
@@ -426,6 +440,7 @@ Object {
 exports[`Link dependent icons displays a Dependent Icon and sets alignment 1`] = `
 .c0 {
   display: inline-block;
+  display: inline-block;
 }
 
 .c0:focus {
@@ -477,7 +492,6 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 1`] =
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
-  -moz-margin-end: 0 !important;
 }
 
 .c0 > svg {
@@ -600,6 +614,7 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 1`] =
 exports[`Link dependent icons displays a Dependent Icon and sets alignment 2`] = `
 .c0 {
   display: inline-block;
+  display: inline-block;
 }
 
 .c0:focus {
@@ -651,7 +666,6 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 2`] =
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
-  -moz-margin-end: 0 !important;
 }
 
 .c0 > svg {
