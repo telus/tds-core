@@ -347,7 +347,8 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
       {
         name: 'Umbrella',
         Component: Umbrella,
-        usageCriteria: 'Indicates an Umbrella',
+        usageCriteria:
+          'Indicating to keep the products inside dry, away from water, or out of the rain. ',
       },
       {
         name: 'Delivery',
