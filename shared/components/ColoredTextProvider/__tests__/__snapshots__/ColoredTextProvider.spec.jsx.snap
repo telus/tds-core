@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ColoredTextProvider allows Link to inherit its color 1`] = `
+.c0 {
+  display: inline-block;
+}
+
 .c0:focus {
   outline: auto 5px -webkit-focus-ring-color;
 }
@@ -55,7 +59,6 @@ exports[`ColoredTextProvider allows Link to inherit its color 1`] = `
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
-  -moz-margin-end: 0 !important;
 }
 
 <a
