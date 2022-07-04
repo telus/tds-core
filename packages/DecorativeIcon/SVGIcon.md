@@ -334,6 +334,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         usageCriteria: 'For when warranty or repair is available/required',
       },
       {
+        name: 'AppleWatch',
+        Component: AppleWatch,
+        usageCriteria: 'AppleWatch',
+      },
+      {
         name: 'Calendar',
         Component: Calendar,
         usageCriteria:
