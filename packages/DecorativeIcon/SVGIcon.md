@@ -356,6 +356,12 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         usageCriteria: 'Delivery is available or required – not to be confused with service truck',
       },
       {
+        name: 'AutomaticFallDetection',
+        Component: AutomaticFallDetection,
+        usageCriteria:
+          'Indicates that there is no button to press. The gadget recognizes a fall from the elder and summons assistance. ',
+      },
+      {
         name: 'PiggyBank',
         Component: PiggyBank,
         usageCriteria: 'For saving, reduction, money credit back, online bill credit',
