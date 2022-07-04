@@ -345,6 +345,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         usageCriteria: '"Best in class" or have won an award',
       },
       {
+        name: 'Umbrella',
+        Component: Umbrella,
+        usageCriteria: 'Indicates an Umbrella',
+      },
+      {
         name: 'Delivery',
         Component: Delivery,
         usageCriteria: 'Delivery is available or required – not to be confused with service truck',
