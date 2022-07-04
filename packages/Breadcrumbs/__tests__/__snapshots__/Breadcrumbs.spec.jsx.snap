@@ -55,6 +55,7 @@ exports[`Breadcrumbs with children renders 1`] = `
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
+  -moz-margin-end: 0 !important;
 }
 
 .c5 {
@@ -779,6 +780,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
+  -moz-margin-end: 0 !important;
 }
 
 .c5 {
@@ -1529,6 +1531,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
+  -moz-margin-end: 0 !important;
 }
 
 .c5 {
@@ -2265,6 +2268,7 @@ exports[`Breadcrumbs with routes renders 1`] = `
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
+  -moz-margin-end: 0 !important;
 }
 
 .c5 {

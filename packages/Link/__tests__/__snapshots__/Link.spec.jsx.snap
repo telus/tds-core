@@ -51,6 +51,7 @@ Object {
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
+  -moz-margin-end: 0 !important;
 }
 
 <a
@@ -109,6 +110,7 @@ Object {
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
+  -moz-margin-end: 0 !important;
 }
 
 <WithForwardedRef(Link)>
@@ -258,6 +260,7 @@ Object {
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
+  -moz-margin-end: 0 !important;
 }
 
 <a
@@ -322,6 +325,7 @@ Object {
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
+  -moz-margin-end: 0 !important;
 }
 
 <WithForwardedRef(Link)
@@ -473,6 +477,7 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 1`] =
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
+  -moz-margin-end: 0 !important;
 }
 
 .c0 > svg {
@@ -646,6 +651,7 @@ exports[`Link dependent icons displays a Dependent Icon and sets alignment 2`] =
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
+  -moz-margin-end: 0 !important;
 }
 
 .c0 > svg {

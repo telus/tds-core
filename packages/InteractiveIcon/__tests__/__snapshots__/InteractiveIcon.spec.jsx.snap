@@ -408,6 +408,7 @@ exports[`InteractiveIcon renders Dependent icon with Link 1`] = `
   margin: -0.25rem;
   border-radius: 0.25rem;
   outline: none;
+  -moz-margin-end: 0 !important;
 }
 
 .c0 > svg {
