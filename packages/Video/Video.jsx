@@ -743,7 +743,7 @@ class Video extends React.Component {
             {this.state.videoEnded && (
               <MiddleControlButton
                 icon={<Replay />}
-                label={!this.state.videoIsPlaying && 'replay button'}
+                label={!this.state.videoIsPlaying && 'Replay button'}
                 onClick={this.replayVideo}
               />
             )}
@@ -754,7 +754,7 @@ class Video extends React.Component {
               !this.state.videoEnded &&
               !this.state.isMobile && (
                 <MiddleControlButton
-                  label={this.state.videoIsPlaying ? 'Play button' : 'Pause Button'}
+                  label={this.state.videoIsPlaying ? 'Play button' : 'Pause button'}
                   icon={this.state.videoIsPlaying ? <Pause /> : <Play />}
                   iconLeftOffsetPx={this.state.videoIsPlaying ? 0 : 2}
                   isHidden={this.state.mouseInactive}
