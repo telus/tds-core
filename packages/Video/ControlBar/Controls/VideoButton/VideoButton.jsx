@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const StyledButton = styled.button({
-  background: 'red!important',
+  background: 'none',
   color: 'inherit',
   border: 'none',
   padding: 0,
