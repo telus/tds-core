@@ -356,6 +356,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
           'Indicating to keep the products inside dry, away from water, or out of the rain. ',
       },
       {
+        name: 'TwoWayVoiceCall',
+        Component: TwoWayVoiceCall,
+        usageCriteria: '2-way voice call',
+      },
+      {
         name: 'Delivery',
         Component: Delivery,
         usageCriteria: 'Delivery is available or required – not to be confused with service truck',
