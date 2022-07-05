@@ -24,9 +24,10 @@ const StyledMiddleControlButton = styled.button(({ isHidden, iconLeftOffsetPx })
   },
 }))
 
-const MiddleControlButton = ({ icon, iconLeftOffsetPx, isHidden, onClick, onFocus }) => {
+const MiddleControlButton = ({ icon, iconLeftOffsetPx, isHidden, onClick, onFocus, label }) => {
   return (
     <StyledMiddleControlButton
+      aria-label={label}
       iconLeftOffsetPx={iconLeftOffsetPx}
       isHidden={isHidden}
       onClick={onClick}
@@ -42,6 +43,7 @@ MiddleControlButton.propTypes = {
   isHidden: PropTypes.bool,
   onClick: PropTypes.func,
   onFocus: PropTypes.func,
+  label: PropTypes.string,
 }
 
 MiddleControlButton.defaultProps = {
@@ -49,6 +51,7 @@ MiddleControlButton.defaultProps = {
   isHidden: false,
   onClick: undefined,
   onFocus: undefined,
+  label: 'Play Button',
 }
 
 export default MiddleControlButton

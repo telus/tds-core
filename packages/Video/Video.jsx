@@ -726,7 +726,11 @@ class Video extends React.Component {
                 videoLength={this.state.videoLength}
                 label={videoText[this.props.copy].watch}
                 customButton={
-                  this.props.simpleMode ? <MiddleControlButton icon={<Play />} /> : undefined
+                  this.props.simpleMode ? (
+                    <MiddleControlButton icon={<Play />} label="Pause Button" />
+                  ) : (
+                    undefined
+                  )
                 }
                 iconLeftOffsetPx={2}
                 onClick={this.beginVideo}
@@ -737,7 +741,11 @@ class Video extends React.Component {
           <VideoOverlayElementContainer>
             {/* ======== Replay Button ======== */}
             {this.state.videoEnded && (
-              <MiddleControlButton icon={<Replay />} onClick={this.replayVideo} />
+              <MiddleControlButton
+                icon={<Replay />}
+                label={!this.state.videoIsPlaying && 'replay button'}
+                onClick={this.replayVideo}
+              />
             )}
             {/* ================================ */}
             {/* ======== Middle Play/Pause Button ======= */}
@@ -746,6 +754,7 @@ class Video extends React.Component {
               !this.state.videoEnded &&
               !this.state.isMobile && (
                 <MiddleControlButton
+                  label={this.state.videoIsPlaying ? 'Play button' : 'Pause Button'}
                   icon={this.state.videoIsPlaying ? <Pause /> : <Play />}
                   iconLeftOffsetPx={this.state.videoIsPlaying ? 0 : 2}
                   isHidden={this.state.mouseInactive}
