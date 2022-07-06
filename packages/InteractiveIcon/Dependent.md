@@ -9,7 +9,7 @@ These icons indicate interactivity, but are not interactive on their own. They d
 - Should depend on other interactive components with a visible label as part of the wrapper component
 - When used with [Link](#/Links?id=link), Dependent icons are 20x20 when wrapped by small Paragraph or Text sizes (14px), or 24x24 when wrapped with medium or large Paragraph or Text sizes. See Links with icons for more details
 
-```jsx
+```jsx noeditor
 const IconTable = require('../../docs/components/custom/IconTable/IconTable').default
 ;<Box between={4}>
   <IconTable
