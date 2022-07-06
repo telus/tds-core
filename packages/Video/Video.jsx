@@ -727,7 +727,7 @@ class Video extends React.Component {
                 label={videoText[this.props.copy].watch}
                 customButton={
                   this.props.simpleMode ? (
-                    <MiddleControlButton icon={<Play />} label="Pause Button" />
+                    <MiddleControlButton icon={<Play />} label={videoText[this.props.copy].pause} />
                   ) : (
                     undefined
                   )
