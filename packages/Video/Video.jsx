@@ -743,7 +743,7 @@ class Video extends React.Component {
             {this.state.videoEnded && (
               <MiddleControlButton
                 icon={<Replay />}
-                label={!this.state.videoIsPlaying && 'Replay button'}
+                label="Replay button"
                 onClick={this.replayVideo}
               />
             )}
