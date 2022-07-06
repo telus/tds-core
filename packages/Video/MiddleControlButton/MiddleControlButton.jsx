@@ -51,7 +51,7 @@ MiddleControlButton.defaultProps = {
   isHidden: false,
   onClick: undefined,
   onFocus: undefined,
-  label: 'Play Button',
+  label: undefined,
 }
 
 export default MiddleControlButton
