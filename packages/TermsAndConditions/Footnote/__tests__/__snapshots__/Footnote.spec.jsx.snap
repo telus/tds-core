@@ -105,7 +105,7 @@ exports[`Footnote renders closed 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
-  border-top: 1px solid #d8d8d8;
+  height: 1px;
   background-color: #d8d8d8;
 }
 
@@ -585,7 +585,7 @@ exports[`Footnote renders opened 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
-  border-top: 1px solid #d8d8d8;
+  height: 1px;
   background-color: #d8d8d8;
 }
 
