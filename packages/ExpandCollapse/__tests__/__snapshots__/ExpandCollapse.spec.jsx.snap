@@ -1357,7 +1357,7 @@ exports[`ExpandCollapse empty panels renders 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
-  height: 1px;
+  border-top: 1px solid #d8d8d8;
   background-color: #d8d8d8;
 }
 
@@ -2039,7 +2039,7 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
-  height: 1px;
+  border-top: 1px solid #d8d8d8;
   background-color: #d8d8d8;
 }
 
@@ -3184,7 +3184,7 @@ exports[`ExpandCollapse renders an open panel 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
-  height: 1px;
+  border-top: 1px solid #d8d8d8;
   background-color: #d8d8d8;
 }
 
