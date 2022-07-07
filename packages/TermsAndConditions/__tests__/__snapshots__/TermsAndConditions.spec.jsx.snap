@@ -12,7 +12,7 @@ exports[`TermsAndConditions renders 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
-  height: 1px;
+  border-top: 1px solid #d8d8d8;
   background-color: #d8d8d8;
 }
 
@@ -620,7 +620,7 @@ exports[`TermsAndConditions renders expanded 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
-  height: 1px;
+  border-top: 1px solid #d8d8d8;
   background-color: #d8d8d8;
 }
 
@@ -2805,7 +2805,7 @@ exports[`TermsAndConditions renders expanded with indexedContent and nonIndexedC
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
-  height: 1px;
+  border-top: 1px solid #d8d8d8;
   background-color: #d8d8d8;
 }
 
@@ -5752,7 +5752,7 @@ exports[`TermsAndConditions renders expanded with just nonIndexedContent 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
-  height: 1px;
+  border-top: 1px solid #d8d8d8;
   background-color: #d8d8d8;
 }
 
