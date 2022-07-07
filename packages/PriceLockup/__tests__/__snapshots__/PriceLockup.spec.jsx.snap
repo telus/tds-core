@@ -12,7 +12,7 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
-  height: 1px;
+  border-top: 1px solid #d8d8d8;
   background-color: #d8d8d8;
 }
 
@@ -1208,7 +1208,7 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
-  height: 1px;
+  border-top: 1px solid #d8d8d8;
   background-color: #d8d8d8;
 }
 
@@ -2801,7 +2801,7 @@ exports[`PriceLockup size prop is medium renders 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
-  height: 1px;
+  border-top: 1px solid #d8d8d8;
   background-color: #d8d8d8;
 }
 
@@ -3061,7 +3061,7 @@ exports[`PriceLockup size prop is small renders 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
-  height: 1px;
+  border-top: 1px solid #d8d8d8;
   background-color: #d8d8d8;
 }
 
