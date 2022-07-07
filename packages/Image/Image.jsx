@@ -57,7 +57,7 @@ Image.propTypes = {
   /**
    * The image's height.
    */
-  height: PropTypes.number.isRequired,
+  height: PropTypes.number,
   /**
    * Make image render as a circle or with rounded corners.
    */
@@ -66,6 +66,7 @@ Image.propTypes = {
 
 Image.defaultProps = {
   rounded: undefined,
+  height: undefined,
 }
 
 export default Image
