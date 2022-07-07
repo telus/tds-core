@@ -53,6 +53,7 @@ exports[`Breadcrumbs with children renders 1`] = `
   border: 0.125rem solid #71757b;
   padding: 0.125rem;
   margin: -0.25rem;
+  -moz-margin-end: 0 !important;
   border-radius: 0.25rem;
   outline: none;
 }
@@ -777,6 +778,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
   border: 0.125rem solid #71757b;
   padding: 0.125rem;
   margin: -0.25rem;
+  -moz-margin-end: 0 !important;
   border-radius: 0.25rem;
   outline: none;
 }
@@ -1527,6 +1529,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
   border: 0.125rem solid #71757b;
   padding: 0.125rem;
   margin: -0.25rem;
+  -moz-margin-end: 0 !important;
   border-radius: 0.25rem;
   outline: none;
 }
@@ -2263,6 +2266,7 @@ exports[`Breadcrumbs with routes renders 1`] = `
   border: 0.125rem solid #71757b;
   padding: 0.125rem;
   margin: -0.25rem;
+  -moz-margin-end: 0 !important;
   border-radius: 0.25rem;
   outline: none;
 }
