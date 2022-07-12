@@ -44,8 +44,9 @@ const FootnoteLink = ({ number, onClick, copy }) => {
               handleClick(i)
             }}
             data-tds-id="footnote-link"
+            data-nosnippet
           >
-            <A11yContent>{getCopy(copyDictionary, copy).a11yLabel}</A11yContent>
+            <A11yContent role="doc-noteref">{getCopy(copyDictionary, copy).a11yLabel}</A11yContent>
             {`${numbers[i]}${i !== numbers.length - 1 ? ',' : ''}`}
           </StyledFootnoteLink>
         </sup>
