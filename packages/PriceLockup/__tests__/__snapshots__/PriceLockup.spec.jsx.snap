@@ -1051,11 +1051,13 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                           <sup>
                             <button
                               class="c1"
+                              data-nosnippet="true"
                               data-tds-id="footnote-link"
                               type="button"
                             >
                               <span
                                 class="c2"
+                                role="doc-noteref"
                               >
                                 Read legal footnote
                               </span>
@@ -1079,12 +1081,14 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                           key="3"
                         >
                           <FootnoteLink__StyledFootnoteLink
+                            data-nosnippet={true}
                             data-tds-id="footnote-link"
                             key="3"
                             onClick={[Function]}
                             type="button"
                           >
                             <StyledComponent
+                              data-nosnippet={true}
                               data-tds-id="footnote-link"
                               forwardedComponent={
                                 Object {
@@ -1117,11 +1121,13 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                 Object {
                                   "current": <button
                                     class="c12"
+                                    data-nosnippet="true"
                                     data-tds-id="footnote-link"
                                     type="button"
                                   >
                                     <span
                                       class="c13"
+                                      role="doc-noteref"
                                     >
                                       Read legal footnote
                                     </span>
@@ -1134,12 +1140,17 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                             >
                               <button
                                 className="c12"
+                                data-nosnippet={true}
                                 data-tds-id="footnote-link"
                                 onClick={[Function]}
                                 type="button"
                               >
-                                <A11yContent>
-                                  <A11yContent__StyledA11yContent>
+                                <A11yContent
+                                  role="doc-noteref"
+                                >
+                                  <A11yContent__StyledA11yContent
+                                    role="doc-noteref"
+                                  >
                                     <StyledComponent
                                       forwardedComponent={
                                         Object {
@@ -1168,9 +1179,11 @@ exports[`PriceLockup FootnoteLinks renders next to bottomText when bottomText is
                                         }
                                       }
                                       forwardedRef={null}
+                                      role="doc-noteref"
                                     >
                                       <span
                                         className="c13"
+                                        role="doc-noteref"
                                       >
                                         Read legal footnote
                                       </span>
@@ -2247,11 +2260,13 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                           <sup>
                             <button
                               class="c1"
+                              data-nosnippet="true"
                               data-tds-id="footnote-link"
                               type="button"
                             >
                               <span
                                 class="c2"
+                                role="doc-noteref"
                               >
                                 Read legal footnote
                               </span>
@@ -2275,12 +2290,14 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                           key="3"
                         >
                           <FootnoteLink__StyledFootnoteLink
+                            data-nosnippet={true}
                             data-tds-id="footnote-link"
                             key="3"
                             onClick={[Function]}
                             type="button"
                           >
                             <StyledComponent
+                              data-nosnippet={true}
                               data-tds-id="footnote-link"
                               forwardedComponent={
                                 Object {
@@ -2313,11 +2330,13 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                 Object {
                                   "current": <button
                                     class="c12"
+                                    data-nosnippet="true"
                                     data-tds-id="footnote-link"
                                     type="button"
                                   >
                                     <span
                                       class="c13"
+                                      role="doc-noteref"
                                     >
                                       Read legal footnote
                                     </span>
@@ -2330,12 +2349,17 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                             >
                               <button
                                 className="c12"
+                                data-nosnippet={true}
                                 data-tds-id="footnote-link"
                                 onClick={[Function]}
                                 type="button"
                               >
-                                <A11yContent>
-                                  <A11yContent__StyledA11yContent>
+                                <A11yContent
+                                  role="doc-noteref"
+                                >
+                                  <A11yContent__StyledA11yContent
+                                    role="doc-noteref"
+                                  >
                                     <StyledComponent
                                       forwardedComponent={
                                         Object {
@@ -2364,9 +2388,11 @@ exports[`PriceLockup FootnoteLinks renders next to rateText with rateText is pro
                                         }
                                       }
                                       forwardedRef={null}
+                                      role="doc-noteref"
                                     >
                                       <span
                                         className="c13"
+                                        role="doc-noteref"
                                       >
                                         Read legal footnote
                                       </span>
