@@ -156,6 +156,7 @@ The following group are the active maintainers of this project, and have merge r
   <tr>
     <td align="center"><a href="https://www.telus.com/en/digital"><img src="https://avatars.githubusercontent.com/u/4172830?v=4" width="100px;" alt="Paul Saumets"/><br /><sub><b>Paul Saumets</b></sub></a><br /><a href="#tds-saumets" title=""></a></td>
     <td align="center"><a href="https://github.com/owestinTelus"><img src="https://avatars.githubusercontent.com/u/30598018?v=4" width="100px;" alt="Oskar Westin"/><br /><sub><b>Oskar Westin</b></sub></a><br /><a href="#tds-owestinTelus" title=""></a></td>
+    <td align="center"><a href="https://github.com/apps/dependabot"><img src="https://avatars.githubusercontent.com/in/29110?v=4" width="100px;" alt="dependabot[bot]"/><br /><sub><b>dependabot[bot]</b></sub></a><br /><a href="#tds-dependabot[bot]" title=""></a></td>
   </tr>
 </table>
 
