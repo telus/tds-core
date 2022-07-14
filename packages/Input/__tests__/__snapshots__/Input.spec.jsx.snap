@@ -636,18 +636,21 @@ Object {
                                     className="c2 sc-htoDjs c2 c1"
                                   >
                                     <Text
+                                      a11yDescriptor={false}
                                       block={false}
                                       bold={true}
                                       invert={false}
                                       size="medium"
                                     >
                                       <Text__StyledText
+                                        a11yDescriptor={false}
                                         block={false}
                                         bold={true}
                                         invert={false}
                                         size="medium"
                                       >
                                         <StyledComponent
+                                          a11yDescriptor={false}
                                           block={false}
                                           bold={true}
                                           forwardedComponent={
@@ -704,18 +707,21 @@ Object {
                                       }
                                     >
                                       <Text
+                                        a11yDescriptor={false}
                                         block={false}
                                         bold={false}
                                         invert={false}
                                         size="small"
                                       >
                                         <Text__StyledText
+                                          a11yDescriptor={false}
                                           block={false}
                                           bold={false}
                                           invert={false}
                                           size="small"
                                         >
                                           <StyledComponent
+                                            a11yDescriptor={false}
                                             block={false}
                                             bold={false}
                                             forwardedComponent={
@@ -1159,18 +1165,21 @@ Object {
                 className="c0 sc-htoDjs c0 c1"
               >
                 <Text
+                  a11yDescriptor={false}
                   block={false}
                   bold={true}
                   invert={false}
                   size="medium"
                 >
                   <Text__StyledText
+                    a11yDescriptor={false}
                     block={false}
                     bold={true}
                     invert={false}
                     size="medium"
                   >
                     <StyledComponent
+                      a11yDescriptor={false}
                       block={false}
                       bold={true}
                       forwardedComponent={
@@ -1227,18 +1236,21 @@ Object {
                   }
                 >
                   <Text
+                    a11yDescriptor={false}
                     block={false}
                     bold={false}
                     invert={false}
                     size="small"
                   >
                     <Text__StyledText
+                      a11yDescriptor={false}
                       block={false}
                       bold={false}
                       invert={false}
                       size="small"
                     >
                       <StyledComponent
+                        a11yDescriptor={false}
                         block={false}
                         bold={false}
                         forwardedComponent={
