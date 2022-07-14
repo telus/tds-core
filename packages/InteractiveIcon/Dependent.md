@@ -59,7 +59,12 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
       {
         name: 'Modal',
         Component: Modal,
-        usageCriteria: 'Used to open a modal',
+        usageCriteria: (
+          <>
+            Used to open a modal. Works well with{' '}
+            <Link href="#/Icons?id=iconbutton">IconButton</Link>
+          </>
+        ),
         props: {
           a11yText: 'Modal',
         },
