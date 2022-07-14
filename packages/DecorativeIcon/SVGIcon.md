@@ -511,9 +511,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         name: 'Microphone',
         Component: Microphone,
         usageCriteria: 'For representing voice assistants',
+      },
+      {
         name: 'Oval',
         Component: Oval,
-        usageCriteria: 'oval, lock',
+        usageCriteria: 'Oval, lock',
       },
       {
         name: 'Play',
