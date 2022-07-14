@@ -699,21 +699,21 @@ Object {
                                         </StyledComponent>
                                       </Text__StyledText>
                                     </Text>
-                                    <Text
-                                      a11yDescriptor={false}
-                                      block={false}
-                                      bold={false}
-                                      invert={false}
-                                      size="small"
+                                    <span
+                                      style={
+                                        Object {
+                                          "alignSelf": "baseline",
+                                        }
+                                      }
                                     >
-                                      <Text__StyledText
+                                      <Text
                                         a11yDescriptor={false}
                                         block={false}
                                         bold={false}
                                         invert={false}
                                         size="small"
                                       >
-                                        <StyledComponent
+                                        <Text__StyledText
                                           a11yDescriptor={false}
                                           block={false}
                                           bold={false}
@@ -721,6 +721,7 @@ Object {
                                           size="small"
                                         >
                                           <StyledComponent
+                                            a11yDescriptor={false}
                                             block={false}
                                             bold={false}
                                             forwardedComponent={
@@ -1227,21 +1228,21 @@ Object {
                     </StyledComponent>
                   </Text__StyledText>
                 </Text>
-                <Text
-                  a11yDescriptor={false}
-                  block={false}
-                  bold={false}
-                  invert={false}
-                  size="small"
+                <span
+                  style={
+                    Object {
+                      "alignSelf": "baseline",
+                    }
+                  }
                 >
-                  <Text__StyledText
+                  <Text
                     a11yDescriptor={false}
                     block={false}
                     bold={false}
                     invert={false}
                     size="small"
                   >
-                    <StyledComponent
+                    <Text__StyledText
                       a11yDescriptor={false}
                       block={false}
                       bold={false}
@@ -1249,6 +1250,7 @@ Object {
                       size="small"
                     >
                       <StyledComponent
+                        a11yDescriptor={false}
                         block={false}
                         bold={false}
                         forwardedComponent={
