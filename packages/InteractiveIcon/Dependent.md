@@ -57,6 +57,14 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         },
       },
       {
+        name: 'Modal',
+        Component: Modal,
+        usageCriteria: 'Used to open a modal',
+        props: {
+          a11yText: 'Modal',
+        },
+      },
+      {
         name: 'PlayVideo',
         Component: PlayVideo,
         usageCriteria: (
