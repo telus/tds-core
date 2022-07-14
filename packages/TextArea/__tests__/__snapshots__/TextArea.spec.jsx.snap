@@ -384,21 +384,18 @@ exports[`TextArea label can have a short hint 1`] = `
               className="c0 sc-iwsKbI c0 c1"
             >
               <Text
-                a11yDescriptor={false}
                 block={false}
                 bold={true}
                 invert={false}
                 size="medium"
               >
                 <Text__StyledText
-                  a11yDescriptor={false}
                   block={false}
                   bold={true}
                   invert={false}
                   size="medium"
                 >
                   <StyledComponent
-                    a11yDescriptor={false}
                     block={false}
                     bold={true}
                     forwardedComponent={
@@ -448,7 +445,6 @@ exports[`TextArea label can have a short hint 1`] = `
                 </Text__StyledText>
               </Text>
               <Text
-                a11yDescriptor={false}
                 block={false}
                 bold={false}
                 id="the-textarea_hint"
@@ -456,7 +452,6 @@ exports[`TextArea label can have a short hint 1`] = `
                 size="small"
               >
                 <Text__StyledText
-                  a11yDescriptor={false}
                   block={false}
                   bold={false}
                   id="the-textarea_hint"
@@ -464,7 +459,6 @@ exports[`TextArea label can have a short hint 1`] = `
                   size="small"
                 >
                   <StyledComponent
-                    a11yDescriptor={false}
                     block={false}
                     bold={false}
                     forwardedComponent={

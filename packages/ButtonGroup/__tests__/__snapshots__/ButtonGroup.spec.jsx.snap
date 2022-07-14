@@ -145,21 +145,18 @@ exports[`ButtonGroup renders 1`] = `
   >
     <legend>
       <Text
-        a11yDescriptor={false}
         block={false}
         bold={true}
         invert={false}
         size="medium"
       >
         <Text__StyledText
-          a11yDescriptor={false}
           block={false}
           bold={true}
           invert={false}
           size="medium"
         >
           <StyledComponent
-            a11yDescriptor={false}
             block={false}
             bold={true}
             forwardedComponent={
