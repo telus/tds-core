@@ -35,9 +35,8 @@ The following group are the active maintainers of this project, and have merge r
 | Member         | Role        | Slack           | GitHub        |
 | -------------- | ----------- | --------------- | ------------- |
 | Bill Somen     | Developer   | @Bill Somen     | @billtelus    |
-| Jordan Raffoul | Developer   | @Jordan Raffoul | @jraff        |
-| Christina Lo   | Design Lead | @Christina L.   | @Christina-Lo |
 | Donna Vitan    | Design      | @donnavitan     | @donnavitan   |
+| Joao Nadal     | PO.         | @Joao Nadal     | @nadaltelus   |
 
 ## Contributors
 
