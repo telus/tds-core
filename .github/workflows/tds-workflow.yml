@@ -483,13 +483,13 @@ jobs:
       - name: Update contributors
         run: npm run contributors:update
 
-      - name: Commit updated contributors
-        run: |
-          if [[ $(git diff --name-only) ]]
-          then
-            git add .all-contributorsrc README.md
-            git commit -m "chore(other): update contributors"
-            git push
-          else
-            echo 'No contributor changes.'
-          fi
+      #- name: Commit updated contributors
+      #  run: |
+      #    if [[ $(git diff --name-only) ]]
+      #    then
+      #      git add .all-contributorsrc README.md
+      #      git commit -m "chore(other): update contributors"
+      #      git push
+      #    else
+      #      echo 'No contributor changes.'
+      #    fi
