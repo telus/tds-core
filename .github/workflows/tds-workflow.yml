@@ -482,7 +482,7 @@ jobs:
 
       - name: Update contributors
         run: npm run contributors:update
-
+        
       #- name: Commit updated contributors
       #  run: |
       #    if [[ $(git diff --name-only) ]]
@@ -493,3 +493,4 @@ jobs:
       #    else
       #      echo 'No contributor changes.'
       #    fi
+
