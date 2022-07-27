@@ -92,8 +92,45 @@ class Notification extends React.Component {
     }
   }
 
+  getA11yText = element => {
+    return element.props?.children
+  }
+
+  isValidA11yDescriptor = element => {
+    return (
+      typeof element === 'object' &&
+      element.type?.name === 'Text' &&
+      !!element.props?.a11yDescriptor &&
+      typeof element.props?.children === 'string'
+    )
+  }
+
+  getDismissTextFromChildren = children => {
+    let dismissText = ''
+
+    if (Array.isArray(children)) {
+      const validA11yDecriptor = children?.find(child => this.isValidA11yDescriptor(child))
+
+      if (validA11yDecriptor) {
+        const a11yText = this.getA11yText(validA11yDecriptor)
+        if (a11yText) {
+          dismissText = `, ${a11yText}`
+        }
+      }
+    } else if (this.isValidA11yDescriptor(children)) {
+      const a11yText = this.getA11yText(children)
+
+      if (a11yText) {
+        dismissText = `, ${a11yText}`
+      }
+    }
+
+    return dismissText
+  }
+
   renderNotification() {
     const { variant, dismissible, children, onExit, onDismiss, copy, ...rest } = this.props
+    const dismissText = this.getDismissTextFromChildren(children)
 
     return (
       <StyledNotificationContainer {...safeRest(rest)} vertical={3} variant={variant}>
@@ -116,7 +153,7 @@ class Notification extends React.Component {
                         <StyledDismissButtonWrapper>
                           <IconButton
                             icon={Close}
-                            a11yText={getCopy(copyDictionary, copy).close}
+                            a11yText={getCopy(copyDictionary, copy).close + dismissText}
                             onClick={() => {
                               this.setState(() => ({ dismissed: true }))
                               if (onDismiss) {

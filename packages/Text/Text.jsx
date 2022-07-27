@@ -48,6 +48,10 @@ Text.propTypes = {
    */
   invert: PropTypes.bool,
   /**
+   * Boolean telling the wrapper component ( `Notification` for example) to use the content of this text for a11yText
+   */
+  a11yDescriptor: PropTypes.bool,
+  /**
    * The content. Can be text, other components, or HTML elements.
    */
   children: PropTypes.node.isRequired,
@@ -58,6 +62,7 @@ Text.defaultProps = {
   bold: false,
   size: 'base',
   invert: false,
+  a11yDescriptor: false,
 }
 
 Text.contextTypes = {

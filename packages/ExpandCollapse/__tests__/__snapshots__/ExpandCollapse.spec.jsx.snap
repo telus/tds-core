@@ -384,18 +384,21 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
                                       }
                                     >
                                       <Text
+                                        a11yDescriptor={false}
                                         block={false}
                                         bold={false}
                                         invert={false}
                                         size="large"
                                       >
                                         <Text__StyledText
+                                          a11yDescriptor={false}
                                           block={false}
                                           bold={false}
                                           invert={false}
                                           size="large"
                                         >
                                           <StyledComponent
+                                            a11yDescriptor={false}
                                             block={false}
                                             bold={false}
                                             forwardedComponent={
@@ -603,18 +606,21 @@ exports[`ExpandCollapse accessibility wraps a heading tag around a panel label 1
                                         className="c8"
                                       >
                                         <Text
+                                          a11yDescriptor={false}
                                           block={false}
                                           bold={false}
                                           invert={false}
                                           size="large"
                                         >
                                           <Text__StyledText
+                                            a11yDescriptor={false}
                                             block={false}
                                             bold={false}
                                             invert={false}
                                             size="large"
                                           >
                                             <StyledComponent
+                                              a11yDescriptor={false}
                                               block={false}
                                               bold={false}
                                               forwardedComponent={
@@ -1025,18 +1031,21 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
                                   }
                                 >
                                   <Text
+                                    a11yDescriptor={false}
                                     block={false}
                                     bold={false}
                                     invert={false}
                                     size="large"
                                   >
                                     <Text__StyledText
+                                      a11yDescriptor={false}
                                       block={false}
                                       bold={false}
                                       invert={false}
                                       size="large"
                                     >
                                       <StyledComponent
+                                        a11yDescriptor={false}
                                         block={false}
                                         bold={false}
                                         forwardedComponent={
@@ -1244,18 +1253,21 @@ exports[`ExpandCollapse disabled panels are rendered in a disabled treatment 1`]
                                     className="c9"
                                   >
                                     <Text
+                                      a11yDescriptor={false}
                                       block={false}
                                       bold={false}
                                       invert={false}
                                       size="large"
                                     >
                                       <Text__StyledText
+                                        a11yDescriptor={false}
                                         block={false}
                                         bold={false}
                                         invert={false}
                                         size="large"
                                       >
                                         <StyledComponent
+                                          a11yDescriptor={false}
                                           block={false}
                                           bold={false}
                                           forwardedComponent={
@@ -1836,18 +1848,21 @@ exports[`ExpandCollapse empty panels renders 1`] = `
                                                     className="c7"
                                                   >
                                                     <Text
+                                                      a11yDescriptor={false}
                                                       block={false}
                                                       bold={false}
                                                       invert={false}
                                                       size="large"
                                                     >
                                                       <Text__StyledText
+                                                        a11yDescriptor={false}
                                                         block={false}
                                                         bold={false}
                                                         invert={false}
                                                         size="large"
                                                       >
                                                         <StyledComponent
+                                                          a11yDescriptor={false}
                                                           block={false}
                                                           bold={false}
                                                           forwardedComponent={
@@ -2509,18 +2524,21 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                                       }
                                                     >
                                                       <Text
+                                                        a11yDescriptor={false}
                                                         block={false}
                                                         bold={false}
                                                         invert={false}
                                                         size="large"
                                                       >
                                                         <Text__StyledText
+                                                          a11yDescriptor={false}
                                                           block={false}
                                                           bold={false}
                                                           invert={false}
                                                           size="large"
                                                         >
                                                           <StyledComponent
+                                                            a11yDescriptor={false}
                                                             block={false}
                                                             bold={false}
                                                             forwardedComponent={
@@ -2728,18 +2746,21 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                                         className="c10"
                                                       >
                                                         <Text
+                                                          a11yDescriptor={false}
                                                           block={false}
                                                           bold={false}
                                                           invert={false}
                                                           size="large"
                                                         >
                                                           <Text__StyledText
+                                                            a11yDescriptor={false}
                                                             block={false}
                                                             bold={false}
                                                             invert={false}
                                                             size="large"
                                                           >
                                                             <StyledComponent
+                                                              a11yDescriptor={false}
                                                               block={false}
                                                               bold={false}
                                                               forwardedComponent={
@@ -2980,18 +3001,21 @@ exports[`ExpandCollapse renders a closed panel 1`] = `
                                     className="c13"
                                   >
                                     <Text
+                                      a11yDescriptor={false}
                                       block={true}
                                       bold={false}
                                       invert={false}
                                       size="base"
                                     >
                                       <Text__StyledText
+                                        a11yDescriptor={false}
                                         block={true}
                                         bold={false}
                                         invert={false}
                                         size="base"
                                       >
                                         <StyledComponent
+                                          a11yDescriptor={false}
                                           block={true}
                                           bold={false}
                                           forwardedComponent={
@@ -3674,18 +3698,21 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                                       }
                                                     >
                                                       <Text
+                                                        a11yDescriptor={false}
                                                         block={false}
                                                         bold={false}
                                                         invert={false}
                                                         size="large"
                                                       >
                                                         <Text__StyledText
+                                                          a11yDescriptor={false}
                                                           block={false}
                                                           bold={false}
                                                           invert={false}
                                                           size="large"
                                                         >
                                                           <StyledComponent
+                                                            a11yDescriptor={false}
                                                             block={false}
                                                             bold={false}
                                                             forwardedComponent={
@@ -3893,18 +3920,21 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                                         className="c10"
                                                       >
                                                         <Text
+                                                          a11yDescriptor={false}
                                                           block={false}
                                                           bold={false}
                                                           invert={false}
                                                           size="large"
                                                         >
                                                           <Text__StyledText
+                                                            a11yDescriptor={false}
                                                             block={false}
                                                             bold={false}
                                                             invert={false}
                                                             size="large"
                                                           >
                                                             <StyledComponent
+                                                              a11yDescriptor={false}
                                                               block={false}
                                                               bold={false}
                                                               forwardedComponent={
@@ -4145,18 +4175,21 @@ exports[`ExpandCollapse renders an open panel 1`] = `
                                     className="c13"
                                   >
                                     <Text
+                                      a11yDescriptor={false}
                                       block={true}
                                       bold={false}
                                       invert={false}
                                       size="base"
                                     >
                                       <Text__StyledText
+                                        a11yDescriptor={false}
                                         block={true}
                                         bold={false}
                                         invert={false}
                                         size="base"
                                       >
                                         <StyledComponent
+                                          a11yDescriptor={false}
                                           block={true}
                                           bold={false}
                                           forwardedComponent={
