@@ -112,7 +112,7 @@
     "husky": "^4.0.0",
     "identity-obj-proxy": "^3.0.0",
     "install-group": "^3.0.0",
-    "jest": "^25.0.0",
+    "jest": "^26.0.0",
     "jest-environment-enzyme": "^7.0.2",
     "jest-enzyme": "^7.0.0",
     "jest-styled-components": "^7.0.0-2",
