@@ -87,7 +87,7 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^25.0.0",
     "babel-loader": "^8.0.0-beta.1",
-    "babel-plugin-styled-components": "^1.10.0",
+    "babel-plugin-styled-components": "^2.0.0",
     "case": "^1.5.5",
     "chalk": "^3.0.0",
     "classnames": "^2.2.6",
