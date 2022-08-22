@@ -23,35 +23,35 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
 
       - name: Cache shared node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-shared-node-modules
         with:
           path: "*/*/*/node_modules"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache shared dist
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-shared-dist
         with:
           path: "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-packages-node-modules
         with:
           path: "*/*/node_modules"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache packages dist
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-packages-dist
         with:
           path: "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-node-modules
         with:
           path: node_modules
@@ -75,35 +75,35 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
 
       - name: Cache shared node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-shared-node-modules
         with:
           path: "*/*/*/node_modules"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache shared dist
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-shared-dist
         with:
           path: "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-packages-node-modules
         with:
           path: "*/*/node_modules"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache packages dist
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-packages-dist
         with:
           path: "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-node-modules
         with:
           path: node_modules
@@ -126,35 +126,35 @@ jobs:
           node-version: "12.14.x"
 
       - name: Cache shared node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-shared-node-modules
         with:
           path: "*/*/*/node_modules"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache shared dist
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-shared-dist
         with:
           path: "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-packages-node-modules
         with:
           path: "*/*/node_modules"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache packages dist
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-packages-dist
         with:
           path: "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-node-modules
         with:
           path: node_modules
@@ -257,35 +257,35 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
 
       - name: Cache shared node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-shared-node-modules
         with:
           path: "*/*/*/node_modules"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache shared dist
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-shared-dist
         with:
           path: "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-packages-node-modules
         with:
           path: "*/*/node_modules"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache packages dist
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-packages-dist
         with:
           path: "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-node-modules
         with:
           path: node_modules
@@ -334,35 +334,35 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
 
       - name: Cache shared node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-shared-node-modules
         with:
           path: "*/*/*/node_modules"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache shared dist
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-shared-dist
         with:
           path: "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-packages-node-modules
         with:
           path: "*/*/node_modules"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache packages dist
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-packages-dist
         with:
           path: "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-node-modules
         with:
           path: node_modules
@@ -443,35 +443,35 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
 
       - name: Cache shared node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-shared-node-modules
         with:
           path: "*/*/*/node_modules"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache shared dist
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-shared-dist
         with:
           path: "*/*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/*/package.json') }}
 
       - name: Cache packages node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-packages-node-modules
         with:
           path: "*/*/node_modules"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache packages dist
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-packages-dist
         with:
           path: "*/*/dist"
           key: ${{ runner.os }}-${{ github.action}}-${{ hashFiles('*/*/package.json') }}
 
       - name: Cache node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-tds-files-node-modules
         with:
           path: node_modules
