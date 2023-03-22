@@ -1,3 +1,5 @@
+!INCLUDE "../tds-sunset.html"
+
 # Getting started - developer guide
 
 As a developer, your primary interaction point with TDS is through React components. These components are independent, composable components distributed as individual packages.

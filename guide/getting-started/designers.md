@@ -1,6 +1,8 @@
+!INCLUDE "../tds-sunset.html"
+
 # Getting started - designer guide
 
-<div style="display: flex; flex-direction: row; wrap: nowrap; padding: 1rem; background-color: rgb(255, 249, 238); margin-bottom: 1rem;">
+<div style="display: flex; flex-direction: row; wrap: nowrap; padding: 1rem; background-color: rgb(255, 248, 230); margin-bottom: 1rem; border: 1px solid rgb(230, 167, 0); border-radius: 6px;">
   <div style="margin-right: 1rem; height: 100%;">
     <svg style="display: inline-block; vertical-align: middle;" width="20" height="20">
       <path

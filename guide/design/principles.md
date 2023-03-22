@@ -1,3 +1,5 @@
+!INCLUDE "../tds-sunset.html"
+
 # Design Principles
 
 The TELUS design principles are a simple set of rules that enable teams to craft great digital experiences. All experiences

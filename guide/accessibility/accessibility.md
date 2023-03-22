@@ -1,3 +1,5 @@
+!INCLUDE "../tds-sunset.html"
+
 # Accessibility
 
 The TDS documentation is a starting point for accessibility information.

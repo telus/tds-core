@@ -1,3 +1,5 @@
+!INCLUDE "tds-sunset.html"
+
 # FAQs
 
 ## A TDS component does not do what I need. What do I do?

@@ -1,3 +1,5 @@
+!INCLUDE "tds-sunset.html"
+
 # Upgrading to TDS V3
 
 TDS has now moved feature support from V2: Split Components to V3: Styled Components of the design system. This was done primarily to facilitate the use of styled-components V4. For a detailed view of our sunsetting schedule, please read our [roadmap page](roadmap.md). Additionally, more information on this subject can be found on the [Reference Architecture CSS Document](https://github.com/telus/reference-architecture/blob/bb7059d135574c380d2865aa1bbdd633c2345461/development/css.md).

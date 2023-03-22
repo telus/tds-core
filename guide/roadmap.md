@@ -1,3 +1,5 @@
+!INCLUDE "tds-sunset.html"
+
 # Roadmap
 
 We plan the TELUS Design System (TDS) roadmap based on the priorities of TELUS and partner teams. In addition, we coordinate with the other Digital Platform teams to provide a comprehensive system for building rich Web experiences in the TELUS ecosystem.

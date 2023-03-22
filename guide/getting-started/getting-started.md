@@ -1,3 +1,5 @@
+!INCLUDE "../tds-sunset.html"
+
 # Getting started
 
 TDS includes resources for designers and developers that are needed to build consistent user interfaces on the TELUS Digital Platform. TDS enables designers and developers to focus on solving unique application challenges, rather than having to reinvent standard interface elements.

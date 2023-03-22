@@ -1,3 +1,5 @@
+!INCLUDE "../tds-sunset.html"
+
 # Screen Readers
 
 ## Overview
@@ -12,5 +14,5 @@ See the [TELUS Standards site](https://digitalstandards.telus.com/accessibility)
 
 ## Governance
 
-The TELUS digital accessibility is managed by Operations: Security and Accessibility. If you have any questions or concerns 
+The TELUS digital accessibility is managed by Operations: Security and Accessibility. If you have any questions or concerns
 regarding designing or developing in an accessible manner please contact Oskar Westin.
