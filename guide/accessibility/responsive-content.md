@@ -1,3 +1,5 @@
+!INCLUDE "../tds-sunset.html"
+
 # Responsive content
 
 When coding page content for all users, we consider the following:

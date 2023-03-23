@@ -4,13 +4,12 @@ about: Suggest an idea for tds-core
 title: ''
 labels: ''
 assignees: ''
-
 ---
 
 > We're sunsetting the maintenance of TDS
-> Make sure to verify if your bug has [not been fixed](https://github.com/telus/universal-design-system) yet in [UDS / Allium](https://sites.google.com/telus.com/thinkcontentxdesign/about-us-our-products/allium)
-> We encourage everyone to switch to UDS / Allium
-Either way, feel free to fix the issue if you can't switch / pick the corresponding component from Allium.
+> Make sure to verify if your bug has [not been fixed](https://github.com/telus/universal-design-system/issues) yet in [UDS](https://github.com/telus/universal-design-system)
+> We encourage everyone to switch to UDS
+> Either way, feel free to fix the issue if you can't switch / pick the corresponding component from UDS.
 
 <!--
   ### IMPORTANT SECURITY NOTE ###

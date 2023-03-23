@@ -1,3 +1,5 @@
+!INCLUDE "../tds-sunset.html"
+
 # Contributing standards
 
 The TELUS Design System maintains a set of standards and practices for core components and community components.

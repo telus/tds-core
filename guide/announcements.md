@@ -1,3 +1,5 @@
+!INCLUDE "tds-sunset.html"
+
 # TDS Announcement Board 📣
 
 Welcome to the TDS Announcement Board! Check back here regularly for the latest updates on TDS!

@@ -1,7 +1,14 @@
 {
   "title": "TELUS Design System",
   "gitbook": "3.2.2",
-  "plugins": ["otherlink", "collapsible-menu", "insert-logo-link", "-sharing", "edit-link"],
+  "plugins": [
+    "otherlink",
+    "collapsible-menu",
+    "insert-logo-link",
+    "-sharing",
+    "edit-link",
+    "include-html"
+  ],
   "pluginsConfig": {
     "edit-link": {
       "base": "https://github.com/telus/tds-core/tree/master/guide",

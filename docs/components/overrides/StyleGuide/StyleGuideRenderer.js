@@ -8,6 +8,7 @@ import Markdown from 'rsg-components/Markdown'
 import FlexGrid from '../../../../packages/FlexGrid/FlexGrid'
 import CSSReset from '../../../../packages/css-reset'
 import GlobalStyleGuide from './GlobalStyleGuide'
+import tdsSunsetWarning from '../../../../guide/tds-sunset.html'
 
 const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth }) => ({
   root: {
@@ -78,6 +79,7 @@ const TdsGrid = ({ children }) => (
 export function StyleGuideRenderer({ classes, title, homepageUrl, children, toc, hasSidebar }) {
   const main = (
     <main className={cx(hasSidebar && classes.content)}>
+      <div dangerouslySetInnerHTML={{ __html: tdsSunsetWarning }} />
       {children}
       <footer className={classes.footer}>
         <Markdown text={`Generated with [React Styleguidist](${homepageUrl})`} />

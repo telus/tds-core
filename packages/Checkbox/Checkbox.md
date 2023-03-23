@@ -6,10 +6,10 @@
     </Paragraph>
     <Paragraph>
       We encourage you to use our new component{' '}
-      <Link href="https://telus.github.io/allium-design-system/components/components/checkbox">
+      <Link href="https://telus.github.io/universal-design-system/components/allium/web/checkbox">
         Checkbox
       </Link>{' '}
-      from Allium
+      from UDS
     </Paragraph>
   </Box>
 </Notification>

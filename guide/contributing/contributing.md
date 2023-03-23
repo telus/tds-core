@@ -1,3 +1,5 @@
+!INCLUDE "../tds-sunset.html"
+
 # Contributing to TDS
 
 Role-specific guides and resources:

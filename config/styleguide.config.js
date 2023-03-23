@@ -516,6 +516,10 @@ module.exports = {
           test: /\.(png|jpg|svg)$/,
           use: 'url-loader',
         },
+        {
+          test: /\.html$/i,
+          loader: 'html-loader',
+        },
       ],
     },
   },

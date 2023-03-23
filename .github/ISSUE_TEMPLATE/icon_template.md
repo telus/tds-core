@@ -4,13 +4,12 @@ about: Request a new icon
 title: ''
 labels: ''
 assignees: ''
-
 ---
 
 > We're sunsetting the maintenance of TDS
-> Make sure to verify if your bug has [not been fixed](https://github.com/telus/universal-design-system) yet in [UDS / Allium](https://sites.google.com/telus.com/thinkcontentxdesign/about-us-our-products/allium)
-> We encourage everyone to switch to UDS / Allium
-Either way, feel free to fix the issue if you can't switch / pick the corresponding component from Allium.
+> Make sure to verify if your bug has [not been fixed](https://github.com/telus/universal-design-system/issues) yet in [UDS](https://github.com/telus/universal-design-system/)
+> We encourage everyone to switch to UDS
+> Either way, feel free to fix the issue if you can't switch / pick the corresponding component from UDS.
 
 <!--
   ### IMPORTANT SECURITY NOTE ###
@@ -22,7 +21,7 @@ Either way, feel free to fix the issue if you can't switch / pick the correspond
   Also, do not include links to sites on staging.
 -->
 
-<!-- 
+<!--
   ### TDS Timeline for releasing icons ###
 
   New icon requests will be released midway in the next month.
@@ -37,7 +36,7 @@ Either way, feel free to fix the issue if you can't switch / pick the correspond
 ## Actions
 
 1. Did you check to see if there are icons available in TDS that can be used instead? Yes/No
-2. Is your proposed icon from the TELUS Brand-approved set from one of the appointed designers*? Yes/No
+2. Is your proposed icon from the TELUS Brand-approved set from one of the appointed designers\*? Yes/No
 3. If your design lead has approved this change, please note their name: [design lead name]
 4. If the art director has approved this change, please have them **comment on this issue**.
 
