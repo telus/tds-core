@@ -85,4 +85,3 @@ if (env === 'production') {
 } else {
   deployToS3('staging')
 }
-
