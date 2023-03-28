@@ -310,11 +310,11 @@ jobs:
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_PROD }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           SOURCE_DIR: "build/staging"
-          DEST_DIR: "pr/${{steps.get_branch.outputs.branch}}/docs"
+          DEST_DIR: "/"
 
   prepr-log:
     if: github.event_name == 'pull_request'
