@@ -428,18 +428,21 @@ exports[`Tooltip accessibility accepts custom copy 1`] = `
                                         className="c4"
                                       >
                                         <Text
+                                          a11yDescriptor={false}
                                           block={false}
                                           bold={false}
                                           invert={false}
                                           size="small"
                                         >
                                           <Text__StyledText
+                                            a11yDescriptor={false}
                                             block={false}
                                             bold={false}
                                             invert={false}
                                             size="small"
                                           >
                                             <StyledComponent
+                                              a11yDescriptor={false}
                                               block={false}
                                               bold={false}
                                               forwardedComponent={
@@ -1092,18 +1095,21 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 1`] 
                                         className="c4"
                                       >
                                         <Text
+                                          a11yDescriptor={false}
                                           block={false}
                                           bold={false}
                                           invert={false}
                                           size="small"
                                         >
                                           <Text__StyledText
+                                            a11yDescriptor={false}
                                             block={false}
                                             bold={false}
                                             invert={false}
                                             size="small"
                                           >
                                             <StyledComponent
+                                              a11yDescriptor={false}
                                               block={false}
                                               bold={false}
                                               forwardedComponent={
@@ -1756,18 +1762,21 @@ exports[`Tooltip interactivity hides the bubble when clicking outside of it 2`] 
                                         className="c4"
                                       >
                                         <Text
+                                          a11yDescriptor={false}
                                           block={false}
                                           bold={false}
                                           invert={false}
                                           size="small"
                                         >
                                           <Text__StyledText
+                                            a11yDescriptor={false}
                                             block={false}
                                             bold={false}
                                             invert={false}
                                             size="small"
                                           >
                                             <StyledComponent
+                                              a11yDescriptor={false}
                                               block={false}
                                               bold={false}
                                               forwardedComponent={
@@ -2135,18 +2144,21 @@ exports[`Tooltip interactivity shows and hides the bubble 1`] = `
         className="c2"
       >
         <Text
+          a11yDescriptor={false}
           block={false}
           bold={false}
           invert={false}
           size="small"
         >
           <Text__StyledText
+            a11yDescriptor={false}
             block={false}
             bold={false}
             invert={false}
             size="small"
           >
             <StyledComponent
+              a11yDescriptor={false}
               block={false}
               bold={false}
               forwardedComponent={
@@ -2330,18 +2342,21 @@ exports[`Tooltip interactivity shows and hides the bubble 2`] = `
         className="c2"
       >
         <Text
+          a11yDescriptor={false}
           block={false}
           bold={false}
           invert={false}
           size="small"
         >
           <Text__StyledText
+            a11yDescriptor={false}
             block={false}
             bold={false}
             invert={false}
             size="small"
           >
             <StyledComponent
+              a11yDescriptor={false}
               block={false}
               bold={false}
               forwardedComponent={
@@ -2526,18 +2541,21 @@ exports[`Tooltip interactivity shows and hides the bubble 3`] = `
         className="c2"
       >
         <Text
+          a11yDescriptor={false}
           block={false}
           bold={false}
           invert={false}
           size="small"
         >
           <Text__StyledText
+            a11yDescriptor={false}
             block={false}
             bold={false}
             invert={false}
             size="small"
           >
             <StyledComponent
+              a11yDescriptor={false}
               block={false}
               bold={false}
               forwardedComponent={
@@ -3008,18 +3026,21 @@ exports[`Tooltip renders 1`] = `
                                         className="c4"
                                       >
                                         <Text
+                                          a11yDescriptor={false}
                                           block={false}
                                           bold={false}
                                           invert={false}
                                           size="small"
                                         >
                                           <Text__StyledText
+                                            a11yDescriptor={false}
                                             block={false}
                                             bold={false}
                                             invert={false}
                                             size="small"
                                           >
                                             <StyledComponent
+                                              a11yDescriptor={false}
                                               block={false}
                                               bold={false}
                                               forwardedComponent={

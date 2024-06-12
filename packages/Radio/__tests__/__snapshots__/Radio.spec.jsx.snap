@@ -195,12 +195,14 @@ exports[`Radio disabled can be disabled 1`] = `
 >
   <div>
     <Text
+      a11yDescriptor={false}
       block={false}
       bold={false}
       invert={false}
       size="base"
     >
       <Text__StyledText
+        a11yDescriptor={false}
         block={false}
         bold={false}
         inheritColor={true}
@@ -208,6 +210,7 @@ exports[`Radio disabled can be disabled 1`] = `
         size="base"
       >
         <StyledComponent
+          a11yDescriptor={false}
           block={false}
           bold={false}
           forwardedComponent={
@@ -744,12 +747,14 @@ exports[`Radio disabled can be disabled and checked 1`] = `
 >
   <div>
     <Text
+      a11yDescriptor={false}
       block={false}
       bold={false}
       invert={false}
       size="base"
     >
       <Text__StyledText
+        a11yDescriptor={false}
         block={false}
         bold={false}
         inheritColor={true}
@@ -757,6 +762,7 @@ exports[`Radio disabled can be disabled and checked 1`] = `
         size="base"
       >
         <StyledComponent
+          a11yDescriptor={false}
           block={false}
           bold={false}
           forwardedComponent={
@@ -1295,12 +1301,14 @@ exports[`Radio error can have an error feedback state 1`] = `
 >
   <div>
     <Text
+      a11yDescriptor={false}
       block={false}
       bold={false}
       invert={false}
       size="base"
     >
       <Text__StyledText
+        a11yDescriptor={false}
         block={false}
         bold={false}
         inheritColor={true}
@@ -1308,6 +1316,7 @@ exports[`Radio error can have an error feedback state 1`] = `
         size="base"
       >
         <StyledComponent
+          a11yDescriptor={false}
           block={false}
           bold={false}
           forwardedComponent={
@@ -1844,12 +1853,14 @@ exports[`Radio error does not appear as an error when it is checked 1`] = `
 >
   <div>
     <Text
+      a11yDescriptor={false}
       block={false}
       bold={false}
       invert={false}
       size="base"
     >
       <Text__StyledText
+        a11yDescriptor={false}
         block={false}
         bold={false}
         inheritColor={true}
@@ -1857,6 +1868,7 @@ exports[`Radio error does not appear as an error when it is checked 1`] = `
         size="base"
       >
         <StyledComponent
+          a11yDescriptor={false}
           block={false}
           bold={false}
           forwardedComponent={
@@ -3961,12 +3973,14 @@ exports[`Radio must have a label 1`] = `
                       >
                         <div>
                           <Text
+                            a11yDescriptor={false}
                             block={false}
                             bold={false}
                             invert={false}
                             size="base"
                           >
                             <Text__StyledText
+                              a11yDescriptor={false}
                               block={false}
                               bold={false}
                               inheritColor={true}
@@ -3974,6 +3988,7 @@ exports[`Radio must have a label 1`] = `
                               size="base"
                             >
                               <StyledComponent
+                                a11yDescriptor={false}
                                 block={false}
                                 bold={false}
                                 forwardedComponent={

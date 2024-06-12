@@ -534,18 +534,21 @@ exports[`Accordion renders a closed accordion 1`] = `
                                                       }
                                                     >
                                                       <Text
+                                                        a11yDescriptor={false}
                                                         block={false}
                                                         bold={false}
                                                         invert={false}
                                                         size="large"
                                                       >
                                                         <Text__StyledText
+                                                          a11yDescriptor={false}
                                                           block={false}
                                                           bold={false}
                                                           invert={false}
                                                           size="large"
                                                         >
                                                           <StyledComponent
+                                                            a11yDescriptor={false}
                                                             block={false}
                                                             bold={false}
                                                             forwardedComponent={
@@ -753,18 +756,21 @@ exports[`Accordion renders a closed accordion 1`] = `
                                                         className="c10"
                                                       >
                                                         <Text
+                                                          a11yDescriptor={false}
                                                           block={false}
                                                           bold={false}
                                                           invert={false}
                                                           size="large"
                                                         >
                                                           <Text__StyledText
+                                                            a11yDescriptor={false}
                                                             block={false}
                                                             bold={false}
                                                             invert={false}
                                                             size="large"
                                                           >
                                                             <StyledComponent
+                                                              a11yDescriptor={false}
                                                               block={false}
                                                               bold={false}
                                                               forwardedComponent={
@@ -1005,18 +1011,21 @@ exports[`Accordion renders a closed accordion 1`] = `
                                     className="c13"
                                   >
                                     <Text
+                                      a11yDescriptor={false}
                                       block={true}
                                       bold={false}
                                       invert={false}
                                       size="base"
                                     >
                                       <Text__StyledText
+                                        a11yDescriptor={false}
                                         block={true}
                                         bold={false}
                                         invert={false}
                                         size="base"
                                       >
                                         <StyledComponent
+                                          a11yDescriptor={false}
                                           block={true}
                                           bold={false}
                                           forwardedComponent={
@@ -1678,18 +1687,21 @@ exports[`Accordion renders an open accordion 1`] = `
                                                       }
                                                     >
                                                       <Text
+                                                        a11yDescriptor={false}
                                                         block={false}
                                                         bold={false}
                                                         invert={false}
                                                         size="large"
                                                       >
                                                         <Text__StyledText
+                                                          a11yDescriptor={false}
                                                           block={false}
                                                           bold={false}
                                                           invert={false}
                                                           size="large"
                                                         >
                                                           <StyledComponent
+                                                            a11yDescriptor={false}
                                                             block={false}
                                                             bold={false}
                                                             forwardedComponent={
@@ -1897,18 +1909,21 @@ exports[`Accordion renders an open accordion 1`] = `
                                                         className="c10"
                                                       >
                                                         <Text
+                                                          a11yDescriptor={false}
                                                           block={false}
                                                           bold={false}
                                                           invert={false}
                                                           size="large"
                                                         >
                                                           <Text__StyledText
+                                                            a11yDescriptor={false}
                                                             block={false}
                                                             bold={false}
                                                             invert={false}
                                                             size="large"
                                                           >
                                                             <StyledComponent
+                                                              a11yDescriptor={false}
                                                               block={false}
                                                               bold={false}
                                                               forwardedComponent={
@@ -2149,18 +2164,21 @@ exports[`Accordion renders an open accordion 1`] = `
                                     className="c13"
                                   >
                                     <Text
+                                      a11yDescriptor={false}
                                       block={true}
                                       bold={false}
                                       invert={false}
                                       size="base"
                                     >
                                       <Text__StyledText
+                                        a11yDescriptor={false}
                                         block={true}
                                         bold={false}
                                         invert={false}
                                         size="base"
                                       >
                                         <StyledComponent
+                                          a11yDescriptor={false}
                                           block={true}
                                           bold={false}
                                           forwardedComponent={

@@ -7,6 +7,7 @@ exports[`MarkdownHeading can render an ordered list 1`] = `
   tag="div"
 >
   <Text
+    a11yDescriptor={false}
     block={true}
     bold={false}
     invert={false}
@@ -40,6 +41,7 @@ exports[`MarkdownHeading can render an unordered list 1`] = `
   tag="div"
 >
   <Text
+    a11yDescriptor={false}
     block={true}
     bold={false}
     invert={false}

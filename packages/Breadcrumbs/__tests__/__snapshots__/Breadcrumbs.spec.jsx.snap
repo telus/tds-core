@@ -608,12 +608,14 @@ exports[`Breadcrumbs with children renders 1`] = `
                     className="c4"
                   >
                     <Text
+                      a11yDescriptor={false}
                       block={false}
                       bold={false}
                       invert={false}
                       size="base"
                     >
                       <Text__StyledText
+                        a11yDescriptor={false}
                         block={false}
                         bold={false}
                         inheritColor={true}
@@ -621,6 +623,7 @@ exports[`Breadcrumbs with children renders 1`] = `
                         size="base"
                       >
                         <StyledComponent
+                          a11yDescriptor={false}
                           block={false}
                           bold={false}
                           forwardedComponent={
@@ -1358,12 +1361,14 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
                     className="c4"
                   >
                     <Text
+                      a11yDescriptor={false}
                       block={false}
                       bold={false}
                       invert={false}
                       size="base"
                     >
                       <Text__StyledText
+                        a11yDescriptor={false}
                         block={false}
                         bold={false}
                         inheritColor={true}
@@ -1371,6 +1376,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent 1`] = `
                         size="base"
                       >
                         <StyledComponent
+                          a11yDescriptor={false}
                           block={false}
                           bold={false}
                           forwardedComponent={
@@ -2094,12 +2100,14 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
                     className="c4"
                   >
                     <Text
+                      a11yDescriptor={false}
                       block={false}
                       bold={false}
                       invert={false}
                       size="base"
                     >
                       <Text__StyledText
+                        a11yDescriptor={false}
                         block={false}
                         bold={false}
                         inheritColor={true}
@@ -2107,6 +2115,7 @@ exports[`Breadcrumbs with children renders with ReactRouterLinkComponent in Item
                         size="base"
                       >
                         <StyledComponent
+                          a11yDescriptor={false}
                           block={false}
                           bold={false}
                           forwardedComponent={
@@ -2833,12 +2842,14 @@ exports[`Breadcrumbs with routes renders 1`] = `
                     className="c4"
                   >
                     <Text
+                      a11yDescriptor={false}
                       block={false}
                       bold={false}
                       invert={false}
                       size="base"
                     >
                       <Text__StyledText
+                        a11yDescriptor={false}
                         block={false}
                         bold={false}
                         inheritColor={true}
@@ -2846,6 +2857,7 @@ exports[`Breadcrumbs with routes renders 1`] = `
                         size="base"
                       >
                         <StyledComponent
+                          a11yDescriptor={false}
                           block={false}
                           bold={false}
                           forwardedComponent={
