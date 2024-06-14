@@ -1,0 +1,42 @@
+# Automated Approval
+# The default configuration for Risk Engine will run any configured plugins but
+# cannot except an application from the normal release approval process established.
+# To learn more about having your Risk Engine configuration approved for automated release
+# See this Documentation:
+# https://github.com/telus/sre-risk-engine/blob/main/docs/simplify-intro/docs/simplify-topic-automated-release-process.md
+
+team:
+  # Please select the correct role and team name for this application
+  # See Documentation:
+  # https://github.com/telus/sre-risk-engine/blob/main/docs/general/risk-config-file-setup.md#team
+  role: < Enablement || Outcome >
+  name: < MyTELUS || Business || Mobility || HomeSolutions || DigitalCommerce || Platform >
+
+ignoredFiles:
+  - "package-lock.json"
+  # Add additional file or folder paths that should be ignored from Risk Engine analysis i.e. generated files with no inherent risk
+  # e.g. Add a pattern to match mocked files used in testing: - "**/mocks/**"
+
+riskInputs:
+  - name: colophonStatus
+  - name: deployTarget
+  - name: gitBranchProtection
+  - name: innersource
+  - name: linesChanged
+  - name: semanticCommit
+  - name: changedFiles
+    matchChangesGlobPatterns:
+      "**/*.*": "low"
+      # Add Additional Patterns based on the details of your application
+      # e.g. Add a pattern for the typical files the contain source code: "**/*.js": "medium"
+      # e.g. Add a pattern for folders in your application that contain CI procedures/workflows: ".github/**": "high"
+      # e.g. Add a pattern for folders in your application that deployment configuration and scripts: ".platform/openshift/**": "high"
+  - name: prDescription
+    # Please consider customizing this plugin to validate PR descriptions against a template.
+    # See Documentation:
+    # https://github.com/telus/sre-risk-engine/blob/main/docs/general/pr-template-setup.md
+  # - name: testCoverage
+    # covReportPath: path/to/committed/coverage-summary.json
+    # The testCoverage plugin requires some application configuration to set up your testing suite to output the correct information for Risk Engine
+    # Please consider following the Guide documentation here:
+    # https://github.com/telus/sre-risk-engine/blob/main/docs/api-reference/inputs/test-coverage-input.md
