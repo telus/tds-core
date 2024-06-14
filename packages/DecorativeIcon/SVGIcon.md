@@ -513,6 +513,11 @@ const IconTable = require('../../docs/components/custom/IconTable/IconTable').de
         usageCriteria: 'For representing voice assistants',
       },
       {
+        name: 'Oval',
+        Component: Oval,
+        usageCriteria: 'Oval, lock',
+      },
+      {
         name: 'Play',
         Component: Play,
         usageCriteria: 'play, video alternative',
