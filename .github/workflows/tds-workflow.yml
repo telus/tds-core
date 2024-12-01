@@ -306,7 +306,7 @@ jobs:
         id: get_branch
 
       - name: Upload Styleguidist and Gitbook To S3 Bucket
-        uses: jakejarvis/s3-sync-action@v0.5.0
+        uses: jakejarvis/s3-sync-action@v0.5.1
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
