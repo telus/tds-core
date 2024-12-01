@@ -1,0 +1,11 @@
+site_name: tds-core
+site_description: Documentation for tds-core
+plugins:
+  - techdocs-core
+nav:
+  - Forms: Forms.md
+  - Lists: Lists.md
+  - Icons: icons.md
+  - Typography: Typography.md
+  - Intro:
+      - Welcome: intro/welcome.md
